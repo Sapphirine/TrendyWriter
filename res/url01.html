@@ -1,0 +1,1892 @@
+
+<!DOCTYPE html> 
+<html lang="en-US" class="detail-blog-post url-video-tutorial-angularjs-fundamentals-in-60-ish-minutes contents"> 
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dan Wahlin - Video Tutorial: AngularJS Fundamentals in 60-ish Minutes</title> 
+	<!-- Anti-Clickjacking script -->
+	<style id="antiClickjack">body{display:none !important;}</style>
+	<script type="text/javascript">
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+			} else {
+			top.location = self.location;
+		}
+	</script>
+    <!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+<meta content="Orchard" name="generator" />
+<meta content="Video Tutorial: AngularJS Fundamentals in 60-ish Minutes" name="og:title" />
+<meta content="http://weblogs.asp.net/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes" name="og:url" />
+<meta content="article" name="og:type" />
+<meta content="summary" name="twitter:card" />
+<meta content=".NET,Ajax,AngularJS,Databinding,HTML5,JavaScript,Pluralsight,SPA" name="keywords" />
+<meta content="&amp;nbsp;
+
+The term &quot;Single Page Application&quot; (SPA) is one of the biggest buzz words out there right now especially when it comes to building client-centric applications. SPAs provide a great way to&amp;#160;&amp;#8230;" name="description" />
+<link href="//az619453.vo.msecnd.net/content/Content/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="//az619453.vo.msecnd.net/content/Styles/styles.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Wahlin" href="/dwahlin/rss?containerid=13" />
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css"/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@DanWahlin">
+<meta name="twitter:title" content="Dan Wahlin's Blog">
+<meta name="twitter:description" content="AngularJS, JavaScript, HTML5, jQuery, Node.js, ASP.NET, C#, XAML.">
+<meta name="twitter:creator" content="@DanWahlin">
+<meta name="twitter:image:src" content="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/DanHeadShotBlog.jpg">
+<meta name="twitter:domain" content="weblogs.asp.net">
+
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+<style rel="stylesheet">
+
+    #layout-main {
+        margin-left: 0px;
+    }
+
+    #header {
+        height: 250px;
+        margin-top:10px;
+        background-image: url(https://mscblogs.blob.core.windows.net/media/dwahlin/Media/train.jpg);
+    }
+
+    .subscribe {
+        text-align: center;
+        background-color: #efefef;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    h1, .h1 {
+        font-size: 36px;
+    }
+
+    h2, .h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    h2 > a {
+        color: #333;
+    }
+
+    h3, .h3 {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .metadata {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bg-info {
+        background-color: #ccc;
+    }
+
+    #titleWrapper {
+        left: -18px;
+        background-image: url(https://mscblogs.blob.core.windows.net/media/dwahlin/Media/postcard-alpha.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 400px;
+        height: 186px;
+        padding: 62px 65px 24px 24px;
+        color: #963;
+        font-family: Georgia, 'Serif', 'Arial', 'Helvetica';
+    }
+
+    #titleWrapper h1 {
+        font-family: Georgia, serif;
+        font-size: 2.5em;
+    }
+
+    #title {
+        margin-top: -20px;
+    }
+
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color: #963;
+        font-size: 16pt;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+        color: #963;
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+        color: #963;
+        background-color: transparent;
+    }
+
+    .navbar-nav.navbar-right:last-child {
+        margin-right: 0px;
+    }
+       
+    article.blog h1, 
+    article.blog .blog-description,  
+    div.navbar-header {
+        display:none;
+    }
+
+   #CoursesDiv { background-color:#f5f5f5;font-weight:bold;font-size:12pt; }
+
+   ul.CoursesList, .interfacett-course-listing ul { 
+	  list-style: none;
+          margin: 0px;
+          padding: 0px;
+    }
+
+    ul.CoursesList li, .interfacett-course-listing ul li {
+        padding-top: 10px;
+    }
+
+    ul.CoursesList li a, .interfacett-course-listing ul a {
+        color: #000;
+        font-weight: normal;
+    }
+
+    .interfacett-course-listing h2 {
+        display: none;
+    }
+
+    .tag, .label, .label-default {
+        background-color: transparent;
+        color: #bbb;
+    }
+
+    #mc_embed_signup form {
+        padding: 0px;
+    }
+
+    #magazinesTable img { 
+        width:128px; padding-right: 5px; 
+    }
+
+    .poweredby {
+        display:none;
+    }
+
+   .zone-content > article.blog-post {
+        font-size: 12pt;
+        line-height: 1.8em;
+    }
+
+    .credits {
+        display: none;
+    }
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//s3.amazonaws.com/scripts.hellobar.com/830836400a9cf87fab1f7b19967b47c27142d8b9.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    if (!String.prototype.trim) {
+        String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g, '');};
+    }
+    String.prototype.fulltrim=function(){return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,'').replace(/\s+/g,' ');};
+   
+    $(document).ready(function() {
+
+    //Hide Sign-in link
+    $('ul.navbar-right li a:contains("Sign In")').text('    ');
+
+var newsletter = '<div id="mc_embed_signup"><form action="http://thewahlingroup.us7.list-manage1.com/subscribe/post?u=65e00aa00c80d98f762ebeb6e&amp;id=8ad074a071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>' +
+	'<label for="mce-EMAIL">Subscribe to The Web Weekly Newsletter!</label><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>' +
+	'<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></form></div>'
+
+    $('.zone-content > article.blog-post').append('<br /><br /><br />' + newsletter + '<br /<br /><div style="width:100%">Follow me on Twitter <a href="http://twitter.com/DanWahlin">@DanWahlin</a><br /><br /></div><table id="magazinesTable"><tr><td colspan="5"><h4>Subscribe to my Free FlipBoard Magazines:</h4></td></tr><tr><td><a href="http://flip.it/bdyUX" target="_blank"><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image15_2990B686.png" /></a></td><td><a href="http://flip.it/h5AXD" target="_blank"><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_thumb7_0BB23285.png" /></a></td><td><a href="http://flip.it/od9Sh" target="_blank"><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_5134A1FF.png" /></a></td><td><a href="http://flip.it/xvrt5" target="_blank"><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_614370B6.png" /></a></td><td><a href="http://flip.it/0y9Ye" target="_blank"><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_0A4E0FB3.png" /></a></td></tr></table><br />');
+
+
+    //Deal with the old comment system and the new Disqus sytem
+    //$('.zone-after-content article').siblings().remove(); //Hide all of the old comment code
+
+    $('form.comment-form').hide(); //Hide the old comment submission form since using Disqus
+
+    var commentCount = $('.comment-count');
+    commentCount.css('font-size', '14pt');
+    var commentHtml = commentCount.html();
+    commentCount.html(commentHtml + ' (previous comments before moving to Disqus)');
+    $('#comments').hide(); //hide "comments have been disabled" message
+
+    //Hide disqus if on list of blog posts
+    if ($('ul.pager').length) $('#disqus_thread').hide();
+    
+    //Hide comment number when on homepage listing blog posts
+    if ($('ul.pager').length) $('span.comment-count').hide();
+
+    });
+
+</script>
+
+
+</head> 
+<body>
+
+
+
+<div class="aside-2" id="layout-wrapper">
+<header id="layout-header" class="group">
+    <div id="header">
+        <div class="zone zone-header">
+<article class="widget-header widget-html-widget widget">
+    
+<div id="header">
+<div id="titleWrapper">
+<div id="title">
+<h1><a href="/dwahlin" style="text-decoration: none; color: #963;">Dan Wahlin</a></h1>
+<div>AngularJS, JavaScript, HTML5, jQuery, Node.js, ASP.NET, C#, XAML</div>
+</div>
+</div>
+</div>
+</article></div>
+    </div>
+</header>
+<div id="layout-navigation" class="group">
+    <div class="zone zone-navigation">
+<article class="widget-navigation widget-menu-widget widget">
+    
+<nav role="navigation">
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/dwahlin">Dan Wahlin</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="navbar-nav nav menu menu-main-menu">
+                
+                
+<li class="first"><a href="/dwahlin/">Home</a>
+</li>
+<li><a href="/dwahlin/about">About</a>
+</li>
+<li class="last"><a href="https://weblogs.asp.net/dwahlin/rss?containerid=13">RSS</a>
+</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/dwahlin/Users/Account/LogOn?ReturnUrl=%2Fdwahlin%2Fvideo-tutorial-angularjs-fundamentals-in-60-ish-minutes" rel="nofollow">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+</article></div>
+</div>
+<div id="layout-main-container">
+<div id="layout-main" class="group">
+    <div id="layout-content" class="group">
+                <div id="before-content">
+            <div class="zone zone-before-content">
+<article class="widget-newsletterform widget-before-content widget-html-widget widget">
+    
+<div id="mc_embed_signup" class="subscribe"><form action="http://thewahlingroup.us7.list-manage1.com/subscribe/post?u=65e00aa00c80d98f762ebeb6e&amp;id=8ad074a071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""><label for="mce-EMAIL">FREE copy of the JavaScript Patterns JumpStart Guide! Subscribe to The Web Weekly Newsletter:</label><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
+</form></div>
+<!-- 
+<div style="text-align: center;">
+<p>Learn AngularJS with the new <a href="http://weblogs.asp.net/dwahlin/archive/2014/03/24/the-angularjs-jumpstart-video-training-course-has-been-released.aspx" target="_blank">AngularJS JumpStart</a> course!</p>
+<p><a href="http://weblogs.asp.net/dwahlin/archive/2014/03/24/the-angularjs-jumpstart-video-training-course-has-been-released.aspx" target="_blank"><img style="background-image: none; padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" border="0" src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/CourseLogoWhiteBanner.png" /></a></p>
+</div>
+<p>&nbsp;</p>
+-->
+</article></div>
+        </div>
+                <div id="content" class="group">
+            <div class="zone zone-content">
+<article class="blog-post content-item">
+    <header>
+        
+
+
+
+
+<h1>Video Tutorial: AngularJS Fundamentals in 60-ish Minutes</h1>
+
+            <div class="metadata">
+                <time class="clearfix" datetime="2013-04-13" pubdate>Saturday, April 13, 2013</time>
+
+
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/.NET">.NET</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/Ajax">Ajax</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/AngularJS">AngularJS</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/Databinding">Databinding</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/HTML5">HTML5</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/JavaScript">JavaScript</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/Pluralsight">Pluralsight</a>
+    <a class="tag label label-default" rel="tag" href="/dwahlin/Tags/SPA">SPA</a>
+
+            </div>
+    </header>
+    
+<p>&nbsp;</p>
+<p><a href="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/AngularJS_thumb_1008B166.jpg"><img title="AngularJS" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" border="0" alt="AngularJS" src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/AngularJS_thumb_1008B166.jpg" width="676" height="189" /></a></p>
+<p>The term "Single Page Application" (<a href="http://en.wikipedia.org/wiki/Single_page_application" target="_blank">SPA</a>) is one of the biggest buzz words out there right now especially when it comes to building client-centric applications. SPAs provide a great way to load different views into a screen without reloading everything from scratch. When done right, true SPAs have support for history, routing, page lifecycle management, two-way data binding and more. How you get started with SPAs though? Do you go down the road of building 100% custom SPA applications or rely on a framework?</p>
+<p>I've debated that question a lot over the past year and preached (pretty strongly) that building a SPA from scratch just doesn't make any sense if productivity and maintenance are important to you. It may not be an issue for smaller apps but for larger, enterprise-scale apps with multiple screens, custom business rules and a plethora of other features <em>custom</em> SPAs just don't make sense in my opinion. If you work on a team with multiple developers all having different skill levels then you can imagine what it'd be like to have everyone contributing custom code that doesn't have any consistency across it. In the long-run it becomes a maintenance nightmare especially if there isn't any documentation or tests available (which is bad I realize). Add in several 3rd party libraries and the problem can get even worse especially over time as new versions of scripts are released and others become stale.</p>
+<p><a href="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_71B7CFB7.png"><img title="image" style="background-image: none; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 15px 0px 0px; display: inline; padding-right: 0px; border-width: 0px;" border="0" alt="image" align="left" src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_thumb_1C2400D5.png" width="235" height="236" /></a>The good news is that several different SPA frameworks have appeared on the scene that can greatly simplify the process of building SPAs while also making maintenance easier. One of the SPA frameworks that I really like is <a href="http://angularjs.org" target="_blank">AngularJS</a> since it provides a robust set of features that can be used out-of-the-box without having to be an expert in routing, history, data binding and more. It provides a solid base that you can build on top of. The challenge that I hear from many people though is that "AngularJS has a steep learning curve!". I just gave a talk on AngularJS at the <a href="http://anglebrackets.org/" target="_blank">AngleBrackets</a> conference in Las Vegas and heard this statement from several people. To be real honest, I felt the same way the first time I looked at it. However, the more I dug in the more I realized how powerful the framework was and all of the ways it could enhance productivity while simplifying maintenance. <a href="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_7B9CC122.png"><img title="image" style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; margin: 10px 0px 0px 15px; display: inline; padding-right: 0px; border-width: 0px;" border="0" alt="image" align="right" src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/image_thumb_16D51A24.png" width="288" height="180" /></a></p>
+<p><strong>Note:</strong> Before moving on I should mention that I also like the <a href="http://durandaljs.com/" target="_blank">Durandal</a> SPA framework too - it has robust functionality built-in as well and is definitely worth checking out.</p>
+<p>To help break down the learning curve I've put together a short video series titled "AngularJS Fundamentals in 60-ish Minutes" (I added "ish" because it ended up being more than 60 minutes :-)). In the video you'll learn how to get started with the AngularJS framework and some of the key features it provides that simplify SPA development. You'll see how to use directives, filters and data binding techniques to capture and display data. Next up is views, controllers and scope and the role they play followed by a discussion of modules, routes and factories/services. At the end of the video a sample application built using AngularJS is shown. I hope you enjoy the video and that it helps jumpstart your AngularJS learning process!</p>
+<p>&nbsp;</p>
+<h1>AngularJS Fundamentals in 60-ish Minutes</h1>
+<p>&nbsp;</p>
+<p>Watch the complete video tutorial here or choose specific sections from the video below.</p>
+<p><br /><iframe height="480" src="https://www.youtube.com/embed/i9MHigUZKEM" frameborder="0" width="640" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<h2>Jump to a Specific Section:</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0g_KpX08T4c" target="_blank">Introduction to AngularJS</a></li>
+<li><a href="https://www.youtube.com/watch?v=_kux-YQujjM" target="_blank">Getting Started with AngularJS Features</a></li>
+<li><a href="https://www.youtube.com/watch?v=LFEHq8YANLI" target="_blank">Directives, Filters and Data Binding</a></li>
+<li><a href="https://www.youtube.com/watch?v=Uj-KLCTsQrw" target="_blank">Views, Controllers and Scope</a></li>
+<li><a href="https://www.youtube.com/watch?v=rAyEGv67P-U" target="_blank">Modules, Routes and Factories/Services</a></li>
+<li><a href="https://www.youtube.com/watch?v=qCzYrDgOy1A" target="_blank">Customer Manager App Demo</a></li>
+<li><a href="https://www.youtube.com/watch?v=SL5sTjyowLY" target="_blank">Summary and Resources</a></li>
+</ul>
+<p><br /><a href="http://tinyurl.com/AngularJSDemos">Download AngularJS samples</a> and the Customer Manager sample application shown in the video.</p>
+<p><br /> Check out my <a href="http://weblogs.asp.net/dwahlin/archive/tags/AngularJS/default.aspx">other posts on AngularJS</a></p>
+</article></div>
+        </div>
+                <div id="after-content">
+            <div class="zone zone-after-content">
+<article class="widget-disqus widget-after-content widget-html-widget widget">
+    
+<p></p>
+<p></p>
+<div id="disqus_thread"></div>
+<script type="text/javascript">// <![CDATA[
+var disqus_shortname = 'danwahlinsblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+// ]]></script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
+</article>
+
+<h2 class="comment-count">36 Comments</h2>
+<ul class="comments"><li class="first bg-info">
+
+
+<blockquote class="comment comment-366">
+
+    
+
+<p class="text">
+Hi Alex, <br />
+ <br />
+Although I&#39;m not going to be able to re-encode everything to MP4 (too much of a challenge to keep multiple videos in-sync if they change in the future), check out Any Video Converter Free since it can grab youtube videos and convert them to MP4 if you&#39;re interested: http://www.any-video-converter.com/products/for_video_free. I like it so much I ended up buying the &quot;Ultimate&quot; version. <br />
+ <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-04-13T15:44:08.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-366">Saturday, April 13, 2013 3:44:08 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-367">
+
+    
+
+<p class="text">
+Hi Dan, <br />
+ <br />
+thanks for the great video, it&#39;s a good starting point for for further exploration of angular. I downloaded your app source too and got a question about your route setup. You&#39;re using:  <br />
+ <br />
+app.config(function ($routeProvider) { ... }  <br />
+ <br />
+but shouldn&#39;t there be a request for the $routeProvider dependency too? I looked at the docs and in their example they use:  <br />
+ <br />
+angular.module(&#39;phonecat&#39;, []).config([&#39;$routeProvider&#39;, function($routeProvider) { ... }] <br />
+ <br />
+What is the difference between the two approaches and why did you not have specify the $routeProvider dependency explicitly? <br />
+ <br />
+Thanks. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>aub3n</strong></span>
+        - <span class="when"><time datetime="2013-04-14T09:31:22.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-367">Sunday, April 14, 2013 9:31:22 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="bg-info">
+
+
+<blockquote class="comment comment-368">
+
+    
+
+<p class="text">
+aub3n: <br />
+ <br />
+Great question and something I initially wondered about as well. If you use the string array to pass values then the names you give in the strings must match up with the actual object, factory, service, etc. you are injecting. Then in the anonymous function the name can be whatever you want but the parameter in the function has to match with the position in the string array. If you don&#39;t use the string array then the parameter name in the function must match up with the actual object, factory, service, etc.  <br />
+ <br />
+By using the string array you can also avoid some minification problems when you shrink your scripts where parameter names in the function could get messed up due to the minification process. Strings are left alone during that process though so if the script is minified the parameter names are changed and it won&#39;t matter. I didn&#39;t want to go into all that in the 60 minute video (too much info for people new to AngularJS) and went with the more simple approach that works. <br />
+ <br />
+Here&#39;s an example of what I mean by renaming things. I don&#39;t normally like to do this since it makes it more confusing I think long-term, but it&#39;s an option: <br />
+ <br />
+var app = angular.module(&#39;demoApp&#39;, []); <br />
+ <br />
+//Notice that the string array values below match up with the actual objects <br />
+//but that the function parameter names are different...the order does matter though. <br />
+//If the script was &quot;minified&quot; the parameter names could change &amp; it  <br />
+//wouldn&#39;t affect anything since the string values will be left alone and AngularJS will <br />
+//handle passing the correct object/server/factory. <br />
+ <br />
+app.controller(&#39;MainCtrl&#39;, [&#39;$scope&#39;, &#39;$http&#39;, function(myScope, myHttp) { <br />
+  myScope.name = &#39;World&#39;; <br />
+}]); <br />
+ <br />
+HTH, <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-04-14T18:55:44.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-368">Sunday, April 14, 2013 6:55:44 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-369">
+
+    
+
+<p class="text">
+Hi Dan, thanks for this video, really brilliantly done... I was wondering if you have any pointers as to how Angular deals with model relationships.... It seems to not have any explicit way of handling this..... <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://blog.laminsanneh.com" rel="nofollow">Lamin Sanneh</a></strong></span>
+        - <span class="when"><time datetime="2013-04-15T13:35:44.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-369">Monday, April 15, 2013 1:35:44 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-370">
+
+    
+
+<p class="text">
+One of the best intros to angularjs I&#39;ve seen.  <br />
+ <br />
+It&#39;s worth highlighting that the difference between service/factory isn&#39;t really just the use of this vs returning an object. A service function is constructed (i.e. called with &#39;new&#39;) by angular when a dependency is injected so each controller that depends on a service will get their own instance. A factory object provides the opposite and behaves as a singleton hence they have pretty different use cases depdending on your needs. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Paul</strong></span>
+        - <span class="when"><time datetime="2013-04-16T11:03:04.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-370">Tuesday, April 16, 2013 11:03:04 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="bg-info">
+
+
+<blockquote class="comment comment-371">
+
+    
+
+<p class="text">
+Paul: <br />
+ <br />
+Excellent point! Thanks for adding that. I may do a follow-up video on the differences between services/factories/providers/value at some point so I&#39;ll make sure to highlight that. <br />
+ <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-04-16T15:01:46.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-371">Tuesday, April 16, 2013 3:01:46 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-372">
+
+    
+
+<p class="text">
+Paul, you have the reversed me thinks. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Ryan</strong></span>
+        - <span class="when"><time datetime="2013-04-16T16:51:13.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-372">Tuesday, April 16, 2013 4:51:13 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-373">
+
+    
+
+<p class="text">
+Karl and Ryan: <br />
+ <br />
+Thanks for additional info. I will say that services/factories/providers are hard to wrap your head around. Appreciate the link Karl. I had thought everything was actually a singleton when I first worked with them but really need to dig into the differences more myself and prove it all out. <br />
+ <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-04-16T17:20:10.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-373">Tuesday, April 16, 2013 5:20:10 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-374">
+
+    
+
+<p class="text">
+Thanks for the correction.  <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Paul</strong></span>
+        - <span class="when"><time datetime="2013-04-16T20:22:07.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-374">Tuesday, April 16, 2013 8:22:07 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-375">
+
+    
+
+<p class="text">
+Awesome job, thanks Dan! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Steven</strong></span>
+        - <span class="when"><time datetime="2013-04-16T21:09:59.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-375">Tuesday, April 16, 2013 9:09:59 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="bg-info">
+
+
+<blockquote class="comment comment-376">
+
+    
+
+<p class="text">
+Thanks Steven and fraserxv - appreciate it! <br />
+ <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-04-16T21:46:01.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-376">Tuesday, April 16, 2013 9:46:01 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-377">
+
+    
+
+<p class="text">
+I&#39;ve been working with AngularJS for a short while and have viewed many, many videos about the subject, but this is probably the best introduction I&#39;ve seen to AngularJS.  I&#39;m looking forward to the PluralSight videos and the follow-up video on the differences between services/factories/providers/value.  <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>BarDev</strong></span>
+        - <span class="when"><time datetime="2013-04-18T06:10:24.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-377">Thursday, April 18, 2013 6:10:24 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-378">
+
+    
+
+<p class="text">
+Dan you are a very clever man, Easily the best AngularJS video. <br />
+ <br />
+I had a sneaky feeling that Scott was working on a AngularJS PluralSight video, based on his latest set of blog posts <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Matt</strong></span>
+        - <span class="when"><time datetime="2013-04-18T07:26:14.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-378">Thursday, April 18, 2013 7:26:14 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-379">
+
+    
+
+<p class="text">
+Really appreciate the video and expectation are really gone high with the Pluralsight Angular course you are working on. By the way when its going to release? Can&#39;t wait....thanks <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Khuzema</strong></span>
+        - <span class="when"><time datetime="2013-04-18T11:39:09.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-379">Thursday, April 18, 2013 11:39:09 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-380">
+
+    
+
+<p class="text">
+Hi Dan, <br />
+ <br />
+Great introduction to angular.  Could you please consider a video about integrating Angular with TypeScript?  With both of these technologies becoming more and more popular, it will be more common to integrate them together. <br />
+ <br />
+Thanks for your consideration! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://dave-black.blogspot.com" rel="nofollow">Dave Black</a></strong></span>
+        - <span class="when"><time datetime="2013-04-18T14:35:09.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-380">Thursday, April 18, 2013 2:35:09 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-381">
+
+    
+
+<p class="text">
+Thanks a lot for the video!  <br />
+You kept the things really clear. It helps me to quickly understand bases. <br />
+Thanks for the time you spent on it! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>LuxB2000</strong></span>
+        - <span class="when"><time datetime="2013-04-19T12:51:19.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-381">Friday, April 19, 2013 12:51:19 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-382">
+
+    
+
+<p class="text">
+Great videos! In 5. AngularJS Fundamentals in 60 Minutes - Modules, Routes and Factories around 20:00 you are sharing SimpleController across 2 views. Why is it when you add a new person in view1 the view is updated with the new user but when you switch to view2 you get the initial scope without the new user? I would have assumed the scope is &quot;global&quot; and visible to all views? <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Steve</strong></span>
+        - <span class="when"><time datetime="2013-04-21T10:24:08.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-382">Sunday, April 21, 2013 10:24:08 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-383">
+
+    
+
+<p class="text">
+Really nice introduction of angular <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>vishnu</strong></span>
+        - <span class="when"><time datetime="2013-04-21T17:19:49.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-383">Sunday, April 21, 2013 5:19:49 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="bg-info">
+
+
+<blockquote class="comment comment-384">
+
+    
+
+<p class="text">
+Steve:  <br />
+ <br />
+Thanks for watching. The scope is specific to the controller so at that point nothing was being shared across the views since the controller was created again for view 2. Normally you&#39;d put data logic into a factory or service which is covered more at the end of the video and you&#39;d have a backend to store it. The demos don&#39;t have that here mainly to keep things simple and focused. <br />
+ <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-04-21T19:15:27.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-384">Sunday, April 21, 2013 7:15:27 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-385">
+
+    
+
+<p class="text">
+Much thanks, Dan.  Very straightforward! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Scott E</strong></span>
+        - <span class="when"><time datetime="2013-04-22T02:45:57.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-385">Monday, April 22, 2013 2:45:57 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-386">
+
+    
+
+<p class="text">
+This is a very great introduction to AngularJS. I&#39;ve been on the hunt for a JavaScript MVVM/MVC framework and I think enough light bulbs went on so far in this video to use it in an enterprise application. Do you have any plans for more videos?  <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Erik</strong></span>
+        - <span class="when"><time datetime="2013-04-23T15:43:42.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-386">Tuesday, April 23, 2013 3:43:42 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-387">
+
+    
+
+<p class="text">
+Great introduction Dan. Learned a lot from your video ! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>8indaas</strong></span>
+        - <span class="when"><time datetime="2013-04-24T05:06:15.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-387">Wednesday, April 24, 2013 5:06:15 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-388">
+
+    
+
+<p class="text">
+This is a great tutorial! I spent almost 2 weeks doing Angular tutorials and watching video conferences and this condensed everything I learned into 60 min! I wish I would have watched this weeks ago. After looking through your source I&#39;m a little confused about the animatedView.js. I have seen ng-view used to bind templates but never a directive. Can you explain how this directive works? Namely, I&#39;m interested in how the templateUrl is binded to the directive and why the script breaks when I switch from &amp;lt;div animated-view&amp;gt;&amp;lt;/div&amp;gt; over to &amp;lt;div ng-view&amp;gt;&amp;lt;/div&amp;gt;. <br />
+ <br />
+Thanks again! <br />
+ <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Kevin</strong></span>
+        - <span class="when"><time datetime="2013-04-26T19:11:42.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-388">Friday, April 26, 2013 7:11:42 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-389">
+
+    
+
+<p class="text">
+After trying about a dozen Getting Started with Angular JS tutorials, this is the only one that&#39;s worked. Great stuff, thanks! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Isaac</strong></span>
+        - <span class="when"><time datetime="2013-04-28T00:21:23.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-389">Sunday, April 28, 2013 12:21:23 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-390">
+
+    
+
+<p class="text">
+Great tutorial, thanks! <br />
+ <br />
+Kevin: the reason the script breaks when you switch from  over to  is the css of the .view class. In order to make the animated-view fade-in work properly, it is initially hidden (opacity: 0.0;). Remove this and it will work. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://thinkerit.be" rel="nofollow">Jo</a></strong></span>
+        - <span class="when"><time datetime="2013-05-06T12:38:14.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-390">Monday, May 6, 2013 12:38:14 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-391">
+
+    
+
+<p class="text">
+thanks for the video ! <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>vincent bunjes</strong></span>
+        - <span class="when"><time datetime="2013-05-06T17:37:52.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-391">Monday, May 6, 2013 5:37:52 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="bg-info">
+
+
+<blockquote class="comment comment-392">
+
+    
+
+<p class="text">
+Thanks Jo! I completely lost track of the original question (sorry about that Kevin) so I appreciate you answering it. That&#39;s absolutely correct. <br />
+ <br />
+Dan <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://weblogs.asp.net/dwahlin" rel="nofollow">dwahlin</a></strong></span>
+        - <span class="when"><time datetime="2013-05-06T19:38:04.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-392">Monday, May 6, 2013 7:38:04 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-393">
+
+    
+
+<p class="text">
+Hi Dan, I have to echo previous comments and say this is by far the best introduction video to AngularJS available to date, and thanks for taking the time to make and share with us. <br />
+ <br />
+1 comment: As I was following along I got quite stuck for a long while with the routes becuase I kept making several mistakes with the URLs, typing them with hashes and slashes and without - I tried every possible variation except the right ones. <br />
+ <br />
+In fairness, while following along I went on very different fork to what you showed, but did this in order to ensure I was &quot;getting it&quot;. <br />
+ <br />
+Is there any chance you could explain this a bit more? - if this is something particular to AngularJS (it could be an SPA thing in general, as I&#39;m new to the whole concept) <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>GeorgieP</strong></span>
+        - <span class="when"><time datetime="2013-05-07T14:29:19.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-393">Tuesday, May 7, 2013 2:29:19 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-394">
+
+    
+
+<p class="text">
+I have a question regarding the Grid implementation in Angularjs which have a functionality of editing like grid-view in asp.net. I want to show data in the grid with edit button and more editable icons. Can you please guide me how to implement it in Angularjs    <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Sumit K Gupta</strong></span>
+        - <span class="when"><time datetime="2013-05-08T10:17:27.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-394">Wednesday, May 8, 2013 10:17:27 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-395">
+
+    
+
+<p class="text">
+Excellent Tutorial, one of the very best.  <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Kenneth</strong></span>
+        - <span class="when"><time datetime="2013-05-10T13:27:59.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-395">Friday, May 10, 2013 1:27:59 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-396">
+
+    
+
+<p class="text">
+Nice intro on Angular. I had the same reaction when I first looked at Angular. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Gary Haddon</strong></span>
+        - <span class="when"><time datetime="2013-05-10T22:02:08.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-396">Friday, May 10, 2013 10:02:08 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-397">
+
+    
+
+<p class="text">
+Excellent tutorial, to the point covering fundamentals and love your presentation. <br />
+ <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Naresh</strong></span>
+        - <span class="when"><time datetime="2013-05-12T17:29:35.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-397">Sunday, May 12, 2013 5:29:35 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-398">
+
+    
+
+<p class="text">
+Great video for new comer like me i love it hopefully will be able to master it in future. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Prashant</strong></span>
+        - <span class="when"><time datetime="2013-05-13T02:23:45.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-398">Monday, May 13, 2013 2:23:45 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-399">
+
+    
+
+<p class="text">
+I really needed this -- great job. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Sean McAuliffe</strong></span>
+        - <span class="when"><time datetime="2013-06-27T11:58:46.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-399">Thursday, June 27, 2013 11:58:46 AM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="">
+
+
+<blockquote class="comment comment-400">
+
+    
+
+<p class="text">
+thanks man, great job <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong><a href="http://lunart.com.ua" rel="nofollow">Denis</a></strong></span>
+        - <span class="when"><time datetime="2013-07-06T15:29:19.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-400">Saturday, July 6, 2013 3:29:19 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+<li class="last ">
+
+
+<blockquote class="comment comment-401">
+
+    
+
+<p class="text">
+Thanks for your hard work. <br />
+
+</p>
+
+
+    <footer>
+        <span class="who"><strong>Ankur</strong></span>
+        - <span class="when"><time datetime="2013-07-09T19:22:21.0000000Z"><a class="alert-link" href="/dwahlin/video-tutorial-angularjs-fundamentals-in-60-ish-minutes#comment-401">Tuesday, July 9, 2013 7:22:21 PM</a></time></span>
+    </footer>
+
+    
+</blockquote>
+
+
+</li>
+</ul>
+
+
+
+
+
+
+
+    <div id="comments">
+        <p class="comment-disabled alert alert-warning">Comments have been disabled for this content.</p>
+    </div>
+</div>
+        </div>
+    </div>
+    <aside id="aside-second" class="aside-second">
+        <div class="zone zone-aside-second">
+<article class="widget-Picture widget-aside-second widget-html-widget widget">
+    
+<!--<p><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/DanHeadShotBlog.jpg" border="0" /></p>-->
+</article>
+<article class="widget-twitterlogo widget-aside-second widget-html-widget widget">
+    
+<div style="text-align: center;"><br /><a href="http://twitter.com/danwahlin" target="_blank"><img src="https://mscblogs.blob.core.windows.net/media/dwahlin/Media/FollowMeTwitter.png" border="0" /></a></div>
+<p><br /><br /><br /></p>
+</article>
+<article class="widget-pluralsightcourses widget-aside-second widget-html-widget widget">
+    
+<div><br />
+<div id="CoursesDiv">My Pluralsight Courses</div>
+<ul class="CoursesList">
+<li><a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=web-development" target="_blank">Building ASP.NET MVC, EF Code First, HTML5, and jQuery Apps</a></li>
+<li><a href="http://pluralsight.com/training/Courses/TableOfContents/csharp-events-delegates" target="_blank">C# Events, Delegates &amp; Lambdas</a></li>
+<li><a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=html5-canvas-fundamentals" target="_blank">HTML5 Canvas Fundamentals</a></li>
+<li><a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=jquery-fundamentals" target="_blank">jQuery Fundamentals</a></li>
+<li><a href="http://pluralsight.com/training/Courses/TableOfContents/jquery-tips-and-tricks" target="_blank">jQuery Tips and Tricks</a></li>
+<li><a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=aspdotnet-webforms4-intro" target="_blank">Intro to ASP.NET Web Forms</a></li>
+<li><a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=win8-intro" target="_blank">Intro to Windows 8 Metro Apps</a></li>
+<li><a href="http://pluralsight.com/training/Courses/TableOfContents/aspnet-webforms45-new-features" target="_blank">New Features in ASP.NET 4.5</a></li>
+<li><a href="http://www.pluralsight-training.net/microsoft/Courses/TableOfContents?courseName=structuring-javascript" target="_blank">Structuring JavaScript Code</a></li>
+<li><a href="http://pluralsight.com/training/Courses/TableOfContents/typescript" target="_blank">TypeScript Fundamentals</a></li>
+</ul>
+</div>
+</article>
+<article class="widget-interfacett widget-aside-second widget-html-widget widget">
+    
+<div><br />
+<div id="CoursesDiv">Interface Technical Training Classes with Dan Wahlin</div>
+<div data-value="Dan Wahlin" data-request-by="instructor" class="interfacett-course-listing"></div>
+<p></p>
+<script type="text/javascript">// <![CDATA[
+$(function() {
+        (function(d, s, id) {
+            var js, ijs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'http://www.interfacett.com/sites/all/modules/custom/js_widgets/course_listing.js';
+            ijs.parentNode.insertBefore(js, ijs);
+            }(document,'script','interface-tt-courses'));
+    });
+// ]]></script>
+</div>
+</article>
+<article class="widget-tagcloud widget-aside-second widget-tag-cloud widget">
+    
+
+<ul class="tag-cloud">
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/%20Workaholic" style="font-size:1em; font-weight:400"> Workaholic</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-20">
+
+
+            <a dataScale="1" href="/dwahlin/Tags/.NET" style="font-size:2em; font-weight:800">.NET</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/3D" style="font-size:1em; font-weight:400">3D</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/ADO.NET" style="font-size:1em; font-weight:400">ADO.NET</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Adobe" style="font-size:1em; font-weight:400">Adobe</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Ajax" style="font-size:1em; font-weight:400">Ajax</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/anglebrackets" style="font-size:1em; font-weight:400">anglebrackets</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/AngularJS" style="font-size:1.1em; font-weight:421.1">AngularJS</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Animations" style="font-size:1em; font-weight:400">Animations</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Apple" style="font-size:1em; font-weight:400">Apple</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/Architecture" style="font-size:1.1em; font-weight:421.1">Architecture</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-8">
+
+
+            <a dataScale="0.368421052631579" href="/dwahlin/Tags/ASP.NET" style="font-size:1.4em; font-weight:547.4">ASP.NET</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-4">
+
+
+            <a dataScale="0.157894736842105" href="/dwahlin/Tags/ASP.NET%20AJAX" style="font-size:1.2em; font-weight:463.2">ASP.NET AJAX</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/ASP.NET%20MVC" style="font-size:1.1em; font-weight:421.1">ASP.NET MVC</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/ASP.NET%20Web%20API" style="font-size:1em; font-weight:400">ASP.NET Web API</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Azure" style="font-size:1em; font-weight:400">Azure</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Breeze" style="font-size:1em; font-weight:400">Breeze</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-4">
+
+
+            <a dataScale="0.157894736842105" href="/dwahlin/Tags/C%23" style="font-size:1.2em; font-weight:463.2">C#</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Canvas" style="font-size:1em; font-weight:400">Canvas</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Commanding" style="font-size:1em; font-weight:400">Commanding</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/consulting" style="font-size:1em; font-weight:400">consulting</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/CSS" style="font-size:1.1em; font-weight:421.1">CSS</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/CSS%20Media%20Queries" style="font-size:1em; font-weight:400">CSS Media Queries</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/CSS3" style="font-size:1em; font-weight:400">CSS3</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Databinding" style="font-size:1em; font-weight:400">Databinding</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Delegates" style="font-size:1em; font-weight:400">Delegates</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/Design%20Patterns" style="font-size:1.1em; font-weight:421.1">Design Patterns</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/DevConnections" style="font-size:1em; font-weight:400">DevConnections</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/devintersection" style="font-size:1em; font-weight:400">devintersection</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/directives" style="font-size:1em; font-weight:400">directives</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/ECMASCript6" style="font-size:1em; font-weight:400">ECMASCript6</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/EF%20Code%20First" style="font-size:1em; font-weight:400">EF Code First</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Entity%20Framework" style="font-size:1em; font-weight:400">Entity Framework</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Events" style="font-size:1em; font-weight:400">Events</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Express" style="font-size:1em; font-weight:400">Express</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Expression%20Blend" style="font-size:1em; font-weight:400">Expression Blend</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/goals" style="font-size:1em; font-weight:400">goals</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/GridView" style="font-size:1em; font-weight:400">GridView</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Grunt" style="font-size:1em; font-weight:400">Grunt</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-4">
+
+
+            <a dataScale="0.157894736842105" href="/dwahlin/Tags/HTML5" style="font-size:1.2em; font-weight:463.2">HTML5</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/IE9" style="font-size:1em; font-weight:400">IE9</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/IISExpress" style="font-size:1em; font-weight:400">IISExpress</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/India" style="font-size:1em; font-weight:400">India</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Instinct" style="font-size:1em; font-weight:400">Instinct</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Interfaces" style="font-size:1em; font-weight:400">Interfaces</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/IoC" style="font-size:1em; font-weight:400">IoC</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/iPad" style="font-size:1em; font-weight:400">iPad</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/iPhone" style="font-size:1em; font-weight:400">iPhone</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Java" style="font-size:1em; font-weight:400">Java</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-6">
+
+
+            <a dataScale="0.263157894736842" href="/dwahlin/Tags/JavaScript" style="font-size:1.3em; font-weight:505.3">JavaScript</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-3">
+
+
+            <a dataScale="0.105263157894737" href="/dwahlin/Tags/jQuery" style="font-size:1.1em; font-weight:442.1">jQuery</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/jQuery%20Mobile" style="font-size:1em; font-weight:400">jQuery Mobile</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/JSON" style="font-size:1.1em; font-weight:421.1">JSON</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Lambdas" style="font-size:1em; font-weight:400">Lambdas</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/LINQ" style="font-size:1.1em; font-weight:421.1">LINQ</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Metro%20Apps" style="font-size:1em; font-weight:400">Metro Apps</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Mobile" style="font-size:1em; font-weight:400">Mobile</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Modernizr" style="font-size:1em; font-weight:400">Modernizr</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/MongoDB" style="font-size:1em; font-weight:400">MongoDB</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Music" style="font-size:1em; font-weight:400">Music</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/MVC" style="font-size:1em; font-weight:400">MVC</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/MVVM" style="font-size:1.1em; font-weight:421.1">MVVM</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Node.js" style="font-size:1em; font-weight:400">Node.js</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/patterns" style="font-size:1em; font-weight:400">patterns</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Pluralsight" style="font-size:1em; font-weight:400">Pluralsight</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/pomodoro%20focus" style="font-size:1em; font-weight:400">pomodoro focus</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/productivity" style="font-size:1em; font-weight:400">productivity</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Razor" style="font-size:1em; font-weight:400">Razor</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/RequireJS" style="font-size:1em; font-weight:400">RequireJS</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/REST" style="font-size:1em; font-weight:400">REST</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/RIA%20Services" style="font-size:1em; font-weight:400">RIA Services</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Security" style="font-size:1em; font-weight:400">Security</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/SharePoint" style="font-size:1em; font-weight:400">SharePoint</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-7">
+
+
+            <a dataScale="0.315789473684211" href="/dwahlin/Tags/Silverlight" style="font-size:1.3em; font-weight:526.3">Silverlight</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Sockets" style="font-size:1em; font-weight:400">Sockets</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Software%20Development" style="font-size:1em; font-weight:400">Software Development</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/SPA" style="font-size:1.1em; font-weight:421.1">SPA</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/SQL%20Server" style="font-size:1em; font-weight:400">SQL Server</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/T4" style="font-size:1em; font-weight:400">T4</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Tablets" style="font-size:1em; font-weight:400">Tablets</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/tasks" style="font-size:1em; font-weight:400">tasks</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Teaching" style="font-size:1em; font-weight:400">Teaching</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/TechEd" style="font-size:1em; font-weight:400">TechEd</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/TypeScript" style="font-size:1em; font-weight:400">TypeScript</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Unit%20Tests" style="font-size:1em; font-weight:400">Unit Tests</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/Video" style="font-size:1.1em; font-weight:421.1">Video</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Visual%20Studio" style="font-size:1em; font-weight:400">Visual Studio</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/WCF" style="font-size:1.1em; font-weight:421.1">WCF</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-3">
+
+
+            <a dataScale="0.105263157894737" href="/dwahlin/Tags/Web%20Services" style="font-size:1.1em; font-weight:442.1">Web Services</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Web%20Weekly" style="font-size:1em; font-weight:400">Web Weekly</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Websockets" style="font-size:1em; font-weight:400">Websockets</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/Windows%208" style="font-size:1.1em; font-weight:421.1">Windows 8</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Windows%20Mobile" style="font-size:1em; font-weight:400">Windows Mobile</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Windows%20Phone%207" style="font-size:1em; font-weight:400">Windows Phone 7</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/WinRT" style="font-size:1em; font-weight:400">WinRT</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/Work" style="font-size:1em; font-weight:400">Work</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/WPF" style="font-size:1em; font-weight:400">WPF</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-1">
+
+
+            <a dataScale="0" href="/dwahlin/Tags/XAML" style="font-size:1em; font-weight:400">XAML</a>
+        </li>
+        <li class="tag-cloud-tag tag-cloud-tag-2">
+
+
+            <a dataScale="0.0526315789473684" href="/dwahlin/Tags/XML" style="font-size:1.1em; font-weight:421.1">XML</a>
+        </li>
+</ul>
+</article></div>
+    </aside>
+</div>
+</div>
+<div id="layout-footer" class="group">
+    <footer id="footer">
+        <div id="footer-quad" class="group">
+                                            </div>
+        <div id="footer-sig" class="group">
+            <div class="zone zone-footer">    <div class="credits text-muted"><span class="terms"><a href="http://www.asp.net/terms-of-use">Terms Of Use</a></span> - <span class="poweredby">Powered by <a href="http://www.orchardproject.net" target="_blank">Orchard</a></span></div>
+</div>
+        </div>
+    </footer>
+</div>
+</div>
+
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">var omni_guid="17bf9f3b-f119-4b3c-8830-53c296822206";</script>
+<script type="text/javascript" src="//az619453.vo.msecnd.net/content/Scripts/prod-omniture.min.js"></script>
+<noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://msstonojsaspnet.112.2O7.net/b/ss/msstonojsaspnet/1/H.20.2--NS/0" height="1" width="1" alt="omni" /></a></noscript>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10373992-1', 'asp.net');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
