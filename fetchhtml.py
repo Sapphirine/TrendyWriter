@@ -5,7 +5,7 @@ from HTMLParser import HTMLParser
 # url = 'http://www.upworthy.com/'
 # save path and file name
 local = 'res/url_01.html'
-strore_path = 'topic/url_01.txt'
+strore_path = 'topic/all_topic.txt'
 
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser):
@@ -76,7 +76,7 @@ class MyHTMLParser(HTMLParser):
 
 
 def main():
-	url = raw_input('Enter a keyword : ')
+	url = raw_input('Enter a url : ')
 	result = urllib.urlretrieve(url, local)
 	# print result
 	htmltxt = ''
