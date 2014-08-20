@@ -6,7 +6,7 @@
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQECUFZQGwAFUFVbBQI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
 
 	<title>Elite Daily | The Voice of Generation Y</title>
 
@@ -137,7 +137,7 @@
 							<div aria-hidden="true" data-icon="&#x53;" class="icon-search"></div>
 						</div>
 					</div>
-					<script>ADTECH.config.page = { protocol: 'http', server: 'adserver.adtechus.com', network: '5391.1', pageid: 621909, kv: {authorid:"1831", env:"www", ishome:"1", isarchive:"0", issingle:"0", ispage:"0", postid:"719819", nsfw:"0", catid:["40135", "1867"]}, params: { loc: '100', grp: ''}};</script><div class="leaderboardAd"><div id="2793136" class="" data-adid="2793136"><noscript><a href="http://adserver.adtechus.com/adlink|3.0|5391.1|2793136|0|225|ADTECH;loc=300;key=key1+key2+key3+key4;alias=" target="_blank"><img src="http://adserver.adtechus.com/adserv|3.0|5391.1|2793136|0|225|ADTECH;loc=300;key=key1+key2+key3+key4;alias=" border="0" width="728" height="90"></a></noscript></div>
+					<script>ADTECH.config.page = { protocol: 'http', server: 'adserver.adtechus.com', network: '5391.1', pageid: 621909, kv: {authorid:"35", env:"www", ishome:"1", isarchive:"0", issingle:"0", ispage:"0", postid:"720272", nsfw:"0", catid:["16409", "1041"]}, params: { loc: '100', grp: ''}};</script><div class="leaderboardAd"><div id="2793136" class="" data-adid="2793136"><noscript><a href="http://adserver.adtechus.com/adlink|3.0|5391.1|2793136|0|225|ADTECH;loc=300;key=key1+key2+key3+key4;alias=" target="_blank"><img src="http://adserver.adtechus.com/adserv|3.0|5391.1|2793136|0|225|ADTECH;loc=300;key=key1+key2+key3+key4;alias=" border="0" width="728" height="90"></a></noscript></div>
 <script> ADTECH.config.placements[2793136] = { sizeid: 225, fif: {usefif: 'true'}, params: { alias: '', target: '_blank' }};</script></div>				</div>
 				<nav role="navigation" class="hide-for-small top-nav">
 					<ul class="nav-bar"><li id="menu-item-239113" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-flyout menu-item-239113 news"><a href="http://elitedaily.com/category/news/" >News</a>
@@ -554,56 +554,56 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 								<div class="post-box">
 						
 	
-		                	<article id="post-718988" class="post-718988 post type-post status-publish format-standard hentry category-news category-politics tag-cops-with-guns tag-guns tag-mike-brown tag-police tag-shooting single">
-		<a href="http://elitedaily.com/news/politics/ok-cops-shoot-people/718988/">
+		                	<article id="post-716785" class="post-716785 post type-post status-publish format-standard hentry category-news category-politics tag-mike-brown-shooting tag-police-corruption tag-police-militarization tag-police-military tag-police-with-weapons single">
+		<a href="http://elitedaily.com/news/politics/can-end-police-militarization-corruption-brutality/716785/">
 
-				<img class="aligncenter" alt="At What Point Does A Cop Have The Right To Shoot Someone?" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/3Z0A45601.jpg">
+				<img class="aligncenter" alt="Hands Up, Don&#8217;t Shoot: We Can End Police Militarization, Corruption And Brutality" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/nbw_Ferguson_0042.jpg">
 		</a>	
 		<header class="postHeader">
 			<div class="subText">
 				<span class="categoryName"><a href="http://elitedaily.com/category/news/politics/">Politics</a></span>
-				<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/ateplitzky/" title="Posts by Alex Teplitzky" rel="author">Alex Teplitzky</a></span></author>
-				<time class="updated" datetime="2014-08-20T13:34:56+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">1:34pm</span></time>			</div>
-			<h2><a href="http://elitedaily.com/news/politics/ok-cops-shoot-people/718988/">At What Point Does A Cop Have The Right To Shoot Someone?</a></h2>
+				<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/jhaltiwanger/" title="Posts by John Haltiwanger" rel="author">John Haltiwanger</a></span></author>
+				<time class="updated" datetime="2014-08-20T15:52:23+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:52pm</span></time>			</div>
+			<h2><a href="http://elitedaily.com/news/politics/can-end-police-militarization-corruption-brutality/716785/">Hands Up, Don&#8217;t Shoot: We Can End Police Militarization, Corruption And Brutality</a></h2>
 		</header>
 		<div class="entry-content">
-		In Ferguson, Missouri and around the country, some very important issues have been thrust into the spotlight in regards to when cops are allowed to and should use force against the community they have sworn to protect. The main question on ...		</div>
+		The recent events in Ferguson, Missouri have forced the United States to ask some deep questions surrounding the direction of the nation. The shooting of Michael Brown has brought racism and police brutality to the forefront of American pol...		</div>
 		<div class="post-divider"></div>
 	</article>	
 
       	        
-	    <article id="post-719455" class="post-719455 post type-post status-publish format-standard hentry category-culture category-life tag-college-tag tag-education tag-epxerience tag-experience-college tag-skip-class two-one-large">
+	    <article id="post-708493" class="post-708493 post type-post status-publish format-standard hentry category-news category-politics tag-college-debt tag-college-loans tag-loans tag-student-debt tag-student-loans two-one-large">
 
-			<a href="http://elitedaily.com/life/culture/skip-class-in-college/719455/">
+			<a href="http://elitedaily.com/news/politics/student-loan-debt-hurting-just-wallets-hope/708493/">
 						
-			<img class="aligncenter" alt="Go To College, Skip Class: Why Experience Is The Best Education" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/class-600x300.jpeg">
+			<img class="aligncenter" alt="Student Loan Debt Hurts More Than Just Our Wallets, It Hurts This Nation&#8217;s Future" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/studnet_loans-600x300.jpg">
 			</a>	
 			<header class="postHeader">
 				<div class="subText">
-					<span class="categoryName"><a href="http://elitedaily.com/category/life/">Life</a></span>
-					<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/lmartin/" title="Posts by Lauren Martin" rel="author">Lauren Martin</a></span></author>
-					<time class="updated" datetime="2014-08-20T13:33:51+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">1:33pm</span></time>				</div>
-				<h2><a href="http://elitedaily.com/life/culture/skip-class-in-college/719455/">Go To College, Skip Class: Why Experience Is The Best Education</a></h2>
+					<span class="categoryName"><a href="http://elitedaily.com/category/news/politics/">Politics</a></span>
+					<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/scruz/" title="Posts by Steven Cruz" rel="author">Steven Cruz</a></span></author>
+					<time class="updated" datetime="2014-08-20T15:29:08+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:29pm</span></time>				</div>
+				<h2><a href="http://elitedaily.com/news/politics/student-loan-debt-hurting-just-wallets-hope/708493/">Student Loan Debt Hurts More Than Just Our Wallets, It Hurts This Nation&#8217;s Future</a></h2>
 			</header>
 			<div class="entry-content">
-			There are two ways to view education in this world. I’m not saying this to sound profound, poetic or because I want a deep opening paragraph. I’m saying it because th...			</div>
+			Did you ever think that going to college would make you worse off than you were when you f...			</div>
 			<div class="post-divider"></div>
 		</article>	
 
       	        	
-    <article id="post-719129" class="post-719129 post type-post status-publish format-standard hentry category-culture category-life tag-miss-college tag-missing-college tag-post-graduate-sadness tag-post-graduate tag-sad-leaving-college two-one-small">
-		<a href="http://elitedaily.com/life/culture/sad-leaving-college/719129/">
-		<img class="aligncenter" alt="17 FOMO Moments Every Post-Grad Gets When College Starts Up Again" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/tumblr_na7k6g7mrZ1reilmyo1_1280-300x150.jpg">
+    <article id="post-719991" class="post-719991 post type-post status-publish format-standard hentry category-envision tag-creative tag-creative-workspaces tag-famous-peoples-workspaces tag-messiness-stimulates two-one-small">
+		<a href="http://elitedaily.com/envision/30-famous-peoples-workspaces-prove-messiness-stimulates-creativity-photos/719991/">
+		<img class="aligncenter" alt="Empty Desk, Empty Mind: 30 Workspaces That Prove Messiness Stimulates Creativity" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/Featured10-300x150.jpg">
 		</a>	
 		<header class="postHeader">
 			<div class="subText">
-				<span class="categoryName"><a href="http://elitedaily.com/category/life/">Life</a></span>
-				<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/largintar/" title="Posts by Laura Argintar" rel="author">Laura Argintar</a></span></author>				
-				<time class="updated" datetime="2014-08-20T13:09:47+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">1:09pm</span></time>			</div>
-			<h2><a href="http://elitedaily.com/life/culture/sad-leaving-college/719129/">17 FOMO Moments Every Post-Grad Gets When College Starts Up Again</a></h2>
+				<span class="categoryName"><a href="http://elitedaily.com/category/envision/">Envision</a></span>
+				<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/robertelite/" title="Posts by Anthony Selden" rel="author">Anthony Selden</a></span></author>				
+				<time class="updated" datetime="2014-08-20T15:28:32+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:28pm</span></time>			</div>
+			<h2><a href="http://elitedaily.com/envision/30-famous-peoples-workspaces-prove-messiness-stimulates-creativity-photos/719991/">Empty Desk, Empty Mind: 30 Workspaces That Prove Messiness Stimulates Creativity</a></h2>
 		</header>
 		<div class="entry-content">
-		Uh, does every day count? College is like an exquisite bubble in which the lines between work and play are blurred, your biggest worry is will there be enough vodka at the pregame? You feel so academically stimulated that you can actually j...		
+		No, we&#8217;re not trying to say you&#8217;ve failed to become a famous painter or writer because you keep cleaning up your desk. But it&#8217;s no coincidence that most of the famous creatives of the world keep messy workspaces. Why? Wel...		
 		</div>
 		<div class="post-divider"></div>
 	</article>	
@@ -618,23 +618,23 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 			</noscript>
 		</div> 
 		<script> 
-			ADTECH.config.page = { protocol: 'http', server: 'adserver.adtechus.com', network: '5391.1', pageid: 685817, kv: {authorid:"1048", env:"www", ishome:"1", isarchive:"0", issingle:"0", ispage:"0", postid:"713824", nsfw:"0", catid:["41866", "14436"]}, params: { loc: '100', grp: '' }}; 
+			ADTECH.config.page = { protocol: 'http', server: 'adserver.adtechus.com', network: '5391.1', pageid: 685817, kv: {authorid:"55", env:"www", ishome:"1", isarchive:"0", issingle:"0", ispage:"0", postid:"720059", nsfw:"0", catid:["14995"]}, params: { loc: '100', grp: '' }}; 
 			ADTECH.config.placements[3195366] = { sizeid: 170, fif: {usefif: 'true', width: 300, height: 250}, kv: {mpos:"300x250"}, params: { alias: 'mSite_Default-ATF-300 x250-5', target: '_blank' }}; 
 			asyncMobileSafe(3195366); 
 		</script>    </div>
-    <article id="post-713824" class="post-713824 post type-post status-publish format-standard hentry category-funny-papers category-humor tag-guys tag-stalker tag-take-a-hint tag-texters tag-texting two-one-small">
-		<a href="http://elitedaily.com/humor/guys-cant-take-hint-photos/713824/">	
-		<img class="aligncenter" alt="14 Guys Who Should Never Be Allowed To Text Women Again (Photos)" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/cant-take-a-hint-elite-daily-41-300x150.jpg">
+    <article id="post-720059" class="post-720059 post type-post status-publish format-standard hentry category-dating tag-dating-tag tag-love tag-relationships tag-right-person tag-wrong-time two-one-small">
+		<a href="http://elitedaily.com/dating/youre-going-date-right-person-wrong-time-okay/720059/">	
+		<img class="aligncenter" alt="The Beauty And Pain Of Falling In Love With The Right Person At The Wrong Time" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/tumblr_n3ke4v40qV1ruvp44o1_1280-300x150.jpg">
 		</a>	
 		<header class="postHeader">
 			<div class="subText">
-				<span class="categoryName"><a href="http://elitedaily.com/category/humor/">Humor</a></span>
-				<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/ctoole/" title="Posts by Connor Toole" rel="author">Connor Toole</a></span></author>				
-				<time class="updated" datetime="2014-08-20T13:08:16+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">1:08pm</span></time>			</div>
-			<h2><a href="http://elitedaily.com/humor/guys-cant-take-hint-photos/713824/">14 Guys Who Should Never Be Allowed To Text Women Again (Photos)</a></h2>
+				<span class="categoryName"><a href="http://elitedaily.com/category/dating/">Dating</a></span>
+				<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/paul-hudson/" title="Posts by Paul Hudson" rel="author">Paul Hudson</a></span></author>				
+				<time class="updated" datetime="2014-08-20T15:27:16+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:27pm</span></time>			</div>
+			<h2><a href="http://elitedaily.com/dating/youre-going-date-right-person-wrong-time-okay/720059/">The Beauty And Pain Of Falling In Love With The Right Person At The Wrong Time</a></h2>
 		</header>
 		<div class="entry-content">
-		On the surface, texting isn&#8217;t inherently complicated. If you want to talk to someone, you hit a few buttons, magic occurs and all of a sudden you&#8217;re having a conversation &#8212; at least in theory. A conversation traditionally ...		
+		When I was about 18, I met a girl who changed my life. She opened my eyes to a part of the world – a part of life – that I didn’t know existed. This was the first time that I ever fell in love, and it was the deepest I have ever falle...		
 		</div>
 		<div class="post-divider"></div>
 	</article>	
@@ -645,10 +645,120 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 	
 	
 			
-				<article id="post-719819" class="post-719819 post type-post status-publish format-standard hentry category-music category-music-news tag-anaconda tag-anaconda-video tag-nicki-minaj four-four leftSide">
-					<a href="http://elitedaily.com/music/music-news/pure-genius-nicki-minajs-anaconda/719819/">
+				<article id="post-720272" class="post-720272 post type-post status-publish format-video hentry category-news category-world tag-american-journalist tag-foley-parents-interview tag-james-foley tag-james-foley-parents tag-parents four-four leftSide">
+					<a href="http://elitedaily.com/news/world/foley-parents-interview-video/720272/">
+					<div class="icon-play" aria-hidden="true" data-icon="&#x70;"></div>					
+					<img class="aligncenter" alt="James Foley&#8217;s Parents Give First Interview Since Son&#8217;s Devastating Decapitation" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/BvfthY9IIAAcfLg-485x242.jpg">
+					</a>	
+					<header class="postHeader">
+						<div class="subText">
+							<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
+							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/sean_levinson/" title="Posts by Sean Levinson" rel="author">Sean Levinson</a></span></author>
+							<time class="updated" datetime="2014-08-20T15:58:08+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:58pm</span></time>						</div>
+						<h2><a href="http://elitedaily.com/news/world/foley-parents-interview-video/720272/">James Foley&#8217;s Parents Give First Interview Since Son&#8217;s Devastating Decapitation</a></h2>
+					</header>
+					<div class="entry-content">
+					 Earlier today, the parents of slain American journalist James...					</div>
+					<div class="post-divider"></div>
+				</article>
+
+		    
+
+
+
+	
+			
+				<article id="post-720134" class="post-720134 post type-post status-publish format-standard hentry category-news category-world tag-chart tag-college-debt tag-college-tuition tag-tuition tag-unemployment four-four rightSide">
+					<a href="http://elitedaily.com/news/world/chart-shows-college-tuition/720134/">
+										<img class="aligncenter" alt="This One Chart Shows How Wildly Out Of Control College Tuition Costs Have Gotten" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/college_loans-485x242.jpg">
+					</a>	
+					<header class="postHeader">
+						<div class="subText">
+							<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
+							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/earata/" title="Posts by Emily Arata" rel="author">Emily Arata</a></span></author>
+							<time class="updated" datetime="2014-08-20T15:45:15+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:45pm</span></time>						</div>
+						<h2><a href="http://elitedaily.com/news/world/chart-shows-college-tuition/720134/">This One Chart Shows How Wildly Out Of Control College Tuition Costs Have Gotten</a></h2>
+					</header>
+					<div class="entry-content">
+					 If you&#8217;ve recently graduated from college and feel buried...					</div>
+					<div class="post-divider"></div>
+				</article>
+			
+
+
+
+	
+			
+				<article id="post-720250" class="post-720250 post type-post status-publish format-standard hentry category-news category-world tag-8-6-million tag-als-association tag-als-challenge tag-barbara-j-newhouse tag-ice-bucket-challenge four-four leftSide">
+					<a href="http://elitedaily.com/news/world/tuesday-alone-als-association-received-8-6-million/720250/">
 										
-					<img class="aligncenter" alt="Don&#8217;t Hate, Appreciate: How To See The Pure Genius In Nicki Minaj&#8217;s &#8216;Anaconda&#8217;" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/nicki-485x242.png">
+					<img class="aligncenter" alt="In Just One Day, The Ice Bucket Challenge Helped The ALS Association Raise $8.6 Million" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/icebucket-485x242.png">
+					</a>	
+					<header class="postHeader">
+						<div class="subText">
+							<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
+							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/earata/" title="Posts by Emily Arata" rel="author">Emily Arata</a></span></author>
+							<time class="updated" datetime="2014-08-20T15:42:30+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:42pm</span></time>						</div>
+						<h2><a href="http://elitedaily.com/news/world/tuesday-alone-als-association-received-8-6-million/720250/">In Just One Day, The Ice Bucket Challenge Helped The ALS Association Raise $8.6 Million</a></h2>
+					</header>
+					<div class="entry-content">
+					 There&#8217;s no stopping the momentum created by the Ice...					</div>
+					<div class="post-divider"></div>
+				</article>
+
+		    
+
+
+
+	
+			
+				<article id="post-719996" class="post-719996 post type-post status-publish format-standard hentry category-news category-world tag-james-foley tag-james-foley-tribute tag-kafranbel tag-sign tag-syria tag-syrian-tribute four-four rightSide">
+					<a href="http://elitedaily.com/news/world/syrian-town-tribute-foley/719996/">
+										<img class="aligncenter" alt="Syrian Town Makes Sign In Tribute To American Journalist James Foley" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/Screen_Shot_2014-08-20_at_11.06.13_AM.0-485x242.png">
+					</a>	
+					<header class="postHeader">
+						<div class="subText">
+							<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
+							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/sean_levinson/" title="Posts by Sean Levinson" rel="author">Sean Levinson</a></span></author>
+							<time class="updated" datetime="2014-08-20T15:34:35+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:34pm</span></time>						</div>
+						<h2><a href="http://elitedaily.com/news/world/syrian-town-tribute-foley/719996/">Syrian Town Makes Sign In Tribute To American Journalist James Foley</a></h2>
+					</header>
+					<div class="entry-content">
+					 For years, the Syrian town of Kafranbel has been...					</div>
+					<div class="post-divider"></div>
+				</article>
+			
+
+
+
+	
+			
+				<article id="post-720184" class="post-720184 post type-post status-publish format-standard hentry category-celebrity category-entertainment tag-22-years-old tag-hamptons tag-jack-nicholson tag-ray-nicholson tag-the-shining four-four leftSide">
+					<a href="http://elitedaily.com/entertainment/celebrity/jack-nicholson-son/720184/">
+										
+					<img class="aligncenter" alt="Jack Nicholson&#8217;s Son Is Pretty Much Just A Younger Version Of Jack Nicholson (Photo)" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/jack11-485x242.jpg">
+					</a>	
+					<header class="postHeader">
+						<div class="subText">
+							<span class="categoryName"><a href="http://elitedaily.com/category/entertainment/">Entertainment</a></span>
+							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/apliskin/" title="Posts by Adam Pliskin" rel="author">Adam Pliskin</a></span></author>
+							<time class="updated" datetime="2014-08-20T15:30:40+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">3:30pm</span></time>						</div>
+						<h2><a href="http://elitedaily.com/entertainment/celebrity/jack-nicholson-son/720184/">Jack Nicholson&#8217;s Son Is Pretty Much Just A Younger Version Of Jack Nicholson (Photo)</a></h2>
+					</header>
+					<div class="entry-content">
+					 Spitting image. 					</div>
+					<div class="post-divider"></div>
+				</article>
+
+		    
+
+
+
+	
+			
+				<article id="post-719819" class="post-719819 post type-post status-publish format-standard hentry category-music category-music-news tag-anaconda tag-anaconda-video tag-nicki-minaj four-four rightSide">
+					<a href="http://elitedaily.com/music/music-news/pure-genius-nicki-minajs-anaconda/719819/">
+										<img class="aligncenter" alt="Don&#8217;t Hate, Appreciate: How To See The Pure Genius In Nicki Minaj&#8217;s &#8216;Anaconda&#8217;" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/nicki-485x242.png">
 					</a>	
 					<header class="postHeader">
 						<div class="subText">
@@ -659,116 +769,6 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 					</header>
 					<div class="entry-content">
 					 At the stroke of midnight, the greatly hyped and...					</div>
-					<div class="post-divider"></div>
-				</article>
-
-		    
-
-
-
-	
-			
-				<article id="post-719844" class="post-719844 post type-post status-publish format-standard hentry category-news category-technology tag-female-entrepreneur tag-gesche-haas tag-pavel-curda tag-sexual-harassment tag-silicon-valley tag-vc-creepy-email four-four rightSide">
-					<a href="http://elitedaily.com/news/technology/vc-creepy-email/719844/">
-										<img class="aligncenter" alt="Venture Capitalist Gets Caught Soliciting Female Entrepreneur For Sex In Creepy Email" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/tech-elite-daily-485x242.jpg">
-					</a>	
-					<header class="postHeader">
-						<div class="subText">
-							<span class="categoryName"><a href="http://elitedaily.com/category/news/technology/">Technology</a></span>
-							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/sean_levinson/" title="Posts by Sean Levinson" rel="author">Sean Levinson</a></span></author>
-							<time class="updated" datetime="2014-08-20T14:56:23+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">2:56pm</span></time>						</div>
-						<h2><a href="http://elitedaily.com/news/technology/vc-creepy-email/719844/">Venture Capitalist Gets Caught Soliciting Female Entrepreneur For Sex In Creepy Email</a></h2>
-					</header>
-					<div class="entry-content">
-					 A female entrepreneur&#8217;s personal experience reveals that misogyny in...					</div>
-					<div class="post-divider"></div>
-				</article>
-			
-
-
-
-	
-			
-				<article id="post-719679" class="post-719679 post type-post status-publish format-video hentry category-news category-politics tag-bruce-springsteen tag-chris-christie tag-reporter tag-town-hall-event tag-viral-video four-four leftSide">
-					<a href="http://elitedaily.com/news/politics/christie-arguing-bruce-video/719679/">
-					<div class="icon-play" aria-hidden="true" data-icon="&#x70;"></div>					
-					<img class="aligncenter" alt="Christie Christie Gets Pretty Defensive About His Friendship With Bruce Springsteen (Video)" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/chris-elite-daily-485x242.png">
-					</a>	
-					<header class="postHeader">
-						<div class="subText">
-							<span class="categoryName"><a href="http://elitedaily.com/category/news/politics/">Politics</a></span>
-							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/sean_levinson/" title="Posts by Sean Levinson" rel="author">Sean Levinson</a></span></author>
-							<time class="updated" datetime="2014-08-20T14:54:40+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">2:54pm</span></time>						</div>
-						<h2><a href="http://elitedaily.com/news/politics/christie-arguing-bruce-video/719679/">Christie Christie Gets Pretty Defensive About His Friendship With Bruce Springsteen (Video)</a></h2>
-					</header>
-					<div class="entry-content">
-					 There are a lot of issues New Jersey Governor...					</div>
-					<div class="post-divider"></div>
-				</article>
-
-		    
-
-
-
-	
-			
-				<article id="post-719262" class="post-719262 post type-post status-publish format-standard hentry category-football category-sports tag-football tag-national-football-league tag-nfl tag-super-bowl tag-super-bowl-facts four-four rightSide">
-					<a href="http://elitedaily.com/sports/super-bowl-facts/719262/">
-										<img class="aligncenter" alt="5 Super Bowl Facts That Will Change Your Mind About The New Pay-To-Play Scheme" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/super-bowl-elite-daily-485x242.jpg">
-					</a>	
-					<header class="postHeader">
-						<div class="subText">
-							<span class="categoryName"><a href="http://elitedaily.com/category/sports/">Sports</a></span>
-							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/jharris/" title="Posts by Josh Harris" rel="author">Josh Harris</a></span></author>
-							<time class="updated" datetime="2014-08-20T14:50:39+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">2:50pm</span></time>						</div>
-						<h2><a href="http://elitedaily.com/sports/super-bowl-facts/719262/">5 Super Bowl Facts That Will Change Your Mind About The New Pay-To-Play Scheme</a></h2>
-					</header>
-					<div class="entry-content">
-					 The shortlist for potential halftime performers at Super Bowl...					</div>
-					<div class="post-divider"></div>
-				</article>
-			
-
-
-
-	
-			
-				<article id="post-719816" class="post-719816 post type-post status-publish format-standard hentry category-celebrity category-entertainment tag-banksy tag-graffiti tag-robin-williams tag-street-art four-four leftSide">
-					<a href="http://elitedaily.com/entertainment/celebrity/banksy-robin-williams/719816/">
-										
-					<img class="aligncenter" alt="This Street Art Of Robin Williams May Have Been Done By Banksy (Photo)" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/LuHzLXV1-485x242.jpg">
-					</a>	
-					<header class="postHeader">
-						<div class="subText">
-							<span class="categoryName"><a href="http://elitedaily.com/category/entertainment/">Entertainment</a></span>
-							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/apliskin/" title="Posts by Adam Pliskin" rel="author">Adam Pliskin</a></span></author>
-							<time class="updated" datetime="2014-08-20T14:43:41+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">2:43pm</span></time>						</div>
-						<h2><a href="http://elitedaily.com/entertainment/celebrity/banksy-robin-williams/719816/">This Street Art Of Robin Williams May Have Been Done By Banksy (Photo)</a></h2>
-					</header>
-					<div class="entry-content">
-					 Banksy? 					</div>
-					<div class="post-divider"></div>
-				</article>
-
-		    
-
-
-
-	
-			
-				<article id="post-719921" class="post-719921 post type-post status-publish format-standard hentry category-news category-world tag-ferguson-cop tag-ferguson-journalist tag-ferguson-police tag-mike-brown tag-officer-ray-albers four-four rightSide">
-					<a href="http://elitedaily.com/news/world/ferguson-cop-pointing-rifle-tells-protestors-will-fcking-kill/719921/">
-										<img class="aligncenter" alt="Ferguson Cop Points Rifle At Protestors And Says &#8216;I Will F*cking Kill You&#8217; (Video)" src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/Ferguson-Cop-elite-daily--485x242.png">
-					</a>	
-					<header class="postHeader">
-						<div class="subText">
-							<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
-							<author><span class="authorName">&bull; <a href="http://elitedaily.com/author/earata/" title="Posts by Emily Arata" rel="author">Emily Arata</a></span></author>
-							<time class="updated" datetime="2014-08-20T14:31:59+00:00" pubdate><span class="dateStamp"> Aug 20, </span><span class="timeStamp">2:31pm</span></time>						</div>
-						<h2><a href="http://elitedaily.com/news/world/ferguson-cop-pointing-rifle-tells-protestors-will-fcking-kill/719921/">Ferguson Cop Points Rifle At Protestors And Says &#8216;I Will F*cking Kill You&#8217; (Video)</a></h2>
-					</header>
-					<div class="entry-content">
-					 A video posted this morning shows a Ferguson, MO,...					</div>
 					<div class="post-divider"></div>
 				</article>
 			
@@ -785,7 +785,7 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 	<li><a class='page-numbers' href='http://elitedaily.com/page/5/'>5</a></li>
 	<li><a class='page-numbers' href='http://elitedaily.com/page/6/'>6</a></li>
 	<li><span class="page-numbers dots">&hellip;</span></li>
-	<li><a class='page-numbers' href='http://elitedaily.com/page/4683/'>4,683</a></li>
+	<li><a class='page-numbers' href='http://elitedaily.com/page/4684/'>4,684</a></li>
 	<li><a class="next page-numbers" href="http://elitedaily.com/page/2/">next</a></li>
 </ul>
 </div><!--// end .pagination -->
@@ -901,52 +901,21 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 		</div>
 		<div class="sidebarBelow">
 			<article id="advanced-recent-posts-2" class="row widget advanced_recent_posts_widget"><div class="sidebar-section twelve columns"><h6>RIGHT NOW</h6><ul>
-						<li class="recent-post-item category-music category-music-news">
+						<li class="recent-post-item category-news category-world">
 
-				<a  href="http://elitedaily.com/music/music-news/pure-genius-nicki-minajs-anaconda/719819/" rel="bookmark" title="Permanent link to Don&#8217;t Hate, Appreciate: How To See The Pure Genius In Nicki Minaj&#8217;s &#8216;Anaconda&#8217;" class="post-title">Don&#8217;t Hate, Appreciate: How To See The Pure Genius In Nicki Minaj&#8217;s &#8216;Anaconda&#8217;</a>
-
-					
-				<div class="subText">
-					<span class="categoryName"><a href="http://elitedaily.com/category/music/music-news/">Music News</a></span>
-					<span class="post-date">&bull; 5 mins ago</span>
-				</div>
-
-				                				<div class="post-entry">
-				
-					<a href="http://elitedaily.com/music/music-news/pure-genius-nicki-minajs-anaconda/719819/" title="Don&#8217;t Hate, Appreciate: How To See The Pure Genius In Nicki Minaj&#8217;s &#8216;Anaconda&#8217;">
-
-					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/nicki-150x150.png" alt="Don&#8217;t Hate, Appreciate: How To See The Pure Genius In Nicki Minaj&#8217;s &#8216;Anaconda&#8217;" width="100" height="100" />
-
-					</a>
-
-				
-
-
-			
-
-				
-
-							  </div>
-				
-
-				
-			</li>
-
-								<li class="recent-post-item category-news category-technology">
-
-				<a  href="http://elitedaily.com/news/technology/vc-creepy-email/719844/" rel="bookmark" title="Permanent link to Venture Capitalist Gets Caught Soliciting Female Entrepreneur For Sex In Creepy Email" class="post-title">Venture Capitalist Gets Caught Soliciting Female Entrepreneur For Sex In Creepy Email</a>
+				<a  href="http://elitedaily.com/news/world/foley-parents-interview-video/720272/" rel="bookmark" title="Permanent link to James Foley&#8217;s Parents Give First Interview Since Son&#8217;s Devastating Decapitation" class="post-title">James Foley&#8217;s Parents Give First Interview Since Son&#8217;s Devastating Decapitation</a>
 
 					
 				<div class="subText">
-					<span class="categoryName"><a href="http://elitedaily.com/category/news/technology/">Technology</a></span>
+					<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
 					<span class="post-date">&bull; 6 mins ago</span>
 				</div>
 
 				                				<div class="post-entry">
 				
-					<a href="http://elitedaily.com/news/technology/vc-creepy-email/719844/" title="Venture Capitalist Gets Caught Soliciting Female Entrepreneur For Sex In Creepy Email">
+					<a href="http://elitedaily.com/news/world/foley-parents-interview-video/720272/" title="James Foley&#8217;s Parents Give First Interview Since Son&#8217;s Devastating Decapitation">
 
-					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/tech-elite-daily-150x150.jpg" alt="Venture Capitalist Gets Caught Soliciting Female Entrepreneur For Sex In Creepy Email" width="100" height="100" />
+					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/BvfthY9IIAAcfLg-150x150.jpg" alt="James Foley&#8217;s Parents Give First Interview Since Son&#8217;s Devastating Decapitation" width="100" height="100" />
 
 					</a>
 
@@ -965,50 +934,19 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 
 								<li class="recent-post-item category-news category-politics">
 
-				<a  href="http://elitedaily.com/news/politics/christie-arguing-bruce-video/719679/" rel="bookmark" title="Permanent link to Christie Christie Gets Pretty Defensive About His Friendship With Bruce Springsteen (Video)" class="post-title">Christie Christie Gets Pretty Defensive About His Friendship With Bruce Springsteen (Video)</a>
+				<a  href="http://elitedaily.com/news/politics/can-end-police-militarization-corruption-brutality/716785/" rel="bookmark" title="Permanent link to Hands Up, Don&#8217;t Shoot: We Can End Police Militarization, Corruption And Brutality" class="post-title">Hands Up, Don&#8217;t Shoot: We Can End Police Militarization, Corruption And Brutality</a>
 
 					
 				<div class="subText">
 					<span class="categoryName"><a href="http://elitedaily.com/category/news/politics/">Politics</a></span>
-					<span class="post-date">&bull; 8 mins ago</span>
-				</div>
-
-				                				<div class="post-entry">
-				
-					<a href="http://elitedaily.com/news/politics/christie-arguing-bruce-video/719679/" title="Christie Christie Gets Pretty Defensive About His Friendship With Bruce Springsteen (Video)">
-
-					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/chris-elite-daily-150x150.png" alt="Christie Christie Gets Pretty Defensive About His Friendship With Bruce Springsteen (Video)" width="100" height="100" />
-
-					</a>
-
-				
-
-
-			
-
-				
-
-							  </div>
-				
-
-				
-			</li>
-
-								<li class="recent-post-item category-football category-sports">
-
-				<a  href="http://elitedaily.com/sports/super-bowl-facts/719262/" rel="bookmark" title="Permanent link to 5 Super Bowl Facts That Will Change Your Mind About The New Pay-To-Play Scheme" class="post-title">5 Super Bowl Facts That Will Change Your Mind About The New Pay-To-Play Scheme</a>
-
-					
-				<div class="subText">
-					<span class="categoryName"><a href="http://elitedaily.com/category/sports/">Sports</a></span>
 					<span class="post-date">&bull; 12 mins ago</span>
 				</div>
 
 				                				<div class="post-entry">
 				
-					<a href="http://elitedaily.com/sports/super-bowl-facts/719262/" title="5 Super Bowl Facts That Will Change Your Mind About The New Pay-To-Play Scheme">
+					<a href="http://elitedaily.com/news/politics/can-end-police-militarization-corruption-brutality/716785/" title="Hands Up, Don&#8217;t Shoot: We Can End Police Militarization, Corruption And Brutality">
 
-					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/super-bowl-elite-daily-150x150.jpg" alt="5 Super Bowl Facts That Will Change Your Mind About The New Pay-To-Play Scheme" width="100" height="100" />
+					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/nbw_Ferguson_0042-150x150.jpg" alt="Hands Up, Don&#8217;t Shoot: We Can End Police Militarization, Corruption And Brutality" width="100" height="100" />
 
 					</a>
 
@@ -1025,21 +963,83 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 				
 			</li>
 
-								<li class="recent-post-item category-celebrity category-entertainment">
+								<li class="recent-post-item category-news category-world">
 
-				<a  href="http://elitedaily.com/entertainment/celebrity/banksy-robin-williams/719816/" rel="bookmark" title="Permanent link to This Street Art Of Robin Williams May Have Been Done By Banksy (Photo)" class="post-title">This Street Art Of Robin Williams May Have Been Done By Banksy (Photo)</a>
+				<a  href="http://elitedaily.com/news/world/chart-shows-college-tuition/720134/" rel="bookmark" title="Permanent link to This One Chart Shows How Wildly Out Of Control College Tuition Costs Have Gotten" class="post-title">This One Chart Shows How Wildly Out Of Control College Tuition Costs Have Gotten</a>
 
 					
 				<div class="subText">
-					<span class="categoryName"><a href="http://elitedaily.com/category/entertainment/">Entertainment</a></span>
+					<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
 					<span class="post-date">&bull; 19 mins ago</span>
 				</div>
 
 				                				<div class="post-entry">
 				
-					<a href="http://elitedaily.com/entertainment/celebrity/banksy-robin-williams/719816/" title="This Street Art Of Robin Williams May Have Been Done By Banksy (Photo)">
+					<a href="http://elitedaily.com/news/world/chart-shows-college-tuition/720134/" title="This One Chart Shows How Wildly Out Of Control College Tuition Costs Have Gotten">
 
-					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/LuHzLXV1-150x150.jpg" alt="This Street Art Of Robin Williams May Have Been Done By Banksy (Photo)" width="100" height="100" />
+					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/college_loans-150x150.jpg" alt="This One Chart Shows How Wildly Out Of Control College Tuition Costs Have Gotten" width="100" height="100" />
+
+					</a>
+
+				
+
+
+			
+
+				
+
+							  </div>
+				
+
+				
+			</li>
+
+								<li class="recent-post-item category-news category-world">
+
+				<a  href="http://elitedaily.com/news/world/tuesday-alone-als-association-received-8-6-million/720250/" rel="bookmark" title="Permanent link to In Just One Day, The Ice Bucket Challenge Helped The ALS Association Raise $8.6 Million" class="post-title">In Just One Day, The Ice Bucket Challenge Helped The ALS Association Raise $8.6 Million</a>
+
+					
+				<div class="subText">
+					<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
+					<span class="post-date">&bull; 22 mins ago</span>
+				</div>
+
+				                				<div class="post-entry">
+				
+					<a href="http://elitedaily.com/news/world/tuesday-alone-als-association-received-8-6-million/720250/" title="In Just One Day, The Ice Bucket Challenge Helped The ALS Association Raise $8.6 Million">
+
+					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/icebucket-150x150.png" alt="In Just One Day, The Ice Bucket Challenge Helped The ALS Association Raise $8.6 Million" width="100" height="100" />
+
+					</a>
+
+				
+
+
+			
+
+				
+
+							  </div>
+				
+
+				
+			</li>
+
+								<li class="recent-post-item category-news category-world">
+
+				<a  href="http://elitedaily.com/news/world/syrian-town-tribute-foley/719996/" rel="bookmark" title="Permanent link to Syrian Town Makes Sign In Tribute To American Journalist James Foley" class="post-title">Syrian Town Makes Sign In Tribute To American Journalist James Foley</a>
+
+					
+				<div class="subText">
+					<span class="categoryName"><a href="http://elitedaily.com/category/news/world/">World</a></span>
+					<span class="post-date">&bull; 30 mins ago</span>
+				</div>
+
+				                				<div class="post-entry">
+				
+					<a href="http://elitedaily.com/news/world/syrian-town-tribute-foley/719996/" title="Syrian Town Makes Sign In Tribute To American Journalist James Foley">
+
+					<img src="http://cdn29.elitedaily.com/wp-content/uploads/2014/08/Screen_Shot_2014-08-20_at_11.06.13_AM.0-150x150.png" alt="Syrian Town Makes Sign In Tribute To American Journalist James Foley" width="100" height="100" />
 
 					</a>
 
@@ -1078,7 +1078,7 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 	<li class="cat-item cat-item-40129"><a href="http://elitedaily.com/category/life/" title="View all posts filed under Life">Life</a>
 </li>
 					</ul>
-					<!--<?php/* For some reason cannot limit number of items or exlcude items.  Additionaly, you can only refer to id's when listing a category. -- wp_nav_menu(array('theme_location' => 'utility_navigation', 'container' => false, 'menu_class' => 'eight columns footer-nav', 'depth' => 1)); */?>-->
+					<!---->
 				</div>
 				<div class="footerColumn">
 					<ul>
@@ -1353,5 +1353,5 @@ _atrk_opts = { atrk_acct:"0Wfkg1awO700MF", domain:"elitedaily.com",dynamic: true
 
 	<!-- SPRITZ -->
 	
-</body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-4.newrelic.com","licenseKey":"8bab2a9d64","applicationID":"3544923","transactionName":"b1IHZRcHXxACUhIPV1YYJFIRD14NTFgIAl1A","queueTime":0,"applicationTime":2688,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
 </html>
