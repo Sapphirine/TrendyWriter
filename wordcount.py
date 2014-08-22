@@ -2,7 +2,7 @@ import operator
 
 # hello testing..
 
-txtfile = open("ulysses.txt","r+")
+txtfile = open("res/ulysses.txt","r+")
 wordcount={}
 for word in txtfile.read().split():
     word = word.translate(None,',.?-()')
