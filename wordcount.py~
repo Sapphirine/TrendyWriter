@@ -1,7 +1,5 @@
 import operator
 
-# hello testing..
-
 txtfile = open("ulysses.txt","r+")
 wordcount={}
 for word in txtfile.read().split():
