@@ -1,5 +1,6 @@
 import urllib
 from HTMLParser import HTMLParser
+from htmlentitydefs import name2codepoint
 
 store_html = 'res/url_'
 store_homepage = 'res/home_.html'
@@ -85,7 +86,10 @@ class MyHTMLParser(HTMLParser):
                  or (self.found_h4 == True and self.found_a == True)\
                  or (self.found_h5 == True and self.found_a == True)\
                  or (self.found_h6 == True and self.found_a == True):
+                
+                data = data.strip ()
                 print 'Data = ', data 
+
                 with open(strore_path, 'a+') as writing_file:
                     writing_file.write(data + '\n');
                  # TODO..
@@ -95,15 +99,30 @@ class MyHTMLParser(HTMLParser):
                 # print 'Link = ', data
                 pass
 
-    def handle_comment(self, data):
-        if self.get_url == False:
-            pass
-        else:
-            pass
+    def handle_decl(self, data):
+        # print "Decl     :", data
+        pass
+
+    # def handle_comment(self, data):
+    #     if self.get_url == False:
+    #         pass
+    #     else:
+    #         pass
+
+    # def handle_entityref(self, name):
+    #     c = unichr(name2codepoint[name])
+    #     print "Named ent:", c
+    # def handle_charref(self, name):
+    #     if name.startswith('x'):
+    #         c = unichr(int(name[1:], 16))
+    #     else:
+    #         c = unichr(int(name))
+    #     print "Num ent  :", c
 
 
 def main():
-    url = raw_input('Enter an url : ')
+    # url = raw_input('Enter an url : ')
+    url =  "http://www.huffingtonpost.com/politics/"
     result = urllib.urlretrieve(url, store_homepage)
     # print result
     htmltxt = ''    
@@ -122,13 +141,21 @@ def main():
         store_html_path = store_html + '0' + str(i) + '.html'
         result2 = urllib.urlretrieve(urls[i], store_html_path)
         print result2
-        htmltxt2 = ''
+        htmltxt2 = unicode ('')
         with open(store_html_path, 'r') as reading_file:
-            htmltxt2 = reading_file.read()
-            # print htmltxt
-
-        parser = MyHTMLParser(False)
-        parser.feed(htmltxt2)
+            htmltxt2 = unicode (reading_file.read(), errors = 'ignore')
+            # (STILL FIGURING OUT..) Can't assign "encoding = 'utf-8'", 
+            # htmltxt2 = unicode (reading_file.read(), encoding = 'utf-8', errors = 'ignore')
+            # print htmltxt2
+        # Use try catch for just in case
+        try:
+            parser = MyHTMLParser(False)
+            parser.feed (htmltxt2)
+            parser.close ()
+        except:
+           print htmltxt2
+           # (DEBUGGING ONLY..)
+           return
 
 if __name__ == '__main__' :
     main()
