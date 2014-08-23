@@ -7,13 +7,15 @@ store_homepage = 'res/home_.html'
 strore_path = 'topic/all_topics.txt'
 store_url = 'url/all_urls.txt'
 
+
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser):
 
-    def __init__(self, get_url):
+    def __init__(self, get_url, url):
         # call super constructor
         HTMLParser.__init__(self)
         self.get_url = get_url
+        self.url = url
         self.found_a  = False
 
         self.found_h1 = False
@@ -48,10 +50,18 @@ class MyHTMLParser(HTMLParser):
                 self.found_li = True
             if tag == 'a' and self.found_li == True:
                 self.found_a = True
-                if attrs[0][1][0:11] == 'http://www.':
-                    # print 'href = ', attrs[0][1]
-                    with open(store_url, 'a+') as writing_file:
-                        writing_file.write(attrs[0][1] + '\n');
+                for attr in attrs:
+                    if attr[0] == 'href':
+                        if attr[1][0:7] == 'http://':
+                            # print 'href = ', attr[1]
+                            with open(store_url, 'a+') as writing_file:
+                                writing_file.write(attr[1] + '\n');
+                        elif attr[1][0:1] != '#' and attr[1][0:5] != 'https'\
+                             and attr[1][0:] != '/': 
+                            if attr[1][0:1] == '/':
+                                # print 'href = ', attr[1]
+                                with open(store_url, 'a+') as writing_file:
+                                    writing_file.write(self.url + attr[1][1:] + '\n');
 
 
     def handle_endtag(self, tag):
@@ -92,11 +102,9 @@ class MyHTMLParser(HTMLParser):
 
                 with open(strore_path, 'a+') as writing_file:
                     writing_file.write(data + '\n');
-                 # TODO..
-                #data.join()
         else:
             if self.found_li == True and self.found_a == True:
-                # print 'Link = ', data
+                # print 'Link data = ', data
                 pass
 
     def handle_decl(self, data):
@@ -121,15 +129,17 @@ class MyHTMLParser(HTMLParser):
 
 
 def main():
-    # url = raw_input('Enter an url : ')
-    url =  "http://www.huffingtonpost.com/politics/"
+    url = raw_input('Enter an url : ')
+    if url[-1:] != '/':
+        url += '/'
+    # url = 'http://www.vocativ.com/'
     result = urllib.urlretrieve(url, store_homepage)
     # print result
     htmltxt = ''    
     with open(store_homepage, 'r') as reading_file:
         htmltxt = reading_file.read()
         # print htmltxt
-    parser = MyHTMLParser(True)
+    parser = MyHTMLParser(True, url)
     parser.feed(htmltxt)
 
     urls = []
@@ -139,8 +149,9 @@ def main():
 
     for i in range(0, len(urls)):
         store_html_path = store_html + '0' + str(i) + '.html'
+        # Will replace the old ones if file name is the same
         result2 = urllib.urlretrieve(urls[i], store_html_path)
-        print result2
+        # print result2
         htmltxt2 = unicode ('')
         with open(store_html_path, 'r') as reading_file:
             htmltxt2 = unicode (reading_file.read(), errors = 'ignore')
@@ -149,12 +160,12 @@ def main():
             # print htmltxt2
         # Use try catch for just in case
         try:
-            parser = MyHTMLParser(False)
+            parser = MyHTMLParser(False, url)
             parser.feed (htmltxt2)
             parser.close ()
         except:
            print htmltxt2
-           # (DEBUGGING ONLY..)
+           # (FOR DEBUGGING..)
            return
 
 if __name__ == '__main__' :
