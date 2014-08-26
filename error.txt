@@ -1,0 +1,50 @@
+Data =  [ERROR] Parsing error: http://ara.reuters.com
+Data =  [ERROR] Parsing error: http://ar.reuters.com
+Data =  [ERROR] Parsing error: http://br.reuters.com
+Data =  [ERROR] Parsing error: http://cn.reuters.com
+Data =  [ERROR] Parsing error: http://fr.reuters.com
+Data =  [ERROR] Parsing error: http://de.reuters.com
+Data =  [ERROR] Parsing error: http://it.reuters.com
+Data =  [ERROR] Parsing error: http://jp.reuters.com
+Data =  [ERROR] Parsing error: http://lta.reuters.com
+Data =  [ERROR] Parsing error: http://mx.reuters.com
+Data =  [ERROR] Parsing error: http://ru.reuters.com
+Data =  [ERROR] Parsing error: http://es.reuters.com
+Data =  [ERROR] Parsing error: http://www.reuters.com/finance/smallBusiness
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/india
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/mediafile
+[ERROR] Parsing error: http://blogs.reuters.com/us/
+[ERROR] Parsing error: http://blogs.reuters.com/us/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/ian-bremmer/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/hugo-dixon/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/jamesrgaines/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/anatole-kaletsky
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/mark-leonard
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/john-lloyd
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/reihan-salam/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/jackshafer
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/nicholas-wapshott/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/great-debate
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/category/credit
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/category/macro-markets/
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/category/politics/
+[ERROR] Parsing error: http://blogs.reuters.com/globalinvesting
+[ERROR] Decode error: http://funds.us.reuters.com/US/screener/screener.asp
+[ERROR] Parsing error: http://blogs.reuters.com/photo
+[ERROR] Decode error: http://blogs.reuters.com/john-lloyd/2014/08/22/europe-bows-to-germany-merkel-and-that-might-be-a-good-thing/
+Data =  [ERROR] Parsing error: http://ara.reuters.com
+Data =  [ERROR] Parsing error: http://ar.reuters.com
+Data =  [ERROR] Parsing error: http://br.reuters.com
+Data =  [ERROR] Parsing error: http://cn.reuters.com
+Data =  [ERROR] Parsing error: http://fr.reuters.com
+Data =  [ERROR] Parsing error: http://de.reuters.com
+Data =  [ERROR] Parsing error: http://it.reuters.com
+Data =  [ERROR] Parsing error: http://jp.reuters.com
+Data =  [ERROR] Parsing error: http://lta.reuters.com
+Data =  [ERROR] Parsing error: http://mx.reuters.com
+Data =  [ERROR] Parsing error: http://ru.reuters.com
+Data =  [ERROR] Parsing error: http://es.reuters.com
+[ERROR] Parsing error: http://blogs.reuters.com/us/
+Data =  [ERROR] Parsing error: http://reuters.zendesk.com
+[ERROR] Decode error: http://s2.reutersmedia.net/resources_v2/images/media_guide_01_08_13.pdf

@@ -1,10 +1,14 @@
+# (TODO..) Make sure to get all urls within a webpage including relive path and absolute path
+#          (including start with a '/')
+# (TODO..) Generate the hashcode of all urls and "mod 1000" to seperate a number of buckets
+
 import urllib
 from HTMLParser import HTMLParser
-from htmlentitydefs import name2codepoint
+# from htmlentitydefs import name2codepoint
 
 store_html = 'res/url_'
 store_homepage = 'res/home_.html'
-strore_path = 'topic/all_topics.txt'
+store_topic = 'topic/all_topics.txt'
 store_url = 'url/all_urls.txt'
 
 
@@ -53,14 +57,14 @@ class MyHTMLParser(HTMLParser):
                 for attr in attrs:
                     if attr[0] == 'href':
                         if attr[1][0:7] == 'http://':
-                            # print 'href = ', attr[1]
-                            with open(store_url, 'a+') as writing_file:
+                            print 'href = ', attr[1]
+                            with open(store_url, 'a') as writing_file:
                                 writing_file.write(attr[1] + '\n');
                         elif attr[1][0:1] != '#' and attr[1][0:5] != 'https'\
                              and attr[1][0:] != '/': 
                             if attr[1][0:1] == '/':
-                                # print 'href = ', attr[1]
-                                with open(store_url, 'a+') as writing_file:
+                                print 'href = ', attr[1]
+                                with open(store_url, 'a') as writing_file:
                                     writing_file.write(self.url + attr[1][1:] + '\n');
 
 
@@ -90,18 +94,22 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         # print "Encountered some data  :", data
         if self.get_url == False:
-            if (self.found_h1 == True and self.found_a == True)\
-                 or (self.found_h2 == True and self.found_a == True)\
-                 or (self.found_h3 == True and self.found_a == True)\
-                 or (self.found_h4 == True and self.found_a == True)\
-                 or (self.found_h5 == True and self.found_a == True)\
-                 or (self.found_h6 == True and self.found_a == True):
+            if (self.found_a == True and ( \
+                    (self.found_h1 == True)\
+                 or (self.found_h2 == True)\
+                 or (self.found_h3 == True)\
+                 or (self.found_h4 == True)\
+                 or (self.found_h5 == True)\
+                 or (self.found_h6 == True))):
                 
-                data = data.strip ()
-                print 'Data = ', data 
+                #print 'Original Data = ', data
+                #data = unicode (data.strip ())
+                print 'Data = ', data.strip().decode ('utf-8', errors = 'ignore')
 
-                with open(strore_path, 'a+') as writing_file:
-                    writing_file.write(data + '\n');
+                with open (store_topic, 'a') as writing_file:
+                    writing_file.write (data)
+                    writing_file.write ('\n'.encode ('utf-8'));
+
         else:
             if self.found_li == True and self.found_a == True:
                 # print 'Link data = ', data
@@ -129,44 +137,61 @@ class MyHTMLParser(HTMLParser):
 
 
 def main():
-    url = raw_input('Enter an url : ')
-    if url[-1:] != '/':
-        url += '/'
-    # url = 'http://www.vocativ.com/'
-    result = urllib.urlretrieve(url, store_homepage)
-    # print result
-    htmltxt = ''    
-    with open(store_homepage, 'r') as reading_file:
-        htmltxt = reading_file.read()
-        # print htmltxt
-    parser = MyHTMLParser(True, url)
-    parser.feed(htmltxt)
 
-    urls = []
-    with open(store_url, 'r') as reading_file:
-        for line in reading_file:
-            urls.append(line)
+    # clean the processing file.
+    open (store_url, 'w').close ()
+    open (store_topic, 'w').close ()
 
-    for i in range(0, len(urls)):
-        store_html_path = store_html + '0' + str(i) + '.html'
-        # Will replace the old ones if file name is the same
-        result2 = urllib.urlretrieve(urls[i], store_html_path)
-        # print result2
-        htmltxt2 = unicode ('')
-        with open(store_html_path, 'r') as reading_file:
-            htmltxt2 = unicode (reading_file.read(), errors = 'ignore')
-            # (STILL FIGURING OUT..) Can't assign "encoding = 'utf-8'", 
-            # htmltxt2 = unicode (reading_file.read(), encoding = 'utf-8', errors = 'ignore')
-            # print htmltxt2
-        # Use try catch for just in case
-        try:
-            parser = MyHTMLParser(False, url)
-            parser.feed (htmltxt2)
+    #url = raw_input('Enter an url : ')
+    #if url[-1:] != '/':
+    #    url += '/'
+    url = 'http://www.reuters.com/'
+    urllib.urlretrieve (url, store_homepage)
+    # htmltxt = unicode ('')
+
+    homeHandle = urllib.urlopen (url)
+    htmltxt = homeHandle.read ()
+    homeHandle.close ()
+    
+    parser = MyHTMLParser (True, url)
+    parser.feed (htmltxt.decode ('utf-8'))
+
+    # read urls from the url recording file.
+    #urls = []
+    i = 0;
+
+    with open (store_url, 'r') as reading_file:
+        for pageUrl in reading_file:
+
+            # Will replace the old ones if file name is the same
+            store_html_path = store_html + str(i) + '.html'
+            print 'Processing: ', pageUrl, ' to ', store_html_path
+
+            fHandle = urllib.urlopen (pageUrl)
+            htmltxt2 = fHandle.read ()
+
+            try:
+                htmltxt2.decode ('utf-8')
+            except:
+                print '[ERROR] Decode error: ' + pageUrl
+                continue
+            
+            with open (store_html_path, 'w') as retPage:
+                retPage.write (htmltxt2)
+
+
+            parser = MyHTMLParser (False, url)
+
+            try:
+                parser.feed (htmltxt2)
+            except:
+                print '[ERROR] Parsing error: ' + pageUrl
+                continue
+
             parser.close ()
-        except:
-           print htmltxt2
-           # (FOR DEBUGGING..)
-           return
+            fHandle.close ()
+
+            i += 1
 
 if __name__ == '__main__' :
     main()

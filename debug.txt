@@ -1,0 +1,2886 @@
+href =  http://af.reuters.com
+href =  http://ara.reuters.com
+href =  http://ar.reuters.com
+href =  http://br.reuters.com
+href =  http://ca.reuters.com
+href =  http://cn.reuters.com
+href =  http://fr.reuters.com
+href =  http://de.reuters.com
+href =  http://in.reuters.com
+href =  http://it.reuters.com
+href =  http://jp.reuters.com
+href =  http://lta.reuters.com
+href =  http://mx.reuters.com
+href =  http://ru.reuters.com
+href =  http://es.reuters.com
+href =  http://uk.reuters.com
+href =  /home
+href =  /finance
+href =  /finance
+href =  /finance/economy
+href =  http://newsandinsight.thomsonreuters.com/Legal/
+href =  /finance/deals
+href =  /news/video?videoChannel=5
+href =  /subjects/aerospace-and-defense
+href =  /subjects/banks
+href =  /subjects/autos
+href =  /finance/summits
+href =  /finance/smallBusiness
+href =  /finance/markets
+href =  /finance/markets
+href =  /finance/markets/us
+href =  /finance/markets/europe
+href =  /finance/markets/asia
+href =  /finance/global-market-data
+href =  /finance/markets/indices
+href =  /finance/stocks
+href =  /finance/bonds
+href =  /finance/currencies
+href =  /finance/commodities
+href =  /finance/futures
+href =  /finance/funds
+href =  http://www.pehub.com/
+href =  /finance/EarningsUS
+href =  /finance/markets/dividends
+href =  /news/world
+href =  /news/world
+href =  /news/us
+href =  /subjects/specialReports
+href =  http://www.reuters.com/investigates
+href =  /subjects/euro-zone
+href =  /subjects/middle-east
+href =  /places/china
+href =  /places/japan
+href =  /places/mexico
+href =  /places/brazil
+href =  /places/africa
+href =  /places/russia
+href =  http://blogs.reuters.com/india
+href =  /news/video?videoChannel=117760
+href =  /politics
+href =  /politics
+href =  /subjects/supreme-court
+href =  /news/video?videoChannel=1003
+href =  /news/technology
+href =  /news/technology
+href =  http://blogs.reuters.com/mediafile
+href =  /news/science
+href =  /news/video?videoChannel=6
+href =  /bizfinance/technology/Top100Innovators
+href =  http://blogs.reuters.com/us/
+href =  http://blogs.reuters.com/us/
+href =  http://blogs.reuters.com/ian-bremmer/
+href =  http://blogs.reuters.com/stories-id-like-to-see/
+href =  http://blogs.reuters.com/hugo-dixon/
+href =  http://blogs.reuters.com/alison-frankel/
+href =  http://blogs.reuters.com/jamesrgaines/
+href =  http://blogs.reuters.com/edward-hadas/
+href =  http://blogs.reuters.com/anatole-kaletsky
+href =  http://blogs.reuters.com/mark-leonard
+href =  http://blogs.reuters.com/john-lloyd
+href =  http://blogs.reuters.com/david-rohde
+href =  http://blogs.reuters.com/reihan-salam/
+href =  http://blogs.reuters.com/jackshafer
+href =  http://blogs.reuters.com/nicholas-wapshott/
+href =  http://blogs.reuters.com/great-debate
+href =  http://blogs.reuters.com/breakingviews/
+href =  http://blogs.reuters.com/breakingviews/category/equities/
+href =  http://blogs.reuters.com/breakingviews/category/credit
+href =  http://blogs.reuters.com/breakingviews/category/private-equity/
+href =  http://blogs.reuters.com/breakingviews/category/m-a/
+href =  http://blogs.reuters.com/breakingviews/category/macro-markets/
+href =  http://blogs.reuters.com/breakingviews/category/politics/
+href =  /video/breakingviews
+href =  /finance/personal-finance
+href =  /finance/personal-finance
+href =  /subjects/us-lipper-awards
+href =  http://blogs.reuters.com/globalinvesting
+href =  http://blogs.reuters.com/unstructuredfinance/
+href =  http://blogs.reuters.com/linda-stern/ 
+href =  http://blogs.reuters.com/mark-miller/
+href =  http://blogs.reuters.com/john-wasik/
+href =  http://blogs.reuters.com/jim-saft/
+href =  http://alerts.us.reuters.com/US/company.asp
+href =  http://portfolio.us.reuters.com/US/watchlist/create.asp
+href =  http://portfolio.us.reuters.com/US/public/index.asp
+href =  http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp
+href =  http://funds.us.reuters.com/US/screener/screener.asp
+href =  /news/video?videoChannel=303
+href =  /news/lifestyle
+href =  /news/health
+href =  /news/sports
+href =  http://brazil-soccer.reuters.com
+href =  /news/entertainment/arts
+href =  /news/entertainment
+href =  /news/oddlyEnough
+href =  http://blogs.reuters.com/faithworld
+href =  /news/video?videoChannel=1004
+href =  /news/pictures
+href =  /news/pictures
+href =  http://blogs.reuters.com/photo
+href =  http://blogs.reuters.com/fullfocus
+href =  /video
+href =  /article/2014/08/25/us-amazon-com-twitch-idUSKBN0GP1N820140825
+href =  /article/2014/08/25/us-usa-florida-primary-idUSKBN0GP1ZJ20140825
+href =  http://www.reuters.com/video/2014/08/24/ukraine-defiant-on-national-day-rebels-p?videoId=340754836&videoChannel=1&channelName=Top+News
+href =  /article/2014/08/25/us-syria-crisis-minister-idUSKBN0GP0TS20140825
+href =  http://www.reuters.com/video/2014/08/25/iraqs-abadi-forming-new-government-amid?videoId=340762771
+href =  /article/2014/08/25/us-usa-missouri-shooting-contrasts-idUSKBN0GP08D20140825
+href =  /article/2014/08/24/us-intermune-roche-idUSKBN0GO0PI20140824
+href =  /article/2014/08/25/us-burger-kg-wld-tim-hortons-mergers-idUSKBN0GP00R20140825
+href =  http://blogs.reuters.com/john-lloyd/2014/08/22/europe-bows-to-germany-merkel-and-that-might-be-a-good-thing/
+href =  /article/2014/08/25/us-markets-stocks-idUSKBN0GP0XS20140825
+href =  /article/2014/08/25/us-economy-homesales-idUSKBN0GP19A20140825
+href =  /article/2014/08/25/us-markets-stocks-sp-idUSKBN0GP1E520140825
+href =  /video/2014/08/25/finding-meaning-in-the-sp-500-2000-mark?videoId=340767038&newsChannel=businessNews
+href =  /article/2014/08/25/us-markets-global-idUSKBN0GP0L520140825
+href =  /article/2014/08/25/us-markets-forex-idUSKBN0GP0H120140825
+href =  /article/2014/08/25/us-markets-bonds-euro-idUSKBN0GP0HR20140825
+href =  /article/2014/08/25/us-iraq-security-idUSKBN0GP0L020140825
+href =  /video/2014/08/25/iraqs-abadi-forming-new-government-amid?videoId=340762771&newsChannel=worldNews
+href =  /article/2014/08/25/us-southchinasea-indonesia-natuna-insigh-idUSKBN0GP1WA20140825
+href =  /article/2014/08/25/us-libya-security-idUSKBN0GP0NZ20140825
+href =  /article/2014/08/25/us-hp-autonomy-idUSKBN0GP1LA20140825
+href =  /article/2014/08/25/us-comtech-sale-exclusive-idUSKBN0GP1S520140825
+href =  /article/2014/08/25/us-digital-ally-shares-idUSKBN0GP1WX20140825
+href =  /article/2014/08/25/us-usa-texas-perry-idUSKBN0GP1SL20140825
+href =  /article/2014/08/25/us-usa-california-water-idUSKBN0GP21N20140825
+href =  /article/2014/08/25/us-usa-election-tennessee-idUSKBN0GP1UX20140825
+href =  /article/2014/08/25/us-burger-kg-wld-tim-hortons-mergers-idUSKBN0GP00R20140825
+href =  /video/2014/08/25/burger-king-in-talks-to-buy-tim-hortons?videoId=340762951&newsChannel=innovationNews
+href =  /article/2014/08/25/us-chevron-duvernay-investor-exclusive-idUSKBN0GP20220140825
+href =  /article/2014/08/25/us-hubspot-ipo-idUSKBN0GP1VR20140825
+href =  /news/pictures/slideshow?articleId=USRTR43MVW
+href =  /news/pictures/slideshow?articleId=USRTR43MVW
+href =  /news/pictures/slideshow?articleId=USRTR43PJ0
+href =  /news/pictures/slideshow?articleId=USRTR43PJ0
+href =  /article/2014/08/14/us-education-textbooks-costs-idUSKBN0GE1YG20140814
+href =  /article/2014/08/23/us-usa-panda-idUSKBN0GN0M120140823
+href =  /article/2014/08/25/us-usa-new-york-bridge-idUSKBN0GP02H20140825
+href =  /article/2014/08/25/us-usa-earthquake-wine-idUSKBN0GO0WJ20140825
+href =  http://www.reuters.com/video/2014/08/22/breakingviews-modern-bad-economic-ideas?videoId=340742329&videoChannel=5&channelName=Business
+href =  http://www.reuters.com/video/2014/08/25/indonesia-enters-south-china-sea-strife?videoId=340759461&videoChannel=5&channelName=Business
+href =  http://www.reuters.com/video/2014/08/22/scent-fading-for-celebrity-fragrances?videoId=340742019&videoChannel=5&channelName=Business
+href =  http://ara.reuters.com
+href =  http://ar.reuters.com
+href =  http://br.reuters.com
+href =  http://ca.reuters.com
+href =  http://cn.reuters.com
+href =  http://fr.reuters.com
+href =  http://de.reuters.com
+href =  http://in.reuters.com
+href =  http://it.reuters.com
+href =  http://jp.reuters.com
+href =  http://lta.reuters.com
+href =  http://mx.reuters.com
+href =  http://ru.reuters.com
+href =  http://es.reuters.com
+href =  http://uk.reuters.com
+href =  http://www.reuters.com/finance
+href =  http://www.reuters.com/finance/markets
+href =  http://www.reuters.com/news/world
+href =  http://www.reuters.com/news/politics
+href =  http://www.reuters.com/news/technology
+href =  http://blogs.reuters.com/us/
+href =  http://www.reuters.com/finance/personal-finance
+href =  http://www.reuters.com/news/pictures
+href =  http://www.reuters.com/news/video
+href =  http://www.reuters.com/assets/siteindex
+href =  http://thomsonreuters.com/news-services/
+href =  http://thomsonreuters.com/site/reuters-brand-attribution-guidelines/
+href =  http://thomsonreuters.com/site/delivery-options/
+href =  http://reuters.zendesk.com
+href =  http://reuters.zendesk.com/anonymous_requests/new
+href =  http://www.twitter.com/reuters
+href =  http://www.facebook.com/Reuters
+href =  http://www.linkedin.com/today/reuters.com
+href =  http://www.reuters.com/tools/rss
+href =  http://www.reuters.com/tools/podcasts
+href =  http://www.reuters.com/tools/mobile
+href =  http://www.reuters.com/privacy-policy
+href =  http://www.reuters.com/terms-of-use
+href =  http://s2.reutersmedia.net/resources_v2/images/media_guide_01_08_13.pdf
+href =  http://thomsonreuters.com/copyright/
+href =  http://thomsonreuters.com/
+href =  http://thomsonreuters.com/about/
+href =  http://ir.thomsonreuters.com
+href =  http://careers.thomsonreuters.com/
+href =  http://thomsonreuters.com/about/contact_us/
+Processing:  http://af.reuters.com  to  res/url_00.html
+Data =  AlertNet
+Data =  Liberian doctor who received rare Ebola drug ZMapp dies
+Data =  Investing
+Data =  Lonmin aims to cut up to 5,700 South Africa jobs: sources
+Data =  Sport
+Data =  Algeria suspend all football after player death
+Data =  World
+Data =  Oddly Enough
+Data =  Metals 
+Data =  &
+Data =   Mining
+Data =  Energy 
+Data =  &
+Data =   Oil
+Data =  Agricultural Commodities
+Data =  Latest AlertNet Crises News
+Processing:  http://ara.reuters.com  to  res/url_01.html
+Data =  [ERROR] Parsing error: http://ara.reuters.com
+Processing:  http://ar.reuters.com  to  res/url_01.html
+Data =  [ERROR] Parsing error: http://ar.reuters.com
+Processing:  http://br.reuters.com  to  res/url_01.html
+Data =  Bovespa sobe 2% e fecha no maior patamar em 18 meses por expectativa com Ibope
+Data =  [ERROR] Parsing error: http://br.reuters.com
+Processing:  http://ca.reuters.com  to  res/url_01.html
+Data =  Israeli air strikes kill two Palestinians, 20 wounded
+Data =  U.N. accuses Islamic State of mass killings
+Data =  Business
+Data =  Investors cheer Burger King-Tim Hortons 'combo deal'
+Data =  Canada
+Data =  Canada's intelligence head says returning Islamist militants pose threat
+Data =  Sports
+Data =  Entertainment
+Data =  Technology
+Processing:  http://cn.reuters.com  to  res/url_02.html
+Data =   
+Data =   
+Data =   
+Data =  [ERROR] Parsing error: http://cn.reuters.com
+Processing:  http://fr.reuters.com  to  res/url_02.html
+Data =  [ERROR] Parsing error: http://fr.reuters.com
+Processing:  http://de.reuters.com  to  res/url_02.html
+Data =  Keine Entspannungssignale vor Ukraine-Russland-Gipfel
+Data =  Lufthansa und Bahn drohen zum Ferienende Streiks
+Data =  Inland
+Data =  [ERROR] Parsing error: http://de.reuters.com
+Processing:  http://in.reuters.com  to  res/url_02.html
+Data =  Karbonn Mobiles expects to go public by 2016
+Data =  Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  U.N. accuses Islamic State of mass killings
+Data =  SC says government coal allocations illegal
+Data =  Amazon snaps up startup Twitch for $970 mln
+Data =  Balotelli completes move to Liverpool
+Data =  E-cigs may be tempting to non-smoking youths 
+Data =  Film veteran Richard Attenborough dead
+Data =  
+					Business
+Data =  
+					Markets
+Data =  
+					World
+Data =  
+					Technology
+Data =  
+					Economy
+Data =  
+					Deals
+Data =  South Asia
+Data =  How Pakistani Prime Minister Nawaz Sharif stumbled into protests crisis
+Data =  Expert Zone
+Data =  Why inflation is so persistent
+Data =  India Insight
+Data =  Rani Mukerji on playing 
+Data =  Mardaani
+Data =   roles
+Data =  Photo Blog
+Data =  First pictures of Taj Mahal to 
+Data =  Hairy family of Burma
+Data =  : subcontinent photos from 1850-1910
+Data =  Katiyabaaz
+Data =   transforms banal reality into gripping tale
+Data =  Liberian doctor who received rare Ebola drug ZMapp dies
+Data =  Reuters India on Twitter
+Data =  PICTURE GALLERY
+Data =  Editor's choice
+Data =  Video
+Processing:  http://it.reuters.com  to  res/url_03.html
+Data =  Immigrazione, Italia chiede aiuto Ue, domani riunione a Roma su "Frontex Plus"
+Data =  Pa, da primo settembre -50% permessi sindacali - ministero
+Data =  Valute
+Data =  Finanza e Investimenti
+Data =  [ERROR] Parsing error: http://it.reuters.com
+Processing:  http://jp.reuters.com  to  res/url_03.html
+Data =  [ERROR] Parsing error: http://jp.reuters.com
+Processing:  http://lta.reuters.com  to  res/url_03.html
+Data =  [ERROR] Parsing error: http://lta.reuters.com
+Processing:  http://mx.reuters.com  to  res/url_03.html
+Data =  [ERROR] Parsing error: http://mx.reuters.com
+Processing:  http://ru.reuters.com  to  res/url_03.html
+Data =  [ERROR] Parsing error: http://ru.reuters.com
+Processing:  http://es.reuters.com  to  res/url_03.html
+Data =  Hollande expulsa del gobierno al ministro rebelde Montebourg
+Data =  Poroshenko disuelve el Parlamento y convoca a elecciones el 26 de octubre
+Data =  Negocios
+Data =  [ERROR] Parsing error: http://es.reuters.com
+Processing:  http://uk.reuters.com  to  res/url_03.html
+Data =  Alex Salmond wins last TV debate - poll 
+Data =  Ukraine accuses Russia of opening new war front before leaders' meeting
+Data =  Rival second Libyan assembly chooses own PM as chaos spreads
+Data =  How Pakistan's Sharif stumbled into protests crisis
+Data =  Slain Missouri teen remembered with calls for peace, justice
+Data =  Syria says would work with any state to fight Islamist militants
+Data =  Iran says "completing" nuclear steps agreed with IAEA
+Data =  Video
+Data =  Father-daughter duo capture another alligator
+Data =  Death toll continues to rise in Gaza war with no end in sight
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Theo Curtis' ransom not paid by U.S. -State Department
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Michael Brown remembered with calls for peace, justice
+Data =  
+					Business
+Data =  
+					Markets
+Data =  
+					World
+Data =  
+					Technology
+Data =  
+					Politics
+Data =  
+					Deals
+Data =  
+					Galleries of the Day
+Data =  Funeral for Michael Brown
+Data =  Richard Attenborough: 1923-2014
+Data =  Tributes pour in for Attenborough
+Data =  News in Pictures
+Data =  Notting Hill Carnival
+Data =  Opinion
+Data =  Germany
+Data =  s renewed hegemony isn
+Data =  t something Europe needs to fear
+Data =  Here
+Data =  s what it will take to trigger the next stock market correction
+Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
+Processing:  http://www.reuters.com/home  to  res/url_04.html
+Data =  Behind the S
+Data =   500's rise
+Data =  Israeli air strikes kill two Palestinians, 20 wounded
+Data =  Ukraine accuses Russia of opening new front
+Data =  U.N. accuses Islamic State of mass killings
+Data =  Missouri teen remembered with calls for peace
+Data =  Breakingviews: Burgers and doughnuts
+Data =  Russia's fall from Soviet 'glory'
+Data =  Video
+Data =  Father-daughter duo capture another alligator
+Data =  Death toll continues to rise in Gaza war with no end in sight
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Theo Curtis' ransom not paid by U.S. -State Department
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  
+					Business
+Data =  
+					Markets
+Data =  
+					World
+Data =  
+					Technology
+Data =  
+					Politics
+Data =  
+					Deals
+Data =  
+					Galleries of the Day
+Data =  Funeral for Michael Brown
+Data =  REUTERS FYI: NEWS WORTH KNOWING
+Data =  Oh, go fly a bike!
+Data =  Pictures 
+Data =  Quake hits California
+Data =  OPINION
+Data =  America
+Data =  s cultural segregation fault lines
+Data =  What the Justice Department will do in Ferguson
+Data =  Reuters Video
+Data =  Laboring for a grip on when to hike
+Processing:  http://www.reuters.com/finance  to  res/url_05.html
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  
+					Latest Business News
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Breakingviews: Burgers and ice buckets
+Data =  Amazon snaps up live video startup Twitch for $970 million
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
+Data =  U.S. confident its $5 billion S
+Data =   lawsuit was not retaliation
+Data =  Time Warner prepares to offer buyouts at Turner cable division
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Data Dive
+Data =  Bank of America
+Data =  s big fine
+Data =  
+					Small Business
+Processing:  http://www.reuters.com/finance  to  res/url_06.html
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  
+					Latest Business News
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Breakingviews: Burgers and ice buckets
+Data =  Amazon snaps up live video startup Twitch for $970 million
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
+Data =  U.S. confident its $5 billion S
+Data =   lawsuit was not retaliation
+Data =  Time Warner prepares to offer buyouts at Turner cable division
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Data Dive
+Data =  Bank of America
+Data =  s big fine
+Data =  
+					Small Business
+Processing:  http://www.reuters.com/finance/economy  to  res/url_07.html
+Data =  New home sales fall, but U.S. economy stays on solid ground
+Data =  U.S. confident its $5 billion S
+Data =   lawsuit was not retaliation
+Data =  U.S. services sector growth slows for 2nd straight month in Aug: Markit
+Data =  About-face for ECB's Draghi as he seeks to jolt euro zone into life
+Data =  Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
+Data =  Euro zone bond yields fall as ECB's Draghi boosts QE speculation
+Data =  Russian economy minister calls for looser fiscal policy
+Data =  China sets up $3.3 billion aviation investment fund: report
+Data =  French economy minister urges alternative to German austerity
+Data =  Argentina to appeal WTO ruling on import restrictions
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Macroscope
+Data =  UK rate consensus nearly rock-solid even as markets flip-flop over timing
+Data =  
+					Bonds Market News
+Data =  UPDATE 1-California wine country quake losses seen in the billions
+Processing:  http://newsandinsight.thomsonreuters.com/Legal/  to  res/url_08.html
+Processing:  http://www.reuters.com/finance/deals  to  res/url_09.html
+Data =  Investors cheer Burger King-Tim Hortons 'combo deal'
+Data =  Exclusive: Chevron seeks up to $1.5 billion for Canadian oil project - sources
+Data =  Amazon snaps up live video startup Twitch for $970 million
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  Marketing software provider HubSpot files for IPO
+Data =  Exclusive: Communications equipment maker Comtech explores sale
+Data =  Judge delays ruling on Momentive bankruptcy exit plan
+Data =  BOC Aviation orders Boeing planes worth $8.8 billion
+Data =  Alcoa to close smelter in Italy, take 3rd-quarter charge
+Data =  Miner Cliffs plans share buyback, may modify debt agreements
+Data =  
+					peHUB
+Data =  
+					M 
+Data =  &
+Data =   A News from the Web
+Processing:  http://www.reuters.com/news/video?videoChannel=5  to  res/url_010.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/subjects/aerospace-and-defense  to  res/url_011.html
+Data =  Stretched Dutch say will end Turkey Patriot missile deployment in January
+Data =  BOC Aviation orders Boeing planes worth $8.8 billion
+Data =  China sets up $3.3 billion aviation investment fund: report
+Data =  Russia to replace sanctions-hit airline with new carrier
+Data =  Russia denies its aircraft violated Finland's airspace: reports
+Data =  Finland suspects Russian aircraft violated airspace
+Data =  China rejects U.S. criticism over jet encounter
+Data =  U.S. protests intercept of Navy jet by Chinese warplane
+Data =  FAA certifies Boeing 787-9 with GE engines: document
+Data =  Airbus may sell stake in submarine supplier Atlas-Die Welt
+Data =  Find out how much Boeing or Airbus jet orders are worth 
+Data =  SPECIAL REPORT
+Data =  Libya - From Arms Race to Arms Showcase
+Data =  A Wing and a Prayer: Outsourcing at Boeing
+Data =  The Man Who Sold the Sky
+Data =  Warbus: The Incredible Saga of Europe's A400M
+Processing:  http://www.reuters.com/subjects/banks  to  res/url_012.html
+Data =  BOC Aviation orders Boeing planes worth $8.8 billion
+Data =  HSBC is sued in U.S. for $250 million over alleged role in 'death bonds'
+Data =  Goldman Sachs, U.S. agency in mortgage settlement worth $1.2 billion
+Data =  Bank of America settles mortgage probes for $16.65 billion
+Data =  New York, California reap mini-bonanza from Bank of America settlement
+Data =  BofA admits to post-crisis mortgage failures as part of settlement
+Data =  JPMorgan customers targeted in email phishing campaign
+Data =  Settlement brightens outlook for Bank of America, fund managers say
+Data =  Exclusive: Shake Shack picks JPMorgan, Morgan Stanley to lead IPO - sources
+Data =  JPMorgan, BofA to raise junior banker pay by 20 percent: sources
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Processing:  http://www.reuters.com/subjects/autos  to  res/url_013.html
+Data =  German car parts suppliers asked to form JVs in China: Stuttgarter
+Data =  
+					Latest Auto News
+Data =  Cadillac considers moving some functions to Manhattan
+Data =  Ford tells U.S. dealers to stop selling some C-Max, Focus models
+Data =  Honda to modify Fit to boost test score, calls back 12,000 cars
+Data =  Policy delay has Japanese carmakers reviewing Philippines expansion plans
+Processing:  http://www.reuters.com/finance/summits  to  res/url_014.html
+Data =  Global Wealth Management 2014 Summit
+Data =  Index fund guru Bogle finds little traction on governance
+Data =  
+					Past Summits
+Processing:  http://www.reuters.com/finance/smallBusiness  to  res/url_015.html
+Data =  U.S. small business borrowing slows in February
+Data =  More resources
+Data =  Starting a Business
+Data =  Incorporation 
+Data =  &
+Data =   Legal Structure
+Data =  Employment Law 
+Data =  &
+Data =   HR
+Data =  Taxes 
+Data =  &
+Data =   Finance
+Data =  Operations
+Data =  Insurance 
+Data =  &
+Data =   Liability
+Data =  
+					Entrepreneurial
+Data =  Q
+Data =   with Randy Goldberg, co-founder of Bombas Socks
+Data =  
+					Small Business Video
+Data =  [ERROR] Parsing error: http://www.reuters.com/finance/smallBusiness
+Processing:  http://www.reuters.com/finance/markets  to  res/url_015.html
+Data =  
+					Market News
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  Global stocks rally on ECB stimulus bet; dollar gains
+Data =  Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  Dollar rises as euro tumbles to near one-year bottom
+Data =  Euro zone bond yields fall as ECB's Draghi boosts QE speculation
+Data =  Market leaders seen taking S
+Data =   500 to 2,000
+Data =  
+					U.S. Market Report
+Data =  WRAPUP 3-Amazon snaps up live video startup Twitch for $970 million
+Data =  
+					UK Market Report
+Data =  European shares up on expectations of further ECB easing
+Data =  
+					European Market Report
+Data =  Prospect of more ECB stimulus lifts European shares
+Data =  
+					Tokyo Market Report
+Data =  Nikkei rises to 3-1/2-week high in thin trade; weaker yen helps mood
+Data =  
+					Hong Kong Market Report
+Data =  Hong Kong main index closes at highest since May 2008
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Processing:  http://www.reuters.com/finance/markets  to  res/url_016.html
+Data =  
+					Market News
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  Global stocks rally on ECB stimulus bet; dollar gains
+Data =  Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  Dollar rises as euro tumbles to near one-year bottom
+Data =  Euro zone bond yields fall as ECB's Draghi boosts QE speculation
+Data =  Market leaders seen taking S
+Data =   500 to 2,000
+Data =  
+					U.S. Market Report
+Data =  WRAPUP 3-Amazon snaps up live video startup Twitch for $970 million
+Data =  
+					UK Market Report
+Data =  European shares up on expectations of further ECB easing
+Data =  
+					European Market Report
+Data =  Prospect of more ECB stimulus lifts European shares
+Data =  
+					Tokyo Market Report
+Data =  Nikkei rises to 3-1/2-week high in thin trade; weaker yen helps mood
+Data =  
+					Hong Kong Market Report
+Data =  Hong Kong main index closes at highest since May 2008
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Processing:  http://www.reuters.com/finance/markets/us  to  res/url_017.html
+Data =  WRAPUP 3-Amazon snaps up live video startup Twitch for $970 million
+Data =  PRESS DIGEST- British Business - Aug 26
+Data =  PRESS DIGEST- Financial Times - Aug 26
+Data =  UPDATE 2-Big screen stars bring new shine to Emmys, TV's top night
+Data =  MOVES-TCW names Engelsman global chief compliance officer
+Data =  CME expands live cattle futures trading limit effective Sep. 7
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  
+					Upgrades
+Data =  
+					Downgrades
+Processing:  http://www.reuters.com/finance/markets/europe  to  res/url_018.html
+Data =  Prospect of more ECB stimulus lifts European shares
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					London Market Report
+Data =  
+					Swiss Market Report
+Processing:  http://www.reuters.com/finance/markets/asia  to  res/url_019.html
+Data =  Nikkei rises to 3-1/2-week high in thin trade; weaker yen helps mood
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Hong Kong Market Report
+Data =  
+					Commodities
+Processing:  http://www.reuters.com/finance/global-market-data  to  res/url_020.html
+Data =  
+					Americas
+Data =  
+					Europe
+Data =  
+					Asia Pacific
+Data =  Energy
+Data =  Basic Materials
+Data =  Industrials
+Data =  Cyclical Goods 
+Data =  &
+Data =   Services
+Data =  Non-Cyclical Goods 
+Data =  &
+Data =   Services
+Data =  Financials
+Data =  Healthcare
+Data =  Technology
+Data =  Telecoms
+Data =  Utilities
+Data =  
+					Currencies
+Processing:  http://www.reuters.com/finance/markets/indices  to  res/url_021.html
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Currencies
+Data =  
+					Commodities
+Processing:  http://www.reuters.com/finance/stocks  to  res/url_022.html
+Data =  Pfizer walks away from $118 billion AstraZeneca takeover fight
+Data =  
+					Today's Company Results
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  
+					Upgrades
+Data =  
+					Downgrades
+Processing:  http://www.reuters.com/finance/bonds  to  res/url_023.html
+Data =  UPDATE 1-California wine country quake losses seen in the billions
+Data =  U.S. confident its $5 billion S
+Data =   lawsuit was not retaliation
+Data =  GLOBAL MARKETS-Stocks rally on ECB stimulus bet; dollar gains
+Data =  UPDATE 2-U.S. bankruptcy judge approves Detroit water/sewer bond plan
+Data =  CANADA FX DEBT-C$ weakens as investors mull central bank policies
+Data =  Judge delays ruling on Momentive bankruptcy exit plan
+Data =  GLOBAL MARKETS-Stocks rally on ECB stimulus bet; dollar gains
+Data =  UPDATE 5-France's Hollande ejects rebel minister Montebourg from cabinet
+Data =  TREASURIES-Yields drop as hopes for more ECB stimulus boosts demand
+Data =  WRAPUP 2-New home sales fall, but U.S. economy stays on solid ground
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  
+					MuniLand
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Processing:  http://www.reuters.com/finance/currencies  to  res/url_024.html
+Data =  GLOBAL MARKETS-Stocks rally on ECB stimulus bet; dollar gains
+Data =  CANADA FX DEBT-C$ weakens as investors mull central bank policies
+Data =  UPDATE 2-Final TV debate before Scotland's independence vote begins
+Data =  FOREX-Dollar rises as euro tumbles to near 1-year bottom
+Data =  GLOBAL MARKETS-Stocks rally on ECB stimulus bet; dollar gains
+Data =  EMERGING MARKETS-Brazil stocks gain on election outlook, ECB
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					European Currencies
+Data =  GLOBAL MARKETS-Shares rally on ECB stimulus bet; dollar gains
+Data =  
+					Asian Currencies
+Data =  UPDATE 3-Bank of Israel cuts rates to historic low on Gaza war fears
+Data =  
+					Economic News
+Data =  DIARY - Today in Washington - Aug 26
+Processing:  http://www.reuters.com/finance/commodities  to  res/url_025.html
+Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
+Data =  Libya seeks foreign help for oilfields as rockets fired at airport
+Data =  Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
+Data =  China steel output growth doesn't gel with coking coal: Russell
+Data =  Brazil's drought-hit coffee belt turns to machines to lower costs
+Data =  Insight: As Venezuelan deliveries wane, allies tap traders for pricey fuel
+Data =  CME Group resumes electronic trading after glitch delays open
+Data =  Second tanker finishes loading oil at Libya's biggest export port
+Data =  Saudi Aramco CEO says OPEC will take oil price 'as it comes'
+Data =  China's corn consumers hit hard by tough import stance: Maguire
+Data =  
+					THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Bonds
+Data =  
+					Currencies
+Data =  
+					FXpert
+Processing:  http://www.reuters.com/finance/futures  to  res/url_026.html
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  MOVES-TCW names Engelsman global chief compliance officer
+Processing:  http://www.reuters.com/finance/funds  to  res/url_027.html
+Data =  MOVES-TCW names Engelsman global chief compliance officer
+Data =  U.S. confident its $5 billion S
+Data =   lawsuit was not retaliation
+Data =  US STOCKS-S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  SEC, NY broker face off over scheme to profit from terminally ill
+Data =  UPDATE 2-Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  LIPPER AWARDS: Home bias for Hong Kong pensions
+Data =  
+					Personal Finance
+Data =  Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  
+					Funds News
+Data =  Judge delays ruling on Momentive bankruptcy exit plan
+Processing:  http://www.pehub.com/  to  res/url_028.html
+Data =  Audax triples its money with TriMark sale
+Data =  Amazon pays $970 mln for Twitch, nearly 10x last VC valuation
+Data =  peHUB Second Opinion
+Data =  Dauber joins Amplify as GP
+Data =  Burger King in talks to buy Canada
+Data =  s Tim Hortons: Reuters
+Data =  The Raine Group leads $41 mln round for fantasy sports site DraftKings
+Data =  Kelso offers market-beating terms to help raise Fund IX
+Data =  Heinz recall brings food tracking issue to the fore in China: Reuters
+Data =  peHUB First Read
+Data =  Hardware entrepreneurs: Win a free ticket to our VC conference
+Data =  peHUB Second Opinion
+Data =  Highland Capital, Google Ventures, Redpoint back cinematic VR startup Jaunt
+Data =  LPs navigate the most historically crowded fundraising market
+Data =  Top 10: private equity
+Data =  peHUB First Read
+Data =  Robbed! Someone stole 5 computers from Kleiner Perkins
+Data =  Tate
+Data =  s Bake Shop is on the block
+Data =  Walsh jumps to Court Square as head of IR
+Processing:  http://www.reuters.com/finance/EarningsUS  to  res/url_029.html
+Data =  Co-Op Bank losses narrow on branch closures, staff cuts
+Data =  ZKB boosts provisions tied to U.S. tax case as profit falls
+Data =  Chinese carmaker BYD'S H1 net profit down 16 percent on weak gasoline vehicle sales
+Data =  Gap raises forecast; to open 40 stores in India
+Data =  GameStop second-quarter sales beat expectations; shares rise
+Data =  Salesforce lifts forecast on strong demand for cloud software
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  
+					Markets
+Processing:  http://www.reuters.com/finance/markets/dividends  to  res/url_030.html
+Processing:  http://www.reuters.com/news/world  to  res/url_031.html
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Data =  
+					Latest World News
+Data =  
+					World Video
+Data =  Death toll continues to rise in Gaza war with no end in sight
+Data =  Boko Haram declares caliphate in Nigerian town
+Data =  Syria seeks international help to fight Islamic State
+Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
+Data =  Rival second Libyan assembly chooses own PM as chaos spreads
+Data =  Scotland's pro-independence leader wins last TV debate before vote: poll
+Data =  How Pakistan's Sharif stumbled into protests crisis
+Data =  France's Hollande ejects rebel minister Montebourg from cabinet
+Data =  WORLD WATCH
+Data =  
+					Pictures
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Processing:  http://www.reuters.com/news/world  to  res/url_032.html
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Data =  
+					Latest World News
+Data =  
+					World Video
+Data =  Death toll continues to rise in Gaza war with no end in sight
+Data =  Boko Haram declares caliphate in Nigerian town
+Data =  Syria seeks international help to fight Islamic State
+Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
+Data =  Rival second Libyan assembly chooses own PM as chaos spreads
+Data =  Scotland's pro-independence leader wins last TV debate before vote: poll
+Data =  How Pakistan's Sharif stumbled into protests crisis
+Data =  France's Hollande ejects rebel minister Montebourg from cabinet
+Data =  WORLD WATCH
+Data =  
+					Pictures
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Processing:  http://www.reuters.com/news/us  to  res/url_033.html
+Data =  California wine country quake losses seen in the billions
+Data =  Slain Missouri teen remembered with calls for peace, justice
+Data =  Lawyers for Texas Governor Perry file motion to dismiss charges
+Data =  U.S. seeks life in prison for bin Laden son-in-law Abu Ghaith
+Data =  Shooter at U.S. Army base in Virginia kills herself, sparks lockdown
+Data =  Judge says California gun waiting time not for all buyers
+Data =  Woman, 75, gets life for killing husband in Wyoming 40 years ago
+Data =  Two people killed in Illinois metal recycling plant blast
+Data =  Judge dismisses lawsuit over U.S. businessman's Bahamas copter crash
+Data =  Bankruptcy judge approves Detroit water/sewer bond plan
+Data =  
+					Top News Video
+Data =  Father-daughter duo capture another alligator
+Data =  
+					Top News
+Data =  
+					Pictures
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Processing:  http://www.reuters.com/subjects/specialReports  to  res/url_034.html
+Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
+Data =  Diffuse Hamas structure complicates Gaza peace efforts
+Data =  Behind Indonesia mining deal, newly minted minister and U.S. mining legend
+Data =  Sierra Leone 'hero' doctor's death exposes slow Ebola response
+Data =  Insight: Brazil's slump hits job market as election approaches
+Data =  Amid U.S. air strikes, Iraq struggles to build own air force
+Data =  Amid outward calm, climate of fear cements Thai military rule
+Data =  As Venezuelan deliveries wane, allies tap traders for pricey fuel
+Data =  'Terrorists' help U.S. in battle against Islamic State in Iraq
+Data =  As Ukraine forces gain in east, focus of German diplomacy shifts
+Data =  
+					Video
+Data =  Re-homing victim: "I could have been dead"
+Data =  
+					Top News
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Processing:  http://www.reuters.com/investigates  to  res/url_035.html
+Processing:  http://www.reuters.com/subjects/euro-zone  to  res/url_036.html
+Data =  Euro falls, stocks rise on ECB stimulus bet
+Data =  Euro falls, stocks rise on ECB stimulus bet
+Data =  French economy minister urges alternative to German austerity
+Data =  Europe fears deflation as Ukraine stays center-stage
+Data =  French economy minister says austerity measures sapping growth
+Data =  Slovene parliament to confirm Cerar as prime minister on Monday
+Data =  Euro zone business growth slows in July, prices fall: PMI
+Data =  Mramor set to return as Slovenian finance minister, new coalition taking shape
+Data =  Euro zone business growth slows in August, prices fall: PMI
+Data =  Stocks up on Putin comments, bond yields fall
+Data =  
+					Germany
+Data =  Germany has spied on Turkey since 1976: Focus magazine
+Data =  
+					France
+Data =  Exclusive: France forced to import wheat as rain hits crop quality
+Data =  
+					Italy
+Data =  Alcoa to close smelter in Italy, take 3rd-quarter charge
+Processing:  http://www.reuters.com/subjects/middle-east  to  res/url_037.html
+Data =  Rival second Libyan assembly chooses own PM as chaos spreads
+Data =  Israeli air strikes kill two Palestinians, 20 wounded
+Data =  Egypt, UAE carried out Tripoli air strikes: U.S. officials
+Data =  U.S. prepares military options in Syria against Islamic State
+Data =  U.S. works with Jordan, Europeans at U.N. on Gaza ceasefire draft
+Data =  How Pakistan's Sharif stumbled into protests crisis
+Data =  U.N. accuses Islamic State of mass killings
+Data =  Syria says would work with any state to fight Islamist militants
+Data =  Saudi Arabia jails 17 people for militant Islamist offences
+Data =  U.S. judge named to U.N. panel on Gaza conflict
+Data =  Netanyahu warns Gazans after Israel destroys 13-story building
+Processing:  http://www.reuters.com/places/china  to  res/url_038.html
+Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
+Data =  BOC Aviation orders Boeing planes worth $8.8 billion
+Data =  Vietnam envoy to visit China to seek thaw in testy ties
+Data =  German car parts suppliers asked to form JVs in China: Stuttgarter
+Data =  Taiwan's Wei family to buy cable TV operator CNS for $2.4 billion: sources
+Data =  Heinz recall brings food tracking issue to the fore in China
+Data =  China sets up $3.3 billion aviation investment fund: report
+Data =  Taiwan's Wei family to buy cable TV operator CNS for $2.4 billion: source
+Data =  China executes eight for 'terrorist' attacks in Xinjiang
+Data =  After food safety scares, China retailer offers baby milk insurance
+Processing:  http://www.reuters.com/places/japan  to  res/url_039.html
+Data =  Japan industry fights 'Minamata' costs as mercury trade ban looms
+Data =  
+					Latest Japan News
+Data =  Death toll could double to over 80 in Hiroshima landslide, more rain falls
+Data =  Russia, in sanctions retaliation, bars entry to some Japanese citizens
+Data =  Landslides hit Japan's Hiroshima, killing at least 36
+Data =  Business growth slows in China and Europe, Russia sanctions still to bite
+Data =  McDonald's Japan denies placing orders with Thailand's CPF
+Data =  
+					Video
+Data =  Landslide death toll just below 40
+Processing:  http://www.reuters.com/places/mexico  to  res/url_040.html
+Data =  Two ancient Mayan cities found in Mexican jungle
+Data =  Mexico launches special police force to guard economic activity
+Data =  Mexico's ruling party proposes cutting seats from Congress
+Data =  Mexico minister says Grupo Mexico account of toxic spill 'totally false'
+Data =  Trip Tips: Latin Americans infuse New York with Hispanic culture
+Data =  Brutality and 'The Beast': why child migration to U.S. is slowing down
+Data =  Mexican president signs landmark energy reform into law
+Data =  Texas' Davis against troops at border but backs U.S. funding for security
+Data =  Mezcal vies with tequila for bigger share of drink market
+Data =  Son of prominent Mexican politician charged in drug cartel case
+Data =  
+					World News
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Processing:  http://www.reuters.com/places/brazil  to  res/url_041.html
+Data =  Brazil's drought-hit coffee belt turns to machines to lower costs
+Data =  Conservation of Amazon threatened by poor social conditions of its people: study
+Data =  Ticks may transmit disease faster than currently thought
+Data =  Rousseff, rivals change tack in Brazil's reshaped election
+Data =  Petrobras worker dies from burns in refinery explosion
+Data =  Brazil's Silva launches bid, threatens Rousseff re-election
+Data =  Grassroots leader Marina Silva angles for Brazil's mainstream
+Data =  Factbox: Marina Silva's economic proposals for Brazil
+Data =  Brazil's Silva launches bid, threatens Rousseff re-election
+Data =  Exclusive: Brazil's Silva would get opposition's support in election runoff
+Data =  
+					World News
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Data =  Brazil's borders
+Data =  Interactive
+Processing:  http://www.reuters.com/places/africa  to  res/url_042.html
+Data =  Boko Haram leader says ruling Nigerian town by Islamic law
+Data =  
+					Latest Africa News
+Data =  Sierra Leone 'hero' doctor's death exposes slow Ebola response
+Data =  British national contracts Ebola in Sierra Leone
+Data =  Niger minister arrested in 'baby-trafficking' investigation
+Data =  Twelve dead, 36,000 homeless in Niger flooding
+Data =  Philippines recalls peacekeepers from Liberia over Ebola threat
+Data =  SPECIAL REPORTS
+Data =  The rifts behind Nigeria's mass kidnap
+Processing:  http://www.reuters.com/places/russia  to  res/url_043.html
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Data =  Ukraine's president sets parliamentary election for October 26
+Data =  Russia grants asylum to banker wanted by Lithuania: prosecutors
+Data =  Russia sees West changing tack on Syria, urges engagement with Assad
+Data =  Russia announces new convoy on eve of delicate Ukraine talks
+Data =  Russia allows dairy imports from Turkish firms after Western food ban
+Data =  German business morale sours in August as Ukraine crisis weighs
+Data =  Abkhazia elects opposition leader as president
+Data =  Ukraine defiant on national day, rebels parade captives
+Data =  Ukraine defiant on national day, rebels parade captives
+Data =  
+					World News
+Data =  Israeli air strikes kill two Palestinians, 20 wounded
+Processing:  http://blogs.reuters.com/india  to  res/url_044.html
+Data =  Interview: Rani Mukerji on playing 
+Data =  Mardaani
+Data =   roles in Bollywood films
+Data =  Markets this week: Cipla, BHEL top Sensex gainers
+Data =  First pictures of Taj Mahal to 
+Data =  Hairy family of Burma
+Data =  : subcontinent photos from 1850-1910
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/india
+Processing:  http://www.reuters.com/news/video?videoChannel=117760  to  res/url_044.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/politics  to  res/url_045.html
+Data =  All eyes on governor's race in Florida primary, turnout is key
+Data =  
+					Latest Politics Headlines
+Data =  
+					Politics Video
+Data =  ACA price outlook varies widely state-to-state for 2015
+Data =  After Hobby Lobby, ACA exceptions may become the rule
+Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+Data =  As Obama's vacation ends, criticism does not
+Data =  With Graham name, Democrats see rare chance for Florida win
+Data =  Prosecution questions Virginia ex-governor in corruption trial
+Data =  U.S. Republicans pressure Obama to step up action against ISIS
+Data =  Texas Governor Perry tries to turn felony indictment into election gold
+Data =  
+					Politics Video
+Data =  ACA price outlook varies widely state-to-state for 2015
+Data =  After Hobby Lobby, ACA exceptions may become the rule
+Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+Processing:  http://www.reuters.com/politics  to  res/url_046.html
+Data =  All eyes on governor's race in Florida primary, turnout is key
+Data =  
+					Latest Politics Headlines
+Data =  
+					Politics Video
+Data =  ACA price outlook varies widely state-to-state for 2015
+Data =  After Hobby Lobby, ACA exceptions may become the rule
+Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+Data =  As Obama's vacation ends, criticism does not
+Data =  With Graham name, Democrats see rare chance for Florida win
+Data =  Prosecution questions Virginia ex-governor in corruption trial
+Data =  U.S. Republicans pressure Obama to step up action against ISIS
+Data =  Texas Governor Perry tries to turn felony indictment into election gold
+Data =  
+					Politics Video
+Data =  ACA price outlook varies widely state-to-state for 2015
+Data =  After Hobby Lobby, ACA exceptions may become the rule
+Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+Processing:  http://www.reuters.com/subjects/supreme-court  to  res/url_047.html
+Data =  U.S. Supreme Court puts hold on gay marriage in Virginia
+Data =  Advocates urge U.S. top court not to block gay marriage in Virginia
+Data =  U.S. appeals court declines to block Virginia gay marriage ruling
+Data =  Nebraska court ruling on Keystone XL pipeline not expected until 2015
+Data =  Utah asks U.S. top court to hear gay marriage case
+Data =  Q
+Data =  : U.S. Justice Ginsburg on Hobby Lobby, gay marriage, retirement
+Data =  Obamacare subsidy case could be reviewed by U.S. Supreme Court
+Data =  U.S. Justice Ginsburg hits back at liberals who want her to retire
+Data =  U.S. Supreme Court lifts stay of execution for Arizona inmate
+Data =  Utah asks Supreme Court to stay ruling on recognizing gay marriages
+Data =  
+					Politics Headlines
+Processing:  http://www.reuters.com/news/video?videoChannel=1003  to  res/url_048.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/news/technology  to  res/url_049.html
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  
+					Latest Technology News
+Data =  
+					Technology Video
+Data =  A ring that reads text for the blind
+Data =  Apple iPhone 6 screen hits snag ahead of launch
+Data =  Is it a plane? No, it's a hoverbike
+Data =  Sony says PlayStation network back online, user information safe after attack
+Data =  CME Group resumes electronic trading after glitch delays open
+Data =  Nokia sees clear revenue synergies from SAC Wireless acquisition
+Data =  Rocket Internet and Zalando to unveil listing plans in Sept: sources
+Data =  Digital Ally shares surge on interest in wearable cameras
+Data =  
+					Business Headlines
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Breakingviews: Burgers and ice buckets
+Data =  Burger King in talks to buy Tim Hortons
+Processing:  http://www.reuters.com/news/technology  to  res/url_050.html
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  
+					Latest Technology News
+Data =  
+					Technology Video
+Data =  A ring that reads text for the blind
+Data =  Apple iPhone 6 screen hits snag ahead of launch
+Data =  Is it a plane? No, it's a hoverbike
+Data =  Sony says PlayStation network back online, user information safe after attack
+Data =  CME Group resumes electronic trading after glitch delays open
+Data =  Nokia sees clear revenue synergies from SAC Wireless acquisition
+Data =  Rocket Internet and Zalando to unveil listing plans in Sept: sources
+Data =  Digital Ally shares surge on interest in wearable cameras
+Data =  
+					Business Headlines
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Breakingviews: Burgers and ice buckets
+Data =  Burger King in talks to buy Tim Hortons
+Processing:  http://blogs.reuters.com/mediafile  to  res/url_051.html
+Data =  How about Hightail-ing it?
+Data =  On Twitter, dubious health claims from e-cigarette bots
+Data =  Video Transcript: Cory Booker on Tech Tonic Interface
+Data =  How Tumblr might 
+Data =  screw up
+Data =   Yahoo
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/mediafile
+Processing:  http://www.reuters.com/news/science  to  res/url_051.html
+Data =  Boeing says completed key design review for space taxi
+Data =  Rare blue lobster trapped by Maine father-daughter team
+Data =  Satellite error sets back EU's ambitious satnav program
+Data =  Experimental U.S. hypersonic weapon destroyed seconds after launch
+Data =  SpaceX rocket terminated in Texas test flight, company says
+Data =  Tire makers race to turn dandelions into rubber
+Data =  Our life with the Neanderthals was no brief affair
+Data =  Spacewalking cosmonauts launch satellite, set up studies
+Data =  Specks of star dust likely first from beyond solar system
+Data =  'Mission Blue' film charts scientist's quest to save oceans
+Data =  
+					Health News
+Data =  Exclusive: U.S. approval of Merck cancer immunotherapy expected soon
+Processing:  http://www.reuters.com/news/video?videoChannel=6  to  res/url_052.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/bizfinance/technology/Top100Innovators  to  res/url_053.html
+Data =  Qualcomm CEO vows to return 75 percent of free cash flow
+Data =  
+					Latest innovation news
+Data =  
+					Innovation Video
+Data =  Sao Paulo metro strike suspended; fears loom ahead of World Cup
+Data =  Innovation, from electric motors to mascara
+Data =  Too much innovation? It's possible
+Processing:  http://blogs.reuters.com/us/  to  res/url_054.html
+Data =  Ferguson: America
+Data =  s cultural segregation fault lines
+Data =  Tragedy in Ferguson: What the Justice Department can do next
+[ERROR] Parsing error: http://blogs.reuters.com/us/
+Processing:  http://blogs.reuters.com/us/  to  res/url_054.html
+Data =  Ferguson: America
+Data =  s cultural segregation fault lines
+Data =  Tragedy in Ferguson: What the Justice Department can do next
+[ERROR] Parsing error: http://blogs.reuters.com/us/
+Processing:  http://blogs.reuters.com/ian-bremmer/  to  res/url_054.html
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/ian-bremmer/
+Processing:  http://blogs.reuters.com/stories-id-like-to-see/  to  res/url_054.html
+Data =  What
+Data =  s the real story behind the Rick Perry 
+Data =  case?
+Data =  The price of life and George W. Bush post-White House
+Data =  What we don
+Data =  t know about Qatar and what we don
+Data =  t know about key Senate races
+Data =  The Russian sanctions information gap
+Data =  The facts on Iron Dome, suing over Flight 17 and reviving the VA
+Data =  Google
+Data =  s lost links, U.S. border crossing guards and when a Tea Party loss is a win
+Data =  How much is contraception coverage and costly violations for BNP Paribas
+Data =  A Clinton alternative, more ABC legal woes and where
+Data =  s A-Rod?
+Data =  Whither Cantor and setting the price on a cure
+Data =  More questions for Snowden and the GOP establishment takes on the 2016 primaries
+Processing:  http://blogs.reuters.com/hugo-dixon/  to  res/url_055.html
+Data =  Euro crisis is sleeping, not dead
+Data =  What is EU capital markets union?
+Data =  UK prepares for possible EU failure
+Data =  How to fight UK immigration fears
+Data =  Matteo Renzi is on a roll
+Data =  EU would also be harmed by Brexit
+Data =  Is Greece losing its reform drive?
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/hugo-dixon/
+Processing:  http://blogs.reuters.com/alison-frankel/  to  res/url_055.html
+Data =  The audacious theory in Elan investors
+Data =   insider trading suit vs. SAC
+Data =  Arab Bank terror trial claim: 
+Data =  It wasn
+Data =  t routine banking
+Data =  Climate scientist faces broad array of foes in suit vs. National Review
+Data =  Can E
+Data =  Y escape from Lehman Repo 105 litigation for less than $120 mln?
+Data =  Israel
+Data =  s conflicted role in Bank of China terror finance case
+Data =  Arab Bank terror finance trial: How much screening must banks do?
+Data =  In new Pershing Square filings, Ackman takes Allergan
+Data =  s dare
+Data =  In Sherlock case, 7th Circuit spurs war on copyright 
+Data =  extortionists
+Data =  Why did Allergan change its mind about Ackman and insider trading?
+Data =  Shareholders can use whistleblower documents in fraud complaint: judge
+Data =  More Reuters News
+Processing:  http://blogs.reuters.com/jamesrgaines/  to  res/url_056.html
+Data =  Why America can
+Data =  t disown the children at our border
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/jamesrgaines/
+Processing:  http://blogs.reuters.com/edward-hadas/  to  res/url_056.html
+Data =  Time to retire unemployment
+Data =  Do autocrats and strong economies go hand in hand?
+Data =  Why the global recovery is so slow
+Data =  Not all banks are alike
+Data =  Growth in a rich and crowded world
+Data =  Google, privacy and the common good
+Data =  The stupidity of student debt
+Data =  Housing, the ultimate momentum trade
+Data =  Market failure can be sign of fatigue
+Data =  A corporate abdication of corruption
+Data =  More Reuters News
+Processing:  http://blogs.reuters.com/anatole-kaletsky  to  res/url_057.html
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/anatole-kaletsky
+Processing:  http://blogs.reuters.com/mark-leonard  to  res/url_057.html
+Data =  Clashes with Russia point to globalization
+Data =  s end
+Data =  Decline of U.S. influence means Iran and Saudi Arabia may just have to get along 
+Data =   eventually
+Data =  Does Europe have a hero waiting in the wings?
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/mark-leonard
+Processing:  http://blogs.reuters.com/john-lloyd  to  res/url_057.html
+Data =  Germany
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/john-lloyd
+Processing:  http://blogs.reuters.com/david-rohde  to  res/url_057.html
+Data =  Did America
+Data =  s policy on ransom contribute to James Foley
+Data =  s killing?
+Data =  Signing off
+Data =  Dooming the Syria talks before they begin
+Data =  Newest victim of congressional wrecking ball: Iran policy
+Data =  Gates, Obama and denying reality in the Middle East
+Data =  How 2013
+Data =  s partisanship hurt us abroad, as well as at home
+Data =  Will a billion 
+Data =  selfies
+Data =   cause us to miss history?
+Data =  Honor Mandela by stopping a genocide
+Data =  From Kiev to Kabul, the promise of prosperity
+Data =  John Kerry has not yet saved 
+Data =   or destroyed 
+Data =   the Middle East
+Data =  More Reuters News
+Processing:  http://blogs.reuters.com/reihan-salam/  to  res/url_058.html
+Data =  Paul Ryan
+Data =  s promising new plan to end poverty
+Data =  Reality check: Death penalty is too expensive to make sense
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/reihan-salam/
+Processing:  http://blogs.reuters.com/jackshafer  to  res/url_058.html
+Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
+Data =  If you must quote anonymous sources, make sure they say something!
+Data =  All the myths that are fit to print: Why your news feels familiar
+Data =  The dangers of deputizing Google to bust child pornographers
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/jackshafer
+Processing:  http://blogs.reuters.com/nicholas-wapshott/  to  res/url_058.html
+Data =  Can I invert myself and not pay taxes?
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/nicholas-wapshott/
+Processing:  http://blogs.reuters.com/great-debate  to  res/url_058.html
+Data =  Ferguson: America
+Data =  s cultural segregation fault lines
+Data =  Tragedy in Ferguson: What the Justice Department can do next
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/great-debate
+Processing:  http://blogs.reuters.com/breakingviews/  to  res/url_058.html
+Data =  Roche's $8 bln bet outsmarts ice-bucket challenge
+Data =  Asia's top-down corporate reforms vary in promise
+Data =  Dynegy's $6.25 bln grab marks return of ambition
+Data =  Review: Paul Ryan changes delivery but not direction
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/
+Processing:  http://blogs.reuters.com/breakingviews/category/equities/  to  res/url_058.html
+Data =  Breakingviews
+Data =  Blackstone finds way to outsource skin in the game
+Data =  Ballmer
+Data =  s exit value is now Nadella
+Data =  s to preserve
+Data =  Latest blunder hits StanChart where it most hurts
+Data =  BHP spin-off won
+Data =  t appeal to commodity players
+Data =  Coke investment reveals half-empty idea bottle
+Data =  Venezuela digs way to distressed seller status
+Data =  IPO exuberance ensnares Deutsche, Wells Fargo
+Data =  Alibaba payments cleanup makes for neater IPO
+Data =  Aussie bid battle questions wine
+Data =  s standalone case
+Data =  Kinder Morgan
+Data =  s large-number solution: get bigger
+Processing:  http://blogs.reuters.com/breakingviews/category/credit  to  res/url_059.html
+Data =  Breakingviews
+Data =  German soccer glory was predictable 
+Data =   with luck
+Data =  If only Argentine economy matched soccer success
+Data =  Review: 
+Data =  House of Debt
+Data =   diagnosis beats remedies
+Data =  Obama student loan fix spares rod, spoils borrower
+Data =  Fed fundamentalists deserve fresh listen
+Data =  Predictions 2014: Reversals and Revivals
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/category/credit
+Processing:  http://blogs.reuters.com/breakingviews/category/private-equity/  to  res/url_059.html
+Data =  Breakingviews
+Data =  Aussie bid battle questions wine
+Data =  s standalone case
+Data =  Behold the unversion: an inversion in all but name
+Data =  Private equity discord is best collusion defense
+Data =  Treasury Wine resistance withers under KKR assault
+Data =  U.S.-backed China tech shows investment curb folly
+Data =  PetSmart activists barking up the right tree
+Data =  Supercharged IPO tax spoils need splitting
+Data =  Doubling down on First Data may be KKR
+Data =  s best bet
+Data =  Private equity
+Data =  s bad habit: Asian minority stakes
+Data =  Harvard could get smarter about its endowment
+Processing:  http://blogs.reuters.com/breakingviews/category/m-a/  to  res/url_060.html
+Data =  Breakingviews
+Data =  Roche
+Data =  s $8 bln bet outsmarts ice-bucket challenge
+Data =  Dollar store bid battle leaves value on the table
+Data =  Coke investment reveals half-empty idea bottle
+Data =  Venezuela digs way to distressed seller status
+Data =  Aussie bid battle questions wine
+Data =  s standalone case
+Data =  Aircraft leasing flies back into vogue in Asia
+Data =  Kinder Morgan
+Data =  s large-number solution: get bigger
+Data =  Behold the unversion: an inversion in all but name
+Data =  Private equity discord is best collusion defense
+Data =  Walgreen encounters uncommon inversion boundary
+Processing:  http://blogs.reuters.com/breakingviews/category/macro-markets/  to  res/url_061.html
+Data =  Breakingviews
+Data =  Asia
+Data =  s top-down corporate reforms vary in promise
+Data =  Review: Paul Ryan changes delivery but not direction
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/category/macro-markets/
+Processing:  http://blogs.reuters.com/breakingviews/category/politics/  to  res/url_061.html
+Data =  Breakingviews
+Data =  Review: Paul Ryan changes delivery but not direction
+Data =  Asia
+Data =  s reform spotlight swings to Indonesia
+Data =  U.S. farm credit looks safer than houses
+Data =  Fed adds urgency to Indonesia
+Data =  s fuel reform test
+Data =  Venezuela digs way to distressed seller status
+Data =  [ERROR] Parsing error: http://blogs.reuters.com/breakingviews/category/politics/
+Processing:  http://www.reuters.com/video/breakingviews  to  res/url_061.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/finance/personal-finance  to  res/url_062.html
+Data =  How to read your benefit statement
+Data =  
+					Personal Finance Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  S
+Data =   falls back from record high
+Data =  'No' doesn't always mean 'no' for insurance
+Data =  Dipping into the noisy U.S. housing market
+Data =  Smart ways to save on college textbooks
+Data =  Phased retirement: Washington leads the way
+Data =  When airport clubs are worth the money
+Data =  Shhh, don't talk about money troubles
+Data =  Data Dive
+Data =  Bank of America
+Data =  s big fine
+Data =  Columnists
+Data =  How to force yourself to buy low and sell high
+Data =  How to interpret your Social Security benefit statement
+Data =  Yellen as many-handed policy goddess: James Saft
+Data =  To get into college, play a game or two
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market News
+Data =  
+					AARP News
+Processing:  http://www.reuters.com/finance/personal-finance  to  res/url_063.html
+Data =  How to read your benefit statement
+Data =  
+					Personal Finance Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  S
+Data =   falls back from record high
+Data =  'No' doesn't always mean 'no' for insurance
+Data =  Dipping into the noisy U.S. housing market
+Data =  Smart ways to save on college textbooks
+Data =  Phased retirement: Washington leads the way
+Data =  When airport clubs are worth the money
+Data =  Shhh, don't talk about money troubles
+Data =  Data Dive
+Data =  Bank of America
+Data =  s big fine
+Data =  Columnists
+Data =  How to force yourself to buy low and sell high
+Data =  How to interpret your Social Security benefit statement
+Data =  Yellen as many-handed policy goddess: James Saft
+Data =  To get into college, play a game or two
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market News
+Data =  
+					AARP News
+Processing:  http://www.reuters.com/subjects/us-lipper-awards  to  res/url_064.html
+Data =  Highlighting steady leaders in the mutual fund world
+Data =  European bets help Delaware team grab top Lipper award
+Data =  
+					Lipper Video
+Data =  LIPPER AWARDS: Home bias for Hong Kong pensions
+Data =  LIPPER AWARDS: After run, MassMutual neutral on stocks, bonds
+Data =  LIPPER AWARDS: Alts becoming a bigger part of portfolios
+Data =  
+					Funds News
+Data =  MOVES-TCW names Engelsman global chief compliance officer
+Data =  Fund 
+Data =  &
+Data =   ETF Center
+Processing:  http://blogs.reuters.com/globalinvesting  to  res/url_065.html
+Data =  Betting on (expensive and over-owned) Indian equities
+Data =  Sanctions bite Russia but some investors are fishing
+Data =  Myanmar 
+Data =   investing in a far frontier
+Data =  The people buying emerging markets
+Data =  Emerging markets; turning a corner
+Data =  Ecuador: a successful emerging market?
+Data =  Anticipating the fallout from South Africa
+Data =  s ratings reviews
+Data =  Discovering Pyongyang
+Data =  s view with a North Korean diplomat
+Data =  Toxic trio turns tantalising
+Data =  Buying back into emerging markets
+Data =  More Economic News
+[ERROR] Parsing error: http://blogs.reuters.com/globalinvesting
+Processing:  http://blogs.reuters.com/unstructuredfinance/  to  res/url_065.html
+Data =  Lessons from Buffett-palooza: Six months in
+Data =  Bond King
+Data =   Gross speaks to 700 at Pimco client event in Big Apple
+Data =  GUEST BLOG: Edge over the markets and do you have it?
+Data =  Jim Chanos, bad news bear, urges market prudence
+Data =  What the? Money managers and the fog of bitcoin
+Data =  Berkowitz, Ackman bets on Fannie and Freddie puzzle investors and policy buffs
+Data =  The nine lives of the eminent domain for mortgages debate
+Data =  Carl Icahn in his own words
+Data =  Money manager titans who can
+Data =  t wait until 2014
+Data =  Dimon, Schwarzman served as the butt of Moynihan
+Data =  s jokes at NYC charity dinner
+Data =  More Deals News
+Data =  Recent Videos
+Processing:  http://blogs.reuters.com/linda-stern/  to  res/url_066.html
+Data =  Linda Stern
+Data =  How to force yourself to buy low and sell high
+Data =  Stern Advice-How to force yourself to buy low and sell high
+Data =  How to buy financial advice now
+Data =  Stern Advice-How to buy financial advice now
+Data =  Stern Advice: I am woman (investor), hear me roar
+Data =  Do you want an annuity in your retirement plan?
+Data =  Stern Advice-Do you want an annuity in your retirement plan?
+Data =  Facing price wars and robots, wealth managers push advice
+Data =  How investors can get ready for inflation
+Data =  Stern Advice-How investors can get ready for inflation
+Processing:  http://blogs.reuters.com/mark-miller/  to  res/url_067.html
+Data =  Mark Miller
+Data =  How to interpret your Social Security benefit statement
+Data =  Phased retirement: How Washington is leading the way
+Data =  Take the pension buyout, or wait for a better deal down the road?
+Data =  Medicare costs: How long can the good news go on?
+Data =  How much do you need to retire happy? Wes Moss has your number
+Data =  Why Congress needs to reform multi-employer pension plans now
+Data =  The truth about Social Security and Medicare, straight from the trustees
+Data =  IRA contributions: the perils of procrastination
+Data =  Why your 401(k) isn
+Data =  t likely to offer a 
+Data =  longevity annuity
+Data =  Tweeters have retirement questions. We
+Data =  ve got answers
+Processing:  http://blogs.reuters.com/john-wasik/  to  res/url_068.html
+Data =  Four reasons to ignore market timing and focus on happiness
+Data =  Healthcare: A remedy for long-term investors
+Data =  These hot sectors may stay warm in the second half of 2014
+Data =  Will you get burned by following the hot money in ETFs?
+Data =  U.S. transportation stocks for the long haul
+Data =  Finding a soft landing when bond prices fall
+Data =  Energy scare good for oil stocks in the short term
+Data =  The score on Brazil as a long-term investment
+Data =  Finding wiser choices in smart beta funds
+Data =  What
+Data =  s the best basket for global stocks?
+Data =  More Reuters News
+Processing:  http://blogs.reuters.com/jim-saft/  to  res/url_069.html
+Data =  Yellen as many-handed policy goddess: James Saft
+Data =  Buffett hoards cash, individuals
+Data =   holdings hit 14-year low
+Data =  The problem with Jackson Hole: James Saft
+Data =  Equities face hurdles after buyback boom fizzles: James Saft
+Data =  The better investors get, the less it avails them
+Data =  ECB has an Italy problem, and vice versa: James Saft
+Data =  ECB calls in the consultants. Hurrah?: James Saft
+Data =  Mature tech companies make you want to GOSOBB
+Data =  Abenomics has two problems 
+Data =   consumers and companies: James Saft
+Data =  Rising rates not always emerging markets poison
+Data =  More Reuters News
+Processing:  http://alerts.us.reuters.com/US/company.asp  to  res/url_070.html
+Processing:  http://portfolio.us.reuters.com/US/watchlist/create.asp  to  res/url_071.html
+Processing:  http://portfolio.us.reuters.com/US/public/index.asp  to  res/url_072.html
+Processing:  http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp  to  res/url_073.html
+Processing:  http://funds.us.reuters.com/US/screener/screener.asp  to  res/url_074.html
+[ERROR] Decode error: http://funds.us.reuters.com/US/screener/screener.asp
+Processing:  http://www.reuters.com/news/video?videoChannel=303  to  res/url_074.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/news/lifestyle  to  res/url_075.html
+Data =  Historic Miami Beach threatened amid real estate resurgence
+Data =  
+					Latest Lifestyle News
+Data =  
+					Entertainment and Lifestyle Video
+Data =  Tearful Beyonce joined by Jay Z, Blue Ivy for VMA honor
+Data =  Minaj, Grande, Maroon 5 rock out VMAs
+Data =  Hip-hop mogul Suge Knight recovering after L.A. club shooting
+Data =  Venice film fest, opening this week, is still a cinema lifeline
+Data =  Two ancient Mayan cities found in Mexican jungle
+Data =  Birthday bash for U.S. National Zoo panda cub 'Bao Boa'
+Data =  Sharpen the pencils: Tennessee revives cursive teaching
+Data =  At Ferguson memorial, reflection and anger at fatal encounter
+Data =  
+					Lifestyle Pictures
+Data =  Islamic State captures air base
+Processing:  http://www.reuters.com/news/health  to  res/url_076.html
+Data =  Exclusive: U.S. approval of Merck cancer immunotherapy expected soon
+Data =  Liberian doctor who received rare Ebola drug ZMapp dies
+Data =  New recommendations for overweight people with heart risks
+Data =  No biotech copycat drug lift off before 2017: Novartis CEO
+Data =  E-cigarettes may be tempting non-smoking youths to smoke: CDC study
+Data =  Prescription painkiller deaths fall in medical marijuana states
+Data =  Heart doctors overstate benefits of procedures for stable chest pain
+Data =  Happiness study draws frowns from critics
+Data =  After men, lesbians report the most orgasms during sex
+Data =  Japan could offer unapproved Ebola drug
+Data =  Blendon: ACA rulings may help GOP in '14, Democrats in '16
+Data =  Special Series
+Data =  Cancer in Context
+Processing:  http://www.reuters.com/news/sports  to  res/url_077.html
+Data =  Murray and Williams make hard work in heat at U.S. Open
+Data =  
+					Latest Sports News
+Data =  
+					Sports 
+Data =  &
+Data =   Leisure Video
+Data =  Sports Spread: Premier League and U.S. Open Preview
+Data =  Say I love you with a selfie, begs Paris
+Data =  Sports Spread: Punter's Premier League Preview
+Data =  Injured Klitschko calls off Pulev world title fight
+Data =  Xu takes 400 meters hurdles in photo finish, Bach praises China
+Data =  Panthers' Newton breaks rib, should be fit for opener
+Data =  Rams quarterback Bradford out for season with knee injury
+Data =  Second seed Halep survives scary start at U.S. Open
+Data =  
+					Sports Pictures
+Data =  Best of Youth Olympics
+Data =  Young Olympians
+Processing:  http://brazil-soccer.reuters.com  to  res/url_078.html
+Data =  
+                    2014 World Cup
+                
+Data =  
+                        Soccernomics
+                    
+Data =  
+                        Arenas
+                    
+Data =  
+                        Historical Brackets
+                    
+Data =  
+            Reuters flops of the World Cup tournament
+        
+Data =  
+                Reuters flops of the World Cup tournament
+            
+Data =  
+            Five of the best goals from the World Cup
+        
+Data =  
+                Five of the best goals from the World Cup
+            
+Data =  
+            
+Data =  Jaded
+Data =   Messi has disappointed at World Cup, says Lineker
+        
+Data =  
+                
+Data =  Jaded
+Data =   Messi has disappointed at World Cup, says Lineker
+            
+Data =  
+            Russia should lose 2018 soccer World Cup over Ukraine: UK deputy PM
+        
+Data =  
+                Russia should lose 2018 soccer World Cup over Ukraine: UK deputy PM
+            
+Data =  
+            Russia should lose right to stage 2018 World Cup: Clegg
+        
+Data =  
+                Russia should lose right to stage 2018 World Cup: Clegg
+            
+Data =  
+            Italy administrator caught up in racism row
+        
+Data =  
+                Italy administrator caught up in racism row
+            
+Data =  
+            Pinto quits Costa Rica after 
+Data =  sleeping with enemy
+Data =  
+        
+Data =  
+                Pinto quits Costa Rica after 
+Data =  sleeping with enemy
+Data =  
+            
+Data =  
+            World Cup will inspire Rio Olympics: IOC
+Data =  s Bach
+        
+Data =  
+                World Cup will inspire Rio Olympics: IOC
+Data =  s Bach
+            
+Data =  
+            Dunga names former team mates as Brazil assistants
+        
+Data =  
+                Dunga names former team mates as Brazil assistants
+            
+Data =  
+                        Soccernomics
+                    
+Data =  
+                        Arenas
+                    
+Data =  
+                        Historical Brackets
+                    
+Data =  
+            Reuters flops of the World Cup tournament
+        
+Data =  
+                Reuters flops of the World Cup tournament
+            
+Data =  
+            Five of the best goals from the World Cup
+        
+Data =  
+                Five of the best goals from the World Cup
+            
+Data =  
+            
+Data =  Jaded
+Data =   Messi has disappointed at World Cup, says Lineker
+        
+Data =  
+                
+Data =  Jaded
+Data =   Messi has disappointed at World Cup, says Lineker
+            
+Processing:  http://www.reuters.com/news/entertainment/arts  to  res/url_079.html
+Data =  Stellar 'It's Only a Play' cast welcomes Rupert Grint to Broadway
+Data =  Poet Behbahani, 'lioness of Iran', dies at 87: state media
+Data =  Robin Williams' death highlights Parkinson's-depression link
+Data =  Sarajevo's film festival marks 20th birthday with record line-up
+Data =  A Minute With: Icelandic writer on setting a musical in an elbow
+Data =  Irish-American Bishop learns Chinese to break down comedy walls
+Data =  In Edinburgh, Fringe performers weigh in on Scotland's independence choice
+Data =  Hungarians snap up Warhol-like paintings of leader Orban
+Data =  'Art Everywhere US' floods cities, rural areas with paintings
+Data =  Manet's 'Le Printemps' poised to reach record auction price
+Data =  
+					Entertainment Video
+Data =  Tearful Beyonce joined by Jay Z, Blue Ivy for VMA honor
+Data =  Emmy red carpet
+Data =  MTV Video Awards
+Data =  MTV red carpet
+Data =  Nicki Minaj style
+Data =  
+					Reviews
+Data =  Book Talk: Retracing the steps of the Great War's 'Trigger'
+Processing:  http://www.reuters.com/news/entertainment  to  res/url_080.html
+Data =  Big screen stars bring new shine to Emmys, TV's top night
+Data =  
+					Latest Entertainment News
+Data =  
+					Entertainment Video
+Data =  Tearful Beyonce joined by Jay Z, Blue Ivy for VMA honor
+Data =  Minaj, Grande, Maroon 5 rock out VMAs
+Data =  Hip-hop mogul Suge Knight recovering after L.A. club shooting
+Data =  Reggae making a revival in Jamaica, recalling golden era of '70s
+Data =  'Guardians' returns to reclaim U.S. box office win from 'Turtles'
+Data =  David Guetta claims fifth UK number one single
+Data =  Venice film fest, opening this week, is still a cinema lifeline
+Data =  'Jackass' star could face charges for SeaWorld sign prank
+Data =  
+					Entertainment Pictures
+Data =  Emmy red carpet
+Data =  MTV Video Awards
+Data =  MTV red carpet
+Data =  Nicki Minaj style
+Data =  
+					Reviews
+Data =  Book Talk: Retracing the steps of the Great War's 'Trigger'
+Processing:  http://www.reuters.com/news/oddlyEnough  to  res/url_081.html
+Data =  Young fan who dresses like Fidel Castro meets his idol
+Data =  
+					Latest Oddly Enough News
+Data =  
+					Oddly Enough Video
+Data =  Father-daughter duo capture another alligator
+Data =  Hello Kitty conquers space
+Data =  Fox kicks off "Simpsons" mega marathon
+Data =  Pimco NYC office tackles bed bug infestation, fumigates
+Data =  Dutch spend 461,000 euros to fence off king's Greek holiday home
+Data =  China Eastern plane aborts landing as traffic controllers take a nap
+Data =  Owl kills canary during high-rise apartment raid in Idaho
+Data =  1,000-pound alligator snared in Alabama hunt
+Processing:  http://blogs.reuters.com/faithworld  to  res/url_082.html
+Data =  One Iraq villager
+Data =  s refusal to convert triggered Islamic State mass killings
+Data =  Violence, threats, prompt more Muslim women in Britain to wear a veil
+Data =  Saudi Arabia
+Data =  s Grand Mufti denounces Islamic State group as un-Islamic
+Data =  China punishes Xinjiang official for openly practising faith
+Data =  Brief encounter with a fleeing Yazidi
+Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
+Data =  Pope Francis says it
+Data =  s legitimate for world to stop Islamist aggression in Iraq
+Data =  From central banker to Islamic king
+Data =  Pope urges young people not to waste time on Internet and smartphones
+Data =  The doubt inside the Sunni 
+Data =  revolution
+Data =   against Iraq
+Data =  s Shi
+Data =  ite-led gov
+Data =  t
+Processing:  http://www.reuters.com/news/video?videoChannel=1004  to  res/url_083.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/news/pictures  to  res/url_084.html
+Data =  Editor's choice
+Data =  Emmy red carpet
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Data =  Gaza fighting continues
+Data =  Battle for east Ukraine
+Data =  MTV Video Awards
+Data =  Best of Youth Olympics
+Data =  Notting Hill Carnival
+Data =  Full focus
+Data =  Pictures of the month: July
+Data =  Protests in Missouri
+Data =  Plight of the Yazidis
+Data =  Earthquake in China
+Data =  Gaza in ruins
+Data =  Under the Iron Dome
+Data =  Being Elmo
+Processing:  http://www.reuters.com/news/pictures  to  res/url_085.html
+Data =  Editor's choice
+Data =  Emmy red carpet
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Data =  Gaza fighting continues
+Data =  Battle for east Ukraine
+Data =  MTV Video Awards
+Data =  Best of Youth Olympics
+Data =  Notting Hill Carnival
+Data =  Full focus
+Data =  Pictures of the month: July
+Data =  Protests in Missouri
+Data =  Plight of the Yazidis
+Data =  Earthquake in China
+Data =  Gaza in ruins
+Data =  Under the Iron Dome
+Data =  Being Elmo
+Processing:  http://blogs.reuters.com/photo  to  res/url_086.html
+Data =  A moment of stillness
+Data =  Brief encounter with a fleeing Yazidi
+Data =  Reliving the past
+Data =  Covering the Ferguson unrest
+Data =  From central banker to Islamic king
+Data =  Shooting the supermoon
+Data =  Singing from the heart
+Data =  Eating to the extreme
+Data =  A night with the rat hunters
+Data =  Beneath the rubble
+[ERROR] Parsing error: http://blogs.reuters.com/photo
+Processing:  http://blogs.reuters.com/fullfocus  to  res/url_086.html
+Processing:  http://www.reuters.com/video  to  res/url_087.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/article/2014/08/25/us-amazon-com-twitch-idUSKBN0GP1N820140825  to  res/url_088.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-florida-primary-idUSKBN0GP1ZJ20140825  to  res/url_089.html
+Processing:  http://www.reuters.com/video/2014/08/24/ukraine-defiant-on-national-day-rebels-p?videoId=340754836&videoChannel=1&channelName=Top+News  to  res/url_090.html
+Data =  Reuters - Video
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/article/2014/08/25/us-syria-crisis-minister-idUSKBN0GP0TS20140825  to  res/url_091.html
+Data =  Islamic State takes air base
+Data =  Editor's choice
+Processing:  http://www.reuters.com/video/2014/08/25/iraqs-abadi-forming-new-government-amid?videoId=340762771  to  res/url_092.html
+Data =  Reuters - Video
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-missouri-shooting-contrasts-idUSKBN0GP08D20140825  to  res/url_093.html
+Data =  Editor's choice
+Processing:  http://www.reuters.com/article/2014/08/24/us-intermune-roche-idUSKBN0GO0PI20140824  to  res/url_094.html
+Data =  Frontlines of Ebola
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  U.S. small business borrowing slows in February
+Data =  China denounces EU airline carbon law, seeks talks
+Processing:  http://www.reuters.com/article/2014/08/25/us-burger-kg-wld-tim-hortons-mergers-idUSKBN0GP00R20140825  to  res/url_095.html
+Data =  Burger King in talks to buy Tim Hortons
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  U.S. small business borrowing slows in February
+Data =  China denounces EU airline carbon law, seeks talks
+Processing:  http://blogs.reuters.com/john-lloyd/2014/08/22/europe-bows-to-germany-merkel-and-that-might-be-a-good-thing/  to  res/url_096.html
+[ERROR] Decode error: http://blogs.reuters.com/john-lloyd/2014/08/22/europe-bows-to-germany-merkel-and-that-might-be-a-good-thing/
+Processing:  http://www.reuters.com/article/2014/08/25/us-markets-stocks-idUSKBN0GP0XS20140825  to  res/url_096.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-economy-homesales-idUSKBN0GP19A20140825  to  res/url_097.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-markets-stocks-sp-idUSKBN0GP1E520140825  to  res/url_098.html
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Processing:  http://www.reuters.com/video/2014/08/25/finding-meaning-in-the-sp-500-2000-mark?videoId=340767038&newsChannel=businessNews  to  res/url_099.html
+Data =  Reuters - Video
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/article/2014/08/25/us-markets-global-idUSKBN0GP0L520140825  to  res/url_0100.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-markets-forex-idUSKBN0GP0H120140825  to  res/url_0101.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-markets-bonds-euro-idUSKBN0GP0HR20140825  to  res/url_0102.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-iraq-security-idUSKBN0GP0L020140825  to  res/url_0103.html
+Data =  Iraq's Abadi forming new government amid unprecedented security crisis
+Data =  Editor's choice
+Processing:  http://www.reuters.com/video/2014/08/25/iraqs-abadi-forming-new-government-amid?videoId=340762771&newsChannel=worldNews  to  res/url_0104.html
+Data =  Reuters - Video
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/article/2014/08/25/us-southchinasea-indonesia-natuna-insigh-idUSKBN0GP1WA20140825  to  res/url_0105.html
+Data =  Editor's choice
+Processing:  http://www.reuters.com/article/2014/08/25/us-libya-security-idUSKBN0GP0NZ20140825  to  res/url_0106.html
+Data =  Editor's choice
+Processing:  http://www.reuters.com/article/2014/08/25/us-hp-autonomy-idUSKBN0GP1LA20140825  to  res/url_0107.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-comtech-sale-exclusive-idUSKBN0GP1S520140825  to  res/url_0108.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-digital-ally-shares-idUSKBN0GP1WX20140825  to  res/url_0109.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-texas-perry-idUSKBN0GP1SL20140825  to  res/url_0110.html
+Data =  Editor's choice
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-california-water-idUSKBN0GP21N20140825  to  res/url_0111.html
+Data =  Pictures
+Data =  California's historic drought
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-election-tennessee-idUSKBN0GP1UX20140825  to  res/url_0112.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-burger-kg-wld-tim-hortons-mergers-idUSKBN0GP00R20140825  to  res/url_0113.html
+Data =  Burger King in talks to buy Tim Hortons
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  U.S. small business borrowing slows in February
+Data =  China denounces EU airline carbon law, seeks talks
+Processing:  http://www.reuters.com/video/2014/08/25/burger-king-in-talks-to-buy-tim-hortons?videoId=340762951&newsChannel=innovationNews  to  res/url_0114.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/article/2014/08/25/us-chevron-duvernay-investor-exclusive-idUSKBN0GP20220140825  to  res/url_0115.html
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  U.S. small business borrowing slows in February
+Data =  China denounces EU airline carbon law, seeks talks
+Processing:  http://www.reuters.com/article/2014/08/25/us-hubspot-ipo-idUSKBN0GP1VR20140825  to  res/url_0116.html
+Processing:  http://www.reuters.com/news/pictures/slideshow?articleId=USRTR43MVW  to  res/url_0117.html
+Data =  
+					Featured Slideshows
+Processing:  http://www.reuters.com/news/pictures/slideshow?articleId=USRTR43MVW  to  res/url_0118.html
+Data =  
+					Featured Slideshows
+Processing:  http://www.reuters.com/news/pictures/slideshow?articleId=USRTR43PJ0  to  res/url_0119.html
+Data =  
+					Featured Slideshows
+Processing:  http://www.reuters.com/news/pictures/slideshow?articleId=USRTR43PJ0  to  res/url_0120.html
+Data =  
+					Featured Slideshows
+Processing:  http://www.reuters.com/article/2014/08/14/us-education-textbooks-costs-idUSKBN0GE1YG20140814  to  res/url_0121.html
+Processing:  http://www.reuters.com/article/2014/08/23/us-usa-panda-idUSKBN0GN0M120140823  to  res/url_0122.html
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-new-york-bridge-idUSKBN0GP02H20140825  to  res/url_0123.html
+Data =  Editor's choice
+Processing:  http://www.reuters.com/article/2014/08/25/us-usa-earthquake-wine-idUSKBN0GO0WJ20140825  to  res/url_0124.html
+Data =  Editor's choice
+Processing:  http://www.reuters.com/video/2014/08/22/breakingviews-modern-bad-economic-ideas?videoId=340742329&videoChannel=5&channelName=Business  to  res/url_0125.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/video/2014/08/25/indonesia-enters-south-china-sea-strife?videoId=340759461&videoChannel=5&channelName=Business  to  res/url_0126.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/video/2014/08/22/scent-fading-for-celebrity-fragrances?videoId=340742019&videoChannel=5&channelName=Business  to  res/url_0127.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://ara.reuters.com  to  res/url_0128.html
+Data =  [ERROR] Parsing error: http://ara.reuters.com
+Processing:  http://ar.reuters.com  to  res/url_0128.html
+Data =  [ERROR] Parsing error: http://ar.reuters.com
+Processing:  http://br.reuters.com  to  res/url_0128.html
+Data =  Bovespa sobe 2% e fecha no maior patamar em 18 meses por expectativa com Ibope
+Data =  [ERROR] Parsing error: http://br.reuters.com
+Processing:  http://ca.reuters.com  to  res/url_0128.html
+Data =  Israeli air strikes kill two Palestinians, 20 wounded
+Data =  U.N. accuses Islamic State of mass killings
+Data =  Business
+Data =  Investors cheer Burger King-Tim Hortons 'combo deal'
+Data =  Canada
+Data =  Canada's intelligence head says returning Islamist militants pose threat
+Data =  Sports
+Data =  Entertainment
+Data =  Technology
+Processing:  http://cn.reuters.com  to  res/url_0129.html
+Data =   
+Data =   
+Data =   
+Data =  [ERROR] Parsing error: http://cn.reuters.com
+Processing:  http://fr.reuters.com  to  res/url_0129.html
+Data =  [ERROR] Parsing error: http://fr.reuters.com
+Processing:  http://de.reuters.com  to  res/url_0129.html
+Data =  Keine Entspannungssignale vor Ukraine-Russland-Gipfel
+Data =  Lufthansa und Bahn drohen zum Ferienende Streiks
+Data =  Inland
+Data =  [ERROR] Parsing error: http://de.reuters.com
+Processing:  http://in.reuters.com  to  res/url_0129.html
+Data =  Karbonn Mobiles expects to go public by 2016
+Data =  Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  U.N. accuses Islamic State of mass killings
+Data =  SC says government coal allocations illegal
+Data =  Amazon snaps up startup Twitch for $970 mln
+Data =  Balotelli completes move to Liverpool
+Data =  E-cigs may be tempting to non-smoking youths 
+Data =  Film veteran Richard Attenborough dead
+Data =  
+					Business
+Data =  
+					Markets
+Data =  
+					World
+Data =  
+					Technology
+Data =  
+					Economy
+Data =  
+					Deals
+Data =  South Asia
+Data =  How Pakistani Prime Minister Nawaz Sharif stumbled into protests crisis
+Data =  Expert Zone
+Data =  Why inflation is so persistent
+Data =  India Insight
+Data =  Rani Mukerji on playing 
+Data =  Mardaani
+Data =   roles
+Data =  Photo Blog
+Data =  First pictures of Taj Mahal to 
+Data =  Hairy family of Burma
+Data =  : subcontinent photos from 1850-1910
+Data =  Katiyabaaz
+Data =   transforms banal reality into gripping tale
+Data =  Liberian doctor who received rare Ebola drug ZMapp dies
+Data =  Reuters India on Twitter
+Data =  PICTURE GALLERY
+Data =  Editor's choice
+Data =  Video
+Processing:  http://it.reuters.com  to  res/url_0130.html
+Data =  Immigrazione, Italia chiede aiuto Ue, domani riunione a Roma su "Frontex Plus"
+Data =  Pa, da primo settembre -50% permessi sindacali - ministero
+Data =  Valute
+Data =  Finanza e Investimenti
+Data =  [ERROR] Parsing error: http://it.reuters.com
+Processing:  http://jp.reuters.com  to  res/url_0130.html
+Data =  [ERROR] Parsing error: http://jp.reuters.com
+Processing:  http://lta.reuters.com  to  res/url_0130.html
+Data =  [ERROR] Parsing error: http://lta.reuters.com
+Processing:  http://mx.reuters.com  to  res/url_0130.html
+Data =  [ERROR] Parsing error: http://mx.reuters.com
+Processing:  http://ru.reuters.com  to  res/url_0130.html
+Data =  [ERROR] Parsing error: http://ru.reuters.com
+Processing:  http://es.reuters.com  to  res/url_0130.html
+Data =  Hollande expulsa del gobierno al ministro rebelde Montebourg
+Data =  Poroshenko disuelve el Parlamento y convoca a elecciones el 26 de octubre
+Data =  Negocios
+Data =  [ERROR] Parsing error: http://es.reuters.com
+Processing:  http://uk.reuters.com  to  res/url_0130.html
+Data =  Alex Salmond wins last TV debate - poll 
+Data =  Ukraine accuses Russia of opening new war front before leaders' meeting
+Data =  Rival second Libyan assembly chooses own PM as chaos spreads
+Data =  How Pakistan's Sharif stumbled into protests crisis
+Data =  Slain Missouri teen remembered with calls for peace, justice
+Data =  Syria says would work with any state to fight Islamist militants
+Data =  Iran says "completing" nuclear steps agreed with IAEA
+Data =  Video
+Data =  Father-daughter duo capture another alligator
+Data =  Death toll continues to rise in Gaza war with no end in sight
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Theo Curtis' ransom not paid by U.S. -State Department
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Michael Brown remembered with calls for peace, justice
+Data =  
+					Business
+Data =  
+					Markets
+Data =  
+					World
+Data =  
+					Technology
+Data =  
+					Politics
+Data =  
+					Deals
+Data =  
+					Galleries of the Day
+Data =  Funeral for Michael Brown
+Data =  Richard Attenborough: 1923-2014
+Data =  Tributes pour in for Attenborough
+Data =  News in Pictures
+Data =  Notting Hill Carnival
+Data =  Opinion
+Data =  Germany
+Data =  s renewed hegemony isn
+Data =  t something Europe needs to fear
+Data =  Here
+Data =  s what it will take to trigger the next stock market correction
+Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
+Processing:  http://www.reuters.com/finance  to  res/url_0131.html
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  
+					Latest Business News
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Breakingviews: Burgers and ice buckets
+Data =  Amazon snaps up live video startup Twitch for $970 million
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
+Data =  U.S. confident its $5 billion S
+Data =   lawsuit was not retaliation
+Data =  Time Warner prepares to offer buyouts at Turner cable division
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Data Dive
+Data =  Bank of America
+Data =  s big fine
+Data =  
+					Small Business
+Processing:  http://www.reuters.com/finance/markets  to  res/url_0132.html
+Data =  
+					Market News
+Data =  S
+Data =   500 sets record high but fails to hold 2,000 mark
+Data =  Global stocks rally on ECB stimulus bet; dollar gains
+Data =  Investors look for more gains as U.S. S
+Data =   500 index hits 2,000 milestone
+Data =  Dollar rises as euro tumbles to near one-year bottom
+Data =  Euro zone bond yields fall as ECB's Draghi boosts QE speculation
+Data =  Market leaders seen taking S
+Data =   500 to 2,000
+Data =  
+					U.S. Market Report
+Data =  WRAPUP 3-Amazon snaps up live video startup Twitch for $970 million
+Data =  
+					UK Market Report
+Data =  European shares up on expectations of further ECB easing
+Data =  
+					European Market Report
+Data =  Prospect of more ECB stimulus lifts European shares
+Data =  
+					Tokyo Market Report
+Data =  Nikkei rises to 3-1/2-week high in thin trade; weaker yen helps mood
+Data =  
+					Hong Kong Market Report
+Data =  Hong Kong main index closes at highest since May 2008
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Processing:  http://www.reuters.com/news/world  to  res/url_0133.html
+Data =  Slim chance of progress as Russian and Ukrainian leaders meet
+Data =  
+					Latest World News
+Data =  
+					World Video
+Data =  Death toll continues to rise in Gaza war with no end in sight
+Data =  Boko Haram declares caliphate in Nigerian town
+Data =  Syria seeks international help to fight Islamic State
+Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
+Data =  Rival second Libyan assembly chooses own PM as chaos spreads
+Data =  Scotland's pro-independence leader wins last TV debate before vote: poll
+Data =  How Pakistan's Sharif stumbled into protests crisis
+Data =  France's Hollande ejects rebel minister Montebourg from cabinet
+Data =  WORLD WATCH
+Data =  
+					Pictures
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Processing:  http://www.reuters.com/news/politics  to  res/url_0134.html
+Data =  All eyes on governor's race in Florida primary, turnout is key
+Data =  
+					Latest Politics Headlines
+Data =  
+					Politics Video
+Data =  ACA price outlook varies widely state-to-state for 2015
+Data =  After Hobby Lobby, ACA exceptions may become the rule
+Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+Data =  As Obama's vacation ends, criticism does not
+Data =  With Graham name, Democrats see rare chance for Florida win
+Data =  Prosecution questions Virginia ex-governor in corruption trial
+Data =  U.S. Republicans pressure Obama to step up action against ISIS
+Data =  Texas Governor Perry tries to turn felony indictment into election gold
+Data =  
+					Politics Video
+Data =  ACA price outlook varies widely state-to-state for 2015
+Data =  After Hobby Lobby, ACA exceptions may become the rule
+Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+Processing:  http://www.reuters.com/news/technology  to  res/url_0135.html
+Data =  U.S. judge questions shareholder settlement with HP over Autonomy
+Data =  
+					Latest Technology News
+Data =  
+					Technology Video
+Data =  A ring that reads text for the blind
+Data =  Apple iPhone 6 screen hits snag ahead of launch
+Data =  Is it a plane? No, it's a hoverbike
+Data =  Sony says PlayStation network back online, user information safe after attack
+Data =  CME Group resumes electronic trading after glitch delays open
+Data =  Nokia sees clear revenue synergies from SAC Wireless acquisition
+Data =  Rocket Internet and Zalando to unveil listing plans in Sept: sources
+Data =  Digital Ally shares surge on interest in wearable cameras
+Data =  
+					Business Headlines
+Data =  
+					Business Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  Breakingviews: Burgers and ice buckets
+Data =  Burger King in talks to buy Tim Hortons
+Processing:  http://blogs.reuters.com/us/  to  res/url_0136.html
+Data =  Ferguson: America
+Data =  s cultural segregation fault lines
+Data =  Tragedy in Ferguson: What the Justice Department can do next
+[ERROR] Parsing error: http://blogs.reuters.com/us/
+Processing:  http://www.reuters.com/finance/personal-finance  to  res/url_0136.html
+Data =  How to read your benefit statement
+Data =  
+					Personal Finance Video
+Data =  Biotechs and banks lead S
+Data =   500 to milestone
+Data =  Finding meaning in the S
+Data =   500 2000 mark
+Data =  S
+Data =   falls back from record high
+Data =  'No' doesn't always mean 'no' for insurance
+Data =  Dipping into the noisy U.S. housing market
+Data =  Smart ways to save on college textbooks
+Data =  Phased retirement: Washington leads the way
+Data =  When airport clubs are worth the money
+Data =  Shhh, don't talk about money troubles
+Data =  Data Dive
+Data =  Bank of America
+Data =  s big fine
+Data =  Columnists
+Data =  How to force yourself to buy low and sell high
+Data =  How to interpret your Social Security benefit statement
+Data =  Yellen as many-handed policy goddess: James Saft
+Data =  To get into college, play a game or two
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market Indices
+Data =  
+					Currencies
+Data =  
+					Commodities
+Data =  
+					Market News
+Data =  
+					AARP News
+Processing:  http://www.reuters.com/news/pictures  to  res/url_0137.html
+Data =  Editor's choice
+Data =  Emmy red carpet
+Data =  Funeral for Michael Brown
+Data =  Islamic State captures air base
+Data =  Quake hits California
+Data =  Fighting Ebola
+Data =  Gaza fighting continues
+Data =  Battle for east Ukraine
+Data =  MTV Video Awards
+Data =  Best of Youth Olympics
+Data =  Notting Hill Carnival
+Data =  Full focus
+Data =  Pictures of the month: July
+Data =  Protests in Missouri
+Data =  Plight of the Yazidis
+Data =  Earthquake in China
+Data =  Gaza in ruins
+Data =  Under the Iron Dome
+Data =  Being Elmo
+Processing:  http://www.reuters.com/news/video  to  res/url_0138.html
+Data =  Reuters - Video
+Data =  Top News 
+Data =  Most Popular 
+Data =  Money 
+Data =  The Exchange 
+Data =  Dateline Asia 
+Data =  Reuters Investigates 
+Data =  Moving Pictures 
+Processing:  http://www.reuters.com/assets/siteindex  to  res/url_0139.html
+Data =  Home
+Data =  
+					Analysis 
+Data =  &
+Data =   Opinion
+Processing:  http://thomsonreuters.com/news-services/  to  res/url_0140.html
+Data =  Reuters Live Online
+Data =  U.S. Election Service
+Data =  Reuters Brand Content Solutions
+Data =  U.S. Online Video
+Data =  International News Services
+Data =  Business and Financial News Services
+Data =  Political News Services
+Data =  Regional News Services
+Data =  Health News Services
+Data =  Sports News Services
+Data =  Entertainment News Services
+Data =  Broadcast Video
+Data =  Newswires
+Data =  Online News Services
+Data =  Pictures Services
+Data =  News Graphics
+Data =  Reuters.com
+Data =  Advertise with Reuters
+Data =  Reuters Brand Attribution Guidelines
+Data =  Delivery Options
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
+Processing:  http://thomsonreuters.com/site/reuters-brand-attribution-guidelines/  to  res/url_0141.html
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
+Processing:  http://thomsonreuters.com/site/delivery-options/  to  res/url_0142.html
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
+Processing:  http://reuters.zendesk.com  to  res/url_0143.html
+Data =  
+      
+Data =  General
+Data =  
+      
+Data =  (0)
+Data =  
+      
+Data =  [ERROR] Parsing error: http://reuters.zendesk.com
+Processing:  http://reuters.zendesk.com/anonymous_requests/new  to  res/url_0143.html
+Processing:  http://www.twitter.com/reuters  to  res/url_0144.html
+Data =  Reuters Top News
+Data =  Verified account
+Data =  @
+Data =  Reuters
+Processing:  http://www.facebook.com/Reuters  to  res/url_0145.html
+Processing:  http://www.linkedin.com/today/reuters.com  to  res/url_0146.html
+Data =  
+LinkedIn Home
+
+Data =  Pulse
+Processing:  http://www.reuters.com/tools/rss  to  res/url_0147.html
+Data =  What are feeds? What is RSS?
+Processing:  http://www.reuters.com/tools/podcasts  to  res/url_0148.html
+Processing:  http://www.reuters.com/tools/mobile  to  res/url_0149.html
+Processing:  http://www.reuters.com/privacy-policy  to  res/url_0150.html
+Processing:  http://www.reuters.com/terms-of-use  to  res/url_0151.html
+Processing:  http://s2.reutersmedia.net/resources_v2/images/media_guide_01_08_13.pdf  to  res/url_0152.html
+[ERROR] Decode error: http://s2.reutersmedia.net/resources_v2/images/media_guide_01_08_13.pdf
+Processing:  http://thomsonreuters.com/copyright/  to  res/url_0152.html
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
+Processing:  http://thomsonreuters.com/  to  res/url_0153.html
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Legal
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Reuters News Agency
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Pharma 
+Data =  &
+Data =   Life Sciences
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Tax 
+Data =  &
+Data =   Accounting
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Intellectual Property
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Governance, Risk 
+Data =  &
+Data =   Compliance
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Scholarly 
+Data =  &
+Data =   Scientific Research
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Financial
+Data =  
+			
+Data =  
+				
+				
+Data =  UltraTax CS wins NASS Medallion Award
+Data =  
+			
+Data =  
+				
+				
+Data =  New Eikon app monitors market moving events
+Data =  
+			
+Data =  
+				
+				
+Data =  Global VAT compliance for multinational organizations
+Data =  
+			
+Data =  
+				
+				
+Data =  Launching Elektron Direct Feed
+Data =  
+			
+Data =  
+				
+				
+Data =  Announcing web-based portal for Accelus Org ID
+Data =  
+			
+Data =  
+				
+				
+Data =  InCites now includes 2014 Journal Citation Reports
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Potential new treatments on the horizon for Ebola patients
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Terrorist and criminal networks, more connected than you think
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  ONESOURCE redefines a new class of tax professionals
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  PMI dips slightly, transactional work continues gains
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Our critical information used to apprehend potential shooter
+Data =  
+			
+Data =  
+				
+					
+Data =  
+				
+				
+Data =  Trust sentiment on top 50 global financial institutions is positive for the first time since January 2013
+Data =  
+			
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
+Processing:  http://thomsonreuters.com/about/  to  res/url_0154.html
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
+Processing:  http://ir.thomsonreuters.com  to  res/url_0155.html
+Data =  STOCK QUOTE
+Processing:  http://careers.thomsonreuters.com/  to  res/url_0156.html
+Data =  Go to Video Gallery
+Data =  Khalid Al Kofahi
+Data =  David Shaw
+Data =  Charlotte Rushton
+Processing:  http://thomsonreuters.com/about/contact_us/  to  res/url_0157.html
+Data =  About Us
+Data =  Investor Relations
+Data =  Careers 
+Data =  Contact Us
