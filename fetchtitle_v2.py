@@ -57,13 +57,13 @@ class MyHTMLParser(HTMLParser):
                     if attr[0] == 'href':
                         if attr[1][0:7] == 'http://' and attr[1][-4:] != '.pdf'\
                              and attr[1][-4:] != '.asp': 
-                            print 'href = ', attr[1]
+                            print '[INFO] href = ', attr[1]
                             with open(store_url, 'a') as writing_file:
                                 writing_file.write(attr[1] + '\n');
                         elif attr[1][0:1] != '#' and attr[1][0:5] != 'https'\
                              and attr[1][0:] != '/':
                             if attr[1][0:1] == '/':
-                                print 'href = ', attr[1]
+                                print '[INFO] href = ', attr[1]
                                 with open(store_url, 'a') as writing_file:
                                     writing_file.write(self.url + attr[1][1:] + '\n');
 
@@ -103,9 +103,11 @@ class MyHTMLParser(HTMLParser):
                  or (self.found_h6 == True))):
                 
                 # "print" can only output ascii encoded normal String
-                print 'Data = ', data.encode ('utf-8').strip()
+                # ,so use "encode()" method to return ascii normal String.
+                print '[INFO] Data = ', data.encode ('utf-8').strip()
 
                 with open (store_topic, 'a') as writing_file:
+                    # Use "encode()" method to return ascii normal String 
                     writing_file.write (data.encode('utf-8').strip())
                     writing_file.write ('\n');
 
@@ -120,16 +122,20 @@ class MyHTMLParser(HTMLParser):
 
 def main():
 
-    # clean the processing file.
+    # Clean the processing files
     open (store_url, 'w').close ()
     open (store_topic, 'w').close ()
 
     #url = raw_input('Enter an url : ')
-    #if url[-1:] != '/':
+    # if url[-1:] != '/':
     #    url += '/'
+    # (DEBUGGING..)
     url = 'http://www.reuters.com/'
+
+    # Generate a file from the url (replace the old ones if file existed)
     urllib.urlretrieve (url, store_homepage)
 
+    # Make sure to use urlopen to open html file(unicode)
     homeHandle = urllib.urlopen (url)
     # "read()" return ascii encoded normal String(htmltxt)
     htmltxt = homeHandle.read ()
@@ -137,30 +143,28 @@ def main():
     
     parser = MyHTMLParser (True, url)
     # "feed" method's parameter had better be unicode
-    # so use decode('utf-8') to restore to unicode string
+    # ,so use decode('utf-8') to restore to unicode string.
     parser.feed (htmltxt.decode ('utf-8'))
 
     # read urls from the url recording file.
-    #urls = []
     i = 0;
-
     with open (store_url, 'r') as reading_file:
         for pageUrl in reading_file:
-
-            # Will replace the old ones if file name is the same
             store_html_path = store_html + str(i) + '.html'
-            print 'Processing: ', pageUrl, ' to ', store_html_path
+            print '[INFO] Processing: ', pageUrl, ' to ', store_html_path
 
             fHandle = urllib.urlopen (pageUrl)
+            # "read()" return ascii encoded normal String(htmltxt)
             htmltxt2 = fHandle.read ()
             
+            # 'w' will overwrite the original file with a new one
             with open (store_html_path, 'w') as retPage:
                 retPage.write (htmltxt2)
 
             parser = MyHTMLParser (False, url)
+            # "feed" method's parameter had better be unicode
+            # ,so use decode('utf-8') to restore to unicode string.
             parser.feed (htmltxt2.decode ('utf-8'))
-
-            # print '[ERROR] Parsing error: ' + pageUrl
 
             parser.close ()
             fHandle.close ()
