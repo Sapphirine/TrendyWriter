@@ -19,30 +19,30 @@ Latest AlertNet Crises News
 أخبار الاقتصاد
 الأسهم الأوروبية تتماسك وتوقعات التحفيز تغذي المكاسب
 أخبار عالمية
-الجيش الأوكراني: مقتل أربعة من حرس الحدود في هجوم لطائرات هليكوبتر روسية
+اشتون: أريد التأكد من قدرة أوكرانيا على الحفاظ على سلامة أراضيها
 أخبار الرياضة
-بينار لاعب ايفرتون يغيب عن مواجهة تشيلسي بسبب الاصابة
+لامبارد يعتزل اللعب الدولي مع منتخب انجلترا
 منوعات
 العلوم والبيئه
+Argentina revoca representación legal de Bank of New York Mellon en medio de crisis de deuda
 Pronóstico meteorológico para región agropecuaria de Argentina
-Bolsas de Asia se afirman, euro cede por expectativas de nuevas medidas de alivio del BCE
 Negocios
 EMPRESAS A SEGUIR EN AMÉRICA LATINA-Antofagasta, Avianca Holdings, Interacciones y Cemig
 Calculadora de divisas
-Israel bombardeia prédios mais altos da Faixa de Gaza
-Carro-bomba em área de maioria xiita deixa 8 mortos em Bagdá
+Escalada militar não resolverá crise na Ucrânia, diz Putin
+Presidente da Ucrânia quer forte controle de fronteira com Rússia e fim de fornecimento de armas
 Mundo
-Helicópteros russos matam quatro guardas em posto de fronteira ucraniano, diz Kiev
+Avião faz pouso de emergência na Austrália após passageiro idoso tomar os controles
 Negócios
-IPC-Fipe acelera alta a 0,43% na 3ª quadrissemana de agosto
+Aneel aprova edital de leilão de energia A-5
 Esportes
 Cultura
 Brasil
 Internet
-Russian soldiers' capture clouds Putin-Poroshenko talks
 Israeli air strikes target more Gaza high-rises
+Pakistan's prime minister meets army chief amid crisis
 Business
-Burger King signs deal to buy Canada's Tim Hortons
+Burger King to buy Canada's Tim Hortons
 Canada
 Canada's intelligence head says returning Islamist militants pose threat
 Sports
@@ -102,7 +102,7 @@ Maguire
 Valls oeuvre à "un gouvernement de clarté"
 L'exécutif a les armes pour passer en force au Parlement
 Économie
-Les valeurs à suivre à Wall Street
+Les commandes de biens durables s'envolent aux USA grâce aux avions
 Sport
 Brandao sera jugé pour le coup de tête à Thiago Motta
 Technologie
@@ -119,7 +119,7 @@ Burger King schluckt kanadische Donut-Kette Tim Hortons
 Konjunktur
 Märkte
 Währungsrechner
-India bans Finmeccanica from defence contracts bids
+India bans Finmeccanica from bidding for contracts
 Nifty continues retreat from record high; coal users hit
 Boxer Vijender Singh out of Asian Games
 CCI fines car makers $420 million
@@ -153,12 +153,12 @@ Reuters India on Twitter
 PICTURE GALLERY
 Ganesh Chaturthi Festival
 Video
+Renzi: non accettiamo lezioni su priorità
 Sblocca Italia, Lupi: coperture in legge Stabilità
-Gaza, continuano attacchi aerei Israele, colpiti grattacieli
 Valute
 Finanza e Investimenti
 Ristorazione, matrimonio Burger King-Tim Hortons, giro d'affari 23 miliardi di dollari
-Austria, ministro Finanze si dimette per polemiche su riforma fisco
+Borsa Milano prosegue in lieve calo, rimbalzano Autogrill e Wdf
 Fondi
 Mercati
 トップニュース
@@ -242,8 +242,8 @@ Calculadora de divisas
 СПОРТИВНЫЕ НОВОСТИ
 ОБЩЕСТВО
 Валютный калькулятор
-Francia presentará un gabinete reformista tras la marcha de los disidentes
 Montoro hablará en el Congreso de fraude fiscal en plena "crisis Pujol"
+Francia presentará un gabinete reformista tras la marcha de los disidentes
 Negocios
 España adjudica 3.500 millones en letras con interés en mínimos históricos
 Deportes
@@ -288,12 +288,11 @@ s change of heart
 Ukraine captures soldiers ahead of peace talks
 Euro, bond yields dip as looser ECB policy eyed
 Israeli air strikes target more Gaza high-rises
-Amazon buys live video startup Twitch
+This month
+s ultimate enemy: Islamic State
 California quake losses seen in the billions
+Amazon buys live video startup Twitch
 Michael Brown remembered with calls for peace
-S
-high gets investors looking for more gains
-Chinese regulator targets Microsoft's web tools
 Video
 Ukraine says video shows Russian soldiers detained in east Ukraine
 Breakingviews: Draghi’s change of heart
@@ -308,20 +307,45 @@ Politics
 Deals
 Gallery of the Day
 Editor's choice
+Opinion
+A Red Star fades as Ukraine rises
+Becoming a millionaire the hard way
 Pictures
 Red is the new black at Emmys
-OPINION
-America
-s cultural segregation fault lines
-What the Justice Department will do in Ferguson
 Reuters Video
 Laboring for a grip on when to hike
-Aircraft demand spurs record U.S. durable goods orders gain
+Wall Street opens flat, S
+500 near record
 Latest Business News
 Business Video
+WPP confident despite weak Russia
+Australian airlines relax phone ban too
 Breakingviews: Draghi’s change of heart
-Reuters on the Road: Level39 speeding up tech super growth
-WPP's Sorrell says UK rates to remain lower for longer
+Chinese antitrust regulator targets Microsoft's web browser, media player
+BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+Russian food safety regulator shuts fifth McDonald's restaurant
+Japan government turns more cautious on weak factory output
+Rising North American plane demand boosts leasing market: BOC Aviation
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Data Dive
+Bank of America
+s big fine
+Small Business
+Wall Street opens flat, S
+500 near record
+Latest Business News
+Business Video
+WPP confident despite weak Russia
+Australian airlines relax phone ban too
+Breakingviews: Draghi’s change of heart
 Chinese antitrust regulator targets Microsoft's web browser, media player
 BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
 Russian food safety regulator shuts fifth McDonald's restaurant
@@ -341,30 +365,8 @@ Bank of America
 s big fine
 Small Business
 Aircraft demand spurs record U.S. durable goods orders gain
-Latest Business News
-Business Video
-WPP confident despite weak Russia
-Australian airlines relax phone ban too
-Breakingviews: Draghi’s change of heart
-BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
-Russian food safety regulator shuts fifth McDonald's restaurant
-Japan government turns more cautious on weak factory output
-Rising North American plane demand boosts leasing market: BOC Aviation
-Euro, bond yields dip as looser ECB policy eyed
-Market Indices
-Currencies
-Commodities
-Market Indices
-Currencies
-Commodities
-Market Indices
-Currencies
-Commodities
-Data Dive
-Bank of America
-s big fine
-Small Business
-Aircraft demand spurs record U.S. durable goods orders gain
+U.S. home prices fall in June: S
+/Case-Shiller
 BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
 Indian court's coal block ruling may have wider economic impact
 New home sales fall, but U.S. economy stays on solid ground
@@ -374,7 +376,6 @@ lawsuit was not retaliation
 U.S. services sector growth slows for second straight month in Aug: Markit
 About-face for ECB's Draghi as he seeks to jolt euro zone into life
 Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
-Euro zone bond yields fall as ECB's Draghi boosts QE speculation
 Business Video
 WPP confident despite weak Russia
 Market Indices
@@ -389,7 +390,7 @@ Commodities
 Macroscope
 UK rate consensus nearly rock-solid even as markets flip-flop over timing
 Bonds Market News
-UPDATE 3-Austrian finance minister quits in tax reform row
+BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
 Burger King to buy Canada's Tim Hortons
 ICBC deal shows U.S. tech giant IBM still engaged in China
 Exclusive: Chevron seeks up to $1.5 billion for Canadian oil project - sources
@@ -438,7 +439,8 @@ JPMorgan customers targeted in email phishing campaign
 Settlement brightens outlook for Bank of America, fund managers say
 Exclusive: Shake Shack picks JPMorgan, Morgan Stanley to lead IPO - sources
 JPMorgan, BofA to raise junior banker pay by 20 percent: sources
-Aircraft demand spurs record U.S. durable goods orders gain
+Wall Street opens flat, S
+500 near record
 WPP confident despite weak Russia
 China corruption watchdog investigating executives at Volkswagen JV
 Latest Auto News
@@ -472,8 +474,8 @@ Small Business Video
 Feeding America’s startling statistics
 Find a Lawyer
 Market News
-Futures flat, few incentives to buy; S
-500 off record
+Futures point to flat Wall St. open; S
+500 near record
 Euro, bond yields dip as looser ECB policy eyed
 Dollar holds steady but euro struggles on inflation concerns
 Millionaire investors catch Australia's high-yield express
@@ -481,7 +483,7 @@ Municipal bonds to be excluded from the U.S. bank liquidity rule: Bloomberg
 Investors look for more gains as U.S. S
 500 index hits 2,000 milestone
 U.S. Market Report
-TABLE-U.S. July durable goods orders rise record 22.6 pct
+Italy struggles with Plan B if Russian gas supplies cut
 UK Market Report
 Europe shares trim Monday's gains; UK stocks play catch up
 European Market Report
@@ -509,7 +511,7 @@ Municipal bonds to be excluded from the U.S. bank liquidity rule: Bloomberg
 Investors look for more gains as U.S. S
 500 index hits 2,000 milestone
 U.S. Market Report
-UPDATE 1-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+Italy struggles with Plan B if Russian gas supplies cut
 UK Market Report
 Europe shares trim Monday's gains; UK stocks play catch up
 European Market Report
@@ -527,13 +529,12 @@ Commodities
 Market Indices
 Currencies
 Commodities
-UPDATE 1-Algeria plans to raise government spending 16 pct in 2015 -draft budget
-Russia's Putin says military escalation won't solve Ukraine crisis
-UPDATE 4-Israeli air strikes target more Gaza high-rises
-US STOCKS-Futures point to flat Wall St open; S
-500 near record
-TABLE-U.S. July durable goods orders rise record 22.6 pct
-Algeria sees government spending up 16 pct in 2015 -draft budget
+Italy struggles with Plan B if Russian gas supplies cut
+Miner Mercator to try restructuring, files for creditor protection
+UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
+BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
 Market Indices
 Currencies
 Commodities
@@ -606,16 +607,16 @@ Business Video
 WPP confident despite weak Russia
 Upgrades
 Downgrades
+Miner Mercator to try restructuring, files for creditor protection
+UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
+BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+CANADA FX DEBT-C$ firms, bouncing off technical resistance
 Russia's Putin says military escalation won't solve Ukraine crisis
 UPDATE 3-Austrian finance minister quits in tax reform row
 EU's Ashton says wants Ukraine to safeguard territorial integrity
 GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
 COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
 Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
-GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
-German anti-euro party set for gains in eastern votes
-Russian servicemen captured in Ukraine crossed border by mistake - agency
-Fitch Hosts Global Sovereign Conferences in September
 Business Video
 WPP confident despite weak Russia
 MuniLand
@@ -628,12 +629,12 @@ Commodities
 Market Indices
 Currencies
 Commodities
+CANADA FX DEBT-C$ firms, bouncing off technical resistance
 GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
 COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
 FOREX-Dollar holds steady but euro struggles on inflation concerns
 Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
 RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
-GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
 Market Indices
 Currencies
 Commodities
@@ -644,21 +645,21 @@ Market Indices
 Currencies
 Commodities
 European Currencies
-FOREX-Dollar rally takes a pause, but offers little support to euro
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
 Asian Currencies
-Fitch Rates China Orient Asset Management's MTN Programme and USD Notes Drawdown 'A-(EXP)'
+REFILE-FOREX-Euro slides on French political woes, weak German data
 Economic News
-TABLE-U.S. July durable goods orders rise record 22.6 pct
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+U.S. court scraps order to seize Kurdish crude from tanker near Texas
+Exclusive: Algeria says will reject mixed-origin wheat cargoes - letter
+Newmont withdraws mining arbitration case against Indonesia: minister
+Corn speculator position much bigger than it looks: Maguire
+Remote, gas-rich islands on Indonesia's South China Sea frontline
+China steel output growth doesn't gel with coking coal: Russell
 Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
 Libya seeks foreign help for oilfields as rockets fired at airport
 Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
-China steel output growth doesn't gel with coking coal: Russell
 Brazil's drought-hit coffee belt turns to machines to lower costs
-Insight: As Venezuelan deliveries wane, allies tap traders for pricey fuel
-CME Group resumes electronic trading after glitch delays open
-Second tanker finishes loading oil at Libya's biggest export port
-Saudi Aramco CEO says OPEC will take oil price 'as it comes'
-China's corn consumers hit hard by tough import stance: Maguire
 THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
 Market Indices
 Currencies
@@ -681,8 +682,7 @@ Commodities
 Market Indices
 Currencies
 Commodities
-US STOCKS-Futures point to flat Wall St open; S
-500 near record
+Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
 RPT-IPO VIEW-Fund managers look to make room for Alibaba
 UPDATE 1-Market Chatter-Corporate finance press digest
 PRESS DIGEST - Wall Street Journal - Aug 26
@@ -714,11 +714,11 @@ peHUB Second Opinion
 Highland Capital, Google Ventures, Redpoint back cinematic VR startup Jaunt
 LPs navigate the most historically crowded fundraising market
 Accor sees higher profit despite weak France
-Trina Solar posts profit as module shipments jump
-WPP says clients more upbeat, sees weaker business in Russia
+Trina Solar revenue misses estimates as shipments lag
 Chinese carmaker BYD'S H1 net profit down 16 percent on weak gasoline vehicle sales
 Bank of Montreal reports stronger-than-expected profit
 Co-Op Bank losses narrow on branch closures, staff cuts
+ZKB boosts provisions tied to U.S. tax case as profit falls
 Business Video
 WPP confident despite weak Russia
 Markets
@@ -728,11 +728,11 @@ World Video
 Japan court rules Tepco responsible for suicide
 Ukraine says video shows Russian soldiers detained in east Ukraine
 Liberian slum cordoned off
-Qatar seeks to free more U.S. hostages in Syria: source
-Austrian finance minister quits in tax reform row
+Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
 France fine-tunes pro-reform cabinet after rebel ministers ousted
+Washington to give Tunisia military aid to battle Islamists
+Austrian finance minister quits in tax reform row
 Seleka rebel infighting in Central African Republic kills 17
-Afghan candidate threatens to pull out of election process
 WORLD WATCH
 Pictures
 Emmy Awards
@@ -745,11 +745,11 @@ World Video
 Japan court rules Tepco responsible for suicide
 Ukraine says video shows Russian soldiers detained in east Ukraine
 Liberian slum cordoned off
-Qatar seeks to free more U.S. hostages in Syria: source
-Austrian finance minister quits in tax reform row
+Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
 France fine-tunes pro-reform cabinet after rebel ministers ousted
+Washington to give Tunisia military aid to battle Islamists
+Austrian finance minister quits in tax reform row
 Seleka rebel infighting in Central African Republic kills 17
-Afghan candidate threatens to pull out of election process
 WORLD WATCH
 Pictures
 Emmy Awards
@@ -804,17 +804,18 @@ France
 European powers float idea of Gaza monitoring mechanism
 Italy
 Alcoa to close smelter in Italy, take 3rd-quarter charge
+Israeli air strikes target more Gaza high-rises
+Iran supplied weapons to Iraqi Kurdish forces; Baghdad bomb kills 12
 Qatar seeks to free more U.S. hostages in Syria: source
 Pakistan's prime minister meets army chief amid crisis
-Iran supplied weapons to Iraqi Kurdish forces; Baghdad bomb kills 12
 Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
 How Pakistan's Sharif stumbled into protests crisis
-Israeli air strikes target more Gaza high-rises
 Three Chinese engineers kidnapped in southeast Turkey: sources
 U.S. prepares military options in Syria against Islamic State
 Australia unveils measures to tackle rise of foreign fighters
 U.S. prepares military options in Syria against Islamic State
 Rocket damages home in southern Israel
+Remote, gas-rich islands on Indonesia's South China Sea frontline
 ICBC deal shows U.S. tech giant IBM still engaged in China
 China police seize 30,000 tonnes of tainted chicken feet
 China corruption watchdog investigating executives at Volkswagen JV
@@ -824,8 +825,7 @@ Australian billionaire politician apologizes for TV tirade over China
 Remote, gas-rich islands on Indonesia's South China Sea frontline
 BOC Aviation orders Boeing planes worth $8.8 billion
 Vietnam envoy to visit China to seek thaw in testy ties
-German car parts suppliers asked to form JVs in China: Stuttgarter
-BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+Japanese court rules against nuclear operator in suicide suit
 Latest Japan News
 BoJ may ease policy for 'some time' to slay deflation: Kuroda
 White House calls Chinese move near U.S. plane a provocation
@@ -870,6 +870,8 @@ Twelve dead, 36,000 homeless in Niger flooding
 SPECIAL REPORTS
 The rifts behind Nigeria's mass kidnap
 Russian soldiers' capture clouds Putin-Poroshenko talks
+Russia's Putin says military escalation won't solve Ukraine crisis
+Ukraine says detained Russian soldiers were on 'special mission'
 Ukraine says video shows Russian soldiers detained in east Ukraine
 Ukraine accuses Russia of opening new war front before leaders' meeting
 Ukraine's president sets parliamentary election for October 26
@@ -877,8 +879,6 @@ Slim chance of progress as Russian and Ukrainian leaders meet
 Ukraine's president sets parliamentary election for October 26
 Russia grants asylum to banker wanted by Lithuania: prosecutors
 Russia sees West changing tack on Syria, urges engagement with Assad
-Russia announces new convoy on eve of delicate Ukraine talks
-Russia allows dairy imports from Turkish firms after Western food ban
 World News
 Israeli air strikes target more Gaza high-rises
 Sketchy Details
@@ -1567,6 +1567,8 @@ At Ferguson memorial, reflection and anger at fatal encounter
 Lifestyle Pictures
 Khat - Somalia's paradise flower
 WHO urges stiff regulatory curbs on e-cigarettes
+MSF can only offer limited help in Congo Ebola outbreak
+Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
 Obama plans executive steps to boost veterans' mental health care
 China police seize 30,000 tonnes of tainted chicken feet
 Russian food safety regulator shuts fifth McDonald's restaurant
@@ -1574,8 +1576,6 @@ Exclusive: U.S. approval of Merck cancer immunotherapy expected soon
 Liberian doctor who received rare Ebola drug ZMapp dies
 New recommendations for overweight people with heart risks
 No biotech copycat drug lift off before 2017: Novartis CEO
-E-cigarettes may be tempting non-smoking youths to smoke: CDC study
-Prescription painkiller deaths fall in medical marijuana states
 Blendon: ACA rulings may help GOP in '14, Democrats in '16
 Special Series
 Cancer in Context
@@ -1714,6 +1714,7 @@ Dateline Asia
 Reuters Investigates
 Moving Pictures
 Editor's choice
+Khat - Somalia's paradise flower
 Diner en Blanc New York
 Emmy Awards
 Emmy red carpet
@@ -1723,7 +1724,6 @@ Quake hits California
 Fighting Ebola
 Gaza fighting continues
 Battle for east Ukraine
-MTV Video Awards
 Full focus
 Pictures of the month: July
 Protests in Missouri
@@ -1733,6 +1733,7 @@ Gaza in ruins
 Under the Iron Dome
 Being Elmo
 Editor's choice
+Khat - Somalia's paradise flower
 Diner en Blanc New York
 Emmy Awards
 Emmy red carpet
@@ -1742,7 +1743,6 @@ Quake hits California
 Fighting Ebola
 Gaza fighting continues
 Battle for east Ukraine
-MTV Video Awards
 Full focus
 Pictures of the month: July
 Protests in Missouri
@@ -1769,101 +1769,429 @@ The Exchange
 Dateline Asia
 Reuters Investigates
 Moving Pictures
-Reuters - Video
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
+Italy struggles with Plan B if Russian gas supplies cut
+Miner Mercator to try restructuring, files for creditor protection
+UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
+BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Business Video
+WPP confident despite weak Russia
+Upgrades
+Downgrades
+Americas
+Europe
+Asia Pacific
+Energy
+Basic Materials
+Industrials
+Cyclical Goods
+&
+Services
+Non-Cyclical Goods
+&
+Services
+Financials
+Healthcare
+Technology
+Telecoms
+Utilities
+Currencies
+European shares consolidate ECB-fuelled gains
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+London Market Report
+Swiss Market Report
+CORRECTED-Nikkei falls in thin trade as weak yen trend pauses
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Hong Kong Market Report
+Commodities
+Pfizer walks away from $118 billion AstraZeneca takeover fight
+Today's Company Results
+Business Video
+WPP confident despite weak Russia
+Upgrades
+Downgrades
+CANADA FX DEBT-C$ firms, bouncing off technical resistance
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
+FOREX-Dollar holds steady but euro struggles on inflation concerns
+Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
+RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+European Currencies
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+Asian Currencies
+REFILE-FOREX-Euro slides on French political woes, weak German data
+Economic News
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+U.S. court scraps order to seize Kurdish crude from tanker near Texas
+Exclusive: Algeria says will reject mixed-origin wheat cargoes - letter
+Newmont withdraws mining arbitration case against Indonesia: minister
+Corn speculator position much bigger than it looks: Maguire
+Remote, gas-rich islands on Indonesia's South China Sea frontline
+China steel output growth doesn't gel with coking coal: Russell
+Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
+Libya seeks foreign help for oilfields as rockets fired at airport
+Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
+Brazil's drought-hit coffee belt turns to machines to lower costs
+THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Bonds
+Currencies
+FXpert
 Aircraft demand spurs record U.S. durable goods orders gain
-U.S. small business borrowing slows in February
-China denounces EU airline carbon law, seeks talks
-Reuters - Video
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
-Featured Slideshows
-Reuters - Video
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
-Reuters - Video
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
-Editor's choice
-Editor's choice
-Editor's choice
+U.S. home prices fall in June: S
+/Case-Shiller
+BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+Indian court's coal block ruling may have wider economic impact
+New home sales fall, but U.S. economy stays on solid ground
+China fund defaults expose foreign partners to shadow banking risk
+U.S. confident its $5 billion S
+lawsuit was not retaliation
+U.S. services sector growth slows for second straight month in Aug: Markit
+About-face for ECB's Draghi as he seeks to jolt euro zone into life
+Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
+Business Video
+WPP confident despite weak Russia
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Macroscope
+UK rate consensus nearly rock-solid even as markets flip-flop over timing
+Bonds Market News
+BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+CANADA FX DEBT-C$ firms, bouncing off technical resistance
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
+FOREX-Dollar holds steady but euro struggles on inflation concerns
+Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
+RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+European Currencies
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+Asian Currencies
+REFILE-FOREX-Euro slides on French political woes, weak German data
+Economic News
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+Pfizer walks away from $118 billion AstraZeneca takeover fight
+Today's Company Results
+Business Video
+WPP confident despite weak Russia
+Upgrades
+Downgrades
+Pfizer walks away from $118 billion AstraZeneca takeover fight
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market News
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+CANADA STOCKS-Futures point to lower open for TSX
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+Hong Kong shares weaken despite strength in oil sector
+CORRECTED-China shares slip on weaker airlines, media firms; Hong Kong lacklustre
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+CORRECTED-Nikkei falls in thin trade as weak yen trend pauses
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+FOREX-Dollar holds steady but euro struggles on inflation concerns
+European shares consolidate ECB-fuelled gains
+New Issue- Kraftwerke adds 70 mln sfr to 2024 bond
+UPDATE 1-Pictet breaks with 209-year history to publish results
+Switzerland postpones Russia visit of minister, business leaders
+UPDATE 1-Zambia says to waive VAT rule on mining firms, refund $600 mln
+UPDATE 2-Straumann passes on Nobel Biocare, eyes China instead
+Zambia says to waive VAT rule on mining firms, refund $600 mln
+RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+European shares trim Monday's gains; UK stocks play catch up
+FOREX-Dollar rally takes a pause, but offers little support to euro
+VP Bank pulls Swiss arm out of US programme on tax evasion
+CORRECTED-Pictet breaks with 209-year history to post results for first time
+Europe shares trim Monday's gains; UK stocks play catch up
+BRIEF-Eastern Property Holdings expects loss for H1 consolidated result
+Swiss stocks - Factors to watch on August 26
+BRIEF-Publigroupe: provisional final result of Swisscom's public tender offer
+BRIEF-Valartis Group reports H1 operating income of CHF 21.9 mln
+BRIEF-ENR Russia Invest reports H1 net loss of CHF 4.11 million
+BRIEF-Orascom Development Holding H1 revenues up by 2% to CHF 120.6 mln
+BRIEF-Repower reports H1 operating revenue of CHF 1.20 billion
+BRIEF-Bossard Holding reports H1 revenue of CHF 321.0 million
+Straumann first-half sales rise as marketing push pays off
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+Europe shares trim Monday's gains; UK stocks play catch up
+UK Stocks-Factors to watch on August 26
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+PRECIOUS-Gold up around 1 pct as dollar rally pauses; U.S. data eyed
+PRECIOUS-Gold rises from 2-mth low on technical buying, gains may be capped
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+CANADA FX DEBT-C$ firms, bouncing off technical resistance
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
+FOREX-Dollar holds steady but euro struggles on inflation concerns
+Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
+RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+FOREX-Dollar rally takes a pause, but offers little support to euro
+Fitch Hosts Global Sovereign Conferences in September
+UPDATE 4-Scotland's pro-independence leader steamrolls final TV debate before vote
+GLOBAL MARKETS-Asian shares firm, euro wilts as ECB seen on cusp of QE
+PRESS DIGEST- New York Times business news - Aug 26
+COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
+Politics Video
+ACA price outlook varies widely state-to-state for 2015
+Front Row Washington
+Key retirements mean a changing of the guard next year in U.S. Congress
+Italy struggles with Plan B if Russian gas supplies cut
+Miner Mercator to try restructuring, files for creditor protection
+UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
+BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Business Video
+WPP confident despite weak Russia
+Upgrades
+Downgrades
+Americas
+Europe
+Asia Pacific
+Energy
+Basic Materials
+Industrials
+Cyclical Goods
+&
+Services
+Non-Cyclical Goods
+&
+Services
+Financials
+Healthcare
+Technology
+Telecoms
+Utilities
+Currencies
+European shares consolidate ECB-fuelled gains
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+London Market Report
+Swiss Market Report
+CORRECTED-Nikkei falls in thin trade as weak yen trend pauses
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Hong Kong Market Report
+Commodities
+Pfizer walks away from $118 billion AstraZeneca takeover fight
+Today's Company Results
+Business Video
+WPP confident despite weak Russia
+Upgrades
+Downgrades
+CANADA FX DEBT-C$ firms, bouncing off technical resistance
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
+FOREX-Dollar holds steady but euro struggles on inflation concerns
+Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
+RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+European Currencies
+GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+Asian Currencies
+REFILE-FOREX-Euro slides on French political woes, weak German data
+Economic News
+UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+U.S. court scraps order to seize Kurdish crude from tanker near Texas
+Exclusive: Algeria says will reject mixed-origin wheat cargoes - letter
+Newmont withdraws mining arbitration case against Indonesia: minister
+Corn speculator position much bigger than it looks: Maguire
+Remote, gas-rich islands on Indonesia's South China Sea frontline
+China steel output growth doesn't gel with coking coal: Russell
+Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
+Libya seeks foreign help for oilfields as rockets fired at airport
+Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
+Brazil's drought-hit coffee belt turns to machines to lower costs
+THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Bonds
+Currencies
+FXpert
 Aircraft demand spurs record U.S. durable goods orders gain
-U.S. small business borrowing slows in February
-China denounces EU airline carbon law, seeks talks
-Editor's choice
-Frontlines of Ebola
-Aircraft demand spurs record U.S. durable goods orders gain
-U.S. small business borrowing slows in February
-China denounces EU airline carbon law, seeks talks
-Aircraft demand spurs record U.S. durable goods orders gain
-U.S. small business borrowing slows in February
-China denounces EU airline carbon law, seeks talks
-Breaking Bad, Modern Family take top Emmy honors
-Red is the new black at Emmys, a night of sleek silhouettes
-Pictures
-Best of the Emmys
-Reuters - Video
-Top News
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
-Reuters - Video
-Top News
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
-Reuters - Video
-Top News
-Most Popular
-Money
-The Exchange
-Dateline Asia
-Reuters Investigates
-Moving Pictures
+U.S. home prices fall in June: S
+/Case-Shiller
+BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+Indian court's coal block ruling may have wider economic impact
+New home sales fall, but U.S. economy stays on solid ground
+China fund defaults expose foreign partners to shadow banking risk
+U.S. confident its $5 billion S
+lawsuit was not retaliation
+U.S. services sector growth slows for second straight month in Aug: Markit
+About-face for ECB's Draghi as he seeks to jolt euro zone into life
+Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
+Business Video
+WPP confident despite weak Russia
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Market Indices
+Currencies
+Commodities
+Macroscope
+UK rate consensus nearly rock-solid even as markets flip-flop over timing
+Bonds Market News
+UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
 غارات إسرائيلية تستهدف المزيد من المباني المرتفعة في غزة
 رئيس كردستان العراق: إيران زودت القوات الكردية بالأسلحة
 أخبار الاقتصاد
 الأسهم الأوروبية تتماسك وتوقعات التحفيز تغذي المكاسب
 أخبار عالمية
-بوتين وبوروشينكو يتصافحان في‭ ‬مستهل محادثاتهما في  مينسك
+اشتون: أريد التأكد من قدرة أوكرانيا على الحفاظ على سلامة أراضيها
 أخبار الرياضة
-بينار لاعب ايفرتون يغيب عن مواجهة تشيلسي بسبب الاصابة
+لامبارد يعتزل اللعب الدولي مع منتخب انجلترا
 منوعات
 العلوم والبيئه
+Argentina revoca representación legal de Bank of New York Mellon en medio de crisis de deuda
 Pronóstico meteorológico para región agropecuaria de Argentina
-Bolsas de Asia se afirman, euro cede por expectativas de nuevas medidas de alivio del BCE
 Negocios
 EMPRESAS A SEGUIR EN AMÉRICA LATINA-Antofagasta, Avianca Holdings, Interacciones y Cemig
 Calculadora de divisas
-Israel bombardeia prédios mais altos da Faixa de Gaza
-Carro-bomba em área de maioria xiita deixa 8 mortos em Bagdá
+Escalada militar não resolverá crise na Ucrânia, diz Putin
+Presidente da Ucrânia quer forte controle de fronteira com Rússia e fim de fornecimento de armas
 Mundo
-Helicópteros russos matam quatro guardas em posto de fronteira ucraniano, diz Kiev
+Avião faz pouso de emergência na Austrália após passageiro idoso tomar os controles
 Negócios
-IPC-Fipe acelera alta a 0,43% na 3ª quadrissemana de agosto
+Aneel aprova edital de leilão de energia A-5
 Esportes
 Cultura
 Brasil
@@ -1871,7 +2199,7 @@ Internet
 Israeli air strikes target more Gaza high-rises
 Pakistan's prime minister meets army chief amid crisis
 Business
-Burger King signs deal to buy Canada's Tim Hortons
+Burger King to buy Canada's Tim Hortons
 Canada
 Canada's intelligence head says returning Islamist militants pose threat
 Sports
@@ -1931,7 +2259,7 @@ Maguire
 Valls oeuvre à "un gouvernement de clarté"
 L'exécutif a les armes pour passer en force au Parlement
 Économie
-Les valeurs à suivre à Wall Street
+Les commandes de biens durables s'envolent aux USA grâce aux avions
 Sport
 Brandao sera jugé pour le coup de tête à Thiago Motta
 Technologie
@@ -1948,7 +2276,7 @@ Burger King schluckt kanadische Donut-Kette Tim Hortons
 Konjunktur
 Märkte
 Währungsrechner
-India bans Finmeccanica from defence contracts bids
+India bans Finmeccanica from bidding for contracts
 Nifty continues retreat from record high; coal users hit
 Boxer Vijender Singh out of Asian Games
 CCI fines car makers $420 million
@@ -1982,12 +2310,12 @@ Reuters India on Twitter
 PICTURE GALLERY
 Ganesh Chaturthi Festival
 Video
+Renzi: non accettiamo lezioni su priorità
 Sblocca Italia, Lupi: coperture in legge Stabilità
-Gaza, continuano attacchi aerei Israele, colpiti grattacieli
 Valute
 Finanza e Investimenti
 Ristorazione, matrimonio Burger King-Tim Hortons, giro d'affari 23 miliardi di dollari
-Austria, ministro Finanze si dimette per polemiche su riforma fisco
+Borsa Milano prosegue in lieve calo, rimbalzano Autogrill e Wdf
 Fondi
 Mercati
 トップニュース
@@ -2071,8 +2399,8 @@ Calculadora de divisas
 СПОРТИВНЫЕ НОВОСТИ
 ОБЩЕСТВО
 Валютный калькулятор
-Francia presentará un gabinete reformista tras la marcha de los disidentes
 Montoro hablará en el Congreso de fraude fiscal en plena "crisis Pujol"
+Francia presentará un gabinete reformista tras la marcha de los disidentes
 Negocios
 España adjudica 3.500 millones en letras con interés en mínimos históricos
 Deportes
@@ -2114,17 +2442,18 @@ s what it will take to trigger the next stock market correction
 Breakingviews Video
 Draghi
 s change of heart
-Aircraft demand spurs record U.S. durable goods orders gain
+Wall Street opens flat, S
+500 near record
 Latest Business News
 Business Video
 WPP confident despite weak Russia
 Australian airlines relax phone ban too
 Breakingviews: Draghi’s change of heart
+Chinese antitrust regulator targets Microsoft's web browser, media player
 BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
 Russian food safety regulator shuts fifth McDonald's restaurant
 Japan government turns more cautious on weak factory output
 Rising North American plane demand boosts leasing market: BOC Aviation
-Euro, bond yields dip as looser ECB policy eyed
 Market Indices
 Currencies
 Commodities
@@ -2139,8 +2468,8 @@ Bank of America
 s big fine
 Small Business
 Market News
-Futures flat, few incentives to buy; S
-500 off record
+Wall Street opens flat, S
+500 near record
 Euro, bond yields dip as looser ECB policy eyed
 Dollar holds steady but euro struggles on inflation concerns
 Millionaire investors catch Australia's high-yield express
@@ -2148,7 +2477,8 @@ Municipal bonds to be excluded from the U.S. bank liquidity rule: Bloomberg
 Investors look for more gains as U.S. S
 500 index hits 2,000 milestone
 U.S. Market Report
-TABLE-U.S. July durable goods orders rise record 22.6 pct
+US STOCKS SNAPSHOT-Wall St opens flat, S
+500 near record
 UK Market Report
 Europe shares trim Monday's gains; UK stocks play catch up
 European Market Report
@@ -2172,11 +2502,11 @@ World Video
 Japan court rules Tepco responsible for suicide
 Ukraine says video shows Russian soldiers detained in east Ukraine
 Liberian slum cordoned off
-Qatar seeks to free more U.S. hostages in Syria: source
-Austrian finance minister quits in tax reform row
+Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
 France fine-tunes pro-reform cabinet after rebel ministers ousted
+Washington to give Tunisia military aid to battle Islamists
+Austrian finance minister quits in tax reform row
 Seleka rebel infighting in Central African Republic kills 17
-Afghan candidate threatens to pull out of election process
 WORLD WATCH
 Pictures
 Emmy Awards

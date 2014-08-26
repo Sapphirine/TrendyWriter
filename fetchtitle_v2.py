@@ -1,5 +1,3 @@
-# (TODO..) Make sure to get all urls within a webpage including relive path and absolute path
-#          (including start with a '/') 
 # (TODO..) Generate the hashcode of all urls and titles, and "mod 1000" to seperate a number of
 #          buckets, in order to eliminate duplicate urls and titles
 
@@ -63,9 +61,13 @@ class MyHTMLParser(HTMLParser):
                         elif attr[1][0:1] != '#' and attr[1][0:5] != 'https'\
                              and attr[1][0:] != '/':
                             if attr[1][0:1] == '/':
-                                print '[INFO] href = ', attr[1]
-                                with open(store_url, 'a') as writing_file:
-                                    writing_file.write(self.url + attr[1][1:] + '\n');
+                                if self.url[7:].index('/') != (len(self.url[7:])-1):
+                                    with open(store_url, 'a') as writing_file:
+                                        writing_file.write('http://' + self.url[7:][:self.url[7:].index('/')] + attr[1] + '\n');
+                                else:
+                                    print '[INFO] href = ', attr[1]
+                                    with open(store_url, 'a') as writing_file:
+                                        writing_file.write(self.url + attr[1][1:] + '\n');
 
 
     def handle_endtag(self, tag):
@@ -130,7 +132,7 @@ def main():
     # if url[-1:] != '/':
     #    url += '/'
     # (DEBUGGING..)
-    url = 'http://www.reuters.com/'
+    url = 'http://www.reuters.com/finance/markets/'
 
     # Generate a file from the url (replace the old ones if file existed)
     urllib.urlretrieve (url, store_homepage)
