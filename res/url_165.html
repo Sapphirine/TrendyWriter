@@ -1,8 +1,8 @@
 <!--[if !IE]> This has been served from cache <![endif]-->
-<!--[if !IE]> Request served from apache server: S263585RGSF08 <![endif]-->
-<!--[if !IE]> Cached on Tue, 26 Aug 2014 05:06:06 GMT and will expire on Tue, 26 Aug 2014 05:11:06 GMT <![endif]-->
-<!--[if !IE]> token: 3a2f881b-c196-452e-85f1-1046b4a40ea1 <![endif]-->
-<!--[if !IE]> CSTAT-UUID: f1986861-98b6-463a-90fe-9d21ad2c6a49 <![endif]-->
+<!--[if !IE]> Request served from apache server: S263585RGSF01 <![endif]-->
+<!--[if !IE]> Cached on Tue, 26 Aug 2014 05:24:53 GMT and will expire on Tue, 26 Aug 2014 05:29:53 GMT <![endif]-->
+<!--[if !IE]> token: f4472f81-3a4b-416d-8edc-912344097247 <![endif]-->
+<!--[if !IE]> CSTAT-UUID: 9cbf3f52-581a-4c36-9ab6-f224cb6cc4fa <![endif]-->
 <!--[if !IE]> BEGIN standardShell <![endif]-->
 <!--[if !IE]> BEGIN baseHeader <![endif]-->
 <!--[if !IE]> App Server /S263585RGSF58/ <![endif]-->
@@ -46,12 +46,25 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 <body>
 <!--[if !IE]> END baseHeader <![endif]-->
 <link href="/resources/css/rcom-tier3.css" rel="stylesheet" type="text/css" />
-<script language="javascript" type="text/javascript">var strLocalization="FR";</script>
+<script language="javascript" type="text/javascript">var strLocalization="IT";</script>
+<!-- OAS SETUP begin -->
+    <SCRIPT LANGUAGE='JavaScript'>
+    <!--
+        OAS_sitepage = 'www.borsaitaliana.reuters.it/home'; 
+        OAS_listpos  = 'Left,Position1,Right,Top';
+        OAS_query    = '';
+    //-->
+    </SCRIPT>
+    <script language="JavaScript" src="http://s4.reutersmedia.net/resources/js/mjx-oas.js"></script>
+<!-- OAS SETUP end -->
+
+
 <div class="grid" id="grid">
 
   <div class="header" id="header">
     <div class="headerWrap">
-			<div class="logo"><a target="_top" href="/" id="headerLogoLink"><img src="/resources/images/logo_reuters_media_fr.gif" border="0" alt="Reuters France" /></a></div>
+			<div class="logo"><a target="_top" href="/" id="headerLogoLink"><img src="/resources/images/logo_reuters_media_it.gif" border="0" alt="Reuters IT" /></a></div>
+
     </div>
   </div><!-- header -->
 
@@ -64,11 +77,11 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
         <iframe src="/assets/ticker" id="ticker" height="13" width="550" marginwidth="0" scrolling="no" frameborder="0" marginheight="0"></iframe>
     </div>
     
-    <div class="toolbarSearch" id="headerSearchBox">
+     <div class="toolbarSearch" id="headerSearchBox">
         <div class="toolbarNews">
                  <form method="GET" action="/test" >
-                    <input name="TopBarSymbolID" id="TopBarSymbolID" type="text" value="Cotation" size="27" onfocus="if(this.value=='Cotation') {this.value='';}" onkeypress="if(event.keyCode == 13) {doStockSearch('TopBarSymbolID', 'Cotation', '/investing/stocks/quote');return false;}" title="[Search quotes on Reuters]" />&nbsp;
-                    <input src="/resources/images/refreshSearchButton.gif" name="_ctl24" type="image" class="button" onclick="javascript:doStockSearch('TopBarSymbolID', 'Cotation', '/investing/stocks/quote');return false;" />
+                    <input name="searchbox" id="searchbox" type="text" value="Notizie" size="27" onfocus="clearSearch('Notizie');" onblur="fillSearch('Notizie');" onkeypress="if(event.keyCode == 13) {doSearchIntegrationEdition('searchbox', 'http://search.it.reuters.com/query/', 'IT');return false;}" title="Search quotes, news,  video, and pictures on Reuters" />&nbsp;
+                    <input src="/resources/images/refreshSearchButtonIT.gif" name="_ctl24" type="image" class="button" onclick="javascript:doSearchIntegrationEdition('searchbox', 'http://search.it.reuters.com/query/', 'IT');return false;" />
                 </form>
         </div>
     </div>
@@ -79,17 +92,23 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 <!--[if !IE]> BEGIN Content <![endif]-->
 <div id="prebanner" class="NONE" style="margin-bottom:0px;"></div>
 
-<!-- channelName:  -->
-<!-- moduleId: 2525 -->
+<div><style>
+	*html .bannerad {margin-top:-23px;}
+</style></div><!-- channelName:  -->
+<!-- moduleId: 2687 -->
 <div>
-	</div>
+	<SCRIPT LANGUAGE='JavaScript'>
+        OAS_RICH('Position1');
+    </SCRIPT>
+
+</div>
 
 <div id="poelb1" class="linebreak"></div>
 
 <div class="bannerad" id="banner">
 	<div class="ad225x90">
 	<!-- channelName:  -->
-<!-- moduleId: 2526 -->
+<!-- moduleId: 2688 -->
 <div>
 	<div class="ad">
         <a href="http://www.reuters.com/news/globalcoverage/newsmakerDarfur?src=int_mktg_darfur225_us_05242007"><img src="http://mediacdn.reuters.com/resources/legacy/marketing/225/225x90_darfur.gif" border="0" height="90" width="225" title="Reuters Newsmakers" alt="Reuters Newsmakers" /></a>
@@ -98,10 +117,19 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 
 </div>
 	<div class="ad728x90">
-	<!-- channelName:  -->
-<!-- moduleId: 2527 -->
+	<div><style>
+
+div#banner div.ad728x90 {
+ margin-right: 10px;
+}
+</style></div><!-- channelName:  -->
+<!-- moduleId: 2689 -->
 <div>
-	</div>
+	<SCRIPT LANGUAGE='JavaScript'>
+        OAS_RICH('Top');
+    </SCRIPT>
+
+</div>
 
 </div>
 </div>
@@ -111,70 +139,42 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 
 </div>
 
-<div class="pagestamp">mardi 26 août 2014 07h06</div>
+<div class="pagestamp">martedì 26 agosto 2014 07:24</div>
 <div id="maincontent">
 
 <div class="leftrail">
-    <div><span id="VerticalMenu1_VerticalMenu1">
+    <div><div class="pagestamp"><jsp:useBean id="now" class="java.util.Date" /><cms:formatDate value="${now}" type="navMenu" /></div>
+
+
 <div class="navigation">
-    <div class="navOn"><a href="/">PAGE D'ACCUEIL</a></div>
-    <div class="navOff"><a href="/news">TOUTE L'INFO</a></div>
-    <div class="subnavOff"><a href="/news/topNews">À la Une</a></div>
-    <div class="subnavOff"><a href="/news/business">Économie</a></div>
-    <div class="subnavOff"><a href="/news/currencies">Devises</a></div>    
-    <div class="subnavOff"><a href="/news/sport">Sport</a></div>
-    <div class="subnavOff"><a href="/news/technology">Technologie</a></div>
-    <div class="subnavOff"><a href="/news/oddlyEnough">Insolite</a></div>
-    <div class="navOff"><a target="_top" href="/investing/stocks/quote">COTATION</a></div>
-
-</div>
-</span></div><link href="/resources/css/rcom-tertiary.css" rel="stylesheet" />
-<div class="Tnavigation">
-   <div class="TnavOff"><a target="_top" href="http://about.reuters.com/productinfo/index.aspx">Produits et Services</a></div><!--products+services-->
-        <div class="TsubnavOff"><a target="_top" href="http://customers.reuters.com/landing/">Support</a></div><!--support-->
-	<div class="TnavOff"><a target="_top" href="http://thomsonreuters.com/about">A propos de Thomson Reuters</a></div><!--about-->
-</div>
-<div><div style="padding: 12px; border: 1px solid #CCC;">
-<span class="label">Pour consulter les postes ouverts chez Reuters Financial Software, <a href="http://about.reuters.com/finsoft/fr/recrutement/offres/accueiloffre.htm" target="_blank">cliquez ici</a>.</span>
+    <div class="navOn"><a href="/">HOME</a></div>
+    <div class="navOff"><a target="_top" href="/investing">FINANZA E INVESTIMENTI</a></div>
+    <div class="subnavOff"><a href="/investing/news">Notizie</a></div>
+    <div class="subnavOff"><a href="/investing/markets">Mercati</a></div>
+    <div class="subnavOff"><a href="/investing/stocks">Società Quotate</a></div>
+    <div class="subnavOff"><a href="/investing/currencies">Valute</a></div>
+    <div class="subnavOff"><a href="/investing/funds">Fondi</a></div>
+    <div class="navOff"><a href="/news">ULTIME NOTIZIE</a></div>
+    <div class="subnavOff"><a href="/news/topNews">Prima Pagina</a></div>
+    <div class="subnavOff"><a href="/news/business">Business</a></div>
+    <div class="navOff"><a href="http://uk.reuters.com/news/video">Video</a></div>
 </div></div><!-- channelName:  -->
-<!-- moduleId: 2530 -->
+<!-- moduleId: 2692 -->
 <div>
-	<!-- vbcCond: 0 module.vbcCond: 0 -->
-
-<script>
-	// krux ksegs and kuid from krux header tag
-	//var kruxvars = (typeof(kseg)=='undefined'?'':kseg) + (typeof(kuid)=='undefined'?'':kuid);
-  var adsrc = 'france.reuters.com/home;' + (typeof(n_pbt)=='undefined'?'':n_pbt) + (typeof(seg)=='undefined'?'':seg) + 'type=125;sz=125x125;tile=3;ord=' + (typeof(tmstmp)!='undefined'?tmstmp:12345) + '?';
-  if ( typeof(AD_TRACKER) != 'undefined' && AD_TRACKER.globalAdSrcType != null ) {
-      adsrc = adsrc.replace('?', AD_TRACKER.globalAdSrcType + '?');
-  }
-  
-  </script>
-
-<div class="ad125" id="advert_2530" onload="renderMask2530()">
-	<script language="javascript" type="text/javascript">
-
-          if ((typeof (hideAllAds) == 'undefined' || hideAllAds == false) && (typeof (AD_TRACKER) == 'undefined' || !AD_TRACKER.isAdHidden('')) &&
-              (typeof (hideAd_2530) == 'undefined' || hideAd_2530 == false)) {
-                if (typeof (TR) !== "undefined") {
-                    var furl = TR.createDFPUrl(adsrc);
-                    TR.writeDFPURL("http://ad.fr.doubleclick.net/N4735792/adj/" + furl);
-                }
-                if ((!document.images && navigator.userAgent.indexOf("Mozilla/2.") >= 0) || navigator.userAgent.indexOf("WebTV") >= 0) {
-                    document.write('<a href="http://ad.fr.doubleclick.net/N4735792/jump/france.reuters.com/home;' + (typeof(seg)=='undefined'?'':seg) + 'type=125;sz=125x125;tile=3;ord=' + (typeof(tmstmp)=='undefined'?12345:tmstmp) + '?" target="_blank">');
-                    document.write('<img src="http://ad.fr.doubleclick.net/N4735792/ad/france.reuters.com/home;' + (typeof(seg)=='undefined'?'':seg) + 'type=125;sz=125x125;tile=3;ord=' + (typeof(tmstmp)=='undefined'?12345:tmstmp) + '?" width="125" height="125"  border=0 alt=""></a>');
-                }
-          }
-        </script>
-        <noscript>
-            <a href="http://ad.fr.doubleclick.net/N4735792/jump/france.reuters.com/home;type=125;sz=125x125;tile=3;ord=1455?" target="_blank">
-              <img src="http://ad.fr.doubleclick.net/N4735792/ad/france.reuters.com/home;type=125;sz=125x125;tile=3;ord=1455?" width="125" height="125" border="0" alt="">
-            </a>
-        </noscript>
-		
-        </div>
+	<SCRIPT LANGUAGE='JavaScript'>
+        OAS_RICH('Left');
+    </SCRIPT>
 
 </div>
+
+<div><link href="/resources/css/rcom-tertiary.css" rel="stylesheet" />
+<div class="Tnavigation">
+   <div class="TnavOff"><a target="_top" href="http://about.reuters.com/productinfo/index.aspx">Prodotti e servizi</a></div><!--products+services-->
+        <div class="TsubnavOff"><a target="_top" href="http://customers.reuters.com/landing/">Support</a></div><!--support-->
+<div class="TnavOff">Servizi Dai Partner</div>
+<div class="TsubnavOff"><a target="_top" href="http://www.efinancialcareers.it/?utm_campaign=PART_REUTERS_IT&utm_source=EMEA_IT_ITA&utm_medium=DA_REUTERS_LINK">Careers Centre</a></div>
+	<div class="TnavOff"><a target="_top" href="http://thomsonreuters.com/about">Informazioni sulla società</a></div><!--about-->
+</div></div>
 
 </div><!--[if !IE]> leftrail <![endif]--><div class="content">
 
@@ -183,38 +183,38 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 <div class="contentBand" >
 
 	<!-- channelName:  -->
-<!-- moduleId: 2533 -->
+<!-- moduleId: 2694 -->
 <div>
 	<!-- vbcCond: 0 module.vbcCond: 0 -->
 
 <script>
 	// krux ksegs and kuid from krux header tag
 	//var kruxvars = (typeof(kseg)=='undefined'?'':kseg) + (typeof(kuid)=='undefined'?'':kuid);
-  var adsrc = 'france.reuters.com/home;' + (typeof(n_pbt)=='undefined'?'':n_pbt) + (typeof(seg)=='undefined'?'':seg) + 'type=barker;sz=1x1;tagb=bbbbbbbbb;ord=' + (typeof(tmstmp)!='undefined'?tmstmp:12345) + '?';
+  var adsrc = 'www.reuters.it/home;' + (typeof(n_pbt)=='undefined'?'':n_pbt) + (typeof(seg)=='undefined'?'':seg) + 'type=barker;sz=1x1;taga=aaaaaaaaa;ord=' + (typeof(tmstmp)!='undefined'?tmstmp:12345) + '?';
   if ( typeof(AD_TRACKER) != 'undefined' && AD_TRACKER.globalAdSrcType != null ) {
       adsrc = adsrc.replace('?', AD_TRACKER.globalAdSrcType + '?');
   }
   
   </script>
 
-<div id="advert_2533" onload="renderMask2533()">
+<div id="advert_2694" onload="renderMask2694()">
 	<script language="javascript" type="text/javascript">
 
           if ((typeof (hideAllAds) == 'undefined' || hideAllAds == false) && (typeof (AD_TRACKER) == 'undefined' || !AD_TRACKER.isAdHidden('')) &&
-              (typeof (hideAd_2533) == 'undefined' || hideAd_2533 == false)) {
+              (typeof (hideAd_2694) == 'undefined' || hideAd_2694 == false)) {
                 if (typeof (TR) !== "undefined") {
                     var furl = TR.createDFPUrl(adsrc);
-                    TR.writeDFPURL("http://ad.fr.doubleclick.net/N4735792/adj/" + furl);
+                    TR.writeDFPURL("http://ad.it.doubleclick.net/N4735792/adj/" + furl);
                 }
                 if ((!document.images && navigator.userAgent.indexOf("Mozilla/2.") >= 0) || navigator.userAgent.indexOf("WebTV") >= 0) {
-                    document.write('<a href="http://ad.fr.doubleclick.net/N4735792/jump/france.reuters.com/home;' + (typeof(seg)=='undefined'?'':seg) + 'type=barker;sz=1x1;tagb=bbbbbbbbb;ord=' + (typeof(tmstmp)=='undefined'?12345:tmstmp) + '?" target="_blank">');
-                    document.write('<img src="http://ad.fr.doubleclick.net/N4735792/ad/france.reuters.com/home;' + (typeof(seg)=='undefined'?'':seg) + 'type=barker;sz=1x1;tagb=bbbbbbbbb;ord=' + (typeof(tmstmp)=='undefined'?12345:tmstmp) + '?" width="1" height="1"  border=0 alt=""></a>');
+                    document.write('<a href="http://ad.it.doubleclick.net/N4735792/jump/www.reuters.it/home;' + (typeof(seg)=='undefined'?'':seg) + 'type=barker;sz=1x1;taga=aaaaaaaaa;ord=' + (typeof(tmstmp)=='undefined'?12345:tmstmp) + '?" target="_blank">');
+                    document.write('<img src="http://ad.it.doubleclick.net/N4735792/ad/www.reuters.it/home;' + (typeof(seg)=='undefined'?'':seg) + 'type=barker;sz=1x1;taga=aaaaaaaaa;ord=' + (typeof(tmstmp)=='undefined'?12345:tmstmp) + '?" width="1" height="1"  border=0 alt=""></a>');
                 }
           }
         </script>
         <noscript>
-            <a href="http://ad.fr.doubleclick.net/N4735792/jump/france.reuters.com/home;type=barker;sz=1x1;tagb=bbbbbbbbb;ord=1455?" target="_blank">
-              <img src="http://ad.fr.doubleclick.net/N4735792/ad/france.reuters.com/home;type=barker;sz=1x1;tagb=bbbbbbbbb;ord=1455?" width="1" height="1" border="0" alt="">
+            <a href="http://ad.it.doubleclick.net/N4735792/jump/www.reuters.it/home;type=barker;sz=1x1;taga=aaaaaaaaa;ord=0549?" target="_blank">
+              <img src="http://ad.it.doubleclick.net/N4735792/ad/www.reuters.it/home;type=barker;sz=1x1;taga=aaaaaaaaa;ord=0549?" width="1" height="1" border="0" alt="">
             </a>
         </noscript>
 		
@@ -239,25 +239,25 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 
 <div class="contentBand" >
 
-	<div class="primaryContent">
-
-		<div>
+	<div>
 	</div>
 
-<div>
+<div class="primaryContent">
+
+		<div>
 	<div class="NONE" style="margin-bottom: 0px;">
     <div class="topPhoto2">
-        <a href="/article/topNews/idFRKBN0GP1V720140825"  ><img
-        		src="http://s4.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966931518&w=&fh=&fw=&ll=239&pl=101&r=LYNXMPEA7O0TV"
+        <a href="/article/topNews/idITKBN0GP0RG20140825"  ><img
+        		src="http://s3.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966807929&w=&fh=&fw=&ll=239&pl=101&r=LYNXMPEA7O0E7"
         		border="0" alt="Photo"
         		 /></a>
 </div>
 		  <div class="topStory2">
-	    <h4><a href="/article/topNews/idFRKBN0GP1V720140825"  >Hollande défend sa politique après le départ de Montebourg</a>
+	    <h4><a href="/article/topNews/idITKBN0GP0RG20140825"  >Immigrazione, Italia chiede aiuto Ue, domani riunione a Roma su "Frontex Plus"</a>
 <span class="timestamp">
-	    lundi 25 août 2014</span>
-	    </h4><p>PARIS (Reuters) - François Hollande a défendu lundi, durant les commémorations de la Libération de Paris, sa politique économique fondée sur la baisse des déficits et la compétitivité, une stratégie fustigée par son ministre de l'Economie démissionnaire, Arnaud Montebourg.&nbsp;
-	    <span class="inlineLinks"><a href="/article/topNews/idFRKBN0GP1V720140825"  >Article complet</a>
+	    lunedì 25 agosto 2014 13:57</span>
+	    </h4><p>RIMINI (Reuters) - Si terrà domani a Roma un vertice tra il governo italiano, la Commissione europea e rappresentanti dell'agenzia europea delle frontiere per dare un sostegno all'operazione "Mare Nostrum".&nbsp;
+	    <span class="inlineLinks"><a href="/article/topNews/idITKBN0GP0RG20140825"  >Articolo completo</a>
 </span></p>
     </div>
 	</div>
@@ -277,16 +277,16 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 		<!--[if !IE]> ### Top Story <![endif]-->
 	<div class="topStory">
 			<div class="inlineThumbnail">
-				<a href="/article/topNews/idFRKBN0GP1I420140825"  ><img
-        		src="http://s2.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966882736&w=98&fh=&fw=&ll=&pl=&r=LYNXMPEA7O0OI"
+				<a href="/article/topNews/idITKBN0GP1AW20140825"  ><img
+        		src="http://s3.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966855849&w=98&fh=&fw=&ll=&pl=&r=LYNXMPEA7O0KK"
         		border="0" alt="Photo"
         		 /></a>
 </div>
 			<h5>
-				<a href="/article/topNews/idFRKBN0GP1I420140825"  >Le gouvernement implose, Arnaud Montebourg "reprend sa liberté"</a>
-<span class="timestamp">lundi 25 août 2014</span>&nbsp;</h5>      
-			<p>PARIS (Reuters) - Moins de cinq mois après avoir constitué un "gouvernement de combat", Manuel Valls a présenté lundi la démission surprise de son équipe pour écarter Arnaud Montebourg, qui avait vivement critiqué les choix économiques de François Hollande.&nbsp;<span class="inlineLinks">
-				<a href="/article/topNews/idFRKBN0GP1I420140825">Article complet</a>
+				<a href="/article/topNews/idITKBN0GP1AW20140825"  >Pa, da primo settembre -50% permessi sindacali - ministero</a>
+<span class="timestamp">lunedì 25 agosto 2014 20:00</span>&nbsp;</h5>      
+			<p>ROMA (Reuters) - Dal primo settembre scatta la riduzione del 50% di permessi e distacchi sindacali nelle amministrazioni pubbliche.&nbsp;<span class="inlineLinks">
+				<a href="/article/topNews/idITKBN0GP1AW20140825">Articolo completo</a>
 				</span>&nbsp;
 			</p></div>
 	</div>
@@ -303,27 +303,27 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 
 	<div class="module">
 		<div class="headlineMed">
-			<a href="/article/topNews/idFRKBN0GP1M620140825"  >Sans majorité acquise, Hollande tente le tout pour le tout</a>
+			<a href="/article/topNews/idITKBN0GP1NC20140825"  >Padoan da Renzi a Chigi in vista del prossimo Cdm</a>
 <span class="inlineLinks">
 				</span>
 		</div>
 	<div class="headlineMed">
-			<a href="/article/topNews/idFRKBN0GP1EW20140825"  >Les Verts maintiennent leur cap, malgré les ambitions</a>
+			<a href="/article/topNews/idITKBN0GP0N720140825"  >Ucraina, scontri con ribelli vicino a frontiera russa</a>
 <span class="inlineLinks">
 				</span>
 		</div>
 	<div class="headlineMed">
-			<a href="/article/topNews/idFRKBN0GP09Q20140825"  >Un policier blessé à Marseille, son agresseur abattu</a>
+			<a href="/article/topNews/idITKBN0GP1AI20140825"  >Gaza, ancora ostilità mentre Egitto continua ricerca tregua</a>
 <span class="inlineLinks">
 				</span>
 		</div>
 	<div class="headlineMed">
-			<a href="/article/topNews/idFRKBN0GP1QS20140825"  >Le Parlement ukrainien dissout, élections le 26 octobre</a>
+			<a href="/article/topNews/idITKBN0GP1CZ20140825"  >Libia chiede aiuto internazionale per difesa giacimenti petrolio</a>
 <span class="inlineLinks">
 				</span>
 		</div>
 	<div class="headlineMed">
-			<a href="/article/topNews/idFRKBN0GP12820140825"  >Nouveaux raids aériens sur Gaza, au moins neuf morts</a>
+			<a href="/article/topNews/idITKBN0GP0JJ20140825"  >Francia, governo si dimette, domani il nuovo esecutivo</a>
 <span class="inlineLinks">
 				</span>
 		</div>
@@ -339,228 +339,6 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 
 </div>
 
-</div>
-
-<div>
-	<div class="NONE">
-
-	<div class="module">
-		<div class="moduleHeader">
-                    <h3>
-                    <a href="/news/business">Économie</a>
-                    </h3>
-                    </div>
-				<div class="moduleBody">
-		<div class="primaryContent1">
-		<div>
-	<div class="">
-
-	<div class="module">
-		<!--[if !IE]> ### Top Story <![endif]-->
-	<div class="topStory">
-			<div class="inlineThumbnail">
-				<a href="/article/businessNews/idFRKBN0GP1UT20140825"  ><img
-        		src="http://s2.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966929123&w=98&fh=&fw=&ll=&pl=&r=LYNXMPEA7O0TH"
-        		border="0" alt="Photo"
-        		 /></a>
-</div>
-			<h5>
-				<a href="/article/businessNews/idFRKBN0GP1UT20140825"  >Wall Street finit dans le vert, le S&P franchit un cap</a>
-<span class="timestamp">lundi 25 août 2014</span>&nbsp;</h5>      
-			<p>NEW YORK (Reuters) - Wall Street a terminé lundi dans le vert au terme d'une séance qui a vu le S&P 500 passer pour la première fois le cap symbolique des 2.000 points avant de redescendre juste en dessous.&nbsp;<span class="inlineLinks">
-				<a href="/article/businessNews/idFRKBN0GP1UT20140825">Article complet</a>
-				</span>&nbsp;
-			</p></div>
-	</div>
-
-</div>
-
-</div>
-
-</div>
-
-	<div class="primaryContent2">
-		<div>
-	<div class="">
-
-	<div class="module">
-		<div class="headlineMed">
-			<a href="/article/businessNews/idFRKBN0GP1H220140825"  >Les marchés européens terminent en hausse, portés par la BCE</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/businessNews/idFRKBN0GP1H920140825"  >Les valeurs suivies à la clôture de la Bourse de Paris</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/businessNews/idFRKBN0GP1F220140825"  >La BCE ouvre un débat que Paris tente de clore en France</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/businessNews/idFRKBN0GP1O420140825"  >Amazon va racheter Twitch pour près d'un milliard de dollars</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/businessNews/idFRKBN0GP0CV20140825"  >Burger King discute du rachat du canadien Tim Hortons</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-		</div>
-
-</div>
-
-<div class="linebreak"></div>
-</div>
-
-<div>
-	<div class="NONE">
-
-	<div class="module">
-		<div class="moduleHeader">
-                    <h3>
-                    <a href="/news/sport">Sport</a>
-                    </h3>
-                    </div>
-				<div class="moduleBody">
-		<div class="primaryContent1">
-		<div>
-	<div class="">
-
-	<div class="module">
-		<!--[if !IE]> ### Top Story <![endif]-->
-	<div class="topStory">
-			<h5>
-				<a href="/article/sportsNews/idFRKBN0GM1K820140822"  >Brandao sera jugé pour le coup de tête à Thiago Motta</a>
-<span class="timestamp">vendredi 22 août 2014</span>&nbsp;</h5>      
-			<p>PARIS (Reuters) - Brandao, l'attaquant brésilien de Bastia, sera jugé le 3 novembre pour le coup de tête asséné samedi dernier au Parisien Thiago Motta en marge du match PSG-Bastia de Ligue 1, a-t-on appris vendredi auprès de son avocat.&nbsp;<span class="inlineLinks">
-				<a href="/article/sportsNews/idFRKBN0GM1K820140822">Article complet</a>
-				</span>&nbsp;
-			</p></div>
-	</div>
-
-</div>
-
-</div>
-
-</div>
-
-	<div class="primaryContent2">
-		<div>
-	<div class="">
-
-	<div class="module">
-		</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-		</div>
-
-</div>
-
-<div class="linebreak"></div>
-</div>
-
-<div>
-	<div class="primaryContent1">
-
-	<div class="module">
-		<div class="moduleHeader">
-                    <h3>
-                    <a href="/news/technology">Technologie</a>
-                    </h3>
-                    </div>
-				<div class="moduleBody">
-		<div class="headlineMed">
-			<a href="/article/technologyNews/idFRKBN0GM1LG20140822"  >Des éditeurs de presse déboutés contre Google en Allemagne</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/technologyNews/idFRKBN0GL1VK20140821"  >Soutien massif pour une action groupée contre Facebook</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/technologyNews/idFRKBN0GM1OZ20140822"  >Zalando et Rocket Internet lanceraient leur IPO en septembre</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/technologyNews/idFRKBN0GL0YY20140821"  >Opera va installer son navigateur sur des mobiles de Microsoft</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/technologyNews/idFRKBN0GK29420140821"  >Hausse surprise des ventes de HP au 3e trimestre grâce aux PC</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	</div>
-		</div>
-
-</div>
-
-</div>
-
-<div>
-	<div class="primaryContent2">
-
-	<div class="module">
-		<div class="moduleHeader">
-                    <h3>
-                    <a href="/news/oddlyEnough">Insolite</a>
-                    </h3>
-                    </div>
-				<div class="moduleBody">
-		<div class="headlineMed">
-			<a href="/article/oddlyEnoughNews/idFRKBN0GF1O420140815"  >Succès pour une vente aux enchères autour de "Downton Abbey"</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/oddlyEnoughNews/idFRKBN0GE22T20140814"  >Hello Kitty touriste de l'espace</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/oddlyEnoughNews/idFRKBN0GE0NJ20140814"  >Un hôpital australien annonce par erreur la mort de 200 patients</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/oddlyEnoughNews/idFRKBN0GB1AA20140811"  >Des diamants dans une fausse boîte d'explosifs</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	<div class="headlineMed">
-			<a href="/article/oddlyEnoughNews/idFRKBN0G90AH20140809"  >Coût accru de l'assurance pour escalader les sommets du Népal</a>
-<span class="inlineLinks">
-				</span>
-		</div>
-	</div>
-		</div>
-
-</div>
-
-<div class="linebreak"></div>
 </div>
 
 </div>
@@ -568,25 +346,23 @@ document.write("<script src='http://s2.reutersmedia.net/resources/js/pid.js'></s
 
 		<div>
 	<div class="NONE" style="margin-bottom: 0px;">
-    <!-- BEGIN:: Shared Module id=2282 -->
-		<style type="text/css">
-#marketUpdateTab4 { display: none; }
-</style><div>
+    <!-- BEGIN:: Shared Module id=2392 -->
+		<div>
 	<div class="NONE">
 
 	<div class="module">
 		<div class="moduleHeader">
                     <h3>
-                    Commentaire de marché actualisé</h3>
+                    Aggiornamento</h3>
                     </div>
 				<div class="moduleBody">
 		<script language="javascript">
 var iframeTargets = [
-	"/assets/marketUpdateUnit?view=.N100%2C.N150%2C.FCHI&sp=1",
+	"/assets/marketUpdateUnit?view=.FTMIB%2C.FTITLMS%2C.N100&sp=1",
 	"/assets/marketUpdateUnit?view=.DJI%2C.IXIC%2C.SPX&sp=1",
 	"/assets/marketUpdateUnit?view=.FTSE%2C.FTMC%2C.FTAS%2C.FTT1X&sp=1",
 	"/assets/marketUpdateUnit?view=.FCHI%2C.GDAXI%2C.SSMI%2C.IBEX&sp=1",
-	"/assets/marketUpdateUnit?view=&sp=rankings"
+	"/assets/marketUpdateUnit?view=15&sp=rankings"
 ];
 loadMarketUpdate = function(iIndex, moduleId) {
 	for (var i=0; i<5; i++) {
@@ -606,16 +382,16 @@ loadMarketUpdate = function(iIndex, moduleId) {
 
 <div id="marketUpdateTabs" class="tabs small inline standalone">
 	<ul>
-		<li id="marketUpdateTab0_34094" class="current"><span class="hrefClone" onclick="loadMarketUpdate(0, 34094)">Euronext</span></li>
-		<li id="marketUpdateTab1_34094"><span class="hrefClone" onclick="loadMarketUpdate(1, 34094)"><img class="flagIcon" src="/resources/images/flagUS.gif" border="0" alt="US" />US</span></li>
-		<li id="marketUpdateTab2_34094"><span class="hrefClone" onclick="loadMarketUpdate(2, 34094)"><img class="flagIcon" src="/resources/images/flagUK.gif" border="0" alt="UK" />UK</span></li>
-		<li id="marketUpdateTab3_34094"><span class="hrefClone" onclick="loadMarketUpdate(3, 34094)">Europe</span></li>
+		<li id="marketUpdateTab0_36028" class="current"><span class="hrefClone" onclick="loadMarketUpdate(0, 36028)"><img class="flagIcon" src="/resources/images/flagIT.gif" border="0" alt="Italy" />Italy</span></li>
+		<li id="marketUpdateTab1_36028"><span class="hrefClone" onclick="loadMarketUpdate(1, 36028)"><img class="flagIcon" src="/resources/images/flagUS.gif" border="0" alt="US" />US</span></li>
+		<li id="marketUpdateTab2_36028"><span class="hrefClone" onclick="loadMarketUpdate(2, 36028)"><img class="flagIcon" src="/resources/images/flagUK.gif" border="0" alt="UK" />UK</span></li>
+		<li id="marketUpdateTab3_36028"><span class="hrefClone" onclick="loadMarketUpdate(3, 36028)">Europe</span></li>
 		</ul>
 </div>
 <div class="linebreak"></div>
 
-<iframe id="marketUpdateIframe_34094" src="" width="302" height="120" marginwidth="0" scrolling="no" frameborder="0" marginheight="0"></iframe>
-<script language="javascript">loadMarketUpdate(0, 34094);</script>
+<iframe id="marketUpdateIframe_36028" src="" width="302" height="150" marginwidth="0" scrolling="no" frameborder="0" marginheight="0"></iframe>
+<script language="javascript">loadMarketUpdate(0, 36028);</script>
 </div>
 		</div>
 
@@ -623,22 +399,22 @@ loadMarketUpdate = function(iIndex, moduleId) {
 
 </div>
 
+<div><style type="text/css">
+#marketUpdateTab4 { display: none; }
+</style></div>
 
-
-<!-- END:: Shared Module id=2282 -->
+<!-- END:: Shared Module id=2392 -->
 </div>
   </div>
 
-<div>
-	</div>
-
 <!-- channelName:  -->
-<!-- moduleId: 2548 -->
+<!-- moduleId: 2705 -->
 <div>
-	</div>
+	<SCRIPT LANGUAGE='JavaScript'>
+        OAS_RICH('Right');
+    </SCRIPT>
 
-<div>
-	</div>
+</div>
 
 <!--[if !IE]> ### Currencies <![endif]-->
 <script language="javascript">
@@ -652,19 +428,19 @@ loadMarketUpdate = function(iIndex, moduleId) {
 		redirectPath = redirectPath.replace("[from]", fromCtrl.options[fromCtrl.selectedIndex].value);
 		redirectPath = redirectPath.replace("[to]", toCtrl.options[toCtrl.selectedIndex].value);
 		window.location.href = redirectPath;
-		var temp = '/news/currencies';
+		var temp = '/investing/currencies';
 	}
 </script>
 <div>
 	<div class="NONE">
 
-	<div class="module">
+	<div class="module" style="margin-bottom: 0;">
 		<div class="moduleHeader">
                     <h3>
-                    <a href="/news/currencies">Convertisseur de devises </a>
+                    <a href="/investing/currencies">Valute</a>
                     </h3>
                     </div>
-				<div class="moduleBody">
+				<div class="moduleBody" style="margin-bottom: 0;">
 		<table width="100%" cellpadding="1" cellspacing="0" border="0" class="simpleControls">
 			<tr>
 				<td>
@@ -852,7 +628,7 @@ loadMarketUpdate = function(iIndex, moduleId) {
 </select>
 				</td>
 				<td align="left">
-					<input name="CurrenciesConversion:Convert" id="CurrenciesConversion_Convert" type="button" value="Convert" onclick="javascript:ConvertCurrency('/news/currencies?srcAmt=[amt]&amp;srcCurr=[from]&amp;destAmt=&amp;destCurr=[to]','CurrenciesConversion_ConversionAmount','CurrenciesConversion_FromCurrencies','CurrenciesConversion_ToCurrencies');" />
+					<input name="CurrenciesConversion:Convert" id="CurrenciesConversion_Convert" type="button" value="Convert" onclick="javascript:ConvertCurrency('/investing/currencies?srcAmt=[amt]&amp;srcCurr=[from]&amp;destAmt=&amp;destCurr=[to]','CurrenciesConversion_ConversionAmount','CurrenciesConversion_FromCurrencies','CurrenciesConversion_ToCurrencies');" />
 				</td>
 			</tr>
 		</table>
@@ -869,45 +645,255 @@ loadMarketUpdate = function(iIndex, moduleId) {
 </div>
 
 <!--[if !IE]> ######################## END: Section  ######################## <![endif]-->
+<!--[if !IE]> ######################## BEGIN: Section  ######################## <![endif]-->
+
+<div class="contentBand" >
+
+	<h2><a href="/investing">Finanza e Investimenti</a>
+		</h2><div class="primaryContent">
+
+		<div>
+	<div class="NONE" style="margin-bottom: 0px;">
+    <div class="topPhoto2">
+        <a href="/article/businessNews/idITKBN0GP1M020140825"  ><img
+        		src="http://s2.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966892372&w=&fh=&fw=&ll=239&pl=101&r=LYNXMPEA7O0QE"
+        		border="0" alt="Photo"
+        		 /></a>
+</div>
+		  <div class="topStory2">
+	    <h4><a href="/article/businessNews/idITKBN0GP1M020140825"  >Luxottica, Cda 1 settembre discuterà posizione AD Guerra</a>
+<span class="timestamp">
+	    lunedì 25 agosto 2014 19:34</span>
+	    </h4><p>MILANO (Reuters) - La posizione dell'Ad di Luxottica Andrea Guerra verrà discussa dal consiglio di amministrazione del gruppo di Agordo lunedì 1 settembre.&nbsp;
+	    <span class="inlineLinks"><a href="/article/businessNews/idITKBN0GP1M020140825"  >Articolo completo</a>
+</span></p>
+    </div>
+	</div>
+  <div class="linebreak"></div>
+  </div>
+
+<div class="dividerH">&nbsp;</div>
+<div>
+	<div class="NONE">
+
+	<div class="module">
+		<div class="primaryContent1">
+		<div>
+	<div class="">
+
+	<div class="module">
+		<!--[if !IE]> ### Top Story <![endif]-->
+	<div class="topStory">
+			<div class="inlineThumbnail">
+				<a href="/article/businessNews/idITKBN0GP0W020140825"  ><img
+        		src="http://s3.reutersmedia.net/resources/r/?m=02&d=20140825&t=2&i=966812672&w=98&fh=&fw=&ll=&pl=&r=LYNXMPEA7O0F5"
+        		border="0" alt="Photo"
+        		 /></a>
+</div>
+			<h5>
+				<a href="/article/businessNews/idITKBN0GP0W020140825"  >Sblocca Italia, Martina: a cdm venerdì per "svolta Paese"</a>
+<span class="timestamp">lunedì 25 agosto 2014 13:09</span>&nbsp;</h5>      
+			<p>RIMINI (Reuters) - Il provvedimento cosiddetto Sblocca Italia sarà esaminato dal consiglio dei ministri di venerdì insieme con la riforma della scuola e quella giustizia e rappresenterà un passo importante per imprimere una "svolta al Paese".&nbsp;<span class="inlineLinks">
+				<a href="/article/businessNews/idITKBN0GP0W020140825">Articolo completo</a>
+				</span>&nbsp;
+			</p></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+
+	<div class="primaryContent2">
+		<div>
+	<div class="">
+
+	<div class="module">
+		<div class="headlineMed">
+			<a href="/article/businessNews/idITKBN0GP16L20140825"  >Alcoa annuncia chiusura definitiva impianti Portovesme</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/businessNews/idITKBN0GP0GJ20140825"  >Borsa Milano brillante, bene finanziari, Enel e Finmeccanica</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/businessNews/idITKBN0GP0NT20140825"  >Gozi: Ue ora applichi regole per crescita dopo austerità</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/businessNews/idITKBN0GP16Z20140825"  >Finmeccanica, Moretti: cessione Ansaldo Sts e Breda entro ottobre</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/businessNews/idITKBN0GP10820140825"  >Ferrero, Fulci: solo speculazioni su nocciole, non c'è crisi</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+	<div class="primaryContent1">
+
+	<div class="module">
+		<div class="moduleHeader">
+                    <h3>
+                    <a href="/investing/funds">Fondi</a>
+                    </h3>
+                    </div>
+				<div class="moduleBody">
+		<div class="headlineMed">
+			<a href="/article/fundsNews/idITL5N0QS33D20140822"  >Yoox, TT International riduce posizione corta a 0,79% capitale - Consob</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/fundsNews/idITL5N0QS31620140822"  >Pop Emilia, Marshall Wace ha posizione netta corta 0,52% capitale - Consob</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/fundsNews/idITL5N0QS21P20140822"  >Argentina accusa giudice Griesa di atteggiamento "imperialista"</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/fundsNews/idITL5N0QR3T720140821"  >Fondi immobiliari, per retail due anni di proroga per scademza</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	<div class="headlineMed">
+			<a href="/article/fundsNews/idITL5N0QR3MJ20140821"  >Bank of America, patteggiamento da 16,65 mld per indagini su mutui</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	</div>
+		</div>
+
+</div>
+
+</div>
+
+<div>
+	<div class="primaryContent2">
+
+	<div class="module">
+		<div class="moduleHeader">
+                    <h3>
+                    <a href="/investing/markets">Mercati</a>
+                    </h3>
+                    </div>
+				<div class="moduleBody">
+		<div class="headlineMed">
+			<a href="/article/italyMktRpt/idITL5N0QV38A20140825"  >Borsa Milano brillante, bene finanziari, Enel e Finmeccanica</a>
+<span class="inlineLinks">
+				</span>
+		</div>
+	</div>
+		</div>
+
+</div>
+
+<div class="linebreak"></div>
+</div>
+
+<!-- channelName:  -->
+<!-- moduleId: 2713 -->
+<div>
+	<link href="http://s2.reutersmedia.net/resources/css/rcom-textad.css" rel="stylesheet" />
+    <div class="ad" id="googleAd">
+    <script language="javascript" src="http://s2.reutersmedia.net/resources/js/googleAd.js"></script>
+    <script language="javascript">
+    <!--
+    var googleAdTitle = new Array("Ads di Google", "Cosa sono?", "320", "330");
+    var googleAdAlign = "left";
+    
+    google_ad_client = 'ca-pub-9112069016589411';
+    google_ad_output = 'js';
+    google_max_num_ads = 4;
+    google_safe = 'high';
+    google_feedback = 'on';
+    google_ad_type = 'text';
+    google_color_line = 'ff0000';
+    google_encoding = 'utf8';
+    google_language='it';
+    google_ad_channel = 'Italy_Site';
+
+    if ((typeof (hideAllAds) == 'undefined' || hideAllAds == false) &&
+        (typeof (hideGoogleAds) == 'undefined' || hideGoogleAds == false)) {
+      document.write('<scr' + 'ipt language="javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></scr' + 'ipt>');
+    }
+    -->
+    </script>
+    </div>
+
+    </div>
+
+</div>
+	<div class="secondaryContent">
+
+		</div>
+
+
+</div>
+
+<!--[if !IE]> ######################## END: Section  ######################## <![endif]-->
 </div><!--[if !IE]> content <![endif]-->
 
 </div><!--[if !IE]> END Content <![endif]-->
 <!--[if !IE]> BEGIN baseFooterHTML <![endif]-->
 <div class="footer" id="Footer1">
 	<script>
-(function() { var hn = document.createElement('script'); hn.type = 'text/javascript'; hn.async = true; hn.setAttribute('data-ev-hover-pid', 291); hn.setAttribute('data-ev-hover-ocid', 1237); hn.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'c.betrad.com/geo/h1.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hn, s); })();
+(function() { var hn = document.createElement('script'); hn.type = 'text/javascript'; hn.async = true; hn.setAttribute('data-ev-hover-pid', 295); hn.setAttribute('data-ev-hover-ocid', 1237); hn.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'c.betrad.com/geo/h1.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hn, s); })();
 	</script>
-    <p><strong><a target="_top" href="/home">fr.reuters.com:</a></strong>&nbsp;
-    <!--help & info--><a target="_top" href="http://reuters.zendesk.com">Aide et Information</a>&nbsp;|&nbsp;
-    <!--contact us --><a target="_top" href="/assets/contact">Contactez-Nous</a>
+    <p><strong><a target="_top" href="/home">it.reuters.com:</a></strong>&nbsp;
+    <!--help & info--><a target="_top" href="http://reuters.zendesk.com">Help & Info</a>&nbsp;|&nbsp;
+    <!--contact us --><a target="_top" href="/assets/contact">Contatti</a>
     
     <p><strong><a target="_top" href="http://thomsonreuters.com/">Thomson Reuters Corporate:</a></strong>&nbsp;
 		<!--copyright  --><a href="javascript:commonPopup('/assets/copyright', 540, 525, 1, 'bottomNav')">Copyright</a>&nbsp;|&nbsp;
 		<!--disclaimer --><a href="javascript:commonPopup('/assets/disclaimer', 540, 525, 1, 'bottomNav')">Disclaimer</a>&nbsp;|&nbsp;
-		<!--privacy    --><a href="javascript:commonPopup('/assets/privacy', 540, 525, 1, 'bottomNav')">Protection des données personnelles</a>&nbsp;|&nbsp;
-		<!--careers    --><a target="_top" href="http://careers.thomsonreuters.com">Carrières</a>
+		<!--privacy    --><a href="javascript:commonPopup('/assets/privacy', 540, 525, 1, 'bottomNav')">Privacy</a>&nbsp;|&nbsp;
+		<!--careers    --><a target="_top" href="http://careers.thomsonreuters.com">Lavorare in Reuters</a>
 
   	<div class="dividerInlineH">&nbsp;</div>
 
   	<p><strong>International Editions :</strong>
   	<span id="editions">
-    <a target="_top" href="http://af.reuters.com">Afrique</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://ara.reuters.com">Langue&nbsp;Arabe</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://ar.reuters.com">Argentine</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://br.reuters.com">Br&#233;sil</a> &nbsp;|&nbsp;
+    <a target="_top" href="http://af.reuters.com">Africa</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://ara.reuters.com">Mondo&nbsp;Arabo</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://ar.reuters.com">Argentina</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://br.reuters.com">Brasile</a> &nbsp;|&nbsp;
   	<a target="_top" href="http://ca.reuters.com">Canada</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://cn.reuters.com">Chine</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://fr.reuters.com">France</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://de.reuters.com">Allemagne</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://in.reuters.com">Inde</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://it.reuters.com">Italie</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://jp.reuters.com">Japon</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://lta.reuters.com">Am&#233;rique&nbsp;Latine</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://mx.reuters.com">Mexique</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://ru.reuters.com">Russie&nbsp;(Cyrillique)</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://es.reuters.com">Espagne</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://uk.reuters.com">Royaume-Uni</a> &nbsp;|&nbsp;
-  	<a target="_top" href="http://www.reuters.com">Etats-Unis</a></span></p>
+  	<a target="_top" href="http://cn.reuters.com">Cina</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://fr.reuters.com">Francia</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://de.reuters.com">Germania</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://in.reuters.com">India</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://it.reuters.com">Italia</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://jp.reuters.com">Giappone</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://lta.reuters.com">America&nbsp;Latina</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://mx.reuters.com">Messico</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://ru.reuters.com">Russia&nbsp;(Cirillico)</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://es.reuters.com">Spagna</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://uk.reuters.com">Regno&nbsp;Unito</a> &nbsp;|&nbsp;
+  	<a target="_top" href="http://www.reuters.com">Stati&nbsp;Uniti</a></span></p>
 
     <div class="dividerInlineH">&nbsp;</div>
     <p><span class="footnote">Thomson Reuters is the world's largest international multimedia news agency, providing investing news, world news, business news, technology news, headline news, small business news, news alerts, personal finance, stock market, and mutual funds information available on Reuters.com, video, mobile, and interactive television platforms. Thomson Reuters journalists are subject to an Editorial Handbook which requires fair presentation and disclosure of relevant interests.</span></p>
@@ -919,10 +905,10 @@ loadMarketUpdate = function(iIndex, moduleId) {
 <!--[if !IE]> BEGIN baseFooter <![endif]-->
 <script language="javascript">doLoginMenu(); doWeatherFrame(); if ((typeof AD_TRACKER != 'undefined') && (typeof AD_TRACKER.setDomLoaded == 'function')) AD_TRACKER.setDomLoaded();</script>
 <META name="DCSext.rChannel" content="Home">
-<META name="DCSext.rCountry" content="FR">
+<META name="DCSext.rCountry" content="IT">
 <META name="WT.cg_n" content="Home - Landing">
 <META name="WT.cg_s" content="">
-<META name="DCSext.DartZone" content="france.reuters.com/home">
+<META name="DCSext.DartZone" content="www.reuters.it/home">
 <META name="DCSext.ContentChannel"  content="Home">
     <META name="DCSext.ContentType"  content="Home">
     <!-- START OF SmartSource Data Collector TAG -->
@@ -947,7 +933,7 @@ _tag.dcsCollect();
 <script type="text/javascript" src="http://js.revsci.net/gateway/gw.js?csid=I07714" CHARSET="ISO-8859-1"></script>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-      I07714.DM_cat("france.reuters.com > home");
+      I07714.DM_cat("www.reuters.it > home");
       I07714.DM_tag();
 //-->
 </SCRIPT>

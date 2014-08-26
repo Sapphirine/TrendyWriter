@@ -1,17 +1,15 @@
 # (TODO..) Make sure to get all urls within a webpage including relive path and absolute path
-#          (including start with a '/') and 
+#          (including start with a '/') 
 # (TODO..) Generate the hashcode of all urls and titles, and "mod 1000" to seperate a number of
 #          buckets, in order to eliminate duplicate urls and titles
 
 import urllib
 from HTMLParser import HTMLParser
-# from htmlentitydefs import name2codepoint
 
 store_html = 'res/url_'
 store_homepage = 'res/home_.html'
 store_topic = 'topic/all_topics.txt'
 store_url = 'url/all_urls.txt'
-
 
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser):
@@ -57,12 +55,13 @@ class MyHTMLParser(HTMLParser):
                 self.found_a = True
                 for attr in attrs:
                     if attr[0] == 'href':
-                        if attr[1][0:7] == 'http://':
+                        if attr[1][0:7] == 'http://' and attr[1][-4:] != '.pdf'\
+                             and attr[1][-4:] != '.asp': 
                             print 'href = ', attr[1]
                             with open(store_url, 'a') as writing_file:
                                 writing_file.write(attr[1] + '\n');
                         elif attr[1][0:1] != '#' and attr[1][0:5] != 'https'\
-                             and attr[1][0:] != '/': 
+                             and attr[1][0:] != '/':
                             if attr[1][0:1] == '/':
                                 print 'href = ', attr[1]
                                 with open(store_url, 'a') as writing_file:
@@ -108,7 +107,7 @@ class MyHTMLParser(HTMLParser):
 
                 with open (store_topic, 'a') as writing_file:
                     writing_file.write (data.encode('utf-8').strip())
-                    writing_file.write ('\n'.encode ('utf-8'));
+                    writing_file.write ('\n');
 
         else:
             if self.found_li == True and self.found_a == True:
@@ -158,14 +157,10 @@ def main():
             with open (store_html_path, 'w') as retPage:
                 retPage.write (htmltxt2)
 
-
             parser = MyHTMLParser (False, url)
+            parser.feed (htmltxt2.decode ('utf-8'))
 
-            try:
-                parser.feed (htmltxt2.decode ('utf-8'))
-            except:
-                print '[ERROR] Parsing error: ' + pageUrl
-                continue
+            # print '[ERROR] Parsing error: ' + pageUrl
 
             parser.close ()
             fHandle.close ()
