@@ -1,6 +1,7 @@
 # (TODO..) Make sure to get all urls within a webpage including relive path and absolute path
-#          (including start with a '/')
-# (TODO..) Generate the hashcode of all urls and "mod 1000" to seperate a number of buckets
+#          (including start with a '/') and 
+# (TODO..) Generate the hashcode of all urls and titles, and "mod 1000" to seperate a number of
+#          buckets, in order to eliminate duplicate urls and titles
 
 import urllib
 from HTMLParser import HTMLParser
@@ -102,12 +103,11 @@ class MyHTMLParser(HTMLParser):
                  or (self.found_h5 == True)\
                  or (self.found_h6 == True))):
                 
-                #print 'Original Data = ', data
-                #data = unicode (data.strip ())
-                print 'Data = ', data.strip().decode ('utf-8', errors = 'ignore')
+                # "print" can only output ascii encoded normal String
+                print 'Data = ', data.encode ('utf-8').strip()
 
                 with open (store_topic, 'a') as writing_file:
-                    writing_file.write (data)
+                    writing_file.write (data.encode('utf-8').strip())
                     writing_file.write ('\n'.encode ('utf-8'));
 
         else:
@@ -118,23 +118,6 @@ class MyHTMLParser(HTMLParser):
     def handle_decl(self, data):
         # print "Decl     :", data
         pass
-
-    # def handle_comment(self, data):
-    #     if self.get_url == False:
-    #         pass
-    #     else:
-    #         pass
-
-    # def handle_entityref(self, name):
-    #     c = unichr(name2codepoint[name])
-    #     print "Named ent:", c
-    # def handle_charref(self, name):
-    #     if name.startswith('x'):
-    #         c = unichr(int(name[1:], 16))
-    #     else:
-    #         c = unichr(int(name))
-    #     print "Num ent  :", c
-
 
 def main():
 
@@ -147,13 +130,15 @@ def main():
     #    url += '/'
     url = 'http://www.reuters.com/'
     urllib.urlretrieve (url, store_homepage)
-    # htmltxt = unicode ('')
 
     homeHandle = urllib.urlopen (url)
+    # "read()" return ascii encoded normal String(htmltxt)
     htmltxt = homeHandle.read ()
     homeHandle.close ()
     
     parser = MyHTMLParser (True, url)
+    # "feed" method's parameter had better be unicode
+    # so use decode('utf-8') to restore to unicode string
     parser.feed (htmltxt.decode ('utf-8'))
 
     # read urls from the url recording file.
@@ -169,12 +154,6 @@ def main():
 
             fHandle = urllib.urlopen (pageUrl)
             htmltxt2 = fHandle.read ()
-
-            try:
-                htmltxt2.decode ('utf-8')
-            except:
-                print '[ERROR] Decode error: ' + pageUrl
-                continue
             
             with open (store_html_path, 'w') as retPage:
                 retPage.write (htmltxt2)
@@ -183,7 +162,7 @@ def main():
             parser = MyHTMLParser (False, url)
 
             try:
-                parser.feed (htmltxt2)
+                parser.feed (htmltxt2.decode ('utf-8'))
             except:
                 print '[ERROR] Parsing error: ' + pageUrl
                 continue
