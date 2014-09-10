@@ -66,7 +66,7 @@
   
     	<link rel="shortcut icon" href="/favicon.ico" />
   <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=grid%2Fvertical_fp_grid.css%2Chp_modules%2Fmodule.main-dl.css%2Chp_modules%2Fmodule.blogger-headshot-bl.css%2Cverticals%2Ftravel.css%2Cpage_type%2Ffrontpages.css%2Chp_modules%2Fmodule.sponsor-widgets.css%2Cmaster.css%2Cfonts%2Fopensans-condbold%2Fstylesheet.css%2Ctopnav_new%2Fall_pages.css%2Ctopnav_new%2Ftop_nav.css%2Ctopnav_new%2Fmodule.edition_nav.css%2Cbasic.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=verticals%2Fcolor_scheme.css%2Cadd%2Ffront.css%2Cbuttons.css%2Cmost_popular.css%2Ccommercial.css%2Chuff_promo.css%2Csnp_friends.css%2Csnn-header.css%2Chp_modules%2Fmodule.splash_slideshow.css%2Chp_modules%2Fmodule.apps_feeds.css%2Chp_modules%2Fmodule.most_popular_celebrity.css%2Chufflists.css%2Csignup_modal.css%2Cdirect_message.css%2Cbadges_v2.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=hp_modules%2Ffacebook.css%2Cuser_levels.css%2Ctwitter_splash.css%2Cbing.css%2Cgrouping.css%2Cmodal_window.css%2Chp_modules%2Fmodule.bubble.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=email_share.css%2Csocial-navbar.css%2Chp_modules%2Fmodule.bubble-tags.css%2Chp_modules%2Fmodule.fb_like_button.css%2Csearch_autocomplete.css%2Cap_wires_scroll.css%2Cmod-follow.css%2Clogos.css" type="text/css" media="screen" />              	        <!-- RUM header -->
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACQUDU1db"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
             <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=yui_sub.js%2Cjquery.js" ></script>
         
     <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=jquery%2Fjquery.I18N.js%2Clocale%2Fdefault.js%2Csprintf-0.7.js"></script>
@@ -202,7 +202,7 @@ document.write('<scr'+'ipt async="true" src="http://modulous.huffpost.com/2014/0
     HPConfig.terms_link = "http://www.huffingtonpost.com/terms.html";
     HPConfig.privacy_link = "";
 	HPConfig.huffsite = "www.huffingtonpost.com";
-	HPConfig.current_time = "10 September 2014, 10:14";
+	HPConfig.current_time = "10 September 2014, 12:35";
 HPAds.doubleclick = "huffpost.travel";
 //Synchronise the user login status on multi-domain with huffingtonpost.com
 
@@ -214,8 +214,8 @@ HPAds.doubleclick = "huffpost.travel";
 </script>
 
 <script type="text/javascript">
-	HPConfig.fb_recom_version = 1;
-	HPConfig.most_popular_version = 1;
+	HPConfig.fb_recom_version = 2;
+	HPConfig.most_popular_version = 3;
 </script>
 
 <noscript>
@@ -550,10 +550,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/politics/'>Politics</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101056 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123031 -->
       <ul>
         <li id='id_trending_5790896' data-beacon='{"p":{"plid":5790896}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics'>Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics'>Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">731</span></span></a>
         </li>
         <li id='id_trending_5791770' data-beacon='{"p":{"plid":5791770}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/dick-cheney-iraq_n_5791770.html?ir=Politics'>Cheney Tells GOP It's Time To Fire Up The Ol' Iraq War Machine</a>
@@ -561,11 +561,11 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5793584' data-beacon='{"p":{"plid":5793584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/obama-islamic-state_n_5793584.html?ir=Politics'>Obama Tells Congress He Has Authority To Take Action Against Islamic State</a>
         </li>
-        <li id='id_trending_5791054' data-beacon='{"p":{"plid":5791054}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/lavon-heidemann-resigns_n_5791054.html?ir=Politics'>Nebraska Lt. Governor Resigns Following Domestic Abuse Allegations</a>
+        <li id='id_trending_5793164' data-beacon='{"p":{"plid":5793164}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/andrew-cuomo-primary_n_5793164.html?ir=Politics'>Andrew Cuomo Survives Democratic Primary</a>
         </li>
         <li id='id_trending_5791240' data-beacon='{"p":{"plid":5791240}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics'>World Leaders Condemn Failed Drug War, Call For Global Reform</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics'>World Leaders Condemn Failed Drug War, Call For Global Reform<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">119</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -603,22 +603,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/business/'>Business</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101005 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123002 -->
       <ul>
         <li id='id_trending_5790392' data-beacon='{"p":{"plid":5790392}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/mcdonalds-august-sales_n_5790392.html?ir=Business'>McDonald's Has Its Worst Month In 10 Years. Again.<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">241</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/mcdonalds-august-sales_n_5790392.html?ir=Business'>McDonald's Has Its Worst Month In 10 Years. Again.<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">252</span></span></a>
         </li>
         <li id='id_trending_5789826' data-beacon='{"p":{"plid":5789826}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/trump-bankruptcy-atlantic-city_n_5789826.html?ir=Business'>BANKRUPT<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">99</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/trump-bankruptcy-atlantic-city_n_5789826.html?ir=Business'>BANKRUPT<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">103</span></span></a>
         </li>
         <li id='id_trending_5790504' data-beacon='{"p":{"plid":5790504}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/digiornos-pizza-whyistayed-tweet_n_5790504.html?ir=Business'>DiGiorno Interrupts Serious Conversation About Domestic Violence To Sell Pizza</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/digiornos-pizza-whyistayed-tweet_n_5790504.html?ir=Business'>DiGiorno Interrupts Serious Conversation About Domestic Violence To Sell Pizza<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">67</span></span></a>
         </li>
         <li id='id_trending_5790334' data-beacon='{"p":{"plid":5790334}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/krugman-minimum-wage_n_5790334.html?ir=Business'>Krugman Debunks Classic Argument Against Raising Wages<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">187</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/krugman-minimum-wage_n_5790334.html?ir=Business'>Krugman Debunks Classic Argument Against Raising Wages<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">199</span></span></a>
         </li>
         <li id='id_trending_5767494' data-beacon='{"p":{"plid":5767494}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/title-washing_n_5767494.html?ir=Business'>1 Million Used Cars Are Hiding A Terrible Secret<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">103</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/title-washing_n_5767494.html?ir=Business'>1 Million Used Cars Are Hiding A Terrible Secret<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">106</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -656,19 +656,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/entertainment/'>Entertainment</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101023 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123006 -->
       <ul>
         <li id='id_trending_5790442' data-beacon='{"p":{"plid":5790442}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">93</span></span></a>
         </li>
-        <li id='id_trending_5785960' data-beacon='{"p":{"plid":5785960}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?ir=Entertainment'>Why Jennifer Garner Was Upset After Ben Affleck's Ice Bucket Challenge<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">45</span></span></a>
-        </li>
-        <li id='id_trending_5786506' data-beacon='{"p":{"plid":5786506}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?ir=Entertainment'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">348</span></span></a>
+        <li id='id_trending_5796672' data-beacon='{"p":{"plid":5796672}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/miranda-lambert-bra-top-fashion-rocks_n_5796672.html?ir=Entertainment'>You're Not Used To Seeing Miranda Lambert Like This</a>
         </li>
         <li id='id_trending_5790800' data-beacon='{"p":{"plid":5790800}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">34</span></span></a>
+        </li>
+        <li id='id_trending_5789982' data-beacon='{"p":{"plid":5789982}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/7-facts-seinfeld-video_n_5789982.html?ir=Entertainment'>7 Facts You Didn't Know About 'Seinfeld,' Yada Yada Yada<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">32</span></span></a>
         </li>
         <li id='id_trending_5786564' data-beacon='{"p":{"plid":5786564}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/favorite-movie-mistakes_n_5786564.html?ir=Entertainment'>11 Ridiculous Mistakes That Will Ruin Your Favorite Movies<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">14</span></span></a>
@@ -708,22 +708,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/media/'>Media</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101048 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123026 -->
       <ul>
         <li id='id_trending_5789646' data-beacon='{"p":{"plid":5789646}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media'>Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">351</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media'>Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">381</span></span></a>
         </li>
         <li id='id_trending_5789822' data-beacon='{"p":{"plid":5789822}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media'>Mika Brzezinski: 'The NFL Supports Domestic Violence'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">105</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media'>Mika Brzezinski: 'The NFL Supports Domestic Violence'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">126</span></span></a>
         </li>
         <li id='id_trending_5791728' data-beacon='{"p":{"plid":5791728}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media'>Can We Stop Endlessly Replaying The Ray Rice Video, Please?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">59</span></span></a>
-        </li>
-        <li id='id_trending_5784936' data-beacon='{"p":{"plid":5784936}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/with-all-due-respect-bloomberg_n_5784936.html?ir=Media'>You Will Either Like Or Really Really Hate This New Show<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">11</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media'>Can We Stop Endlessly Replaying The Ray Rice Video, Please?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">104</span></span></a>
         </li>
         <li id='id_trending_5791594' data-beacon='{"p":{"plid":5791594}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/isis-media-threat_n_5791594.html?ir=Media'>Americans Panicked Over ISIS Threat That Experts Say Isn't Imminent</a>
+        </li>
+        <li id='id_trending_5796852' data-beacon='{"p":{"plid":5796852}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/jay-carney-cnn_n_5796852.html?ir=Media'>Jay Carney Joins CNN<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">71</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -760,13 +760,13 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/taste/'>Taste</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101105 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123040 -->
       <ul>
         <li id='id_trending_5768964' data-beacon='{"p":{"plid":5768964}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/pumpkin-spice-oreos-limited_n_5768964.html?ir=Taste'>New Pumpkin Spice Oreos Smell Like A Candle, But We Like Them Anyway<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">10</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/pumpkin-spice-oreos-limited_n_5768964.html?ir=Taste'>New Pumpkin Spice Oreos Smell Like A Candle, But We Like Them Anyway<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">12</span></span></a>
         </li>
         <li id='id_trending_5768552' data-beacon='{"p":{"plid":5768552}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/forgotten-snacks_n_5768552.html?ir=Taste'>12 Amazing Snacks You Forgot About That You Should Eat Immediately<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">25</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/forgotten-snacks_n_5768552.html?ir=Taste'>12 Amazing Snacks You Forgot About That You Should Eat Immediately<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">27</span></span></a>
         </li>
         <li id='id_trending_5784478' data-beacon='{"p":{"plid":5784478}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/breakfast-cookies-healthy-and-yolo_n_5784478.html?ir=Taste'>22 Ways To Eat Cookies For Breakfast</a>
@@ -774,8 +774,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5783990' data-beacon='{"p":{"plid":5783990}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/schnitzel-recipe-wiener-chicken_n_5783990.html?ir=Taste'>Every Schnitzel Recipe You Want And Need</a>
         </li>
-        <li id='id_trending_5784738' data-beacon='{"p":{"plid":5784738}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/mid-autumn-festival-mooncake_n_5784738.html?ir=Taste'>Here's Why Everyone Is Talking About Mooncakes</a>
+        <li id='id_trending_5784998' data-beacon='{"p":{"plid":5784998}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/french-fry-pizza_n_5784998.html?ir=Taste'>French Fry Pizza Exists For When You Can't Decide What To Drunk Eat</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -813,22 +813,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/style/'>Style</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101104 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123039 -->
       <ul>
+        <li id='id_trending_5786464' data-beacon='{"p":{"plid":5786464}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/martin-keehn-spring-2015-hair_n_5786464.html?ir=Style'>Would You Date A Guy With Hair Like This?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">141</span></span></a>
+        </li>
         <li id='id_trending_5791000' data-beacon='{"p":{"plid":5791000}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">10</span></span></a>
         </li>
         <li id='id_trending_5791800' data-beacon='{"p":{"plid":5791800}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/bill-cunningham-fashion-week_n_5791800.html?ir=Style'>The Most Interesting Person At Fashion Week Isn't Who You Think</a>
         </li>
+        <li id='id_trending_5783340' data-beacon='{"p":{"plid":5783340}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/08/cat-eye-liner-tricks-kate-spade-spring-2015_n_5783340.html?ir=Style'>Tired Of The Cat Eye? Try This Liner Trick Instead</a>
+        </li>
         <li id='id_trending_4525275' data-beacon='{"p":{"plid":4525275}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/kate-middleton-pregnant-again-baby-two_n_4525275.html?ir=Style'>Kate Middleton Is Pregnant Again!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">123</span></span></a>
-        </li>
-        <li id='id_trending_5782576' data-beacon='{"p":{"plid":5782576}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/prince-william-kate-middleton-pregnant_n_5782576.html?ir=Style'>EXPECTING AGAIN!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">55</span></span></a>
-        </li>
-        <li id='id_trending_5783544' data-beacon='{"p":{"plid":5783544}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/prince-george-sibling-feelings_n_5783544.html?ir=Style'>Prince George Is Presumably Feeling All The Feels About A Sibling</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -866,22 +866,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/green/'>Green</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101035 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123011 -->
       <ul>
         <li id='id_trending_5784666' data-beacon='{"p":{"plid":5784666}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?ir=Green'>Ridiculously Photogenic Fox Loves Her Human Friends A Little Too Much<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">149</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?ir=Green'>Ridiculously Photogenic Fox Loves Her Human Friends A Little Too Much<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">151</span></span></a>
         </li>
         <li id='id_trending_5788788' data-beacon='{"p":{"plid":5788788}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/greenhouse-gas-levels_n_5788788.html?ir=Green'>REPORT: Greenhouse Gas Levels Grew At Fastest Rate Ever<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">729</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/greenhouse-gas-levels_n_5788788.html?ir=Green'>REPORT: Greenhouse Gas Levels Grew At Fastest Rate Ever<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">737</span></span></a>
         </li>
         <li id='id_trending_5788526' data-beacon='{"p":{"plid":5788526}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/byron-bay-shark-attack_n_5788526.html?ir=Green'>Man Killed In Apparent Shark Attack At Byron Bay</a>
         </li>
         <li id='id_trending_5786322' data-beacon='{"p":{"plid":5786322}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/cuda-pit-bull_n_5786322.html?ir=Green'>This Pit Bull Has A Short Spine And A Huge Smile That's Sure To Win Your Heart</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/cuda-pit-bull_n_5786322.html?ir=Green'>This Pit Bull Has A Short Spine And A Huge Smile That's Sure To Win Your Heart<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">19</span></span></a>
         </li>
-        <li id='id_trending_5785150' data-beacon='{"p":{"plid":5785150}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/puppy-cheetah-surgery-ruuxa-raina_n_5785150.html?ir=Green'>Man's Best Friend Is Cheetah's Best Friend After Leg Surgery</a>
+        <li id='id_trending_5774850' data-beacon='{"p":{"plid":5774850}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/08/photo-lightning-rainbow-airplane_n_5774850.html?ir=Green'>LOOK: Here's An Incredible Photo Of A Lightning Rainbow Hitting A Plane</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -919,7 +919,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/arts/'>Arts</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_100501 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123002 -->
       <ul>
         <li id='id_trending_5792052' data-beacon='{"p":{"plid":5792052}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/drone-burning-man-2014_n_5792052.html?ir=Arts'>The Happiest Attendee At Burning Man 2014 Was This Drone</a>
@@ -933,8 +933,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5762584' data-beacon='{"p":{"plid":5762584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/art-apps_n_5762584.html?ir=Arts'>18 Apps That Will Inspire Creativity In Your Everyday Life</a>
         </li>
-        <li id='id_trending_5785626' data-beacon='{"p":{"plid":5785626}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/wolfgang-laib-pollen_n_5785626.html?ir=Arts'>Why One German Artist Has Been Captivated By Pollen For Nearly 40 Years</a>
+        <li id='id_trending_5790430' data-beacon='{"p":{"plid":5790430}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/georgian-women-singing-video_n_5790430.html?ir=Arts'>3 Women Singing A Georgian Song Sound Magical</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -971,10 +971,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/fifty/'>Post50</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101024 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123006 -->
       <ul>
         <li id='id_trending_5754466' data-beacon='{"p":{"plid":5754466}}'>
-          <a href='http://www.huffingtonpost.com/joan-gage/feeling-invisible_b_5754466.html?ir=Fifty'>The Age At Which Women Become Permanently Invisible<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">61</span></span></a>
+          <a href='http://www.huffingtonpost.com/joan-gage/feeling-invisible_b_5754466.html?ir=Fifty'>The Age At Which Women Become Permanently Invisible<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">63</span></span></a>
         </li>
         <li id='id_trending_5774444' data-beacon='{"p":{"plid":5774444}}'>
           <a href='http://www.huffingtonpost.com/pat-gallagher/patrick-duffy_b_5774444.html?ir=Fifty'>Patrick Duffy On 'Dallas', The Biggest Waste Of Time, And The Secret To A Happy Marriage</a>
@@ -1021,33 +1021,33 @@ jQuery('#fb_like_vertical').mouseenter(function() {
       <div class="trending tn-hp-live" data-beacon='{"p":{"lnid":"trending"}}'>
        <ul>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbb9302a7605e58000109">
+         <a href="http://live.huffingtonpost.com/r/segment/540a17b978c90a0ee8000631">
           <span class="schedule-status now">Now</span>
-          <span class="segment-title">Top Stories For Wednesday, September 10</span>
+          <span class="segment-title">Radio Host Mark Goodman LIVE</span>
          </a>
         </li>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbbb02a760ff36000150">
+         <a href="http://live.huffingtonpost.com/r/segment/5405eb8402a7604fe70006ba">
           <span class="schedule-status ">Next</span>
-          <span class="segment-title">Ray Rice & The Cycle Of Abuse</span>
+          <span class="segment-title">'Top Chef' Judge Gail Simmons LIVE</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/53ff63d678c90a73d30001ab">
+         <a href="http://live.huffingtonpost.com/r/segment/53dc100078c90ae0c2000531">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Justin Long LIVE</span>
+          <span class="segment-title">9/11 Made Me Redefine My Life</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540f4f4e02a76098810001d8">
+         <a href="http://live.huffingtonpost.com/r/segment/540f342202a7602a660000ff">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Texas State Senator Wendy Davis LIVE</span>
+          <span class="segment-title">Free Speech Zone with @AlyonaMink</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbfa02a7604bdd000100">
+         <a href="http://live.huffingtonpost.com/r/segment/53f600f8fe344419f100037b">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">#WorldBrief With @Caromt</span>
+          <span class="segment-title">ESPN's Mike Golic LIVE</span>
          </a>
         </li>
         <li class="vertical_info">
@@ -1420,29 +1420,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div class="entry " id="blog_5792108" data-beacon='{"p":{"plid":5792108,"mpid":0,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/fodors/fall-2014-guide-to-paris_b_5792108.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Fall 2014 Guide to Paris</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p></p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/fodors/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/fodors/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/fodors/">Fodor's</a></p>
-	   <p class="author_teaser">Fodors.com</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5790592" data-beacon='{"p":{"plid":5790592,"mpid":1,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5790592" data-beacon='{"p":{"plid":5790592,"mpid":0,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1464,7 +1442,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5788912" data-beacon='{"p":{"plid":5788912,"mpid":2,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5788912" data-beacon='{"p":{"plid":5788912,"mpid":1,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1493,7 +1471,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5793132" data-beacon='{"p":{"plid":5793132,"mpid":3,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5793132" data-beacon='{"p":{"plid":5793132,"mpid":2,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1516,7 +1494,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5778096" data-beacon='{"p":{"plid":5778096,"mpid":4,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5778096" data-beacon='{"p":{"plid":5778096,"mpid":3,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1538,33 +1516,11 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5792032" data-beacon='{"p":{"plid":5792032,"mpid":5,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5683585" data-beacon='{"p":{"plid":5683585,"mpid":4,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/fodors/how-to-rent-a-car-on-vaca_b_5792032.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How to Rent a Car on Vacation</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p></p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/fodors/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/fodors/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/fodors/">Fodor's</a></p>
-	   <p class="author_teaser">Fodors.com</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5683585" data-beacon='{"p":{"plid":5683585,"mpid":6,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/susan-fogwell/the-best-way-to-see-savan_b_5683585.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">A Photo Tour of Beguiling Savannah</a></h3>
+		<h3><a href="http://www.huffingtonpost.com/susan-fogwell/the-best-way-to-see-savan_b_5683585.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">A Photo Tour Of Beguiling Savannah</a></h3>
 		<div class="green_entry_bar"></div>
 	</div>
 	<div class="clear"></div>
@@ -1582,73 +1538,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5788244" data-beacon='{"p":{"plid":5788244,"mpid":7,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/carolyn-bass/food-and-music-mix-it-up-_b_5788244.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Food and Music Mix It up at These Southern Festivals</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p>Harvest season is underway across the northern hemisphere and with it comes food and wine festivals to tempt even the foodiest of palates.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/carolyn-bass/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/carolyn-bass/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/carolyn-bass/">Carolyn Bass</a></p>
-	   <p class="author_teaser">Writer, traveler, founder and moderator of #litchat (Twitter)</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5784990" data-beacon='{"p":{"plid":5784990,"mpid":8,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/lindblad-expeditions/the-most-exotic-cocktail_b_5784990.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">What's the Most Exotic Cocktail You've Ever Had?</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p>One of the finest ways to immerse yourself in local cultures while traveling is through dining and drinking -- sampling regional fare and wine and mixing and eating with locals. In Galápagos, where wilderness reigns, there are still plenty of ways to discover regional flavors.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/lindblad-expeditions/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/lindblad-expeditions/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/lindblad-expeditions/">Lindblad Expeditions</a></p>
-	   <p class="author_teaser">Pioneers in expedition travel</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5792170" data-beacon='{"p":{"plid":5792170,"mpid":9,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/fodors/how-to-become-a-travel-wr_b_5792170.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How to Become a Travel Writer</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p></p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/fodors/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/fodors/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/fodors/">Fodor's</a></p>
-	   <p class="author_teaser">Fodors.com</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5785130" data-beacon='{"p":{"plid":5785130,"mpid":10,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5785130" data-beacon='{"p":{"plid":5785130,"mpid":5,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1670,117 +1560,51 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5786136" data-beacon='{"p":{"plid":5786136,"mpid":11,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5794350" data-beacon='{"p":{"plid":5794350,"mpid":6,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/sherry-ott/how-to-navigate-your-glam_b_5786136.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How to Navigate Your Glamping Choices in Australia</a></h3>
+		<h3><a href="http://www.huffingtonpost.com/hipmunk/best-hotels-for-nfl-fans_b_5794350.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Best Hotels for NFL Fans</a></h3>
 		<div class="green_entry_bar"></div>
 	</div>
 	<div class="clear"></div>
 			
-			<p>The word glamorous can mean different thing to different people. Being someone who believes glamour is simply wearing makeup, I'm guessing that my definition of glamorous is pretty different than say Kim Kardashian.</p>
+			<p></p>
 			<div class="author_bottom_desc">
       <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/sherry-ott/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/sherry-ott/headshot.jpg);"></span></a>
+		<a href="http://www.huffingtonpost.com/hipmunk/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/hipmunk/headshot.jpg);"></span></a>
 	</div>
 	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/sherry-ott/">Sherry Ott</a></p>
-	   <p class="author_teaser">Blogger and photographer, Ottsworld.com</p>
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/hipmunk/">Hipmunk</a></p>
+	   <p class="author_teaser"></p>
 	</div>
 	
    </div>
 	
 </div>
-<div class="entry " id="blog_5760734" data-beacon='{"p":{"plid":5760734,"mpid":12,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5792300" data-beacon='{"p":{"plid":5792300,"mpid":7,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/liftopia/how-addicted-to-winter-ar_b_5760734.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How Addicted to Winter Are You?</a></h3>
+		<h3><a href="http://www.huffingtonpost.com/quora/how-vegas-casinos-get-you_b_5792300.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How Vegas Casinos Get You Hooked</a></h3>
 		<div class="green_entry_bar"></div>
 	</div>
 	<div class="clear"></div>
 			
-			<p>There are several ways to spot these snow-smitten folks. They're the ones planning next season's runs while gazing at summer slopes, the individuals wearing a beanie in 90 degree weather and the people who try to use their ski pass as a form of identification.</p>
+			<p>No windows in the gambling areas. You cannot track time if you cannot see out, and the lighting is consistent indoors.</p>
 			<div class="author_bottom_desc">
       <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/liftopia/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/liftopia/headshot.jpg);"></span></a>
+		<a href="http://www.huffingtonpost.com/quora/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/quora/headshot.jpg);"></span></a>
 	</div>
 	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/liftopia/">Liftopia</a></p>
-	   <p class="author_teaser">Ski deals online - www.liftopia.com</p>
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/quora/">Quora</a></p>
+	   <p class="author_teaser">The best answer to any question</p>
 	</div>
 	
    </div>
 	
 </div>
-<div class="entry " id="blog_5792206" data-beacon='{"p":{"plid":5792206,"mpid":13,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.co.uk/ellis-shuman/would-you-jump-off-this-b_b_5792206.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Would You Jump Off This Bridge If Someone Paid You?</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p>As we crossed the picturesque bridge in Mostar, a young man in a bathing suit was resting on the rails. He waited patiently, as if he had all the time in the world. All that it would take to get him to dive into the waters of the Neretva River 24 meters below was 25 euros, but the tourists walking across the bridge didn't want to donate money to see his feat.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.co.uk/ellis-shuman/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/ellis-shuman/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.co.uk/ellis-shuman/">Ellis Shuman</a></p>
-	   <p class="author_teaser">Israeli author, book reviewer, and travel writer</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5795064" data-beacon='{"p":{"plid":5795064,"mpid":14,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/top-destinations-in-mumba_b_5795064.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Top Sights in Mumbai and Karnataka, South India</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p>Travelling from state to state can often feel like entering a whole new country. It's food, the people, architecture, the weather, literally everything may seem completely world's away from wherever you might have just been. Though you may have just ventured mere miles in reality.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/sandy-dhaliwal/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/">Sandy Dhaliwal</a></p>
-	   <p class="author_teaser">Journalist, Club Promoter, DJ, Teacher, Vinyl Collector and Sci Fi Nerd</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5794752" data-beacon='{"p":{"plid":5794752,"mpid":15,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/a-clubbers-guide-to-goa-t_b_5794752.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">A Clubber's Guide to Goa: The Best Nightlife Hotspots in India's Party Capital</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p>No stay in Goa would be complete without a trip to Club Cubana, situated between Baga and Anjuna in the Arpora Hill. Dubbed the 'night club in the sky', the climb to the top is well worth it as its picturesque views are equalled by its hedonistic atmosphere.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/sandy-dhaliwal/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/">Sandy Dhaliwal</a></p>
-	   <p class="author_teaser">Journalist, Club Promoter, DJ, Teacher, Vinyl Collector and Sci Fi Nerd</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5762134" data-beacon='{"p":{"plid":5762134,"mpid":16,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5762134" data-beacon='{"p":{"plid":5762134,"mpid":8,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1802,23 +1626,200 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
    </div>
 	
 </div>
-<div class="entry " id="blog_5792300" data-beacon='{"p":{"plid":5792300,"mpid":17,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5792206" data-beacon='{"p":{"plid":5792206,"mpid":9,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/quora/how-vegas-casinos-get-you_b_5792300.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How Vegas Casinos Get You Hooked</a></h3>
+		<h3><a href="http://www.huffingtonpost.co.uk/ellis-shuman/would-you-jump-off-this-b_b_5792206.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Would You Jump Off This Bridge If Someone Paid You?</a></h3>
 		<div class="green_entry_bar"></div>
 	</div>
 	<div class="clear"></div>
 			
-			<p>No windows in the gambling areas. You cannot track time if you cannot see out, and the lighting is consistent indoors.</p>
+			<p>As we crossed the picturesque bridge in Mostar, a young man in a bathing suit was resting on the rails. He waited patiently, as if he had all the time in the world. All that it would take to get him to dive into the waters of the Neretva River 24 meters below was 25 euros, but the tourists walking across the bridge didn't want to donate money to see his feat.</p>
 			<div class="author_bottom_desc">
       <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/quora/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/quora/headshot.jpg);"></span></a>
+		<a href="http://www.huffingtonpost.co.uk/ellis-shuman/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/ellis-shuman/headshot.jpg);"></span></a>
 	</div>
 	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/quora/">Quora</a></p>
-	   <p class="author_teaser">The best answer to any question</p>
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.co.uk/ellis-shuman/">Ellis Shuman</a></p>
+	   <p class="author_teaser">Israeli author, book reviewer, and travel writer</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5781258" data-beacon='{"p":{"plid":5781258,"mpid":10,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/us-news-travel/the-good-the-bad-and-the_b_5781258.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">The Good, the Bad and the Ugly of Hurricane Season Travel</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>Surprisingly, there are upsides to traveling during this time of year, and with some foresight and planning, you can work ahead to avert any potential pitfalls and a hopefully enjoy a hurricane-free getaway.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/us-news-travel/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/us-news-travel/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/us-news-travel/">U.S. News Travel</a></p>
+	   <p class="author_teaser">U.S. News & World Report Travel</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5794622" data-beacon='{"p":{"plid":5794622,"mpid":11,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/jaime-rojo-steven-harrington/nuart-2014_b_5794622.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">All The Murals, Graffiti, Aesthetics And Activism At Norway's Giant Street Art Festival</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p></p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/jaime-rojo-steven-harrington/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/jaime-rojo-steven-harrington/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/jaime-rojo-steven-harrington/">Jaime Rojo & Steven Harrington</a></p>
+	   <p class="author_teaser">Co-Founders, BrooklynStreetArt.com</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5795064" data-beacon='{"p":{"plid":5795064,"mpid":12,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/top-destinations-in-mumba_b_5795064.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Top Sights in Mumbai and Karnataka, South India</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>Travelling from state to state can often feel like entering a whole new country. It's food, the people, architecture, the weather, literally everything may seem completely world's away from wherever you might have just been. Though you may have just ventured mere miles in reality.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/sandy-dhaliwal/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/">Sandy Dhaliwal</a></p>
+	   <p class="author_teaser">Journalist, Club Promoter, DJ, Teacher, Vinyl Collector and Sci Fi Nerd</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5794752" data-beacon='{"p":{"plid":5794752,"mpid":13,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/a-clubbers-guide-to-goa-t_b_5794752.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">A Clubber's Guide to Goa: The Best Nightlife Hotspots in India's Party Capital</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>No stay in Goa would be complete without a trip to Club Cubana, situated between Baga and Anjuna in the Arpora Hill. Dubbed the 'night club in the sky', the climb to the top is well worth it as its picturesque views are equalled by its hedonistic atmosphere.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/sandy-dhaliwal/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.co.uk/sandy-dhaliwal/">Sandy Dhaliwal</a></p>
+	   <p class="author_teaser">Journalist, Club Promoter, DJ, Teacher, Vinyl Collector and Sci Fi Nerd</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5769590" data-beacon='{"p":{"plid":5769590,"mpid":14,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/homeaway/5-reasons-why-fall-is-the_b_5769590.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">5 Reasons Why Fall Is the Perfect Time for a Guys-Only Trip</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>Now is the perfect time for a guys trip, and if you really need some reasons to take a few days off with your buds to have some fun, we've got five good reasons for you.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/homeaway/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/homeaway/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/homeaway/">Home Away</a></p>
+	   <p class="author_teaser">HomeAway.com</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5793088" data-beacon='{"p":{"plid":5793088,"mpid":15,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/irene-lane/why-i-pulled-my-kid-out-of-school-to-visit-_b_5793088.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Why I Pulled My Kid Out Of School To Visit Namibia</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+				 
+		
+			<p>When our son was born, my husband and I decided to make a concerted effort to expose him to as many different languages, cultures, religions, foods, historical sites and natural wonders as possible early in life as we believed that it would be beneficial for his development.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/irene-lane/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/irene-lane/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/irene-lane/">Irene Lane</a></p>
+	   <p class="author_teaser">Founder, Greenloons</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5798012" data-beacon='{"p":{"plid":5798012,"mpid":16,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/conde-nast-traveler/bumped-due-to-overbooking_b_5798012.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Bumped Due to Overbooking? Airlines Owe You Money, not Vouchers</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p></p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/conde-nast-traveler/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/conde-nast-traveler/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/conde-nast-traveler/">Conde Nast Traveler</a></p>
+	   <p class="author_teaser">CondeNastTraveler.com</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5793316" data-beacon='{"p":{"plid":5793316,"mpid":17,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/cliff-hsia/how-to-find-the-courage-to-travel-with-kids_b_5793316.html?utm_hp_ref=travel&ir=Travel"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">How to Find the Courage to Travel With Kids</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>We've done this in cities and countries all over the world. One week in Cabo, two weeks in Lima, four weeks in Nicaragua and five weeks in Buenos Aires. We've done it. And our kids are growing up to be better citizens of the world because we continue to do it.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/cliff-hsia/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/cliff-hsia/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/cliff-hsia/">Cliff Hsia</a></p>
+	   <p class="author_teaser">Writer, Creator of LiveFamilyTravel.com</p>
 	</div>
 	
    </div>
@@ -1960,7 +1961,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 <div id="entry_5686015" onmouseover="TrackingData.entry_5686015={id:5686015,blog_id:3,rank:1,zone:5,vertical:30,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5686015,"mpid":1}}'>
 
 
-    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/hoppercom/the-10-longest-nonstop-fl_b_5686015.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5686015" longdesc="http://i.huffpost.com/gen/1787446/thumbs/n-BOEING-SKY-large300.jpg" alt="Boeing Sky" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ICHIRO via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/hoppercom/the-10-longest-nonstop-fl_b_5686015.html?utm_hp_ref=travel">The 10 Longest Non-Stop Flights from New York</a></h4>
+    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/hoppercom/the-10-longest-nonstop-fl_b_5686015.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5686015" longdesc="http://i.huffpost.com/gen/1787446/thumbs/n-BOEING-SKY-large300.jpg" alt="Boeing Sky" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ICHIRO via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/hoppercom/the-10-longest-nonstop-fl_b_5686015.html?utm_hp_ref=travel">The 10 Longest Non-Stop Flights From New York</a></h4>
 
 
  
@@ -2103,7 +2104,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 <div id="entry_5780976" onmouseover="TrackingData.entry_5780976={id:5780976,blog_id:3,rank:4,zone:5,vertical:30,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780976,"mpid":4}}'>
 
 
-    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/us-news-travel/how-to-eat-like-a-local-i_b_5780976.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5780976" longdesc="http://i.huffpost.com/gen/1498766/thumbs/n-MANHATTAN-large300.jpg" alt="Manhattan" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Martin Child via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/us-news-travel/how-to-eat-like-a-local-i_b_5780976.html?utm_hp_ref=travel">How to Eat Like a Local in NYC</a></h4>
+    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/us-news-travel/how-to-eat-like-a-local-i_b_5780976.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5780976" longdesc="http://i.huffpost.com/gen/1498766/thumbs/n-MANHATTAN-large300.jpg" alt="Manhattan" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Martin Child via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/us-news-travel/how-to-eat-like-a-local-i_b_5780976.html?utm_hp_ref=travel">How To Eat Like A Local In NYC</a></h4>
 
 
  
@@ -2176,7 +2177,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/bibury-england-most-beautiful-village_n_5762240.html?utm_hp_ref=travel#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5762240">(14)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/08/bibury-england-most-beautiful-village_n_5762240.html?utm_hp_ref=travel#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5762240">(15)</span></a>
 	</li>
     
   
@@ -2737,18 +2738,23 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
+  
     
 	
 
-<div id="entry_5772276" onmouseover="TrackingData.entry_5772276={id:5772276,blog_id:2,rank:17,zone:5,vertical:30,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5772276,"mpid":17}}'>
+
+<div id="entry_5772276" onmouseover="TrackingData.entry_5772276={id:5772276,blog_id:2,rank:17,zone:5,vertical:30,ab_headline:'b'};" class="entry" data-beacon='{"p":{"mnid":"newsb","plid":5772276,"mpid":17}}'>
+
+    
+    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/brangelina-wedding-location_n_5772276.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5772276" longdesc="http://i.huffpost.com/gen/2028154/thumbs/n-488798349-large300.jpg" alt="488798349" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Julian Parker via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/2014/09/06/brangelina-wedding-location_n_5772276.html?utm_hp_ref=travel">This Town's Fame Sky Rockets After Brangelina Wedding</a></h4>
 
 
-    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/brangelina-wedding-location_n_5772276.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5772276" longdesc="http://i.huffpost.com/gen/2028154/thumbs/n-488798349-large300.jpg" alt="488798349" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Julian Parker via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/2014/09/06/brangelina-wedding-location_n_5772276.html?utm_hp_ref=travel">Suddenly, Everybody Is Planning Trips To Brangelina's Wedding Town</a></h4>
+  	
+  
 
 
- 
-     <ul class="meta_links"> 
-       
+  <ul class="meta_links">
+	
 
 		<li class="hidden" id="read_post_5772276">http://www.huffingtonpost.com/2014/09/06/brangelina-wedding-location_n_5772276.html?utm_hp_ref=travel</li>
 
@@ -2756,13 +2762,11 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 	<li>
 		<a href="http://www.huffingtonpost.com/2014/09/06/brangelina-wedding-location_n_5772276.html?utm_hp_ref=travel#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5772276"></span></a>
 	</li>
-    
   
 	<li> 
 		| 
-																		    <a href="/news/destinations/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Destinations</a>			
-					
-				
+		            			    <a href="/news/destinations/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Destinations</a>
+		    
 		
 	</li>
 
@@ -2777,7 +2781,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
     
-   
+    
 
 
 
@@ -2861,7 +2865,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                             document.write(debugadcode);
                         }
                     </script>
-                    </div><!-- ESI SNN StartTime:1410358452 -->        
+                    </div><!-- ESI SNN StartTime:1410366900 -->        
 		
 		
         
@@ -2869,11 +2873,11 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         <script type="text/javascript">
             SNPModule.init();
         </script>
-        <!-- ESI MostPopular StartTime:1410358452 -->        
+        <!-- ESI MostPopular StartTime:1410366900 -->        
         
         
         
-                <!-- ESI MostPopular EndTime:1410358803 --><div id="all_frontpage_widgets" class="margin_10_0" data-beacon='{"p":{"mnid":"mostPopularEntry"}}'>
+                <!-- ESI MostPopular EndTime:1410367314 --><div id="all_frontpage_widgets" class="margin_10_0" data-beacon='{"p":{"mnid":"mostPopularEntry"}}'>
         <div class="float_right most_popular_pager" id="mp_pager">
         <a href="javascript:void(0);" class="prev"></a> 
         <a href="javascript:void(0);" class="next"></a>
@@ -2883,8 +2887,20 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
     <div class="most_popular_cycle" id="mp_cycle">
 
                 <div class="most_popular_entry_wrapper">
+            <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":0, "plid":5775076, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>This Is What True Romance Looks Like When You're Married</a>
+                <div class="relative">
+                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2029754/thumbs/n-RICE-KRISPIES-WIFE-medium.jpg" alt="Rice Krispies Wife" /></a>
+                                        <span class="absolute image-credit">Reddit / Imgur</span>
+                    </div>
+                                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":0, "plid":5791578, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":1, "plid":5791578, "lnid":"page1"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Introducing The iPhone 6!</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2040066/thumbs/n-IPHONE-6-medium.jpg" alt="Iphone 6" /></a>
@@ -2896,23 +2912,11 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":1, "plid":5775200, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":2, "plid":5775200, "lnid":"page1"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>What Happened When A Biracial Woman Was Photoshopped In 18 Different Countries</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2029800/thumbs/n-PRISCILLA-YUKI-WILSON-medium.jpg" alt="Priscilla Yuki Wilson" /></a>
                                         <span class="absolute image-credit">Priscilla Yuki Wilson</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":2, "plid":5786506, "lnid":"page1"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2036424/thumbs/n-GHOSTBUSTERS-medium.jpg" alt="Ghostbusters" /></a>
-                                        <span class="absolute image-credit">Archive Photos via Getty Images</span>
                     </div>
                                     <div class="clear"></div>
                 </div>
@@ -2931,8 +2935,20 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
+            <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":4, "plid":5786506, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'</a>
+                <div class="relative">
+                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2036424/thumbs/n-GHOSTBUSTERS-medium.jpg" alt="Ghostbusters" /></a>
+                                        <span class="absolute image-credit">Archive Photos via Getty Images</span>
+                    </div>
+                                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":4, "plid":5784666, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":5, "plid":5784666, "lnid":"page1"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Ridiculously Photogenic Fox Loves Her Human Friends A Little Too Much</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034584/thumbs/n-PUDDING-THE-FOX-medium.jpg" alt="Pudding The Fox" /></a>
@@ -2943,8 +2959,20 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
+            <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":6, "plid":5781606, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>The Real Reasons Women Like Ray Rice's Wife Janay Stay</a>
+                <div class="relative">
+                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035934/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
+                                        <span class="absolute image-credit">Rob Carr via Getty Images</span>
+                    </div>
+                                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":5, "plid":5785412, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":7, "plid":5785412, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>PHOTOS: Amazon Tribe Beats And Strips Illegal Loggers</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034246/thumbs/n-AMAZON-LOGGING-medium.jpg" alt="Amazon Logging" /></a>
@@ -2956,7 +2984,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":6, "plid":5783380, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":8, "plid":5783380, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Horrific Footage Of Ray Rice Punching Fiancée Leaks</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2033830/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
@@ -2968,7 +2996,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":7, "plid":5790078, "lnid":"page2"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":9, "plid":5790078, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Insanely Drunk Woman Tries To Pick Up Child From School: Cops</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2038598/thumbs/n-RENATA-CONGLETON-medium.jpg" alt="Renata Congleton" /></a>
@@ -2979,56 +3007,8 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":8, "plid":5772368, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Dogs' Surprising Preference Revealed In New Study</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2027496/thumbs/n-DOGS-PREFER-PETTING-medium.jpg" alt="Dogs Prefer Petting" /></a>
-                                        <span class="absolute image-credit">Ken Gillespie Photography via Getty Images</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":9, "plid":5779866, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Stars Bid Farewell To Joan Rivers</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2032104/thumbs/n-JOAN-RIVERS-medium.jpg" alt="Joan Rivers" /></a>
-                                        <span class="absolute image-credit">Getty</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":10, "plid":5775076, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>This Is What True Romance Looks Like When You're Married</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2029754/thumbs/n-RICE-KRISPIES-WIFE-medium.jpg" alt="Rice Krispies Wife" /></a>
-                                        <span class="absolute image-credit">Reddit / Imgur</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":11, "plid":5781606, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>The Real Reasons Women Like Ray Rice's Wife Janay Stay</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035934/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
-                                        <span class="absolute image-credit">Rob Carr via Getty Images</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/07/death-of-singer-simone-battle_n_5781892.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":12, "plid":5781892, "lnid":"page2"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":10, "plid":5781892, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/07/death-of-singer-simone-battle_n_5781892.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Death Of Singer Simone Battle Ruled A Suicide</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/07/death-of-singer-simone-battle_n_5781892.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2032886/thumbs/n-SIMONE-BATTLE-medium.jpg" alt="Simone Battle" /></a>
@@ -3040,7 +3020,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/jessica-martinweber/why-this-6-time-survivor-is-grateful-kate-middleton-has-hyperemesis-gravidarum_b_5784300.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":13, "plid":5784300, "lnid":"page2"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":11, "plid":5784300, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/jessica-martinweber/why-this-6-time-survivor-is-grateful-kate-middleton-has-hyperemesis-gravidarum_b_5784300.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Why This 6-Time Survivor Is Grateful Kate Middleton Has Hyperemesis Gravidarum</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/jessica-martinweber/why-this-6-time-survivor-is-grateful-kate-middleton-has-hyperemesis-gravidarum_b_5784300.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034990/thumbs/n-KATE-MIDDLETON-medium.jpg" alt="Kate Middleton" /></a>
@@ -3052,7 +3032,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/fox-news-ray-rice-brian-kilmeade-punch-wife-elevator_n_5785012.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":14, "plid":5785012, "lnid":"page3"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":12, "plid":5785012, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/fox-news-ray-rice-brian-kilmeade-punch-wife-elevator_n_5785012.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>'Fox & Friends' Has A Disgusting Reaction To Ray Rice Video</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/fox-news-ray-rice-brian-kilmeade-punch-wife-elevator_n_5785012.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035036/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
@@ -3064,7 +3044,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/dog-spa-video_n_5785452.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":15, "plid":5785452, "lnid":"page3"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":13, "plid":5785452, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/dog-spa-video_n_5785452.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>This Dog Loves Spa Time More Than Anyone In The Entire World</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/dog-spa-video_n_5785452.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035432/thumbs/n-DOG-medium.jpg" alt="Dog" /></a>
@@ -3166,7 +3146,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                    <li>
             <span class="name">HuffPost</span>
             <div class="share-button">
-                <div class="fb-like" data-href="http://www.facebook.com/HuffingtonPost" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 100px" ></div>            </div>
+                <div class="fb-like" data-href="http://www.facebook.com/HuffingtonPost" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 100px" hp_track=""></div>            </div>
           </li>
                               <li>
                       <span class="name">Travel</span>
@@ -3350,10 +3330,6 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
     
-    <!-- END rc_upper CONTENT -->
-</div>
-<div id="rc_lower">
-<!-- BEGIN rc_lower CONTENT -->
     
 <!-- Entry Blog 2 -->
 
@@ -3796,6 +3772,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
     
+    <!-- END rc_upper CONTENT -->
+</div>
+<div id="rc_lower">
+<!-- BEGIN rc_lower CONTENT -->
     
 <!-- Entry Blog 2 -->
 
@@ -3853,7 +3833,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 <div id="entry_5732294" onmouseover="TrackingData.entry_5732294={id:5732294,blog_id:3,rank:12,zone:6,vertical:30,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5732294,"mpid":12}}'>
 
 
-    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/travel-leisure/americas-best-cities-for_b_5732294.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5732294" longdesc="http://i.huffpost.com/gen/2001608/thumbs/n-CENTRAL-PARK-FALL-large300.jpg" alt="Central Park Fall" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Mitchell Funk via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/travel-leisure/americas-best-cities-for_b_5732294.html?utm_hp_ref=travel">America's Best Cities For Fall Travel (PHOTOS)</a></h4>
+    <div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/travel-leisure/americas-best-cities-for_b_5732294.html?utm_hp_ref=travel"><img class="unloaded-image quickread_link" id="image_5732294" longdesc="http://i.huffpost.com/gen/2001608/thumbs/n-CENTRAL-PARK-FALL-large300.jpg" alt="Central Park Fall" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Mitchell Funk via Getty Images</div></div><h4><a href="http://www.huffingtonpost.com/travel-leisure/americas-best-cities-for_b_5732294.html?utm_hp_ref=travel">America's Best Cities For Fall Travel</a></h4>
 
 
  
@@ -4182,7 +4162,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
     }
 </script>
 
-<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_flex" class="ad_store "></div>            
+<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div>            
             <div id="console"></div>
                 <script type="text/javascript">
                     if(HPAds.ad_check_page_config('adtech_header'))HPAds.ad_store_push('adtech_header', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('top_1x1'))HPAds.ad_store_push('top_1x1', '', 300, false, false, false, false);                            if((typeof(HPAds.ad_store['quickread']) === 'undefined' || HPAds.ad_store['quickread'] != null) && (HPAds.ad_check_page_config('quickread'))) {
@@ -4201,9 +4181,9 @@ jQuery('#fb_like_vertical').mouseenter(function() {
                                 HPAds.ad_store_push('quickread_most_popular', 'by_request', 300, supress_keyvalues(ks, '{"magic_number":"93317089","call_type":"ajax","width":300,"height":250}'),true,false, 'false', 'false');
                             } else {
                                 HPAds.ad_store['quickread_most_popular'] = null;
-                            }if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_flex'))HPAds.ad_store_push('right_rail_flex', '', 300, false, false, false, false);
+                            }if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);
                     HPAds.ad_store_move_to_place(false);
-                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["quickread"]=true; HPAds.page_spots["quickread_most_popular"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["sharebox_260x60"]=true; HPAds.page_spots["top_1x1"]=true; 
+                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["bottom_728x90"]=true; HPAds.page_spots["leaderboard_flex"]=true; HPAds.page_spots["quickread"]=true; HPAds.page_spots["quickread_most_popular"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["sharebox_260x60"]=true; HPAds.page_spots["top_1x1"]=true; 
                 </script>
 	</div> <!-- #wrapper_inner -->
 	</div> <!-- .wrapper_h -->
@@ -4269,8 +4249,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 </noscript>
 <!-- END Nielsen Tracking -->
 <!-- RUM footer -->
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"163769","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":1069,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
-<!-- Served from: wfe11.dtc -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4004801","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":767,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
+<!-- Served from: production-mt-wfe-56-191.use1 -->
 
 
 <script type="text/javascript">
@@ -4297,7 +4277,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
   js.src = "http://cdn.pubexchange.com/modules/partner/huffpost_travel";
   pjs.parentNode.insertBefore(js, pjs);
 }(document, 'script', 'pubexchange-jssdk'));</script></div>
-<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410358451,"entry":0,"vertical":"travel","vertical-id":30,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostLifestyle","current_vertical_twitter_name":"HuffPostTravel","vertical\/bignews":"travel"}); });</script>
+<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410366900,"entry":0,"vertical":"travel","vertical-id":30,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostLifestyle","current_vertical_twitter_name":"HuffPostTravel","vertical\/bignews":"travel"}); });</script>
 <!--if user has AOL's referrer we display AOL NavBar -->
 <script type="text/javascript" src='http://s1.huffpost.com/assets/js.php?v=1410282423&f=aolunb.js'></script>
 

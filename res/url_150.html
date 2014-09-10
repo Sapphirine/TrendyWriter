@@ -54,7 +54,7 @@
   
     	<link rel="shortcut icon" href="/favicon.ico" />
   <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=verticals%2Fgay-voices.css%2Cpage_type%2Ffrontpages.css%2Chp_modules%2Fmodule.sponsor-widgets.css%2Cmaster.css%2Cfonts%2Fopensans-condbold%2Fstylesheet.css%2Ctopnav_new%2Fall_pages.css%2Ctopnav_new%2Ftop_nav.css%2Ctopnav_new%2Fmodule.edition_nav.css%2Cbasic.css%2Cverticals%2Fcolor_scheme.css%2Cadd%2Ffront.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=buttons.css%2Cmost_popular.css%2Ccommercial.css%2Chuff_promo.css%2Csnp_friends.css%2Csnn-header.css%2Chp_modules%2Fmodule.splash_slideshow.css%2Chp_modules%2Fmodule.apps_feeds.css%2Chp_modules%2Fmodule.most_popular_celebrity.css%2Chufflists.css%2Csignup_modal.css%2Cdirect_message.css%2Cbadges_v2.css%2Chp_modules%2Ffacebook.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=user_levels.css%2Ctwitter_splash.css%2Cbing.css%2Cgrouping.css%2Cmodal_window.css%2Chp_modules%2Fmodule.bubble.css%2Cemail_share.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=social-navbar.css%2Chp_modules%2Fmodule.bubble-tags.css%2Chp_modules%2Fmodule.fb_like_button.css%2Csearch_autocomplete.css%2Cap_wires_scroll.css%2Cmod-follow.css%2Clogos.css" type="text/css" media="screen" />              	        <!-- RUM header -->
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACQUDU1db"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
             <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=yui_sub.js%2Cjquery.js" ></script>
         
     <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=jquery%2Fjquery.I18N.js%2Clocale%2Fdefault.js%2Csprintf-0.7.js"></script>
@@ -190,7 +190,7 @@ document.write('<scr'+'ipt async="true" src="http://modulous.huffpost.com/2014/0
     HPConfig.terms_link = "http://www.huffingtonpost.com/terms.html";
     HPConfig.privacy_link = "";
 	HPConfig.huffsite = "www.huffingtonpost.com";
-	HPConfig.current_time = "10 September 2014, 10:12";
+	HPConfig.current_time = "10 September 2014, 12:36";
 HPAds.doubleclick = "huffpost.gay-voices";
 //Synchronise the user login status on multi-domain with huffingtonpost.com
 
@@ -538,10 +538,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/politics/'>Politics</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101056 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123524 -->
       <ul>
         <li id='id_trending_5790896' data-beacon='{"p":{"plid":5790896}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics'>Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics'>Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">731</span></span></a>
         </li>
         <li id='id_trending_5791770' data-beacon='{"p":{"plid":5791770}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/dick-cheney-iraq_n_5791770.html?ir=Politics'>Cheney Tells GOP It's Time To Fire Up The Ol' Iraq War Machine</a>
@@ -549,11 +549,11 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5793584' data-beacon='{"p":{"plid":5793584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/obama-islamic-state_n_5793584.html?ir=Politics'>Obama Tells Congress He Has Authority To Take Action Against Islamic State</a>
         </li>
-        <li id='id_trending_5791054' data-beacon='{"p":{"plid":5791054}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/lavon-heidemann-resigns_n_5791054.html?ir=Politics'>Nebraska Lt. Governor Resigns Following Domestic Abuse Allegations</a>
+        <li id='id_trending_5793164' data-beacon='{"p":{"plid":5793164}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/andrew-cuomo-primary_n_5793164.html?ir=Politics'>Andrew Cuomo Survives Democratic Primary</a>
         </li>
         <li id='id_trending_5791240' data-beacon='{"p":{"plid":5791240}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics'>World Leaders Condemn Failed Drug War, Call For Global Reform</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics'>World Leaders Condemn Failed Drug War, Call For Global Reform<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">119</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -591,7 +591,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/arts/'>Arts</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_100501 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123502 -->
       <ul>
         <li id='id_trending_5792052' data-beacon='{"p":{"plid":5792052}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/drone-burning-man-2014_n_5792052.html?ir=Arts'>The Happiest Attendee At Burning Man 2014 Was This Drone</a>
@@ -605,8 +605,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5762584' data-beacon='{"p":{"plid":5762584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/art-apps_n_5762584.html?ir=Arts'>18 Apps That Will Inspire Creativity In Your Everyday Life</a>
         </li>
-        <li id='id_trending_5785626' data-beacon='{"p":{"plid":5785626}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/wolfgang-laib-pollen_n_5785626.html?ir=Arts'>Why One German Artist Has Been Captivated By Pollen For Nearly 40 Years</a>
+        <li id='id_trending_5790430' data-beacon='{"p":{"plid":5790430}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/georgian-women-singing-video_n_5790430.html?ir=Arts'>3 Women Singing A Georgian Song Sound Magical</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -683,22 +683,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/media/'>Media</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101048 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123524 -->
       <ul>
         <li id='id_trending_5789646' data-beacon='{"p":{"plid":5789646}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media'>Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">351</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media'>Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">381</span></span></a>
         </li>
         <li id='id_trending_5789822' data-beacon='{"p":{"plid":5789822}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media'>Mika Brzezinski: 'The NFL Supports Domestic Violence'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">105</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media'>Mika Brzezinski: 'The NFL Supports Domestic Violence'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">126</span></span></a>
         </li>
         <li id='id_trending_5791728' data-beacon='{"p":{"plid":5791728}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media'>Can We Stop Endlessly Replaying The Ray Rice Video, Please?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">59</span></span></a>
-        </li>
-        <li id='id_trending_5784936' data-beacon='{"p":{"plid":5784936}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/with-all-due-respect-bloomberg_n_5784936.html?ir=Media'>You Will Either Like Or Really Really Hate This New Show<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">11</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media'>Can We Stop Endlessly Replaying The Ray Rice Video, Please?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">104</span></span></a>
         </li>
         <li id='id_trending_5791594' data-beacon='{"p":{"plid":5791594}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/isis-media-threat_n_5791594.html?ir=Media'>Americans Panicked Over ISIS Threat That Experts Say Isn't Imminent</a>
+        </li>
+        <li id='id_trending_5796852' data-beacon='{"p":{"plid":5796852}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/jay-carney-cnn_n_5796852.html?ir=Media'>Jay Carney Joins CNN<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">71</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -735,7 +735,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/latino-voices/'>Latino Voices</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101046 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123524 -->
       <ul>
         <li id='id_trending_5785382' data-beacon='{"p":{"plid":5785382}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/demian-bichir-latinos-_n_5785382.html?ir=Latino+Voices'>Demian Bichir: Latinos Have to Claim Their Own Place Within The Industry</a>
@@ -779,22 +779,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/black-voices/'>Black Voices</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101003 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123502 -->
       <ul>
         <li id='id_trending_5793230' data-beacon='{"p":{"plid":5793230}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/fckh8-hey-white-people-ferguson-racism_n_5793230.html?ir=Black+Voices'>Hey, White America, You Need To Hear What These Ferguson Kids Have To Say</a>
         </li>
+        <li id='id_trending_5793098' data-beacon='{"p":{"plid":5793098}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/taraji-p-henson-hollywood-execs_n_5793098.html?ir=Black+Voices'>Taraji P. Henson: Hollywood Execs Don't Get Me</a>
+        </li>
         <li id='id_trending_5785796' data-beacon='{"p":{"plid":5785796}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/denzel-washington-james-bond_n_5785796.html?ir=Black+Voices'>'Denzel Is James Bond'?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">62</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/denzel-washington-james-bond_n_5785796.html?ir=Black+Voices'>'Denzel Is James Bond'?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">68</span></span></a>
+        </li>
+        <li id='id_trending_5792384' data-beacon='{"p":{"plid":5792384}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/tracee-ellis-ross-black-ish_n_5792384.html?ir=Black+Voices'>Tracee Ellis Ross Reveals The One Thing 'black-ish' Has Taught Her</a>
         </li>
         <li id='id_trending_5786502' data-beacon='{"p":{"plid":5786502}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/kareem-abdul-jabbar-hawks-owner-bruce-levenson-_n_5786502.html?ir=Black+Voices'>Kareem Abdul-Jabbar Defends Hawks Owner's Controversial Email<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">92</span></span></a>
-        </li>
-        <li id='id_trending_5784510' data-beacon='{"p":{"plid":5784510}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/simon-doonan-fashion-week_n_5784510.html?ir=Black+Voices'>Why All Models Look The Same At Fashion Week</a>
-        </li>
-        <li id='id_trending_5793098' data-beacon='{"p":{"plid":5793098}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/taraji-p-henson-hollywood-execs_n_5793098.html?ir=Black+Voices'>Taraji P. Henson: Hollywood Execs Don't Get Me</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -832,22 +832,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/healthy-living/'>Healthy Living</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101036 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123523 -->
       <ul>
         <li id='id_trending_5737600' data-beacon='{"p":{"plid":5737600}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/how-to-be-alone-loneliness-coping-strategies-tips_n_5737600.html?ir=Healthy+Living'>Why You Can't Stand To Be Alone -- And How To Learn To Love It<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">31</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/how-to-be-alone-loneliness-coping-strategies-tips_n_5737600.html?ir=Healthy+Living'>Why You Can't Stand To Be Alone -- And How To Learn To Love It<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">32</span></span></a>
+        </li>
+        <li id='id_trending_5785586' data-beacon='{"p":{"plid":5785586}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/diet-soda-psychology_n_5785586.html?ir=Healthy+Living'>The Psychological Impact Of Diet Soda<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">15</span></span></a>
         </li>
         <li id='id_trending_5774930' data-beacon='{"p":{"plid":5774930}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/anatomy-of-a-running-shoe-lingo_n_5774930.html?ir=Healthy+Living'>Everything You Ever Wanted To Know About Running Shoes In One Simple Chart</a>
         </li>
+        <li id='id_trending_5786628' data-beacon='{"p":{"plid":5786628}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/insomnia-treatment-didnt-know_n_5786628.html?ir=Healthy+Living'>6 Things You Didn't Know About Insomnia And How To Treat It</a>
+        </li>
         <li id='id_trending_5774984' data-beacon='{"p":{"plid":5774984}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/polyester-sweat-smell-odor-stink-cotton_n_5774984.html?ir=Healthy+Living'>Why You Should Wash Those Dirty Gym Clothes ASAP<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">11</span></span></a>
-        </li>
-        <li id='id_trending_5723432' data-beacon='{"p":{"plid":5723432}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/i-lost-weight-pam-kimbro_n_5723432.html?ir=Healthy+Living'>Pam Lost 150 Pounds: 'I Was Determined To Show My Dad In Heaven That I Can Be Healthy'</a>
-        </li>
-        <li id='id_trending_5785488' data-beacon='{"p":{"plid":5785488}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/ebola-miami-case_n_5785488.html?ir=Healthy+Living'>Possible Ebola Case Being Treated In Miami<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">16</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -885,22 +885,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/style/'>Style</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101104 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123524 -->
       <ul>
+        <li id='id_trending_5786464' data-beacon='{"p":{"plid":5786464}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/martin-keehn-spring-2015-hair_n_5786464.html?ir=Style'>Would You Date A Guy With Hair Like This?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">141</span></span></a>
+        </li>
         <li id='id_trending_5791000' data-beacon='{"p":{"plid":5791000}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">10</span></span></a>
         </li>
         <li id='id_trending_5791800' data-beacon='{"p":{"plid":5791800}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/bill-cunningham-fashion-week_n_5791800.html?ir=Style'>The Most Interesting Person At Fashion Week Isn't Who You Think</a>
         </li>
+        <li id='id_trending_5783340' data-beacon='{"p":{"plid":5783340}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/08/cat-eye-liner-tricks-kate-spade-spring-2015_n_5783340.html?ir=Style'>Tired Of The Cat Eye? Try This Liner Trick Instead</a>
+        </li>
         <li id='id_trending_4525275' data-beacon='{"p":{"plid":4525275}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/kate-middleton-pregnant-again-baby-two_n_4525275.html?ir=Style'>Kate Middleton Is Pregnant Again!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">123</span></span></a>
-        </li>
-        <li id='id_trending_5782576' data-beacon='{"p":{"plid":5782576}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/prince-william-kate-middleton-pregnant_n_5782576.html?ir=Style'>EXPECTING AGAIN!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">55</span></span></a>
-        </li>
-        <li id='id_trending_5783544' data-beacon='{"p":{"plid":5783544}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/prince-george-sibling-feelings_n_5783544.html?ir=Style'>Prince George Is Presumably Feeling All The Feels About A Sibling</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -981,33 +981,33 @@ jQuery('#fb_like_vertical').mouseenter(function() {
       <div class="trending tn-hp-live" data-beacon='{"p":{"lnid":"trending"}}'>
        <ul>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbb9302a7605e58000109">
+         <a href="http://live.huffingtonpost.com/r/segment/540a17b978c90a0ee8000631">
           <span class="schedule-status now">Now</span>
-          <span class="segment-title">Top Stories For Wednesday, September 10</span>
+          <span class="segment-title">Radio Host Mark Goodman LIVE</span>
          </a>
         </li>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbbb02a760ff36000150">
+         <a href="http://live.huffingtonpost.com/r/segment/5405eb8402a7604fe70006ba">
           <span class="schedule-status ">Next</span>
-          <span class="segment-title">Ray Rice & The Cycle Of Abuse</span>
+          <span class="segment-title">'Top Chef' Judge Gail Simmons LIVE</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/53ff63d678c90a73d30001ab">
+         <a href="http://live.huffingtonpost.com/r/segment/53dc100078c90ae0c2000531">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Justin Long LIVE</span>
+          <span class="segment-title">9/11 Made Me Redefine My Life</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540f4f4e02a76098810001d8">
+         <a href="http://live.huffingtonpost.com/r/segment/540f342202a7602a660000ff">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Texas State Senator Wendy Davis LIVE</span>
+          <span class="segment-title">Free Speech Zone with @AlyonaMink</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbfa02a7604bdd000100">
+         <a href="http://live.huffingtonpost.com/r/segment/53f600f8fe344419f100037b">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">#WorldBrief With @Caromt</span>
+          <span class="segment-title">ESPN's Mike Golic LIVE</span>
          </a>
         </li>
         <li class="vertical_info">
@@ -1394,9 +1394,9 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 												 											
 							<div class="image_wrapper relative" style="width: 300px;float:left;">
 								<a href="http://www.huffingtonpost.com/eric-silverberg/security-location-and-the_b_5793216.html?utm_hp_ref=gay-voices">
-									<img src="http://i.huffpost.com/gen/2042064/thumbs/n-DATING-APP-medium.jpg" alt="Dating App" />
+									<img src="http://i.huffpost.com/gen/2044018/thumbs/n-SHIRTLESS-MAN-CELL-PHONE-medium.jpg" alt="Shirtless Man Cell Phone" />
 								</a>
-								<span class="absolute image-credit arial_11">daydreambubble via Getty Images</span>
+								<span class="absolute image-credit arial_11">Fotosearch via Getty Images</span>
 							</div>					
 				 
 			
@@ -1422,7 +1422,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                     </div>
 
 
-																
+												
 
 
 																		
@@ -1493,50 +1493,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5790174" data-beacon='{"p":{"plid":5790174,"mpid":3}}'>
-            <div class="col entry_left">
-				
-            </div>
-            <div class="col entry_right">
-                <h3><a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices" style="line-height:18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">I Love Westboro Baptist Church, and Here's Why You Should Too</a></h3>
-                <div class="green_entry_bar"></div>
-			</div>
-
-			<div class="clear"></div>
-											 											
-							<div class="image_wrapper relative" style="width: 300px;float:left">
-								<a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices">
-									<img src="http://i.huffpost.com/gen/2038480/thumbs/n-WESTBORO-medium.jpg" alt="Westboro" />
-								</a>
-								<span class="absolute image-credit arial_11">The Washington Post via Getty Images</span>
-							</div>						
-				 
-			
-													<p>If Westboro does show up in front of our offices to protest, we'll be ready for them. We're not scared of a handful of sad people with access to school supplies and a few nasty slogans.</p>
-				
-				
-			           <div class="author_bottom_desc">
-            <div class="blogger_img">            
-	             <a href="http://www.huffingtonpost.com/noah-michelson"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/noah-michelson/headshot.jpg);" class="unloaded-image" ></span></a>    
-            </div>   
-            <div class="blogger_credit">
-               <div class="byline_timestamp blogger_name">
-                                 <a href="http://www.huffingtonpost.com/noah-michelson/">Noah Michelson</a>
-                <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">Executive Editor, HuffPost Gay Voices</p>
-               </div>
-            
-            </div>          
-           </div>
-        </div>
-
-
-
-
-
-
-        
-    <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5793212" data-beacon='{"p":{"plid":5793212,"mpid":4}}'>
+        <div class="entry " id="blog_5793212" data-beacon='{"p":{"plid":5793212,"mpid":3}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1579,7 +1536,124 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5780922" data-beacon='{"p":{"plid":5780922,"mpid":5}}'>
+        <div class="entry " id="blog_5791076" data-beacon='{"p":{"plid":5791076,"mpid":4}}'>
+            <div class="col entry_left">
+				
+            </div>
+            <div class="col entry_right">
+                <h3><a href="http://www.huffingtonpost.com/brynn-tannehill/the-difference-between-to_1_b_5791076.html?utm_hp_ref=gay-voices" style="line-height:18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">The Difference Between Tolerance and Acceptance</a></h3>
+                <div class="green_entry_bar"></div>
+			</div>
+
+			<div class="clear"></div>
+											 				 
+				 
+			
+													<p>Often, I see the words "acceptance" and "tolerance" being used interchangeably. The LGBT community often talks of building a tolerant society, but it is by no means enough.</p>
+				
+				
+			           <div class="author_bottom_desc">
+            <div class="blogger_img">            
+	             <a href="http://www.huffingtonpost.com/brynn-tannehill"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/brynn-tannehill/headshot.jpg);" class="unloaded-image" ></span></a>    
+            </div>   
+            <div class="blogger_credit">
+               <div class="byline_timestamp blogger_name">
+                                 <a href="http://www.huffingtonpost.com/brynn-tannehill/">Brynn Tannehill</a>
+                <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">Director of Advocacy, SPART*A</p>
+               </div>
+            
+            </div>          
+           </div>
+        </div>
+
+
+
+
+
+
+        
+    <!-- In featured_blog_new_design.html -->
+        <div class="entry " id="blog_5793486" data-beacon='{"p":{"plid":5793486,"mpid":5}}'>
+            <div class="col entry_left">
+				
+            </div>
+            <div class="col entry_right">
+                <h3><a href="http://www.huffingtonpost.com/steven-petrow/neil-patrick-harris-and-d_b_5793486.html?utm_hp_ref=gay-voices" style="line-height:18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Neil Patrick Harris and David Burtka Marry, and the 'Angry Itch' Takes Over Social Media</a></h3>
+                <div class="green_entry_bar"></div>
+			</div>
+
+			<div class="clear"></div>
+											 				 
+				 
+			
+													<p>Court victories aside, the newlyweds' detractors provided a focused snapshot that the road to marriage equality is not without its speed bumps -- and its opponents not without their loud voices.</p>
+				
+				
+			           <div class="author_bottom_desc">
+            <div class="blogger_img">            
+	             <a href="http://www.huffingtonpost.com/steven-petrow"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/steven-petrow/headshot.jpg);" class="unloaded-image" ></span></a>    
+            </div>   
+            <div class="blogger_credit">
+               <div class="byline_timestamp blogger_name">
+                                 <a href="http://www.huffingtonpost.com/steven-petrow/">Steven Petrow</a>
+                <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">Civilized - with a point of view</p>
+               </div>
+            
+            </div>          
+           </div>
+        </div>
+
+
+
+
+
+
+        
+    <!-- In featured_blog_new_design.html -->
+        <div class="entry " id="blog_5790174" data-beacon='{"p":{"plid":5790174,"mpid":6}}'>
+            <div class="col entry_left">
+				
+            </div>
+            <div class="col entry_right">
+                <h3><a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices" style="line-height:18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">I Love Westboro Baptist Church, and Here's Why You Should Too</a></h3>
+                <div class="green_entry_bar"></div>
+			</div>
+
+			<div class="clear"></div>
+											 											
+							<div class="image_wrapper relative" style="width: 300px;float:left">
+								<a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices">
+									<img src="http://i.huffpost.com/gen/2038480/thumbs/n-WESTBORO-medium.jpg" alt="Westboro" />
+								</a>
+								<span class="absolute image-credit arial_11">The Washington Post via Getty Images</span>
+							</div>						
+				 
+			
+													<p>If Westboro does show up in front of our offices to protest, we'll be ready for them. We're not scared of a handful of sad people with access to school supplies and a few nasty slogans.</p>
+				
+				
+			           <div class="author_bottom_desc">
+            <div class="blogger_img">            
+	             <a href="http://www.huffingtonpost.com/noah-michelson"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/noah-michelson/headshot.jpg);" class="unloaded-image" ></span></a>    
+            </div>   
+            <div class="blogger_credit">
+               <div class="byline_timestamp blogger_name">
+                                 <a href="http://www.huffingtonpost.com/noah-michelson/">Noah Michelson</a>
+                <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">Executive Editor, HuffPost Gay Voices</p>
+               </div>
+            
+            </div>          
+           </div>
+        </div>
+
+
+
+
+
+
+        
+    <!-- In featured_blog_new_design.html -->
+        <div class="entry " id="blog_5780922" data-beacon='{"p":{"plid":5780922,"mpid":7}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1620,46 +1694,11 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-        
-    <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5791076" data-beacon='{"p":{"plid":5791076,"mpid":6}}'>
-            <div class="col entry_left">
-				
-            </div>
-            <div class="col entry_right">
-                <h3><a href="http://www.huffingtonpost.com/brynn-tannehill/the-difference-between-to_1_b_5791076.html?utm_hp_ref=gay-voices" style="line-height:18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">The Difference Between Tolerance and Acceptance</a></h3>
-                <div class="green_entry_bar"></div>
-			</div>
-
-			<div class="clear"></div>
-											 				 
-				 
-			
-													<p>Often, I see the words "acceptance" and "tolerance" being used interchangeably. The LGBT community often talks of building a tolerant society, but it is by no means enough.</p>
-				
-				
-			           <div class="author_bottom_desc">
-            <div class="blogger_img">            
-	             <a href="http://www.huffingtonpost.com/brynn-tannehill"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/brynn-tannehill/headshot.jpg);" class="unloaded-image" ></span></a>    
-            </div>   
-            <div class="blogger_credit">
-               <div class="byline_timestamp blogger_name">
-                                 <a href="http://www.huffingtonpost.com/brynn-tannehill/">Brynn Tannehill</a>
-                <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">Director of Advocacy, SPART*A</p>
-               </div>
-            
-            </div>          
-           </div>
-        </div>
-
-
-
-
 
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5781450" data-beacon='{"p":{"plid":5781450,"mpid":7}}'>
+        <div class="entry " id="blog_5781450" data-beacon='{"p":{"plid":5781450,"mpid":8}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1694,11 +1733,9 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-
-
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5777786" data-beacon='{"p":{"plid":5777786,"mpid":8}}'>
+        <div class="entry " id="blog_5777786" data-beacon='{"p":{"plid":5777786,"mpid":9}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1735,7 +1772,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5784030" data-beacon='{"p":{"plid":5784030,"mpid":9}}'>
+        <div class="entry " id="blog_5784030" data-beacon='{"p":{"plid":5784030,"mpid":10}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1778,7 +1815,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5775278" data-beacon='{"p":{"plid":5775278,"mpid":10}}'>
+        <div class="entry " id="blog_5775278" data-beacon='{"p":{"plid":5775278,"mpid":11}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1815,7 +1852,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5787992" data-beacon='{"p":{"plid":5787992,"mpid":11}}'>
+        <div class="entry " id="blog_5787992" data-beacon='{"p":{"plid":5787992,"mpid":12}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1852,7 +1889,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5778180" data-beacon='{"p":{"plid":5778180,"mpid":12}}'>
+        <div class="entry " id="blog_5778180" data-beacon='{"p":{"plid":5778180,"mpid":13}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1889,7 +1926,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5780270" data-beacon='{"p":{"plid":5780270,"mpid":13}}'>
+        <div class="entry " id="blog_5780270" data-beacon='{"p":{"plid":5780270,"mpid":14}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1926,7 +1963,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5763166" data-beacon='{"p":{"plid":5763166,"mpid":14}}'>
+        <div class="entry " id="blog_5763166" data-beacon='{"p":{"plid":5763166,"mpid":15}}'>
             <div class="col entry_left">
 				
             </div>
@@ -1963,7 +2000,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5722982" data-beacon='{"p":{"plid":5722982,"mpid":15}}'>
+        <div class="entry " id="blog_5722982" data-beacon='{"p":{"plid":5722982,"mpid":16}}'>
             <div class="col entry_left">
 				
             </div>
@@ -2000,7 +2037,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5767522" data-beacon='{"p":{"plid":5767522,"mpid":16}}'>
+        <div class="entry " id="blog_5767522" data-beacon='{"p":{"plid":5767522,"mpid":17}}'>
             <div class="col entry_left">
 				
             </div>
@@ -2037,7 +2074,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5785748" data-beacon='{"p":{"plid":5785748,"mpid":17}}'>
+        <div class="entry " id="blog_5785748" data-beacon='{"p":{"plid":5785748,"mpid":18}}'>
             <div class="col entry_left">
 				
             </div>
@@ -2080,7 +2117,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
         
     <!-- In featured_blog_new_design.html -->
-        <div class="entry " id="blog_5785820" data-beacon='{"p":{"plid":5785820,"mpid":18}}'>
+        <div class="entry no_border" id="blog_5785820" data-beacon='{"p":{"plid":5785820,"mpid":19}}'>
             <div class="col entry_left">
 				
             </div>
@@ -2110,49 +2147,6 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                <div class="byline_timestamp blogger_name">
                                  <a href="http://www.huffingtonpost.com/terry-oneill/">Terry O'Neill</a>
                 <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">President, National Organization for Women</p>
-               </div>
-            
-            </div>          
-           </div>
-        </div>
-
-
-
-
-
-
-        
-    <!-- In featured_blog_new_design.html -->
-        <div class="entry no_border" id="blog_5769146" data-beacon='{"p":{"plid":5769146,"mpid":19}}'>
-            <div class="col entry_left">
-				
-            </div>
-            <div class="col entry_right">
-                <h3><a href="http://www.huffingtonpost.com/casey-hoke/transgender-teen_b_5769146.html?utm_hp_ref=gay-voices&ir=Gay%20Voices" style="line-height:18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">A Progression of Identity Through Self-Portraiture</a></h3>
-                <div class="green_entry_bar"></div>
-			</div>
-
-			<div class="clear"></div>
-											 											
-							<div class="image_wrapper relative" style="width: 300px;float:left">
-								<a href="http://www.huffingtonpost.com/casey-hoke/transgender-teen_b_5769146.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">
-									<img src="http://i.huffpost.com/gen/2024928/thumbs/n-CASEY-HOKE-medium.jpg" alt="Casey Hoke" />
-								</a>
-								<span class="absolute image-credit arial_11">Casey Hoke</span>
-							</div>						
-				 
-			
-													<p>I was in my freshman year of high school when I realized just how painful it was to see myself in the mirror as I was: a 14-year-old girl on the brink of puberty. Speaking as a 17-year-old boy, it makes a lot of sense now -- my appearance struck conflict with my identity.</p>
-				
-				
-			           <div class="author_bottom_desc">
-            <div class="blogger_img">            
-	             <a href="http://www.huffingtonpost.com/casey-hoke"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/casey-hoke/headshot.jpg);" class="unloaded-image" ></span></a>    
-            </div>   
-            <div class="blogger_credit">
-               <div class="byline_timestamp blogger_name">
-                                 <a href="http://www.huffingtonpost.com/casey-hoke/">Casey Hoke</a>
-                <p class="author_teaser" style="margin-top: 3px;margin-left: 0px !important; float:left; width:234px;">Visual Arts Student & GLSEN Ambassador</p>
                </div>
             
             </div>          
@@ -2297,12 +2291,52 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                                                                                     
 
 
-            <!-- Entry Blog 3 -->
+            <!-- Entry Blog 2 -->
 
 
 
 
-<div id="entry_5790804" onmouseover="TrackingData.entry_5790804={id:5790804,blog_id:3,rank:1,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790804,"mpid":1}}'>
+<div id="entry_5798020" onmouseover="TrackingData.entry_5798020={id:5798020,blog_id:2,rank:1,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5798020,"mpid":1}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/straight-youtube-vlogger-gay_n_5798020.html?utm_hp_ref=gay-voices">WATCH: Straight Guy Brought To Tears After Asking A Simple Question About Sexuality</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/straight-youtube-vlogger-gay_n_5798020.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5798020" longdesc="http://i.huffpost.com/gen/2044534/thumbs/n-CRYING-large300.jpg" alt="Crying" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5798020">http://www.huffingtonpost.com/2014/09/10/straight-youtube-vlogger-gay_n_5798020.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/straight-youtube-vlogger-gay_n_5798020.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5798020"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 3 -->
+
+
+
+
+<div id="entry_5790804" onmouseover="TrackingData.entry_5790804={id:5790804,blog_id:3,rank:2,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790804,"mpid":2}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/jenny-block/a-woman-is-a-penis-home_b_5790804.html?utm_hp_ref=gay-voices">A Woman Is A Home For A Penis?</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/jenny-block/a-woman-is-a-penis-home_b_5790804.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5790804" longdesc="http://i.huffpost.com/gen/2043346/thumbs/n-VAGINA-large300.jpg" alt="Vagina" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Mark Lewis via Getty Images</div></div>
@@ -2315,7 +2349,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 		<li><a href="http://www.huffingtonpost.com/jenny-block/a-woman-is-a-penis-home_b_5790804.html?utm_hp_ref=gay-voices" class="quick_read_link" data-beacon='{"p":{"lnid":"read"}}'>Read Post</a> |</li>
 
 	<li>
-		<a href="http://www.huffingtonpost.com/jenny-block/a-woman-is-a-penis-home_b_5790804.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790804"></span></a>
+		<a href="http://www.huffingtonpost.com/jenny-block/a-woman-is-a-penis-home_b_5790804.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790804">(25)</span></a>
 	</li>
     
   
@@ -2343,15 +2377,145 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
     
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5792996" onmouseover="TrackingData.entry_5792996={id:5792996,blog_id:2,rank:3,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792996,"mpid":3}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices">Pastor Suggests Gays 'Must Be Put To Death' Or Remain Celibate</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5792996" longdesc="http://i.huffpost.com/gen/2040958/thumbs/n-ROBERT-GALLATY-HOMOSEXUALITY-large300.jpg" alt="Robert Gallaty Homosexuality" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Tim Macpherson via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5792996">http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792996">(104)</span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5793378" onmouseover="TrackingData.entry_5793378={id:5793378,blog_id:2,rank:4,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793378,"mpid":4}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/god-loves-gays-westboro_n_5793378.html?utm_hp_ref=gay-voices">LOOK: 'God' Just Gave Westboro One Giant Surprise</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/god-loves-gays-westboro_n_5793378.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5793378" longdesc="http://i.huffpost.com/gen/2044188/thumbs/n-GOD-large300.jpg" alt="God" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Via The Equality House</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5793378">http://www.huffingtonpost.com/2014/09/10/god-loves-gays-westboro_n_5793378.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/god-loves-gays-westboro_n_5793378.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5793378"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/westboro-baptist-church/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Westboro Baptist Church</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5792358" onmouseover="TrackingData.entry_5792358={id:5792358,blog_id:2,rank:5,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792358,"mpid":5}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">Leading Faculty Group Condemns Trigger Warnings As A 'Threat To Academic Freedom'</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5792358" longdesc="http://i.huffpost.com/gen/2042024/thumbs/n-TRIGGER-WARNING-COLLEGE-large300.jpg" alt="Trigger Warning College" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5792358">http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792358"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
                 <!-- Entry Blog 3 -->
 
 
 
 
-<div id="entry_5793216" onmouseover="TrackingData.entry_5793216={id:5793216,blog_id:3,rank:2,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793216,"mpid":2}}'>
+<div id="entry_5793216" onmouseover="TrackingData.entry_5793216={id:5793216,blog_id:3,rank:6,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793216,"mpid":6}}'>
 
 
-    <h4><a href="http://www.huffingtonpost.com/eric-silverberg/security-location-and-the_b_5793216.html?utm_hp_ref=gay-voices">Privacy, Security And GPS-Based Apps: An Inside Look From SCRUFF</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/eric-silverberg/security-location-and-the_b_5793216.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5793216" longdesc="http://i.huffpost.com/gen/2042064/thumbs/n-DATING-APP-large300.jpg" alt="Dating App" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">daydreambubble via Getty Images</div></div>
+    <h4><a href="http://www.huffingtonpost.com/eric-silverberg/security-location-and-the_b_5793216.html?utm_hp_ref=gay-voices">SCRUFF Sounds Off On Recent Controversy Over GPS-Based Gay Apps</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/eric-silverberg/security-location-and-the_b_5793216.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5793216" longdesc="http://i.huffpost.com/gen/2044018/thumbs/n-SHIRTLESS-MAN-CELL-PHONE-large300.jpg" alt="Shirtless Man Cell Phone" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Fotosearch via Getty Images</div></div>
 
 
  
@@ -2394,24 +2558,31 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5792996" onmouseover="TrackingData.entry_5792996={id:5792996,blog_id:2,rank:3,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792996,"mpid":3}}'>
+<div id="entry_5797806" onmouseover="TrackingData.entry_5797806={id:5797806,blog_id:2,rank:7,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5797806,"mpid":7}}'>
 
 
-    <h4><a href="http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices">Pastor Suggests Gays 'Must Be Put To Death' Or Remain Celibate</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5792996" longdesc="http://i.huffpost.com/gen/2040958/thumbs/n-ROBERT-GALLATY-HOMOSEXUALITY-large300.jpg" alt="Robert Gallaty Homosexuality" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Tim Macpherson via Getty Images</div></div>
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/lesbian-dating-tips-_n_5797806.html?utm_hp_ref=gay-voices">I'm A Woman -- How Do I Ask Another Woman Out?</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/lesbian-dating-tips-_n_5797806.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5797806" longdesc="http://i.huffpost.com/gen/2044462/thumbs/n-LESBIAN-DATING-TIPS-large300.jpg" alt="Lesbian Dating Tips" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Susan Barr via Getty Images</div></div>
 
 
  
      <ul class="meta_links"> 
        
 
-		<li class="hidden" id="read_post_5792996">http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices</li>
+		<li class="hidden" id="read_post_5797806">http://www.huffingtonpost.com/2014/09/10/lesbian-dating-tips-_n_5797806.html?utm_hp_ref=gay-voices</li>
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/robert-gallaty-anti-gay-pastor_n_5792996.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792996">(80)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/10/lesbian-dating-tips-_n_5797806.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5797806"></span></a>
 	</li>
     
   
+	<li> 
+		| 
+																		    <a href="/news/lesbian/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Lesbian</a>			
+					
+				
+		
+	</li>
 
 </ul>
 
@@ -2434,47 +2605,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5792358" onmouseover="TrackingData.entry_5792358={id:5792358,blog_id:2,rank:4,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792358,"mpid":4}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">Leading Faculty Group Condemns Trigger Warnings As A 'Threat To Academic Freedom'</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5792358" longdesc="http://i.huffpost.com/gen/2042024/thumbs/n-TRIGGER-WARNING-COLLEGE-large300.jpg" alt="Trigger Warning College" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5792358">http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/aaup-trigger-warnings_n_5792358.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792358"></span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5796698" onmouseover="TrackingData.entry_5796698={id:5796698,blog_id:2,rank:5,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796698,"mpid":5}}'>
+<div id="entry_5796698" onmouseover="TrackingData.entry_5796698={id:5796698,blog_id:2,rank:8,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796698,"mpid":8}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/10/colleges-transgender_n_5796698.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">Things Are Changing On Campus For Transgender Students</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/colleges-transgender_n_5796698.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5796698" longdesc="http://i.huffpost.com/gen/2043436/thumbs/n-CALLIOPE-WONG-large300.jpg" alt="Calliope Wong" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2517,7 +2648,100 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5791064" onmouseover="TrackingData.entry_5791064={id:5791064,blog_id:2,rank:6,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791064,"mpid":6}}'>
+<div id="entry_5793340" onmouseover="TrackingData.entry_5793340={id:5793340,blog_id:2,rank:9,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793340,"mpid":9}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/burlesque-portraits_n_5793340.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">These Are The Men And Women Behind The Beautiful World Of Burlesque</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/burlesque-portraits_n_5793340.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5793340" longdesc="http://i.huffpost.com/gen/2041618/thumbs/n-MARLA-large300.jpg" alt="Marla" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">    </div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5793340">http://www.huffingtonpost.com/2014/09/10/burlesque-portraits_n_5793340.html?utm_hp_ref=gay-voices&ir=Gay%20Voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/burlesque-portraits_n_5793340.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5793340"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/photography/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Photography</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5797452" onmouseover="TrackingData.entry_5797452={id:5797452,blog_id:2,rank:10,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5797452,"mpid":10}}'>
+
+
+                        <h4><a href="http://throwbacksummer.com/yearbook/from-the-aclu-to-the-peace-corps-she-fights-for-others-rights/" target="_hplink">Woman Comes Out As Trans Thanks To Help From Her Grandma</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://throwbacksummer.com/yearbook/from-the-aclu-to-the-peace-corps-she-fights-for-others-rights/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5797452" longdesc="http://i.huffpost.com/gen/2044102/thumbs/n-TRANS-large300.jpg" alt="Trans" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Courtesy of ThrowBackSummer</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5797452">http://www.huffingtonpost.com/2014/09/10/trans-grandma_n_5797452.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/trans-grandma_n_5797452.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5797452"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5791064" onmouseover="TrackingData.entry_5791064={id:5791064,blog_id:2,rank:11,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791064,"mpid":11}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/monica-wehby-gay-marriage_n_5791064.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">GOP Senate Candidate Comes Out In Support Of Marriage Equality</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/monica-wehby-gay-marriage_n_5791064.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5791064" longdesc="http://i.huffpost.com/gen/2039218/thumbs/n-WEHBY-large300.jpg" alt="Wehby" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2531,7 +2755,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/monica-wehby-gay-marriage_n_5791064.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791064">(44)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/monica-wehby-gay-marriage_n_5791064.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791064">(46)</span></a>
 	</li>
     
   
@@ -2567,7 +2791,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5792176" onmouseover="TrackingData.entry_5792176={id:5792176,blog_id:2,rank:7,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792176,"mpid":7}}'>
+<div id="entry_5792176" onmouseover="TrackingData.entry_5792176={id:5792176,blog_id:2,rank:12,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792176,"mpid":12}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/rosie-odonnell-variety_n_5792176.html?utm_hp_ref=gay-voices">LOOK: Rosie Like You've Never Seen Her Before</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/rosie-odonnell-variety_n_5792176.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5792176" longdesc="http://i.huffpost.com/gen/2040310/thumbs/n-ROSIE-ODONNELL-large300.jpg" alt="Rosie Odonnell" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Evan Agostini/Invision/AP</div></div>
@@ -2617,7 +2841,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5790174" onmouseover="TrackingData.entry_5790174={id:5790174,blog_id:3,rank:8,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790174,"mpid":8}}'>
+<div id="entry_5790174" onmouseover="TrackingData.entry_5790174={id:5790174,blog_id:3,rank:13,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790174,"mpid":13}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices">I &#9829; Westboro Baptist Church... And Here's Why You Should Too</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5790174" longdesc="http://i.huffpost.com/gen/2038480/thumbs/n-WESTBORO-large300.jpg" alt="Westboro" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">The Washington Post via Getty Images</div></div>
@@ -2643,7 +2867,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 		<li><a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices" class="quick_read_link" data-beacon='{"p":{"lnid":"read"}}'>Read Post</a> |</li>
 
 	<li>
-		<a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790174">(52)</span></a>
+		<a href="http://www.huffingtonpost.com/noah-michelson/i-love-westboro-baptist-church_b_5790174.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790174">(53)</span></a>
 	</li>
     
   
@@ -2679,7 +2903,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5791648" onmouseover="TrackingData.entry_5791648={id:5791648,blog_id:2,rank:9,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791648,"mpid":9}}'>
+<div id="entry_5791648" onmouseover="TrackingData.entry_5791648={id:5791648,blog_id:2,rank:14,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791648,"mpid":14}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/gay-church-music-director-fired_n_5791648.html?utm_hp_ref=gay-voices">Church Music Director Fired For Being Gay Fights To Get His Job Back</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/gay-church-music-director-fired_n_5791648.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5791648" longdesc="http://i.huffpost.com/gen/2040738/thumbs/n-CHURCH-DIRECTOR-large300.jpg" alt="Church Director" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">WGN</div></div>
@@ -2693,7 +2917,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/gay-church-music-director-fired_n_5791648.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791648">(11)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/gay-church-music-director-fired_n_5791648.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791648"></span></a>
 	</li>
     
   
@@ -2729,7 +2953,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5780350" onmouseover="TrackingData.entry_5780350={id:5780350,blog_id:3,rank:10,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780350,"mpid":10}}'>
+<div id="entry_5780350" onmouseover="TrackingData.entry_5780350={id:5780350,blog_id:3,rank:15,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780350,"mpid":15}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/toni-newman/chef-chris-trapani-first-_b_5780350.html?utm_hp_ref=gay-voices">The First Transgender Chef To Appear On Food Network Discusses Love, Transistioning And Food</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/toni-newman/chef-chris-trapani-first-_b_5780350.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5780350" longdesc="http://i.huffpost.com/gen/2040158/thumbs/n-CHRIS-TRAPANI-large300.jpg" alt="Chris Trapani" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Courtesy of Chris Trapani</div></div>
@@ -2775,7 +2999,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5786228" onmouseover="TrackingData.entry_5786228={id:5786228,blog_id:2,rank:11,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786228,"mpid":11}}'>
+<div id="entry_5786228" onmouseover="TrackingData.entry_5786228={id:5786228,blog_id:2,rank:16,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786228,"mpid":16}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=gay-voices">BREAKING: Gay Couple Watches Football. Can We Get Back To The Game Now?</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5786228" longdesc="http://i.huffpost.com/gen/2036012/thumbs/n-DIRECTV-large300.jpg" alt="Directv" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">DirecTV/YouTube</div></div>
@@ -2815,7 +3039,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5791732" onmouseover="TrackingData.entry_5791732={id:5791732,blog_id:2,rank:12,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791732,"mpid":12}}'>
+<div id="entry_5791732" onmouseover="TrackingData.entry_5791732={id:5791732,blog_id:2,rank:17,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791732,"mpid":17}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/smithsonian-museum-gay-tony-perkins-_n_5791732.html?utm_hp_ref=gay-voices">Smithsonian 'Ignores The Destructive Side Of Homosexuality' With New Exhibitions, Pundit Claims</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/smithsonian-museum-gay-tony-perkins-_n_5791732.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5791732" longdesc="http://i.huffpost.com/gen/2039784/thumbs/n-WILL-AND-GRACE-TONY-PERKINS-large300.jpg" alt="Will And Grace Tony Perkins" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">NBC via Getty Images</div></div>
@@ -2829,7 +3053,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/smithsonian-museum-gay-tony-perkins-_n_5791732.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791732">(16)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/smithsonian-museum-gay-tony-perkins-_n_5791732.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791732">(17)</span></a>
 	</li>
     
   
@@ -2855,7 +3079,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5793130" onmouseover="TrackingData.entry_5793130={id:5793130,blog_id:2,rank:13,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793130,"mpid":13}}'>
+<div id="entry_5793130" onmouseover="TrackingData.entry_5793130={id:5793130,blog_id:2,rank:18,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793130,"mpid":18}}'>
 
 
                         <h4><a href="http://www.usmagazine.com/celebrity-moms/news/sara-gilbert-is-pregnant-expecting-first-child-with-wife-linda-perry-201499?utm_source=huffpostlive&utm_medium=website&utm_campaign=partner" target="_hplink">Sara Gilbert Is Pregnant</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.usmagazine.com/celebrity-moms/news/sara-gilbert-is-pregnant-expecting-first-child-with-wife-linda-perry-201499?utm_source=huffpostlive&utm_medium=website&utm_campaign=partner" target="_hplink"><img class="unloaded-image quickread_link" id="image_5793130" longdesc="http://i.huffpost.com/gen/2041304/thumbs/n-SARA-GILBERT-LINDA-PERRY-large300.jpg" alt="Sara Gilbert Linda Perry" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Paul Archuleta via Getty Images</div></div>
@@ -2898,7 +3122,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5761896" onmouseover="TrackingData.entry_5761896={id:5761896,blog_id:2,rank:14,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5761896,"mpid":14}}'>
+<div id="entry_5761896" onmouseover="TrackingData.entry_5761896={id:5761896,blog_id:2,rank:19,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5761896,"mpid":19}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/bigger-iphone-6-apple_n_5761896.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">The Bigger iPhone Is Here!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/bigger-iphone-6-apple_n_5761896.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5761896" longdesc="http://i.huffpost.com/gen/2040418/thumbs/n-IPHONE-6-PLUS-large300.jpg" alt="Iphone 6 Plus" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Bloomberg via Getty Images</div></div>
@@ -2912,7 +3136,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/bigger-iphone-6-apple_n_5761896.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5761896"></span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/bigger-iphone-6-apple_n_5761896.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5761896">(239)</span></a>
 	</li>
     
   
@@ -2938,7 +3162,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5786092" onmouseover="TrackingData.entry_5786092={id:5786092,blog_id:2,rank:15,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786092,"mpid":15}}'>
+<div id="entry_5786092" onmouseover="TrackingData.entry_5786092={id:5786092,blog_id:2,rank:20,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786092,"mpid":20}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/channing-tatum-dick-graze-jillian-bell_n_5786092.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">WATCH: Channing Tatum Introduces... The Dick Graze</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/channing-tatum-dick-graze-jillian-bell_n_5786092.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5786092" longdesc="http://i.huffpost.com/gen/2035848/thumbs/n-CHANNING-TATUM-DICK-GRAZE-large300.jpg" alt="Channing Tatum Dick Graze" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube</div></div>
@@ -2985,7 +3209,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
 
-<div id="entry_5791356" onmouseover="TrackingData.entry_5791356={id:5791356,blog_id:2,rank:16,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791356,"mpid":16}}'>
+<div id="entry_5791356" onmouseover="TrackingData.entry_5791356={id:5791356,blog_id:2,rank:21,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791356,"mpid":21}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/arielle-scarcella-lesbian-sisters_n_5791356.html?utm_hp_ref=gay-voices">Wait... Is That Your Sister Or Your Girlfriend?</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/arielle-scarcella-lesbian-sisters_n_5791356.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5791356" longdesc="http://i.huffpost.com/gen/2039412/thumbs/n-ARIELLE-large300.jpg" alt="Arielle" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube</div></div>
@@ -3027,243 +3251,6 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
 
 
     
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784082" onmouseover="TrackingData.entry_5784082={id:5784082,blog_id:2,rank:17,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784082,"mpid":17}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices">LOOK: 'Harry Potter' Author Had The Perfect Response To This Homophobic Tweet</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5784082" longdesc="http://i.huffpost.com/gen/2034348/thumbs/n-JK-ROWLING-large300.jpg" alt="Jk Rowling" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784082">http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784082">(23)</span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784450" onmouseover="TrackingData.entry_5784450={id:5784450,blog_id:2,rank:18,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784450,"mpid":18}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices">Lesbian Teacher Fired After Getting Pregnant</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5784450" longdesc="http://i.huffpost.com/gen/2035082/thumbs/n-MARIAN-BARB-WEBB-large300.jpg" alt="Marian Barb Webb" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook: Rachel Chapman Kopera</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784450">http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784450">(66)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/religion-and-sexuality/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Religion And Sexuality</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5791154" onmouseover="TrackingData.entry_5791154={id:5791154,blog_id:2,rank:19,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791154,"mpid":19}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices">Judith Light On What She's Learned From The Trans Community</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5791154" longdesc="http://i.huffpost.com/gen/2039664/thumbs/n-JUDITH-LIGHT-TRANSPARENT-large300.jpg" alt="Judith Light Transparent" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Noam Galai via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5791154">http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791154"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/amazon/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Amazon</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786550" onmouseover="TrackingData.entry_5786550={id:5786550,blog_id:2,rank:20,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786550,"mpid":20}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices"><div class='float_left shadow default_tag gay-voices_vertical_background white arial_12 bold'>We LOVE This</div><div class='gay-voices_vertical_background default_tag_arrow'></div>Couple Marries After 72 Years Together</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5786550" longdesc="http://i.huffpost.com/gen/2036200/thumbs/n-GAY-WEDDING-large300.jpg" alt="Gay Wedding" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Thomas Geyer/Quad-City Times/ZUMA Wire/ Corbis</div></div>
-
-
- 
-     <ul class="meta_links"> 
-           <li>
-        <div id="webslice_icon_home" class="webslice_icons" style="display:none">
-	<span id="home_slice" class="hslice" style="display:none;">
-		<span style="display:none" class="entry-title">Home</span>
-		<a rel="entry-content" href="http://www.huffingtonpost.com/webslices/?v=home" style="display:none;"></a>
-		<span style="display:none;">
-			Updates every <span class="ttl">10</span> minute(s)		</span>
-	</span>
-	<a href="#" onclick="javascript:window.external.AddToFavoritesBar('http://www.huffingtonpost.com/webslices/?v=home#home_slice', 'Home', 'slice');">
-		<img src="http://s.huffpost.com/images/webslice12x12.png" width="12" height="12" alt="IE8 Web Slice" />
-	</a>
-</div>
-    </li>
-    
-
-		<li class="hidden" id="read_post_5786550">http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786550">(63)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/gay-marriage/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Gay Marriage</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5787190" onmouseover="TrackingData.entry_5787190={id:5787190,blog_id:2,rank:21,zone:5,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787190,"mpid":21}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices">Here's How You Can Help This Trans Supermodel's Story Be Heard</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5787190" longdesc="http://i.huffpost.com/gen/2036574/thumbs/n-ANDREJA-PEJIC-large300.jpg" alt="Andreja Pejic" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Melodie Jeng via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5787190">http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5787190"></span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
     
 
 <!-- END center_entries_container CONTENT -->
@@ -3286,7 +3273,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                             document.write(debugadcode);
                         }
                     </script>
-                    </div><!-- ESI SNN StartTime:1410358377 -->        
+                    </div><!-- ESI SNN StartTime:1410366982 -->        
 		
 		
         
@@ -3294,11 +3281,11 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         <script type="text/javascript">
             SNPModule.init();
         </script>
-        <!-- ESI MostPopular StartTime:1410358377 -->        
+        <!-- ESI MostPopular StartTime:1410366982 -->        
         
         
         
-                <!-- ESI MostPopular EndTime:1410358839 --><div id="all_frontpage_widgets" class="margin_10_0" data-beacon='{"p":{"mnid":"mostPopularEntry"}}'>
+                <!-- ESI MostPopular EndTime:1410367265 --><div id="all_frontpage_widgets" class="margin_10_0" data-beacon='{"p":{"mnid":"mostPopularEntry"}}'>
         <div class="float_right most_popular_pager" id="mp_pager">
         <a href="javascript:void(0);" class="prev"></a> 
         <a href="javascript:void(0);" class="next"></a>
@@ -3368,24 +3355,24 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":5, "plid":5783678, "lnid":"page1"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Neil Patrick Harris Marries David Burtka In Italy</a>
+            <a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":5, "plid":5786228, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>BREAKING: Gay Couple Watches Football. Can We Get Back To The Game Now?</a>
                 <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034096/thumbs/n-NEIL-PATRICK-HARRIS-DAVID-medium.jpg" alt="Neil Patrick Harris David" /></a>
-                                        <span class="absolute image-credit">Dave Kotinsky via Getty Images</span>
+                    <a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2036012/thumbs/n-DIRECTV-medium.jpg" alt="Directv" /></a>
+                                        <span class="absolute image-credit">DirecTV/YouTube</span>
                     </div>
                                     <div class="clear"></div>
                 </div>
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":6, "plid":5786228, "lnid":"page1"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>BREAKING: Gay Couple Watches Football. Can We Get Back To The Game Now?</a>
+            <a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":6, "plid":5783678, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Neil Patrick Harris Marries David Burtka In Italy</a>
                 <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/directv-gay-football_n_5786228.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2036012/thumbs/n-DIRECTV-medium.jpg" alt="Directv" /></a>
-                                        <span class="absolute image-credit">DirecTV/YouTube</span>
+                    <a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034096/thumbs/n-NEIL-PATRICK-HARRIS-DAVID-medium.jpg" alt="Neil Patrick Harris David" /></a>
+                                        <span class="absolute image-credit">Dave Kotinsky via Getty Images</span>
                     </div>
                                     <div class="clear"></div>
                 </div>
@@ -3698,7 +3685,249 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5791014" onmouseover="TrackingData.entry_5791014={id:5791014,blog_id:2,rank:1,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791014,"mpid":1}}'>
+<div id="entry_5784082" onmouseover="TrackingData.entry_5784082={id:5784082,blog_id:2,rank:1,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784082,"mpid":1}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices">LOOK: 'Harry Potter' Author Had The Perfect Response To This Homophobic Tweet</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5784082" longdesc="http://i.huffpost.com/gen/2034348/thumbs/n-JK-ROWLING-large300.jpg" alt="Jk Rowling" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784082">http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/jk-rowling-homophobic-twitter_n_5784082.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784082">(23)</span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784450" onmouseover="TrackingData.entry_5784450={id:5784450,blog_id:2,rank:2,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784450,"mpid":2}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices">Lesbian Teacher Fired After Getting Pregnant</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5784450" longdesc="http://i.huffpost.com/gen/2035082/thumbs/n-MARIAN-BARB-WEBB-large300.jpg" alt="Marian Barb Webb" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook: Rachel Chapman Kopera</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784450">http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/barb-webb-gay-fired-marian_n_5784450.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784450">(66)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/religion-and-sexuality/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Religion And Sexuality</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5791154" onmouseover="TrackingData.entry_5791154={id:5791154,blog_id:2,rank:3,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791154,"mpid":3}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices">Judith Light On What She's Learned From The Trans Community</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5791154" longdesc="http://i.huffpost.com/gen/2039664/thumbs/n-JUDITH-LIGHT-TRANSPARENT-large300.jpg" alt="Judith Light Transparent" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Noam Galai via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5791154">http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/09/judith-light-transgender-community-_n_5791154.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791154"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/amazon/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Amazon</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5786550" onmouseover="TrackingData.entry_5786550={id:5786550,blog_id:2,rank:4,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786550,"mpid":4}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices"><div class='float_left shadow default_tag gay-voices_vertical_background white arial_12 bold'>We LOVE This</div><div class='gay-voices_vertical_background default_tag_arrow'></div>Couple Marries After 72 Years Together</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5786550" longdesc="http://i.huffpost.com/gen/2036200/thumbs/n-GAY-WEDDING-large300.jpg" alt="Gay Wedding" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Thomas Geyer/Quad-City Times/ZUMA Wire/ Corbis</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+           <li>
+        <div id="webslice_icon_home" class="webslice_icons" style="display:none">
+	<span id="home_slice" class="hslice" style="display:none;">
+		<span style="display:none" class="entry-title">Home</span>
+		<a rel="entry-content" href="http://www.huffingtonpost.com/webslices/?v=home" style="display:none;"></a>
+		<span style="display:none;">
+			Updates every <span class="ttl">10</span> minute(s)		</span>
+	</span>
+	<a href="#" onclick="javascript:window.external.AddToFavoritesBar('http://www.huffingtonpost.com/webslices/?v=home#home_slice', 'Home', 'slice');">
+		<img src="http://s.huffpost.com/images/webslice12x12.png" width="12" height="12" alt="IE8 Web Slice" />
+	</a>
+</div>
+    </li>
+    
+
+		<li class="hidden" id="read_post_5786550">http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786550">(63)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/gay-marriage/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Gay Marriage</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5787190" onmouseover="TrackingData.entry_5787190={id:5787190,blog_id:2,rank:5,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787190,"mpid":5}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices">Here's How You Can Help This Trans Supermodel's Story Be Heard</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5787190" longdesc="http://i.huffpost.com/gen/2036574/thumbs/n-ANDREJA-PEJIC-large300.jpg" alt="Andreja Pejic" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Melodie Jeng via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5787190">http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/09/andreja-pejic-transgender_n_5787190.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5787190"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5791014" onmouseover="TrackingData.entry_5791014={id:5791014,blog_id:2,rank:6,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791014,"mpid":6}}'>
 
 
                         <h4><a href="http://www.advocate.com/arts-entertainment/2014/09/09/lily-tomlin-become-first-out-lesbian-recipient-kennedy-center-honors" target="_hplink">Lily Tomlin Becomes First Out Lesbian To Nab HUGE Honor</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.advocate.com/arts-entertainment/2014/09/09/lily-tomlin-become-first-out-lesbian-recipient-kennedy-center-honors" target="_hplink"><img class="unloaded-image quickread_link" id="image_5791014" longdesc="http://i.huffpost.com/gen/2039104/thumbs/n-LILY-TOMLIN-KENNEDY-CENTER-HONORS-large300.jpg" alt="Lily Tomlin Kennedy Center Honors" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Frazer Harrison via Getty Images</div></div>
@@ -3742,7 +3971,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5785474" onmouseover="TrackingData.entry_5785474={id:5785474,blog_id:2,rank:2,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785474,"mpid":2}}'>
+<div id="entry_5785474" onmouseover="TrackingData.entry_5785474={id:5785474,blog_id:2,rank:7,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785474,"mpid":7}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/sexsex-monsters-exhibition-monster-exhibition_n_5785474.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">Exhibition Transforms The Viewer Into A 'Sex Monster' (NSFW)</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/sexsex-monsters-exhibition-monster-exhibition_n_5785474.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5785474" longdesc="http://i.huffpost.com/gen/2036254/thumbs/n-SEAN-large300.jpg" alt="Sean" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11"> </div></div>
@@ -3783,7 +4012,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5785748" onmouseover="TrackingData.entry_5785748={id:5785748,blog_id:3,rank:3,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785748,"mpid":3}}'>
+<div id="entry_5785748" onmouseover="TrackingData.entry_5785748={id:5785748,blog_id:3,rank:8,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785748,"mpid":8}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/margaret-cho/putting-the-fun-back-in-f_b_5785748.html?utm_hp_ref=gay-voices">Margaret Cho Reveals How Joan Rivers Put The 'Fun' Back In Funeral</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/margaret-cho/putting-the-fun-back-in-f_b_5785748.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5785748" longdesc="http://i.huffpost.com/gen/2035632/thumbs/n-MARGARET-CHO-large300.jpg" alt="Margaret Cho" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Courtesy of Margaret Cho</div></div>
@@ -3830,7 +4059,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5784552" onmouseover="TrackingData.entry_5784552={id:5784552,blog_id:2,rank:4,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784552,"mpid":4}}'>
+<div id="entry_5784552" onmouseover="TrackingData.entry_5784552={id:5784552,blog_id:2,rank:9,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784552,"mpid":9}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/steve-grand-ice-bucket-challenge-video-_n_5784552.html?utm_hp_ref=gay-voices">LOOK: 'All-American Boy' Singer Steve Grand's Naked Ice Bucket Challenge Is Finally Here</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/steve-grand-ice-bucket-challenge-video-_n_5784552.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5784552" longdesc="http://i.huffpost.com/gen/2034736/thumbs/n-STEVE-GRAND-NAKED-large300.jpg" alt="Steve Grand Naked" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook </div></div>
@@ -3871,7 +4100,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5790844" onmouseover="TrackingData.entry_5790844={id:5790844,blog_id:2,rank:5,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790844,"mpid":5}}'>
+<div id="entry_5790844" onmouseover="TrackingData.entry_5790844={id:5790844,blog_id:2,rank:10,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790844,"mpid":10}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/tig-notaro-partner_n_5790844.html?utm_hp_ref=gay-voices">Comedian Tig Notaro Gets Deep About The Love Of Her Life</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/tig-notaro-partner_n_5790844.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5790844" longdesc="http://i.huffpost.com/gen/2039052/thumbs/n-TIG-NOTARO-large300.jpg" alt="Tig Notaro" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">HuffPost Live</div></div>
@@ -3919,7 +4148,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5788026" onmouseover="TrackingData.entry_5788026={id:5788026,blog_id:2,rank:6,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788026,"mpid":6}}'>
+<div id="entry_5788026" onmouseover="TrackingData.entry_5788026={id:5788026,blog_id:2,rank:11,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788026,"mpid":11}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/sting-patti-lupone-uprising-of-love-_n_5788026.html?utm_hp_ref=gay-voices">NYC Concert Aims For A 'Message Of Hope' As Well As A 'Reality Check' About LGBT Rights</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/sting-patti-lupone-uprising-of-love-_n_5788026.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5788026" longdesc="http://i.huffpost.com/gen/2037060/thumbs/n-STING-UPRISING-OF-LOVE-large300.jpg" alt="Sting Uprising Of Love" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Kevin Mazur via Getty Images</div></div>
@@ -3970,7 +4199,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5785714" onmouseover="TrackingData.entry_5785714={id:5785714,blog_id:2,rank:7,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785714,"mpid":7}}'>
+<div id="entry_5785714" onmouseover="TrackingData.entry_5785714={id:5785714,blog_id:2,rank:12,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785714,"mpid":12}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/benedict-cumberbatch-gay-president-_n_5785714.html?utm_hp_ref=gay-voices">Why Benedict Cumberbatch Thinks The U.S. Should Elect A Gay President</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/benedict-cumberbatch-gay-president-_n_5785714.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5785714" longdesc="http://i.huffpost.com/gen/2035630/thumbs/n-BENEDICT-CUMBERBATCH-GAY-PRESIDENT-large300.jpg" alt="Benedict Cumberbatch Gay President" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jordan Strauss/Invision/AP</div></div>
@@ -3984,7 +4213,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/benedict-cumberbatch-gay-president-_n_5785714.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785714">(27)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/08/benedict-cumberbatch-gay-president-_n_5785714.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785714">(28)</span></a>
 	</li>
     
   
@@ -4018,7 +4247,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5784954" onmouseover="TrackingData.entry_5784954={id:5784954,blog_id:2,rank:8,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784954,"mpid":8}}'>
+<div id="entry_5784954" onmouseover="TrackingData.entry_5784954={id:5784954,blog_id:2,rank:13,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784954,"mpid":13}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/michael-sam-bryan-fischer_n_5784954.html?utm_hp_ref=gay-voices">The NFL 'Discriminated Against Every Heterosexual Player' By Signing Michael Sam, Anti-Gay Pundit Claims</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/michael-sam-bryan-fischer_n_5784954.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5784954" longdesc="http://i.huffpost.com/gen/2034992/thumbs/n-MICHAEL-SAM-BRYAN-FISCHER-large300.jpg" alt="Michael Sam Bryan Fischer" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -4066,7 +4295,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5785974" onmouseover="TrackingData.entry_5785974={id:5785974,blog_id:2,rank:9,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785974,"mpid":9}}'>
+<div id="entry_5785974" onmouseover="TrackingData.entry_5785974={id:5785974,blog_id:2,rank:14,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785974,"mpid":14}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/bushwig-2014_n_5785974.html?utm_hp_ref=gay-voices">LOOK: A Drag Explosion Took Place In Brooklyn This Weekend (NSFW)</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/bushwig-2014_n_5785974.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5785974" longdesc="http://i.huffpost.com/gen/2036114/thumbs/n-BUSHWIG-large300.jpg" alt="Bushwig" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Santiago Felipe</div></div>
@@ -4107,7 +4336,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5787092" onmouseover="TrackingData.entry_5787092={id:5787092,blog_id:2,rank:10,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787092,"mpid":10}}'>
+<div id="entry_5787092" onmouseover="TrackingData.entry_5787092={id:5787092,blog_id:2,rank:15,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787092,"mpid":15}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/08/gambia-anti-gay-bill-_n_5787092.html?utm_hp_ref=gay-voices">Gambian And Gay? Here's Why You Could Be Sent To Jail For Life</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/gambia-anti-gay-bill-_n_5787092.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5787092" longdesc="http://i.huffpost.com/gen/2036586/thumbs/n-GAMBIA-GAY-large300.jpg" alt="Gambia Gay" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -4128,272 +4357,6 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 	</li>
     
   
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785302" onmouseover="TrackingData.entry_5785302={id:5785302,blog_id:2,rank:11,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785302,"mpid":11}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/transgender-woman-murdered_n_5785302.html?utm_hp_ref=gay-voices">Transgender Woman Murdered Only Steps From Her Home</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/transgender-woman-murdered_n_5785302.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5785302" longdesc="http://i.huffpost.com/gen/2035244/thumbs/n-TRANS-large300.jpg" alt="Trans" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">WREG</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785302">http://www.huffingtonpost.com/2014/09/08/transgender-woman-murdered_n_5785302.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/transgender-woman-murdered_n_5785302.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785302">(24)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/transgender/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Transgender</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5781544" onmouseover="TrackingData.entry_5781544={id:5781544,blog_id:2,rank:12,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5781544,"mpid":12}}'>
-
-
-            <h4><a href="http://www.huffingtonpost.com/2014/09/07/idaho-nevada-hawaii-gay-marriage_n_5781544.html?utm_hp_ref=gay-voices&ir=Gay%20Voices">Gay Marriage Bans In Idaho, Nevada And Hawaii Head To Court</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/idaho-nevada-hawaii-gay-marriage_n_5781544.html?utm_hp_ref=gay-voices&ir=Gay%20Voices"><img class="unloaded-image quickread_link" id="image_5781544" longdesc="http://i.huffpost.com/gen/2032736/thumbs/n-GAY-MARRIAGE-large300.jpg" alt="Gay Marriage" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Joe Raedle via Getty Images</div></div>
-    
-    
-
-
-
- 
-     <ul class="meta_links"> 
-           <li>
-        <div id="webslice_icon_home" class="webslice_icons" style="display:none">
-	<span id="home_slice" class="hslice" style="display:none;">
-		<span style="display:none" class="entry-title">Home</span>
-		<a rel="entry-content" href="http://www.huffingtonpost.com/webslices/?v=home" style="display:none;"></a>
-		<span style="display:none;">
-			Updates every <span class="ttl">10</span> minute(s)		</span>
-	</span>
-	<a href="#" onclick="javascript:window.external.AddToFavoritesBar('http://www.huffingtonpost.com/webslices/?v=home#home_slice', 'Home', 'slice');">
-		<img src="http://s.huffpost.com/images/webslice12x12.png" width="12" height="12" alt="IE8 Web Slice" />
-	</a>
-</div>
-    </li>
-    
-
-		<li class="hidden" id="read_post_5781544">http://www.huffingtonpost.com/2014/09/07/idaho-nevada-hawaii-gay-marriage_n_5781544.html?utm_hp_ref=gay-voices&ir=Gay%20Voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/idaho-nevada-hawaii-gay-marriage_n_5781544.html?utm_hp_ref=gay-voices&ir=Gay%20Voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5781544">(58)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/gay-marriage/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Gay Marriage</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5783678" onmouseover="TrackingData.entry_5783678={id:5783678,blog_id:2,rank:13,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783678,"mpid":13}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=gay-voices">MARRIED!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5783678" longdesc="http://i.huffpost.com/gen/2034096/thumbs/n-NEIL-PATRICK-HARRIS-DAVID-large300.jpg" alt="Neil Patrick Harris David" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Dave Kotinsky via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5783678">http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=gay-voices</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783678">(64)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/mostpopular/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Most Popular</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 3 -->
-
-
-
-
-<div id="entry_5782550" onmouseover="TrackingData.entry_5782550={id:5782550,blog_id:3,rank:14,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782550,"mpid":14}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/matt-baume/louisiana-judges-gay-marr_b_5782550.html?utm_hp_ref=gay-voices">Louisiana Judge's Gay Marriage Ruling Is Riddled With Errors</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/matt-baume/louisiana-judges-gay-marr_b_5782550.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5782550" longdesc="http://i.huffpost.com/gen/2033716/thumbs/n-LOUISIANA-GAY-MARRIAGE-large300.jpg" alt="Louisiana Gay Marriage" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li><a href="http://www.huffingtonpost.com/matt-baume/louisiana-judges-gay-marr_b_5782550.html?utm_hp_ref=gay-voices" class="quick_read_link" data-beacon='{"p":{"lnid":"read"}}'>Read Post</a> |</li>
-
-	<li>
-		<a href="http://www.huffingtonpost.com/matt-baume/louisiana-judges-gay-marr_b_5782550.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5782550">(297)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/gay-marriage/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Gay Marriage</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 3 -->
-
-
-
-
-<div id="entry_5781780" onmouseover="TrackingData.entry_5781780={id:5781780,blog_id:3,rank:15,zone:6,vertical:78,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5781780,"mpid":15}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/tyler-curry/dont-call-it-a-comeback-t_1_b_5781780.html?utm_hp_ref=gay-voices">Don't Call It A Comeback: The Resurgence Of HIV Among Young Gay Men</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/tyler-curry/dont-call-it-a-comeback-t_1_b_5781780.html?utm_hp_ref=gay-voices"><img class="unloaded-image quickread_link" id="image_5781780" longdesc="http://i.huffpost.com/gen/1930964/thumbs/n-HIV-large300.jpg" alt="Hiv" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Chad Baker via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li><a href="http://www.huffingtonpost.com/tyler-curry/dont-call-it-a-comeback-t_1_b_5781780.html?utm_hp_ref=gay-voices" class="quick_read_link" data-beacon='{"p":{"lnid":"read"}}'>Read Post</a> |</li>
-
-	<li>
-		<a href="http://www.huffingtonpost.com/tyler-curry/dont-call-it-a-comeback-t_1_b_5781780.html?utm_hp_ref=gay-voices#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5781780"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/hivaids/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>HIV/AIDS</a>
-					
-				
-			</span>
-		
-		
-	</li>
 
 </ul>
 
@@ -4475,136 +4438,136 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 				
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/video" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1984033/thumbs/s-ACTION-COMICS-mini.jpg" class="unloaded-image" alt="Action Comics" />
+					<a href="/news/nfl" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044598/thumbs/s-KATIE-NOLAN-mini.jpg" class="unloaded-image" alt="Katie Nolan" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/video" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>'Action Comics' No. 1, First Superman Appearance, Sells For $3.2 Million In eBay Auction</a>
+							<a href="/news/nfl" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>Fox Sports' Katie Nolan Skewers NFL, Sports Media Over Their Major Woman Problem</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/video" title="'Action Comics' No. 1, First Superman Appearance, Sells For $3.2 Million In eBay Auction" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>Video</a></div>
+				<div class="tag_topic_title"><a href="/news/nfl" title="Fox Sports' Katie Nolan Skewers NFL, Sports Media Over Their Major Woman Problem" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>NFL</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/france" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983933/thumbs/s-FRANCOIS-HOLLANDE-mini.jpg" class="unloaded-image" alt="Francois Hollande" />
+					<a href="/news/lgbt" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044534/thumbs/s-CRYING-mini.jpg" class="unloaded-image" alt="Crying" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/france" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>French President Francois Hollande Dissolves Government After Cabinet Feud</a>
+							<a href="/news/lgbt" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>WATCH: Straight Guy Brought To Tears After Asking A Simple Question About Sexuality</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/france" title="French President Francois Hollande Dissolves Government After Cabinet Feud" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>France</a></div>
+				<div class="tag_topic_title"><a href="/news/lgbt" title="WATCH: Straight Guy Brought To Tears After Asking A Simple Question About Sexuality" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>Gay</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/car-crash" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983923/thumbs/s-CAR-mini.jpg" class="unloaded-image" alt="Car" />
+					<a href="/news/video" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044632/thumbs/s-RAY-RICE-mini.jpg" class="unloaded-image" alt="Ray Rice" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/car-crash" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>One Car's Incredible Crash Landing</a>
+							<a href="/news/video" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>Domestic Abuse Survivor: Lifetime Ban For Ray Rice Is 'Punishing The Victim Again'</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/car-crash" title="One Car's Incredible Crash Landing" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>Car Crashes and Chase Scenes</a></div>
+				<div class="tag_topic_title"><a href="/news/video" title="Domestic Abuse Survivor: Lifetime Ban For Ray Rice Is 'Punishing The Victim Again'" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>Video</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/crime" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983861/thumbs/s-ATHENA-SKEETER-mini.jpg" class="unloaded-image" alt="Athena Skeeter" />
+					<a href="/news/scotland-independence" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044610/thumbs/s-RUPERT-MURDOCH-mini.jpg" class="unloaded-image" alt="Rupert Murdoch" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/crime" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Athena Skeeter, Child Care Worker, Accused Of Killing Toddler</a>
+							<a href="/news/scotland-independence" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Is Rupert Murdoch About To Back Scottish Independence?</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/crime" title="Athena Skeeter, Child Care Worker, Accused Of Killing Toddler" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Crime</a></div>
+				<div class="tag_topic_title"><a href="/news/scotland-independence" title="Is Rupert Murdoch About To Back Scottish Independence?" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Scotland's Referendum</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/obituary" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_4"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983775/thumbs/s-JOHN-SPERLING-mini.jpg" class="unloaded-image" alt="John Sperling" />
+					<a href="/news/saving-strays" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_4"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044078/thumbs/s-SHELTER-PETS-mini.jpg" class="unloaded-image" alt="Shelter Pets" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/obituary" data-beacon='{"p":{"lnid":"big_news_bpage_4"}}'>John Sperling Dies; Founder Of The University Of Phoenix</a>
+							<a href="/news/saving-strays" data-beacon='{"p":{"lnid":"big_news_bpage_4"}}'>'Shelter Me' Producer Goes The Extra Mile To Help At-Risk Animals</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/obituary" title="John Sperling Dies; Founder Of The University Of Phoenix" data-beacon='{"p":{"lnid":"big_news_bpage_4"}}'>Obituaries</a></div>
+				<div class="tag_topic_title"><a href="/news/saving-strays" title="'Shelter Me' Producer Goes The Extra Mile To Help At-Risk Animals" data-beacon='{"p":{"lnid":"big_news_bpage_4"}}'>Saving Strays</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/best-parenting-tweets" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_5"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983751/thumbs/s-TWEETS-mini.jpg" class="unloaded-image" alt="Tweets" />
+					<a href="/news/apple" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_5"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044526/thumbs/s-WATCH-mini.jpg" class="unloaded-image" alt="Watch" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/best-parenting-tweets" data-beacon='{"p":{"lnid":"big_news_bpage_5"}}'>Funniest Parenting Tweets: What Moms And Dads Said On Twitter This Week</a>
+							<a href="/news/apple" data-beacon='{"p":{"lnid":"big_news_bpage_5"}}'>The Most Accurate Watch In The World (And It's Not The Apple Watch)</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/best-parenting-tweets" title="Funniest Parenting Tweets: What Moms And Dads Said On Twitter This Week" data-beacon='{"p":{"lnid":"big_news_bpage_5"}}'>Best Parenting Tweets</a></div>
+				<div class="tag_topic_title"><a href="/news/apple" title="The Most Accurate Watch In The World (And It's Not The Apple Watch)" data-beacon='{"p":{"lnid":"big_news_bpage_5"}}'>Apple</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/india" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_6"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983729/thumbs/s-AMBULANCE-mini.jpg" class="unloaded-image" alt="Ambulance" />
+					<a href="/news/eli-manning" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_6"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044166/thumbs/s-ELI-MANNING-mini.jpg" class="unloaded-image" alt="Eli Manning" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/india" data-beacon='{"p":{"lnid":"big_news_bpage_6"}}'>India Temple Stampede Kills At Least 10, Police Say</a>
+							<a href="/news/eli-manning" data-beacon='{"p":{"lnid":"big_news_bpage_6"}}'>This Giants Fan Is Already Burning His Eli Manning Jersey</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/india" title="India Temple Stampede Kills At Least 10, Police Say" data-beacon='{"p":{"lnid":"big_news_bpage_6"}}'>India</a></div>
+				<div class="tag_topic_title"><a href="/news/eli-manning" title="This Giants Fan Is Already Burning His Eli Manning Jersey" data-beacon='{"p":{"lnid":"big_news_bpage_6"}}'>Eli Manning</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/broncos" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_7"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983575/thumbs/s-PEUTON-mini.jpg" class="unloaded-image" alt="Peuton" />
+					<a href="/news/jeremy-lin" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_7"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2043882/thumbs/s-JEREMY-LIN-mini.jpg" class="unloaded-image" alt="Jeremy Lin" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/broncos" data-beacon='{"p":{"lnid":"big_news_bpage_7"}}'>Peyton Manning Draws Taunting Penalty Because There's A First Time For Everything</a>
+							<a href="/news/jeremy-lin" data-beacon='{"p":{"lnid":"big_news_bpage_7"}}'>Jeremy Lin Scares The Daylights Out Of Visitors To Madame Tussauds Wax Museum</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/broncos" title="Peyton Manning Draws Taunting Penalty Because There's A First Time For Everything" data-beacon='{"p":{"lnid":"big_news_bpage_7"}}'>Denver Broncos</a></div>
+				<div class="tag_topic_title"><a href="/news/jeremy-lin" title="Jeremy Lin Scares The Daylights Out Of Visitors To Madame Tussauds Wax Museum" data-beacon='{"p":{"lnid":"big_news_bpage_7"}}'>Jeremy Lin</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/vmas-2014" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_8"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983675/thumbs/s-BLUE-IVY-DANCE-MOVES-mini.jpg" class="unloaded-image" alt="Blue Ivy Dance Moves" />
+					<a href="/news/the-kardashians" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_8"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044700/thumbs/s-KIM-KARDASHIAN-mini.jpg" class="unloaded-image" alt="Kim Kardashian" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/vmas-2014" data-beacon='{"p":{"lnid":"big_news_bpage_8"}}'>Blue Ivy Carter Teaches Taylor Swift A Thing Or Two About Dance Moves At The VMAs</a>
+							<a href="/news/the-kardashians" data-beacon='{"p":{"lnid":"big_news_bpage_8"}}'>You Won't Believe These Stars Are The Same Age As Kim Kardashian</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/vmas-2014" title="Blue Ivy Carter Teaches Taylor Swift A Thing Or Two About Dance Moves At The VMAs" data-beacon='{"p":{"lnid":"big_news_bpage_8"}}'>VMAs 2014</a></div>
+				<div class="tag_topic_title"><a href="/news/the-kardashians" title="You Won't Believe These Stars Are The Same Age As Kim Kardashian" data-beacon='{"p":{"lnid":"big_news_bpage_8"}}'>The Kardashians</a></div>
 			</div>
 	
 									
@@ -4614,61 +4577,61 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 				
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/lionel-messi" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983681/thumbs/s-BARCELONA-mini.jpg" class="unloaded-image" alt="Barcelona" />
+					<a href="/news/homelessness" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044644/thumbs/s-COP-AND-HOMELESS-MAN-mini.jpg" class="unloaded-image" alt="Cop And Homeless Man" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/lionel-messi" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>Lionel Messi Scores Twice As Barcelona Starts New Era Off With A Bang (VIDEO)</a>
+							<a href="/news/homelessness" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>Kind Cop Caught On Camera Giving Homeless Man Shoes Instead Of Ticket</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/lionel-messi" title="Lionel Messi Scores Twice As Barcelona Starts New Era Off With A Bang (VIDEO)" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>Lionel Messi</a></div>
+				<div class="tag_topic_title"><a href="/news/homelessness" title="Kind Cop Caught On Camera Giving Homeless Man Shoes Instead Of Ticket" data-beacon='{"p":{"lnid":"big_news_bpage_0"}}'>Homelessness</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/miley-cyrus" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983605/thumbs/s-MILEY-CYRUS-mini.jpg" class="unloaded-image" alt="Miley Cyrus" />
+					<a href="/news/france" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044744/thumbs/s-HOLLANDE-mini.jpg" class="unloaded-image" alt="Hollande" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/miley-cyrus" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>Miley Cyrus Opts Out Of VMA Acceptance Speech To Advocate For Homeless Youth</a>
+							<a href="/news/france" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>France Says It's Ready To Take Part In Military Action Against Islamic State</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/miley-cyrus" title="Miley Cyrus Opts Out Of VMA Acceptance Speech To Advocate For Homeless Youth" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>Miley Cyrus</a></div>
+				<div class="tag_topic_title"><a href="/news/france" title="France Says It's Ready To Take Part In Military Action Against Islamic State" data-beacon='{"p":{"lnid":"big_news_bpage_1"}}'>France</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/taylor-swift" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983589/thumbs/s-BLUE-IVY-mini.jpg" class="unloaded-image" alt="Blue Ivy" />
+					<a href="/news/iraq" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2043744/thumbs/s-YEZIDI7-mini.jpg" class="unloaded-image" alt="Yezidi7" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/taylor-swift" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>Here Are The Best GIFs From The 2014 VMAs</a>
+							<a href="/news/iraq" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>On The First Day Of School, Iraqi Classrooms Are Filled With Families Fleeing ISIS</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/taylor-swift" title="Here Are The Best GIFs From The 2014 VMAs" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>Taylor Swift </a></div>
+				<div class="tag_topic_title"><a href="/news/iraq" title="On The First Day Of School, Iraqi Classrooms Are Filled With Families Fleeing ISIS" data-beacon='{"p":{"lnid":"big_news_bpage_2"}}'>Iraq</a></div>
 			</div>
 	
 										
 			<div class="big_news_pages_story-fp"> 
 				<div class="b-n-image_and_title_hint">
-					<a href="/news/lorde" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>
-						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/1983561/thumbs/s-LORDE-VMA-mini.jpg" class="unloaded-image" alt="Lorde Vma" />
+					<a href="/news/paris-hilton" class="b-n-image_and_title" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>
+						<img src="/images/trans.gif" width="74" height="58" longdesc="http://i.huffpost.com/gen/2044338/thumbs/s-NICKY-HILTON-mini.jpg" class="unloaded-image" alt="Nicky Hilton" />
 					</a>
 					<div>
 						<div class="b-n-title"> 
-							<a href="/news/lorde" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Lorde's 2014 VMA Outfit Doesn't Even Make It To The Red Carpet</a>
+							<a href="/news/paris-hilton" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Nicky Hilton 'Didn't Notice' Kendall Jenner At Fashion Week, Hasn't Seen Kim K 'In Years'</a>
 						</div>
 					</div>
 				</div>
-				<div class="tag_topic_title"><a href="/news/lorde" title="Lorde's 2014 VMA Outfit Doesn't Even Make It To The Red Carpet" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Lorde</a></div>
+				<div class="tag_topic_title"><a href="/news/paris-hilton" title="Nicky Hilton 'Didn't Notice' Kendall Jenner At Fashion Week, Hasn't Seen Kim K 'In Years'" data-beacon='{"p":{"lnid":"big_news_bpage_3"}}'>Paris Hilton</a></div>
 			</div>
 	
 									
@@ -4856,7 +4819,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
     }
 </script>
 
-<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_left_lower" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_flex" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_300x250_lower" class="ad_store "></div><div style="width:300px" id="ad_store_bottom_728x90" class="ad_store "></div>            
+<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_leaderboard_flex" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_flex" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_300x250_lower" class="ad_store "></div>            
             <div id="console"></div>
                 <script type="text/javascript">
                     if(HPAds.ad_check_page_config('adtech_header'))HPAds.ad_store_push('adtech_header', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('top_1x1'))HPAds.ad_store_push('top_1x1', '', 300, false, false, false, false);                            if((typeof(HPAds.ad_store['quickread']) === 'undefined' || HPAds.ad_store['quickread'] != null) && (HPAds.ad_check_page_config('quickread'))) {
@@ -4875,9 +4838,9 @@ jQuery('#fb_like_vertical').mouseenter(function() {
                                 HPAds.ad_store_push('quickread_most_popular', 'by_request', 300, supress_keyvalues(ks, '{"magic_number":"93317811","call_type":"ajax","width":300,"height":250}'),true,false, 'false', 'false');
                             } else {
                                 HPAds.ad_store['quickread_most_popular'] = null;
-                            }if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('left_lower'))HPAds.ad_store_push('left_lower', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_flex'))HPAds.ad_store_push('right_rail_flex', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_300x250_lower'))HPAds.ad_store_push('right_rail_300x250_lower', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('bottom_728x90'))HPAds.ad_store_push('bottom_728x90', '', 300, false, false, false, false);
+                            }if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('leaderboard_flex'))HPAds.ad_store_push('leaderboard_flex', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_flex'))HPAds.ad_store_push('right_rail_flex', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_300x250_lower'))HPAds.ad_store_push('right_rail_300x250_lower', '', 300, false, false, false, false);
                     HPAds.ad_store_move_to_place(false);
-                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["bottom_728x90"]=true; HPAds.page_spots["left_lower"]=true; HPAds.page_spots["quickread"]=true; HPAds.page_spots["quickread_most_popular"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["top_1x1"]=true; 
+                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["bottom_728x90"]=true; HPAds.page_spots["leaderboard_flex"]=true; HPAds.page_spots["left_lower"]=true; HPAds.page_spots["quickread"]=true; HPAds.page_spots["quickread_most_popular"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["top_1x1"]=true; 
                 </script>
 	</div> <!-- #wrapper_inner -->
 	</div> <!-- .wrapper_h -->
@@ -4943,8 +4906,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 </noscript>
 <!-- END Nielsen Tracking -->
 <!-- RUM footer -->
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"163769","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":1613,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
-<!-- Served from: wfe7.dtc -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4004801","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":550,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
+<!-- Served from: production-mt-wfe-58-70.use1 -->
 
 
 <script type="text/javascript">
@@ -4971,7 +4934,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
   js.src = "http://cdn.pubexchange.com/modules/partner/huffpost_gay_voices";
   pjs.parentNode.insertBefore(js, pjs);
 }(document, 'script', 'pubexchange-jssdk'));</script></div>
-<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410358375,"entry":0,"vertical":"gay-voices","vertical-id":78,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostGayVoices","current_vertical_twitter_name":"HuffPostGay","vertical\/bignews":"gay-voices"}); });</script>
+<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410366982,"entry":0,"vertical":"gay-voices","vertical-id":78,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostGayVoices","current_vertical_twitter_name":"HuffPostGay","vertical\/bignews":"gay-voices"}); });</script>
 <!--if user has AOL's referrer we display AOL NavBar -->
 <script type="text/javascript" src='http://s1.huffpost.com/assets/js.php?v=1410282423&f=aolunb.js'></script>
 

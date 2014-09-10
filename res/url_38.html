@@ -181,7 +181,7 @@ var __gravity_params  = {
 }
 </script>
     <!-- RUM header -->
-    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACgUGVVNSBA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>    <!-- GA, Data Layer and Omniture -->
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>    <!-- GA, Data Layer and Omniture -->
     <script type="text/javascript">
 var _gaq = _gaq || [];
 HPTrack.async = true;
@@ -512,7 +512,7 @@ adSetInView('0');
                     <li class="facebook">
                         <div class="content like">
                             <!-- facebook button code -->
-                                <div class="fb-like" data-href="http://www.facebook.com/HuffPostBusiness/" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false" data-colorscheme="light" data-font="trebuchet ms" data-action="like" ref="" style="width: 40px" hp_track=""></div>                        </div>
+                                <div class="fb-like" data-href="http://www.facebook.com/HuffPostBusiness/" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false" data-colorscheme="light" data-font="trebuchet ms" data-action="like" ref="" style="width: 40px" ></div>                        </div>
                     </li>
                     <li class="twitter">
                         <div class="content tweet">
@@ -740,7 +740,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5790896"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics">Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics#comments">731</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5791770"  >
@@ -755,16 +755,16 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/obama-islamic-state_n_5793584.html?ir=Politics#comments">0</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5791054"  >
+                                                                <li data-id="5793164"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/09/lavon-heidemann-resigns_n_5791054.html?ir=Politics">Nebraska Lt. Governor Resigns Following Domestic Abuse Allegations</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/lavon-heidemann-resigns_n_5791054.html?ir=Politics#comments">0</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/09/andrew-cuomo-primary_n_5793164.html?ir=Politics">Andrew Cuomo Survives Democratic Primary</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/andrew-cuomo-primary_n_5793164.html?ir=Politics#comments">0</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5791240"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics">World Leaders Condemn Failed Drug War, Call For Global Reform</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics#comments">119</a>
                                     </article>
                                 </li>
                                                             							
@@ -813,10 +813,16 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/productivity-hacks_n_5775492.html?ir=Small+Business#comments">0</a>
                                     </article>
                                 </li>
+                                                                <li data-id="5785006"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/brian-horn/frank-kerns-secret-to-suc_b_5785006.html?ir=Small+Business">Frank Kern's Secret to Success Is Simpler Than Expected</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/brian-horn/frank-kerns-secret-to-suc_b_5785006.html?ir=Small+Business#comments">7</a>
+                                    </article>
+                                </li>
                                                                 <li data-id="5784592"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/jonathan-long/10-steps-to-help-improve-_b_5784592.html?ir=Small+Business">10 Steps to Help Improve Your Local SEO</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/jonathan-long/10-steps-to-help-improve-_b_5784592.html?ir=Small+Business#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/jonathan-long/10-steps-to-help-improve-_b_5784592.html?ir=Small+Business#comments">1</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5777072"  >
@@ -868,25 +874,25 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5788566"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/iraq-islamic-state-sunnis_n_5788566.html?ir=WorldPost">The Unintended Consequences Of The U.S. Campaign Against Islamic State</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/iraq-islamic-state-sunnis_n_5788566.html?ir=WorldPost#comments">219</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/iraq-islamic-state-sunnis_n_5788566.html?ir=WorldPost#comments">220</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5785412"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?ir=WorldPost">PHOTOS: Amazon Tribe Beats And Strips Illegal Loggers</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?ir=WorldPost#comments">151</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?ir=WorldPost#comments">164</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5775106"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/08/isis-attacks-on-women_n_5775106.html?ir=WorldPost">The Brutal Truth Of What The Islamic State Is Doing To Women</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/isis-attacks-on-women_n_5775106.html?ir=WorldPost#comments">214</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/isis-attacks-on-women_n_5775106.html?ir=WorldPost#comments">221</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5794414"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/japan-us-military-weapons_n_5794414.html?ir=WorldPost">Japan, U.S. Eye Military 'Strike Capability' For Tokyo</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/japan-us-military-weapons_n_5794414.html?ir=WorldPost#comments">20</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/japan-us-military-weapons_n_5794414.html?ir=WorldPost#comments">24</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5783570"  >
@@ -947,22 +953,22 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/apple-iwatch_n_5785762.html?ir=Technology#comments">0</a>
                                     </article>
                                 </li>
+                                                                <li data-id="5794416"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-size_n_5794416.html?ir=Technology">Why You'll Buy The New iPhone</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/iphone-6-size_n_5794416.html?ir=Technology#comments">0</a>
+                                    </article>
+                                </li>
                                                                 <li data-id="5790528"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/end-net-neutrality_n_5790528.html?ir=Technology">'Clusterfuck Worse Than Comcast Customer Service'</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/end-net-neutrality_n_5790528.html?ir=Technology#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/end-net-neutrality_n_5790528.html?ir=Technology#comments">48</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5792640"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/apple-watch-sexting_n_5792640.html?ir=Technology">Apple Just Took Sexting To A Whole New Place</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/apple-watch-sexting_n_5792640.html?ir=Technology#comments">0</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5780348"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/08/apple-event-tuesday_n_5780348.html?ir=Technology">What You Should Expect From Apple's Big Event</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/apple-event-tuesday_n_5780348.html?ir=Technology#comments">109</a>
                                     </article>
                                 </li>
                                                             							
@@ -1008,31 +1014,31 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5789646"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media">Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media#comments">351</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media#comments">381</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5789822"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media">Mika Brzezinski: 'The NFL Supports Domestic Violence'</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media#comments">105</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media#comments">126</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5791728"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media">Can We Stop Endlessly Replaying The Ray Rice Video, Please?</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media#comments">59</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5784936"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/08/with-all-due-respect-bloomberg_n_5784936.html?ir=Media">You Will Either Like Or Really Really Hate This New Show</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/with-all-due-respect-bloomberg_n_5784936.html?ir=Media#comments">11</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media#comments">104</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5791594"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/isis-media-threat_n_5791594.html?ir=Media">Americans Panicked Over ISIS Threat That Experts Say Isn't Imminent</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/isis-media-threat_n_5791594.html?ir=Media#comments">0</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5796852"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/10/jay-carney-cnn_n_5796852.html?ir=Media">Jay Carney Joins CNN</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/10/jay-carney-cnn_n_5796852.html?ir=Media#comments">71</a>
                                     </article>
                                 </li>
                                                             							
@@ -1077,13 +1083,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5784666"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?ir=Green">Ridiculously Photogenic Fox Loves Her Human Friends A Little Too Much</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?ir=Green#comments">149</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?ir=Green#comments">151</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5788788"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/greenhouse-gas-levels_n_5788788.html?ir=Green">REPORT: Greenhouse Gas Levels Grew At Fastest Rate Ever</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/greenhouse-gas-levels_n_5788788.html?ir=Green#comments">729</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/greenhouse-gas-levels_n_5788788.html?ir=Green#comments">737</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5788526"  >
@@ -1095,13 +1101,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5786322"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/cuda-pit-bull_n_5786322.html?ir=Green">This Pit Bull Has A Short Spine And A Huge Smile That's Sure To Win Your Heart</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/cuda-pit-bull_n_5786322.html?ir=Green#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/cuda-pit-bull_n_5786322.html?ir=Green#comments">19</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5785150"  >
+                                                                <li data-id="5774850"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/08/puppy-cheetah-surgery-ruuxa-raina_n_5785150.html?ir=Green">Man's Best Friend Is Cheetah's Best Friend After Leg Surgery</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/puppy-cheetah-surgery-ruuxa-raina_n_5785150.html?ir=Green#comments">1</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/08/photo-lightning-rainbow-airplane_n_5774850.html?ir=Green">LOOK: Here's An Incredible Photo Of A Lightning Rainbow Hitting A Plane</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/photo-lightning-rainbow-airplane_n_5774850.html?ir=Green#comments">0</a>
                                     </article>
                                 </li>
                                                             							
@@ -1159,19 +1165,19 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5789752"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/ray-rice-video_n_5789752.html?ir=Sports">Longer Ray Rice Video Features Obscenities, Spitting</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/ray-rice-video_n_5789752.html?ir=Sports#comments">234</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5787132"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/08/olbermann-nfl-roger-goodell-resign_n_5787132.html?ir=Sports">Olbermann: NFL Commissioner 'Is An Enabler Of Men Who Beat Women'</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/olbermann-nfl-roger-goodell-resign_n_5787132.html?ir=Sports#comments">420</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/ray-rice-video_n_5789752.html?ir=Sports#comments">293</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5792248"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/ray-rice-wife-interview_n_5792248.html?ir=Sports">Ray Rice Breaks Silence: 'I Need To Be Strong For My Wife'</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/ray-rice-wife-interview_n_5792248.html?ir=Sports#comments">0</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5793466"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/09/nfl-roger-goodell-ray-rice_n_5793466.html?ir=Sports">NFL Commissioner: 'We Assumed That There Was A Video'</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/nfl-roger-goodell-ray-rice_n_5793466.html?ir=Sports#comments">0</a>
                                     </article>
                                 </li>
                                                             							
@@ -1238,10 +1244,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/art-apps_n_5762584.html?ir=Arts#comments">5</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5785626"  >
+                                                                <li data-id="5790430"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/08/wolfgang-laib-pollen_n_5785626.html?ir=Arts">Why One German Artist Has Been Captivated By Pollen For Nearly 40 Years</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/08/wolfgang-laib-pollen_n_5785626.html?ir=Arts#comments">1</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/09/georgian-women-singing-video_n_5790430.html?ir=Arts">3 Women Singing A Georgian Song Sound Magical</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/georgian-women-singing-video_n_5790430.html?ir=Arts#comments">7</a>
                                     </article>
                                 </li>
                                                             							
@@ -1286,31 +1292,31 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5791252"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/3000-year-old-sword-discovered_n_5791252.html?ir=Science">11-Year-Old Boy Makes Amazing Discovery While Washing His Hands</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/3000-year-old-sword-discovered_n_5791252.html?ir=Science#comments">0</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5772368"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?ir=Science">Dogs' Surprising Preference Revealed In New Study</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?ir=Science#comments">235</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5698082"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/09/dinosaur-myths-video_n_5698082.html?ir=Science">What You Know About Dinosaurs Is Probably Wrong</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/dinosaur-myths-video_n_5698082.html?ir=Science#comments">39</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/3000-year-old-sword-discovered_n_5791252.html?ir=Science#comments">54</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5786216"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/titanosaur-africa-new-dinosaur-species_n_5786216.html?ir=Science">Huge New Dinosaur Found Embedded In Cliff Wall</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/titanosaur-africa-new-dinosaur-species_n_5786216.html?ir=Science#comments">5</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/titanosaur-africa-new-dinosaur-species_n_5786216.html?ir=Science#comments">13</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5698082"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/09/dinosaur-myths-video_n_5698082.html?ir=Science">What You Know About Dinosaurs Is Probably Wrong</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/dinosaur-myths-video_n_5698082.html?ir=Science#comments">43</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5785418"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/09/chemistry-life-hacks-video_n_5785418.html?ir=Science">These 'Chemistry Life Hacks' Are Serious Game Changers</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/09/chemistry-life-hacks-video_n_5785418.html?ir=Science#comments">4</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5795154"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/10/lost-ship-franklin-expedition_n_5795154.html?ir=Science">Lost Ship From Doomed Arctic Expedition Discovered</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/10/lost-ship-franklin-expedition_n_5795154.html?ir=Science#comments">0</a>
                                     </article>
                                 </li>
                                                             							
@@ -1360,41 +1366,41 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                         
                                                                     <li class="scheduled-soon">
                                         <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/540dbb9302a7605e58000109">
+                                            <a href="http://live.huffingtonpost.com/r/segment/540a17b978c90a0ee8000631">
                                                 <time class="schedule-status now">Now</time>
-                                                <span class="segment-title">Top Stories For Wednesday, September 10</span>
+                                                <span class="segment-title">Radio Host Mark Goodman LIVE</span>
                                             </a>
                                         </article>
                                     </li>
                                                                     <li class="scheduled-soon">
                                         <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/540dbbbb02a760ff36000150">
+                                            <a href="http://live.huffingtonpost.com/r/segment/5405eb8402a7604fe70006ba">
                                                 <time class="schedule-status coming-up">Next</time>
-                                                <span class="segment-title">Ray Rice & The Cycle Of Abuse</span>
+                                                <span class="segment-title">'Top Chef' Judge Gail Simmons LIVE</span>
                                             </a>
                                         </article>
                                     </li>
                                                                     <li class="coming-up">
                                         <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/53ff63d678c90a73d30001ab">
+                                            <a href="http://live.huffingtonpost.com/r/segment/53dc100078c90ae0c2000531">
                                                 <time class="schedule-status coming-up">Coming Up</time>
-                                                <span class="segment-title">Justin Long LIVE</span>
+                                                <span class="segment-title">9/11 Made Me Redefine My Life</span>
                                             </a>
                                         </article>
                                     </li>
                                                                     <li class="coming-up">
                                         <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/540f4f4e02a76098810001d8">
+                                            <a href="http://live.huffingtonpost.com/r/segment/540f342202a7602a660000ff">
                                                 <time class="schedule-status coming-up">Coming Up</time>
-                                                <span class="segment-title">Texas State Senator Wendy Davis LIVE</span>
+                                                <span class="segment-title">Free Speech Zone with @AlyonaMink</span>
                                             </a>
                                         </article>
                                     </li>
                                                                     <li class="coming-up">
                                         <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/540dbbfa02a7604bdd000100">
+                                            <a href="http://live.huffingtonpost.com/r/segment/53f600f8fe344419f100037b">
                                                 <time class="schedule-status coming-up">Coming Up</time>
-                                                <span class="segment-title">#WorldBrief With @Caromt</span>
+                                                <span class="segment-title">ESPN's Mike Golic LIVE</span>
                                             </a>
                                         </article>
                                     </li>
@@ -1611,17 +1617,27 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5786840","mpid":4}}' >
+            <article  data-beacon='{"p":{"plid":"5777558","mpid":4}}' >
                 <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/08/home-depot-hacked-breach-credit-debit-cards_n_5786840.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2036700/thumbs/r-HOME-DEPOT-LOGO-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Home Depot Confirms Cyber Attack" class="async-img-load" /></a>
+                    <a href="http://www.huffingtonpost.com/2014/09/10/state-cigarette-tax-maps_n_5777558.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2031024/thumbs/r-CIGARETTE-TAXES-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for The Decline Of Cigarettes In 2 Captivating Map GIFs" class="async-img-load" /></a>
                 </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/08/home-depot-hacked-breach-credit-debit-cards_n_5786840.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Home Depot Confirms Cyber Attack</a></strong>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/10/state-cigarette-tax-maps_n_5777558.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">The Decline Of Cigarettes In 2 Captivating Map GIFs</a></strong>
                                 <!-- need php for times here -->
-                <time class="off" datetime="2014-09-08 18:22:49" pubdate>2014-09-08 18:22:49</time>
+                <time class="off" datetime="2014-09-10 07:36:38" pubdate>2014-09-10 07:36:38</time>
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5784604","mpid":5}}' >
+            <article  data-beacon='{"p":{"plid":"5792224","mpid":5}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/09/walmart-dress-code_n_5792224.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2040572/thumbs/r-WALMART-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Walmart Workers Complain They Can't Afford New Dress Code" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/09/walmart-dress-code_n_5792224.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Walmart Workers Complain They Can't Afford New Dress Code</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-09 13:59:37" pubdate>2014-09-09 13:59:37</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5784604","mpid":6}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/08/olive-garden-unlimited-pasta-pass_n_5784604.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2034830/thumbs/r-BOWLS-OF-PASTA-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Olive Garden's ‘Never Ending Pasta Passes' Have Already Sold Out" class="async-img-load" /></a>
                 </figure>
@@ -1631,7 +1647,17 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5784464","mpid":6}}' >
+            <article  data-beacon='{"p":{"plid":"5786840","mpid":7}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/08/home-depot-hacked-breach-credit-debit-cards_n_5786840.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2036700/thumbs/r-HOME-DEPOT-LOGO-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Home Depot Confirms Cyber Attack" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/08/home-depot-hacked-breach-credit-debit-cards_n_5786840.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Home Depot Confirms Cyber Attack</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-08 18:22:49" pubdate>2014-09-08 18:22:49</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5784464","mpid":8}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/08/panera-guns-bread-firearms_n_5784464.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2034670/thumbs/r-PANERA-BREAD-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Panera Becomes The Latest Company To Enact A 'No Guns' Policy" class="async-img-load" /></a>
                 </figure>
@@ -1641,7 +1667,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5789826","mpid":7}}' >
+            <article  data-beacon='{"p":{"plid":"5789826","mpid":9}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/09/trump-bankruptcy-atlantic-city_n_5789826.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2038214/thumbs/r-TRUMP-ATLANTIC-CITY-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for BANKRUPT" class="async-img-load" /></a>
                 </figure>
@@ -1651,7 +1677,17 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5782252","mpid":8}}' >
+            <article  data-beacon='{"p":{"plid":"5792822","mpid":10}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/10/1-million-dollar-parking-spot-nyc_n_5792822.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2041190/thumbs/r-NYC-PARKING-GARAGE-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for 10 NYC Parking Spots Are Going For A Mind-Boggling $1 Million Each" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/10/1-million-dollar-parking-spot-nyc_n_5792822.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">10 NYC Parking Spots Are Going For A Mind-Boggling $1 Million Each</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-10 08:09:17" pubdate>2014-09-10 08:09:17</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5782252","mpid":11}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/08/s-truett-cathy-dies-dead-chick-fil-a-founder-obituary_n_5782252.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2033146/thumbs/r-S-TRUETT-CATHY-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Founder Of Chick-Fil-A Restaurant Chain Dies" class="async-img-load" /></a>
                 </figure>
@@ -1661,7 +1697,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5783550","mpid":9}}' >
+            <article  data-beacon='{"p":{"plid":"5783550","mpid":12}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/08/wealth-gap_n_5783550.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2033960/thumbs/r-HOMELESS-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for America's Widening Wealth Gap Is 'Unsustainable'" class="async-img-load" /></a>
                 </figure>
@@ -1671,43 +1707,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5784808","mpid":10}}' >
+            <article  data-beacon='{"p":{"plid":"5784808","mpid":13}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/08/durex-pumpkin-spice-condom_n_5784808.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2035344/thumbs/r-PUMPKIN-SPICE-CONDOMS-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Pumpkin Spice Condoms Were Too Good To Be True" class="async-img-load" /></a>
                 </figure>
                 <strong><a href="http://www.huffingtonpost.com/2014/09/08/durex-pumpkin-spice-condom_n_5784808.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Pumpkin Spice Condoms Were Too Good To Be True</a></strong>
                                 <!-- need php for times here -->
                 <time class="off" datetime="2014-09-08 11:56:19" pubdate>2014-09-08 11:56:19</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5779674","mpid":11}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/07/market-basket-sales_n_5779674.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2032338/thumbs/r-MARKET-BASKET-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Market Basket Begins Recovering Sales After CEO Turmoil" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/07/market-basket-sales_n_5779674.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Market Basket Begins Recovering Sales After CEO Turmoil</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-07 16:28:15" pubdate>2014-09-07 16:28:15</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5784384","mpid":12}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/08/businesses-reluctant-to-hire_n_5784384.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2034604/thumbs/r-HIRING-DECISIONS-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Survey: America's 'Job Creators' Would Rather Do Anything But Create Jobs" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/08/businesses-reluctant-to-hire_n_5784384.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Survey: America's 'Job Creators' Would Rather Do Anything But Create Jobs</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-08 11:06:01" pubdate>2014-09-08 11:06:01</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5766668","mpid":13}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/05/costco-career-opportunities-best_n_5766668.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2022954/thumbs/r-COSTCO-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for The 10 Best Companies To Work For If You Didn't Go To College" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/05/costco-career-opportunities-best_n_5766668.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">The 10 Best Companies To Work For If You Didn't Go To College</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-05 07:45:51" pubdate>2014-09-05 07:45:51</time>
                             </article>
         </li>
             </ul>
@@ -1769,7 +1775,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
 		                         $('.fb-tooltip-277005').toolTip({
 		                             toolTipWidth : 250,
 		                             namespacevlaue: '.aol_tooltip_277005 .aol_tooltip',
-		                                html : '<div class="fb-follow-tooltip"><b>Get updates from Hunter Stuart</b><div class="fb-like-container"><div class="fb-like" data-href="http://www.huffingtonpost.com/hunter-stuart/" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false" data-colorscheme="light" data-font="trebuchet ms" data-action="like" ref="" style="width: 40px" hp_track=""></div></div></div>'
+		                                html : '<div class="fb-follow-tooltip"><b>Get updates from Hunter Stuart</b><div class="fb-like-container"><div class="fb-like" data-href="http://www.huffingtonpost.com/hunter-stuart/" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false" data-colorscheme="light" data-font="trebuchet ms" data-action="like" ref="" style="width: 40px" ></div></div></div>'
 		                           });
 		                     });
 		                  }(jQuery));
@@ -1805,7 +1811,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
             <!-- Imageblog Social Share Bar -->
             
             <!-- Social Share Bar -->
-            <menu id="social_badges" class="social_badges_en social-bar group floating">
+            <menu id="social_badges" class="social_badges_ social-bar group floating">
         <section class="social-badge" data-url="/ajax/social/phoenix_social_badge_json.php?badges=facebook_like%2Cfacebook%2Ctwitter%2Clinkedin%2Cemail%2Ccomments&id=5767494&url=http%3A%2F%2Fwww.huffingtonpost.com%2F2014%2F09%2F08%2Ftitle-washing_n_5767494.html" data-entry-id="5767494"> 
       <ul class="shares group">
         <li class='share facebook_like VERB_LIKE' data-type='fblike'><a href='javscript:void(0)'><div class="fb-like" data-href="http://www.huffingtonpost.com/2014/09/08/title-washing_n_5767494.html" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 450px" ></div></a></li><li class="share facebook" data-type="facebook">
@@ -2221,12 +2227,12 @@ adSetInView('0');
                                     <li class="group">
                                                                                <strong class="name">HuffPost</strong>
                                             <div class="share-button">
-                                                <div class="fb-like" data-href="http://www.facebook.com/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 100px" hp_track=""></div>                                                
+                                                <div class="fb-like" data-href="http://www.facebook.com/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 100px" ></div>                                                
                                             </div>
                                                                                         <br> <br>
                                             <strong class="name">Business</strong>
                                             <div class="share-button">
-                                                <div class="fb-like" data-href="http://www.facebook.com/HuffPostBusiness" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="trebuchet ms" data-action="like" ref="" style="width: 100px" hp_track=""></div>                                            </div>
+                                                <div class="fb-like" data-href="http://www.facebook.com/HuffPostBusiness" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="trebuchet ms" data-action="like" ref="" style="width: 100px" ></div>                                            </div>
                                                                                                                             
                                           </li>
                                     </ul>
@@ -2425,11 +2431,26 @@ adSetInView('0');
 	                <div class="related_news_item widget_item first_child">
 	                    
 	                        <div class="widget_img">
+								<a href="http://www.slate.com/blogs/business_insider/2014/09/10/map_of_the_most_affluent_town_in_each_state_by_median_income.html" target="partners"><img src="http://www.slate.com/content/dam/slate/blogs/business_insider/2014/09/10/map_of_the_most_affluent_town_in_each_state_by_median_income/98662472-the-138-metre-motor-yacht-the-rising-sun-owned-by-larry.jpg.CROP.thumbnail-small.jpg" alt=""/></a>
+							</div>
+	                    
+	                    <div class="widget_title_text">
+	                		<a href="http://www.slate.com/blogs/business_insider/2014/09/10/map_of_the_most_affluent_town_in_each_state_by_median_income.html" target="partners">Here are the Most Affluent Towns in Every State</a>
+							
+							<p><a href="http://www.slate.com/blogs/business_insider/2014/09/10/map_of_the_most_affluent_town_in_each_state_by_median_income.html" target="partners" class="readmore_words"> </a></p>
+							
+						</div>
+					</div>
+					<div class="clear"></div>
+				
+	                <div class="related_news_item widget_item ">
+	                    
+	                        <div class="widget_img">
 								<a href="http://www.slate.com/blogs/moneybox/2014/09/10/harvard_s_350_million_gift_shows_why_the_world_s_richest_university_should.html" target="partners"><img src="http://www.slate.com/content/dam/slate/blogs/moneybox/2014/09/10/harvard_s_350_million_gift_shows_why_the_world_s_richest_university_should/2580241-students-pass-in-front-of-harvards-widener-library-on.jpg.CROP.thumbnail-small.jpg" alt=""/></a>
 							</div>
 	                    
 	                    <div class="widget_title_text">
-	                		<a href="http://www.slate.com/blogs/moneybox/2014/09/10/harvard_s_350_million_gift_shows_why_the_world_s_richest_university_should.html" target="partners">Take Away Harvard's Non-profit Status</a>
+	                		<a href="http://www.slate.com/blogs/moneybox/2014/09/10/harvard_s_350_million_gift_shows_why_the_world_s_richest_university_should.html" target="partners">Take Away Harvard’s Nonprofit Status</a>
 							
 							<p><a href="http://www.slate.com/blogs/moneybox/2014/09/10/harvard_s_350_million_gift_shows_why_the_world_s_richest_university_should.html" target="partners" class="readmore_words"> </a></p>
 							
@@ -2447,21 +2468,6 @@ adSetInView('0');
 	                		<a href="http://www.slate.com/articles/business/the_edgy_optimist/2014/09/independent_bookstores_rising_they_can_t_compete_with_amazon_and_don_t_have.html" target="partners">Why Indie Bookstores Are on the Rise Again</a>
 							
 							<p><a href="http://www.slate.com/articles/business/the_edgy_optimist/2014/09/independent_bookstores_rising_they_can_t_compete_with_amazon_and_don_t_have.html" target="partners" class="readmore_words"> </a></p>
-							
-						</div>
-					</div>
-					<div class="clear"></div>
-				
-	                <div class="related_news_item widget_item ">
-	                    
-	                        <div class="widget_img">
-								<a href="http://www.slate.com/blogs/moneybox/2014/09/08/college_graduate_vs_high_school_graduate_salaries.html" target="partners"><img src="http://www.slate.com/content/dam/slate/blogs/moneybox/2014/09/08/college_graduate_vs_high_school_graduate_salaries/144477115-graduates-wait-to-hear-us-president-barack-obama.jpg.CROP.thumbnail-small.jpg" alt=""/></a>
-							</div>
-	                    
-	                    <div class="widget_title_text">
-	                		<a href="http://www.slate.com/blogs/moneybox/2014/09/08/college_graduate_vs_high_school_graduate_salaries.html" target="partners">When College Grads Earn Like High School Grads</a>
-							
-							<p><a href="http://www.slate.com/blogs/moneybox/2014/09/08/college_graduate_vs_high_school_graduate_salaries.html" target="partners" class="readmore_words"> </a></p>
 							
 						</div>
 					</div>
@@ -2578,7 +2584,7 @@ background: none !important;
         <!-- END page_content -->
         <!-- page_footer -->
         <section class="footer">
-    <!-- Served from: wfe6.ewr -->
+    <!-- Served from: production-mt-wfe-52-229.use1 -->
     <!-- ads_leaderboard_bottom --> 
         <!-- visual footer -->
     <footer>
@@ -2653,7 +2659,7 @@ background: none !important;
         <!-- ads_bottom_1x1 -->
     <div id="modulous_bottom_1x1" class="ad_spot">
     <script type="application/javascript" 
-src="http://a02.korrelate.net/a/e/d2a.ads?r=309505854&et=a&ago=127&ao=128&px=208&pt=s&lvl=business"></script><!-- ADS Comscore -->
+src="http://a02.korrelate.net/a/e/d2a.ads?r=1522019014&et=a&ago=127&ao=128&px=208&pt=s&lvl=business"></script><!-- ADS Comscore -->
 <script src="http://ar.voicefive.com/bmx3/node.pli?pub=aol2"></script>
 <!-- pub=aolmovies --><!-- AD highlights module tracking -->
 <script type="text/javascript">
@@ -2848,7 +2854,7 @@ span.error.show {
         <!-- END page_wrapper -->
 
     <!-- end RUM -->
-    <script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410358537,"entry":"5767494","vertical":"business","vertical-id":5,"vertical-name":"Business","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffingtonPost","current_vertical_twitter_name":"HuffingtonPost"}); });</script>    <!-- RUM footer -->
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"2661203","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFxENWFMIXhtMbABYFUoYOBhDFRghFkQMWARLEg==","queueTime":0,"applicationTime":269,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>    <script type="text/javascript" src="http://s1.huffpost.com/assets/js.php?v=1410282423&f=phoenix%2Feditions.js%2Clayouts%2F13.js%2Cphoenix%2Ffloating_share.js"></script>
+    <script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410367227,"entry":"5767494","vertical":"business","vertical-id":5,"vertical-name":"Business","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffingtonPost","current_vertical_twitter_name":"HuffingtonPost"}); });</script>    <!-- RUM footer -->
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4028938","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFxENWFMIXhtMbABYFUoYOBhDFRghFkQMWARLEg==","queueTime":0,"applicationTime":239,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>    <script type="text/javascript" src="http://s1.huffpost.com/assets/js.php?v=1410282423&f=phoenix%2Feditions.js%2Clayouts%2F13.js%2Cphoenix%2Ffloating_share.js"></script>
 </body>
 </html>

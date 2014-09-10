@@ -54,7 +54,7 @@
   
     	<link rel="shortcut icon" href="/favicon.ico" />
   <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=grid%2Fvertical_fp_grid.css%2Chp_modules%2Fmodule.main-dl.css%2Chp_modules%2Fmodule.blogger-headshot-bl.css%2Cverticals%2Fcrime.css%2Cpage_type%2Ffrontpages.css%2Chp_modules%2Fmodule.sponsor-widgets.css%2Cmaster.css%2Cfonts%2Fopensans-condbold%2Fstylesheet.css%2Ctopnav_new%2Fall_pages.css%2Ctopnav_new%2Ftop_nav.css%2Ctopnav_new%2Fmodule.edition_nav.css%2Cbasic.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=verticals%2Fcolor_scheme.css%2Cadd%2Ffront.css%2Cbuttons.css%2Cmost_popular.css%2Ccommercial.css%2Chuff_promo.css%2Csnp_friends.css%2Csnn-header.css%2Chp_modules%2Fmodule.splash_slideshow.css%2Chp_modules%2Fmodule.apps_feeds.css%2Chp_modules%2Fmodule.most_popular_celebrity.css%2Chufflists.css%2Csignup_modal.css%2Cdirect_message.css%2Cbadges_v2.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=hp_modules%2Ffacebook.css%2Cuser_levels.css%2Ctwitter_splash.css%2Cbing.css%2Cgrouping.css%2Cmodal_window.css%2Chp_modules%2Fmodule.bubble.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=email_share.css%2Csocial-navbar.css%2Chp_modules%2Fmodule.bubble-tags.css%2Chp_modules%2Fmodule.fb_like_button.css%2Csearch_autocomplete.css%2Cap_wires_scroll.css%2Cmod-follow.css%2Clogos.css" type="text/css" media="screen" />              	        <!-- RUM header -->
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACQUDU1db"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
             <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=yui_sub.js%2Cjquery.js" ></script>
         
     <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=jquery%2Fjquery.I18N.js%2Clocale%2Fdefault.js%2Csprintf-0.7.js"></script>
@@ -190,7 +190,7 @@ document.write('<scr'+'ipt async="true" src="http://modulous.huffpost.com/2014/0
     HPConfig.terms_link = "http://www.huffingtonpost.com/terms.html";
     HPConfig.privacy_link = "";
 	HPConfig.huffsite = "www.huffingtonpost.com";
-	HPConfig.current_time = "10 September 2014, 10:15";
+	HPConfig.current_time = "10 September 2014, 12:35";
 HPAds.doubleclick = "huffpost.crime";
 //Synchronise the user login status on multi-domain with huffingtonpost.com
 
@@ -202,8 +202,8 @@ HPAds.doubleclick = "huffpost.crime";
 </script>
 
 <script type="text/javascript">
-	HPConfig.fb_recom_version = 2;
-	HPConfig.most_popular_version = 3;
+	HPConfig.fb_recom_version = 1;
+	HPConfig.most_popular_version = 1;
 </script>
 
 <noscript>
@@ -267,7 +267,7 @@ d.getElementsByTagName('head')[0].appendChild(s);
 <ul class="big_news_ontop">
 <li><a href="/news/bad-news/" class="big_news_item bn_v_crime" onclick="HPTrack.trackPageview('/t/a/topnav_bignews/v2');">News</a></li></ul>
 </div>
-    
+   
 <div class="more_in_bignews">
 <script type='text/javascript'>ads_top_bar_sponsor_links = ["<a href='\/news\/smarter-ideas' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Smarter Ideas<\/a>","<a href='http:\/\/www.huffingtonpost.com\/news\/distilled-perspective\/' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Distilled Perspective<\/a>","<a href='\/news\/life-lessons\/\/' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Life Lessons<\/a>"];ads_top_bar_sponsor_links.sort( function() { return 0.5 - Math.random() } );for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++){document.write(ads_top_bar_sponsor_links[i]);}</script>
 	<a href="http://itunes.apple.com/us/app/the-huffington-post/id306621789?mt=8" class="margin_right_10" data-beacon='{"p":{"lnid":"bgNewsMore"}}' onclick="HPTrack.trackPageview('/t/a/topnav_bignews/v2');">iOS app</a>
@@ -538,10 +538,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/politics/'>Politics</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101522 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123031 -->
       <ul>
         <li id='id_trending_5790896' data-beacon='{"p":{"plid":5790896}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics'>Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/koch-brothers-democracy-a_n_5790896.html?ir=Politics'>Koch Brothers' Real Fear Revealed In Secret Audio: Liberal Money<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">731</span></span></a>
         </li>
         <li id='id_trending_5791770' data-beacon='{"p":{"plid":5791770}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/dick-cheney-iraq_n_5791770.html?ir=Politics'>Cheney Tells GOP It's Time To Fire Up The Ol' Iraq War Machine</a>
@@ -549,11 +549,11 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5793584' data-beacon='{"p":{"plid":5793584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/obama-islamic-state_n_5793584.html?ir=Politics'>Obama Tells Congress He Has Authority To Take Action Against Islamic State</a>
         </li>
-        <li id='id_trending_5791054' data-beacon='{"p":{"plid":5791054}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/lavon-heidemann-resigns_n_5791054.html?ir=Politics'>Nebraska Lt. Governor Resigns Following Domestic Abuse Allegations</a>
+        <li id='id_trending_5793164' data-beacon='{"p":{"plid":5793164}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/andrew-cuomo-primary_n_5793164.html?ir=Politics'>Andrew Cuomo Survives Democratic Primary</a>
         </li>
         <li id='id_trending_5791240' data-beacon='{"p":{"plid":5791240}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics'>World Leaders Condemn Failed Drug War, Call For Global Reform</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/global-drug-policy_n_5791240.html?ir=Politics'>World Leaders Condemn Failed Drug War, Call For Global Reform<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">119</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -591,22 +591,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/business/'>Business</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101005 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123504 -->
       <ul>
         <li id='id_trending_5790392' data-beacon='{"p":{"plid":5790392}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/mcdonalds-august-sales_n_5790392.html?ir=Business'>McDonald's Has Its Worst Month In 10 Years. Again.<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">241</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/mcdonalds-august-sales_n_5790392.html?ir=Business'>McDonald's Has Its Worst Month In 10 Years. Again.<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">252</span></span></a>
         </li>
         <li id='id_trending_5789826' data-beacon='{"p":{"plid":5789826}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/trump-bankruptcy-atlantic-city_n_5789826.html?ir=Business'>BANKRUPT<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">99</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/trump-bankruptcy-atlantic-city_n_5789826.html?ir=Business'>BANKRUPT<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">103</span></span></a>
         </li>
         <li id='id_trending_5790504' data-beacon='{"p":{"plid":5790504}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/digiornos-pizza-whyistayed-tweet_n_5790504.html?ir=Business'>DiGiorno Interrupts Serious Conversation About Domestic Violence To Sell Pizza</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/digiornos-pizza-whyistayed-tweet_n_5790504.html?ir=Business'>DiGiorno Interrupts Serious Conversation About Domestic Violence To Sell Pizza<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">67</span></span></a>
         </li>
         <li id='id_trending_5790334' data-beacon='{"p":{"plid":5790334}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/krugman-minimum-wage_n_5790334.html?ir=Business'>Krugman Debunks Classic Argument Against Raising Wages<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">187</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/krugman-minimum-wage_n_5790334.html?ir=Business'>Krugman Debunks Classic Argument Against Raising Wages<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">199</span></span></a>
         </li>
         <li id='id_trending_5767494' data-beacon='{"p":{"plid":5767494}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/title-washing_n_5767494.html?ir=Business'>1 Million Used Cars Are Hiding A Terrible Secret<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">103</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/title-washing_n_5767494.html?ir=Business'>1 Million Used Cars Are Hiding A Terrible Secret<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">106</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -644,19 +644,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/entertainment/'>Entertainment</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101023 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123006 -->
       <ul>
         <li id='id_trending_5790442' data-beacon='{"p":{"plid":5790442}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">93</span></span></a>
         </li>
-        <li id='id_trending_5785960' data-beacon='{"p":{"plid":5785960}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?ir=Entertainment'>Why Jennifer Garner Was Upset After Ben Affleck's Ice Bucket Challenge<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">45</span></span></a>
-        </li>
-        <li id='id_trending_5786506' data-beacon='{"p":{"plid":5786506}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?ir=Entertainment'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">348</span></span></a>
+        <li id='id_trending_5796672' data-beacon='{"p":{"plid":5796672}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/miranda-lambert-bra-top-fashion-rocks_n_5796672.html?ir=Entertainment'>You're Not Used To Seeing Miranda Lambert Like This</a>
         </li>
         <li id='id_trending_5790800' data-beacon='{"p":{"plid":5790800}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">34</span></span></a>
+        </li>
+        <li id='id_trending_5789982' data-beacon='{"p":{"plid":5789982}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/7-facts-seinfeld-video_n_5789982.html?ir=Entertainment'>7 Facts You Didn't Know About 'Seinfeld,' Yada Yada Yada<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">32</span></span></a>
         </li>
         <li id='id_trending_5786564' data-beacon='{"p":{"plid":5786564}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/favorite-movie-mistakes_n_5786564.html?ir=Entertainment'>11 Ridiculous Mistakes That Will Ruin Your Favorite Movies<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">14</span></span></a>
@@ -696,10 +696,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/tv/'>TV</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101110 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123045 -->
       <ul>
         <li id='id_trending_5778886' data-beacon='{"p":{"plid":5778886}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/07/doctor-who-robot-of-sherw_n_5778886.html?ir=TV'>Weak 'Doctor Who' Episode Is Redeemed By Juicy Season Hints<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">24</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/07/doctor-who-robot-of-sherw_n_5778886.html?ir=TV'>Weak 'Doctor Who' Episode Is Redeemed By Juicy Season Hints<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">25</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -736,19 +736,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/weird-news/'>Weird News</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101126 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123101 -->
       <ul>
         <li id='id_trending_5790078' data-beacon='{"p":{"plid":5790078}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?ir=Weird+News'>Insanely Drunk Woman Tries To Pick Up Child From School: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">247</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?ir=Weird+News'>Insanely Drunk Woman Tries To Pick Up Child From School: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">248</span></span></a>
         </li>
         <li id='id_trending_5791538' data-beacon='{"p":{"plid":5791538}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/karen-dilworth_n_5791538.html?ir=Weird+News'>Woman Suspected Of Masturbating In Public On Motorcycle<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">189</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/karen-dilworth_n_5791538.html?ir=Weird+News'>Woman Suspected Of Masturbating In Public On Motorcycle<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">201</span></span></a>
         </li>
         <li id='id_trending_5787248' data-beacon='{"p":{"plid":5787248}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/albuquerque-grim-reaper_n_5787248.html?ir=Weird+News'>Grim Reaper Haunts Albuquerque Cemetery<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">13</span></span></a>
         </li>
         <li id='id_trending_5786678' data-beacon='{"p":{"plid":5786678}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?ir=Weird+News'>Woman Gives IV To Unconscious Teen Instead Of Calling 911: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">33</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?ir=Weird+News'>Woman Gives IV To Unconscious Teen Instead Of Calling 911: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">53</span></span></a>
         </li>
         <li id='id_trending_5786418' data-beacon='{"p":{"plid":5786418}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/teens-allegedly-break-int_n_5786418.html?ir=Weird+News'>Florida Teens Allegedly Break Into Home To Have Sex<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">16</span></span></a>
@@ -789,22 +789,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/sports/'>Sports</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101104 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123037 -->
       <ul>
         <li id='id_trending_5794038' data-beacon='{"p":{"plid":5794038}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/jerry-jones-sued-sexual-harrassment_n_5794038.html?ir=Sports'>Dallas Cowboys Owner Sued For Sexual Harassment</a>
         </li>
         <li id='id_trending_5783380' data-beacon='{"p":{"plid":5783380}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?ir=Sports'>Horrific Footage Of Ray Rice Punching Fiancée Leaks<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">1k</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?ir=Sports'>Horrific Footage Of Ray Rice Punching Fiancée Leaks<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">1.1k</span></span></a>
         </li>
         <li id='id_trending_5789752' data-beacon='{"p":{"plid":5789752}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video_n_5789752.html?ir=Sports'>Longer Ray Rice Video Features Obscenities, Spitting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">234</span></span></a>
-        </li>
-        <li id='id_trending_5787132' data-beacon='{"p":{"plid":5787132}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/olbermann-nfl-roger-goodell-resign_n_5787132.html?ir=Sports'>Olbermann: NFL Commissioner 'Is An Enabler Of Men Who Beat Women'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">420</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video_n_5789752.html?ir=Sports'>Longer Ray Rice Video Features Obscenities, Spitting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">293</span></span></a>
         </li>
         <li id='id_trending_5792248' data-beacon='{"p":{"plid":5792248}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-wife-interview_n_5792248.html?ir=Sports'>Ray Rice Breaks Silence: 'I Need To Be Strong For My Wife'</a>
+        </li>
+        <li id='id_trending_5793466' data-beacon='{"p":{"plid":5793466}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/nfl-roger-goodell-ray-rice_n_5793466.html?ir=Sports'>NFL Commissioner: 'We Assumed That There Was A Video'</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -842,7 +842,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/technology/'>Tech</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101106 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123041 -->
       <ul>
         <li id='id_trending_5791578' data-beacon='{"p":{"plid":5791578}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?ir=Technology'>Introducing The iPhone 6!</a>
@@ -850,14 +850,14 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5785762' data-beacon='{"p":{"plid":5785762}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/apple-iwatch_n_5785762.html?ir=Technology'>Apple Unveils New Apple Watch</a>
         </li>
+        <li id='id_trending_5794416' data-beacon='{"p":{"plid":5794416}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/iphone-6-size_n_5794416.html?ir=Technology'>Why You'll Buy The New iPhone</a>
+        </li>
         <li id='id_trending_5790528' data-beacon='{"p":{"plid":5790528}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/end-net-neutrality_n_5790528.html?ir=Technology'>'Clusterfuck Worse Than Comcast Customer Service'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">48</span></span></a>
         </li>
         <li id='id_trending_5792640' data-beacon='{"p":{"plid":5792640}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/apple-watch-sexting_n_5792640.html?ir=Technology'>Apple Just Took Sexting To A Whole New Place</a>
-        </li>
-        <li id='id_trending_5780348' data-beacon='{"p":{"plid":5780348}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/apple-event-tuesday_n_5780348.html?ir=Technology'>What You Should Expect From Apple's Big Event<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">109</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -895,22 +895,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/science/'>Science</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101100 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123034 -->
       <ul>
         <li id='id_trending_5791252' data-beacon='{"p":{"plid":5791252}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/3000-year-old-sword-discovered_n_5791252.html?ir=Science'>11-Year-Old Boy Makes Amazing Discovery While Washing His Hands</a>
-        </li>
-        <li id='id_trending_5772368' data-beacon='{"p":{"plid":5772368}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?ir=Science'>Dogs' Surprising Preference Revealed In New Study<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">235</span></span></a>
-        </li>
-        <li id='id_trending_5698082' data-beacon='{"p":{"plid":5698082}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/dinosaur-myths-video_n_5698082.html?ir=Science'>What You Know About Dinosaurs Is Probably Wrong<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">39</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/3000-year-old-sword-discovered_n_5791252.html?ir=Science'>11-Year-Old Boy Makes Amazing Discovery While Washing His Hands<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">54</span></span></a>
         </li>
         <li id='id_trending_5786216' data-beacon='{"p":{"plid":5786216}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/titanosaur-africa-new-dinosaur-species_n_5786216.html?ir=Science'>Huge New Dinosaur Found Embedded In Cliff Wall</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/titanosaur-africa-new-dinosaur-species_n_5786216.html?ir=Science'>Huge New Dinosaur Found Embedded In Cliff Wall<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">13</span></span></a>
+        </li>
+        <li id='id_trending_5698082' data-beacon='{"p":{"plid":5698082}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/dinosaur-myths-video_n_5698082.html?ir=Science'>What You Know About Dinosaurs Is Probably Wrong<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">43</span></span></a>
         </li>
         <li id='id_trending_5785418' data-beacon='{"p":{"plid":5785418}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/chemistry-life-hacks-video_n_5785418.html?ir=Science'>These 'Chemistry Life Hacks' Are Serious Game Changers</a>
+        </li>
+        <li id='id_trending_5795154' data-beacon='{"p":{"plid":5795154}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/lost-ship-franklin-expedition_n_5795154.html?ir=Science'>Lost Ship From Doomed Arctic Expedition Discovered</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -956,33 +956,33 @@ jQuery('#fb_like_vertical').mouseenter(function() {
       <div class="trending tn-hp-live" data-beacon='{"p":{"lnid":"trending"}}'>
        <ul>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbb9302a7605e58000109">
+         <a href="http://live.huffingtonpost.com/r/segment/540a17b978c90a0ee8000631">
           <span class="schedule-status now">Now</span>
-          <span class="segment-title">Top Stories For Wednesday, September 10</span>
+          <span class="segment-title">Radio Host Mark Goodman LIVE</span>
          </a>
         </li>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbbb02a760ff36000150">
+         <a href="http://live.huffingtonpost.com/r/segment/5405eb8402a7604fe70006ba">
           <span class="schedule-status ">Next</span>
-          <span class="segment-title">Ray Rice & The Cycle Of Abuse</span>
+          <span class="segment-title">'Top Chef' Judge Gail Simmons LIVE</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/53ff63d678c90a73d30001ab">
+         <a href="http://live.huffingtonpost.com/r/segment/53dc100078c90ae0c2000531">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Justin Long LIVE</span>
+          <span class="segment-title">9/11 Made Me Redefine My Life</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540f4f4e02a76098810001d8">
+         <a href="http://live.huffingtonpost.com/r/segment/540f342202a7602a660000ff">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Texas State Senator Wendy Davis LIVE</span>
+          <span class="segment-title">Free Speech Zone with @AlyonaMink</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbfa02a7604bdd000100">
+         <a href="http://live.huffingtonpost.com/r/segment/53f600f8fe344419f100037b">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">#WorldBrief With @Caromt</span>
+          <span class="segment-title">ESPN's Mike Golic LIVE</span>
          </a>
         </li>
         <li class="vertical_info">
@@ -1191,69 +1191,68 @@ jQuery('#fb_like_vertical').mouseenter(function() {
     
                         
 
-  
     
-	                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-            
+	                                                
+                                                
+                                                
+                                                
+                                                
+        
         
         <div class="grid grid_v_fp_left_bl">
 	<div id="main-dl">
 		<div class="dl-container">
-							<div id="entry_5796618" class="dl-slide" style="display: block; width:600px" onmouseover="TrackingData.entry_5796618={id:5796618,blog_id:2,rank:1,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5796618,"mpid":1}}'>
+							<div id="entry_5797902" class="dl-slide" style="display: block; width:600px" onmouseover="TrackingData.entry_5797902={id:5797902,blog_id:2,rank:1,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5797902,"mpid":1}}'>
+					<a href="http://www.huffingtonpost.com/2014/09/10/dad-murders-5-kids_n_5797902.html?utm_hp_ref=crime" class="block top-title-celebrity center">Dad To Be Charged With Murdering 5 Kids</a>
+					<a href="http://www.huffingtonpost.com/2014/09/10/dad-murders-5-kids_n_5797902.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2044696/thumbs/r-TIMOTHY-RAY-JONES-JR-600x275.jpg" alt="Dad To Be Charged With Murdering 5 Kids" class="quickread_link"></a>
+														</div>
+							<div id="entry_5796950" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5796950={id:5796950,blog_id:2,rank:2,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5796950,"mpid":2}}'>
+					<a href="http://www.huffingtonpost.com/2014/09/10/martin-bass-baby-car-casino_n_5796950.html?utm_hp_ref=crime" class="block top-title-celebrity center">Man Arrested After Baby Found In Running Car Outside Of Casino</a>
+					<a href="http://www.huffingtonpost.com/2014/09/10/martin-bass-baby-car-casino_n_5796950.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2043722/thumbs/r-SLOT-MACHINE-600x275.jpg" alt="Man Arrested After Baby Found In Running Car Outside Of Casino" class="quickread_link"></a>
+														</div>
+							<div id="entry_5796618" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5796618={id:5796618,blog_id:2,rank:3,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5796618,"mpid":3}}'>
 					<a href="http://www.huffingtonpost.com/2014/09/10/kendra-tooley-not-demon-woman-cage_n_5796618.html?utm_hp_ref=crime" class="block top-title-celebrity center">Daughter Defends Mom Accused Of Keeping Woman In Cage</a>
 					<a href="http://www.huffingtonpost.com/2014/09/10/kendra-tooley-not-demon-woman-cage_n_5796618.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2043514/thumbs/r-KENDRA-TOOHEY-600x275.jpg" alt="Daughter Defends Mom Accused Of Keeping Woman In Cage" class="quickread_link"></a>
 														</div>
-							<div id="entry_5796398" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5796398={id:5796398,blog_id:2,rank:2,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5796398,"mpid":2}}'>
+							<div id="entry_5796398" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5796398={id:5796398,blog_id:2,rank:4,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5796398,"mpid":4}}'>
 					<a href="http://www.huffingtonpost.com/2014/09/10/adam-matos-florida_n_5796398.html?utm_hp_ref=crime" class="block top-title-celebrity center">Suspect In Quadruple Killing Says He 'Didn't Do It'</a>
 					<a href="http://www.huffingtonpost.com/2014/09/10/adam-matos-florida_n_5796398.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2043252/thumbs/r-ADAM-MATOS-600x275.jpg" alt="Suspect In Quadruple Killing Says He 'Didn't Do It'" class="quickread_link"></a>
 														</div>
-							<div id="entry_5795272" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5795272={id:5795272,blog_id:2,rank:3,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5795272,"mpid":3}}'>
+							<div id="entry_5795272" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5795272={id:5795272,blog_id:2,rank:5,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5795272,"mpid":5}}'>
 					<a href="http://www.huffingtonpost.com/2014/09/10/earl-ringo-jr-executed-in-missouri_n_5795272.html?utm_hp_ref=crime" class="block top-title-celebrity center">Missouri Executes Inmate For Killing 2 In Restaurant Robbery</a>
 					<a href="http://www.huffingtonpost.com/2014/09/10/earl-ringo-jr-executed-in-missouri_n_5795272.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2042458/thumbs/r-EARL-RINGO-600x275.jpg" alt="Missouri Executes Inmate For Killing 2 In Restaurant Robbery" class="quickread_link"></a>
-														</div>
-							<div id="entry_5794338" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5794338={id:5794338,blog_id:2,rank:4,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5794338,"mpid":4}}'>
-					<a href="http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime" class="block top-title-celebrity center">Mental Illness To Blame For Death Of Mom And 2 Kids In Hot Car</a>
-					<a href="http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2042090/thumbs/r-ALLISON-PLUCK-600x275.jpg" alt="Mental Illness To Blame For Death Of Mom And 2 Kids In Hot Car" class="quickread_link"></a>
-														</div>
-							<div id="entry_5792650" class="dl-slide" style="display: none; width:600px" onmouseover="TrackingData.entry_5792650={id:5792650,blog_id:2,rank:5,zone:2,vertical:44,ab_headline:'a'};" data-beacon='{"p":{"mnid":"news","plid":5792650,"mpid":5}}'>
-					<a href="http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime" class="block top-title-celebrity center">Cops Have Suspects In Horrific 'Prank' On Autistic Boy</a>
-					<a href="http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime" class="dl-large-img"><img width="600" src="http://i.huffpost.com/gen/2040970/thumbs/r-HORRIBLE-PRANK-600x275.jpg" alt="Cops Have Suspects In Horrific 'Prank' On Autistic Boy" class="quickread_link"></a>
 														</div>
 			
 			<ul class="dl-thumbnails">
 									<li data-thumb-index="0" class="thumbnail first highlight ">
 						<b class="highlight-arrow icon_celebrity" style="display: block;"></b>
-						<a id="href_5796618" href="http://www.huffingtonpost.com/2014/09/10/kendra-tooley-not-demon-woman-cage_n_5796618.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5796618={id:5796618,blog_id:2,rank:1,zone:2,vertical:44,ab_headline:'a'};">
-							<img width="112" height="82" src="http://i.huffpost.com/gen/2043514/thumbs/s-KENDRA-TOOHEY-small.jpg" alt="Daughter Defends Mom Accused Of Keeping Woman In Cage">
-							Daughter Defends Mom Accused Of Keeping Woman In Cage													</a>
+						<a id="href_5797902" href="http://www.huffingtonpost.com/2014/09/10/dad-murders-5-kids_n_5797902.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5797902={id:5797902,blog_id:2,rank:1,zone:2,vertical:44,ab_headline:'a'};">
+							<img width="112" height="82" src="http://i.huffpost.com/gen/2044696/thumbs/s-TIMOTHY-RAY-JONES-JR-small.jpg" alt="Dad To Be Charged With Murdering 5 Kids">
+							Dad To Be Charged With Murdering 5 Kids													</a>
 					</li>
 									<li data-thumb-index="1" class="thumbnail  ">
 						<b class="highlight-arrow icon_celebrity" style="display: none;"></b>
-						<a id="href_5796398" href="http://www.huffingtonpost.com/2014/09/10/adam-matos-florida_n_5796398.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5796398={id:5796398,blog_id:2,rank:2,zone:2,vertical:44,ab_headline:'a'};">
-							<img width="112" height="82" src="http://i.huffpost.com/gen/2043252/thumbs/s-ADAM-MATOS-small.jpg" alt="Suspect In Quadruple Killing Says He 'Didn't Do It'">
-							Suspect In Quadruple Killing Says He 'Didn't Do It'													</a>
+						<a id="href_5796950" href="http://www.huffingtonpost.com/2014/09/10/martin-bass-baby-car-casino_n_5796950.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5796950={id:5796950,blog_id:2,rank:2,zone:2,vertical:44,ab_headline:'a'};">
+							<img width="112" height="82" src="http://i.huffpost.com/gen/2043722/thumbs/s-SLOT-MACHINE-small.jpg" alt="Man Arrested After Baby Found In Running Car Outside Of Casino">
+							Man Arrested After Baby Found In Running Car Outside Of Casino													</a>
 					</li>
 									<li data-thumb-index="2" class="thumbnail  ">
 						<b class="highlight-arrow icon_celebrity" style="display: none;"></b>
-						<a id="href_5795272" href="http://www.huffingtonpost.com/2014/09/10/earl-ringo-jr-executed-in-missouri_n_5795272.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5795272={id:5795272,blog_id:2,rank:3,zone:2,vertical:44,ab_headline:'a'};">
-							<img width="112" height="82" src="http://i.huffpost.com/gen/2042458/thumbs/s-EARL-RINGO-small.jpg" alt="Missouri Executes Inmate For Killing 2 In Restaurant Robbery">
-							Missouri Executes Inmate For Killing 2 In Restaurant Robbery													</a>
+						<a id="href_5796618" href="http://www.huffingtonpost.com/2014/09/10/kendra-tooley-not-demon-woman-cage_n_5796618.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5796618={id:5796618,blog_id:2,rank:3,zone:2,vertical:44,ab_headline:'a'};">
+							<img width="112" height="82" src="http://i.huffpost.com/gen/2043514/thumbs/s-KENDRA-TOOHEY-small.jpg" alt="Daughter Defends Mom Accused Of Keeping Woman In Cage">
+							Daughter Defends Mom Accused Of Keeping Woman In Cage													</a>
 					</li>
 									<li data-thumb-index="3" class="thumbnail  ">
 						<b class="highlight-arrow icon_celebrity" style="display: none;"></b>
-						<a id="href_5794338" href="http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5794338={id:5794338,blog_id:2,rank:4,zone:2,vertical:44,ab_headline:'a'};">
-							<img width="112" height="82" src="http://i.huffpost.com/gen/2042090/thumbs/s-ALLISON-PLUCK-small.jpg" alt="Mental Illness To Blame For Death Of Mom And 2 Kids In Hot Car">
-							Mental Illness To Blame For Death Of Mom And 2 Kids In Hot Car													</a>
+						<a id="href_5796398" href="http://www.huffingtonpost.com/2014/09/10/adam-matos-florida_n_5796398.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5796398={id:5796398,blog_id:2,rank:4,zone:2,vertical:44,ab_headline:'a'};">
+							<img width="112" height="82" src="http://i.huffpost.com/gen/2043252/thumbs/s-ADAM-MATOS-small.jpg" alt="Suspect In Quadruple Killing Says He 'Didn't Do It'">
+							Suspect In Quadruple Killing Says He 'Didn't Do It'													</a>
 					</li>
 									<li data-thumb-index="4" class="thumbnail  ">
 						<b class="highlight-arrow icon_celebrity" style="display: none;"></b>
-						<a id="href_5792650" href="http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5792650={id:5792650,blog_id:2,rank:5,zone:2,vertical:44,ab_headline:'a'};">
-							<img width="112" height="82" src="http://i.huffpost.com/gen/2040970/thumbs/s-HORRIBLE-PRANK-small.jpg" alt="Cops Have Suspects In Horrific 'Prank' On Autistic Boy">
-							Cops Have Suspects In Horrific 'Prank' On Autistic Boy													</a>
+						<a id="href_5795272" href="http://www.huffingtonpost.com/2014/09/10/earl-ringo-jr-executed-in-missouri_n_5795272.html?utm_hp_ref=crime" onmouseover="TrackingData.entry_5795272={id:5795272,blog_id:2,rank:5,zone:2,vertical:44,ab_headline:'a'};">
+							<img width="112" height="82" src="http://i.huffpost.com/gen/2042458/thumbs/s-EARL-RINGO-small.jpg" alt="Missouri Executes Inmate For Killing 2 In Restaurant Robbery">
+							Missouri Executes Inmate For Killing 2 In Restaurant Robbery													</a>
 					</li>
 							</ul>
 
@@ -1395,7 +1394,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
         
     
-    
+   
 
 
     
@@ -1553,29 +1552,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    </div>
 	
 </div>
-<div class="entry " id="blog_5779742" data-beacon='{"p":{"plid":5779742,"mpid":5,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/jessica-s-henry/death-row-roulette-innoce_b_5779742.html?utm_hp_ref=crime&ir=Crime"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Death Row Roulette: Innocence Revealed</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-			
-			<p>As long as we have the death penalty, we run the risk that the State will take the life of the wrong person. Little offends democracy more than the State killing -- or even almost killing -- an innocent person.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/jessica-s-henry/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/jessica-s-henry/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/jessica-s-henry/">Jessica S. Henry</a></p>
-	   <p class="author_teaser">Chair, Department of Justice Studies, Montclair State University</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5758574" data-beacon='{"p":{"plid":5758574,"mpid":6,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5758574" data-beacon='{"p":{"plid":5758574,"mpid":5,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1592,6 +1569,28 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 	<div class="blogger_credit">
 	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/terry-savage/">Terry Savage</a></p>
 	   <p class="author_teaser">Nationally recognized expert on personal finance, the economy and markets</p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5779742" data-beacon='{"p":{"plid":5779742,"mpid":6,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/jessica-s-henry/death-row-roulette-innoce_b_5779742.html?utm_hp_ref=crime&ir=Crime"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Death Row Roulette: Innocence Revealed</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>As long as we have the death penalty, we run the risk that the State will take the life of the wrong person. Little offends democracy more than the State killing -- or even almost killing -- an innocent person.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/jessica-s-henry/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/jessica-s-henry/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/jessica-s-henry/">Jessica S. Henry</a></p>
+	   <p class="author_teaser">Chair, Department of Justice Studies, Montclair State University</p>
 	</div>
 	
    </div>
@@ -1663,36 +1662,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    </div>
 	
 </div>
-<div class="entry " id="blog_5709851" data-beacon='{"p":{"plid":5709851,"mpid":10,"lnid":"autopilot"}}'>
-	<div class="col entry_left">
-	</div>
-	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/brian-levin-jd/legal-hurdles-may-thwart_b_5709851.html?utm_hp_ref=crime&ir=Crime"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Legal Hurdles May Thwart Prosecution in Michael Brown Killing</a></h3>
-		<div class="green_entry_bar"></div>
-	</div>
-	<div class="clear"></div>
-				
-			<div class="image_wrapper relative" style="width: 300px;float:left;">
-				<a href="http://www.huffingtonpost.com/brian-levin-jd/legal-hurdles-may-thwart_b_5709851.html?utm_hp_ref=crime&ir=Crime" >
-					<img src="http://i.huffpost.com/gen/1986641/thumbs/n-DARREN-WILSON-medium.jpg" alt="DARREN WILSON" />
-				</a>
-				<span class="absolute image-credit arial_11">ASSOCIATED PRESS</span>
-			</div> 
-		
-			<p>With two parallel investigations -- one state, one federal -- proceeding into the tragic August 9 killing of 18-year-old Michael Brown by Ferguson, Missouri, police officer Darren Wilson, a key issue in both investigations will be whether the officer had a reasonable fear that he was facing serious bodily injury or death.</p>
-			<div class="author_bottom_desc">
-      <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/brian-levin-jd/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/brian-levin-jd/headshot.jpg);"></span></a>
-	</div>
-	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/brian-levin-jd/">Brian Levin, J.D.</a></p>
-	   <p class="author_teaser">Director, Center for the Study of Hate and Extremism, California State University</p>
-	</div>
-	
-   </div>
-	
-</div>
-<div class="entry " id="blog_5756446" data-beacon='{"p":{"plid":5756446,"mpid":11,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5756446" data-beacon='{"p":{"plid":5756446,"mpid":10,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1721,29 +1691,36 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    </div>
 	
 </div>
-<div class="entry " id="blog_5765084" data-beacon='{"p":{"plid":5765084,"mpid":12,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5709851" data-beacon='{"p":{"plid":5709851,"mpid":11,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
-		<h3><a href="http://www.huffingtonpost.com/robert-siciliano/childs-honesty-nabs-robbers_b_5765084.html?utm_hp_ref=crime&ir=Crime"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Child's Honesty Nabs Robbers</a></h3>
+		<h3><a href="http://www.huffingtonpost.com/brian-levin-jd/legal-hurdles-may-thwart_b_5709851.html?utm_hp_ref=crime&ir=Crime"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Legal Hurdles May Thwart Prosecution in Michael Brown Killing</a></h3>
 		<div class="green_entry_bar"></div>
 	</div>
 	<div class="clear"></div>
-			
-			<p>Don't worry about cost. The system will add value to your house. Furthermore, your homeowner's insurance might give a discount if you have a solid security system.</p>
+				
+			<div class="image_wrapper relative" style="width: 300px;float:left;">
+				<a href="http://www.huffingtonpost.com/brian-levin-jd/legal-hurdles-may-thwart_b_5709851.html?utm_hp_ref=crime&ir=Crime" >
+					<img src="http://i.huffpost.com/gen/1986641/thumbs/n-DARREN-WILSON-medium.jpg" alt="DARREN WILSON" />
+				</a>
+				<span class="absolute image-credit arial_11">ASSOCIATED PRESS</span>
+			</div> 
+		
+			<p>With two parallel investigations -- one state, one federal -- proceeding into the tragic August 9 killing of 18-year-old Michael Brown by Ferguson, Missouri, police officer Darren Wilson, a key issue in both investigations will be whether the officer had a reasonable fear that he was facing serious bodily injury or death.</p>
 			<div class="author_bottom_desc">
       <div class="blogger_img">
-		<a href="http://www.huffingtonpost.com/robert-siciliano/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/robert-siciliano/headshot.jpg);"></span></a>
+		<a href="http://www.huffingtonpost.com/brian-levin-jd/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/brian-levin-jd/headshot.jpg);"></span></a>
 	</div>
 	<div class="blogger_credit">
-	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/robert-siciliano/">Robert Siciliano</a></p>
-	   <p class="author_teaser">Personal Security and Identity Theft Expert</p>
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/brian-levin-jd/">Brian Levin, J.D.</a></p>
+	   <p class="author_teaser">Director, Center for the Study of Hate and Extremism, California State University</p>
 	</div>
 	
    </div>
 	
 </div>
-<div class="entry " id="blog_5728616" data-beacon='{"p":{"plid":5728616,"mpid":13,"lnid":"autopilot"}}'>
+<div class="entry " id="blog_5728616" data-beacon='{"p":{"plid":5728616,"mpid":12,"lnid":"autopilot"}}'>
 	<div class="col entry_left">
 	</div>
 	<div class="col entry_right">
@@ -1767,6 +1744,28 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 	<div class="blogger_credit">
 	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/stephen-downing/">Stephen Downing</a></p>
 	   <p class="author_teaser">Former LAPD Deputy Chief </p>
+	</div>
+	
+   </div>
+	
+</div>
+<div class="entry " id="blog_5765084" data-beacon='{"p":{"plid":5765084,"mpid":13,"lnid":"autopilot"}}'>
+	<div class="col entry_left">
+	</div>
+	<div class="col entry_right">
+		<h3><a href="http://www.huffingtonpost.com/robert-siciliano/childs-honesty-nabs-robbers_b_5765084.html?utm_hp_ref=crime&ir=Crime"  style="line-height: 18px !important;font-weight: bold;font-size: 16px;font-family: arial;color: #1A1A1A;">Child's Honesty Nabs Robbers</a></h3>
+		<div class="green_entry_bar"></div>
+	</div>
+	<div class="clear"></div>
+			
+			<p>Don't worry about cost. The system will add value to your house. Furthermore, your homeowner's insurance might give a discount if you have a solid security system.</p>
+			<div class="author_bottom_desc">
+      <div class="blogger_img">
+		<a href="http://www.huffingtonpost.com/robert-siciliano/"><span id="blogger-headshot" style="background-image: url(http://s.huffpost.com/contributors/robert-siciliano/headshot.jpg);"></span></a>
+	</div>
+	<div class="blogger_credit">
+	   <p class="byline_timestamp blogger_name"><a href="http://www.huffingtonpost.com/robert-siciliano/">Robert Siciliano</a></p>
+	   <p class="author_teaser">Personal Security and Identity Theft Expert</p>
 	</div>
 	
    </div>
@@ -1985,7 +1984,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
             <div id="center_entries_container" data-beacon='{"p":{"mlid":"col2"}}'>
 <!-- BEGIN center_entries_container CONTENT -->
 
-                                                                                                                                    
+                                                                                            
 
 
             <!-- Entry Blog 2 -->
@@ -1993,7 +1992,107 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5794412" onmouseover="TrackingData.entry_5794412={id:5794412,blog_id:2,rank:1,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794412,"mpid":1}}'>
+<div id="entry_5794338" onmouseover="TrackingData.entry_5794338={id:5794338,blog_id:2,rank:1,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794338,"mpid":1}}'>
+
+
+            <h4><a href="http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime">Mental Illness To Blame For Death Of Mom And 2 Kids In Hot Car</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5794338" longdesc="http://i.huffpost.com/gen/2042090/thumbs/n-ALLISON-PLUCK-large300.jpg" alt="Allison Pluck" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">WHAG</div></div>
+    
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5794338">http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/09/allison-pluck-mental-illness_n_5794338.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5794338"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/bad-news/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>News</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5792650" onmouseover="TrackingData.entry_5792650={id:5792650,blog_id:2,rank:2,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792650,"mpid":2}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime">Cops Have Suspects In Horrific 'Prank' On Autistic Boy</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5792650" longdesc="http://i.huffpost.com/gen/2040970/thumbs/n-HORRIBLE-PRANK-large300.jpg" alt="Horrible Prank" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">WJW</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5792650">http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/09/ice-bucket-prank-autism-ohio_n_5792650.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792650">(63)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5794412" onmouseover="TrackingData.entry_5794412={id:5794412,blog_id:2,rank:3,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794412,"mpid":3}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/august-kramer-missing-college-student-_n_5794412.html?utm_hp_ref=crime">Missing College Student Found After Disappearing On Fishing Trip</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/august-kramer-missing-college-student-_n_5794412.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5794412" longdesc="http://i.huffpost.com/gen/2042152/thumbs/n-AUGUST-KRAMER-large300.jpg" alt="August Kramer" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook</div></div>
@@ -2040,7 +2139,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5793708" onmouseover="TrackingData.entry_5793708={id:5793708,blog_id:2,rank:2,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793708,"mpid":2}}'>
+<div id="entry_5793708" onmouseover="TrackingData.entry_5793708={id:5793708,blog_id:2,rank:4,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793708,"mpid":4}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/william-melchert-dinkel_n_5793708.html?utm_hp_ref=crime">Ex-Nurse Convicted Of Assisting Suicide</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/william-melchert-dinkel_n_5793708.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5793708" longdesc="http://i.huffpost.com/gen/2041756/thumbs/n-WILLIAM-MELCHERTDINKEL-large300.jpg" alt="William Melchertdinkel" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2083,7 +2182,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5793136" onmouseover="TrackingData.entry_5793136={id:5793136,blog_id:2,rank:3,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793136,"mpid":3}}'>
+<div id="entry_5793136" onmouseover="TrackingData.entry_5793136={id:5793136,blog_id:2,rank:5,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793136,"mpid":5}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/james-laurita-death-hope-elephants-crushed_n_5793136.html?utm_hp_ref=crime">Co-Founder Of Elephant Rescue Crushed To Death By Elephant</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/james-laurita-death-hope-elephants-crushed_n_5793136.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5793136" longdesc="http://i.huffpost.com/gen/2041338/thumbs/n-JIM-large300.jpg" alt="Jim" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook: Hope Elephants</div></div>
@@ -2097,7 +2196,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/james-laurita-death-hope-elephants-crushed_n_5793136.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5793136">(17)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/james-laurita-death-hope-elephants-crushed_n_5793136.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5793136"></span></a>
 	</li>
     
   
@@ -2130,7 +2229,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5793916" onmouseover="TrackingData.entry_5793916={id:5793916,blog_id:2,rank:4,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793916,"mpid":4}}'>
+<div id="entry_5793916" onmouseover="TrackingData.entry_5793916={id:5793916,blog_id:2,rank:6,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793916,"mpid":6}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/missing-south-carolina-children_n_5793916.html?utm_hp_ref=crime">Bodies Of 5 Missing Kids Found In Rural Alabama</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/missing-south-carolina-children_n_5793916.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5793916" longdesc="http://i.huffpost.com/gen/2041934/thumbs/n-POLICE-TAPE-large300.jpg" alt="Police Tape" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">flik47 via Getty Images</div></div>
@@ -2147,7 +2246,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/missing-south-carolina-children_n_5793916.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5793916">(38)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/missing-south-carolina-children_n_5793916.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5793916">(40)</span></a>
 	</li>
     
   
@@ -2180,7 +2279,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5792538" onmouseover="TrackingData.entry_5792538={id:5792538,blog_id:2,rank:5,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792538,"mpid":5}}'>
+<div id="entry_5792538" onmouseover="TrackingData.entry_5792538={id:5792538,blog_id:2,rank:7,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792538,"mpid":7}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/women-tired-of-white-people-moving-in-robbery_n_5792538.html?utm_hp_ref=crime">Women Tired Of 'White People' Force Tenants Out At Gunpoint: Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/women-tired-of-white-people-moving-in-robbery_n_5792538.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5792538" longdesc="http://i.huffpost.com/gen/2040116/thumbs/n-ROBBERY-large300.jpg" alt="Robbery" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Google Maps</div></div>
@@ -2194,7 +2293,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/women-tired-of-white-people-moving-in-robbery_n_5792538.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792538">(16)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/women-tired-of-white-people-moving-in-robbery_n_5792538.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5792538"></span></a>
 	</li>
     
   
@@ -2220,7 +2319,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5794250" onmouseover="TrackingData.entry_5794250={id:5794250,blog_id:2,rank:6,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794250,"mpid":6}}'>
+<div id="entry_5794250" onmouseover="TrackingData.entry_5794250={id:5794250,blog_id:2,rank:8,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794250,"mpid":8}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/florida-sheriff-morris-young-prisoner-furloughs_n_5794250.html?utm_hp_ref=crime">Sheriff In Trouble For Allegedly Releasing Violent Felons For Short Visits</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/florida-sheriff-morris-young-prisoner-furloughs_n_5794250.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5794250" longdesc="http://i.huffpost.com/gen/2042042/thumbs/n-MORRIS-YOUNG-large300.jpg" alt="Morris Young" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Florida Sheriff's Association </div></div>
@@ -2263,7 +2362,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5789688" onmouseover="TrackingData.entry_5789688={id:5789688,blog_id:2,rank:7,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789688,"mpid":7}}'>
+<div id="entry_5789688" onmouseover="TrackingData.entry_5789688={id:5789688,blog_id:2,rank:9,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789688,"mpid":9}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/holly-bobo-remains-found-skull_n_5789688.html?utm_hp_ref=crime">Missing Student Holly Bobo's Skull Found In Woods</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/holly-bobo-remains-found-skull_n_5789688.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5789688" longdesc="http://i.huffpost.com/gen/2038184/thumbs/n-HOLLY-BOBO-large300.jpg" alt="Holly Bobo" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook</div></div>
@@ -2280,7 +2379,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/holly-bobo-remains-found-skull_n_5789688.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5789688">(46)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/holly-bobo-remains-found-skull_n_5789688.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5789688">(51)</span></a>
 	</li>
     
   
@@ -2313,7 +2412,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5794088" onmouseover="TrackingData.entry_5794088={id:5794088,blog_id:2,rank:8,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794088,"mpid":8}}'>
+<div id="entry_5794088" onmouseover="TrackingData.entry_5794088={id:5794088,blog_id:2,rank:10,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5794088,"mpid":10}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/earnie-hooks_n_5794088.html?utm_hp_ref=crime&ir=Crime">Man Suspected Of Stealing Ferrari -- Twice</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/earnie-hooks_n_5794088.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5794088" longdesc="http://i.huffpost.com/gen/2041992/thumbs/n-EARNIE-HOOKS-large300.jpg" alt="Earnie Hooks" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2363,7 +2462,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5790658" onmouseover="TrackingData.entry_5790658={id:5790658,blog_id:2,rank:9,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790658,"mpid":9}}'>
+<div id="entry_5790658" onmouseover="TrackingData.entry_5790658={id:5790658,blog_id:2,rank:11,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790658,"mpid":11}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/ivette-gutierrez-missing_n_5790658.html?utm_hp_ref=crime">Help Us Find Ivette Gutierrez</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/ivette-gutierrez-missing_n_5790658.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5790658" longdesc="http://i.huffpost.com/gen/2038910/thumbs/n-IVETTE-large300.jpg" alt="Ivette" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Hillsboro Police</div></div>
@@ -2410,7 +2509,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5790034" onmouseover="TrackingData.entry_5790034={id:5790034,blog_id:2,rank:10,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790034,"mpid":10}}'>
+<div id="entry_5790034" onmouseover="TrackingData.entry_5790034={id:5790034,blog_id:2,rank:12,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790034,"mpid":12}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/sons-guns-william-hayden-raped-girl_n_5790034.html?utm_hp_ref=crime">'Sons Of Guns' Star Charged With Rape Of Another 12-Year-Old Girl</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/sons-guns-william-hayden-raped-girl_n_5790034.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5790034" longdesc="http://i.huffpost.com/gen/2038550/thumbs/n-WILLIAM-HAYDEN-large300.jpg" alt="William Hayden" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">EBRSO</div></div>
@@ -2424,7 +2523,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/sons-guns-william-hayden-raped-girl_n_5790034.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790034">(65)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/sons-guns-william-hayden-raped-girl_n_5790034.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790034">(70)</span></a>
 	</li>
     
   
@@ -2450,7 +2549,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5787196" onmouseover="TrackingData.entry_5787196={id:5787196,blog_id:2,rank:11,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787196,"mpid":11}}'>
+<div id="entry_5787196" onmouseover="TrackingData.entry_5787196={id:5787196,blog_id:2,rank:13,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787196,"mpid":13}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/shannell-moku-death_n_5787196.html?utm_hp_ref=crime">Hawaii Teen Allegedly Beats Mother To Death</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/shannell-moku-death_n_5787196.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5787196" longdesc="http://i.huffpost.com/gen/2036834/thumbs/n-SHANNELL-MOKU-large300.jpg" alt="Shannell Moku" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Hawaii News Now</div></div>
@@ -2490,7 +2589,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5789730" onmouseover="TrackingData.entry_5789730={id:5789730,blog_id:2,rank:12,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789730,"mpid":12}}'>
+<div id="entry_5789730" onmouseover="TrackingData.entry_5789730={id:5789730,blog_id:2,rank:14,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789730,"mpid":14}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/florida-deputy-son-fires-gun_n_5789730.html?utm_hp_ref=crime">Florida Deputy's Toddler Son Accidentally Fires Dad's Gun</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/florida-deputy-son-fires-gun_n_5789730.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5789730" longdesc="http://i.huffpost.com/gen/2038160/thumbs/n-KELTEC-large300.jpg" alt="Keltec" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11"><a target="_blank" href="https://www.flickr.com/photos/67122552@N00/439618118">robertnelson | Flickr</a></div></div>
@@ -2533,7 +2632,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5790964" onmouseover="TrackingData.entry_5790964={id:5790964,blog_id:2,rank:13,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790964,"mpid":13}}'>
+<div id="entry_5790964" onmouseover="TrackingData.entry_5790964={id:5790964,blog_id:2,rank:15,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790964,"mpid":15}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/mom-strangles-kids-not-guilty_n_5790964.html?utm_hp_ref=crime">Mom Who Strangled Her 2 Special Needs Kids Found Not Guilty By Reason Of Insanity</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/mom-strangles-kids-not-guilty_n_5790964.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5790964" longdesc="http://i.huffpost.com/gen/2039148/thumbs/n-SAIQA-AKHTER-large300.jpg" alt="Saiqa Akhter" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2573,7 +2672,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5788412" onmouseover="TrackingData.entry_5788412={id:5788412,blog_id:2,rank:14,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788412,"mpid":14}}'>
+<div id="entry_5788412" onmouseover="TrackingData.entry_5788412={id:5788412,blog_id:2,rank:16,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788412,"mpid":16}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/police-killings-since-michael-brown_n_5788412.html?utm_hp_ref=crime">13 More 'Michael Brown' Police Killings We've Learned About In The Month Since His Death</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/police-killings-since-michael-brown_n_5788412.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5788412" longdesc="http://i.huffpost.com/gen/2037310/thumbs/n-MICHAEL-BROWN-PROTEST-large300.jpg" alt="Michael Brown Protest" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2587,7 +2686,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/police-killings-since-michael-brown_n_5788412.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5788412">(87)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/police-killings-since-michael-brown_n_5788412.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5788412">(89)</span></a>
 	</li>
     
   
@@ -2620,7 +2719,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5791112" onmouseover="TrackingData.entry_5791112={id:5791112,blog_id:2,rank:15,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791112,"mpid":15}}'>
+<div id="entry_5791112" onmouseover="TrackingData.entry_5791112={id:5791112,blog_id:2,rank:17,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791112,"mpid":17}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/ferguson-police-marines_n_5791112.html?utm_hp_ref=crime&ir=Crime">Former Marine Catalogs Weapons Used By Police In Ferguson</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/ferguson-police-marines_n_5791112.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5791112" longdesc="http://i.huffpost.com/gen/2039252/thumbs/n-FERGUSON-POLICE-large300.jpg" alt="Ferguson Police" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">MICHAEL B. THOMAS via Getty Images</div></div>
@@ -2670,7 +2769,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5790280" onmouseover="TrackingData.entry_5790280={id:5790280,blog_id:2,rank:16,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790280,"mpid":16}}'>
+<div id="entry_5790280" onmouseover="TrackingData.entry_5790280={id:5790280,blog_id:2,rank:18,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790280,"mpid":18}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/mom-tries-to-kill-autistic-daughter_n_5790280.html?utm_hp_ref=crime">Mom Who Tried Killing Autistic Daughter, Self, To Be Sentenced</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/mom-tries-to-kill-autistic-daughter_n_5790280.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5790280" longdesc="http://i.huffpost.com/gen/2038526/thumbs/n-KELLI-STAPLETON-large300.jpg" alt="Kelli Stapleton" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2710,7 +2809,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5789944" onmouseover="TrackingData.entry_5789944={id:5789944,blog_id:2,rank:17,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789944,"mpid":17}}'>
+<div id="entry_5789944" onmouseover="TrackingData.entry_5789944={id:5789944,blog_id:2,rank:19,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789944,"mpid":19}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/09/plane-crashes-into-train_n_5789944.html?utm_hp_ref=crime">Instructor, Student Pilot Killed When Plane Crashes Into Train</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/plane-crashes-into-train_n_5789944.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5789944" longdesc="http://i.huffpost.com/gen/2038380/thumbs/n-SKY-large300.jpg" alt="Sky" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Serg_Velusceac via Getty Images</div></div>
@@ -2760,7 +2859,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5788372" onmouseover="TrackingData.entry_5788372={id:5788372,blog_id:2,rank:18,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788372,"mpid":18}}'>
+<div id="entry_5788372" onmouseover="TrackingData.entry_5788372={id:5788372,blog_id:2,rank:20,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788372,"mpid":20}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/08/man-rams-truck-into-sheriffs-office_n_5788372.html?utm_hp_ref=crime">Man Rams Truck Into Sheriff's Office And Opens Fire, Police Say</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/man-rams-truck-into-sheriffs-office_n_5788372.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5788372" longdesc="http://i.huffpost.com/gen/2037240/thumbs/n-MAN-RAMS-TRUCK-INTO-SHERIFFS-OFFICE-large300.jpg" alt="Man Rams Truck Into Sheriffs Office" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">KIII3News/Facebook</div></div>
@@ -2813,7 +2912,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5788028" onmouseover="TrackingData.entry_5788028={id:5788028,blog_id:2,rank:19,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788028,"mpid":19}}'>
+<div id="entry_5788028" onmouseover="TrackingData.entry_5788028={id:5788028,blog_id:2,rank:21,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5788028,"mpid":21}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/magic-mountain-fire_n_5788028.html?utm_hp_ref=crime">Coaster Burns At Six Flags Magic Mountain</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/magic-mountain-fire_n_5788028.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5788028" longdesc="http://i.huffpost.com/gen/2037152/thumbs/n-COASTER-large300.jpg" alt="Coaster" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Cougar News via Twitter</div></div>
@@ -2863,7 +2962,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5787758" onmouseover="TrackingData.entry_5787758={id:5787758,blog_id:2,rank:20,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787758,"mpid":20}}'>
+<div id="entry_5787758" onmouseover="TrackingData.entry_5787758={id:5787758,blog_id:2,rank:22,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787758,"mpid":22}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/08/jessica-rocha-bites_n_5787758.html?utm_hp_ref=crime&ir=Crime">Woman Accused Of Biting Victim In Bizarre 'Zombie Game'</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jessica-rocha-bites_n_5787758.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5787758" longdesc="http://i.huffpost.com/gen/2037224/thumbs/n-JESSICA-ROCHA-large300.jpg" alt="Jessica Rocha" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Coos County Sheriffs Office</div></div>
@@ -2913,7 +3012,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5789818" onmouseover="TrackingData.entry_5789818={id:5789818,blog_id:2,rank:21,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789818,"mpid":21}}'>
+<div id="entry_5789818" onmouseover="TrackingData.entry_5789818={id:5789818,blog_id:2,rank:23,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789818,"mpid":23}}'>
 
 
                         <h4><a href="http://www.nydailynews.com/new-york/nyc-crime/broken-windows-disproportionately-enforced-white-neighborhoods-article-1.1931171" target="_hplink">For Black And Hispanic New Yorkers, There Are Broken Windows Wherever They Go</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.nydailynews.com/new-york/nyc-crime/broken-windows-disproportionately-enforced-white-neighborhoods-article-1.1931171" target="_hplink"><img class="unloaded-image quickread_link" id="image_5789818" longdesc="http://i.huffpost.com/gen/2038192/thumbs/n-NYPD-large300.jpg" alt="Nypd" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -2938,554 +3037,6 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 		| 
 							<span class="frontpage_follow_bignews">
 														    <a href="/news/nypd/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>NYPD</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786512" onmouseover="TrackingData.entry_5786512={id:5786512,blog_id:2,rank:22,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786512,"mpid":22}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime">Man Puts Girlfriend's Toddler Son In Dryer, Turns It On: Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786512" longdesc="http://i.huffpost.com/gen/2036214/thumbs/n-ADAMMORTON-large300.jpg" alt="Adammorton" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Penobscot County Sheriff's Office</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5786512">http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786512">(117)</span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786848" onmouseover="TrackingData.entry_5786848={id:5786848,blog_id:2,rank:23,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786848,"mpid":23}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime">Philly Is About To Decriminalize Weed, And That's BIG</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786848" longdesc="http://i.huffpost.com/gen/2036510/thumbs/n-GIANT-MARIJUANA-JOINT-large300.jpg" alt="Giant Marijuana Joint" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">MARTIN BERNETTI via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5786848">http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786848">(228)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/marijuana/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Marijuana</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786492" onmouseover="TrackingData.entry_5786492={id:5786492,blog_id:2,rank:24,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786492,"mpid":24}}'>
-
-
-            <h4><a href="http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime">Speeding BMW Kills Boy, 4, Mom And Grandma</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786492" longdesc="http://i.huffpost.com/gen/2036150/thumbs/n-BRIAN-FLORES-large300.jpg" alt="Brian Flores" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Fox40.com</div></div>
-    
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5786492">http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786492">(13)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786256" onmouseover="TrackingData.entry_5786256={id:5786256,blog_id:2,rank:25,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786256,"mpid":25}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime">Man Accused Of Killing Sheriff's Wife, 2 Others</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786256" longdesc="http://i.huffpost.com/gen/2035928/thumbs/n-CHARLES-SEVERANCE-large300.jpg" alt="Charles Severance" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">The Washington Post via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5786256">http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786256"></span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785164" onmouseover="TrackingData.entry_5785164={id:5785164,blog_id:2,rank:26,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785164,"mpid":26}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime">Teens Viciously Attack Man In Parking Lot (GRAPHIC VIDEO)</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785164" longdesc="http://i.huffpost.com/gen/2035220/thumbs/n-TEENS-ATTACK-large300.jpg" alt="Teens Attack" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube: Arthur Howard</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785164">http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785164">(56)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785424" onmouseover="TrackingData.entry_5785424={id:5785424,blog_id:2,rank:27,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785424,"mpid":27}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime">Missing Child With Autism Found Wandering Into Homeless Camp</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785424" longdesc="http://i.huffpost.com/gen/2035460/thumbs/n-SERGIO-ZEPEDA-large300.jpg" alt="Sergio Zepeda" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">San Jose Police</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785424">http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785424">(25)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/missing-persons/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Missing Persons</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785290" onmouseover="TrackingData.entry_5785290={id:5785290,blog_id:2,rank:28,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785290,"mpid":28}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime">Man Tortured, Raped Wife Under 'Slave Contract': Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785290" longdesc="http://i.huffpost.com/gen/2035332/thumbs/n-KEN-large300.jpg" alt="Ken" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jackson County</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785290">http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785290">(199)</span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786678" onmouseover="TrackingData.entry_5786678={id:5786678,blog_id:2,rank:29,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786678,"mpid":29}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime">Woman Gives IV To Unconscious Teen Instead Of Calling 911: Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5786678" longdesc="http://i.huffpost.com/gen/2036382/thumbs/n-JENNIFER-PHIPPEN-large300.jpg" alt="Jennifer Phippen" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Ada Sheriffs Office</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5786678">http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786678">(33)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/mug-shots/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Mug Shots</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785008" onmouseover="TrackingData.entry_5785008={id:5785008,blog_id:2,rank:30,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785008,"mpid":30}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime">Alleged Cop Killers Arrested</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785008" longdesc="http://i.huffpost.com/gen/2035064/thumbs/n-JASONHARWOOD-large300.jpg" alt="Jasonharwood" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Shawnee County Sheriff's Office</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785008">http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785008"></span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784190" onmouseover="TrackingData.entry_5784190={id:5784190,blog_id:2,rank:31,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784190,"mpid":31}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime">Missing Mom Found Alive, Was Kept In Cage For 2 Months: Police</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5784190" longdesc="http://i.huffpost.com/gen/2034646/thumbs/n-LOCKWOOD-large300.jpg" alt="Lockwood" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Evansville Police</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784190">http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784190">(105)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/missing-persons/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Missing Persons</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785540" onmouseover="TrackingData.entry_5785540={id:5785540,blog_id:2,rank:32,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785540,"mpid":32}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime">Tracing The History Behind Police Militarization</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785540" longdesc="http://i.huffpost.com/gen/2035484/thumbs/n-SWAT-TEAM-large300.jpg" alt="Swat Team" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">AHMAD AL-RUBAYE via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785540">http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785540"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/hpl/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>HuffPost Live</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5783582" onmouseover="TrackingData.entry_5783582={id:5783582,blog_id:2,rank:33,zone:5,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783582,"mpid":33}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime">Teens Arrested After Allegedly Beating Mentally Ill Man (GRAPHIC VIDEO)</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5783582" longdesc="http://i.huffpost.com/gen/2033950/thumbs/n-TEENARREST-large300.jpg" alt="Teenarrest" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5783582">http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783582">(36)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
 					
 				
 			</span>
@@ -3537,7 +3088,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
                             document.write(debugadcode);
                         }
                     </script>
-                    </div><!-- ESI SNN StartTime:1410358544 -->        
+                    </div><!-- ESI SNN StartTime:1410366912 -->        
 		
 		
         
@@ -3545,11 +3096,11 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <script type="text/javascript">
             SNPModule.init();
         </script>
-        <!-- ESI MostPopular StartTime:1410358544 -->        
+        <!-- ESI MostPopular StartTime:1410366912 -->        
         
         
         
-                <!-- ESI MostPopular EndTime:1410358910 --><div id="all_frontpage_widgets" class="margin_10_0" data-beacon='{"p":{"mnid":"mostPopularEntry"}}'>
+                <!-- ESI MostPopular EndTime:1410367233 --><div id="all_frontpage_widgets" class="margin_10_0" data-beacon='{"p":{"mnid":"mostPopularEntry"}}'>
         <div class="float_right most_popular_pager" id="mp_pager">
         <a href="javascript:void(0);" class="prev"></a> 
         <a href="javascript:void(0);" class="next"></a>
@@ -3559,8 +3110,20 @@ jQuery('#fb_like_vertical').mouseenter(function() {
     <div class="most_popular_cycle" id="mp_cycle">
 
                 <div class="most_popular_entry_wrapper">
+            <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":0, "plid":5775076, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>This Is What True Romance Looks Like When You're Married</a>
+                <div class="relative">
+                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2029754/thumbs/n-RICE-KRISPIES-WIFE-medium.jpg" alt="Rice Krispies Wife" /></a>
+                                        <span class="absolute image-credit">Reddit / Imgur</span>
+                    </div>
+                                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":0, "plid":5791578, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":1, "plid":5791578, "lnid":"page1"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Introducing The iPhone 6!</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/09/iphone-6-announcement_n_5791578.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2040066/thumbs/n-IPHONE-6-medium.jpg" alt="Iphone 6" /></a>
@@ -3572,23 +3135,11 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":1, "plid":5775200, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":2, "plid":5775200, "lnid":"page1"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>What Happened When A Biracial Woman Was Photoshopped In 18 Different Countries</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2029800/thumbs/n-PRISCILLA-YUKI-WILSON-medium.jpg" alt="Priscilla Yuki Wilson" /></a>
                                         <span class="absolute image-credit">Priscilla Yuki Wilson</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":2, "plid":5786506, "lnid":"page1"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2036424/thumbs/n-GHOSTBUSTERS-medium.jpg" alt="Ghostbusters" /></a>
-                                        <span class="absolute image-credit">Archive Photos via Getty Images</span>
                     </div>
                                     <div class="clear"></div>
                 </div>
@@ -3607,8 +3158,20 @@ jQuery('#fb_like_vertical').mouseenter(function() {
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
+            <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":4, "plid":5786506, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'</a>
+                <div class="relative">
+                    <a href="http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2036424/thumbs/n-GHOSTBUSTERS-medium.jpg" alt="Ghostbusters" /></a>
+                                        <span class="absolute image-credit">Archive Photos via Getty Images</span>
+                    </div>
+                                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":4, "plid":5784666, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":5, "plid":5784666, "lnid":"page1"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Ridiculously Photogenic Fox Loves Her Human Friends A Little Too Much</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/pudding-national-fox-welfare-service_n_5784666.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034584/thumbs/n-PUDDING-THE-FOX-medium.jpg" alt="Pudding The Fox" /></a>
@@ -3619,8 +3182,20 @@ jQuery('#fb_like_vertical').mouseenter(function() {
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
+            <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular">
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":6, "plid":5781606, "lnid":"page1"}}'> 
+                                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>The Real Reasons Women Like Ray Rice's Wife Janay Stay</a>
+                <div class="relative">
+                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035934/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
+                                        <span class="absolute image-credit">Rob Carr via Getty Images</span>
+                    </div>
+                                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":5, "plid":5785412, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":7, "plid":5785412, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>PHOTOS: Amazon Tribe Beats And Strips Illegal Loggers</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/amazon-tribe-loggers_n_5785412.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034246/thumbs/n-AMAZON-LOGGING-medium.jpg" alt="Amazon Logging" /></a>
@@ -3632,7 +3207,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":6, "plid":5783380, "lnid":"page1"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":8, "plid":5783380, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Horrific Footage Of Ray Rice Punching Fiancée Leaks</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/ray-rice-punch-video_n_5783380.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2033830/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
@@ -3644,7 +3219,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":7, "plid":5790078, "lnid":"page2"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":9, "plid":5790078, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Insanely Drunk Woman Tries To Pick Up Child From School: Cops</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2038598/thumbs/n-RENATA-CONGLETON-medium.jpg" alt="Renata Congleton" /></a>
@@ -3655,56 +3230,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
             </a>
         </div>
                 <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":8, "plid":5772368, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Dogs' Surprising Preference Revealed In New Study</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/07/dogs-prefer-petting-study_n_5772368.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2027496/thumbs/n-DOGS-PREFER-PETTING-medium.jpg" alt="Dogs Prefer Petting" /></a>
-                                        <span class="absolute image-credit">Ken Gillespie Photography via Getty Images</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":9, "plid":5779866, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Stars Bid Farewell To Joan Rivers</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2032104/thumbs/n-JOAN-RIVERS-medium.jpg" alt="Joan Rivers" /></a>
-                                        <span class="absolute image-credit">Getty</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":10, "plid":5775076, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>This Is What True Romance Looks Like When You're Married</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2029754/thumbs/n-RICE-KRISPIES-WIFE-medium.jpg" alt="Rice Krispies Wife" /></a>
-                                        <span class="absolute image-credit">Reddit / Imgur</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
-            <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":11, "plid":5781606, "lnid":"page2"}}'> 
-                                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>The Real Reasons Women Like Ray Rice's Wife Janay Stay</a>
-                <div class="relative">
-                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035934/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
-                                        <span class="absolute image-credit">Rob Carr via Getty Images</span>
-                    </div>
-                                    <div class="clear"></div>
-                </div>
-            </a>
-        </div>
-                <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/07/death-of-singer-simone-battle_n_5781892.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":12, "plid":5781892, "lnid":"page2"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":10, "plid":5781892, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/07/death-of-singer-simone-battle_n_5781892.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Death Of Singer Simone Battle Ruled A Suicide</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/07/death-of-singer-simone-battle_n_5781892.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2032886/thumbs/n-SIMONE-BATTLE-medium.jpg" alt="Simone Battle" /></a>
@@ -3716,7 +3243,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/jessica-martinweber/why-this-6-time-survivor-is-grateful-kate-middleton-has-hyperemesis-gravidarum_b_5784300.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":13, "plid":5784300, "lnid":"page2"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":11, "plid":5784300, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/jessica-martinweber/why-this-6-time-survivor-is-grateful-kate-middleton-has-hyperemesis-gravidarum_b_5784300.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>Why This 6-Time Survivor Is Grateful Kate Middleton Has Hyperemesis Gravidarum</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/jessica-martinweber/why-this-6-time-survivor-is-grateful-kate-middleton-has-hyperemesis-gravidarum_b_5784300.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2034990/thumbs/n-KATE-MIDDLETON-medium.jpg" alt="Kate Middleton" /></a>
@@ -3728,7 +3255,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/fox-news-ray-rice-brian-kilmeade-punch-wife-elevator_n_5785012.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":14, "plid":5785012, "lnid":"page3"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":12, "plid":5785012, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/fox-news-ray-rice-brian-kilmeade-punch-wife-elevator_n_5785012.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>'Fox & Friends' Has A Disgusting Reaction To Ray Rice Video</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/fox-news-ray-rice-brian-kilmeade-punch-wife-elevator_n_5785012.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035036/thumbs/n-RAY-RICE-medium.jpg" alt="Ray Rice" /></a>
@@ -3740,7 +3267,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         </div>
                 <div class="most_popular_entry_wrapper">
             <a href="http://www.huffingtonpost.com/2014/09/08/dog-spa-video_n_5785452.html?utm_hp_ref=mostpopular">
-                <div class="most_popular_entry" data-beacon='{"p":{"mpid":15, "plid":5785452, "lnid":"page3"}}'> 
+                <div class="most_popular_entry" data-beacon='{"p":{"mpid":13, "plid":5785452, "lnid":"page2"}}'> 
                                     <a href="http://www.huffingtonpost.com/2014/09/08/dog-spa-video_n_5785452.html?utm_hp_ref=mostpopular" class="black most_popular_entry_title" data-beacon='{"p":{"lnid":"headline"}}'>This Dog Loves Spa Time More Than Anyone In The Entire World</a>
                 <div class="relative">
                     <a href="http://www.huffingtonpost.com/2014/09/08/dog-spa-video_n_5785452.html?utm_hp_ref=mostpopular" data-beacon='{"p":{"lnid":"img"}}'><img border="0" width="300" height="125" src="http://i.huffpost.com/gen/2035432/thumbs/n-DOG-medium.jpg" alt="Dog" /></a>
@@ -3975,13 +3502,577 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
     
+    <!-- END rc_upper CONTENT -->
+</div>
+<div id="rc_lower">
+<!-- BEGIN rc_lower CONTENT -->
     
 <!-- Entry Blog 2 -->
 
 
 
 
-<div id="entry_5784208" onmouseover="TrackingData.entry_5784208={id:5784208,blog_id:2,rank:1,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784208,"mpid":1}}'>
+<div id="entry_5786512" onmouseover="TrackingData.entry_5786512={id:5786512,blog_id:2,rank:1,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786512,"mpid":1}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime">Man Puts Girlfriend's Toddler Son In Dryer, Turns It On: Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786512" longdesc="http://i.huffpost.com/gen/2036214/thumbs/n-ADAMMORTON-large300.jpg" alt="Adammorton" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Penobscot County Sheriff's Office</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5786512">http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/man-puts-toddler-in-dryer_n_5786512.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786512">(119)</span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5786848" onmouseover="TrackingData.entry_5786848={id:5786848,blog_id:2,rank:2,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786848,"mpid":2}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime">Philly Is About To Decriminalize Weed, And That's BIG</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786848" longdesc="http://i.huffpost.com/gen/2036510/thumbs/n-GIANT-MARIJUANA-JOINT-large300.jpg" alt="Giant Marijuana Joint" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">MARTIN BERNETTI via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5786848">http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/philadelphia-marijuana-decriminalization_n_5786848.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786848">(229)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/marijuana/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Marijuana</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5786492" onmouseover="TrackingData.entry_5786492={id:5786492,blog_id:2,rank:3,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786492,"mpid":3}}'>
+
+
+            <h4><a href="http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime">Speeding BMW Kills Boy, 4, Mom And Grandma</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786492" longdesc="http://i.huffpost.com/gen/2036150/thumbs/n-BRIAN-FLORES-large300.jpg" alt="Brian Flores" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Fox40.com</div></div>
+    
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5786492">http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/julia-flores-car-crash_n_5786492.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786492">(14)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5786256" onmouseover="TrackingData.entry_5786256={id:5786256,blog_id:2,rank:4,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786256,"mpid":4}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime">Man Accused Of Killing Sheriff's Wife, 2 Others</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5786256" longdesc="http://i.huffpost.com/gen/2035928/thumbs/n-CHARLES-SEVERANCE-large300.jpg" alt="Charles Severance" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">The Washington Post via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5786256">http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/man-kills-sheriffs-wife_n_5786256.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786256"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785164" onmouseover="TrackingData.entry_5785164={id:5785164,blog_id:2,rank:5,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785164,"mpid":5}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime">Teens Viciously Attack Man In Parking Lot (GRAPHIC VIDEO)</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785164" longdesc="http://i.huffpost.com/gen/2035220/thumbs/n-TEENS-ATTACK-large300.jpg" alt="Teens Attack" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube: Arthur Howard</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785164">http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/teens-attack-man-kroger-memphis_n_5785164.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785164">(57)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785424" onmouseover="TrackingData.entry_5785424={id:5785424,blog_id:2,rank:6,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785424,"mpid":6}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime">Missing Child With Autism Found Wandering Into Homeless Camp</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785424" longdesc="http://i.huffpost.com/gen/2035460/thumbs/n-SERGIO-ZEPEDA-large300.jpg" alt="Sergio Zepeda" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">San Jose Police</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785424">http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/sergio-zepeda-found-california-homeless-camp_n_5785424.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785424">(25)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/missing-persons/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Missing Persons</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785290" onmouseover="TrackingData.entry_5785290={id:5785290,blog_id:2,rank:7,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785290,"mpid":7}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime">Man Tortured, Raped Wife Under 'Slave Contract': Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785290" longdesc="http://i.huffpost.com/gen/2035332/thumbs/n-KEN-large300.jpg" alt="Ken" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jackson County</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785290">http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785290">(200)</span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5786678" onmouseover="TrackingData.entry_5786678={id:5786678,blog_id:2,rank:8,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786678,"mpid":8}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime">Woman Gives IV To Unconscious Teen Instead Of Calling 911: Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5786678" longdesc="http://i.huffpost.com/gen/2036382/thumbs/n-JENNIFER-PHIPPEN-large300.jpg" alt="Jennifer Phippen" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Ada Sheriffs Office</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5786678">http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?utm_hp_ref=crime&ir=Crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786678">(53)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/mug-shots/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Mug Shots</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785008" onmouseover="TrackingData.entry_5785008={id:5785008,blog_id:2,rank:9,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785008,"mpid":9}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime">Alleged Cop Killers Arrested</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785008" longdesc="http://i.huffpost.com/gen/2035064/thumbs/n-JASONHARWOOD-large300.jpg" alt="Jasonharwood" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Shawnee County Sheriff's Office</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785008">http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/kansas-cop-killers_n_5785008.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785008"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784190" onmouseover="TrackingData.entry_5784190={id:5784190,blog_id:2,rank:10,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784190,"mpid":10}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime">Missing Mom Found Alive, Was Kept In Cage For 2 Months: Police</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5784190" longdesc="http://i.huffpost.com/gen/2034646/thumbs/n-LOCKWOOD-large300.jpg" alt="Lockwood" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Evansville Police</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784190">http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/joelle-lockwood-found_n_5784190.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784190">(105)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/missing-persons/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Missing Persons</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785540" onmouseover="TrackingData.entry_5785540={id:5785540,blog_id:2,rank:11,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785540,"mpid":11}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime">Tracing The History Behind Police Militarization</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5785540" longdesc="http://i.huffpost.com/gen/2035484/thumbs/n-SWAT-TEAM-large300.jpg" alt="Swat Team" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">AHMAD AL-RUBAYE via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785540">http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/retro-report-police-militarization-_n_5785540.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785540"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/hpl/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>HuffPost Live</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5783582" onmouseover="TrackingData.entry_5783582={id:5783582,blog_id:2,rank:12,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783582,"mpid":12}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime">Teens Arrested After Allegedly Beating Mentally Ill Man (GRAPHIC VIDEO)</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5783582" longdesc="http://i.huffpost.com/gen/2033950/thumbs/n-TEENARREST-large300.jpg" alt="Teenarrest" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5783582">http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/mentally-ill-man-beaten-video_n_5783582.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783582">(36)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784208" onmouseover="TrackingData.entry_5784208={id:5784208,blog_id:2,rank:13,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784208,"mpid":13}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/3-nuns-murdered-_n_5784208.html?utm_hp_ref=crime">3 Nuns Found Murdered In Convent</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/3-nuns-murdered-_n_5784208.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5784208" longdesc="http://i.huffpost.com/gen/2034536/thumbs/n-NUNS-large300.jpg" alt="Nuns" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Corbis</div></div>
@@ -4022,7 +4113,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5783316" onmouseover="TrackingData.entry_5783316={id:5783316,blog_id:2,rank:2,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783316,"mpid":2}}'>
+<div id="entry_5783316" onmouseover="TrackingData.entry_5783316={id:5783316,blog_id:2,rank:14,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783316,"mpid":14}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/sonya-katrina-spoon-killed-children_n_5783316.html?utm_hp_ref=crime">Mother Admits Smothering Children, Faces Murder Charges</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/sonya-katrina-spoon-killed-children_n_5783316.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5783316" longdesc="http://i.huffpost.com/gen/2033864/thumbs/n-SONYA-SPOON-large300.jpg" alt="Sonya Spoon" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">WJZ</div></div>
@@ -4036,7 +4127,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/sonya-katrina-spoon-killed-children_n_5783316.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783316">(15)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/08/sonya-katrina-spoon-killed-children_n_5783316.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783316">(16)</span></a>
 	</li>
     
   
@@ -4073,7 +4164,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5783234" onmouseover="TrackingData.entry_5783234={id:5783234,blog_id:2,rank:3,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783234,"mpid":3}}'>
+<div id="entry_5783234" onmouseover="TrackingData.entry_5783234={id:5783234,blog_id:2,rank:15,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783234,"mpid":15}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/08/chicago-fire-kills-4-children_n_5783234.html?utm_hp_ref=crime">'Two People Came Flying Out The Window'</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/chicago-fire-kills-4-children_n_5783234.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5783234" longdesc="http://i.huffpost.com/gen/2033752/thumbs/n-CHICAGO-FIRE-large300.jpg" alt="Chicago Fire" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Twitter</div></div>
@@ -4124,7 +4215,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5782074" onmouseover="TrackingData.entry_5782074={id:5782074,blog_id:2,rank:4,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782074,"mpid":4}}'>
+<div id="entry_5782074" onmouseover="TrackingData.entry_5782074={id:5782074,blog_id:2,rank:16,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782074,"mpid":16}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/santiago-hernandez-nypd-beating_n_5782074.html?utm_hp_ref=crime">Another Alleged NYPD Beating Caught On Video</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/santiago-hernandez-nypd-beating_n_5782074.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5782074" longdesc="http://i.huffpost.com/gen/2033016/thumbs/n-BEATING-large300.jpg" alt="Beating" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ABC-7</div></div>
@@ -4138,7 +4229,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/santiago-hernandez-nypd-beating_n_5782074.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5782074">(232)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/08/santiago-hernandez-nypd-beating_n_5782074.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5782074">(233)</span></a>
 	</li>
     
   
@@ -4175,7 +4266,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5782128" onmouseover="TrackingData.entry_5782128={id:5782128,blog_id:2,rank:5,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782128,"mpid":5}}'>
+<div id="entry_5782128" onmouseover="TrackingData.entry_5782128={id:5782128,blog_id:2,rank:17,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782128,"mpid":17}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/carolyn-cross-dead-dc-corrections-official_n_5782128.html?utm_hp_ref=crime">DC Corrections Official Killed</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/carolyn-cross-dead-dc-corrections-official_n_5782128.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5782128" longdesc="http://i.huffpost.com/gen/2033006/thumbs/n-CAROLYN-CROSS-large300.jpg" alt="Carolyn Cross" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">NBC Washington</div></div>
@@ -4203,567 +4294,6 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 		
 		
 	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5777120" onmouseover="TrackingData.entry_5777120={id:5777120,blog_id:2,rank:6,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777120,"mpid":6}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/ann-whalen-abortion-daughter_n_5777120.html?utm_hp_ref=crime">Mom Going To Prison For Giving Daughter Abortion Pills</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/ann-whalen-abortion-daughter_n_5777120.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5777120" longdesc="http://i.huffpost.com/gen/2031982/thumbs/n-PILL-BOTTLE-large300.jpg" alt="Pill Bottle" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Steven Poe via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5777120">http://www.huffingtonpost.com/2014/09/07/ann-whalen-abortion-daughter_n_5777120.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/ann-whalen-abortion-daughter_n_5777120.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5777120">(986)</span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5779682" onmouseover="TrackingData.entry_5779682={id:5779682,blog_id:2,rank:7,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779682,"mpid":7}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/felicia-smith-teacher-guilty-lap-dance_n_5779682.html?utm_hp_ref=crime">Teacher Pleads Guilty After Giving Student Lap Dance In Class</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/felicia-smith-teacher-guilty-lap-dance_n_5779682.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5779682" longdesc="http://i.huffpost.com/gen/1761327/thumbs/n-FELICIA-SMITH-large300.jpg" alt="Felicia Smith" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Harris County Sheriff's Department</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5779682">http://www.huffingtonpost.com/2014/09/07/felicia-smith-teacher-guilty-lap-dance_n_5779682.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/felicia-smith-teacher-guilty-lap-dance_n_5779682.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5779682">(16)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/teacher-sex/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Teacher Sex Scandals</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5779874" onmouseover="TrackingData.entry_5779874={id:5779874,blog_id:2,rank:8,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779874,"mpid":8}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/robert-flynn-gropes-marshal_n_5779874.html?utm_hp_ref=crime">US Marshal Out For A Jog Hits Alleged Groper Where It Hurts</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/robert-flynn-gropes-marshal_n_5779874.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5779874" longdesc="http://i.huffpost.com/gen/2032070/thumbs/n-ROBERT-FLYNN-large300.jpg" alt="Robert Flynn" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">CBS Pittsburgh</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5779874">http://www.huffingtonpost.com/2014/09/07/robert-flynn-gropes-marshal_n_5779874.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/robert-flynn-gropes-marshal_n_5779874.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5779874">(69)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/pittsburgh/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Pittsburgh</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5777946" onmouseover="TrackingData.entry_5777946={id:5777946,blog_id:2,rank:9,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777946,"mpid":9}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/06/man-jailed-calling-ex_n_5777946.html?utm_hp_ref=crime">Man Jailed After Calling, Texting Ex-Girlfriend 21,807 Times</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/man-jailed-calling-ex_n_5777946.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5777946" longdesc="http://i.huffpost.com/gen/2031168/thumbs/n-CALL-EX-GIRLFRIEND-large300.jpg" alt="Call Ex Girlfriend" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">RapidEye via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5777946">http://www.huffingtonpost.com/2014/09/06/man-jailed-calling-ex_n_5777946.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/06/man-jailed-calling-ex_n_5777946.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5777946">(51)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/dumb-criminals/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Strange Crime</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5777356" onmouseover="TrackingData.entry_5777356={id:5777356,blog_id:2,rank:10,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777356,"mpid":10}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/lawrence-woods-flint-cop-child-abuse_n_5777356.html?utm_hp_ref=crime">Retired Cop Sexually Abused Kids 'Inside The Police Department'</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/lawrence-woods-flint-cop-child-abuse_n_5777356.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5777356" longdesc="http://i.huffpost.com/gen/2031960/thumbs/n-LAWRENCE-WOODS-large300.jpg" alt="Lawrence Woods" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">NBC25</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5777356">http://www.huffingtonpost.com/2014/09/07/lawrence-woods-flint-cop-child-abuse_n_5777356.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/lawrence-woods-flint-cop-child-abuse_n_5777356.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5777356"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/ap/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>AP</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5777082" onmouseover="TrackingData.entry_5777082={id:5777082,blog_id:2,rank:11,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777082,"mpid":11}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/adam-matos-murder-victims_n_5777082.html?utm_hp_ref=crime">Bodies Found In Ditch Identified</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/adam-matos-murder-victims_n_5777082.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5777082" longdesc="http://i.huffpost.com/gen/2032004/thumbs/n-ADAM-MATOS-large300.jpg" alt="Adam Matos" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5777082">http://www.huffingtonpost.com/2014/09/07/adam-matos-murder-victims_n_5777082.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/adam-matos-murder-victims_n_5777082.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5777082"></span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    <!-- END rc_upper CONTENT -->
-</div>
-<div id="rc_lower">
-<!-- BEGIN rc_lower CONTENT -->
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5779856" onmouseover="TrackingData.entry_5779856={id:5779856,blog_id:2,rank:12,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779856,"mpid":12}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/bryan-remley-burglar-mow-lawn_n_5779856.html?utm_hp_ref=crime&ir=Crime">Burglar Offers To Mow Lawn If Homeowners Let Him Go: Cops</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/bryan-remley-burglar-mow-lawn_n_5779856.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5779856" longdesc="http://i.huffpost.com/gen/2032082/thumbs/n-BRYAN-large300.jpg" alt="Bryan" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Pinellas County Jail</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5779856">http://www.huffingtonpost.com/2014/09/07/bryan-remley-burglar-mow-lawn_n_5779856.html?utm_hp_ref=crime&ir=Crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/bryan-remley-burglar-mow-lawn_n_5779856.html?utm_hp_ref=crime&ir=Crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5779856">(30)</span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5776980" onmouseover="TrackingData.entry_5776980={id:5776980,blog_id:2,rank:13,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5776980,"mpid":13}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/06/cherries-waffles-tennis-arrested_n_5776980.html?utm_hp_ref=crime&ir=Crime">Cherries Waffles Tennis Arrested In Jupiter, Florida</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/cherries-waffles-tennis-arrested_n_5776980.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5776980" longdesc="http://i.huffpost.com/gen/2030740/thumbs/n-CHERRIES-large300.jpg" alt="Cherries" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Palm Beach County</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5776980">http://www.huffingtonpost.com/2014/09/06/cherries-waffles-tennis-arrested_n_5776980.html?utm_hp_ref=crime&ir=Crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/06/cherries-waffles-tennis-arrested_n_5776980.html?utm_hp_ref=crime&ir=Crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5776980">(46)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/weird-florida/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Weird Florida</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5774426" onmouseover="TrackingData.entry_5774426={id:5774426,blog_id:2,rank:14,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774426,"mpid":14}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/faith-hedgepeth-murder_n_5774426.html?utm_hp_ref=crime">2 Years After Murder, Police Reveal How College Student Was Killed</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/faith-hedgepeth-murder_n_5774426.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5774426" longdesc="http://i.huffpost.com/gen/2029052/thumbs/n-FAITH-DANIELLE-HEDGEPETH-large300.jpg" alt="Faith Danielle Hedgepeth" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Facebook</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5774426">http://www.huffingtonpost.com/2014/09/05/faith-hedgepeth-murder_n_5774426.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/faith-hedgepeth-murder_n_5774426.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5774426">(19)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/university-of-north-carolina/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>University Of North Carolina</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5779952" onmouseover="TrackingData.entry_5779952={id:5779952,blog_id:2,rank:15,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779952,"mpid":15}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/07/9-year-old-steals-bus-canada-saskatoon_n_5779952.html?utm_hp_ref=crime&ir=Crime">Pajama-Clad 9-Year-Old Steals City Bus</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/9-year-old-steals-bus-canada-saskatoon_n_5779952.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5779952" longdesc="http://i.huffpost.com/gen/2032144/thumbs/n-BUS-large300.jpg" alt="Bus" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">CBC TV</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5779952">http://www.huffingtonpost.com/2014/09/07/9-year-old-steals-bus-canada-saskatoon_n_5779952.html?utm_hp_ref=crime&ir=Crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/9-year-old-steals-bus-canada-saskatoon_n_5779952.html?utm_hp_ref=crime&ir=Crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5779952">(25)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5776970" onmouseover="TrackingData.entry_5776970={id:5776970,blog_id:2,rank:16,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5776970,"mpid":16}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/06/michael-simoneau-meunier-facebook-prison_n_5776970.html?utm_hp_ref=crime&ir=Crime">Facebook Photos Show Inmate Drinking, Getting High In Prison</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/michael-simoneau-meunier-facebook-prison_n_5776970.html?utm_hp_ref=crime&ir=Crime"><img class="unloaded-image quickread_link" id="image_5776970" longdesc="http://i.huffpost.com/gen/2030728/thumbs/n-INMATE-SMOKES-BLUNT-large300.jpg" alt="Inmate Smokes Blunt" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Toronto Sun</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5776970">http://www.huffingtonpost.com/2014/09/06/michael-simoneau-meunier-facebook-prison_n_5776970.html?utm_hp_ref=crime&ir=Crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/06/michael-simoneau-meunier-facebook-prison_n_5776970.html?utm_hp_ref=crime&ir=Crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5776970">(30)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/video/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Video</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5779112" onmouseover="TrackingData.entry_5779112={id:5779112,blog_id:2,rank:17,zone:6,vertical:44,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779112,"mpid":17}}'>
-
-
-            <h4><a href="http://www.huffingtonpost.com/2014/09/07/honolulu-police-hits-man-wheelchair_n_5779112.html?utm_hp_ref=crime">Police Officer Hits, Kills Man In Wheelchair</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/honolulu-police-hits-man-wheelchair_n_5779112.html?utm_hp_ref=crime"><img class="unloaded-image quickread_link" id="image_5779112" longdesc="http://i.huffpost.com/gen/2031672/thumbs/n-POLICE-SIREN-large300.jpg" alt="Police Siren" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Risto Viitanen via Getty Images</div></div>
-    
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5779112">http://www.huffingtonpost.com/2014/09/07/honolulu-police-hits-man-wheelchair_n_5779112.html?utm_hp_ref=crime</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/honolulu-police-hits-man-wheelchair_n_5779112.html?utm_hp_ref=crime#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5779112">(18)</span></a>
-	</li>
-    
-  
 
 </ul>
 
@@ -5051,8 +4581,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 </noscript>
 <!-- END Nielsen Tracking -->
 <!-- RUM footer -->
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"163769","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":1253,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
-<!-- Served from: wfe9.ewr -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4004801","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":483,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
+<!-- Served from: production-mt-wfe-51-54.use1 -->
 
 
 <script type="text/javascript">
@@ -5079,7 +4609,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
   js.src = "http://cdn.pubexchange.com/modules/partner/huffpost_crime";
   pjs.parentNode.insertBefore(js, pjs);
 }(document, 'script', 'pubexchange-jssdk'));</script></div>
-<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410358543,"entry":0,"vertical":"crime","vertical-id":44,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostCrime","current_vertical_twitter_name":"HuffPostCrime","vertical\/bignews":"crime"}); });</script><!-- Sailthru Horizon -->
+<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410366912,"entry":0,"vertical":"crime","vertical-id":44,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostCrime","current_vertical_twitter_name":"HuffPostCrime","vertical\/bignews":"crime"}); });</script><!-- Sailthru Horizon -->
 <script type="text/javascript">
     (function() {
         function loadHorizon() {

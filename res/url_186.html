@@ -54,7 +54,7 @@
   
     	<link rel="shortcut icon" href="/favicon.ico" />
   <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=grid%2Fvertical_fp_grid.css%2Chp_modules%2Fmodule.main-dl.css%2Chp_modules%2Fmodule.blogger-headshot-bl.css%2Cverticals%2Fcelebrity.css%2Cpage_type%2Ffrontpages.css%2Chp_modules%2Fmodule.sponsor-widgets.css%2Cmaster.css%2Cfonts%2Fopensans-condbold%2Fstylesheet.css%2Ctopnav_new%2Fall_pages.css%2Ctopnav_new%2Ftop_nav.css%2Ctopnav_new%2Fmodule.edition_nav.css%2Cbasic.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=verticals%2Fcolor_scheme.css%2Cadd%2Ffront.css%2Cbuttons.css%2Cmost_popular.css%2Ccommercial.css%2Chuff_promo.css%2Csnp_friends.css%2Csnn-header.css%2Chp_modules%2Fmodule.splash_slideshow.css%2Chp_modules%2Fmodule.apps_feeds.css%2Chp_modules%2Fmodule.most_popular_celebrity.css%2Chufflists.css%2Csignup_modal.css%2Cdirect_message.css%2Cbadges_v2.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=hp_modules%2Ffacebook.css%2Cuser_levels.css%2Ctwitter_splash.css%2Cbing.css%2Cgrouping.css%2Cmodal_window.css%2Chp_modules%2Fmodule.bubble.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=email_share.css%2Csocial-navbar.css%2Chp_modules%2Fmodule.bubble-tags.css%2Chp_modules%2Fmodule.fb_like_button.css%2Csearch_autocomplete.css%2Cap_wires_scroll.css%2Cmod-follow.css%2Clogos.css" type="text/css" media="screen" />              	        <!-- RUM header -->
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACQUDU1db"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
             <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=yui_sub.js%2Cjquery.js" ></script>
         
     <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=jquery%2Fjquery.I18N.js%2Clocale%2Fdefault.js%2Csprintf-0.7.js"></script>
@@ -126,7 +126,6 @@ adSetMOAT("1");
     }(document, "script", "twitter-wjs"));
 </script>
 
-	<meta name="apple-itunes-app" content="app-id=306621789" />
 
     
 	<script type="text/javascript">
@@ -191,7 +190,7 @@ document.write('<scr'+'ipt async="true" src="http://modulous.huffpost.com/2014/0
     HPConfig.terms_link = "http://www.huffingtonpost.com/terms.html";
     HPConfig.privacy_link = "";
 	HPConfig.huffsite = "www.huffingtonpost.com";
-	HPConfig.current_time = "10 September 2014, 10:13";
+	HPConfig.current_time = "10 September 2014, 12:31";
 HPAds.doubleclick = "huffpost.celebrity";
 //Synchronise the user login status on multi-domain with huffingtonpost.com
 
@@ -268,7 +267,7 @@ d.getElementsByTagName('head')[0].appendChild(s);
 <ul class="big_news_ontop">
 </ul>
 </div>
-      
+  
 <div class="more_in_bignews">
 <script type='text/javascript'>ads_top_bar_sponsor_links = ["<a href='\/news\/smarter-ideas' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Smarter Ideas<\/a>","<a href='http:\/\/www.huffingtonpost.com\/news\/distilled-perspective\/' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Distilled Perspective<\/a>","<a href='\/news\/life-lessons\/\/' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Life Lessons<\/a>"];ads_top_bar_sponsor_links.sort( function() { return 0.5 - Math.random() } );for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++){document.write(ads_top_bar_sponsor_links[i]);}</script>
 	<a href="http://itunes.apple.com/us/app/the-huffington-post/id306621789?mt=8" class="margin_right_10" data-beacon='{"p":{"lnid":"bgNewsMore"}}' onclick="HPTrack.trackPageview('/t/a/topnav_bignews/v2');">iOS app</a>
@@ -539,19 +538,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/entertainment/'>Entertainment</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101023 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123006 -->
       <ul>
         <li id='id_trending_5790442' data-beacon='{"p":{"plid":5790442}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">93</span></span></a>
         </li>
-        <li id='id_trending_5785960' data-beacon='{"p":{"plid":5785960}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?ir=Entertainment'>Why Jennifer Garner Was Upset After Ben Affleck's Ice Bucket Challenge<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">45</span></span></a>
-        </li>
-        <li id='id_trending_5786506' data-beacon='{"p":{"plid":5786506}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/female-ghostbusters-bill-murray-_n_5786506.html?ir=Entertainment'>Bill Murray Reveals The Women He'd Choose For 'Ghostbusters 3'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">348</span></span></a>
+        <li id='id_trending_5796672' data-beacon='{"p":{"plid":5796672}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/miranda-lambert-bra-top-fashion-rocks_n_5796672.html?ir=Entertainment'>You're Not Used To Seeing Miranda Lambert Like This</a>
         </li>
         <li id='id_trending_5790800' data-beacon='{"p":{"plid":5790800}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">34</span></span></a>
+        </li>
+        <li id='id_trending_5789982' data-beacon='{"p":{"plid":5789982}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/7-facts-seinfeld-video_n_5789982.html?ir=Entertainment'>7 Facts You Didn't Know About 'Seinfeld,' Yada Yada Yada<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">32</span></span></a>
         </li>
         <li id='id_trending_5786564' data-beacon='{"p":{"plid":5786564}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/favorite-movie-mistakes_n_5786564.html?ir=Entertainment'>11 Ridiculous Mistakes That Will Ruin Your Favorite Movies<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">14</span></span></a>
@@ -591,10 +590,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/tv/'>TV</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101110 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123045 -->
       <ul>
         <li id='id_trending_5778886' data-beacon='{"p":{"plid":5778886}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/07/doctor-who-robot-of-sherw_n_5778886.html?ir=TV'>Weak 'Doctor Who' Episode Is Redeemed By Juicy Season Hints<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">24</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/07/doctor-who-robot-of-sherw_n_5778886.html?ir=TV'>Weak 'Doctor Who' Episode Is Redeemed By Juicy Season Hints<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">25</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -631,22 +630,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/media/'>Media</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101048 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123026 -->
       <ul>
         <li id='id_trending_5789646' data-beacon='{"p":{"plid":5789646}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media'>Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">351</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/fox-friends-ray-rice-comments-apology_n_5789646.html?ir=Media'>Fox News Host's Pathetic 'Apology' For Horrible Ray Rice Comments<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">381</span></span></a>
         </li>
         <li id='id_trending_5789822' data-beacon='{"p":{"plid":5789822}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media'>Mika Brzezinski: 'The NFL Supports Domestic Violence'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">105</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/mika-nfl-domestic-violence_n_5789822.html?ir=Media'>Mika Brzezinski: 'The NFL Supports Domestic Violence'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">126</span></span></a>
         </li>
         <li id='id_trending_5791728' data-beacon='{"p":{"plid":5791728}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media'>Can We Stop Endlessly Replaying The Ray Rice Video, Please?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">59</span></span></a>
-        </li>
-        <li id='id_trending_5784936' data-beacon='{"p":{"plid":5784936}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/with-all-due-respect-bloomberg_n_5784936.html?ir=Media'>You Will Either Like Or Really Really Hate This New Show<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">11</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ray-rice-video-media-janay-rice_n_5791728.html?ir=Media'>Can We Stop Endlessly Replaying The Ray Rice Video, Please?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">104</span></span></a>
         </li>
         <li id='id_trending_5791594' data-beacon='{"p":{"plid":5791594}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/isis-media-threat_n_5791594.html?ir=Media'>Americans Panicked Over ISIS Threat That Experts Say Isn't Imminent</a>
+        </li>
+        <li id='id_trending_5796852' data-beacon='{"p":{"plid":5796852}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/jay-carney-cnn_n_5796852.html?ir=Media'>Jay Carney Joins CNN<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">71</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -683,10 +682,10 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/comedy/'>Comedy</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101014 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123004 -->
       <ul>
         <li id='id_trending_5786790' data-beacon='{"p":{"plid":5786790}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/cats-bullying-people-compilation_n_5786790.html?ir=Comedy'>The Ultimate Compilation Of Cats Bullying People<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">45</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/cats-bullying-people-compilation_n_5786790.html?ir=Comedy'>The Ultimate Compilation Of Cats Bullying People<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">47</span></span></a>
         </li>
         <li id='id_trending_5791576' data-beacon='{"p":{"plid":5791576}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/howard-stern-eulogy-joan-rivers_n_5791576.html?ir=Comedy'>Howard Stern's Perfect Eulogy For Joan Rivers Was DIRTY</a>
@@ -694,11 +693,11 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5792118' data-beacon='{"p":{"plid":5792118}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/tina-fey-three-year-old-alec-baldwin_n_5792118.html?ir=Comedy'>Tina Fey's Three-Year-Old Might Be Evil</a>
         </li>
+        <li id='id_trending_5791820' data-beacon='{"p":{"plid":5791820}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/starbucks-name-wrong-reason_n_5791820.html?ir=Comedy'>The 'Real' Reason Starbucks Baristas Spell Your Name Wrong</a>
+        </li>
         <li id='id_trending_5774852' data-beacon='{"p":{"plid":5774852}}'>
           <a href='http://www.huffingtonpost.com/2014/09/05/drunk-people-nailed-it-photos_n_5774852.html?ir=Comedy'>15 Drunk People Who Totally NAILED IT</a>
-        </li>
-        <li id='id_trending_5786092' data-beacon='{"p":{"plid":5786092}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/channing-tatum-dick-graze-jillian-bell_n_5786092.html?ir=Comedy'>Channing Tatum Introduces The Dick Graze... Of Course<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">33</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -736,22 +735,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/style/'>Style</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101104 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123039 -->
       <ul>
+        <li id='id_trending_5786464' data-beacon='{"p":{"plid":5786464}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/martin-keehn-spring-2015-hair_n_5786464.html?ir=Style'>Would You Date A Guy With Hair Like This?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">141</span></span></a>
+        </li>
         <li id='id_trending_5791000' data-beacon='{"p":{"plid":5791000}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress</a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">10</span></span></a>
         </li>
         <li id='id_trending_5791800' data-beacon='{"p":{"plid":5791800}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/bill-cunningham-fashion-week_n_5791800.html?ir=Style'>The Most Interesting Person At Fashion Week Isn't Who You Think</a>
         </li>
+        <li id='id_trending_5783340' data-beacon='{"p":{"plid":5783340}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/08/cat-eye-liner-tricks-kate-spade-spring-2015_n_5783340.html?ir=Style'>Tired Of The Cat Eye? Try This Liner Trick Instead</a>
+        </li>
         <li id='id_trending_4525275' data-beacon='{"p":{"plid":4525275}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/kate-middleton-pregnant-again-baby-two_n_4525275.html?ir=Style'>Kate Middleton Is Pregnant Again!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">123</span></span></a>
-        </li>
-        <li id='id_trending_5782576' data-beacon='{"p":{"plid":5782576}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/prince-william-kate-middleton-pregnant_n_5782576.html?ir=Style'>EXPECTING AGAIN!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">55</span></span></a>
-        </li>
-        <li id='id_trending_5783544' data-beacon='{"p":{"plid":5783544}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/prince-george-sibling-feelings_n_5783544.html?ir=Style'>Prince George Is Presumably Feeling All The Feels About A Sibling</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -789,22 +788,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/crime/'>Crime</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101017 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123004 -->
       <ul>
         <li id='id_trending_5789688' data-beacon='{"p":{"plid":5789688}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/holly-bobo-remains-found-skull_n_5789688.html?ir=Crime'>Missing Student Holly Bobo's Skull Found In Woods<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">46</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/holly-bobo-remains-found-skull_n_5789688.html?ir=Crime'>Missing Student Holly Bobo's Skull Found In Woods<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">47</span></span></a>
         </li>
         <li id='id_trending_5793916' data-beacon='{"p":{"plid":5793916}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/missing-south-carolina-children_n_5793916.html?ir=Crime'>Bodies Of 5 Missing Kids Found In Rural Alabama<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">38</span></span></a>
-        </li>
-        <li id='id_trending_5788028' data-beacon='{"p":{"plid":5788028}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/magic-mountain-fire_n_5788028.html?ir=Crime'>Coaster Burns At Six Flags Magic Mountain<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">46</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/missing-south-carolina-children_n_5793916.html?ir=Crime'>Bodies Of 5 Missing Kids Found In Rural Alabama<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">40</span></span></a>
         </li>
         <li id='id_trending_5790034' data-beacon='{"p":{"plid":5790034}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/sons-guns-william-hayden-raped-girl_n_5790034.html?ir=Crime'>'Sons Of Guns' Star Charged With Rape Of Another 12-Year-Old Girl<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">65</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/sons-guns-william-hayden-raped-girl_n_5790034.html?ir=Crime'>'Sons Of Guns' Star Charged With Rape Of Another 12-Year-Old Girl<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">70</span></span></a>
         </li>
-        <li id='id_trending_5785290' data-beacon='{"p":{"plid":5785290}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/kenneth-harden-tortures-rape-wife-slave-contract_n_5785290.html?ir=Crime'>Man Tortured, Raped Wife Under 'Slave Contract': Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">199</span></span></a>
+        <li id='id_trending_5787196' data-beacon='{"p":{"plid":5787196}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/08/shannell-moku-death_n_5787196.html?ir=Crime'>Hawaii Teen Allegedly Beats Mother To Death</a>
+        </li>
+        <li id='id_trending_5792538' data-beacon='{"p":{"plid":5792538}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/women-tired-of-white-people-moving-in-robbery_n_5792538.html?ir=Crime'>Women Tired Of 'White People' Force Tenants Out At Gunpoint: Cops</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -842,19 +841,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/weird-news/'>Weird News</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101126 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123101 -->
       <ul>
         <li id='id_trending_5790078' data-beacon='{"p":{"plid":5790078}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?ir=Weird+News'>Insanely Drunk Woman Tries To Pick Up Child From School: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">247</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/renata-congleton-drunk-pick-up-child-school_n_5790078.html?ir=Weird+News'>Insanely Drunk Woman Tries To Pick Up Child From School: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">248</span></span></a>
         </li>
         <li id='id_trending_5791538' data-beacon='{"p":{"plid":5791538}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/karen-dilworth_n_5791538.html?ir=Weird+News'>Woman Suspected Of Masturbating In Public On Motorcycle<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">189</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/karen-dilworth_n_5791538.html?ir=Weird+News'>Woman Suspected Of Masturbating In Public On Motorcycle<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">201</span></span></a>
         </li>
         <li id='id_trending_5787248' data-beacon='{"p":{"plid":5787248}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/albuquerque-grim-reaper_n_5787248.html?ir=Weird+News'>Grim Reaper Haunts Albuquerque Cemetery<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">13</span></span></a>
         </li>
         <li id='id_trending_5786678' data-beacon='{"p":{"plid":5786678}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?ir=Weird+News'>Woman Gives IV To Unconscious Teen Instead Of Calling 911: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">33</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/jennifer-phippen-_n_5786678.html?ir=Weird+News'>Woman Gives IV To Unconscious Teen Instead Of Calling 911: Cops<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">53</span></span></a>
         </li>
         <li id='id_trending_5786418' data-beacon='{"p":{"plid":5786418}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/teens-allegedly-break-int_n_5786418.html?ir=Weird+News'>Florida Teens Allegedly Break Into Home To Have Sex<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">16</span></span></a>
@@ -895,13 +894,13 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/taste/'>Taste</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101105 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123040 -->
       <ul>
         <li id='id_trending_5768964' data-beacon='{"p":{"plid":5768964}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/pumpkin-spice-oreos-limited_n_5768964.html?ir=Taste'>New Pumpkin Spice Oreos Smell Like A Candle, But We Like Them Anyway<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">10</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/pumpkin-spice-oreos-limited_n_5768964.html?ir=Taste'>New Pumpkin Spice Oreos Smell Like A Candle, But We Like Them Anyway<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">12</span></span></a>
         </li>
         <li id='id_trending_5768552' data-beacon='{"p":{"plid":5768552}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/forgotten-snacks_n_5768552.html?ir=Taste'>12 Amazing Snacks You Forgot About That You Should Eat Immediately<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">25</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/forgotten-snacks_n_5768552.html?ir=Taste'>12 Amazing Snacks You Forgot About That You Should Eat Immediately<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">27</span></span></a>
         </li>
         <li id='id_trending_5784478' data-beacon='{"p":{"plid":5784478}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/breakfast-cookies-healthy-and-yolo_n_5784478.html?ir=Taste'>22 Ways To Eat Cookies For Breakfast</a>
@@ -909,8 +908,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5783990' data-beacon='{"p":{"plid":5783990}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/schnitzel-recipe-wiener-chicken_n_5783990.html?ir=Taste'>Every Schnitzel Recipe You Want And Need</a>
         </li>
-        <li id='id_trending_5784738' data-beacon='{"p":{"plid":5784738}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/mid-autumn-festival-mooncake_n_5784738.html?ir=Taste'>Here's Why Everyone Is Talking About Mooncakes</a>
+        <li id='id_trending_5784998' data-beacon='{"p":{"plid":5784998}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/french-fry-pizza_n_5784998.html?ir=Taste'>French Fry Pizza Exists For When You Can't Decide What To Drunk Eat</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -948,7 +947,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/arts/'>Arts</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_100501 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123002 -->
       <ul>
         <li id='id_trending_5792052' data-beacon='{"p":{"plid":5792052}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/drone-burning-man-2014_n_5792052.html?ir=Arts'>The Happiest Attendee At Burning Man 2014 Was This Drone</a>
@@ -962,8 +961,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5762584' data-beacon='{"p":{"plid":5762584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/art-apps_n_5762584.html?ir=Arts'>18 Apps That Will Inspire Creativity In Your Everyday Life</a>
         </li>
-        <li id='id_trending_5785626' data-beacon='{"p":{"plid":5785626}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/wolfgang-laib-pollen_n_5785626.html?ir=Arts'>Why One German Artist Has Been Captivated By Pollen For Nearly 40 Years</a>
+        <li id='id_trending_5790430' data-beacon='{"p":{"plid":5790430}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/georgian-women-singing-video_n_5790430.html?ir=Arts'>3 Women Singing A Georgian Song Sound Magical</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -1000,13 +999,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/books/'>Books</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_101003 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_123002 -->
       <ul>
         <li id='id_trending_5785392' data-beacon='{"p":{"plid":5785392}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/pw-picks-books-of-the-wee_29_n_5785392.html?ir=Books'>Best New Books Out This Week</a>
         </li>
+        <li id='id_trending_5795310' data-beacon='{"p":{"plid":5795310}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/romance-novel-lawsuit_n_5795310.html?ir=Books'>Someone Allegedly Took A Christian Romance Novel And Added A Whole Bunch Of Sex</a>
+        </li>
         <li id='id_trending_5793096' data-beacon='{"p":{"plid":5793096}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/harry-potter-facebook_n_5793096.html?ir=Books'>'Harry Potter' Tops Facebook's '10 Books That Stayed With You' Meme And No One Is Surprised</a>
+        </li>
+        <li id='id_trending_5792580' data-beacon='{"p":{"plid":5792580}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/nonfiction-books-fall-2014_n_5792580.html?ir=Books'>10 Nonfiction Books You'll Be Reading About This Fall</a>
         </li>
         <li id='id_trending_5772754' data-beacon='{"p":{"plid":5772754}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/wizard-of-oz-book_n_5772754.html?ir=Books'>The Wonderful Wizard Of Oz' Like You've Never Seen It Before (NEW BOOK)</a>
@@ -1050,33 +1055,33 @@ jQuery('#fb_like_vertical').mouseenter(function() {
       <div class="trending tn-hp-live" data-beacon='{"p":{"lnid":"trending"}}'>
        <ul>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbb9302a7605e58000109">
+         <a href="http://live.huffingtonpost.com/r/segment/540a17b978c90a0ee8000631">
           <span class="schedule-status now">Now</span>
-          <span class="segment-title">Top Stories For Wednesday, September 10</span>
+          <span class="segment-title">Radio Host Mark Goodman LIVE</span>
          </a>
         </li>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbbb02a760ff36000150">
+         <a href="http://live.huffingtonpost.com/r/segment/5405eb8402a7604fe70006ba">
           <span class="schedule-status ">Next</span>
-          <span class="segment-title">Ray Rice & The Cycle Of Abuse</span>
+          <span class="segment-title">'Top Chef' Judge Gail Simmons LIVE</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/53ff63d678c90a73d30001ab">
+         <a href="http://live.huffingtonpost.com/r/segment/53dc100078c90ae0c2000531">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Justin Long LIVE</span>
+          <span class="segment-title">9/11 Made Me Redefine My Life</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540f4f4e02a76098810001d8">
+         <a href="http://live.huffingtonpost.com/r/segment/540f342202a7602a660000ff">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Texas State Senator Wendy Davis LIVE</span>
+          <span class="segment-title">Free Speech Zone with @AlyonaMink</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540dbbfa02a7604bdd000100">
+         <a href="http://live.huffingtonpost.com/r/segment/53f600f8fe344419f100037b">
           <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">#WorldBrief With @Caromt</span>
+          <span class="segment-title">ESPN's Mike Golic LIVE</span>
          </a>
         </li>
         <li class="vertical_info">
@@ -2130,7 +2135,7 @@ opacity: 0.6;
             <div id="center_entries_container" data-beacon='{"p":{"mlid":"col2"}}'>
 <!-- BEGIN center_entries_container CONTENT -->
 
-                                                                                                                            
+                                                                                                                        
 
 
             <!-- Entry Blog 2 -->
@@ -2138,7 +2143,377 @@ opacity: 0.6;
 
 
 
-<div id="entry_5796520" onmouseover="TrackingData.entry_5796520={id:5796520,blog_id:2,rank:1,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796520,"mpid":1}}'>
+<div id="entry_5798086" onmouseover="TrackingData.entry_5798086={id:5798086,blog_id:2,rank:1,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5798086,"mpid":1}}'>
+
+
+                        <h4><a href="http://www.popsugar.com/Celebrities-Same-Age-Kim-Kardashian-34797339" target="_hplink">You Won't Believe These Stars Are The Same Age As Kim Kardashian</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.popsugar.com/Celebrities-Same-Age-Kim-Kardashian-34797339" target="_hplink"><img class="unloaded-image quickread_link" id="image_5798086" longdesc="http://i.huffpost.com/gen/2044700/thumbs/n-KIM-KARDASHIAN-large300.jpg" alt="Kim Kardashian" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">SAV via Getty Images</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5798086">http://www.huffingtonpost.com/2014/09/10/you-wont-believe-these-st_n_5798086.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/you-wont-believe-these-st_n_5798086.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5798086"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/the-kardashians/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>The Kardashians</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5798062" onmouseover="TrackingData.entry_5798062={id:5798062,blog_id:2,rank:2,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5798062,"mpid":2}}'>
+
+
+                        <h4><a href="http://www.celebuzz.com/2014-09-10/ryan-phillippe-writes-sweet-message-on-daughter-avas-birthday/" target="_hplink">Ryan Phillippe Posts Sweet Message About His Daughter With Reese Witherspoon</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.celebuzz.com/2014-09-10/ryan-phillippe-writes-sweet-message-on-daughter-avas-birthday/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5798062" longdesc="http://i.huffpost.com/gen/2044642/thumbs/n-REESE-WITHERSPOON-RYAN-PHILLIPPE-large300.jpg" alt="Reese Witherspoon Ryan Phillippe" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5798062">http://www.huffingtonpost.com/2014/09/10/ryan-phillippe-writes-swe_n_5798062.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/ryan-phillippe-writes-swe_n_5798062.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5798062"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5797680" onmouseover="TrackingData.entry_5797680={id:5797680,blog_id:2,rank:3,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5797680,"mpid":3}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/nicky-hilton-kendall-jenner-kim-kardashian_n_5797680.html?utm_hp_ref=celebrity&ir=Celebrity">Kendall Jenner Didn't Make Much Of An Impression On Nicky Hilton At Fashion Week</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/nicky-hilton-kendall-jenner-kim-kardashian_n_5797680.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5797680" longdesc="http://i.huffpost.com/gen/2044338/thumbs/n-NICKY-HILTON-large300.jpg" alt="Nicky Hilton" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Gilbert Carrasquillo via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5797680">http://www.huffingtonpost.com/2014/09/10/nicky-hilton-kendall-jenner-kim-kardashian_n_5797680.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/nicky-hilton-kendall-jenner-kim-kardashian_n_5797680.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5797680"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/the-kardashians/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>The Kardashians</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5797692" onmouseover="TrackingData.entry_5797692={id:5797692,blog_id:2,rank:4,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5797692,"mpid":4}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/chris-pratt-hosting-snl-season-40-premiere_n_5797692.html?utm_hp_ref=celebrity&ir=Celebrity">Chris Pratt Hosting 'SNL' Season 40 Premiere!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/chris-pratt-hosting-snl-season-40-premiere_n_5797692.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5797692" longdesc="http://i.huffpost.com/gen/2044312/thumbs/n-CHRIS-PRATT-large300.jpg" alt="Chris Pratt" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jonathan Short/Invision/AP</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5797692">http://www.huffingtonpost.com/2014/09/10/chris-pratt-hosting-snl-season-40-premiere_n_5797692.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/chris-pratt-hosting-snl-season-40-premiere_n_5797692.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5797692"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5798006" onmouseover="TrackingData.entry_5798006={id:5798006,blog_id:2,rank:5,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5798006,"mpid":5}}'>
+
+
+                        <h4><a href="http://www.justjared.com/2014/09/10/about-a-boys-adrianne-palicki-engaged-to-stuntman-beau-jackson-spidell/" target="_hplink">'Friday Night Lights' Star Adrianne Palicki Engaged</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.justjared.com/2014/09/10/about-a-boys-adrianne-palicki-engaged-to-stuntman-beau-jackson-spidell/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5798006" longdesc="http://i.huffpost.com/gen/2044568/thumbs/n-ADRIANNE-PALICKI-large300.jpg" alt="Adrianne Palicki" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Gregg DeGuire via Getty Images</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5798006">http://www.huffingtonpost.com/2014/09/10/adrianne-palicki-engaged-_n_5798006.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/adrianne-palicki-engaged-_n_5798006.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5798006"></span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5796868" onmouseover="TrackingData.entry_5796868={id:5796868,blog_id:2,rank:6,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796868,"mpid":6}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/joan-rivers-throat-biopsy_n_5796868.html?utm_hp_ref=celebrity&ir=Celebrity">Unplanned Throat Biopsy Reportedly Caused Joan Rivers To Stop Breathing</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/joan-rivers-throat-biopsy_n_5796868.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5796868" longdesc="http://i.huffpost.com/gen/2043592/thumbs/n-JOAN-RIVERS-UNPLANNED-BIOPSY-large300.jpg" alt="Joan Rivers Unplanned Biopsy" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Astrid Stawiarz via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5796868">http://www.huffingtonpost.com/2014/09/10/joan-rivers-throat-biopsy_n_5796868.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/joan-rivers-throat-biopsy_n_5796868.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5796868"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/joan-rivers/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Joan Rivers</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5796910" onmouseover="TrackingData.entry_5796910={id:5796910,blog_id:2,rank:7,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796910,"mpid":7}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/jennifer-lopez-fashion-rocks_n_5796910.html?utm_hp_ref=celebrity&ir=Celebrity">J.Lo Rocks A Seriously Daring Black Dress</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/jennifer-lopez-fashion-rocks_n_5796910.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5796910" longdesc="http://i.huffpost.com/gen/2043428/thumbs/n-JENNIFER-LOPEZ-large300.jpg" alt="Jennifer Lopez" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Charles Sykes/Invision/AP</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5796910">http://www.huffingtonpost.com/2014/09/10/jennifer-lopez-fashion-rocks_n_5796910.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/jennifer-lopez-fashion-rocks_n_5796910.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5796910"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/new-york-fashion-week/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>New York Fashion Week</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5796820" onmouseover="TrackingData.entry_5796820={id:5796820,blog_id:2,rank:8,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796820,"mpid":8}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/10/haley-joel-osment-unrecognizable-yoga-hosers_n_5796820.html?utm_hp_ref=celebrity&ir=Celebrity">Haley Joel Osment Is Unrecognizable On 'Yoga Hosers' Set</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/haley-joel-osment-unrecognizable-yoga-hosers_n_5796820.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5796820" longdesc="http://i.huffpost.com/gen/2043552/thumbs/n-HALEY-JOEL-OSMENT-large300.jpg" alt="Haley Joel Osment" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Chelsea Lauren via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5796820">http://www.huffingtonpost.com/2014/09/10/haley-joel-osment-unrecognizable-yoga-hosers_n_5796820.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/10/haley-joel-osment-unrecognizable-yoga-hosers_n_5796820.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5796820"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/@primacy_movies/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Movies</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+                <!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5796520" onmouseover="TrackingData.entry_5796520={id:5796520,blog_id:2,rank:9,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796520,"mpid":9}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/10/nicki-minaj-fashion-rocks_n_5796520.html?utm_hp_ref=celebrity&ir=Celebrity">Nicki Minaj Goes For An Understated Look On Fashion Rocks Red Carpet</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/nicki-minaj-fashion-rocks_n_5796520.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5796520" longdesc="http://i.huffpost.com/gen/2043330/thumbs/n-NICKI-MINAJ-large300.jpg" alt="Nicki Minaj" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jim Spellman via Getty Images</div></div>
@@ -2185,7 +2560,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5796632" onmouseover="TrackingData.entry_5796632={id:5796632,blog_id:2,rank:2,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796632,"mpid":2}}'>
+<div id="entry_5796632" onmouseover="TrackingData.entry_5796632={id:5796632,blog_id:2,rank:10,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796632,"mpid":10}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/10/justin-bieber-fashion-rocks-concert_n_5796632.html?utm_hp_ref=celebrity&ir=Celebrity">Justin Bieber Strips Down To His Calvins At Fashion Rocks Concert</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/justin-bieber-fashion-rocks-concert_n_5796632.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5796632" longdesc="http://i.huffpost.com/gen/2043396/thumbs/n-JUSTIN-BIEBER-large300.jpg" alt="Justin Bieber" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jeff Kravitz via Getty Images</div></div>
@@ -2235,7 +2610,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5796464" onmouseover="TrackingData.entry_5796464={id:5796464,blog_id:2,rank:3,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796464,"mpid":3}}'>
+<div id="entry_5796464" onmouseover="TrackingData.entry_5796464={id:5796464,blog_id:2,rank:11,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5796464,"mpid":11}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/10/britney-spears-jimmy-fallon_n_5796464.html?utm_hp_ref=celebrity&ir=Celebrity">Britney Spears Just Revealed The 'Pros And Cons' Of Dating Britney Spears</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/10/britney-spears-jimmy-fallon_n_5796464.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5796464" longdesc="http://i.huffpost.com/gen/2043244/thumbs/n-BRITNEY-SPEARS-large300.jpg" alt="Britney Spears" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">NBC</div></div>
@@ -2282,7 +2657,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5792662" onmouseover="TrackingData.entry_5792662={id:5792662,blog_id:2,rank:4,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792662,"mpid":4}}'>
+<div id="entry_5792662" onmouseover="TrackingData.entry_5792662={id:5792662,blog_id:2,rank:12,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792662,"mpid":12}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/ashley-tisdale-marries-christopher-french_n_5792662.html?utm_hp_ref=celebrity&ir=Celebrity">Ashley Tisdale Is Married!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/ashley-tisdale-marries-christopher-french_n_5792662.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5792662" longdesc="http://i.huffpost.com/gen/2040872/thumbs/n-ASHLEY-large300.jpg" alt="Ashley" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Ashley Tisdale/Instagram</div></div>
@@ -2329,7 +2704,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5792110" onmouseover="TrackingData.entry_5792110={id:5792110,blog_id:2,rank:5,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792110,"mpid":5}}'>
+<div id="entry_5792110" onmouseover="TrackingData.entry_5792110={id:5792110,blog_id:2,rank:13,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5792110,"mpid":13}}'>
 
 
                         <h4><a href="http://www.tmz.com/2014/09/09/kris-jenner-fbi-raids-hotel-room-four-seasons-death-threats/" target="_hplink">FBI Raids Hotel Room Over Kris Jenner Death Threats</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.tmz.com/2014/09/09/kris-jenner-fbi-raids-hotel-room-four-seasons-death-threats/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5792110" longdesc="http://i.huffpost.com/gen/2040386/thumbs/n-KRIS-JENNER-large300.jpg" alt="Kris Jenner" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Richard Shotwell/Invision/AP</div></div>
@@ -2369,7 +2744,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5791690" onmouseover="TrackingData.entry_5791690={id:5791690,blog_id:2,rank:6,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791690,"mpid":6}}'>
+<div id="entry_5791690" onmouseover="TrackingData.entry_5791690={id:5791690,blog_id:2,rank:14,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791690,"mpid":14}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/nick-loeb-slams-sofia-vergara_n_5791690.html?utm_hp_ref=celebrity&ir=Celebrity">Sofia Vergara's Former Fiance Takes A Swipe At Her Style</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/nick-loeb-slams-sofia-vergara_n_5791690.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5791690" longdesc="http://i.huffpost.com/gen/2039960/thumbs/n-SOFIA-VERGARA-NICK-LOEB-large300.jpg" alt="Sofia Vergara Nick Loeb" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Matt Sayles/Invision/AP</div></div>
@@ -2383,7 +2758,7 @@ opacity: 0.6;
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/nick-loeb-slams-sofia-vergara_n_5791690.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791690">(20)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/nick-loeb-slams-sofia-vergara_n_5791690.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5791690"></span></a>
 	</li>
     
   
@@ -2409,7 +2784,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5789998" onmouseover="TrackingData.entry_5789998={id:5789998,blog_id:2,rank:7,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789998,"mpid":7}}'>
+<div id="entry_5789998" onmouseover="TrackingData.entry_5789998={id:5789998,blog_id:2,rank:15,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789998,"mpid":15}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/taylor-swift-katy-perry-blood_n_5789998.html?utm_hp_ref=celebrity&ir=Celebrity">Is Taylor Swift's 'Bad Blood' About Katy Perry?</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/taylor-swift-katy-perry-blood_n_5789998.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5789998" longdesc="http://i.huffpost.com/gen/2039424/thumbs/n-KATY-PERRY-TAYLOR-SWIFT-large300.jpg" alt="Katy Perry Taylor Swift" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Kevin Mazur via Getty Images</div></div>
@@ -2423,7 +2798,7 @@ opacity: 0.6;
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/taylor-swift-katy-perry-blood_n_5789998.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5789998">(19)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/taylor-swift-katy-perry-blood_n_5789998.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5789998">(21)</span></a>
 	</li>
     
   
@@ -2459,7 +2834,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5791864" onmouseover="TrackingData.entry_5791864={id:5791864,blog_id:2,rank:8,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791864,"mpid":8}}'>
+<div id="entry_5791864" onmouseover="TrackingData.entry_5791864={id:5791864,blog_id:2,rank:16,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5791864,"mpid":16}}'>
 
 
                         <h4><a href="http://www.popsugar.com/Summer-2014-Celebrity-Weddings-Pictures-Poll-35627245" target="_hplink">All The Celebrity Weddings Of The Summer</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.popsugar.com/Summer-2014-Celebrity-Weddings-Pictures-Poll-35627245" target="_hplink"><img class="unloaded-image quickread_link" id="image_5791864" longdesc="http://i.huffpost.com/gen/2040006/thumbs/n-ANGIE-large300.jpg" alt="Angie" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">People</div></div>
@@ -2509,7 +2884,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5793130" onmouseover="TrackingData.entry_5793130={id:5793130,blog_id:2,rank:9,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793130,"mpid":9}}'>
+<div id="entry_5793130" onmouseover="TrackingData.entry_5793130={id:5793130,blog_id:2,rank:17,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5793130,"mpid":17}}'>
 
 
                         <h4><a href="http://www.usmagazine.com/celebrity-moms/news/sara-gilbert-is-pregnant-expecting-first-child-with-wife-linda-perry-201499?utm_source=huffpostlive&utm_medium=website&utm_campaign=partner" target="_hplink">Sara Gilbert Is Pregnant</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.usmagazine.com/celebrity-moms/news/sara-gilbert-is-pregnant-expecting-first-child-with-wife-linda-perry-201499?utm_source=huffpostlive&utm_medium=website&utm_campaign=partner" target="_hplink"><img class="unloaded-image quickread_link" id="image_5793130" longdesc="http://i.huffpost.com/gen/2041304/thumbs/n-SARA-GILBERT-LINDA-PERRY-large300.jpg" alt="Sara Gilbert Linda Perry" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Paul Archuleta via Getty Images</div></div>
@@ -2552,7 +2927,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5790442" onmouseover="TrackingData.entry_5790442={id:5790442,blog_id:2,rank:10,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790442,"mpid":10}}'>
+<div id="entry_5790442" onmouseover="TrackingData.entry_5790442={id:5790442,blog_id:2,rank:18,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790442,"mpid":18}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?utm_hp_ref=celebrity&ir=Celebrity">Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5790442" longdesc="http://i.huffpost.com/gen/2038812/thumbs/n-ARIANA-GRANDE-QUESTIONS-large300.jpg" alt="Ariana Grande Questions" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Axelle/Bauer-Griffin via Getty Images</div></div>
@@ -2566,7 +2941,7 @@ opacity: 0.6;
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790442"></span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790442">(93)</span></a>
 	</li>
     
   
@@ -2602,7 +2977,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5790800" onmouseover="TrackingData.entry_5790800={id:5790800,blog_id:2,rank:11,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790800,"mpid":11}}'>
+<div id="entry_5790800" onmouseover="TrackingData.entry_5790800={id:5790800,blog_id:2,rank:19,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790800,"mpid":19}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?utm_hp_ref=celebrity&ir=Celebrity">Jennifer Lopez Gives New Meaning To 'LBD'</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5790800" longdesc="http://i.huffpost.com/gen/2039010/thumbs/n-JENNIFER-LOPEZ-large300.jpg" alt="Jennifer Lopez" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Raymond Hall via Getty Images</div></div>
@@ -2616,7 +2991,7 @@ opacity: 0.6;
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790800">(32)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5790800">(34)</span></a>
 	</li>
     
   
@@ -2652,7 +3027,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5790558" onmouseover="TrackingData.entry_5790558={id:5790558,blog_id:2,rank:12,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790558,"mpid":12}}'>
+<div id="entry_5790558" onmouseover="TrackingData.entry_5790558={id:5790558,blog_id:2,rank:20,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5790558,"mpid":20}}'>
 
 
                         <h4><a href="http://www.celebuzz.com/2014-09-08/blake-lively-covers-fashion-magazine-talks-new-movie-age-of-adaline/" target="_hplink">Blake Lively Stuns On Yet Another Magazine Cover</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.celebuzz.com/2014-09-08/blake-lively-covers-fashion-magazine-talks-new-movie-age-of-adaline/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5790558" longdesc="http://i.huffpost.com/gen/2038796/thumbs/n-BLAKE-LIVELY-large300.jpg" alt="Blake Lively" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Mike Coppola via Getty Images</div></div>
@@ -2702,7 +3077,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5789838" onmouseover="TrackingData.entry_5789838={id:5789838,blog_id:2,rank:13,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789838,"mpid":13}}'>
+<div id="entry_5789838" onmouseover="TrackingData.entry_5789838={id:5789838,blog_id:2,rank:21,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789838,"mpid":21}}'>
 
 
                         <h4><a href="http://www.fishwrapper.com/post/2014/09/07/candace-cameron-pictures-photos-no-makeup-gorgeous-beautiful-stunning/" target="_hplink">Candace Cameron Bure Shares Makeup-Free Selfie</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.fishwrapper.com/post/2014/09/07/candace-cameron-pictures-photos-no-makeup-gorgeous-beautiful-stunning/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5789838" longdesc="http://i.huffpost.com/gen/2038216/thumbs/n-CANDACE-CAMERON-BURE-large300.jpg" alt="Candace Cameron Bure" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Gabriel Olsen via Getty Images</div></div>
@@ -2745,7 +3120,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5789882" onmouseover="TrackingData.entry_5789882={id:5789882,blog_id:2,rank:14,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789882,"mpid":14}}'>
+<div id="entry_5789882" onmouseover="TrackingData.entry_5789882={id:5789882,blog_id:2,rank:22,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5789882,"mpid":22}}'>
 
 
                         <h4><a href="http://www.tmz.com/2014/09/09/guess-who-this-birthday-girl-turned-into/" target="_hplink">Guess Who This Birthday Girl Turned Into!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.tmz.com/2014/09/09/guess-who-this-birthday-girl-turned-into/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5789882" longdesc="http://i.huffpost.com/gen/2038250/thumbs/n-LO-large300.jpg" alt="Lo" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Instagram</div></div>
@@ -2798,7 +3173,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5787072" onmouseover="TrackingData.entry_5787072={id:5787072,blog_id:2,rank:15,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787072,"mpid":15}}'>
+<div id="entry_5787072" onmouseover="TrackingData.entry_5787072={id:5787072,blog_id:2,rank:23,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787072,"mpid":23}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/09/kim-kardashian-ice-bucket-challenge_n_5787072.html?utm_hp_ref=celebrity&ir=Celebrity">Kim K FINALLY Takes The Ice Bucket Challenge</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/09/kim-kardashian-ice-bucket-challenge_n_5787072.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5787072" longdesc="http://i.huffpost.com/gen/2038060/thumbs/n-KIM-KARDASHIAN-ICE-BUCKET-large300.jpg" alt="Kim Kardashian Ice Bucket" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">The Ellen DeGeneres Show</div></div>
@@ -2848,7 +3223,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5787282" onmouseover="TrackingData.entry_5787282={id:5787282,blog_id:2,rank:16,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787282,"mpid":16}}'>
+<div id="entry_5787282" onmouseover="TrackingData.entry_5787282={id:5787282,blog_id:2,rank:24,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5787282,"mpid":24}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=celebrity&ir=Celebrity">Beyonce Crashed A Wedding In Italy And Brides Everywhere Died Of Jealousy</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5787282" longdesc="http://i.huffpost.com/gen/2036750/thumbs/n-BEYONCE-WEDDING-CRASHER-large300.jpg" alt="Beyonce Wedding Crasher" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Twitter</div></div>
@@ -2862,7 +3237,7 @@ opacity: 0.6;
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5787282">(37)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5787282">(38)</span></a>
 	</li>
     
   
@@ -2898,7 +3273,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5785162" onmouseover="TrackingData.entry_5785162={id:5785162,blog_id:2,rank:17,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785162,"mpid":17}}'>
+<div id="entry_5785162" onmouseover="TrackingData.entry_5785162={id:5785162,blog_id:2,rank:25,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785162,"mpid":25}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-paranoia-dating-rolling-stone_n_5785162.html?utm_hp_ref=celebrity&ir=Celebrity">Taylor Swift Prefers You Didn't Ask Her Out Via E-mail</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-paranoia-dating-rolling-stone_n_5785162.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5785162" longdesc="http://i.huffpost.com/gen/2035510/thumbs/n-TAYLOR-SWIFT-large300.jpg" alt="Taylor Swift" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Rolling Stone</div></div>
@@ -2948,7 +3323,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5786440" onmouseover="TrackingData.entry_5786440={id:5786440,blog_id:2,rank:18,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786440,"mpid":18}}'>
+<div id="entry_5786440" onmouseover="TrackingData.entry_5786440={id:5786440,blog_id:2,rank:26,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786440,"mpid":26}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-aniston-little-black-dress-tiff_n_5786440.html?utm_hp_ref=celebrity&ir=Celebrity">Jennifer Aniston Turns Heads In Little Black Dress</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-aniston-little-black-dress-tiff_n_5786440.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5786440" longdesc="http://i.huffpost.com/gen/2036158/thumbs/n-JENNIFER-ANISTON-large300.jpg" alt="Jennifer Aniston" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">J. Countess via Getty Images</div></div>
@@ -2998,7 +3373,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5786434" onmouseover="TrackingData.entry_5786434={id:5786434,blog_id:2,rank:19,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786434,"mpid":19}}'>
+<div id="entry_5786434" onmouseover="TrackingData.entry_5786434={id:5786434,blog_id:2,rank:27,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786434,"mpid":27}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/dascha-polanco-purple-hair_n_5786434.html?utm_hp_ref=celebrity&ir=Celebrity">Dascha Polanco Doesn't Look Like This Anymore</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/dascha-polanco-purple-hair_n_5786434.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5786434" longdesc="http://i.huffpost.com/gen/2036082/thumbs/n-DASCHA-POLANCO-large300.jpg" alt="Dascha Polanco" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jordan Strauss/Invision/AP</div></div>
@@ -3038,7 +3413,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5784926" onmouseover="TrackingData.entry_5784926={id:5784926,blog_id:2,rank:20,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784926,"mpid":20}}'>
+<div id="entry_5784926" onmouseover="TrackingData.entry_5784926={id:5784926,blog_id:2,rank:28,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784926,"mpid":28}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/drew-carey-ohio-teen-with-autism_n_5784926.html?utm_hp_ref=celebrity&ir=Celebrity">Celebs Rally For Teen With Autism After Cruel Ice Bucket Prank</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/drew-carey-ohio-teen-with-autism_n_5784926.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5784926" longdesc="http://i.huffpost.com/gen/2035256/thumbs/n-DREW-CAREY-large300.jpg" alt="Drew Carey" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Allen Berezovsky via Getty Images</div></div>
@@ -3088,7 +3463,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5786092" onmouseover="TrackingData.entry_5786092={id:5786092,blog_id:2,rank:21,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786092,"mpid":21}}'>
+<div id="entry_5786092" onmouseover="TrackingData.entry_5786092={id:5786092,blog_id:2,rank:29,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786092,"mpid":29}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/channing-tatum-dick-graze-jillian-bell_n_5786092.html?utm_hp_ref=celebrity&ir=Celebrity">Channing Tatum Introduces The, Um, Dick Graze</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/channing-tatum-dick-graze-jillian-bell_n_5786092.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5786092" longdesc="http://i.huffpost.com/gen/2035848/thumbs/n-CHANNING-TATUM-DICK-GRAZE-large300.jpg" alt="Channing Tatum Dick Graze" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">YouTube</div></div>
@@ -3135,7 +3510,7 @@ opacity: 0.6;
 
 
 
-<div id="entry_5786274" onmouseover="TrackingData.entry_5786274={id:5786274,blog_id:2,rank:22,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786274,"mpid":22}}'>
+<div id="entry_5786274" onmouseover="TrackingData.entry_5786274={id:5786274,blog_id:2,rank:30,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786274,"mpid":30}}'>
 
 
                         <h4><a href="http://www.usmagazine.com/celebrity-news/news/jessa-duggar-ben-seewald-wedding-date-announced-19-kids-pictures-201489?utm_source=huffpostlive&utm_medium=website&utm_campaign=partner" target="_hplink">Jessa Duggar And Ben Seewald Announce Wedding Date</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.usmagazine.com/celebrity-news/news/jessa-duggar-ben-seewald-wedding-date-announced-19-kids-pictures-201489?utm_source=huffpostlive&utm_medium=website&utm_campaign=partner" target="_hplink"><img class="unloaded-image quickread_link" id="image_5786274" longdesc="http://i.huffpost.com/gen/2036000/thumbs/n-JESSA-BEN-large300.jpg" alt="Jessa Ben" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Instagram</div></div>
@@ -3156,440 +3531,6 @@ opacity: 0.6;
 	</li>
     
   
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5786312" onmouseover="TrackingData.entry_5786312={id:5786312,blog_id:2,rank:23,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786312,"mpid":23}}'>
-
-
-                        <h4><a href="http://www.vanityfair.com/vf-hollywood/2014/09/jennifer-connelly-paul-bettany-shelter" target="_hplink">The Other A-Lister Jennifer Connelly Always Gets Mistaken For</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.vanityfair.com/vf-hollywood/2014/09/jennifer-connelly-paul-bettany-shelter" target="_hplink"><img class="unloaded-image quickread_link" id="image_5786312" longdesc="http://i.huffpost.com/gen/2036020/thumbs/n-JENNIFER-CONNELLY-large300.jpg" alt="Jennifer Connelly" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Evan Agostini/Invision/AP</div></div>
-             
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5786312">http://www.huffingtonpost.com/2014/09/08/jennifer-connelly-and-pau_n_5786312.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/jennifer-connelly-and-pau_n_5786312.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786312"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/@primacy_movies/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Movies</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785960" onmouseover="TrackingData.entry_5785960={id:5785960,blog_id:2,rank:24,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785960,"mpid":24}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity">Why Jennifer Garner Was Upset After Ben Affleck's Ice Bucket Challenge</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5785960" longdesc="http://i.huffpost.com/gen/2035798/thumbs/n-JENNIFER-GARNER-BEN-AFFLECK-large300.jpg" alt="Jennifer Garner Ben Affleck" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">C Flanigan via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785960">http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785960">(45)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/ben-affleck/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Ben Affleck</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5785206" onmouseover="TrackingData.entry_5785206={id:5785206,blog_id:2,rank:25,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785206,"mpid":25}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity">Memo To Everyone: Don't Cross Taylor Swift</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5785206" longdesc="http://i.huffpost.com/gen/2035128/thumbs/n-TAYLOR-SWIFT-large300.jpg" alt="Taylor Swift" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">MTV/MTV1415 via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5785206">http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785206"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/taylor-swift/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Taylor Swift </a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784782" onmouseover="TrackingData.entry_5784782={id:5784782,blog_id:2,rank:26,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784782,"mpid":26}}'>
-
-
-                        <h4><a href="http://www.newser.com/story/193594/prince-william-its-been-a-tricky-few-days.html" target="_hplink">Prince William Speaks Out After Pregnancy Announcement</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.newser.com/story/193594/prince-william-its-been-a-tricky-few-days.html" target="_hplink"><img class="unloaded-image quickread_link" id="image_5784782" longdesc="http://i.huffpost.com/gen/2034896/thumbs/n-KATE-MIDDLETON-PRINCE-WILLIAM-large300.jpg" alt="Kate Middleton Prince William" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
-             
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784782">http://www.huffingtonpost.com/2014/09/08/prince-william-its-been-a_n_5784782.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/prince-william-its-been-a_n_5784782.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784782"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/prince-william/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Prince William</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784870" onmouseover="TrackingData.entry_5784870={id:5784870,blog_id:2,rank:27,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784870,"mpid":27}}'>
-
-
-                        <h4><a href="http://www.yourtango.com/2014225477/love-at-first-sight-not-long-15-quickie-celeb-marriages" target="_hplink">The Quickest Celebrity Marriages Of All Time</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.yourtango.com/2014225477/love-at-first-sight-not-long-15-quickie-celeb-marriages" target="_hplink"><img class="unloaded-image quickread_link" id="image_5784870" longdesc="http://i.huffpost.com/gen/2034972/thumbs/n-PAMELA-ANDERSON-KID-ROCK-large300.jpg" alt="Pamela Anderson Kid Rock" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
-             
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784870">http://www.huffingtonpost.com/2014/09/08/15-quickie-celebrity-marr_n_5784870.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/15-quickie-celebrity-marr_n_5784870.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784870"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/celebrity-weddings/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Celebrity Weddings</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5783612" onmouseover="TrackingData.entry_5783612={id:5783612,blog_id:2,rank:28,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783612,"mpid":28}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity">Megan Fox Cut Her Hair And It Looks Fabulous</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5783612" longdesc="http://i.huffpost.com/gen/2034070/thumbs/n-MEGAN-FOX-KIDS-CHOICE-large300.jpg" alt="Megan Fox Kids Choice" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jeffrey Mayer via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5783612">http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783612">(18)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/teenage-mutant-ninja-turtles/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Ninja Turtles</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784696" onmouseover="TrackingData.entry_5784696={id:5784696,blog_id:2,rank:29,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784696,"mpid":29}}'>
-
-
-                        <h4><a href="http://www.justjared.com/2014/09/07/anna-kendrick-goes-backless-for-last-five-years-premiere-at-tiff-2014/" target="_hplink">Anna Kendrick Is White Hot In Cutout Dress</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.justjared.com/2014/09/07/anna-kendrick-goes-backless-for-last-five-years-premiere-at-tiff-2014/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5784696" longdesc="http://i.huffpost.com/gen/2034848/thumbs/n-ANNA-KENDRICK-large300.jpg" alt="Anna Kendrick" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Alberto E. Rodriguez via Getty Images</div></div>
-             
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784696">http://www.huffingtonpost.com/2014/09/08/story_n_5784696.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/story_n_5784696.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784696"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/@primacy_movies/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Movies</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5784020" onmouseover="TrackingData.entry_5784020={id:5784020,blog_id:2,rank:30,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784020,"mpid":30}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity">Fran Drescher Is Married!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5784020" longdesc="http://i.huffpost.com/gen/2034322/thumbs/n-FRAN-DRESCHER-SHIVA-large300.jpg" alt="Fran Drescher Shiva" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Dimitrios Kambouris via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5784020">http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784020">(46)</span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-                <!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5783576" onmouseover="TrackingData.entry_5783576={id:5783576,blog_id:2,rank:31,zone:5,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783576,"mpid":31}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity">Kendall Jenner Poses Nude In Stunning Photo</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5783576" longdesc="http://i.huffpost.com/gen/2033948/thumbs/n-KENDALL-JENNER-NUDE-large300.jpg" alt="Kendall Jenner Nude" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Instagram</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5783576">http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783576">(22)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/kendall-jenner/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Kendall Jenner</a>			
-					
-				
-		
-	</li>
 
 </ul>
 
@@ -3635,11 +3576,11 @@ opacity: 0.6;
                             document.write(debugadcode);
                         }
                     </script>
-                    </div><!-- ESI MostPopular StartTime:1410358397 -->        
+                    </div><!-- ESI MostPopular StartTime:1410366686 -->        
         
         
         
-                <!-- ESI MostPopular EndTime:1410358878 -->
+                <!-- ESI MostPopular EndTime:1410367143 -->
 <script id="entry-template" type="text/fiji_template">
   <div class="most_popular_entry_wrapper fiji-node">
     <div class="most_popular_entry"> 
@@ -3711,7 +3652,7 @@ opacity: 0.6;
                    <li>
             <span class="name">HuffPost</span>
             <div class="share-button">
-                <div class="fb-like" data-href="http://www.facebook.com/HuffingtonPost" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 100px" ></div>            </div>
+                <div class="fb-like" data-href="http://www.facebook.com/HuffingtonPost" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 100px" hp_track=""></div>            </div>
           </li>
                               <li>
                       <span class="name">Entertainment</span>
@@ -3850,20 +3791,9 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 	                <div class="related_news_item widget_item first_child">
 	                    
 	                    <div class="widget_title_text">
-	                		<a href="http://www.celebuzz.com/2014-09-10/khloe-kardashian-shares-sexy-milf-picture-of-kris-jenner-in-a-bikini/" target="partners">Khloe Kardashian Shares Sexy 'MILF' Picture of Kris Jenner in a Bikini</a>
+	                		<a href="http://www.celebuzz.com/2014-09-10/attention-chris-pratt-will-host-the-saturday-night-live-season-premiere/" target="partners">Attention: Chris Pratt Will Host the ‘Saturday Night Live’ Season Premiere</a>
 							
-							<p><a href="http://www.celebuzz.com/2014-09-10/khloe-kardashian-shares-sexy-milf-picture-of-kris-jenner-in-a-bikini/" target="partners" class="readmore_words"> </a></p>
-							
-						</div>
-					</div>
-					<div class="clear"></div>
-				
-	                <div class="related_news_item widget_item ">
-	                    
-	                    <div class="widget_title_text">
-	                		<a href="http://www.celebuzz.com/2014-09-10/watch-max-adler-spills-glee-secrets-talks-hanging-with-darren-criss/" target="partners">Watch: Max Adler Spills 'Glee' Secrets, Talks Hanging with Darren Criss</a>
-							
-							<p><a href="http://www.celebuzz.com/2014-09-10/watch-max-adler-spills-glee-secrets-talks-hanging-with-darren-criss/" target="partners" class="readmore_words"> </a></p>
+							<p><a href="http://www.celebuzz.com/2014-09-10/attention-chris-pratt-will-host-the-saturday-night-live-season-premiere/" target="partners" class="readmore_words"> </a></p>
 							
 						</div>
 					</div>
@@ -3872,9 +3802,20 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 	                <div class="related_news_item widget_item ">
 	                    
 	                    <div class="widget_title_text">
-	                		<a href="http://www.celebuzz.com/2014-09-10/celebrity-leaked-nude-photo-exhibit-news-sara-gilbert-is-expecting-a-roundup/" target="partners">Celebrity Leaked Nude Photo Exhibit News, Sara Gilbert is Expecting: A Roundup</a>
+	                		<a href="http://www.celebuzz.com/2014-09-10/ryan-phillippe-writes-sweet-message-on-daughter-avas-birthday/" target="partners">Ryan Phillippe Writes Sweet Message on Daughter Ava’s Birthday</a>
 							
-							<p><a href="http://www.celebuzz.com/2014-09-10/celebrity-leaked-nude-photo-exhibit-news-sara-gilbert-is-expecting-a-roundup/" target="partners" class="readmore_words"> </a></p>
+							<p><a href="http://www.celebuzz.com/2014-09-10/ryan-phillippe-writes-sweet-message-on-daughter-avas-birthday/" target="partners" class="readmore_words"> </a></p>
+							
+						</div>
+					</div>
+					<div class="clear"></div>
+				
+	                <div class="related_news_item widget_item ">
+	                    
+	                    <div class="widget_title_text">
+	                		<a href="http://www.celebuzz.com/2014-09-10/zac-efron-shirtless-abs-beach/" target="partners">Shirtless Zac Efron Is Here to Make Your Day a Little Better</a>
+							
+							<p><a href="http://www.celebuzz.com/2014-09-10/zac-efron-shirtless-abs-beach/" target="partners" class="readmore_words"> </a></p>
 							
 						</div>
 					</div>
@@ -3946,26 +3887,26 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 				<div class="widget_children">				
 											<div class="related_news_item widget_item">
 							<div class="widget_img">
-								<a href="http://www.eonline.com/news/577497/the-2015-miss-america-pageant-is-almost-here-see-all-the-winners-from-the-past-90-years?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
-									<img src="http://images.eonline.com/resize/55/55/eol_images/Entire_Site/201489//rs_300x300-140909143620-600.miss-america-past-present.ls.9914.jpg" alt="The 2015 Miss America Pageant Is Almost Here&#8212;See All the Winners From the Past 90 Years!"/>
+								<a href="http://www.eonline.com/news/577702/shia-labeouf-pleads-guilty-to-disorderly-conduct-sentenced-to-complete-6-months-of-outpatient-rehab?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
+									<img src="http://images.eonline.com/resize/55/55/eol_images/Entire_Site/2014624//rs_300x300-140724063856-600.Shia-Labeouf-Court-JR-72414.jpg" alt="Shia LaBeouf Pleads Guilty to Disorderly Conduct, Sentenced to Complete 6 Months of Outpatient Rehab"/>
 								</a>
 							</div>
 							<div class="widget_title_text">
-								<a href="http://www.eonline.com/news/577497/the-2015-miss-america-pageant-is-almost-here-see-all-the-winners-from-the-past-90-years?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
-									The 2015 Miss America Pageant Is Almost Here&#8212;See All the Winners From the Past 90 Years!								</a><br/>
+								<a href="http://www.eonline.com/news/577702/shia-labeouf-pleads-guilty-to-disorderly-conduct-sentenced-to-complete-6-months-of-outpatient-rehab?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
+									Shia LaBeouf Pleads Guilty to Disorderly Conduct, Sentenced to Complete 6 Months of Outpatient Rehab								</a><br/>
 								<a class="readmore_words" target="partners" href="">Read More»</a>
 							</div>
 							<div class="clear-0"></div>
 						</div>
 											<div class="related_news_item widget_item">
 							<div class="widget_img">
-								<a href="http://www.eonline.com/news/577645/pregnant-carrie-underwood-cries-find-out-why?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
-									<img src="http://images.eonline.com/resize/55/55/eol_images/Entire_Site/2014810//rs_300x300-140910061314-600.Carrie-Underwood-JR-91014.jpg" alt="Pregnant Carrie Underwood Cries&#8212;Find Out Why!"/>
+								<a href="http://www.eonline.com/news/574264/maria-menounos-covers-shape-magazine-opens-up-about-kids-i-m-finally-ready-to-have-children?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
+									<img src="http://images.eonline.com/resize/55/55/eol_images/Entire_Site/2014728//rs_300x300-140828140817-600.shape-maria.cm.82914.jpg" alt="Maria Menounos Covers Shape Magazine, Opens Up About Kids: &#34;I&#39;m Finally Ready to Have Children&#34;"/>
 								</a>
 							</div>
 							<div class="widget_title_text">
-								<a href="http://www.eonline.com/news/577645/pregnant-carrie-underwood-cries-find-out-why?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
-									Pregnant Carrie Underwood Cries&#8212;Find Out Why!								</a><br/>
+								<a href="http://www.eonline.com/news/574264/maria-menounos-covers-shape-magazine-opens-up-about-kids-i-m-finally-ready-to-have-children?sid=huffpo_news&utm_source=eonline&utm_medium=huffpo&utm_campaign=huffpo_news" target="partners">
+									Maria Menounos Covers Shape Magazine, Opens Up About Kids: &#34;I&#39;m Finally Ready to Have Children&#34;								</a><br/>
 								<a class="readmore_words" target="partners" href="">Read More»</a>
 							</div>
 							<div class="clear-0"></div>
@@ -3997,7 +3938,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 <!-- BEGIN rc_upper CONTENT -->
 
 
-                                                                                                
+                                                                                                    
 
 
     
@@ -4007,7 +3948,450 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5783678" onmouseover="TrackingData.entry_5783678={id:5783678,blog_id:2,rank:1,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783678,"mpid":1}}'>
+<div id="entry_5786312" onmouseover="TrackingData.entry_5786312={id:5786312,blog_id:2,rank:1,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5786312,"mpid":1}}'>
+
+
+                        <h4><a href="http://www.vanityfair.com/vf-hollywood/2014/09/jennifer-connelly-paul-bettany-shelter" target="_hplink">The Other A-Lister Jennifer Connelly Always Gets Mistaken For</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.vanityfair.com/vf-hollywood/2014/09/jennifer-connelly-paul-bettany-shelter" target="_hplink"><img class="unloaded-image quickread_link" id="image_5786312" longdesc="http://i.huffpost.com/gen/2036020/thumbs/n-JENNIFER-CONNELLY-large300.jpg" alt="Jennifer Connelly" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Evan Agostini/Invision/AP</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5786312">http://www.huffingtonpost.com/2014/09/08/jennifer-connelly-and-pau_n_5786312.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/jennifer-connelly-and-pau_n_5786312.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5786312"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/@primacy_movies/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Movies</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785960" onmouseover="TrackingData.entry_5785960={id:5785960,blog_id:2,rank:2,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785960,"mpid":2}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity">Why Jennifer Garner Was Upset After Ben Affleck's Ice Bucket Challenge</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5785960" longdesc="http://i.huffpost.com/gen/2035798/thumbs/n-JENNIFER-GARNER-BEN-AFFLECK-large300.jpg" alt="Jennifer Garner Ben Affleck" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">C Flanigan via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785960">http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/jennifer-garner-ben-affleck-ice-bucket-challenge_n_5785960.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785960">(45)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/ben-affleck/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Ben Affleck</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5785206" onmouseover="TrackingData.entry_5785206={id:5785206,blog_id:2,rank:3,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5785206,"mpid":3}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity">Memo To Everyone: Don't Cross Taylor Swift</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5785206" longdesc="http://i.huffpost.com/gen/2035128/thumbs/n-TAYLOR-SWIFT-large300.jpg" alt="Taylor Swift" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">MTV/MTV1415 via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5785206">http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/taylor-swift-bad-blood_n_5785206.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5785206"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/taylor-swift/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Taylor Swift </a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784782" onmouseover="TrackingData.entry_5784782={id:5784782,blog_id:2,rank:4,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784782,"mpid":4}}'>
+
+
+                        <h4><a href="http://www.newser.com/story/193594/prince-william-its-been-a-tricky-few-days.html" target="_hplink">Prince William Speaks Out After Pregnancy Announcement</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.newser.com/story/193594/prince-william-its-been-a-tricky-few-days.html" target="_hplink"><img class="unloaded-image quickread_link" id="image_5784782" longdesc="http://i.huffpost.com/gen/2034896/thumbs/n-KATE-MIDDLETON-PRINCE-WILLIAM-large300.jpg" alt="Kate Middleton Prince William" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784782">http://www.huffingtonpost.com/2014/09/08/prince-william-its-been-a_n_5784782.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/prince-william-its-been-a_n_5784782.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784782"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+							<span class="frontpage_follow_bignews">
+														    <a href="/news/prince-william/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Prince William</a>
+					
+				
+			</span>
+		
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784870" onmouseover="TrackingData.entry_5784870={id:5784870,blog_id:2,rank:5,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784870,"mpid":5}}'>
+
+
+                        <h4><a href="http://www.yourtango.com/2014225477/love-at-first-sight-not-long-15-quickie-celeb-marriages" target="_hplink">The Quickest Celebrity Marriages Of All Time</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.yourtango.com/2014225477/love-at-first-sight-not-long-15-quickie-celeb-marriages" target="_hplink"><img class="unloaded-image quickread_link" id="image_5784870" longdesc="http://i.huffpost.com/gen/2034972/thumbs/n-PAMELA-ANDERSON-KID-ROCK-large300.jpg" alt="Pamela Anderson Kid Rock" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784870">http://www.huffingtonpost.com/2014/09/08/15-quickie-celebrity-marr_n_5784870.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/15-quickie-celebrity-marr_n_5784870.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784870"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/celebrity-weddings/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Celebrity Weddings</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5783612" onmouseover="TrackingData.entry_5783612={id:5783612,blog_id:2,rank:6,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783612,"mpid":6}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity">Megan Fox Cut Her Hair And It Looks Fabulous</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5783612" longdesc="http://i.huffpost.com/gen/2034070/thumbs/n-MEGAN-FOX-KIDS-CHOICE-large300.jpg" alt="Megan Fox Kids Choice" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jeffrey Mayer via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5783612">http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/megan-fox-short-hair_n_5783612.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783612">(18)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/teenage-mutant-ninja-turtles/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Ninja Turtles</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784696" onmouseover="TrackingData.entry_5784696={id:5784696,blog_id:2,rank:7,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784696,"mpid":7}}'>
+
+
+                        <h4><a href="http://www.justjared.com/2014/09/07/anna-kendrick-goes-backless-for-last-five-years-premiere-at-tiff-2014/" target="_hplink">Anna Kendrick Is White Hot In Cutout Dress</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.justjared.com/2014/09/07/anna-kendrick-goes-backless-for-last-five-years-premiere-at-tiff-2014/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5784696" longdesc="http://i.huffpost.com/gen/2034848/thumbs/n-ANNA-KENDRICK-large300.jpg" alt="Anna Kendrick" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Alberto E. Rodriguez via Getty Images</div></div>
+             
+    
+
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784696">http://www.huffingtonpost.com/2014/09/08/story_n_5784696.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/story_n_5784696.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784696"></span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/@primacy_movies/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Movies</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5784020" onmouseover="TrackingData.entry_5784020={id:5784020,blog_id:2,rank:8,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5784020,"mpid":8}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity">Fran Drescher Is Married!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5784020" longdesc="http://i.huffpost.com/gen/2034322/thumbs/n-FRAN-DRESCHER-SHIVA-large300.jpg" alt="Fran Drescher Shiva" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Dimitrios Kambouris via Getty Images</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5784020">http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/fran-drescher-marries-shiva-ayyadurai_n_5784020.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5784020">(46)</span></a>
+	</li>
+    
+  
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5783576" onmouseover="TrackingData.entry_5783576={id:5783576,blog_id:2,rank:9,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783576,"mpid":9}}'>
+
+
+    <h4><a href="http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity">Kendall Jenner Poses Nude In Stunning Photo</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5783576" longdesc="http://i.huffpost.com/gen/2033948/thumbs/n-KENDALL-JENNER-NUDE-large300.jpg" alt="Kendall Jenner Nude" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Instagram</div></div>
+
+
+ 
+     <ul class="meta_links"> 
+       
+
+		<li class="hidden" id="read_post_5783576">http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity</li>
+
+
+	<li>
+		<a href="http://www.huffingtonpost.com/2014/09/08/kendall-jenner-nude_n_5783576.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5783576">(22)</span></a>
+	</li>
+    
+  
+	<li> 
+		| 
+																		    <a href="/news/kendall-jenner/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Kendall Jenner</a>			
+					
+				
+		
+	</li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Entry Blog 2 -->
+
+
+
+
+<div id="entry_5783678" onmouseover="TrackingData.entry_5783678={id:5783678,blog_id:2,rank:10,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783678,"mpid":10}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=celebrity&ir=Celebrity">Neil Patrick Harris Marries David Burtka In Italy</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5783678" longdesc="http://i.huffpost.com/gen/2034096/thumbs/n-NEIL-PATRICK-HARRIS-DAVID-large300.jpg" alt="Neil Patrick Harris David" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Dave Kotinsky via Getty Images</div></div>
@@ -4058,7 +4442,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5783568" onmouseover="TrackingData.entry_5783568={id:5783568,blog_id:2,rank:2,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783568,"mpid":2}}'>
+<div id="entry_5783568" onmouseover="TrackingData.entry_5783568={id:5783568,blog_id:2,rank:11,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5783568,"mpid":11}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/08/kelly-clarkson-daughter-concert_n_5783568.html?utm_hp_ref=celebrity&ir=Celebrity">Kelly Clarkson's Adorable Baby Girl Rocks Out At Her First Concert</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/kelly-clarkson-daughter-concert_n_5783568.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5783568" longdesc="http://i.huffpost.com/gen/2033932/thumbs/n-RIVER-ROSE-BLACKSTOCK-large300.jpg" alt="River Rose Blackstock" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Twitter</div></div>
@@ -4099,7 +4483,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5782576" onmouseover="TrackingData.entry_5782576={id:5782576,blog_id:2,rank:3,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782576,"mpid":3}}'>
+<div id="entry_5782576" onmouseover="TrackingData.entry_5782576={id:5782576,blog_id:2,rank:12,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782576,"mpid":12}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/08/prince-william-kate-middleton-pregnant_n_5782576.html?utm_hp_ref=celebrity&ir=Celebrity">EXPECTING AGAIN!</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/prince-william-kate-middleton-pregnant_n_5782576.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5782576" longdesc="http://i.huffpost.com/gen/2033346/thumbs/n-WILLIAM-AND-KATE-large300.jpg" alt="William And Kate" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">ASSOCIATED PRESS</div></div>
@@ -4144,13 +4528,17 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
     
+    <!-- END rc_upper CONTENT -->
+</div>
+<div id="rc_lower">
+<!-- BEGIN rc_lower CONTENT -->
     
 <!-- Entry Blog 2 -->
 
 
 
 
-<div id="entry_5780116" onmouseover="TrackingData.entry_5780116={id:5780116,blog_id:2,rank:4,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780116,"mpid":4}}'>
+<div id="entry_5780116" onmouseover="TrackingData.entry_5780116={id:5780116,blog_id:2,rank:13,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780116,"mpid":13}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/07/reddit-celebrity-nudes_n_5780116.html?utm_hp_ref=celebrity&ir=Celebrity">Reddit Bans Page Hosting Celebrity Nudes</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/reddit-celebrity-nudes_n_5780116.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5780116" longdesc="http://i.huffpost.com/gen/2032202/thumbs/n-JENNIFER-LAWRENCE-large300.jpg" alt="Jennifer Lawrence" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Eric Charbonneau/Invision/AP</div></div>
@@ -4201,7 +4589,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5780658" onmouseover="TrackingData.entry_5780658={id:5780658,blog_id:2,rank:5,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780658,"mpid":5}}'>
+<div id="entry_5780658" onmouseover="TrackingData.entry_5780658={id:5780658,blog_id:2,rank:14,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5780658,"mpid":14}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/07/miley-cyrus-pasties_n_5780658.html?utm_hp_ref=celebrity&ir=Celebrity">Miley Cyrus Wore Pasties To The Alexander Wang Party</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/miley-cyrus-pasties_n_5780658.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5780658" longdesc="http://i.huffpost.com/gen/2032434/thumbs/n-MILEY-CYRUS-large300.jpg" alt="Miley Cyrus" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Miley Cyrus / Instagram</div></div>
@@ -4215,7 +4603,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/07/miley-cyrus-pasties_n_5780658.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5780658">(1,964)</span></a>
+		<a href="http://www.huffingtonpost.com/2014/09/07/miley-cyrus-pasties_n_5780658.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5780658">(1,967)</span></a>
 	</li>
     
   
@@ -4252,7 +4640,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5782002" onmouseover="TrackingData.entry_5782002={id:5782002,blog_id:2,rank:6,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782002,"mpid":6}}'>
+<div id="entry_5782002" onmouseover="TrackingData.entry_5782002={id:5782002,blog_id:2,rank:15,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5782002,"mpid":15}}'>
 
 
             <h4><a href="http://www.huffingtonpost.com/2014/09/08/molly-glynn-dies-dead-chicago-fire-actress-obituary_n_5782002.html?utm_hp_ref=celebrity&ir=Celebrity">'Chicago Fire' Actress Killed By Falling Tree During Powerful Storm</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/08/molly-glynn-dies-dead-chicago-fire-actress-obituary_n_5782002.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5782002" longdesc="http://i.huffpost.com/gen/2032936/thumbs/n-MOLLY-GLYNN-large300.jpg" alt="Molly Glynn" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">WAFF48</div></div>
@@ -4306,7 +4694,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5779866" onmouseover="TrackingData.entry_5779866={id:5779866,blog_id:2,rank:7,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779866,"mpid":7}}'>
+<div id="entry_5779866" onmouseover="TrackingData.entry_5779866={id:5779866,blog_id:2,rank:16,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5779866,"mpid":16}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=celebrity&ir=Celebrity">Stars Bid Farewell To Joan Rivers</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/07/joan-rivers-funeral_n_5779866.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5779866" longdesc="http://i.huffpost.com/gen/2032104/thumbs/n-JOAN-RIVERS-large300.jpg" alt="Joan Rivers" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Getty</div></div>
@@ -4354,7 +4742,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5777378" onmouseover="TrackingData.entry_5777378={id:5777378,blog_id:2,rank:8,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777378,"mpid":8}}'>
+<div id="entry_5777378" onmouseover="TrackingData.entry_5777378={id:5777378,blog_id:2,rank:17,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777378,"mpid":17}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/06/james-franco-shaved-head-venice-film-festival_n_5777378.html?utm_hp_ref=celebrity&ir=Celebrity">James Franco, Is That You?</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/james-franco-shaved-head-venice-film-festival_n_5777378.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5777378" longdesc="http://i.huffpost.com/gen/2030970/thumbs/n-JAMES-FRANCO-large300.jpg" alt="James Franco" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Ernesto Ruscio via Getty Images</div></div>
@@ -4405,7 +4793,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5776680" onmouseover="TrackingData.entry_5776680={id:5776680,blog_id:2,rank:9,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5776680,"mpid":9}}'>
+<div id="entry_5776680" onmouseover="TrackingData.entry_5776680={id:5776680,blog_id:2,rank:18,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5776680,"mpid":18}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/06/jennifer-lopez-crop-top_n_5776680.html?utm_hp_ref=celebrity&ir=Celebrity">You're Not Used To Seeing J.Lo Like This</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/jennifer-lopez-crop-top_n_5776680.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5776680" longdesc="http://i.huffpost.com/gen/2030486/thumbs/n-JLO-CROP-TOP-large300.jpg" alt="Jlo Crop Top" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Splash News</div></div>
@@ -4456,7 +4844,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5777366" onmouseover="TrackingData.entry_5777366={id:5777366,blog_id:2,rank:10,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777366,"mpid":10}}'>
+<div id="entry_5777366" onmouseover="TrackingData.entry_5777366={id:5777366,blog_id:2,rank:19,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777366,"mpid":19}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/06/rihanna-babydoll-dress-new-york-fashion-week_n_5777366.html?utm_hp_ref=celebrity&ir=Celebrity">Rihanna Is All Legs At New York Fashion Week</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/rihanna-babydoll-dress-new-york-fashion-week_n_5777366.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5777366" longdesc="http://i.huffpost.com/gen/2030984/thumbs/n-RIHANNA-large300.jpg" alt="Rihanna" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">John Lamparski via Getty Images</div></div>
@@ -4507,7 +4895,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5777106" onmouseover="TrackingData.entry_5777106={id:5777106,blog_id:2,rank:11,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777106,"mpid":11}}'>
+<div id="entry_5777106" onmouseover="TrackingData.entry_5777106={id:5777106,blog_id:2,rank:20,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5777106,"mpid":20}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/06/blake-lively-beyonce-beehive-cake_n_5777106.html?utm_hp_ref=celebrity&ir=Celebrity">Blake Lively And Beyonce Are THE Best Celebrity Besties</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/06/blake-lively-beyonce-beehive-cake_n_5777106.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5777106" longdesc="http://i.huffpost.com/gen/2030862/thumbs/n-BLAKE-LIVELY-BEYONCE-large300.jpg" alt="Blake Lively Beyonce" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Kevin Mazur /Chime For Change/Getty Images for Gucci via Getty Images</div></div>
@@ -4555,7 +4943,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5776974" onmouseover="TrackingData.entry_5776974={id:5776974,blog_id:2,rank:12,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5776974,"mpid":12}}'>
+<div id="entry_5776974" onmouseover="TrackingData.entry_5776974={id:5776974,blog_id:2,rank:21,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5776974,"mpid":21}}'>
 
 
                         <h4><a href="http://www.tmz.com/2014/09/06/grl-simone-battle-dies-dead-singer-x-factor/" target="_hplink">'X Factor' Star Simone Battle Dead At 25</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.tmz.com/2014/09/06/grl-simone-battle-dies-dead-singer-x-factor/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5776974" longdesc="http://i.huffpost.com/gen/2030732/thumbs/n-SIMONE-BATTLE-large300.jpg" alt="Simone Battle" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Ray Tamarra via Getty Images</div></div>
@@ -4596,7 +4984,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5774374" onmouseover="TrackingData.entry_5774374={id:5774374,blog_id:2,rank:13,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774374,"mpid":13}}'>
+<div id="entry_5774374" onmouseover="TrackingData.entry_5774374={id:5774374,blog_id:2,rank:22,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774374,"mpid":22}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/05/robert-pattinson-girlfriend-fka-twigs_n_5774374.html?utm_hp_ref=celebrity&ir=Celebrity">5 Things To Know About Robert Pattinson's Rumored New Girlfriend</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/robert-pattinson-girlfriend-fka-twigs_n_5774374.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5774374" longdesc="http://i.huffpost.com/gen/2029164/thumbs/n-FKA-TWIGS-large300.jpg" alt="Fka Twigs" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Instagram</div></div>
@@ -4637,7 +5025,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5774318" onmouseover="TrackingData.entry_5774318={id:5774318,blog_id:2,rank:14,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774318,"mpid":14}}'>
+<div id="entry_5774318" onmouseover="TrackingData.entry_5774318={id:5774318,blog_id:2,rank:23,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774318,"mpid":23}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/05/zosia-mamet-blond_n_5774318.html?utm_hp_ref=celebrity&ir=Celebrity">Another 'Girls' Star Goes Platinum Blond</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/zosia-mamet-blond_n_5774318.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5774318" longdesc="http://i.huffpost.com/gen/2029644/thumbs/n-ZOSIA-MAMET-large300.jpg" alt="Zosia Mamet" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Andy Kropa /Invision/AP</div></div>
@@ -4678,7 +5066,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5774386" onmouseover="TrackingData.entry_5774386={id:5774386,blog_id:2,rank:15,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774386,"mpid":15}}'>
+<div id="entry_5774386" onmouseover="TrackingData.entry_5774386={id:5774386,blog_id:2,rank:24,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5774386,"mpid":24}}'>
 
 
                         <h4><a href="http://www.celebuzz.com/2014-09-05/chris-brown-rihanna-jail/" target="_hplink">Chris Brown Talks Rihanna And Jail Time In Billboard Magazine</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.celebuzz.com/2014-09-05/chris-brown-rihanna-jail/" target="_hplink"><img class="unloaded-image quickread_link" id="image_5774386" longdesc="http://i.huffpost.com/gen/2029254/thumbs/n-CHRIS-BROWN-large300.jpg" alt="Chris Brown" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Billboard</div></div>
@@ -4732,7 +5120,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 
 
 
-<div id="entry_5773974" onmouseover="TrackingData.entry_5773974={id:5773974,blog_id:2,rank:16,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5773974,"mpid":16}}'>
+<div id="entry_5773974" onmouseover="TrackingData.entry_5773974={id:5773974,blog_id:2,rank:25,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5773974,"mpid":25}}'>
 
 
     <h4><a href="http://www.huffingtonpost.com/2014/09/05/kim-kardashian-north-west-anna-wintour_n_5773974.html?utm_hp_ref=celebrity&ir=Celebrity">Kimye Named Their Daughter North Because Anna Wintour Said So</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/kim-kardashian-north-west-anna-wintour_n_5773974.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5773974" longdesc="http://i.huffpost.com/gen/2028856/thumbs/n-KIM-KARDASHIAN-KANYE-WEST-large300.jpg" alt="Kim Kardashian Kanye West" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">David M. Benett via Getty Images</div></div>
@@ -4755,396 +5143,6 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 																		    <a href="/news/anna-wintour/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Anna Wintour</a>			
 					
 				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5773136" onmouseover="TrackingData.entry_5773136={id:5773136,blog_id:2,rank:17,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5773136,"mpid":17}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/joan-rivers-cause-of-death_n_5773136.html?utm_hp_ref=celebrity&ir=Celebrity">Joan Rivers' Cause Of Death Remains Unclear After Autopsy</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/joan-rivers-cause-of-death_n_5773136.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5773136" longdesc="http://i.huffpost.com/gen/2028332/thumbs/n-JOAN-RIVERS-CAUSE-OF-DEATH-large300.jpg" alt="Joan Rivers Cause Of Death" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Marcel Thomas via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5773136">http://www.huffingtonpost.com/2014/09/05/joan-rivers-cause-of-death_n_5773136.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/joan-rivers-cause-of-death_n_5773136.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5773136">(84)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/ap/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>AP</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    <!-- END rc_upper CONTENT -->
-</div>
-<div id="rc_lower">
-<!-- BEGIN rc_lower CONTENT -->
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5773016" onmouseover="TrackingData.entry_5773016={id:5773016,blog_id:2,rank:18,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5773016,"mpid":18}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/britney-spears-studio_n_5773016.html?utm_hp_ref=celebrity&ir=Celebrity">Britney Is Back In The Studio, Y'all</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/britney-spears-studio_n_5773016.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5773016" longdesc="http://i.huffpost.com/gen/2028034/thumbs/n-BRITNEY-SPEARS-large300.jpg" alt="Britney Spears" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Denise Truscello/BSLV via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5773016">http://www.huffingtonpost.com/2014/09/05/britney-spears-studio_n_5773016.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/britney-spears-studio_n_5773016.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5773016"></span></a>
-	</li>
-    
-  
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5773488" onmouseover="TrackingData.entry_5773488={id:5773488,blog_id:2,rank:19,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5773488,"mpid":19}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/kim-kardashian-kanye-west-sex-tape_n_5773488.html?utm_hp_ref=celebrity&ir=Celebrity">Kim Kardashian Hints She And Kanye West Have A Sex Tape</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/kim-kardashian-kanye-west-sex-tape_n_5773488.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5773488" longdesc="http://i.huffpost.com/gen/2028366/thumbs/n-KIM-KARDASHIAN-KANYE-large300.jpg" alt="Kim Kardashian Kanye" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">David M. Benett via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5773488">http://www.huffingtonpost.com/2014/09/05/kim-kardashian-kanye-west-sex-tape_n_5773488.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/kim-kardashian-kanye-west-sex-tape_n_5773488.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5773488">(29)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/the-kardashians/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>The Kardashians</a>
-					
-				
-			</span>
-		
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5768236" onmouseover="TrackingData.entry_5768236={id:5768236,blog_id:2,rank:20,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5768236,"mpid":20}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/rj-mitte-cerebral-palsy_n_5768236.html?utm_hp_ref=celebrity&ir=Celebrity">How Cerebral Palsy Taught RJ Mitte To Pity Bullies</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/rj-mitte-cerebral-palsy_n_5768236.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5768236" longdesc="http://i.huffpost.com/gen/2024304/thumbs/n-RJ-MITTE-large300.jpg" alt="Rj Mitte" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Tommaso Boddi via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5768236">http://www.huffingtonpost.com/2014/09/05/rj-mitte-cerebral-palsy_n_5768236.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/rj-mitte-cerebral-palsy_n_5768236.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5768236"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/hpl/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>HuffPost Live</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5772312" onmouseover="TrackingData.entry_5772312={id:5772312,blog_id:2,rank:21,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5772312,"mpid":21}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/lena-dunham-joan-rivers_n_5772312.html?utm_hp_ref=celebrity&ir=Celebrity">Lena Dunham Posts Plastic Surgery Joke In Honor Of Joan Rivers</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/lena-dunham-joan-rivers_n_5772312.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5772312" longdesc="http://i.huffpost.com/gen/2027396/thumbs/n-LENA-DUNHAM-large300.jpg" alt="Lena Dunham" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jon Kopaloff via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5772312">http://www.huffingtonpost.com/2014/09/05/lena-dunham-joan-rivers_n_5772312.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/lena-dunham-joan-rivers_n_5772312.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5772312">(17)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/lena-dunham/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Lena Dunham</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5772316" onmouseover="TrackingData.entry_5772316={id:5772316,blog_id:2,rank:22,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5772316,"mpid":22}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/kristen-bell-jumpsuit_n_5772316.html?utm_hp_ref=celebrity&ir=Celebrity">Pregnant Kristen Bell Shines In Floral Jumpsuit</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/kristen-bell-jumpsuit_n_5772316.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5772316" longdesc="http://i.huffpost.com/gen/2027400/thumbs/n-KRISTEN-BELL-large300.jpg" alt="Kristen Bell" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Jason Merritt via Getty Images</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5772316">http://www.huffingtonpost.com/2014/09/05/kristen-bell-jumpsuit_n_5772316.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/kristen-bell-jumpsuit_n_5772316.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5772316"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/kristen-bell/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Kristen Bell</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5772808" onmouseover="TrackingData.entry_5772808={id:5772808,blog_id:2,rank:23,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5772808,"mpid":23}}'>
-
-
-                        <h4><a href="http://www.vanityfair.com/vf-hollywood/2014/09/jennifer-lawrence-guinness-world-record" target="_hplink">Jennifer Lawrence Set A Guinness World Record</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.vanityfair.com/vf-hollywood/2014/09/jennifer-lawrence-guinness-world-record" target="_hplink"><img class="unloaded-image quickread_link" id="image_5772808" longdesc="http://i.huffpost.com/gen/2027876/thumbs/n-JENNIFER-LAWRENCE-large300.jpg" alt="Jennifer Lawrence" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Arthur Mola/Invision/AP</div></div>
-             
-    
-
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5772808">http://www.huffingtonpost.com/2014/09/05/jennifer-lawrence-set-a-g_n_5772808.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/jennifer-lawrence-set-a-g_n_5772808.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5772808"></span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-																		    <a href="/news/@primacy_movies/" class="topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Movies</a>			
-					
-				
-		
-	</li>
-
-</ul>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-    
-    
-<!-- Entry Blog 2 -->
-
-
-
-
-<div id="entry_5771876" onmouseover="TrackingData.entry_5771876={id:5771876,blog_id:2,rank:24,zone:6,vertical:38,ab_headline:'a'};" class="entry" data-beacon='{"p":{"mnid":"newsa","plid":5771876,"mpid":24}}'>
-
-
-    <h4><a href="http://www.huffingtonpost.com/2014/09/05/jay-z-beyonce-birthday-video_n_5771876.html?utm_hp_ref=celebrity&ir=Celebrity">Here's How Jay Z Wished Beyonce A Happy Birthday</a></h4><div class="image_wrapper relative" style="width: 300px;"><a href="http://www.huffingtonpost.com/2014/09/05/jay-z-beyonce-birthday-video_n_5771876.html?utm_hp_ref=celebrity&ir=Celebrity"><img class="unloaded-image quickread_link" id="image_5771876" longdesc="http://i.huffpost.com/gen/2026996/thumbs/n-BEYONCE-JAY-Z-large300.jpg" alt="Beyonce Jay Z" width="300" height="219" src="/images/trans.gif" /></a><div class="absolute image-credit arial_11">Invision for Parkwood Entertainment</div></div>
-
-
- 
-     <ul class="meta_links"> 
-       
-
-		<li class="hidden" id="read_post_5771876">http://www.huffingtonpost.com/2014/09/05/jay-z-beyonce-birthday-video_n_5771876.html?utm_hp_ref=celebrity&ir=Celebrity</li>
-
-
-	<li>
-		<a href="http://www.huffingtonpost.com/2014/09/05/jay-z-beyonce-birthday-video_n_5771876.html?utm_hp_ref=celebrity&ir=Celebrity#comments" data-beacon='{"p":{"lnid":"cmnts"}}'>Comments <span class="comment_count" id="comment_count_5771876">(23)</span></a>
-	</li>
-    
-  
-	<li> 
-		| 
-							<span class="frontpage_follow_bignews">
-														    <a href="/news/mostpopular/" class="follow_bignews_link topic_link" data-beacon='{"p":{"lnid":"bigNws"}}'>Most Popular</a>
-					
-				
-			</span>
-		
 		
 	</li>
 
@@ -5347,12 +5345,12 @@ jQuery('#fb_like_vertical').mouseenter(function() {
     }
 </script>
 
-<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_flex" class="ad_store "></div>            
+<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_leaderboard_flex" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_flex" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_300x250_lower" class="ad_store "></div><div style="width:300px" id="ad_store_bottom_728x90" class="ad_store "></div>            
             <div id="console"></div>
                 <script type="text/javascript">
-                    if(HPAds.ad_check_page_config('adtech_header'))HPAds.ad_store_push('adtech_header', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('top_1x1'))HPAds.ad_store_push('top_1x1', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_flex'))HPAds.ad_store_push('right_rail_flex', '', 300, false, false, false, false);
+                    if(HPAds.ad_check_page_config('adtech_header'))HPAds.ad_store_push('adtech_header', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('top_1x1'))HPAds.ad_store_push('top_1x1', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('leaderboard_flex'))HPAds.ad_store_push('leaderboard_flex', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_flex'))HPAds.ad_store_push('right_rail_flex', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_300x250_lower'))HPAds.ad_store_push('right_rail_300x250_lower', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('bottom_728x90'))HPAds.ad_store_push('bottom_728x90', '', 300, false, false, false, false);
                     HPAds.ad_store_move_to_place(false);
-                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["sharebox_260x60"]=true; HPAds.page_spots["top_1x1"]=true; 
+                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["bottom_728x90"]=true; HPAds.page_spots["leaderboard_flex"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["sharebox_260x60"]=true; HPAds.page_spots["top_1x1"]=true; 
                 </script>
 	</div> <!-- #wrapper_inner -->
 	</div> <!-- .wrapper_h -->
@@ -5418,8 +5416,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
 </noscript>
 <!-- END Nielsen Tracking -->
 <!-- RUM footer -->
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"163769","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":1083,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
-<!-- Served from: wfe11.dtc -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4004801","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFwkVGlAUWA0X","queueTime":0,"applicationTime":1093,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>
+<!-- Served from: production-mt-wfe-56-191.use1 -->
 
 
 <script type="text/javascript">
@@ -5446,7 +5444,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
   js.src = "http://cdn.pubexchange.com/modules/partner/huffpost_celebrity";
   pjs.parentNode.insertBefore(js, pjs);
 }(document, 'script', 'pubexchange-jssdk'));</script></div>
-<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410358397,"entry":0,"vertical":"celebrity","vertical-id":38,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostEntertainment","current_vertical_twitter_name":"HuffPostCeleb","vertical\/bignews":"celebrity"}); });</script>
+<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410366685,"entry":0,"vertical":"celebrity","vertical-id":38,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostEntertainment","current_vertical_twitter_name":"HuffPostCeleb","vertical\/bignews":"celebrity"}); });</script>
 <!--if user has AOL's referrer we display AOL NavBar -->
 <script type="text/javascript" src='http://s1.huffpost.com/assets/js.php?v=1410282423&f=aolunb.js'></script>
 

@@ -1,3 +1,5 @@
+# (TODO..) Implement Try/Except and run again the error html in 'error="ignore"' mode and print 
+#all errors in error.txt 
 # (TODO..) Generate the hashcode of all urls and titles, and "mod 1024" to seperate a number of
 #buckets, in order to eliminate duplicate urls and titles
 
@@ -92,7 +94,7 @@ class MyHTMLParser(HTMLParser):
                 self.found_h5 = False
             if tag == 'h6':
                 self.found_h6 = False
-        else:
+        else:   
             if tag == 'li':
                 self.found_li = False
             if tag == 'a':
