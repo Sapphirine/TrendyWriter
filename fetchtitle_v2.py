@@ -1,6 +1,10 @@
 # (TODO..) Generate the hashcode of all urls and titles, and "mod 1024" to seperate a number of
-#          buckets, in order to eliminate duplicate urls and titles
-# hashlib()  mod 1024  =>  string matching
+#buckets, in order to eliminate duplicate urls and titles
+
+# (USAGE) python fetchtitle_v2.py | tee debug.txt
+#         (only if necessary) grep 'ERROR' debug.txt > error.txt
+
+
 
 import urllib
 from HTMLParser import HTMLParser
@@ -11,7 +15,7 @@ store_topic = 'topic/all_topics.txt'
 store_url = 'url/all_urls.txt'
 
 # create a subclass and override the handler methods
-class MyHTMLParser(HTMLParser):
+class MyHTMLParser(HTMLParser): 
 
     def __init__(self, get_url, url):
         # call super constructor
@@ -106,7 +110,7 @@ class MyHTMLParser(HTMLParser):
                  or (self.found_h6 == True))):
                 
                 # "print" can only output ascii encoded normal String
-                # ,so use "encode()" method to return ascii normal String.
+                #,so use "encode()" method to return ascii normal String.
                 print '[INFO] Data = ', data.encode ('utf-8').strip()
 
                 with open (store_topic, 'a') as writing_file:
@@ -147,7 +151,7 @@ def main():
     
     parser = MyHTMLParser (True, url)
     # "feed" method's parameter had better be unicode
-    # ,so use decode('utf-8') to restore to unicode string.
+    #,so use decode('utf-8') to restore to unicode string.
     parser.feed (htmltxt.decode ('utf-8'))
 
     # read urls from the url recording file.
@@ -158,7 +162,7 @@ def main():
             print '[INFO] Processing: ', pageUrl, ' to ', store_html_path
 
             fHandle = urllib.urlopen (pageUrl)
-            # "read()" return ascii encoded normal String(htmltxt)
+            # "read()" return ascii encoded normal String(htmltxt2)
             htmltxt2 = fHandle.read ()
             
             # 'w' will overwrite the original file with a new one
@@ -167,7 +171,7 @@ def main():
 
             parser = MyHTMLParser (False, url)
             # "feed" method's parameter had better be unicode
-            # ,so use decode('utf-8') to restore to unicode string.
+            #,so use decode('utf-8') to restore to unicode string.
             parser.feed (htmltxt2.decode ('utf-8'))
 
             parser.close ()
