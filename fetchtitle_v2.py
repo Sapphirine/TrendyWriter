@@ -1,5 +1,6 @@
-# (TODO..) Generate the hashcode of all urls and titles, and "mod 1000" to seperate a number of
+# (TODO..) Generate the hashcode of all urls and titles, and "mod 1024" to seperate a number of
 #          buckets, in order to eliminate duplicate urls and titles
+# hashlib()  mod 1024  =>  string matching
 
 import urllib
 from HTMLParser import HTMLParser
@@ -128,11 +129,12 @@ def main():
     open (store_url, 'w').close ()
     open (store_topic, 'w').close ()
 
-    #url = raw_input('Enter an url : ')
-    # if url[-1:] != '/':
-    #    url += '/'
+    url = raw_input('Enter an url : ')
+    if url[-1:] != '/':
+       url += '/'
+    
     # (DEBUGGING..)
-    url = 'http://www.reuters.com/finance/markets/'
+    # url = 'http://www.reuters.com/finance/markets/'
 
     # Generate a file from the url (replace the old ones if file existed)
     urllib.urlretrieve (url, store_homepage)

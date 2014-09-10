@@ -104,11 +104,11 @@
 [INFO] Processing:  http://af.reuters.com
  to  res/url_0.html
 [INFO] Data =  AlertNet
-[INFO] Data =  Seleka rebel infighting in Central African Republic kills 17
+[INFO] Data =  WHO pulls staff from Sierra Leone Ebola lab after doctor infected
 [INFO] Data =  Investing
-[INFO] Data =  South Africa dodges recession as Q2 GDP grows 0.6 pct
+[INFO] Data =  South African stocks rise as economy duck recession
 [INFO] Data =  Sport
-[INFO] Data =  Everton's Pienaar out for Chelsea clash
+[INFO] Data =  No home game for Ivory Coast due to Ebola fears
 [INFO] Data =  World
 [INFO] Data =  Oddly Enough
 [INFO] Data =  Metals
@@ -121,41 +121,41 @@
 [INFO] Data =  Latest AlertNet Crises News
 [INFO] Processing:  http://ara.reuters.com
  to  res/url_1.html
-[INFO] Data =  غارات إسرائيلية تستهدف المزيد من المباني المرتفعة في غزة
-[INFO] Data =  رئيس كردستان العراق: إيران زودت القوات الكردية بالأسلحة
+[INFO] Data =  مصر تعلن وقفا لاطلاق النار في غزة يبدأ الساعة 1600 بتوقيت جرينتش
+[INFO] Data =  مصر: اسرائيل تسمح بدخول المساعدة الانسانية ومواد إعادة الاعمار لغزة
 [INFO] Data =  أخبار الاقتصاد
-[INFO] Data =  الأسهم الأوروبية تتماسك وتوقعات التحفيز تغذي المكاسب
+[INFO] Data =  بورصة السعودية تستأنف الصعود وارتفاع معظم أسواق الشرق الأوسط
 [INFO] Data =  أخبار عالمية
-[INFO] Data =  اشتون: أريد التأكد من قدرة أوكرانيا على الحفاظ على سلامة أراضيها
+[INFO] Data =  بوتين يقول التصعيد العسكري لن يحل أزمة أوكرانيا
 [INFO] Data =  أخبار الرياضة
-[INFO] Data =  لامبارد يعتزل اللعب الدولي مع منتخب انجلترا
+[INFO] Data =  بنعطية مدافع المغرب سينضم الى بايرن من روما
 [INFO] Data =  منوعات
 [INFO] Data =  العلوم والبيئه
 [INFO] Processing:  http://ar.reuters.com
  to  res/url_2.html
-[INFO] Data =  Argentina revoca representación legal de Bank of New York Mellon en medio de crisis de deuda
-[INFO] Data =  Pronóstico meteorológico para región agropecuaria de Argentina
+[INFO] Data =  ACTUALIZA 1-Argentina revoca representación legal de Bank of New York Mellon en medio de crisis de deuda
+[INFO] Data =  Peso argentino cae a mínimos históricos
 [INFO] Data =  Negocios
-[INFO] Data =  EMPRESAS A SEGUIR EN AMÉRICA LATINA-Antofagasta, Avianca Holdings, Interacciones y Cemig
+[INFO] Data =  PESO ARGENTINO EN PLAZA MARGINAL SUBE 0,22 PCT A 13,95 POR DÓLAR EN PRIMEROS NEGOCIOS: OPERADORES
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://br.reuters.com
  to  res/url_3.html
-[INFO] Data =  Escalada militar não resolverá crise na Ucrânia, diz Putin
-[INFO] Data =  Presidente da Ucrânia quer forte controle de fronteira com Rússia e fim de fornecimento de armas
+[INFO] Data =  Israel libera acesso de ajuda humanitária a Gaza
+[INFO] Data =  Israelenses e palestinos firmam acordo de cessar-fogo, diz porta-voz do Hamas
 [INFO] Data =  Mundo
-[INFO] Data =  Avião faz pouso de emergência na Austrália após passageiro idoso tomar os controles
+[INFO] Data =  Obama diz que eliminar Estado Islâmico não será fácil
 [INFO] Data =  Negócios
-[INFO] Data =  Aneel aprova edital de leilão de energia A-5
+[INFO] Data =  Mercado de crédito brasileiro cresce menos em julho, diz BC
 [INFO] Data =  Esportes
 [INFO] Data =  Cultura
 [INFO] Data =  Brasil
 [INFO] Data =  Internet
 [INFO] Processing:  http://ca.reuters.com
  to  res/url_4.html
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
-[INFO] Data =  Pakistan's prime minister meets army chief amid crisis
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
+[INFO] Data =  Islamic State turns radical Islam on Syria Muslims
 [INFO] Data =  Business
-[INFO] Data =  Burger King to buy Canada's Tim Hortons
+[INFO] Data =  TSX at record high after Tim Hortons extends rally
 [INFO] Data =  Canada
 [INFO] Data =  Canada's intelligence head says returning Islamist militants pose threat
 [INFO] Data =  Sports
@@ -204,7 +204,7 @@
 [INFO] Data =  多媒体报道
 [INFO] Data =  世卫称埃博拉疫情比想象更严重
 [INFO] Data =  独家：中国当局调查周永康获得前中共领导人支持--消息人士
-[INFO] Data =  芝加哥期市：CBOT大豆期货大跌3.7%，因套利交易和天气前景
+[INFO] Data =  《汇市解析》--技术面及价位预测
 [INFO] Data =  专栏
 [INFO] Data =  
 [INFO] Data =  Maguire
@@ -216,10 +216,10 @@
 [INFO] Data =  合作专区
 [INFO] Processing:  http://fr.reuters.com
  to  res/url_6.html
-[INFO] Data =  Valls oeuvre à "un gouvernement de clarté"
-[INFO] Data =  L'exécutif a les armes pour passer en force au Parlement
+[INFO] Data =  Valls et Hollande ont constitué leur gouvernement "de clarté"
+[INFO] Data =  Emmanuel Macron remplace Arnaud Montebourg à l'Economie
 [INFO] Data =  Économie
-[INFO] Data =  Les commandes de biens durables s'envolent aux USA grâce aux avions
+[INFO] Data =  Les Bourses européennes clôturent en hausse, progression solide
 [INFO] Data =  Sport
 [INFO] Data =  Brandao sera jugé pour le coup de tête à Thiago Motta
 [INFO] Data =  Technologie
@@ -227,34 +227,34 @@
 [INFO] Data =  Convertisseur de devises
 [INFO] Processing:  http://de.reuters.com
  to  res/url_7.html
-[INFO] Data =  Ukraine nimmt russische Soldaten im Osten fest
-[INFO] Data =  Prozess gegen Banken-Cheflobbyisten Kemmer eingestellt
+[INFO] Data =  Wowereit gibt nach 13 Jahren an der Spitze Berlins auf
+[INFO] Data =  Zunächst kein Durchbruch bei Ukraine-Russland-Treffen
 [INFO] Data =  Inland
-[INFO] Data =  Insider - Merkel weist interne Kritik an PKW-Maut zurück
+[INFO] Data =  Strafbefreiende Steuer-Selbstanzeige wird teurer
 [INFO] Data =  Ausland
 [INFO] Data =  Frankreich stellt nach Kabinettskrach neue Minister vor
 [INFO] Data =  Unternehmen
-[INFO] Data =  Burger King schluckt kanadische Donut-Kette Tim Hortons
+[INFO] Data =  Amazon schnappt Google Spieleportal Twitch weg
 [INFO] Data =  Konjunktur
 [INFO] Data =  Märkte
 [INFO] Data =  Währungsrechner
 [INFO] Processing:  http://in.reuters.com
  to  res/url_8.html
-[INFO] Data =  India bans Finmeccanica from bidding for contracts
+[INFO] Data =  Economy likely grew faster in June quarter: Reuters poll
 [INFO] Data =  Nifty continues retreat from record high; coal users hit
-[INFO] Data =  Boxer Vijender Singh out of Asian Games
-[INFO] Data =  CCI fines car makers $420 million
+[INFO] Data =  Israel, Palestinians reach Gaza ceasefire deal
+[INFO] Data =  SC's coal block ruling may have wider impact
+[INFO] Data =  How Sharif stumbled into protests crisis
+[INFO] Data =  England's Lampard quits internationals
 [INFO] Data =  Schoolgirls commit suicide over harassment
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
-[INFO] Data =  China targets Microsoft browser, media player
-[INFO] Data =  Broadcasters, basic cable prove staying power
+[INFO] Data =  Qualcomm may face EU antitrust probe
 [INFO] Data =  Business
 [INFO] Data =  Markets
 [INFO] Data =  World
 [INFO] Data =  Technology
 [INFO] Data =  Economy
 [INFO] Data =  Deals
-[INFO] Data =  Supreme Court's coal block ruling may have wider economic impact
+[INFO] Data =  India bans Finmeccanica from bidding for contracts amid graft case
 [INFO] Data =  Breakingviews
 [INFO] Data =  Asia
 [INFO] Data =  s top-down corporate reforms vary in promise
@@ -276,24 +276,24 @@
 [INFO] Data =  Video
 [INFO] Processing:  http://it.reuters.com
  to  res/url_9.html
+[INFO] Data =  Gaza, raggiunta intesa tra israeliani e palestinesi, scattata tregua
 [INFO] Data =  Renzi: non accettiamo lezioni su priorità
-[INFO] Data =  Sblocca Italia, Lupi: coperture in legge Stabilità
 [INFO] Data =  Valute
 [INFO] Data =  Finanza e Investimenti
-[INFO] Data =  Ristorazione, matrimonio Burger King-Tim Hortons, giro d'affari 23 miliardi di dollari
-[INFO] Data =  Borsa Milano prosegue in lieve calo, rimbalzano Autogrill e Wdf
+[INFO] Data =  Spending review, una partecipata su 4 ha un rendimento negativo
+[INFO] Data =  Finmeccanica, India vieta offerte per futuri contratti
 [INFO] Data =  Fondi
 [INFO] Data =  Mercati
 [INFO] Processing:  http://jp.reuters.com
  to  res/url_10.html
 [INFO] Data =  トップニュース
-[INFO] Data =  反動減長期化し回復基調弱くなるか、しっかり見ていく＝甘利担当相
+[INFO] Data =  デジタル・アリー株急上昇、ウエラブルカメラへの関心高まる
 [INFO] Data =  マネーニュース
 [INFO] Data =  ピクチャーギャラリー
 [INFO] Data =  ツイートされた記事ランキング
 [INFO] Data =  ロイターランキング
-[INFO] Data =  コラム：エボラ熱、過去最悪の感染はなぜ起きたのか
-[INFO] Data =  クボタ、急死した前社長の路線踏まえ海外展開を加速へ＝新社長
+[INFO] Data =  アングル：南シナ海領有権問題、インドネシアの諸島が新たな舞台に
+[INFO] Data =  ウクライナ情勢、軍備増強では解決しない＝ロシア大統領
 [INFO] Data =  ロイター特集
 [INFO] Data =  ＦＲＢ特集
 [INFO] Data =  特集 拡大するエボラ感染
@@ -324,12 +324,12 @@
 [INFO] Data =  外国為替市場
 [INFO] Data =  株式市場
 [INFO] Data =  ニュース
-[INFO] Data =  ノルウェー政府系ファンドが運用好調、来年度予算に余力＝経済紙
+[INFO] Data =  ハンガリー中銀、政策金利を2.1％で据え置き
 [INFO] Data =  ビジネス
-[INFO] Data =  反動減長期化し回復基調弱くなるか、しっかり見ていく＝甘利担当相
+[INFO] Data =  プライベート・エクイティのＫＫＲ、中国鶏肉会社に出資
 [INFO] Data =  
 [INFO] Data =  写真
-[INFO] Data =  Funeral for Michael Brown
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  ロシア
 [INFO] Data =  特集 欧州債務問題
 [INFO] Data =  中東
@@ -346,12 +346,12 @@
 [INFO] Data =  ビデオ
 [INFO] Processing:  http://lta.reuters.com
  to  res/url_11.html
-[INFO] Data =  Francia presentará gabinete reformista tras salida de ministros rebeldes
-[INFO] Data =  Ataques aéreos israelíes matan a dos palestinos y causan 20 heridos
+[INFO] Data =  Israel acepta propuesta de Egipto para cese al fuego en Gaza: funcionario
+[INFO] Data =  Putin y Poroshenko estrechan manos en Minsk; captura de soldados rusos opaca comienzo de reunión
 [INFO] Data =  Mundo
-[INFO] Data =  Miles de desplazados y cosechas dañadas por inundaciones en Bangladesh
+[INFO] Data =  OMS retira personal de laboratorio ébola en Sierra Leona tras contagio de médico
 [INFO] Data =  Negocios
-[INFO] Data =  China confía en que mantendrá un crecimiento relativamente acelerado: primer ministro
+[INFO] Data =  Burger King acuerda compra de canadiense Tim Hortons
 [INFO] Data =  Deportes
 [INFO] Data =  Espectáculos
 [INFO] Data =  América Latina
@@ -359,14 +359,14 @@
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://mx.reuters.com
  to  res/url_12.html
-[INFO] Data =  RPT-ENTREVISTA-Mexicano Interacciones busca proyectos energía eólica con china Envision: director
-[INFO] Data =  RPT-México vigilará con imágenes satelitales tren "La Bestia" usado por emigrantes
+[INFO] Data =  Peso argentino cae a mínimos históricos
+[INFO] Data =  Bolsa y moneda de México avanzan por dato EEUU y expectativa de estímulos monetarios
 [INFO] Data =  Negocios
-[INFO] Data =  EMPRESAS A SEGUIR EN AMÉRICA LATINA-Antofagasta, Avianca Holdings, Interacciones y Cemig
+[INFO] Data =  TIIE 28 DÍAS MÉXICO A 3.2925 PCT, TIIE 91 DÍAS EN 3.2936 PCT; AGOSTO 27
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://ru.reuters.com
  to  res/url_13.html
-[INFO] Data =  Лукашенко призвал не ждать прорывов от встречи Путина и Порошенко
+[INFO] Data =  Путин и Порошенко обменялись упреками и призывами к миру
 [INFO] Data =  РФ назвала случайностью появление своих военных на Украине
 [INFO] Data =  НОВОСТИ БИЗНЕСА И ЭКОНОМИКИ
 [INFO] Data =  РФ обещает Роснефти финпомощь после санкций Запада
@@ -375,32 +375,31 @@
 [INFO] Data =  Валютный калькулятор
 [INFO] Processing:  http://es.reuters.com
  to  res/url_14.html
-[INFO] Data =  Montoro hablará en el Congreso de fraude fiscal en plena "crisis Pujol"
-[INFO] Data =  Francia presentará un gabinete reformista tras la marcha de los disidentes
+[INFO] Data =  Israel acepta la propuesta de Egipto para un alto el fuego en Gaza
+[INFO] Data =  Macron, nuevo ministro de Economía francés en el nuevo gabinete
 [INFO] Data =  Negocios
-[INFO] Data =  España adjudica 3.500 millones en letras con interés en mínimos históricos
+[INFO] Data =  Francia presentará un gabinete reformista tras la marcha de los disidentes
 [INFO] Data =  Deportes
 [INFO] Data =  Berlín desvelará su plan para albergar los Juegos de 2024
 [INFO] Data =  Sociedad
-[INFO] Data =  'Breaking Bad' y 'Modern Family' se imponen ante series nuevas en los Emmy
+[INFO] Data =  La OMS insta a regular los cigarrillos electrónicos
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://uk.reuters.com
  to  res/url_15.html
-[INFO] Data =  Russian soldiers' capture clouds Ukraine talks
-[INFO] Data =  Iran supplied weapons to Iraqi Kurdish forces; Baghdad bomb kills 12
+[INFO] Data =  Putin, Poroshenko set out different paths to peace
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
 [INFO] Data =  France fine-tunes pro-reform cabinet
-[INFO] Data =  Salmond steamrolls final TV debate before vote
-[INFO] Data =  Hamas structure complicates Gaza peace
-[INFO] Data =  WHO urges stiff regulatory curbs on e-cigarettes
-[INFO] Data =  Amazon snaps up Twitch for $970 million
-[INFO] Data =  Emmys exalt old favourites over newcomers
+[INFO] Data =  Debate win might not boost Salmond's chances
+[INFO] Data =  Qualcomm may face EU antitrust probe
+[INFO] Data =  Boris Johnson confirms Uxbridge as target seat
+[INFO] Data =  Lampard quits internationals
 [INFO] Data =  Video
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Reuters on the Road: Level39 speeding up tech super growth
-[INFO] Data =  Liberian slum cordoned off
-[INFO] Data =  WPP's Sorrell says UK rates to remain lower for longer
-[INFO] Data =  Iraq's military evacuate sick, children from besieged Shi'ite town of Amerli
+[INFO] Data =  Young American hiker goes missing in Israel
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
+[INFO] Data =  Israeli air strikes demolish Gaza highrises
+[INFO] Data =  Mother of freed American journalist held hostage in Syria says family is 'eternally grateful'
+[INFO] Data =  'Change is apparent' in Ferguson, Missouri: Police captain
 [INFO] Data =  Business
 [INFO] Data =  Markets
 [INFO] Data =  World
@@ -408,7 +407,7 @@
 [INFO] Data =  Politics
 [INFO] Data =  Deals
 [INFO] Data =  Galleries of the Day
-[INFO] Data =  Emmy Awards
+[INFO] Data =  Emmy afterparty
 [INFO] Data =  Opinion
 [INFO] Data =  This month
 [INFO] Data =  s ultimate enemy - the Islamic State
@@ -422,28 +421,32 @@
 [INFO] Data =  s change of heart
 [INFO] Processing:  http://www.reuters.com/home
  to  res/url_16.html
-[INFO] Data =  Ukraine captures soldiers ahead of peace talks
-[INFO] Data =  Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
+[INFO] Data =  Ceasefire reached: Hamas
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
+[INFO] Data =  Kiev, Moscow spar over captured soldiers
+[INFO] Data =  Islamic State turns radical Islam on Syria
+[INFO] Data =  Burger King to buy Canada's Tim Hortons
 [INFO] Data =  This month
 [INFO] Data =  s ultimate enemy: Islamic State
-[INFO] Data =  California quake losses seen in the billions
-[INFO] Data =  Amazon buys live video startup Twitch
-[INFO] Data =  Michael Brown remembered with calls for peace
+[INFO] Data =  World health group calls for e-cigarette curbs
+[INFO] Data =  Liberian slum cordoned off due to Ebola
 [INFO] Data =  Video
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Reuters on the Road: Level39 speeding up tech super growth
-[INFO] Data =  Liberian slum cordoned off
-[INFO] Data =  WPP's Sorrell says UK rates to remain lower for longer
+[INFO] Data =  Young American hiker goes missing in Israel
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
+[INFO] Data =  Israeli air strikes demolish Gaza highrises
+[INFO] Data =  Mother of freed American journalist held hostage in Syria says family is 'eternally grateful'
 [INFO] Data =  Business
 [INFO] Data =  Markets
 [INFO] Data =  World
 [INFO] Data =  Technology
 [INFO] Data =  Politics
 [INFO] Data =  Deals
-[INFO] Data =  Gallery of the Day
-[INFO] Data =  Editor's choice
+[INFO] Data =  Galleries of the Day
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Reuters FYI: News worth knowing
+[INFO] Data =  Paging the B-52s...
 [INFO] Data =  Opinion
 [INFO] Data =  A Red Star fades as Ukraine rises
 [INFO] Data =  Becoming a millionaire the hard way
@@ -453,18 +456,18 @@
 [INFO] Data =  Laboring for a grip on when to hike
 [INFO] Processing:  http://www.reuters.com/finance
  to  res/url_17.html
-[INFO] Data =  Wall Street opens flat, S
-[INFO] Data =  500 near record
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
 [INFO] Data =  Latest Business News
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
-[INFO] Data =  Australian airlines relax phone ban too
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Chinese antitrust regulator targets Microsoft's web browser, media player
-[INFO] Data =  BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
-[INFO] Data =  Russian food safety regulator shuts fifth McDonald's restaurant
-[INFO] Data =  Japan government turns more cautious on weak factory output
-[INFO] Data =  Rising North American plane demand boosts leasing market: BOC Aviation
+[INFO] Data =  Different paths to peace for Ukraine
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Volvo's new car targets China rich
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation: judge
+[INFO] Data =  Ann Taylor parent taps JPMorgan to weigh potential sale: sources
+[INFO] Data =  Anti-UAW workers seek to form union at Volkswagen plant
+[INFO] Data =  Best Buy revenue drops as more shoppers prefer to buy online
+[INFO] Data =  Hewlett-Packard recalls 6 million power cords over fire hazard
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -480,18 +483,18 @@
 [INFO] Data =  Small Business
 [INFO] Processing:  http://www.reuters.com/finance
  to  res/url_18.html
-[INFO] Data =  Wall Street opens flat, S
-[INFO] Data =  500 near record
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
 [INFO] Data =  Latest Business News
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
-[INFO] Data =  Australian airlines relax phone ban too
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Chinese antitrust regulator targets Microsoft's web browser, media player
-[INFO] Data =  BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
-[INFO] Data =  Russian food safety regulator shuts fifth McDonald's restaurant
-[INFO] Data =  Japan government turns more cautious on weak factory output
-[INFO] Data =  Rising North American plane demand boosts leasing market: BOC Aviation
+[INFO] Data =  Different paths to peace for Ukraine
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Volvo's new car targets China rich
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation: judge
+[INFO] Data =  Ann Taylor parent taps JPMorgan to weigh potential sale: sources
+[INFO] Data =  Anti-UAW workers seek to form union at Volkswagen plant
+[INFO] Data =  Best Buy revenue drops as more shoppers prefer to buy online
+[INFO] Data =  Hewlett-Packard recalls 6 million power cords over fire hazard
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -507,20 +510,20 @@
 [INFO] Data =  Small Business
 [INFO] Processing:  http://www.reuters.com/finance/economy
  to  res/url_19.html
-[INFO] Data =  Aircraft demand spurs record U.S. durable goods orders gain
+[INFO] Data =  U.S. consumer confidence hits nearly seven-year high in August
+[INFO] Data =  Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Data =  U.S. home prices fall in June: S
 [INFO] Data =  /Case-Shiller
+[INFO] Data =  UBS Wealth ramps up allocation to North American stocks, cuts Europe
 [INFO] Data =  BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+[INFO] Data =  Argentina strips BNY Mellon's authorization to operate
 [INFO] Data =  Indian court's coal block ruling may have wider economic impact
 [INFO] Data =  New home sales fall, but U.S. economy stays on solid ground
 [INFO] Data =  China fund defaults expose foreign partners to shadow banking risk
 [INFO] Data =  U.S. confident its $5 billion S
 [INFO] Data =  lawsuit was not retaliation
-[INFO] Data =  U.S. services sector growth slows for second straight month in Aug: Markit
-[INFO] Data =  About-face for ECB's Draghi as he seeks to jolt euro zone into life
-[INFO] Data =  Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -533,21 +536,21 @@
 [INFO] Data =  Macroscope
 [INFO] Data =  UK rate consensus nearly rock-solid even as markets flip-flop over timing
 [INFO] Data =  Bonds Market News
-[INFO] Data =  BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation -judge
 [INFO] Processing:  http://newsandinsight.thomsonreuters.com/Legal/
  to  res/url_20.html
 [INFO] Processing:  http://www.reuters.com/finance/deals
  to  res/url_21.html
-[INFO] Data =  Burger King to buy Canada's Tim Hortons
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
 [INFO] Data =  ICBC deal shows U.S. tech giant IBM still engaged in China
-[INFO] Data =  Exclusive: Chevron seeks up to $1.5 billion for Canadian oil project - sources
+[INFO] Data =  American pulls fares from Orbitz after failing to reach a deal
+[INFO] Data =  Rolls-Royce completes 2.4 billion euro acquisition of RRPS
+[INFO] Data =  Online job list service ZipRecruiter raises $63 million in first funding
+[INFO] Data =  Ann Taylor parent taps JPMorgan to weigh potential sale: sources
+[INFO] Data =  KKR agrees to buy 18 percent of China chicken firm for $400 million
 [INFO] Data =  Buffett to help finance Burger King's acquisition of Tim Hortons: WSJ
+[INFO] Data =  Exclusive: Chevron seeks up to $1.5 billion for Canadian oil project - sources
 [INFO] Data =  Amazon snaps up live video startup Twitch for $970 million
-[INFO] Data =  U.S. judge questions shareholder settlement with HP over Autonomy
-[INFO] Data =  Marketing software provider HubSpot files for IPO
-[INFO] Data =  Exclusive: Communications equipment maker Comtech explores sale
-[INFO] Data =  Judge delays ruling on Momentive bankruptcy exit plan
-[INFO] Data =  BOC Aviation orders Boeing planes worth $8.8 billion
 [INFO] Data =  peHUB
 [INFO] Data =  M
 [INFO] Data =  &
@@ -564,7 +567,7 @@
 [INFO] Data =  Moving Pictures
 [INFO] Processing:  http://www.reuters.com/subjects/aerospace-and-defense
  to  res/url_23.html
-[INFO] Data =  Aircraft demand spurs record U.S. durable goods orders gain
+[INFO] Data =  Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Data =  Rising North American plane demand boosts leasing market: BOC Aviation
 [INFO] Data =  Mexico to monitor satellite images of 'La Bestia' trains used by migrants
 [INFO] Data =  Stretched Dutch say will end Turkey Patriot missile deployment in January
@@ -582,6 +585,8 @@
 [INFO] Data =  Warbus: The Incredible Saga of Europe's A400M
 [INFO] Processing:  http://www.reuters.com/subjects/banks
  to  res/url_24.html
+[INFO] Data =  Argentina strips BNY Mellon's authorization to operate
+[INFO] Data =  Ann Taylor parent taps JPMorgan to weigh potential sale: sources
 [INFO] Data =  BOC Aviation orders Boeing planes worth $8.8 billion
 [INFO] Data =  HSBC is sued in U.S. for $250 million over alleged role in 'death bonds'
 [INFO] Data =  Goldman Sachs, U.S. agency in mortgage settlement worth $1.2 billion
@@ -590,19 +595,17 @@
 [INFO] Data =  BofA admits to post-crisis mortgage failures as part of settlement
 [INFO] Data =  JPMorgan customers targeted in email phishing campaign
 [INFO] Data =  Settlement brightens outlook for Bank of America, fund managers say
-[INFO] Data =  Exclusive: Shake Shack picks JPMorgan, Morgan Stanley to lead IPO - sources
-[INFO] Data =  JPMorgan, BofA to raise junior banker pay by 20 percent: sources
-[INFO] Data =  Wall Street opens flat, S
-[INFO] Data =  500 near record
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Processing:  http://www.reuters.com/subjects/autos
  to  res/url_25.html
-[INFO] Data =  China corruption watchdog investigating executives at Volkswagen JV
+[INFO] Data =  Anti-UAW workers seek to form union at Volkswagen plant
 [INFO] Data =  Latest Auto News
+[INFO] Data =  GM reviewing timing of Russia plant expansion
+[INFO] Data =  U.S. federal prosecutors questioning GM lawyers on vehicle recalls: source
 [INFO] Data =  Exclusive: Chrysler's Ram pickup may stick with steel through 2020 - sources
 [INFO] Data =  Ford tells dealers to stop selling some C-Max, Focus models
-[INFO] Data =  Cadillac considers moving some functions to Manhattan
-[INFO] Data =  Ford tells U.S. dealers to stop selling some C-Max, Focus models
 [INFO] Processing:  http://www.reuters.com/finance/summits
  to  res/url_26.html
 [INFO] Data =  Global Wealth Management 2014 Summit
@@ -635,20 +638,19 @@
 [INFO] Processing:  http://www.reuters.com/finance/markets
  to  res/url_28.html
 [INFO] Data =  Market News
-[INFO] Data =  Futures point to flat Wall St. open; S
-[INFO] Data =  500 near record
-[INFO] Data =  Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  Dollar holds steady but euro struggles on inflation concerns
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
+[INFO] Data =  Global stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  Dollar dips on profit-taking, easing U.S. yields
+[INFO] Data =  UBS Wealth ramps up allocation to North American stocks, cuts Europe
 [INFO] Data =  Millionaire investors catch Australia's high-yield express
 [INFO] Data =  Municipal bonds to be excluded from the U.S. bank liquidity rule: Bloomberg
-[INFO] Data =  Investors look for more gains as U.S. S
-[INFO] Data =  500 index hits 2,000 milestone
 [INFO] Data =  U.S. Market Report
-[INFO] Data =  Italy struggles with Plan B if Russian gas supplies cut
+[INFO] Data =  UPDATE 6-Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Data =  UK Market Report
 [INFO] Data =  Europe shares trim Monday's gains; UK stocks play catch up
 [INFO] Data =  European Market Report
-[INFO] Data =  European shares consolidate ECB-fuelled gains
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
 [INFO] Data =  Tokyo Market Report
 [INFO] Data =  CORRECTED-Nikkei falls in thin trade as weak yen trend pauses
 [INFO] Data =  Hong Kong Market Report
@@ -665,20 +667,19 @@
 [INFO] Processing:  http://www.reuters.com/finance/markets
  to  res/url_29.html
 [INFO] Data =  Market News
-[INFO] Data =  Futures point to flat Wall St. open; S
-[INFO] Data =  500 near record
-[INFO] Data =  Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  Dollar holds steady but euro struggles on inflation concerns
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
+[INFO] Data =  Global stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  Dollar dips on profit-taking, easing U.S. yields
+[INFO] Data =  UBS Wealth ramps up allocation to North American stocks, cuts Europe
 [INFO] Data =  Millionaire investors catch Australia's high-yield express
 [INFO] Data =  Municipal bonds to be excluded from the U.S. bank liquidity rule: Bloomberg
-[INFO] Data =  Investors look for more gains as U.S. S
-[INFO] Data =  500 index hits 2,000 milestone
 [INFO] Data =  U.S. Market Report
-[INFO] Data =  Italy struggles with Plan B if Russian gas supplies cut
+[INFO] Data =  UPDATE 6-Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Data =  UK Market Report
 [INFO] Data =  Europe shares trim Monday's gains; UK stocks play catch up
 [INFO] Data =  European Market Report
-[INFO] Data =  European shares consolidate ECB-fuelled gains
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
 [INFO] Data =  Tokyo Market Report
 [INFO] Data =  CORRECTED-Nikkei falls in thin trade as weak yen trend pauses
 [INFO] Data =  Hong Kong Market Report
@@ -694,12 +695,12 @@
 [INFO] Data =  Commodities
 [INFO] Processing:  http://www.reuters.com/finance/markets/us
  to  res/url_30.html
-[INFO] Data =  Italy struggles with Plan B if Russian gas supplies cut
-[INFO] Data =  Miner Mercator to try restructuring, files for creditor protection
-[INFO] Data =  UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
-[INFO] Data =  BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
-[INFO] Data =  Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+[INFO] Data =  UPDATE 6-Gaza ceasefire takes effect as Palestinians celebrate
+[INFO] Data =  Exxon shutting FCC at Baytown TX refinery for work -IIR
+[INFO] Data =  Direct bidders buy low share of U.S. 2-year note supply
+[INFO] Data =  Peru's Congress narrowly OKs Humala's new cabinet on third vote
+[INFO] Data =  UPDATE 1-Imperial Metals says new Canada mine on track for start-up
+[INFO] Data =  UPDATE 1-Anti-UAW workers seek to form union at Volkswagen plant
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -710,12 +711,12 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://www.reuters.com/finance/markets/europe
  to  res/url_31.html
-[INFO] Data =  European shares consolidate ECB-fuelled gains
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -779,23 +780,23 @@
 [INFO] Data =  Pfizer walks away from $118 billion AstraZeneca takeover fight
 [INFO] Data =  Today's Company Results
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://www.reuters.com/finance/bonds
  to  res/url_36.html
-[INFO] Data =  Miner Mercator to try restructuring, files for creditor protection
-[INFO] Data =  UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
-[INFO] Data =  BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
-[INFO] Data =  CANADA FX DEBT-C$ firms, bouncing off technical resistance
-[INFO] Data =  Russia's Putin says military escalation won't solve Ukraine crisis
-[INFO] Data =  UPDATE 3-Austrian finance minister quits in tax reform row
-[INFO] Data =  EU's Ashton says wants Ukraine to safeguard territorial integrity
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
-[INFO] Data =  Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
+[INFO] Data =  Direct bidders buy low share of U.S. 2-year note supply
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation -judge
+[INFO] Data =  UPDATE 1-Argentina strips BNY Mellon's authorization to operate
+[INFO] Data =  UPDATE 1-Detroit water, sewer ratings upgraded ahead of bond sale
+[INFO] Data =  UPDATE 2-Miner Mercator files for creditor protection in U.S., Canada
+[INFO] Data =  North Dakota's Bakken well count eclipses 15,000
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. data
+[INFO] Data =  French firebrand Montebourg joins jobless queue - for now
+[INFO] Data =  Detroit water/sewer ratings raised ahead of bond sale
+[INFO] Data =  UPDATE 1-Growth in Brazil bank lending slows in July, delinquencies rise
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  MuniLand
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
@@ -808,12 +809,12 @@
 [INFO] Data =  Commodities
 [INFO] Processing:  http://www.reuters.com/finance/currencies
  to  res/url_37.html
-[INFO] Data =  CANADA FX DEBT-C$ firms, bouncing off technical resistance
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
-[INFO] Data =  FOREX-Dollar holds steady but euro struggles on inflation concerns
-[INFO] Data =  Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
-[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  EMERGING MARKETS-Brazil's Bovespa flirts with 60,000, real gains on election bets
+[INFO] Data =  Argentine black-market peso falls to new low despite rate rise
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. data
+[INFO] Data =  UPDATE 5-TV debate victory might not boost Scottish independence leader
+[INFO] Data =  FOREX-Dollar dips on profit-taking, easing U.S. yields
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -824,13 +825,14 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  European Currencies
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+[INFO] Data =  Once 'Best in the West', Israel's economy shows cracks
 [INFO] Data =  Asian Currencies
-[INFO] Data =  REFILE-FOREX-Euro slides on French political woes, weak German data
+[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
 [INFO] Data =  Economic News
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+[INFO] Data =  WRAPUP 3-Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Processing:  http://www.reuters.com/finance/commodities
  to  res/url_38.html
+[INFO] Data =  North Dakota's Bakken well count eclipses 15,000
 [INFO] Data =  U.S. court scraps order to seize Kurdish crude from tanker near Texas
 [INFO] Data =  Exclusive: Algeria says will reject mixed-origin wheat cargoes - letter
 [INFO] Data =  Newmont withdraws mining arbitration case against Indonesia: minister
@@ -840,7 +842,6 @@
 [INFO] Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
 [INFO] Data =  Libya seeks foreign help for oilfields as rockets fired at airport
 [INFO] Data =  Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
-[INFO] Data =  Brazil's drought-hit coffee belt turns to machines to lower costs
 [INFO] Data =  THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
@@ -865,21 +866,24 @@
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
-[INFO] Data =  Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+[INFO] Data =  Peru's Congress narrowly OKs Humala's new cabinet on third vote
 [INFO] Processing:  http://www.reuters.com/finance/funds
  to  res/url_40.html
-[INFO] Data =  RPT-IPO VIEW-Fund managers look to make room for Alibaba
-[INFO] Data =  UPDATE 1-Market Chatter-Corporate finance press digest
-[INFO] Data =  PRESS DIGEST - Wall Street Journal - Aug 26
-[INFO] Data =  PRESS DIGEST- New York Times business news - Aug 26
-[INFO] Data =  Market Chatter- Corporate finance press digest
+[INFO] Data =  U.S. SEC hires former Deloitte executive as chief accountant
+[INFO] Data =  UPDATE 3-U.S. judge dismisses LME from aluminum price-fixing lawsuits
+[INFO] Data =  CORRECTED-Banks to meet with Treasury Department on cyber threats -sources
+[INFO] Data =  Judge dismisses LME from aluminum price-fixing lawsuits
+[INFO] Data =  KKR agrees to buy 18 pct of China chicken firm for $400 mln
 [INFO] Data =  LIPPER AWARDS: Home bias for Hong Kong pensions
 [INFO] Data =  Personal Finance
 [INFO] Data =  Draghi calls for fiscal help, hears busy signal: James Saft
 [INFO] Data =  Funds News
-[INFO] Data =  IPO VIEW-Fund managers look to make room for Alibaba
+[INFO] Data =  RPT-IPO VIEW-Fund managers look to make room for Alibaba
 [INFO] Processing:  http://www.pehub.com/
  to  res/url_41.html
+[INFO] Data =  Growth equity an eclectic mix at Hawaii ERS: VCJ
+[INFO] Data =  3G-backed Burger King to buy Canada
+[INFO] Data =  s Tim Hortons: Reuters
 [INFO] Data =  Brazil’s NEO Investimentos targets international capital for first time
 [INFO] Data =  peHUB First Read
 [INFO] Data =  General Catalyst looks for payday with HubSpot IPO
@@ -898,81 +902,80 @@
 [INFO] Data =  peHUB First Read
 [INFO] Data =  Hardware entrepreneurs: Win a free ticket to our VC conference
 [INFO] Data =  peHUB Second Opinion
-[INFO] Data =  Highland Capital, Google Ventures, Redpoint back cinematic VR startup Jaunt
-[INFO] Data =  LPs navigate the most historically crowded fundraising market
 [INFO] Processing:  http://www.reuters.com/finance/EarningsUS
  to  res/url_42.html
+[INFO] Data =  Best Buy revenue drops as more shoppers prefer to buy online
 [INFO] Data =  Accor sees higher profit despite weak France
-[INFO] Data =  Trina Solar revenue misses estimates as shipments lag
-[INFO] Data =  Chinese carmaker BYD'S H1 net profit down 16 percent on weak gasoline vehicle sales
+[INFO] Data =  Trina Solar plans overseas plants to bypass U.S. duties
+[INFO] Data =  Camera-makers shares jump on interest in surveillance tech
+[INFO] Data =  Petrofac forecast in doubt after first-half profit nearly halves
 [INFO] Data =  Bank of Montreal reports stronger-than-expected profit
-[INFO] Data =  Co-Op Bank losses narrow on branch closures, staff cuts
-[INFO] Data =  ZKB boosts provisions tied to U.S. tax case as profit falls
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Markets
 [INFO] Processing:  http://www.reuters.com/finance/markets/dividends
  to  res/url_43.html
 [INFO] Processing:  http://www.reuters.com/news/world
  to  res/url_44.html
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
+[INFO] Data =  Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Data =  Latest World News
 [INFO] Data =  World Video
-[INFO] Data =  Japan court rules Tepco responsible for suicide
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
-[INFO] Data =  Liberian slum cordoned off
-[INFO] Data =  Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
-[INFO] Data =  France fine-tunes pro-reform cabinet after rebel ministers ousted
-[INFO] Data =  Washington to give Tunisia military aid to battle Islamists
-[INFO] Data =  Austrian finance minister quits in tax reform row
-[INFO] Data =  Seleka rebel infighting in Central African Republic kills 17
+[INFO] Data =  Young American hiker goes missing in Israel
+[INFO] Data =  Central Portugal forest fire under control - others still burn
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
+[INFO] Data =  Nearly 2,000 Europe-bound migrants have drowned this year-UN
+[INFO] Data =  Libyan raids herald bolder Arab action as U.S. role wavers
+[INFO] Data =  Three killed in U.N. helicopter crash in South Sudan
+[INFO] Data =  Japanese court rules against nuclear operator in suicide suit
+[INFO] Data =  Qatar seeks to free more U.S. hostages in Syria: source
 [INFO] Data =  WORLD WATCH
 [INFO] Data =  Pictures
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Emmy Awards
 [INFO] Data =  Emmy red carpet
-[INFO] Data =  Funeral for Michael Brown
-[INFO] Data =  Islamic State captures air base
 [INFO] Processing:  http://www.reuters.com/news/world
  to  res/url_45.html
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
 [INFO] Data =  Latest World News
 [INFO] Data =  World Video
-[INFO] Data =  Japan court rules Tepco responsible for suicide
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
-[INFO] Data =  Liberian slum cordoned off
-[INFO] Data =  Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
-[INFO] Data =  France fine-tunes pro-reform cabinet after rebel ministers ousted
-[INFO] Data =  Washington to give Tunisia military aid to battle Islamists
-[INFO] Data =  Austrian finance minister quits in tax reform row
-[INFO] Data =  Seleka rebel infighting in Central African Republic kills 17
+[INFO] Data =  Young American hiker goes missing in Israel
+[INFO] Data =  Central Portugal forest fire under control - others still burn
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
+[INFO] Data =  Nearly 2,000 Europe-bound migrants have drowned this year-UN
+[INFO] Data =  Libyan raids herald bolder Arab action as U.S. role wavers
+[INFO] Data =  Three killed in U.N. helicopter crash in South Sudan
+[INFO] Data =  Japanese court rules against nuclear operator in suicide suit
+[INFO] Data =  Qatar seeks to free more U.S. hostages in Syria: source
 [INFO] Data =  WORLD WATCH
 [INFO] Data =  Pictures
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Emmy Awards
 [INFO] Data =  Emmy red carpet
-[INFO] Data =  Funeral for Michael Brown
-[INFO] Data =  Islamic State captures air base
 [INFO] Processing:  http://www.reuters.com/news/us
  to  res/url_46.html
 [INFO] Data =  Michael Brown remembered in Missouri, march planned
-[INFO] Data =  Los Angeles schools official suspends iPad rollout: L.A. Times
-[INFO] Data =  Arizona voters go to polls in Republican primary to succeed governor Brewer
+[INFO] Data =  Obama woos veterans with mental health care, military home loans
+[INFO] Data =  Dispute over gadget that blocks seat reclining diverts flight to Chicago
+[INFO] Data =  New York teen gets five to 15 years in fatal drugged driving crash
+[INFO] Data =  Water shutoffs to resume in Detroit for unpaid bills
+[INFO] Data =  Four dead in apparent murder-suicide in Tulsa
 [INFO] Data =  U.S. scientist pleads guilty to taking government laptop to China
-[INFO] Data =  U.S. court scraps order to seize Kurdish crude from tanker near Texas
+[INFO] Data =  Arizona voters go to polls in Republican primary to succeed governor Brewer
+[INFO] Data =  Los Angeles schools official suspends iPad rollout: L.A. Times
 [INFO] Data =  Police rescue New Mexico woman from car after 'kidnap' text to sister
-[INFO] Data =  Americans oppose paying ransom for hostages: Reuters-IPSOS Poll
-[INFO] Data =  Four killed in Ohio small plane crash
-[INFO] Data =  California wine country quake losses seen in the billions
-[INFO] Data =  U.S. murder suspect in Bali denied private legal consultations: lawyer
 [INFO] Data =  Top News Video
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
+[INFO] Data =  Young American hiker goes missing in Israel
 [INFO] Data =  Top News
 [INFO] Data =  Pictures
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Emmy Awards
 [INFO] Data =  Emmy red carpet
-[INFO] Data =  Funeral for Michael Brown
-[INFO] Data =  Islamic State captures air base
 [INFO] Processing:  http://www.reuters.com/subjects/specialReports
  to  res/url_47.html
+[INFO] Data =  Islamic State turns radical Islam on Syria Muslims
 [INFO] Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
 [INFO] Data =  Diffuse Hamas structure complicates Gaza peace efforts
 [INFO] Data =  Behind Indonesia mining deal, newly minted minister and U.S. mining legend
@@ -982,17 +985,15 @@
 [INFO] Data =  Amid outward calm, climate of fear cements Thai military rule
 [INFO] Data =  As Venezuelan deliveries wane, allies tap traders for pricey fuel
 [INFO] Data =  'Terrorists' help U.S. in battle against Islamic State in Iraq
-[INFO] Data =  As Ukraine forces gain in east, focus of German diplomacy shifts
 [INFO] Data =  Video
 [INFO] Data =  Re-homing victim: "I could have been dead"
 [INFO] Data =  Top News
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
+[INFO] Data =  Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Processing:  http://www.reuters.com/investigates
  to  res/url_48.html
 [INFO] Processing:  http://www.reuters.com/subjects/euro-zone
  to  res/url_49.html
-[INFO] Data =  Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  Euro, bond yields dip as looser ECB policy eyed
+[INFO] Data =  Euro falls, stocks rise on ECB stimulus bet
 [INFO] Data =  Euro falls, stocks rise on ECB stimulus bet
 [INFO] Data =  French economy minister urges alternative to German austerity
 [INFO] Data =  Europe fears deflation as Ukraine stays center-stage
@@ -1001,27 +1002,29 @@
 [INFO] Data =  Euro zone business growth slows in July, prices fall: PMI
 [INFO] Data =  Mramor set to return as Slovenian finance minister, new coalition taking shape
 [INFO] Data =  Euro zone business growth slows in August, prices fall: PMI
+[INFO] Data =  Stocks up on Putin comments, bond yields fall
 [INFO] Data =  Germany
 [INFO] Data =  German anti-euro party set for gains in eastern votes
 [INFO] Data =  France
-[INFO] Data =  European powers float idea of Gaza monitoring mechanism
+[INFO] Data =  Decline of French language could cost half a million jobs : report
 [INFO] Data =  Italy
-[INFO] Data =  Alcoa to close smelter in Italy, take 3rd-quarter charge
+[INFO] Data =  Nearly 2,000 Europe-bound migrants have drowned this year-UN
 [INFO] Processing:  http://www.reuters.com/subjects/middle-east
  to  res/url_50.html
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
 [INFO] Data =  Iran supplied weapons to Iraqi Kurdish forces; Baghdad bomb kills 12
+[INFO] Data =  Libyan raids herald bolder Arab action as U.S. role wavers
+[INFO] Data =  Smugglers and Kurdish militants help Iraq's Yazidis flee to Turkey
+[INFO] Data =  Top UK anti-terrorism officer says Syria-related arrests soar
 [INFO] Data =  Qatar seeks to free more U.S. hostages in Syria: source
+[INFO] Data =  American released by Syrian militants excited to be free, parents say
+[INFO] Data =  Islamic State turns radical Islam on Syria Muslims
+[INFO] Data =  Washington to give Tunisia military aid to battle Islamists
 [INFO] Data =  Pakistan's prime minister meets army chief amid crisis
-[INFO] Data =  Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
-[INFO] Data =  How Pakistan's Sharif stumbled into protests crisis
-[INFO] Data =  Three Chinese engineers kidnapped in southeast Turkey: sources
-[INFO] Data =  U.S. prepares military options in Syria against Islamic State
-[INFO] Data =  Australia unveils measures to tackle rise of foreign fighters
-[INFO] Data =  U.S. prepares military options in Syria against Islamic State
-[INFO] Data =  Rocket damages home in southern Israel
+[INFO] Data =  Israeli air strikes demolish Gaza highrises
 [INFO] Processing:  http://www.reuters.com/places/china
  to  res/url_51.html
+[INFO] Data =  KKR agrees to buy 18 percent of China chicken firm for $400 million
 [INFO] Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
 [INFO] Data =  ICBC deal shows U.S. tech giant IBM still engaged in China
 [INFO] Data =  China police seize 30,000 tonnes of tainted chicken feet
@@ -1031,7 +1034,6 @@
 [INFO] Data =  Australian billionaire politician apologizes for TV tirade over China
 [INFO] Data =  Remote, gas-rich islands on Indonesia's South China Sea frontline
 [INFO] Data =  BOC Aviation orders Boeing planes worth $8.8 billion
-[INFO] Data =  Vietnam envoy to visit China to seek thaw in testy ties
 [INFO] Processing:  http://www.reuters.com/places/japan
  to  res/url_52.html
 [INFO] Data =  Japanese court rules against nuclear operator in suicide suit
@@ -1042,7 +1044,7 @@
 [INFO] Data =  Death toll could double to over 80 in Hiroshima landslide, more rain falls
 [INFO] Data =  Russia, in sanctions retaliation, bars entry to some Japanese citizens
 [INFO] Data =  Video
-[INFO] Data =  Landslide death toll just below 40
+[INFO] Data =  Japan court rules Tepco responsible for suicide
 [INFO] Processing:  http://www.reuters.com/places/mexico
  to  res/url_53.html
 [INFO] Data =  Mexico to monitor satellite images of 'La Bestia' trains used by migrants
@@ -1056,7 +1058,7 @@
 [INFO] Data =  Texas' Davis against troops at border but backs U.S. funding for security
 [INFO] Data =  Mezcal vies with tequila for bigger share of drink market
 [INFO] Data =  World News
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
+[INFO] Data =  Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Processing:  http://www.reuters.com/places/brazil
  to  res/url_54.html
 [INFO] Data =  Brazil's drought-hit coffee belt turns to machines to lower costs
@@ -1070,34 +1072,34 @@
 [INFO] Data =  Brazil's Silva launches bid, threatens Rousseff re-election
 [INFO] Data =  Exclusive: Brazil's Silva would get opposition's support in election runoff
 [INFO] Data =  World News
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
+[INFO] Data =  Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Data =  Brazil's borders
 [INFO] Data =  Interactive
 [INFO] Processing:  http://www.reuters.com/places/africa
  to  res/url_55.html
-[INFO] Data =  Seleka rebel infighting in Central African Republic kills 17
+[INFO] Data =  Nearly 2,000 Europe-bound migrants have drowned this year-UN
 [INFO] Data =  Latest Africa News
+[INFO] Data =  WHO says sending supplies for Ebola outbreak in Congo
+[INFO] Data =  Mozambique government, Renamo opposition sign peace deal
+[INFO] Data =  British Ebola victim flown home as Congo finds new outbreak
 [INFO] Data =  South Sudan ceasefire monitor dies after officials held by rebels
 [INFO] Data =  Sierra Leone 'hero' doctor's death exposes slow Ebola response
-[INFO] Data =  British national contracts Ebola in Sierra Leone
-[INFO] Data =  Niger minister arrested in 'baby-trafficking' investigation
-[INFO] Data =  Twelve dead, 36,000 homeless in Niger flooding
 [INFO] Data =  SPECIAL REPORTS
 [INFO] Data =  The rifts behind Nigeria's mass kidnap
 [INFO] Processing:  http://www.reuters.com/places/russia
  to  res/url_56.html
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
-[INFO] Data =  Russia's Putin says military escalation won't solve Ukraine crisis
+[INFO] Data =  Putin and Poroshenko set out different paths to peace in Ukraine
 [INFO] Data =  Ukraine says detained Russian soldiers were on 'special mission'
+[INFO] Data =  Russia's Putin says military escalation won't solve Ukraine crisis
+[INFO] Data =  Exclusive: In Ukraine, an armored column appears out of nowhere
 [INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
 [INFO] Data =  Ukraine accuses Russia of opening new war front before leaders' meeting
 [INFO] Data =  Ukraine's president sets parliamentary election for October 26
 [INFO] Data =  Slim chance of progress as Russian and Ukrainian leaders meet
 [INFO] Data =  Ukraine's president sets parliamentary election for October 26
 [INFO] Data =  Russia grants asylum to banker wanted by Lithuania: prosecutors
-[INFO] Data =  Russia sees West changing tack on Syria, urges engagement with Assad
 [INFO] Data =  World News
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
 [INFO] Processing:  http://blogs.reuters.com/india
  to  res/url_57.html
 [INFO] Data =  Sketchy Details
@@ -1130,34 +1132,34 @@
 [INFO] Data =  Moving Pictures
 [INFO] Processing:  http://www.reuters.com/politics
  to  res/url_59.html
-[INFO] Data =  All eyes on governor's race in Florida primary, turnout is key
+[INFO] Data =  Virginia ex-governor back on witness stand in corruption trial
 [INFO] Data =  Latest Politics Headlines
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  After Hobby Lobby, ACA exceptions may become the rule
 [INFO] Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+[INFO] Data =  Obama woos veterans with mental health care, military home loans
+[INFO] Data =  Lawyers for Texas Governor Perry file motion to dismiss charges
 [INFO] Data =  Bills to regulate California groundwater use opposed by farmers
 [INFO] Data =  Representative DesJarlais wins Tennessee primary by 38 votes
 [INFO] Data =  Florida governor unveils new education initiatives
-[INFO] Data =  As Obama's vacation ends, criticism does not
-[INFO] Data =  With Graham name, Democrats see rare chance for Florida win
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  After Hobby Lobby, ACA exceptions may become the rule
 [INFO] Data =  Jackson Hole 2014: Laboring for a grip on when to hike
 [INFO] Processing:  http://www.reuters.com/politics
  to  res/url_60.html
-[INFO] Data =  All eyes on governor's race in Florida primary, turnout is key
+[INFO] Data =  Virginia ex-governor back on witness stand in corruption trial
 [INFO] Data =  Latest Politics Headlines
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  After Hobby Lobby, ACA exceptions may become the rule
 [INFO] Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+[INFO] Data =  Obama woos veterans with mental health care, military home loans
+[INFO] Data =  Lawyers for Texas Governor Perry file motion to dismiss charges
 [INFO] Data =  Bills to regulate California groundwater use opposed by farmers
 [INFO] Data =  Representative DesJarlais wins Tennessee primary by 38 votes
 [INFO] Data =  Florida governor unveils new education initiatives
-[INFO] Data =  As Obama's vacation ends, criticism does not
-[INFO] Data =  With Graham name, Democrats see rare chance for Florida win
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  After Hobby Lobby, ACA exceptions may become the rule
@@ -1188,42 +1190,42 @@
 [INFO] Data =  Moving Pictures
 [INFO] Processing:  http://www.reuters.com/news/technology
  to  res/url_63.html
-[INFO] Data =  Exclusive: EU regulators mull Qualcomm antitrust probe - sources
+[INFO] Data =  Exclusive: Chipmaker Qualcomm may face EU antitrust probe
 [INFO] Data =  Latest Technology News
 [INFO] Data =  Technology Video
-[INFO] Data =  A ring that reads text for the blind
-[INFO] Data =  Apple iPhone 6 screen hits snag ahead of launch
-[INFO] Data =  Is it a plane? No, it's a hoverbike
+[INFO] Data =  Singapore to use state-of-the-art farming tech to produce more veggies
+[INFO] Data =  Chinese boy implanted with 3D printed vertebra
+[INFO] Data =  Miniature lung grown by scientists to test cancer drugs
+[INFO] Data =  Tom Hanks' new app an homage to manual typewriters
+[INFO] Data =  Amazon snaps up live video startup Twitch for $970 million
 [INFO] Data =  U.S. judge questions shareholder settlement with HP over Autonomy
 [INFO] Data =  Exclusive: Communications equipment maker Comtech explores sale
 [INFO] Data =  Australia's Qantas, Virgin allow smartphones throughout flights
-[INFO] Data =  California to require anti-theft 'kill switches' on smartphones
-[INFO] Data =  Digital Ally shares surge on interest in wearable cameras
 [INFO] Data =  Business Headlines
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
-[INFO] Data =  Australian airlines relax phone ban too
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Reuters on the Road: Level39 speeding up tech super growth
+[INFO] Data =  Different paths to peace for Ukraine
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Volvo's new car targets China rich
+[INFO] Data =  Best Buy can't stop revenue drop
 [INFO] Processing:  http://www.reuters.com/news/technology
  to  res/url_64.html
-[INFO] Data =  Exclusive: EU regulators mull Qualcomm antitrust probe - sources
+[INFO] Data =  Exclusive: Chipmaker Qualcomm may face EU antitrust probe
 [INFO] Data =  Latest Technology News
 [INFO] Data =  Technology Video
-[INFO] Data =  A ring that reads text for the blind
-[INFO] Data =  Apple iPhone 6 screen hits snag ahead of launch
-[INFO] Data =  Is it a plane? No, it's a hoverbike
+[INFO] Data =  Singapore to use state-of-the-art farming tech to produce more veggies
+[INFO] Data =  Chinese boy implanted with 3D printed vertebra
+[INFO] Data =  Miniature lung grown by scientists to test cancer drugs
+[INFO] Data =  Tom Hanks' new app an homage to manual typewriters
+[INFO] Data =  Amazon snaps up live video startup Twitch for $970 million
 [INFO] Data =  U.S. judge questions shareholder settlement with HP over Autonomy
 [INFO] Data =  Exclusive: Communications equipment maker Comtech explores sale
 [INFO] Data =  Australia's Qantas, Virgin allow smartphones throughout flights
-[INFO] Data =  California to require anti-theft 'kill switches' on smartphones
-[INFO] Data =  Digital Ally shares surge on interest in wearable cameras
 [INFO] Data =  Business Headlines
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
-[INFO] Data =  Australian airlines relax phone ban too
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Reuters on the Road: Level39 speeding up tech super growth
+[INFO] Data =  Different paths to peace for Ukraine
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Volvo's new car targets China rich
+[INFO] Data =  Best Buy can't stop revenue drop
 [INFO] Processing:  http://blogs.reuters.com/mediafile
  to  res/url_65.html
 [INFO] Data =  How about Hightail-ing it?
@@ -1288,14 +1290,14 @@
 [INFO] Data =  s renewed hegemony isn’t something Europe needs to fear
 [INFO] Data =  34
 [INFO] Data =  Did America’s policy on ransom contribute to James Foley’s killing?
-[INFO] Data =  25
+[INFO] Data =  29
 [INFO] Data =  Jon Stewart and Stephen Colbert liberal lions? The guest chair tells a different story.
 [INFO] Data =  19
 [INFO] Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
-[INFO] Data =  9
+[INFO] Data =  10
 [INFO] Data =  Tragedy in Ferguson: What the Justice Department can do next
-[INFO] Data =  4
-[INFO] Data =  Pity Moscow’s foodies as Putin’s sanctions bite deep
+[INFO] Data =  8
+[INFO] Data =  This month’s ultimate enemy — the Islamic State
 [INFO] Processing:  http://blogs.reuters.com/us/
  to  res/url_70.html
 [INFO] Data =  This month
@@ -1312,14 +1314,14 @@
 [INFO] Data =  s renewed hegemony isn’t something Europe needs to fear
 [INFO] Data =  34
 [INFO] Data =  Did America’s policy on ransom contribute to James Foley’s killing?
-[INFO] Data =  25
+[INFO] Data =  29
 [INFO] Data =  Jon Stewart and Stephen Colbert liberal lions? The guest chair tells a different story.
 [INFO] Data =  19
 [INFO] Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
-[INFO] Data =  9
+[INFO] Data =  10
 [INFO] Data =  Tragedy in Ferguson: What the Justice Department can do next
-[INFO] Data =  4
-[INFO] Data =  Pity Moscow’s foodies as Putin’s sanctions bite deep
+[INFO] Data =  8
+[INFO] Data =  This month’s ultimate enemy — the Islamic State
 [INFO] Processing:  http://blogs.reuters.com/ian-bremmer/
  to  res/url_71.html
 [INFO] Data =  Putin’s Ukraine invasion threat is more than a bluff — but not his preference
@@ -1559,13 +1561,13 @@
 [INFO] Data =  More Reuters News
 [INFO] Processing:  http://blogs.reuters.com/breakingviews/
  to  res/url_85.html
+[INFO] Data =  France's housing slump is sign of deeper woes
 [INFO] Data =  Court order adds urgency to India's coal crunch
 [INFO] Data =  Roche's $8 bln bet outsmarts ice-bucket challenge
 [INFO] Data =  Asia's top-down corporate reforms vary in promise
 [INFO] Data =  Dynegy's $6.25 bln grab marks return of ambition
 [INFO] Data =  Review: Paul Ryan changes delivery but not direction
 [INFO] Data =  ECB deserves to lose market’s inflation confidence
-[INFO] Data =  Asia's reform spotlight swings to Indonesia
 [INFO] Processing:  http://blogs.reuters.com/breakingviews/category/equities/
  to  res/url_86.html
 [INFO] Data =  Breakingviews
@@ -1636,6 +1638,8 @@
 [INFO] Processing:  http://blogs.reuters.com/breakingviews/category/macro-markets/
  to  res/url_90.html
 [INFO] Data =  Breakingviews
+[INFO] Data =  France
+[INFO] Data =  s housing slump is sign of deeper woes
 [INFO] Data =  Court order adds urgency to India
 [INFO] Data =  s coal crunch
 [INFO] Data =  Asia
@@ -1650,7 +1654,6 @@
 [INFO] Data =  Fed adds urgency to Indonesia
 [INFO] Data =  s fuel reform test
 [INFO] Data =  Sinopec petrol sale attracts a motley bunch
-[INFO] Data =  German yield curve is the safest one to play
 [INFO] Processing:  http://blogs.reuters.com/breakingviews/category/politics/
  to  res/url_91.html
 [INFO] Data =  Breakingviews
@@ -1758,7 +1761,7 @@
 [INFO] Data =  LIPPER AWARDS: After run, MassMutual neutral on stocks, bonds
 [INFO] Data =  LIPPER AWARDS: Alts becoming a bigger part of portfolios
 [INFO] Data =  Funds News
-[INFO] Data =  RPT-IPO VIEW-Fund managers look to make room for Alibaba
+[INFO] Data =  U.S. SEC hires former Deloitte executive as chief accountant
 [INFO] Data =  Fund
 [INFO] Data =  &
 [INFO] Data =  ETF Center
@@ -1869,28 +1872,28 @@
 [INFO] Data =  Historic Miami Beach threatened amid real estate resurgence
 [INFO] Data =  Latest Lifestyle News
 [INFO] Data =  Entertainment and Lifestyle Video
+[INFO] Data =  "Breaking Bad" and "Modern Family" dominate the Emmys
+[INFO] Data =  Robin Williams remembered at Emmys
 [INFO] Data =  Attenborough remembered at Emmys
-[INFO] Data =  Miley and Beyonce are highlights of the VMA's
-[INFO] Data =  Red is the new black at Emmys, a night of sleek silhouettes
+[INFO] Data =  German woman hunts down father's ashes after DHL delivers to corner shop
 [INFO] Data =  Venice film fest, opening this week, is still a cinema lifeline
 [INFO] Data =  Two ancient Mayan cities found in Mexican jungle
 [INFO] Data =  Birthday bash for U.S. National Zoo panda cub 'Bao Boa'
 [INFO] Data =  Sharpen the pencils: Tennessee revives cursive teaching
-[INFO] Data =  At Ferguson memorial, reflection and anger at fatal encounter
 [INFO] Data =  Lifestyle Pictures
 [INFO] Data =  Khat - Somalia's paradise flower
 [INFO] Processing:  http://www.reuters.com/news/health
  to  res/url_105.html
 [INFO] Data =  WHO urges stiff regulatory curbs on e-cigarettes
-[INFO] Data =  MSF can only offer limited help in Congo Ebola outbreak
+[INFO] Data =  WHO pulls staff after worker infected with Ebola in Sierra Leone
+[INFO] Data =  Medicaid payouts for office visits may influence cancer screening: study
+[INFO] Data =  Obama woos veterans with mental health care, military home loans
 [INFO] Data =  Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
-[INFO] Data =  Obama plans executive steps to boost veterans' mental health care
+[INFO] Data =  U.S. names Connecticut official to lead federal Obamacare marketplace
 [INFO] Data =  China police seize 30,000 tonnes of tainted chicken feet
 [INFO] Data =  Russian food safety regulator shuts fifth McDonald's restaurant
 [INFO] Data =  Exclusive: U.S. approval of Merck cancer immunotherapy expected soon
 [INFO] Data =  Liberian doctor who received rare Ebola drug ZMapp dies
-[INFO] Data =  New recommendations for overweight people with heart risks
-[INFO] Data =  No biotech copycat drug lift off before 2017: Novartis CEO
 [INFO] Data =  Blendon: ACA rulings may help GOP in '14, Democrats in '16
 [INFO] Data =  Special Series
 [INFO] Data =  Cancer in Context
@@ -1904,11 +1907,11 @@
 [INFO] Data =  Sports Spread: Premier League and U.S. Open Preview
 [INFO] Data =  Say I love you with a selfie, begs Paris
 [INFO] Data =  Sports Spread: Punter's Premier League Preview
+[INFO] Data =  Drive to be the best - McIlroy or Scott?
 [INFO] Data =  Poulter, Westwood, Donald face anxious Ryder Cup wait
 [INFO] Data =  My version is different, says Rosberg
 [INFO] Data =  Injured Klitschko calls off Pulev world title fight
 [INFO] Data =  Xu takes 400 meters hurdles in photo finish, Bach praises China
-[INFO] Data =  Family man Djokovic ready to focus on U.S. Open
 [INFO] Data =  Sports Pictures
 [INFO] Data =  Best of Youth Olympics
 [INFO] Data =  Young Olympians
@@ -1972,11 +1975,11 @@
 [INFO] Data =  Hungarians snap up Warhol-like paintings of leader Orban
 [INFO] Data =  'Art Everywhere US' floods cities, rural areas with paintings
 [INFO] Data =  Entertainment Video
-[INFO] Data =  Attenborough remembered at Emmys
+[INFO] Data =  "Breaking Bad" and "Modern Family" dominate the Emmys
+[INFO] Data =  Emmy afterparty
 [INFO] Data =  Emmy Awards
 [INFO] Data =  Emmy red carpet
 [INFO] Data =  MTV Video Awards
-[INFO] Data =  MTV red carpet
 [INFO] Data =  Reviews
 [INFO] Data =  Book Talk: Retracing the steps of the Great War's 'Trigger'
 [INFO] Processing:  http://www.reuters.com/news/entertainment
@@ -1984,19 +1987,19 @@
 [INFO] Data =  Emmys exalt old favorites over TV's shiny newcomers
 [INFO] Data =  Latest Entertainment News
 [INFO] Data =  Entertainment Video
+[INFO] Data =  "Breaking Bad" and "Modern Family" dominate the Emmys
+[INFO] Data =  Robin Williams remembered at Emmys
 [INFO] Data =  Attenborough remembered at Emmys
-[INFO] Data =  Miley and Beyonce are highlights of the VMA's
-[INFO] Data =  Red is the new black at Emmys, a night of sleek silhouettes
 [INFO] Data =  Pop's ladies lead MTV VMAs with raunchy moves and tears
 [INFO] Data =  Hip hop mogul Suge Knight has 'lost a lot of blood': family
 [INFO] Data =  Reggae making a revival in Jamaica, recalling golden era of '70s
 [INFO] Data =  'Guardians' returns to reclaim U.S. box office win from 'Turtles'
 [INFO] Data =  David Guetta claims fifth UK number one single
 [INFO] Data =  Entertainment Pictures
+[INFO] Data =  Emmy afterparty
 [INFO] Data =  Emmy Awards
 [INFO] Data =  Emmy red carpet
 [INFO] Data =  MTV Video Awards
-[INFO] Data =  MTV red carpet
 [INFO] Data =  Reviews
 [INFO] Data =  Book Talk: Retracing the steps of the Great War's 'Trigger'
 [INFO] Processing:  http://www.reuters.com/news/oddlyEnough
@@ -2045,6 +2048,8 @@
 [INFO] Processing:  http://www.reuters.com/news/pictures
  to  res/url_113.html
 [INFO] Data =  Editor's choice
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Khat - Somalia's paradise flower
 [INFO] Data =  Diner en Blanc New York
 [INFO] Data =  Emmy Awards
@@ -2053,8 +2058,6 @@
 [INFO] Data =  Islamic State captures air base
 [INFO] Data =  Quake hits California
 [INFO] Data =  Fighting Ebola
-[INFO] Data =  Gaza fighting continues
-[INFO] Data =  Battle for east Ukraine
 [INFO] Data =  Full focus
 [INFO] Data =  Pictures of the month: July
 [INFO] Data =  Protests in Missouri
@@ -2066,6 +2069,8 @@
 [INFO] Processing:  http://www.reuters.com/news/pictures
  to  res/url_114.html
 [INFO] Data =  Editor's choice
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Khat - Somalia's paradise flower
 [INFO] Data =  Diner en Blanc New York
 [INFO] Data =  Emmy Awards
@@ -2074,8 +2079,6 @@
 [INFO] Data =  Islamic State captures air base
 [INFO] Data =  Quake hits California
 [INFO] Data =  Fighting Ebola
-[INFO] Data =  Gaza fighting continues
-[INFO] Data =  Battle for east Ukraine
 [INFO] Data =  Full focus
 [INFO] Data =  Pictures of the month: July
 [INFO] Data =  Protests in Missouri
@@ -2110,12 +2113,12 @@
 [INFO] Data =  Moving Pictures
 [INFO] Processing:  http://www.reuters.com/finance/markets/us
  to  res/url_118.html
-[INFO] Data =  Italy struggles with Plan B if Russian gas supplies cut
-[INFO] Data =  Miner Mercator to try restructuring, files for creditor protection
-[INFO] Data =  UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
-[INFO] Data =  BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
-[INFO] Data =  Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+[INFO] Data =  UPDATE 6-Gaza ceasefire takes effect as Palestinians celebrate
+[INFO] Data =  Exxon shutting FCC at Baytown TX refinery for work -IIR
+[INFO] Data =  Direct bidders buy low share of U.S. 2-year note supply
+[INFO] Data =  Peru's Congress narrowly OKs Humala's new cabinet on third vote
+[INFO] Data =  UPDATE 1-Imperial Metals says new Canada mine on track for start-up
+[INFO] Data =  UPDATE 1-Anti-UAW workers seek to form union at Volkswagen plant
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2126,7 +2129,7 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://www.reuters.com/finance/global-market-data
@@ -2151,7 +2154,7 @@
 [INFO] Data =  Currencies
 [INFO] Processing:  http://www.reuters.com/finance/markets/europe
  to  res/url_120.html
-[INFO] Data =  European shares consolidate ECB-fuelled gains
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2182,19 +2185,19 @@
 [INFO] Data =  Pfizer walks away from $118 billion AstraZeneca takeover fight
 [INFO] Data =  Today's Company Results
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp
  to  res/url_123.html
 [INFO] Processing:  http://www.reuters.com/finance/currencies
  to  res/url_124.html
-[INFO] Data =  CANADA FX DEBT-C$ firms, bouncing off technical resistance
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
-[INFO] Data =  FOREX-Dollar holds steady but euro struggles on inflation concerns
-[INFO] Data =  Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
-[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  EMERGING MARKETS-Brazil's Bovespa flirts with 60,000, real gains on election bets
+[INFO] Data =  Argentine black-market peso falls to new low despite rate rise
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. data
+[INFO] Data =  UPDATE 5-TV debate victory might not boost Scottish independence leader
+[INFO] Data =  FOREX-Dollar dips on profit-taking, easing U.S. yields
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2205,13 +2208,14 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  European Currencies
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+[INFO] Data =  Once 'Best in the West', Israel's economy shows cracks
 [INFO] Data =  Asian Currencies
-[INFO] Data =  REFILE-FOREX-Euro slides on French political woes, weak German data
+[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
 [INFO] Data =  Economic News
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+[INFO] Data =  WRAPUP 3-Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Processing:  http://www.reuters.com/finance/commodities
  to  res/url_125.html
+[INFO] Data =  North Dakota's Bakken well count eclipses 15,000
 [INFO] Data =  U.S. court scraps order to seize Kurdish crude from tanker near Texas
 [INFO] Data =  Exclusive: Algeria says will reject mixed-origin wheat cargoes - letter
 [INFO] Data =  Newmont withdraws mining arbitration case against Indonesia: minister
@@ -2221,7 +2225,6 @@
 [INFO] Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
 [INFO] Data =  Libya seeks foreign help for oilfields as rockets fired at airport
 [INFO] Data =  Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
-[INFO] Data =  Brazil's drought-hit coffee belt turns to machines to lower costs
 [INFO] Data =  THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
@@ -2237,20 +2240,20 @@
 [INFO] Data =  FXpert
 [INFO] Processing:  http://www.reuters.com/finance/economy
  to  res/url_126.html
-[INFO] Data =  Aircraft demand spurs record U.S. durable goods orders gain
+[INFO] Data =  U.S. consumer confidence hits nearly seven-year high in August
+[INFO] Data =  Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Data =  U.S. home prices fall in June: S
 [INFO] Data =  /Case-Shiller
+[INFO] Data =  UBS Wealth ramps up allocation to North American stocks, cuts Europe
 [INFO] Data =  BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+[INFO] Data =  Argentina strips BNY Mellon's authorization to operate
 [INFO] Data =  Indian court's coal block ruling may have wider economic impact
 [INFO] Data =  New home sales fall, but U.S. economy stays on solid ground
 [INFO] Data =  China fund defaults expose foreign partners to shadow banking risk
 [INFO] Data =  U.S. confident its $5 billion S
 [INFO] Data =  lawsuit was not retaliation
-[INFO] Data =  U.S. services sector growth slows for second straight month in Aug: Markit
-[INFO] Data =  About-face for ECB's Draghi as he seeks to jolt euro zone into life
-[INFO] Data =  Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2263,15 +2266,15 @@
 [INFO] Data =  Macroscope
 [INFO] Data =  UK rate consensus nearly rock-solid even as markets flip-flop over timing
 [INFO] Data =  Bonds Market News
-[INFO] Data =  BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation -judge
 [INFO] Processing:  http://www.reuters.com/finance/currencies
  to  res/url_127.html
-[INFO] Data =  CANADA FX DEBT-C$ firms, bouncing off technical resistance
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
-[INFO] Data =  FOREX-Dollar holds steady but euro struggles on inflation concerns
-[INFO] Data =  Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
-[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  EMERGING MARKETS-Brazil's Bovespa flirts with 60,000, real gains on election bets
+[INFO] Data =  Argentine black-market peso falls to new low despite rate rise
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. data
+[INFO] Data =  UPDATE 5-TV debate victory might not boost Scottish independence leader
+[INFO] Data =  FOREX-Dollar dips on profit-taking, easing U.S. yields
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2282,17 +2285,17 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  European Currencies
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+[INFO] Data =  Once 'Best in the West', Israel's economy shows cracks
 [INFO] Data =  Asian Currencies
-[INFO] Data =  REFILE-FOREX-Euro slides on French political woes, weak German data
+[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
 [INFO] Data =  Economic News
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+[INFO] Data =  WRAPUP 3-Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Processing:  http://www.reuters.com/finance/stocks
  to  res/url_128.html
 [INFO] Data =  Pfizer walks away from $118 billion AstraZeneca takeover fight
 [INFO] Data =  Today's Company Results
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://www.reuters.com/finance/markets/hotStocks
@@ -2318,12 +2321,14 @@
  to  res/url_131.html
 [INFO] Processing:  http://www.reuters.com/news/archive/canadaMktRpt?date=today
  to  res/url_132.html
+[INFO] Data =  CANADA STOCKS-TSX at record high after Tim Hortons extends rally
+[INFO] Data =  CANADA STOCKS-TSX opens higher as Tim Hortons gains on deal plans
 [INFO] Data =  CANADA STOCKS-Futures point to lower open for TSX
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  Front Row Washington
 [INFO] Data =  Key retirements mean a changing of the guard next year in U.S. Congress
-[INFO] Processing:  http://www.reuters.com/article/2014/08/26/markets-canada-stocks-idUSL3N0QW3FH20140826
+[INFO] Processing:  http://www.reuters.com/article/2014/08/26/markets-canada-stocks-idUSL1N0QW13720140826
  to  res/url_133.html
 [INFO] Processing:  http://www.reuters.com/news/archive/chileMktRpt?date=today
  to  res/url_134.html
@@ -2362,6 +2367,15 @@
  to  res/url_141.html
 [INFO] Processing:  http://www.reuters.com/news/archive/swissMktRpt?date=today
  to  res/url_142.html
+[INFO] Data =  Glencore, Jinchuan front runners to buy BHP's Nickel West
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
+[INFO] Data =  Chile copper mine contract workers announce one-day strike
+[INFO] Data =  RPT-UPDATE 2-Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+[INFO] Data =  Steelmakers lead as euro zone shares extend ECB rally
+[INFO] Data =  UPDATE 2-Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+[INFO] Data =  REFILE-UPDATE 4-WHO urges stiff regulatory curbs on e-cigarettes
+[INFO] Data =  BRIEF-U.S. judge dismisses London Metal Exchange from aluminum antitrust litigation
+[INFO] Data =  The incredible shrinking Bund yield - going, going ... gone?
 [INFO] Data =  FOREX-Dollar holds steady but euro struggles on inflation concerns
 [INFO] Data =  European shares consolidate ECB-fuelled gains
 [INFO] Data =  New Issue- Kraftwerke adds 70 mln sfr to 2024 bond
@@ -2389,7 +2403,7 @@
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  Front Row Washington
 [INFO] Data =  Key retirements mean a changing of the guard next year in U.S. Congress
-[INFO] Processing:  http://www.reuters.com/article/2014/08/26/markets-forex-idUSL5N0QW2BT20140826
+[INFO] Processing:  http://www.reuters.com/article/2014/08/26/bhp-billiton-nickelwest-idUSL5N0QW4AR20140826
  to  res/url_143.html
 [INFO] Processing:  http://www.reuters.com/news/archive/londonMktRpt?date=today
  to  res/url_144.html
@@ -2403,7 +2417,7 @@
  to  res/url_145.html
 [INFO] Processing:  http://www.reuters.com/news/archive/goldMktRpt?date=today
  to  res/url_146.html
-[INFO] Data =  PRECIOUS-Gold up around 1 pct as dollar rally pauses; U.S. data eyed
+[INFO] Data =  PRECIOUS-Gold up as dollar rally pauses; strong U.S. data limits gains
 [INFO] Data =  PRECIOUS-Gold rises from 2-mth low on technical buying, gains may be capped
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
@@ -2421,6 +2435,14 @@
  to  res/url_149.html
 [INFO] Processing:  http://www.reuters.com/news/archive/usDollarRpt?date=today
  to  res/url_150.html
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  EMERGING MARKETS-Brazil's Bovespa flirts with 60,000, real gains on election bets
+[INFO] Data =  Argentine black-market peso falls to new low despite rate rise
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. data
+[INFO] Data =  UPDATE 5-TV debate victory might not boost Scottish independence leader
+[INFO] Data =  FOREX-Dollar dips on profit-taking, easing U.S. yields
+[INFO] Data =  Once 'Best in the West', Israel's economy shows cracks
+[INFO] Data =  The incredible shrinking Bund yield - going, going ... gone?
 [INFO] Data =  CANADA FX DEBT-C$ firms, bouncing off technical resistance
 [INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
 [INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
@@ -2430,7 +2452,6 @@
 [INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
 [INFO] Data =  FOREX-Dollar rally takes a pause, but offers little support to euro
 [INFO] Data =  Fitch Hosts Global Sovereign Conferences in September
-[INFO] Data =  UPDATE 4-Scotland's pro-independence leader steamrolls final TV debate before vote
 [INFO] Data =  GLOBAL MARKETS-Asian shares firm, euro wilts as ECB seen on cusp of QE
 [INFO] Data =  PRESS DIGEST- New York Times business news - Aug 26
 [INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
@@ -2438,16 +2459,16 @@
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  Front Row Washington
 [INFO] Data =  Key retirements mean a changing of the guard next year in U.S. Congress
-[INFO] Processing:  http://www.reuters.com/article/2014/08/26/markets-canada-currency-bonds-idUSL1N0QW0OW20140826
+[INFO] Processing:  http://www.reuters.com/article/2014/08/26/markets-global-idUSL1N0QW1HP20140826
  to  res/url_151.html
 [INFO] Processing:  http://www.reuters.com/finance/markets/us
  to  res/url_152.html
-[INFO] Data =  Italy struggles with Plan B if Russian gas supplies cut
-[INFO] Data =  Miner Mercator to try restructuring, files for creditor protection
-[INFO] Data =  UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
-[INFO] Data =  BRIEF-Citigroup to pay about $2.5 mln in fines, restitution in FINRA settlement
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
-[INFO] Data =  Pfizer to test Xalkori lung cancer drug with Merck immunotherapy
+[INFO] Data =  Direct bidders buy low share of U.S. 2-year note supply
+[INFO] Data =  Peru's Congress narrowly OKs Humala's new cabinet on third vote
+[INFO] Data =  UPDATE 1-Imperial Metals says new Canada mine on track for start-up
+[INFO] Data =  UPDATE 1-Anti-UAW workers seek to form union at Volkswagen plant
+[INFO] Data =  American pulls fares from Orbitz after failing to reach a deal
+[INFO] Data =  Online job list service ZipRecruiter raises $63 mln in first funding
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2458,7 +2479,7 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://www.reuters.com/finance/global-market-data
@@ -2483,7 +2504,7 @@
 [INFO] Data =  Currencies
 [INFO] Processing:  http://www.reuters.com/finance/markets/europe
  to  res/url_154.html
-[INFO] Data =  European shares consolidate ECB-fuelled gains
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2514,19 +2535,19 @@
 [INFO] Data =  Pfizer walks away from $118 billion AstraZeneca takeover fight
 [INFO] Data =  Today's Company Results
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Upgrades
 [INFO] Data =  Downgrades
 [INFO] Processing:  http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp
  to  res/url_157.html
 [INFO] Processing:  http://www.reuters.com/finance/currencies
  to  res/url_158.html
-[INFO] Data =  CANADA FX DEBT-C$ firms, bouncing off technical resistance
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  COLUMN-Draghi calls for fiscal help, hears busy signal: James Saft
-[INFO] Data =  FOREX-Dollar holds steady but euro struggles on inflation concerns
-[INFO] Data =  Correct: Fitch Revises Russian City of Samara's Outlook to Positive; Affirms at 'BB'
-[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  EMERGING MARKETS-Brazil's Bovespa flirts with 60,000, real gains on election bets
+[INFO] Data =  Argentine black-market peso falls to new low despite rate rise
+[INFO] Data =  GLOBAL MARKETS-Stocks gain on ECB stimulus hopes, U.S. data
+[INFO] Data =  UPDATE 5-TV debate victory might not boost Scottish independence leader
+[INFO] Data =  FOREX-Dollar dips on profit-taking, easing U.S. yields
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2537,13 +2558,14 @@
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
 [INFO] Data =  European Currencies
-[INFO] Data =  GLOBAL MARKETS-Euro, bond yields dip as looser ECB policy eyed
+[INFO] Data =  Once 'Best in the West', Israel's economy shows cracks
 [INFO] Data =  Asian Currencies
-[INFO] Data =  REFILE-FOREX-Euro slides on French political woes, weak German data
+[INFO] Data =  RPT-FOREX-Dollar rally takes a pause, but offers little support to euro
 [INFO] Data =  Economic News
-[INFO] Data =  UPDATE 2-Algeria plans to raise government spending 16 pct in 2015 -draft budget
+[INFO] Data =  WRAPUP 3-Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Processing:  http://www.reuters.com/finance/commodities
  to  res/url_159.html
+[INFO] Data =  North Dakota's Bakken well count eclipses 15,000
 [INFO] Data =  U.S. court scraps order to seize Kurdish crude from tanker near Texas
 [INFO] Data =  Exclusive: Algeria says will reject mixed-origin wheat cargoes - letter
 [INFO] Data =  Newmont withdraws mining arbitration case against Indonesia: minister
@@ -2553,7 +2575,6 @@
 [INFO] Data =  Exclusive: Lonmin CEO denies job cuts plan, says focus is on ramp up
 [INFO] Data =  Libya seeks foreign help for oilfields as rockets fired at airport
 [INFO] Data =  Insight: Behind Indonesia mining deal, newly minted minister and U.S. mining legend
-[INFO] Data =  Brazil's drought-hit coffee belt turns to machines to lower costs
 [INFO] Data =  THOMSON REUTERS EQUAL WEIGHT CONTINUOUS COMMODITY INDEX (CCI)
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
@@ -2569,20 +2590,20 @@
 [INFO] Data =  FXpert
 [INFO] Processing:  http://www.reuters.com/finance/economy
  to  res/url_160.html
-[INFO] Data =  Aircraft demand spurs record U.S. durable goods orders gain
+[INFO] Data =  U.S. consumer confidence hits nearly seven-year high in August
+[INFO] Data =  Aircraft demand spurs record gain in U.S. durable goods orders
 [INFO] Data =  U.S. home prices fall in June: S
 [INFO] Data =  /Case-Shiller
+[INFO] Data =  UBS Wealth ramps up allocation to North American stocks, cuts Europe
 [INFO] Data =  BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
+[INFO] Data =  Argentina strips BNY Mellon's authorization to operate
 [INFO] Data =  Indian court's coal block ruling may have wider economic impact
 [INFO] Data =  New home sales fall, but U.S. economy stays on solid ground
 [INFO] Data =  China fund defaults expose foreign partners to shadow banking risk
 [INFO] Data =  U.S. confident its $5 billion S
 [INFO] Data =  lawsuit was not retaliation
-[INFO] Data =  U.S. services sector growth slows for second straight month in Aug: Markit
-[INFO] Data =  About-face for ECB's Draghi as he seeks to jolt euro zone into life
-[INFO] Data =  Exclusive: Portugal's Espirito Santo clan in 11th-hour borrowing spree in 2014 - sources
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
+[INFO] Data =  Different paths to peace for Ukraine
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2595,44 +2616,44 @@
 [INFO] Data =  Macroscope
 [INFO] Data =  UK rate consensus nearly rock-solid even as markets flip-flop over timing
 [INFO] Data =  Bonds Market News
-[INFO] Data =  UPDATE 1-Russia's Putin says military escalation won't solve Ukraine crisis
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation -judge
 [INFO] Processing:  http://ara.reuters.com
  to  res/url_161.html
-[INFO] Data =  غارات إسرائيلية تستهدف المزيد من المباني المرتفعة في غزة
-[INFO] Data =  رئيس كردستان العراق: إيران زودت القوات الكردية بالأسلحة
+[INFO] Data =  مصر تعلن وقفا لاطلاق النار في غزة يبدأ الساعة 1600 بتوقيت جرينتش
+[INFO] Data =  مصر: اسرائيل تسمح بدخول المساعدة الانسانية ومواد إعادة الاعمار لغزة
 [INFO] Data =  أخبار الاقتصاد
-[INFO] Data =  الأسهم الأوروبية تتماسك وتوقعات التحفيز تغذي المكاسب
+[INFO] Data =  بورصة السعودية تستأنف الصعود وارتفاع معظم أسواق الشرق الأوسط
 [INFO] Data =  أخبار عالمية
-[INFO] Data =  اشتون: أريد التأكد من قدرة أوكرانيا على الحفاظ على سلامة أراضيها
+[INFO] Data =  بوتين يقول التصعيد العسكري لن يحل أزمة أوكرانيا
 [INFO] Data =  أخبار الرياضة
-[INFO] Data =  لامبارد يعتزل اللعب الدولي مع منتخب انجلترا
+[INFO] Data =  بنعطية مدافع المغرب سينضم الى بايرن من روما
 [INFO] Data =  منوعات
 [INFO] Data =  العلوم والبيئه
 [INFO] Processing:  http://ar.reuters.com
  to  res/url_162.html
-[INFO] Data =  Argentina revoca representación legal de Bank of New York Mellon en medio de crisis de deuda
-[INFO] Data =  Pronóstico meteorológico para región agropecuaria de Argentina
+[INFO] Data =  ACTUALIZA 1-Argentina revoca representación legal de Bank of New York Mellon en medio de crisis de deuda
+[INFO] Data =  Peso argentino cae a mínimos históricos
 [INFO] Data =  Negocios
-[INFO] Data =  EMPRESAS A SEGUIR EN AMÉRICA LATINA-Antofagasta, Avianca Holdings, Interacciones y Cemig
+[INFO] Data =  PESO ARGENTINO EN PLAZA MARGINAL SUBE 0,22 PCT A 13,95 POR DÓLAR EN PRIMEROS NEGOCIOS: OPERADORES
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://br.reuters.com
  to  res/url_163.html
-[INFO] Data =  Escalada militar não resolverá crise na Ucrânia, diz Putin
-[INFO] Data =  Presidente da Ucrânia quer forte controle de fronteira com Rússia e fim de fornecimento de armas
+[INFO] Data =  Israel libera acesso de ajuda humanitária a Gaza
+[INFO] Data =  Israelenses e palestinos firmam acordo de cessar-fogo, diz porta-voz do Hamas
 [INFO] Data =  Mundo
-[INFO] Data =  Avião faz pouso de emergência na Austrália após passageiro idoso tomar os controles
+[INFO] Data =  Obama diz que eliminar Estado Islâmico não será fácil
 [INFO] Data =  Negócios
-[INFO] Data =  Aneel aprova edital de leilão de energia A-5
+[INFO] Data =  Mercado de crédito brasileiro cresce menos em julho, diz BC
 [INFO] Data =  Esportes
 [INFO] Data =  Cultura
 [INFO] Data =  Brasil
 [INFO] Data =  Internet
 [INFO] Processing:  http://ca.reuters.com
  to  res/url_164.html
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
-[INFO] Data =  Pakistan's prime minister meets army chief amid crisis
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
+[INFO] Data =  Islamic State turns radical Islam on Syria Muslims
 [INFO] Data =  Business
-[INFO] Data =  Burger King to buy Canada's Tim Hortons
+[INFO] Data =  TSX at record high after Tim Hortons extends rally
 [INFO] Data =  Canada
 [INFO] Data =  Canada's intelligence head says returning Islamist militants pose threat
 [INFO] Data =  Sports
@@ -2681,7 +2702,7 @@
 [INFO] Data =  多媒体报道
 [INFO] Data =  世卫称埃博拉疫情比想象更严重
 [INFO] Data =  独家：中国当局调查周永康获得前中共领导人支持--消息人士
-[INFO] Data =  芝加哥期市：CBOT大豆期货大跌3.7%，因套利交易和天气前景
+[INFO] Data =  《汇市解析》--技术面及价位预测
 [INFO] Data =  专栏
 [INFO] Data =  
 [INFO] Data =  Maguire
@@ -2693,10 +2714,10 @@
 [INFO] Data =  合作专区
 [INFO] Processing:  http://fr.reuters.com
  to  res/url_166.html
-[INFO] Data =  Valls oeuvre à "un gouvernement de clarté"
-[INFO] Data =  L'exécutif a les armes pour passer en force au Parlement
+[INFO] Data =  Valls et Hollande ont constitué leur gouvernement "de clarté"
+[INFO] Data =  Emmanuel Macron remplace Arnaud Montebourg à l'Economie
 [INFO] Data =  Économie
-[INFO] Data =  Les commandes de biens durables s'envolent aux USA grâce aux avions
+[INFO] Data =  Les Bourses européennes clôturent en hausse, progression solide
 [INFO] Data =  Sport
 [INFO] Data =  Brandao sera jugé pour le coup de tête à Thiago Motta
 [INFO] Data =  Technologie
@@ -2704,34 +2725,34 @@
 [INFO] Data =  Convertisseur de devises
 [INFO] Processing:  http://de.reuters.com
  to  res/url_167.html
-[INFO] Data =  Ukraine nimmt russische Soldaten im Osten fest
-[INFO] Data =  Prozess gegen Banken-Cheflobbyisten Kemmer eingestellt
+[INFO] Data =  Wowereit gibt nach 13 Jahren an der Spitze Berlins auf
+[INFO] Data =  Zunächst kein Durchbruch bei Ukraine-Russland-Treffen
 [INFO] Data =  Inland
-[INFO] Data =  Insider - Merkel weist interne Kritik an PKW-Maut zurück
+[INFO] Data =  Strafbefreiende Steuer-Selbstanzeige wird teurer
 [INFO] Data =  Ausland
 [INFO] Data =  Frankreich stellt nach Kabinettskrach neue Minister vor
 [INFO] Data =  Unternehmen
-[INFO] Data =  Burger King schluckt kanadische Donut-Kette Tim Hortons
+[INFO] Data =  Amazon schnappt Google Spieleportal Twitch weg
 [INFO] Data =  Konjunktur
 [INFO] Data =  Märkte
 [INFO] Data =  Währungsrechner
 [INFO] Processing:  http://in.reuters.com
  to  res/url_168.html
-[INFO] Data =  India bans Finmeccanica from bidding for contracts
+[INFO] Data =  Economy likely grew faster in June quarter: Reuters poll
 [INFO] Data =  Nifty continues retreat from record high; coal users hit
-[INFO] Data =  Boxer Vijender Singh out of Asian Games
-[INFO] Data =  CCI fines car makers $420 million
+[INFO] Data =  Israel, Palestinians reach Gaza ceasefire deal
+[INFO] Data =  SC's coal block ruling may have wider impact
+[INFO] Data =  How Sharif stumbled into protests crisis
+[INFO] Data =  England's Lampard quits internationals
 [INFO] Data =  Schoolgirls commit suicide over harassment
-[INFO] Data =  Israeli air strikes target more Gaza high-rises
-[INFO] Data =  China targets Microsoft browser, media player
-[INFO] Data =  Broadcasters, basic cable prove staying power
+[INFO] Data =  Qualcomm may face EU antitrust probe
 [INFO] Data =  Business
 [INFO] Data =  Markets
 [INFO] Data =  World
 [INFO] Data =  Technology
 [INFO] Data =  Economy
 [INFO] Data =  Deals
-[INFO] Data =  Supreme Court's coal block ruling may have wider economic impact
+[INFO] Data =  India bans Finmeccanica from bidding for contracts amid graft case
 [INFO] Data =  Breakingviews
 [INFO] Data =  Asia
 [INFO] Data =  s top-down corporate reforms vary in promise
@@ -2753,24 +2774,24 @@
 [INFO] Data =  Video
 [INFO] Processing:  http://it.reuters.com
  to  res/url_169.html
+[INFO] Data =  Gaza, raggiunta intesa tra israeliani e palestinesi, scattata tregua
 [INFO] Data =  Renzi: non accettiamo lezioni su priorità
-[INFO] Data =  Sblocca Italia, Lupi: coperture in legge Stabilità
 [INFO] Data =  Valute
 [INFO] Data =  Finanza e Investimenti
-[INFO] Data =  Ristorazione, matrimonio Burger King-Tim Hortons, giro d'affari 23 miliardi di dollari
-[INFO] Data =  Borsa Milano prosegue in lieve calo, rimbalzano Autogrill e Wdf
+[INFO] Data =  Spending review, una partecipata su 4 ha un rendimento negativo
+[INFO] Data =  Finmeccanica, India vieta offerte per futuri contratti
 [INFO] Data =  Fondi
 [INFO] Data =  Mercati
 [INFO] Processing:  http://jp.reuters.com
  to  res/url_170.html
 [INFO] Data =  トップニュース
-[INFO] Data =  反動減長期化し回復基調弱くなるか、しっかり見ていく＝甘利担当相
+[INFO] Data =  デジタル・アリー株急上昇、ウエラブルカメラへの関心高まる
 [INFO] Data =  マネーニュース
 [INFO] Data =  ピクチャーギャラリー
 [INFO] Data =  ツイートされた記事ランキング
 [INFO] Data =  ロイターランキング
-[INFO] Data =  コラム：エボラ熱、過去最悪の感染はなぜ起きたのか
-[INFO] Data =  クボタ、急死した前社長の路線踏まえ海外展開を加速へ＝新社長
+[INFO] Data =  アングル：南シナ海領有権問題、インドネシアの諸島が新たな舞台に
+[INFO] Data =  ウクライナ情勢、軍備増強では解決しない＝ロシア大統領
 [INFO] Data =  ロイター特集
 [INFO] Data =  ＦＲＢ特集
 [INFO] Data =  特集 拡大するエボラ感染
@@ -2801,12 +2822,12 @@
 [INFO] Data =  外国為替市場
 [INFO] Data =  株式市場
 [INFO] Data =  ニュース
-[INFO] Data =  ノルウェー政府系ファンドが運用好調、来年度予算に余力＝経済紙
+[INFO] Data =  ハンガリー中銀、政策金利を2.1％で据え置き
 [INFO] Data =  ビジネス
-[INFO] Data =  反動減長期化し回復基調弱くなるか、しっかり見ていく＝甘利担当相
+[INFO] Data =  プライベート・エクイティのＫＫＲ、中国鶏肉会社に出資
 [INFO] Data =  
 [INFO] Data =  写真
-[INFO] Data =  Funeral for Michael Brown
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  ロシア
 [INFO] Data =  特集 欧州債務問題
 [INFO] Data =  中東
@@ -2823,12 +2844,12 @@
 [INFO] Data =  ビデオ
 [INFO] Processing:  http://lta.reuters.com
  to  res/url_171.html
-[INFO] Data =  Francia presentará gabinete reformista tras salida de ministros rebeldes
-[INFO] Data =  Ataques aéreos israelíes matan a dos palestinos y causan 20 heridos
+[INFO] Data =  Israel acepta propuesta de Egipto para cese al fuego en Gaza: funcionario
+[INFO] Data =  Putin y Poroshenko estrechan manos en Minsk; captura de soldados rusos opaca comienzo de reunión
 [INFO] Data =  Mundo
-[INFO] Data =  Miles de desplazados y cosechas dañadas por inundaciones en Bangladesh
+[INFO] Data =  OMS retira personal de laboratorio ébola en Sierra Leona tras contagio de médico
 [INFO] Data =  Negocios
-[INFO] Data =  China confía en que mantendrá un crecimiento relativamente acelerado: primer ministro
+[INFO] Data =  Burger King acuerda compra de canadiense Tim Hortons
 [INFO] Data =  Deportes
 [INFO] Data =  Espectáculos
 [INFO] Data =  América Latina
@@ -2836,14 +2857,14 @@
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://mx.reuters.com
  to  res/url_172.html
-[INFO] Data =  RPT-ENTREVISTA-Mexicano Interacciones busca proyectos energía eólica con china Envision: director
-[INFO] Data =  RPT-México vigilará con imágenes satelitales tren "La Bestia" usado por emigrantes
+[INFO] Data =  Peso argentino cae a mínimos históricos
+[INFO] Data =  Bolsa y moneda de México avanzan por dato EEUU y expectativa de estímulos monetarios
 [INFO] Data =  Negocios
-[INFO] Data =  EMPRESAS A SEGUIR EN AMÉRICA LATINA-Antofagasta, Avianca Holdings, Interacciones y Cemig
+[INFO] Data =  TIIE 28 DÍAS MÉXICO A 3.2925 PCT, TIIE 91 DÍAS EN 3.2936 PCT; AGOSTO 27
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://ru.reuters.com
  to  res/url_173.html
-[INFO] Data =  Лукашенко призвал не ждать прорывов от встречи Путина и Порошенко
+[INFO] Data =  Путин и Порошенко обменялись упреками и призывами к миру
 [INFO] Data =  РФ назвала случайностью появление своих военных на Украине
 [INFO] Data =  НОВОСТИ БИЗНЕСА И ЭКОНОМИКИ
 [INFO] Data =  РФ обещает Роснефти финпомощь после санкций Запада
@@ -2852,32 +2873,31 @@
 [INFO] Data =  Валютный калькулятор
 [INFO] Processing:  http://es.reuters.com
  to  res/url_174.html
-[INFO] Data =  Montoro hablará en el Congreso de fraude fiscal en plena "crisis Pujol"
-[INFO] Data =  Francia presentará un gabinete reformista tras la marcha de los disidentes
+[INFO] Data =  Israel acepta la propuesta de Egipto para un alto el fuego en Gaza
+[INFO] Data =  Macron, nuevo ministro de Economía francés en el nuevo gabinete
 [INFO] Data =  Negocios
-[INFO] Data =  España adjudica 3.500 millones en letras con interés en mínimos históricos
+[INFO] Data =  Francia presentará un gabinete reformista tras la marcha de los disidentes
 [INFO] Data =  Deportes
 [INFO] Data =  Berlín desvelará su plan para albergar los Juegos de 2024
 [INFO] Data =  Sociedad
-[INFO] Data =  'Breaking Bad' y 'Modern Family' se imponen ante series nuevas en los Emmy
+[INFO] Data =  La OMS insta a regular los cigarrillos electrónicos
 [INFO] Data =  Calculadora de divisas
 [INFO] Processing:  http://uk.reuters.com
  to  res/url_175.html
-[INFO] Data =  Russian soldiers' capture clouds Ukraine talks
-[INFO] Data =  Iran supplied weapons to Iraqi Kurdish forces; Baghdad bomb kills 12
+[INFO] Data =  Putin, Poroshenko set out different paths to peace
+[INFO] Data =  Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Data =  France fine-tunes pro-reform cabinet
-[INFO] Data =  Salmond steamrolls final TV debate before vote
-[INFO] Data =  Hamas structure complicates Gaza peace
-[INFO] Data =  WHO urges stiff regulatory curbs on e-cigarettes
-[INFO] Data =  Amazon snaps up Twitch for $970 million
-[INFO] Data =  Emmys exalt old favourites over newcomers
+[INFO] Data =  Debate win might not boost Salmond's chances
+[INFO] Data =  Qualcomm may face EU antitrust probe
+[INFO] Data =  Boris Johnson confirms Uxbridge as target seat
+[INFO] Data =  Lampard quits internationals
 [INFO] Data =  Video
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Reuters on the Road: Level39 speeding up tech super growth
-[INFO] Data =  Liberian slum cordoned off
-[INFO] Data =  WPP's Sorrell says UK rates to remain lower for longer
-[INFO] Data =  Iraq's military evacuate sick, children from besieged Shi'ite town of Amerli
+[INFO] Data =  Young American hiker goes missing in Israel
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
+[INFO] Data =  Israeli air strikes demolish Gaza highrises
+[INFO] Data =  Mother of freed American journalist held hostage in Syria says family is 'eternally grateful'
+[INFO] Data =  'Change is apparent' in Ferguson, Missouri: Police captain
 [INFO] Data =  Business
 [INFO] Data =  Markets
 [INFO] Data =  World
@@ -2885,7 +2905,7 @@
 [INFO] Data =  Politics
 [INFO] Data =  Deals
 [INFO] Data =  Galleries of the Day
-[INFO] Data =  Emmy Awards
+[INFO] Data =  Emmy afterparty
 [INFO] Data =  Opinion
 [INFO] Data =  This month
 [INFO] Data =  s ultimate enemy - the Islamic State
@@ -2899,18 +2919,18 @@
 [INFO] Data =  s change of heart
 [INFO] Processing:  http://www.reuters.com/finance
  to  res/url_176.html
-[INFO] Data =  Wall Street opens flat, S
-[INFO] Data =  500 near record
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
 [INFO] Data =  Latest Business News
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
-[INFO] Data =  Australian airlines relax phone ban too
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Chinese antitrust regulator targets Microsoft's web browser, media player
-[INFO] Data =  BOJ to stay bullish on prices even as it cuts Japan GDP estimate: sources
-[INFO] Data =  Russian food safety regulator shuts fifth McDonald's restaurant
-[INFO] Data =  Japan government turns more cautious on weak factory output
-[INFO] Data =  Rising North American plane demand boosts leasing market: BOC Aviation
+[INFO] Data =  Different paths to peace for Ukraine
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Volvo's new car targets China rich
+[INFO] Data =  Detroit, hold-out creditors must go to bankruptcy mediation: judge
+[INFO] Data =  Ann Taylor parent taps JPMorgan to weigh potential sale: sources
+[INFO] Data =  Anti-UAW workers seek to form union at Volkswagen plant
+[INFO] Data =  Best Buy revenue drops as more shoppers prefer to buy online
+[INFO] Data =  Hewlett-Packard recalls 6 million power cords over fire hazard
 [INFO] Data =  Market Indices
 [INFO] Data =  Currencies
 [INFO] Data =  Commodities
@@ -2927,21 +2947,19 @@
 [INFO] Processing:  http://www.reuters.com/finance/markets
  to  res/url_177.html
 [INFO] Data =  Market News
-[INFO] Data =  Wall Street opens flat, S
-[INFO] Data =  500 near record
-[INFO] Data =  Euro, bond yields dip as looser ECB policy eyed
-[INFO] Data =  Dollar holds steady but euro struggles on inflation concerns
+[INFO] Data =  Wall Street rises, Dow and S
+[INFO] Data =  500 set intraday records
+[INFO] Data =  Global stocks gain on ECB stimulus hopes, U.S. economic data
+[INFO] Data =  Dollar dips on profit-taking, easing U.S. yields
+[INFO] Data =  UBS Wealth ramps up allocation to North American stocks, cuts Europe
 [INFO] Data =  Millionaire investors catch Australia's high-yield express
 [INFO] Data =  Municipal bonds to be excluded from the U.S. bank liquidity rule: Bloomberg
-[INFO] Data =  Investors look for more gains as U.S. S
-[INFO] Data =  500 index hits 2,000 milestone
 [INFO] Data =  U.S. Market Report
-[INFO] Data =  US STOCKS SNAPSHOT-Wall St opens flat, S
-[INFO] Data =  500 near record
+[INFO] Data =  UPDATE 6-Gaza ceasefire takes effect as Palestinians celebrate
 [INFO] Data =  UK Market Report
 [INFO] Data =  Europe shares trim Monday's gains; UK stocks play catch up
 [INFO] Data =  European Market Report
-[INFO] Data =  European shares consolidate ECB-fuelled gains
+[INFO] Data =  Euro zone shares post biggest two-day rise in 14 months on ECB bet
 [INFO] Data =  Tokyo Market Report
 [INFO] Data =  CORRECTED-Nikkei falls in thin trade as weak yen trend pauses
 [INFO] Data =  Hong Kong Market Report
@@ -2957,59 +2975,59 @@
 [INFO] Data =  Commodities
 [INFO] Processing:  http://www.reuters.com/news/world
  to  res/url_178.html
-[INFO] Data =  Russian soldiers' capture clouds Putin-Poroshenko talks
+[INFO] Data =  Gaza ceasefire deal reached, Palestinian groups say
 [INFO] Data =  Latest World News
 [INFO] Data =  World Video
-[INFO] Data =  Japan court rules Tepco responsible for suicide
-[INFO] Data =  Ukraine says video shows Russian soldiers detained in east Ukraine
-[INFO] Data =  Liberian slum cordoned off
-[INFO] Data =  Turkey struggles as 'lone gatekeeper' against Islamic State recruitment
-[INFO] Data =  France fine-tunes pro-reform cabinet after rebel ministers ousted
-[INFO] Data =  Washington to give Tunisia military aid to battle Islamists
-[INFO] Data =  Austrian finance minister quits in tax reform row
-[INFO] Data =  Seleka rebel infighting in Central African Republic kills 17
+[INFO] Data =  Young American hiker goes missing in Israel
+[INFO] Data =  Central Portugal forest fire under control - others still burn
+[INFO] Data =  Burger King to buy Canada's Tim Hortons for $11.5 billion
+[INFO] Data =  Nearly 2,000 Europe-bound migrants have drowned this year-UN
+[INFO] Data =  Libyan raids herald bolder Arab action as U.S. role wavers
+[INFO] Data =  Three killed in U.N. helicopter crash in South Sudan
+[INFO] Data =  Japanese court rules against nuclear operator in suicide suit
+[INFO] Data =  Qatar seeks to free more U.S. hostages in Syria: source
 [INFO] Data =  WORLD WATCH
 [INFO] Data =  Pictures
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Emmy Awards
 [INFO] Data =  Emmy red carpet
-[INFO] Data =  Funeral for Michael Brown
-[INFO] Data =  Islamic State captures air base
 [INFO] Processing:  http://www.reuters.com/news/politics
  to  res/url_179.html
-[INFO] Data =  All eyes on governor's race in Florida primary, turnout is key
+[INFO] Data =  Virginia ex-governor back on witness stand in corruption trial
 [INFO] Data =  Latest Politics Headlines
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  After Hobby Lobby, ACA exceptions may become the rule
 [INFO] Data =  Jackson Hole 2014: Laboring for a grip on when to hike
+[INFO] Data =  Obama woos veterans with mental health care, military home loans
+[INFO] Data =  Lawyers for Texas Governor Perry file motion to dismiss charges
 [INFO] Data =  Bills to regulate California groundwater use opposed by farmers
 [INFO] Data =  Representative DesJarlais wins Tennessee primary by 38 votes
 [INFO] Data =  Florida governor unveils new education initiatives
-[INFO] Data =  As Obama's vacation ends, criticism does not
-[INFO] Data =  With Graham name, Democrats see rare chance for Florida win
 [INFO] Data =  Politics Video
 [INFO] Data =  ACA price outlook varies widely state-to-state for 2015
 [INFO] Data =  After Hobby Lobby, ACA exceptions may become the rule
 [INFO] Data =  Jackson Hole 2014: Laboring for a grip on when to hike
 [INFO] Processing:  http://www.reuters.com/news/technology
  to  res/url_180.html
-[INFO] Data =  Exclusive: EU regulators mull Qualcomm antitrust probe - sources
+[INFO] Data =  Exclusive: Chipmaker Qualcomm may face EU antitrust probe
 [INFO] Data =  Latest Technology News
 [INFO] Data =  Technology Video
-[INFO] Data =  A ring that reads text for the blind
-[INFO] Data =  Apple iPhone 6 screen hits snag ahead of launch
-[INFO] Data =  Is it a plane? No, it's a hoverbike
+[INFO] Data =  Singapore to use state-of-the-art farming tech to produce more veggies
+[INFO] Data =  Chinese boy implanted with 3D printed vertebra
+[INFO] Data =  Miniature lung grown by scientists to test cancer drugs
+[INFO] Data =  Tom Hanks' new app an homage to manual typewriters
+[INFO] Data =  Amazon snaps up live video startup Twitch for $970 million
 [INFO] Data =  U.S. judge questions shareholder settlement with HP over Autonomy
 [INFO] Data =  Exclusive: Communications equipment maker Comtech explores sale
 [INFO] Data =  Australia's Qantas, Virgin allow smartphones throughout flights
-[INFO] Data =  California to require anti-theft 'kill switches' on smartphones
-[INFO] Data =  Digital Ally shares surge on interest in wearable cameras
 [INFO] Data =  Business Headlines
 [INFO] Data =  Business Video
-[INFO] Data =  WPP confident despite weak Russia
-[INFO] Data =  Australian airlines relax phone ban too
-[INFO] Data =  Breakingviews: Draghi’s change of heart
-[INFO] Data =  Reuters on the Road: Level39 speeding up tech super growth
+[INFO] Data =  Different paths to peace for Ukraine
+[INFO] Data =  Breakingviews: Activist burger flip?
+[INFO] Data =  Volvo's new car targets China rich
+[INFO] Data =  Best Buy can't stop revenue drop
 [INFO] Processing:  http://blogs.reuters.com/us/
  to  res/url_181.html
 [INFO] Data =  This month
@@ -3026,14 +3044,14 @@
 [INFO] Data =  s renewed hegemony isn’t something Europe needs to fear
 [INFO] Data =  34
 [INFO] Data =  Did America’s policy on ransom contribute to James Foley’s killing?
-[INFO] Data =  25
+[INFO] Data =  29
 [INFO] Data =  Jon Stewart and Stephen Colbert liberal lions? The guest chair tells a different story.
 [INFO] Data =  19
 [INFO] Data =  The Islamic State buys itself a day of horror, little else, by killing James Foley
-[INFO] Data =  9
+[INFO] Data =  10
 [INFO] Data =  Tragedy in Ferguson: What the Justice Department can do next
-[INFO] Data =  4
-[INFO] Data =  Pity Moscow’s foodies as Putin’s sanctions bite deep
+[INFO] Data =  8
+[INFO] Data =  This month’s ultimate enemy — the Islamic State
 [INFO] Processing:  http://www.reuters.com/finance/personal-finance
  to  res/url_182.html
 [INFO] Data =  How to read your benefit statement
@@ -3072,6 +3090,8 @@
 [INFO] Processing:  http://www.reuters.com/news/pictures
  to  res/url_183.html
 [INFO] Data =  Editor's choice
+[INFO] Data =  Emmy afterparty
+[INFO] Data =  Gaza fighting continues
 [INFO] Data =  Khat - Somalia's paradise flower
 [INFO] Data =  Diner en Blanc New York
 [INFO] Data =  Emmy Awards
@@ -3080,8 +3100,6 @@
 [INFO] Data =  Islamic State captures air base
 [INFO] Data =  Quake hits California
 [INFO] Data =  Fighting Ebola
-[INFO] Data =  Gaza fighting continues
-[INFO] Data =  Battle for east Ukraine
 [INFO] Data =  Full focus
 [INFO] Data =  Pictures of the month: July
 [INFO] Data =  Protests in Missouri
