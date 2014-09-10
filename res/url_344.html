@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7 no-js" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>    <html class="ie ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>    <html class="ie ie8 lt-ie10 lt-ie9 no-js" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]>    <html class="ie ie9 lt-ie10 no-js"lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+<head>
+  <script type="text/javascript">
+    if (typeof window.performance === "undefined") {
+      window._startTime = +(new Date());
+    } else {
+      window._startTime = performance.now();
+    }
+  </script>
+
+  <meta charset="utf-8">
+  <!-- Use the .htaccess and remove this line to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"63497445bb","applicationID":"3835034","transactionName":"IAtfRUdYXVVcExpcFAQDVEVGGFhXXQRN","queueTime":0,"applicationTime":408,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-412.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
+  <link href="/assets/application-1e7e8ce7cf3bff424acb4c328e2307f3.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+
+// googletag.pubads().collapseEmptyDivs();
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+  $(window).trigger('resize');
+});
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+
+  <script id="config" type="application/json">
+    {
+      "environment" : "production",
+
+      "mixpanelId" : "",
+      "googleAnalyticsId" : "UA-30098361-1",
+      "youtubeChannelId" : "UCswDowOOvJ-fkCgH9YAITjQ",
+
+      "facebookId" : "153163221468956",
+      "facebookDomain" : "upworthy.com",
+
+      "siloUri" : "http://analytics.upworthy.com",
+
+      "attentionGranularity" : "10",
+      "attentionDecay" : "5"
+    }
+  </script>
+  <script id="pageMetadata" type="application/json">
+    {
+      "environment" : "production",
+      "asset_path"  : "/assets/"
+    }
+  </script>
+      <script id="pageType" type='application/json'>"homepage"</script>
+
+
+  <!-- Disable no-js styles if javascript is turned on. http://paulirish.com/2009/avoiding-the-fouc-v3/ -->
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+    <title>Upworthy: Things that matter. Pass &#x27;em on.</title>
+
+    <meta name="description" content="Awesome, fun, interesting videos and graphics about stuff that matters.">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+  <link href="/favicon.ico" rel="icon" type="image/ico" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon-9d1807c05c7b50c47e3daaf0a91b59df.png"/>
+  <link rel="alternate" type="application/rss+xml" title="Upworthy (RSS2.0)" href="http://feeds.feedburner.com/upworthy"/>
+  <link rel="publisher" href="https://plus.google.com/103863989923615589024">
+
+        <meta property="og:image" content="http:/assets/up-41435e2014e71d77143bf31e27e27801.png" />
+    <meta property="og:site_name" content="Upworthy: Things that matter. Pass 'em on." />
+    <meta property="og:title" content="Upworthy: Things that matter. Pass 'em on." />
+    <meta property="og:description" content="Awesome, fun, interesting videos and graphics about stuff that matters." />
+    <meta property="og:url" content="http://www.upworthy.com/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Upworthy">
+    <meta name="twitter:url" content="http://www.upworthy.com/" />
+    <meta name="twitter:title" content="Upworthy: Things that matter. Pass 'em on." />
+    <meta name="twitter:image" content="/assets/up-41435e2014e71d77143bf31e27e27801.png" />
+    <meta name="twitter:description" content="Upworthy is social media with a mission: to make meaningful stuff go viral." />
+    <meta property="twitter:account_id" content="524396430" />
+
+    <meta property='fb:admins' content='12800023' />
+    <meta property='fb:admins' content='10513734' />
+    <meta property='fb:admins' content='3904222' />
+    <meta property='fb:admins' content='3616674' />
+    <meta property='fb:admins' content='1342020065' />
+    <meta property='fb:admins' content='666471049' />
+    <meta property='fb:admins' content='717159202' />
+    <meta property='fb:admins' content='707140716' />
+    <meta property='fb:admins' content='14205343' />
+  <meta property="fb:app_id" content="153163221468956">
+
+  
+
+  <!-- HTML5 Shiv (style HTML5 elements in IE8) -->
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body class="home ">
+
+  <script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "18410289", c3: "", c4: "http://www.upworthy.com/" });
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el);
+})(); </script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=18410289&c3=&c4=http://www.upworthy.com/" />
+</noscript>
+
+
+  
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+  <symbol id="ico-navicon" viewBox="0 0 32 32">
+    <path d="M0 26.286v-2.286q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804v2.286q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804zM0 17.143v-2.286q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804v2.286q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804zM0 8v-2.286q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804v2.286q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804z"></path>
+  </symbol>
+
+  <symbol id="ico-twitter" viewBox="0 0 30 32">
+    <path d="M0.786 24.839q0.625 0.071 1.393 0.071 4.018 0 7.161-2.464-1.875-0.036-3.357-1.152t-2.036-2.848q0.589 0.089 1.089 0.089 0.768 0 1.518-0.196-2-0.411-3.313-1.991t-1.313-3.67v-0.071q1.214 0.679 2.607 0.732-1.179-0.786-1.875-2.054t-0.696-2.75q0-1.571 0.786-2.911 2.161 2.661 5.259 4.259t6.634 1.777q-0.143-0.679-0.143-1.321 0-2.393 1.688-4.080t4.080-1.688q2.5 0 4.214 1.821 1.946-0.375 3.661-1.393-0.661 2.054-2.536 3.179 1.661-0.179 3.321-0.893-1.196 1.75-2.893 2.982 0.018 0.25 0.018 0.75 0 2.321-0.679 4.634t-2.063 4.438-3.295 3.759-4.607 2.607-5.768 0.973q-4.839 0-8.857-2.589z"></path>
+  </symbol>
+
+  <symbol id="ico-facebook" viewBox="0 0 18 32">
+    <path d="M1.696 16.161v-5.286h4.554v-3.893q0-3.321 1.857-5.152t4.946-1.83q2.625 0 4.071 0.214v4.714h-2.804q-1.536 0-2.071 0.643t-0.536 1.929v3.375h5.232l-0.696 5.286h-4.536v13.554h-5.464v-13.554h-4.554z"></path>
+  </symbol>
+
+  <symbol id="ico-angle-down" viewBox="0 0 21 32">
+    <path d="M1.375 13.143q0-0.232 0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411t-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411z"></path>
+  </symbol>
+
+  <symbol id="ico-angle-up" viewBox="0 0 21 32">
+    <path d="M1.375 21.143q0-0.232 0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411t-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-7.018-7.018-7.018 7.018q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411z" fill="#000000"></path>
+  </symbol>
+
+  <symbol id="ico-times" viewBox="0 0 25 32">
+    <path d="M1.964 23.607q0-0.714 0.5-1.214l5.25-5.25-5.25-5.25q-0.5-0.5-0.5-1.214t0.5-1.214l2.429-2.429q0.5-0.5 1.214-0.5t1.214 0.5l5.25 5.25 5.25-5.25q0.5-0.5 1.214-0.5t1.214 0.5l2.429 2.429q0.5 0.5 0.5 1.214t-0.5 1.214l-5.25 5.25 5.25 5.25q0.5 0.5 0.5 1.214t-0.5 1.214l-2.429 2.429q-0.5 0.5-1.214 0.5t-1.214-0.5l-5.25-5.25-5.25 5.25q-0.5 0.5-1.214 0.5t-1.214-0.5l-2.429-2.429q-0.5-0.5-0.5-1.214z"></path>
+  </symbol>
+
+  <symbol id="ico-magnify" viewBox="0 0 30 32">
+    <path d="M0 14.857q0-2.554 0.991-4.884t2.679-4.018 4.018-2.679 4.884-0.991 4.884 0.991 4.018 2.679 2.679 4.018 0.991 4.884q0 3.929-2.214 7.125l6.125 6.125q0.661 0.661 0.661 1.607t-0.67 1.616-1.616 0.67q-0.964 0-1.607-0.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-0.991t-4.018-2.679-2.679-4.018-0.991-4.884zM4.571 14.857q0 3.304 2.348 5.652t5.652 2.348 5.652-2.348 2.348-5.652-2.348-5.652-5.652-2.348-5.652 2.348-2.348 5.652zM6.857 15.429v-1.143q0-0.232 0.17-0.402t0.402-0.17h4v-4q0-0.232 0.17-0.402t0.402-0.17h1.143q0.232 0 0.402 0.17t0.17 0.402v4h4q0.232 0 0.402 0.17t0.17 0.402v1.143q0 0.232-0.17 0.402t-0.402 0.17h-4v4q0 0.232-0.17 0.402t-0.402 0.17h-1.143q-0.232 0-0.402-0.17t-0.17-0.402v-4h-4q-0.232 0-0.402-0.17t-0.17-0.402z"></path>
+  </symbol>
+
+  <symbol id="ico-search" viewBox="0 0 30 32">
+    <path d="M0 14.857q0-2.554 0.991-4.884t2.679-4.018 4.018-2.679 4.884-0.991 4.884 0.991 4.018 2.679 2.679 4.018 0.991 4.884q0 3.929-2.214 7.125l6.125 6.125q0.661 0.661 0.661 1.607 0 0.929-0.679 1.607t-1.607 0.679q-0.964 0-1.607-0.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-0.991t-4.018-2.679-2.679-4.018-0.991-4.884zM4.571 14.857q0 3.304 2.348 5.652t5.652 2.348 5.652-2.348 2.348-5.652-2.348-5.652-5.652-2.348-5.652 2.348-2.348 5.652z"></path>
+  </symbol>
+
+  <symbol id="ico-check-circle" viewBox="0 0 32 32">
+    <path d="M0 16q0-3.732 1.839-6.884t4.991-4.991 6.884-1.839 6.884 1.839 4.991 4.991 1.839 6.884-1.839 6.884-4.991 4.991-6.884 1.839-6.884-1.839-4.991-4.991-1.839-6.884zM4.5 16.339q0 0.482 0.321 0.804l6.464 6.464q0.339 0.339 0.804 0.339 0.482 0 0.821-0.339l9.696-9.696q0.321-0.321 0.321-0.804 0-0.5-0.321-0.821l-1.625-1.607q-0.339-0.339-0.804-0.339t-0.804 0.339l-7.286 7.268-4.036-4.036q-0.339-0.339-0.804-0.339t-0.804 0.339l-1.625 1.607q-0.321 0.321-0.321 0.821z"></path>
+  </symbol>
+
+  <symbol id="ico-caret-up" viewBox="0 0 18 32">
+    <path d="M0 21.714q0-0.464 0.339-0.804l8-8q0.339-0.339 0.804-0.339t0.804 0.339l8 8q0.339 0.339 0.339 0.804t-0.339 0.804-0.804 0.339h-16q-0.464 0-0.804-0.339t-0.339-0.804z"></path>
+  </symbol>
+
+  <symbol id="ico-caret-down" viewBox="0 0 18 32">
+    <path d="M0 12.571q0-0.464 0.339-0.804t0.804-0.339h16q0.464 0 0.804 0.339t0.339 0.804-0.339 0.804l-8 8q-0.339 0.339-0.804 0.339t-0.804-0.339l-8-8q-0.339-0.339-0.339-0.804z"></path>
+  </symbol>
+
+  <symbol id="ico-ban" viewBox="0 0 32 32">
+    <path d="M0 15.946q0-2.804 1.089-5.348t2.92-4.384 4.375-2.929 5.33-1.089 5.33 1.089 4.375 2.929 2.92 4.384 1.089 5.348-1.089 5.357-2.92 4.393-4.375 2.929-5.33 1.089-5.33-1.089-4.375-2.929-2.92-4.393-1.089-5.357zM4 15.946q0 2.893 1.589 5.339l13.482-13.464q-2.411-1.625-5.357-1.625-2.643 0-4.875 1.304t-3.536 3.554-1.304 4.893zM8.411 24.125q2.446 1.589 5.304 1.589 1.982 0 3.777-0.777t3.098-2.080 2.071-3.116 0.768-3.795q0-2.875-1.554-5.268z"></path>
+  </symbol>
+
+  <symbol id="ico-angle-right" viewBox="0 0 11 32">
+    <path d="M0.232 24.571q0-0.232 0.179-0.411l7.018-7.018-7.018-7.018q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411t-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411z"></path>
+  </symbol>
+
+  <symbol id="ico-angle-left" viewBox="0 0 11 32">
+    <path d="M0.804 17.143q0-0.232 0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411t-0.179 0.411l-7.018 7.018 7.018 7.018q0.179 0.179 0.179 0.411t-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411z"></path>
+  </symbol>
+
+
+</svg>
+
+  <div id="upworthy-web-app-wrapper">
+
+    <header id="primary-nav" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="nav-container">
+              <!-- branding -->
+              <div id="branding">
+                <a href="/" class="analytic_event" data-ga-category="General" data-ga-action="Header Logo" data-ga-label="pageTitle" id="logo"></a>
+                <div class="tagline">
+                  <span class="default">Things That Matter. Pass &lsquo;Em On.</span>
+                  <span class="climate">Upworthy supports Climate Summit 2014</span>
+                </div>
+              </div>
+              <!-- /branding -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <header id="page-header">
+    <!-- search bar -->
+    <div class="container">
+      <div id="search-bar">
+        <div class="option browse">
+          <div class="btn-group">
+            <!-- category/topic dropdown -->
+            <button id="browse-button" type="button" class="btn btn-default dropdown-toggle analytic_event" data-toggle="dropdown">
+              <svg class="icon"><use xlink:href="#ico-navicon" /></svg>
+            </button>
+            <ul id="browse-menu" class="dropdown-menu pull-left" role="menu" aria-labelledby="dropdownMenu">
+  <div class="stem"></div>
+  <li class="browse">
+    <div class="categories">
+      <h4>Topics</h4>
+  <ul>
+        <li><a href="community">Community</a></li>
+        <li><a href="diversity">Diversity</a></li>
+        <li><a href="economy">Economy</a></li>
+        <li><a href="entertainment-culture">Entertainment &amp; Culture</a></li>
+        <li><a href="environment">Environment</a></li>
+        <li><a href="gender">Gender</a></li>
+        <li><a href="guns-crime">Guns &amp; Crime</a></li>
+        <li><a href="health">Health</a></li>
+        <li><a href="immigration">Immigration</a></li>
+        <li><a href="inspirational">Inspirational</a></li>
+        <li><a href="international">International</a></li>
+        <li><a href="lgbtqq">LGBTQQ</a></li>
+        <li><a href="military">Military</a></li>
+        <li><a href="parenting">Parenting</a></li>
+        <li><a href="politics">Politics</a></li>
+        <li><a href="science-technology">Science &amp; Technology</a></li>
+        <li><a href="spanish">Spanish</a></li>
+  </ul>
+
+  </div>
+  <div class="secondary">
+    <div class="social-media">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="http://www.facebook.com/upworthy" rel="external" target="_blank">Facebook</a></li>
+        <li><a href="http://www.twitter.com/upworthy" rel="external" target="_blank">Twitter</a></li>
+        <li><a href="http://www.pinterest.com/upworthy/" rel="external" target="_blank">Pinterest</a></li>
+        <li><a href="https://www.youtube.com/user/upworthy" rel="external" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/+Upworthy1/posts" rel="external" target="_blank">Google+</a></li>
+        <li><a href="http://upworthy.tumblr.com/" rel="external" target="_blank">Tumblr</a></li>
+      </ul>
+    </div>
+    <div class="site-links">
+      <h4>Site Links</h4>
+      <ul>
+  <li><a href="http://blog.upworthy.com" class="analytic_event" data-ga-action="Blog" data-ga-category="General" data-ga-label="pageTitle">Blog</a></li>
+  <li><a href="/contact" class="analytic_event" data-ga-action="Contact" data-ga-category="General" data-ga-label="pageTitle">Contact</a></li>
+  <li><a href="/about" class="analytic_event" data-ga-action="About" data-ga-category="General" data-ga-label="pageTitle">About &amp; FAQ</a></li>
+  <li><a href="/corrections" class="analytic_event" data-ga-action="Corrections" data-ga-category="General" data-ga-label="pageTitle">Corrections</a></li>
+  <li><a href="/advertise" class="analytic_event" data-ga-action="Advertise" data-ga-category="General" data-ga-label="pageTitle">Advertise</a></li>
+  <li><a href="https://upworthy.com/submit" class="analytic_event" data-ga-action="Submit Link" data-ga-category="General" data-ga-label="pageTitle">Submit Link</a></li>
+  <li><a href="/jobs" class="analytic_event" data-ga-action="Jobs" data-ga-category="General" data-ga-label="pageTitle">Jobs</a></li>
+  <li><a href="/privacy" class="analytic_event" data-ga-action="Privacy" data-ga-category="General" data-ga-label="pageTitle">Privacy</a></li>
+  <li><a href="/tos" class="analytic_event" data-ga-action="TOS" data-ga-category="General" data-ga-label="pageTitle">Terms</a></li>
+  <li><a href="/best-of" class="analytic_event" data-ga-action="Best Of" data-ga-category="General" data-ga-label="pageTitle">Best Of</a></li>
+  <li><a href="/random" class="analytic_event" data-ga-action="Random Nugget" data-ga-category="General" data-ga-label="pageTitle">Random</a></li>
+  <li><a href="http://feeds.feedburner.com/upworthy" class="analytic_event" data-ga-action="Feed" data-ga-category="General" data-ga-label="pageTitle">RSS Feed</a></li>
+</ul>
+
+    </div>
+  </div>
+  </li>
+</ul>
+
+          </div>
+        </div>
+        <div class="option search">
+          <form method="get" id="search" action="/search">
+  <input type="text" name="q" class="search-query analytic_event" placeholder="Search Stories" data-ga-category="Homepage" data-ga-action="Nugget Search">
+  <button type="submit" class="btn btn-search"><svg class="icon"><use xlink:href="#ico-search" /></svg></button>
+</form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+
+    <div class="wrapper">
+      <div class="container">
+        
+
+
+
+
+<!-- featured nuggets -->
+  <!-- featured nugget slideshow -->
+  <div id="featured-nuggets">
+        
+<div id='nugget-53f3aa800eea91d4ce00004d' class='slide clickable analytic_event ' data-href="/these-3-words-can-be-the-most-gut-wrenching-thing-doctors-ever-hear-heres-why?c=fea" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/53f5331234436238ff00003c/web_600_177122975-af8aa1263bd5407a5e3ac51ad35aeebb.jpg')">
+  <div class="promoted-flag"></div>
+  <div class="featured-flag hidden-sm hidden-md hidden-lg">Featured</div>
+  <div class='nugget-info'>
+    <h2>
+      <a href="/these-3-words-can-be-the-most-gut-wrenching-thing-doctors-ever-hear-heres-why?c=fea">These 3 Words Can Be The Most Gut-Wrenching Thing Doctors Ever Hear. Here&#x27;s Why.</a>
+    </h2>
+  </div>
+</div><!-- /nugget -->
+
+<div id='nugget-540e3143af426f6244000016' class='slide clickable analytic_event ' data-href="/heres-one-of-the-best-reasons-not-to-hate-rats-ive-ever-seen?c=fea" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540f947daff5cda1c4000005/web_600_ratsdrinking-2511c4e19506a95013dcda29b88e1c4b.jpg')">
+  <div class="promoted-flag"></div>
+  <div class="featured-flag hidden-sm hidden-md hidden-lg">Featured</div>
+  <div class='nugget-info'>
+    <h2>
+      <a href="/heres-one-of-the-best-reasons-not-to-hate-rats-ive-ever-seen?c=fea">Here&#x27;s One Of The Best Reasons Not To Hate Rats I&#x27;ve Ever Seen</a>
+    </h2>
+  </div>
+</div><!-- /nugget -->
+
+<div id='nugget-540e19a64c8041124a00000b' class='slide clickable analytic_event ' data-href="/what-does-it-mean-to-be-sexually-healthy-these-folks-share-some-words-of-wisdom?c=fea" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540e6914440dd646df00002d/web_600_fsd-mrill-7-d4dd8c0ffec27a653b059bbc5e2ed757.jpg')">
+  <div class="promoted-flag"></div>
+  <div class="featured-flag hidden-sm hidden-md hidden-lg">Featured</div>
+  <div class='nugget-info'>
+    <h2>
+      <a href="/what-does-it-mean-to-be-sexually-healthy-these-folks-share-some-words-of-wisdom?c=fea">What Does It Mean To Be Sexually Healthy? These Folks Share Some Words of Wisdom.</a>
+    </h2>
+  </div>
+</div><!-- /nugget -->
+
+  </div>
+
+
+<div class="homepage">
+  <!-- nugget grid -->
+  <div class="nugget-grid" id="page-content">
+      <div class="row">
+        <div class="col-md-12">
+          
+<div id='nugget-540fa8fcaff5cd56bb000015' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/she-grew-up-with-privilege-and-she-knows-how-to-use-it' data-href="/she-grew-up-with-privilege-and-she-knows-how-to-use-it?c=hpstream">
+    <a href="/she-grew-up-with-privilege-and-she-knows-how-to-use-it?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/54109526c81cc78557000004/web_600_violence-mrill-9-00108f16edf76cd0fffd729042311b15.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_6" src="//upw-prod-images.global.ssl.fastly.net/account/535869e269f9e04ff000005a/web_66_6-dbffe76c9acab079ddcbfae3a6128fa7.png" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Immigration
+          </div>
+        <h3>
+          <a href="/she-grew-up-with-privilege-and-she-knows-how-to-use-it?c=hpstream"><a href="/she-grew-up-with-privilege-and-she-knows-how-to-use-it" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/she-grew-up-with-privilege-and-she-knows-how-to-use-it" data-href="/she-grew-up-with-privilege-and-she-knows-how-to-use-it" rel="analytic_event">She Grew Up With Privilege — And She Knows How To Use It</a></a>
+        </h3>
+        <div class="author">
+          By Mrill Ingram
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-534f1ee905df53ffd400003f' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job' data-href="/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job?c=hpstream">
+    <a href="/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540f33069eed31ee0a000009/web_600_owl-MOD-c5643dd61d8556fe1d77c3e8174a9bf5.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_upworthy-profile-pic" src="//upw-prod-images.global.ssl.fastly.net/account/5273b93ad6afba2a45003b24/web_66_upworthy-profile-pic-60dc6dc8444cf503670ad7c9c8e47036.png" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Community
+          </div>
+        <h3>
+          <a href="/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job?c=hpstream"><a href="/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job" data-href="/7-delightful-posters-thatll-probably-make-you-realize-somethings-missing-at-your-day-job" rel="analytic_event">7 Delightful Posters That&#x27;ll Probably Make You Realize Something&#x27;s Missing At Your Day Job</a></a>
+        </h3>
+        <div class="author">
+          By Maz Ali
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-53fcce27cca48f4da700004b' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows' data-href="/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows?c=hpstream">
+    <a href="/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/53ffa13f6fd2bfa943000036/web_600_Porn-B2-8e53386e07777b270441633bf84de7dc.png')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_upworthy-4835-crsq" src="//upw-prod-images.global.ssl.fastly.net/account/5192a63cbf9323030b005a00/web_66_Upworthy-4835-CRSQ-9355e251fd5bec623800c4a84cae1161.gif" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Community
+          </div>
+        <h3>
+          <a href="/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows?c=hpstream"><a href="/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows" data-href="/a-dad-took-these-photos-of-his-daughter-theyre-raising-some-eyebrows" rel="analytic_event">A Dad Took These Photos Of His Daughter. They&#x27;re Raising Some Eyebrows.</a></a>
+        </h3>
+        <div class="author">
+          By Joseph Lamour
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          
+<div id='nugget-540f6007c1e56f5f72000002' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces' data-href="/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces?c=hpstream">
+    <a href="/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540f6015f299f3f580000005/web_600_13-0717d62ef3fc2f6881d97c8b5980c669.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_adam-albright-hanna" src="//upw-prod-images.global.ssl.fastly.net/account/5052143e6e33dd000200017b/web_66_adam-albright-hanna.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Community
+          </div>
+        <h3>
+          <a href="/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces?c=hpstream"><a href="/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces" data-href="/bullies-who-hide-behind-the-screen-are-confronted-by-kids-who-arent-afraid-to-show-their-faces" rel="analytic_event">Bullies Who Hide Behind The Screen Are Confronted By Kids Who Aren&#x27;t Afraid To Show Their Faces</a></a>
+        </h3>
+        <div class="author">
+          By Adam Albright-Hanna
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-5404b1ef4f805b9ef3000004' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law' data-href="/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law?c=hpstream">
+    <a href="/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/5404b10a37651c2e64000004/web_600_01-efcdc2fd9856c8eed04027268ef552f3.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_6223-1" src="//upw-prod-images.global.ssl.fastly.net/account/53586a7a69f9e0c67b00005e/web_66_6223-1-cf22590ba984dd9521992c0605f21566.JPG" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Politics
+          </div>
+        <h3>
+          <a href="/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law?c=hpstream"><a href="/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law" data-href="/schoolhouse-rock-for-the-21st-century-how-a-bill-becomes-a-law" rel="analytic_event">&#x27;Schoolhouse Rock&#x27; For The 21st Century: How A Bill Becomes A Law</a></a>
+        </h3>
+        <div class="author">
+          By Alisha Huber
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-540dc4ed2afe10ecf800002c' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless' data-href="/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless?c=hpstream">
+    <a href="/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540dc3cf66fb9ed4c3000033/web_600_Reveal-2-Arrows-ba0f7b2656ca27a2846368ce670ea2dc.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_pic-autocolor" src="//upw-prod-images.global.ssl.fastly.net/account/53586a8a1a09bfac21000059/web_66_Pic-AutoColor-a728119efad81a93d5d0ac25fb028454.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            LGBTQQ
+          </div>
+        <h3>
+          <a href="/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless?c=hpstream"><a href="/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless" data-href="/twin-sons-come-out-to-their-parents-at-the-same-time-and-the-reaction-is-priceless" rel="analytic_event">Twin Sons Come Out To Their Parents At The Same Time, And The Reaction Is Priceless</a></a>
+        </h3>
+        <div class="author">
+          By Robby Berman
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          
+<div id='nugget-540ef83caf426f24d8000028' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it' data-href="/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it?c=hpstream">
+    <a href="/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540f20259eed31529c00000d/web_600_JimJeffriesGunControl6-d2fe19f30bd5fa2b3c421410ce2c4240.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_pic" src="//upw-prod-images.global.ssl.fastly.net/account/53586a5569f9e04ff000005d/web_66_Pic-1a9fc316ec31ce4d02f071a20ace880d.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Guns &amp; Crime
+          </div>
+        <h3>
+          <a href="/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it?c=hpstream"><a href="/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it" data-href="/he-was-naked-when-men-broke-into-his-house-and-threatened-his-girlfriend-so-he-couldnt-do-it" rel="analytic_event">He Was Naked When Men Broke Into His House And Threatened His Girlfriend, So He Couldn&#x27;t Do It</a></a>
+        </h3>
+        <div class="author">
+          By Eric March
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-540f26f38f64c42502000003' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later' data-href="/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later?c=hpstream">
+    <a href="/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540f2cf59eed31433d000011/web_600_teacher7-a1ecdd184f47cad567954a6906f124ee.png')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_image2" src="//upw-prod-images.global.ssl.fastly.net/account/52524af477455e640d0016d6/web_66_image2-f20b9f8493d07651a997bbe0141ca1ce.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Community
+          </div>
+        <h3>
+          <a href="/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later?c=hpstream"><a href="/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later" data-href="/a-kid-threw-a-book-at-his-teacher-on-the-1st-day-of-school-the-best-part-of-it-came-5-years-later" rel="analytic_event">A Kid Threw A Book At His Teacher On The 1st Day Of School. The Best Part Of It Came 5 Years Later.</a></a>
+        </h3>
+        <div class="author">
+          By Morgan Shoaff
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-5400ce725c36037b0c00005d' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say' data-href="/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say?c=hpstream">
+    <a href="/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540f808371bf5cd97e00002e/web_600_WALK-ad8b5095228b3142c4a0eb7a1d70341b.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_upworthy-profile-pic" src="//upw-prod-images.global.ssl.fastly.net/account/5273b93ad6afba2a45003b24/web_66_upworthy-profile-pic-60dc6dc8444cf503670ad7c9c8e47036.png" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Economy
+          </div>
+        <h3>
+          <a href="/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say?c=hpstream"><a href="/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say" data-href="/anyone-who-hates-working-for-the-man-will-love-what-these-charts-have-to-say" rel="analytic_event">Anyone Who Hates Working For &#x27;The Man&#x27; Will Love What These Charts Have To Say</a></a>
+        </h3>
+        <div class="author">
+          By Maz Ali
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          
+<div id='nugget-540cf21f2afe10422500000d' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/21-absurd-things-lesbians-say-to-straight-people' data-href="/21-absurd-things-lesbians-say-to-straight-people?c=hpstream">
+    <a href="/21-absurd-things-lesbians-say-to-straight-people?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540cef28e7bdacd1e6000007/web_600_lez2-af29b5f6874f37fef8644290baa58324.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_unnamed" src="//upw-prod-images.global.ssl.fastly.net/account/53306877cfaa914a77000076/web_66_unnamed-96694fa1217b19fdfee0c284e3a16c13.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            LGBTQQ
+          </div>
+        <h3>
+          <a href="/21-absurd-things-lesbians-say-to-straight-people?c=hpstream"><a href="/21-absurd-things-lesbians-say-to-straight-people" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/21-absurd-things-lesbians-say-to-straight-people" data-href="/21-absurd-things-lesbians-say-to-straight-people" rel="analytic_event">21 Absurd Things Lesbians Say To Straight People</a></a>
+        </h3>
+        <div class="author">
+          By Matt Orr
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-540ccfa7e7bdacc60300000b' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman' data-href="/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman?c=hpstream">
+    <a href="/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/540cce752afe105324000009/web_600_lady1-347ca8d99e416b8b4eaba98ca6f2fe56.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_unnamed" src="//upw-prod-images.global.ssl.fastly.net/account/53306877cfaa914a77000076/web_66_unnamed-96694fa1217b19fdfee0c284e3a16c13.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            Gender
+          </div>
+        <h3>
+          <a href="/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman?c=hpstream"><a href="/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman" data-href="/theres-a-very-distinct-line-between-being-ladylike-and-being-a-woman" rel="analytic_event">There&#x27;s A Very Distinct Line Between Being &#x27;Ladylike&#x27; And Being A Woman</a></a>
+        </h3>
+        <div class="author">
+          By Matt Orr
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+<div id='nugget-5406792eb38b99f296000057' class='nugget clickable analytic_event ' data-ga-category="General" data-ga-action="Nugget Grid" data-ga-label='/a-beautiful-response-to-a-coming-out-gone-horribly-wrong' data-href="/a-beautiful-response-to-a-coming-out-gone-horribly-wrong?c=hpstream">
+    <a href="/a-beautiful-response-to-a-coming-out-gone-horribly-wrong?c=hpstream" class="nugget-image" style="background-image: url('//upw-prod-images.global.ssl.fastly.net/nugget/5407fa05a641e07837000048/web_600_poem-86f0532b98d579d6a02a0539a7dd8a22.jpg')"></a>
+    <div class='nugget-info'>
+      <div class="avatar">
+        <div class="promoted-flag"></div>
+        <div class="top-spacer"></div>
+          <img alt="Web_66_unnamed" src="//upw-prod-images.global.ssl.fastly.net/account/53306877cfaa914a77000076/web_66_unnamed-96694fa1217b19fdfee0c284e3a16c13.jpg" />
+      </div>
+      <div class="title">
+          <div class="category">
+            LGBTQQ
+          </div>
+        <h3>
+          <a href="/a-beautiful-response-to-a-coming-out-gone-horribly-wrong?c=hpstream"><a href="/a-beautiful-response-to-a-coming-out-gone-horribly-wrong" data-ga-action="Nugget Grid" data-ga-category="General" data-ga-label="/a-beautiful-response-to-a-coming-out-gone-horribly-wrong" data-href="/a-beautiful-response-to-a-coming-out-gone-horribly-wrong" rel="analytic_event">A Beautiful Response To A Coming-Out Gone Horribly Wrong</a></a>
+        </h3>
+        <div class="author">
+          By Matt Orr
+        </div>
+      </div>
+    </div>
+</div><!-- /nugget -->
+
+        </div>
+      </div>
+  </div>
+
+</div>
+
+<nav class="pagination pagination-centered">
+  <ul>
+    
+    <li><a rel="next" href="/page/2">Next &raquo;</a></li>
+  </ul>
+</nav>
+
+      </div><!-- /container -->
+    </div><!-- /wrapper -->
+
+    
+
+    <footer id="page-footer">
+	<div class="container">
+	  <div class="row">
+    	<div class="col-sm-3 height-fix copyright-info">
+    		<a href="/" id="logo-circle">
+    			<img src="/assets/upworthy-avatar.svg" alt="UP logo" />
+    		</a>
+    		<p>
+    			&copy; Cloud Tiger Media.<br />
+    			All rights reserved.
+    		</p>
+    	</div>
+      	<div class="col-sm-6 height-fix about-up">
+      		<h3 class="strong">Upworthy is social media with a mission.</h3>
+      		<p>
+      		Sensational and substantial. Entertaining and enlightening. Shocking and significant. That's what you can expect here: no empty calories. Just a steady stream of the most irresistibly shareable stuff you can click on without feeling bad about yourself afterwards. <a href="/about">Read more.</a>
+      		</p>
+      		<div class="social">
+      			<h3>Subscribe</h3>
+      			<ul class="inline">
+      				<li> <a href="https://www.facebook.com/Upworthy" class="facebook" title="Like Upworthy on Facebook" rel="external" target="_blank"><svg class="icon"><use xlink:href="#ico-facebook" /></svg></a> </li>
+      				<li> <a href="https://twitter.com/intent/user?screen_name=upworthy" class="twitter" title="Follow Upworthy on Twitter"><svg class="icon"><use xlink:href="#ico-twitter" /></svg></a> </li>
+      			</ul>
+      		</div>
+      	</div>
+      	<nav class="col-sm-3 height-fix nav-wrap">
+      		<ul>
+  <li><a href="http://blog.upworthy.com" class="analytic_event" data-ga-action="Blog" data-ga-category="General" data-ga-label="pageTitle">Blog</a></li>
+  <li><a href="/contact" class="analytic_event" data-ga-action="Contact" data-ga-category="General" data-ga-label="pageTitle">Contact</a></li>
+  <li><a href="/about" class="analytic_event" data-ga-action="About" data-ga-category="General" data-ga-label="pageTitle">About &amp; FAQ</a></li>
+  <li><a href="/corrections" class="analytic_event" data-ga-action="Corrections" data-ga-category="General" data-ga-label="pageTitle">Corrections</a></li>
+  <li><a href="/advertise" class="analytic_event" data-ga-action="Advertise" data-ga-category="General" data-ga-label="pageTitle">Advertise</a></li>
+  <li><a href="https://upworthy.com/submit" class="analytic_event" data-ga-action="Submit Link" data-ga-category="General" data-ga-label="pageTitle">Submit Link</a></li>
+  <li><a href="/jobs" class="analytic_event" data-ga-action="Jobs" data-ga-category="General" data-ga-label="pageTitle">Jobs</a></li>
+  <li><a href="/privacy" class="analytic_event" data-ga-action="Privacy" data-ga-category="General" data-ga-label="pageTitle">Privacy</a></li>
+  <li><a href="/tos" class="analytic_event" data-ga-action="TOS" data-ga-category="General" data-ga-label="pageTitle">Terms</a></li>
+  <li><a href="/best-of" class="analytic_event" data-ga-action="Best Of" data-ga-category="General" data-ga-label="pageTitle">Best Of</a></li>
+  <li><a href="/random" class="analytic_event" data-ga-action="Random Nugget" data-ga-category="General" data-ga-label="pageTitle">Random</a></li>
+  <li><a href="http://feeds.feedburner.com/upworthy" class="analytic_event" data-ga-action="Feed" data-ga-category="General" data-ga-label="pageTitle">RSS Feed</a></li>
+</ul>
+
+      	</nav>
+    </nav>
+	</div>
+</footer>
+
+    <!-- NUGGETS: lightbox zooming for large images -->
+    <div id="lightbox">
+      <div class="controls">
+        <a class="close">Close <svg class="icon"><use xlink:href="#ico-times" /></svg></a>
+        <span class="hidden-md hidden-lg instructions">Pinch or double-tap to zoom</span>
+      </div>
+      <div id="lightbox-content">
+        <div id="scroller">
+          <img src="#" id="placeholder" alt="Image Detail">
+        </div>
+        <span class="icon zoomIndicator"></span>
+      </div>
+    </div>
+  </div> <!-- /#upworthy-web-app-wrapper -->
+
+  <!-- IE8 Users: Display Chrome download text -->
+  <div id="olderbrowsers">
+    <div class="container">
+      <p>Hi there, internet friend. We need to talk. You're using a painfully old web browser, and frankly, it's getting a little weird. It's not safe, and we want the best for you. We think it's time to upgrade.</p>
+      <p><a href="https://support.google.com/chrome/answer/95346?hl=en" target="_blank">Download Google Chrome</a>, and try it for a week. Don't think about it, just do it. You'll thank us later.</p>
+    </div>
+  </div>
+
+  <script src="/assets/pre_application/pre_application-180466d95180df87825dae4ee2c1bb3f.js" type="text/javascript"></script>
+
+    <!-- Optimizely -->
+    <script src="//cdn.optimizely.com/js/38179760.js"></script>
+
+  <!-- JavaScript Includes -->
+  <script src="/assets/application-0cf0349046d61cdf0f5727c72a121836.js" type="text/javascript"></script>
+  
+
+  <!-- external analytics & services -->
+
+    <!-- Begin Quantcast -->
+    <script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+    var elem = document.createElement('script');
+    elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+    elem.async = true;
+    elem.type = "text/javascript";
+    var scpt = document.getElementsByTagName('script')[0];
+    scpt.parentNode.insertBefore(elem, scpt);
+    })();
+
+    _qevents.push({
+    qacct:"p-46reRfD7EnxVE"
+    });
+    </script>
+    <noscript>
+    <div style="display:none;">
+    <img src="//pixel.quantserve.com/pixel/p-46reRfD7EnxVE.gif" border="0" height="1" width="1" alt="Quantcast"/>
+    </div>
+    </noscript>
+    <!-- End Quantcast -->
+
+    <!-- START Parse.ly Include: Standard -->
+    <div id="parsely-root" style="display: none">
+      <div id="parsely-cfg" data-parsely-site="upworthy.com"></div>
+    </div>
+    <script>
+      (function(s, p, d) {
+        var h=d.location.protocol, i=p+"-"+s,
+            e=d.getElementById(i), r=d.getElementById(p+"-root"),
+            u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+            :"static."+p+".com";
+        if (e) return;
+        e = d.createElement(s); e.id = i; e.async = true;
+        e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+      })("script", "parsely", document);
+    </script>
+    <!-- END Parse.ly Include -->
+
+
+</body>
+</html>

@@ -54,7 +54,7 @@
   
     	<link rel="shortcut icon" href="/favicon.ico" />
   <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=fonts%2Fopensans-regular%2Fstylesheet.css%2Clayouts%2F13.css%2Cweddings%2Fpartners.css%2Cverticals%2Fweddings.css%2Cpage_type%2Ffrontpages.css%2Chp_modules%2Fmodule.sponsor-widgets.css%2Cmaster.css%2Cfonts%2Fopensans-condbold%2Fstylesheet.css%2Ctopnav_new%2Fall_pages.css%2Ctopnav_new%2Ftop_nav.css%2Ctopnav_new%2Fmodule.edition_nav.css%2Cbasic.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=verticals%2Fcolor_scheme.css%2Cadd%2Ffront.css%2Cbuttons.css%2Cmost_popular.css%2Ccommercial.css%2Chuff_promo.css%2Csnp_friends.css%2Csnn-header.css%2Chp_modules%2Fmodule.splash_slideshow.css%2Chp_modules%2Fmodule.apps_feeds.css%2Chp_modules%2Fmodule.most_popular_celebrity.css%2Chufflists.css%2Csignup_modal.css%2Cdirect_message.css%2Cbadges_v2.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=hp_modules%2Ffacebook.css%2Cuser_levels.css%2Ctwitter_splash.css%2Cbing.css%2Cgrouping.css%2Cmodal_window.css%2Chp_modules%2Fmodule.bubble.css%2Cemail_share.css" type="text/css" media="screen" /><link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=social-navbar.css%2Chp_modules%2Fmodule.bubble-tags.css%2Chp_modules%2Fmodule.fb_like_button.css%2Csearch_autocomplete.css%2Cap_wires_scroll.css%2Cmod-follow.css%2Clogos.css%2Ccomments.css" type="text/css" media="screen" />              	        <!-- RUM header -->
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACQUDU1db"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
             <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=yui_sub.js%2Cjquery.js" ></script>
         
     <script type="text/javascript" src="http://s.huffpost.com/assets/js.php?v=1410282423&f=jquery%2Fjquery.I18N.js%2Clocale%2Fdefault.js%2Csprintf-0.7.js"></script>
@@ -126,6 +126,7 @@ adSetMOAT("1");
     }(document, "script", "twitter-wjs"));
 </script>
 
+	<meta name="apple-itunes-app" content="app-id=306621789" />
 
     
 	<script type="text/javascript">
@@ -234,9 +235,9 @@ d.getElementsByTagName('head')[0].appendChild(s);
 
 <div id="big_news_update">
 <ul class="big_news_ontop">
-<li><a href="/news/wedding-photos/" class="big_news_item bn_v_weddings" onclick="HPTrack.trackPageview('/t/a/topnav_bignews/v2');">Wedding Photos & Video</a></li></ul>
+<li><a href="/news/wedding-invitations/" class="big_news_item bn_v_weddings" onclick="HPTrack.trackPageview('/t/a/topnav_bignews/v2');">Invitations and Announcements</a></li></ul>
 </div>
-        
+       
 <div class="more_in_bignews">
 <script type='text/javascript'>ads_top_bar_sponsor_links = ["<a href='\/news\/smarter-ideas' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Smarter Ideas<\/a>","<a href='http:\/\/www.huffingtonpost.com\/news\/distilled-perspective\/' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Distilled Perspective<\/a>","<a href='\/news\/life-lessons\/\/' class='margin_right_10' onclick='HPTrack.trackPageview(\"\/t\/a\/topnav_bignews\/v2\");'>Life Lessons<\/a>"];ads_top_bar_sponsor_links.sort( function() { return 0.5 - Math.random() } );for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++){document.write(ads_top_bar_sponsor_links[i]);}</script>
   <a href="http://itunes.apple.com/us/app/the-huffington-post/id306621789?mt=8" class="margin_right_10" data-beacon='{"p":{"lnid":"bgNewsMore"}}' onclick="HPTrack.trackPageview('/t/a/topnav_bignews/v2');">iOS app</a>
@@ -507,19 +508,19 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/women/'>Women</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124005 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184107 -->
       <ul>
         <li id='id_trending_5775200' data-beacon='{"p":{"plid":5775200}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?ir=Women'>What Happened When A Biracial Woman Was Photoshopped In 18 Different Countries<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">775</span></span></a>
-        </li>
-        <li id='id_trending_5781606' data-beacon='{"p":{"plid":5781606}}'>
-          <a href='http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?ir=Women'>The Real Reasons Women Like Ray Rice's Wife Janay Stay<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">528</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/priscilla-yuki-wilson-different-countries-photoshop_n_5775200.html?ir=Women'>What Happened When A Biracial Woman Was Photoshopped In 18 Different Countries<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">794</span></span></a>
         </li>
         <li id='id_trending_5790320' data-beacon='{"p":{"plid":5790320}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/whyistayed-twitter-domestic-violence_n_5790320.html?ir=Women'>Domestic Abuse Survivors Explain Why They Can't 'Just Leave'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">190</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/whyistayed-twitter-domestic-violence_n_5790320.html?ir=Women'>Domestic Abuse Survivors Explain Why They Can't 'Just Leave'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">197</span></span></a>
+        </li>
+        <li id='id_trending_5781606' data-beacon='{"p":{"plid":5781606}}'>
+          <a href='http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?ir=Women'>The Real Reasons Women Like Ray Rice's Wife Janay Stay<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">648</span></span></a>
         </li>
         <li id='id_trending_5784514' data-beacon='{"p":{"plid":5784514}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/bare-reality-book-breasts-body-image_n_5784514.html?ir=Women'>100 Women Share How They Feel About Their Breasts<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">12</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/bare-reality-book-breasts-body-image_n_5784514.html?ir=Women'>100 Women Share How They Feel About Their Breasts<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">18</span></span></a>
         </li>
         <li id='id_trending_5785140' data-beacon='{"p":{"plid":5785140}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/disney-princes-boyfriends-buzzfeed-video_n_5785140.html?ir=Women'>Here's Why Disney Princes Make Bad Boyfriends In Real Life<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">15</span></span></a>
@@ -560,13 +561,13 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/healthy-living/'>Healthy Living</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124004 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_183523 -->
       <ul>
-        <li id='id_trending_5737600' data-beacon='{"p":{"plid":5737600}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/how-to-be-alone-loneliness-coping-strategies-tips_n_5737600.html?ir=Healthy+Living'>Why You Can't Stand To Be Alone -- And How To Learn To Love It<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">32</span></span></a>
-        </li>
         <li id='id_trending_5785586' data-beacon='{"p":{"plid":5785586}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/diet-soda-psychology_n_5785586.html?ir=Healthy+Living'>The Psychological Impact Of Diet Soda<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">15</span></span></a>
+        </li>
+        <li id='id_trending_5737600' data-beacon='{"p":{"plid":5737600}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/how-to-be-alone-loneliness-coping-strategies-tips_n_5737600.html?ir=Healthy+Living'>Why You Can't Stand To Be Alone -- And How To Learn To Love It<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">33</span></span></a>
         </li>
         <li id='id_trending_5774930' data-beacon='{"p":{"plid":5774930}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/anatomy-of-a-running-shoe-lingo_n_5774930.html?ir=Healthy+Living'>Everything You Ever Wanted To Know About Running Shoes In One Simple Chart</a>
@@ -574,8 +575,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5786628' data-beacon='{"p":{"plid":5786628}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/insomnia-treatment-didnt-know_n_5786628.html?ir=Healthy+Living'>6 Things You Didn't Know About Insomnia And How To Treat It</a>
         </li>
-        <li id='id_trending_5774984' data-beacon='{"p":{"plid":5774984}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/polyester-sweat-smell-odor-stink-cotton_n_5774984.html?ir=Healthy+Living'>Why You Should Wash Those Dirty Gym Clothes ASAP<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">11</span></span></a>
+        <li id='id_trending_5785388' data-beacon='{"p":{"plid":5785388}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/foam-rolling-rules_n_5785388.html?ir=Healthy+Living'>The New Rules Of Foam Rolling</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -613,13 +614,13 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/style/'>Style</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124005 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184040 -->
       <ul>
         <li id='id_trending_5786464' data-beacon='{"p":{"plid":5786464}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/martin-keehn-spring-2015-hair_n_5786464.html?ir=Style'>Would You Date A Guy With Hair Like This?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">141</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/martin-keehn-spring-2015-hair_n_5786464.html?ir=Style'>Would You Date A Guy With Hair Like This?<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">147</span></span></a>
         </li>
         <li id='id_trending_5791000' data-beacon='{"p":{"plid":5791000}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">10</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/iggy-azalea-white-dress-calvin-klein-party-fashion-week_n_5791000.html?ir=Style'>Iggy Azalea Channels 'Basic Instinct' In Skintight White Dress<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">13</span></span></a>
         </li>
         <li id='id_trending_5791800' data-beacon='{"p":{"plid":5791800}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/bill-cunningham-fashion-week_n_5791800.html?ir=Style'>The Most Interesting Person At Fashion Week Isn't Who You Think</a>
@@ -628,7 +629,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
           <a href='http://www.huffingtonpost.com/2014/09/08/cat-eye-liner-tricks-kate-spade-spring-2015_n_5783340.html?ir=Style'>Tired Of The Cat Eye? Try This Liner Trick Instead</a>
         </li>
         <li id='id_trending_4525275' data-beacon='{"p":{"plid":4525275}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/kate-middleton-pregnant-again-baby-two_n_4525275.html?ir=Style'>Kate Middleton Is Pregnant Again!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">123</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/kate-middleton-pregnant-again-baby-two_n_4525275.html?ir=Style'>Kate Middleton Is Pregnant Again!<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">124</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -666,7 +667,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/taste/'>Taste</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124005 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184042 -->
       <ul>
         <li id='id_trending_5768964' data-beacon='{"p":{"plid":5768964}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/pumpkin-spice-oreos-limited_n_5768964.html?ir=Taste'>New Pumpkin Spice Oreos Smell Like A Candle, But We Like Them Anyway<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">12</span></span></a>
@@ -680,8 +681,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5783990' data-beacon='{"p":{"plid":5783990}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/schnitzel-recipe-wiener-chicken_n_5783990.html?ir=Taste'>Every Schnitzel Recipe You Want And Need</a>
         </li>
-        <li id='id_trending_5784998' data-beacon='{"p":{"plid":5784998}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/french-fry-pizza_n_5784998.html?ir=Taste'>French Fry Pizza Exists For When You Can't Decide What To Drunk Eat</a>
+        <li id='id_trending_5784668' data-beacon='{"p":{"plid":5784668}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/coffee-quotes-great_n_5784668.html?ir=Taste'>10 Quotes That Capture How We Feel About Coffee</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -719,22 +720,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/entertainment/'>Entertainment</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124004 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184003 -->
       <ul>
-        <li id='id_trending_5790442' data-beacon='{"p":{"plid":5790442}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">93</span></span></a>
+        <li id='id_trending_5703461' data-beacon='{"p":{"plid":5703461}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/08/the-simpsons-inspired_n_5703461.html?ir=Entertainment'>10 Popular Things You Didn't Know 'The Simpsons' Totally Inspired<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">105</span></span></a>
         </li>
         <li id='id_trending_5796672' data-beacon='{"p":{"plid":5796672}}'>
           <a href='http://www.huffingtonpost.com/2014/09/10/miranda-lambert-bra-top-fashion-rocks_n_5796672.html?ir=Entertainment'>You're Not Used To Seeing Miranda Lambert Like This</a>
         </li>
-        <li id='id_trending_5790800' data-beacon='{"p":{"plid":5790800}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/jennifer-lopez-leather-lbd_n_5790800.html?ir=Entertainment'>Jennifer Lopez Gives New Meaning To 'LBD'<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">34</span></span></a>
+        <li id='id_trending_5786564' data-beacon='{"p":{"plid":5786564}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/favorite-movie-mistakes_n_5786564.html?ir=Entertainment'>11 Ridiculous Mistakes That Will Ruin Your Favorite Movies<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">24</span></span></a>
+        </li>
+        <li id='id_trending_5790442' data-beacon='{"p":{"plid":5790442}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/ariana-grande-questions_n_5790442.html?ir=Entertainment'>Apparently You Can't Ask Ariana Grande Anything That Might Be Interesting<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">97</span></span></a>
         </li>
         <li id='id_trending_5789982' data-beacon='{"p":{"plid":5789982}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/7-facts-seinfeld-video_n_5789982.html?ir=Entertainment'>7 Facts You Didn't Know About 'Seinfeld,' Yada Yada Yada<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">32</span></span></a>
-        </li>
-        <li id='id_trending_5786564' data-beacon='{"p":{"plid":5786564}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/favorite-movie-mistakes_n_5786564.html?ir=Entertainment'>11 Ridiculous Mistakes That Will Ruin Your Favorite Movies<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">14</span></span></a>
+          <a href='http://www.huffingtonpost.com/2014/09/09/7-facts-seinfeld-video_n_5789982.html?ir=Entertainment'>7 Facts You Didn't Know About 'Seinfeld,' Yada Yada Yada<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">35</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -811,22 +812,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/travel/'>Travel</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124005 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184047 -->
       <ul>
         <li id='id_trending_5762240' data-beacon='{"p":{"plid":5762240}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/bibury-england-most-beautiful-village_n_5762240.html?ir=Travel'>Skip London, Go Here<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">15</span></span></a>
-        </li>
-        <li id='id_trending_5790178' data-beacon='{"p":{"plid":5790178}}'>
-          <a href='http://www.huffingtonpost.com/travel-leisure/best-countries-for-solo-t_b_5790178.html?ir=Travel'>Best Countries for Solo Travelers (PHOTOS)</a>
+          <a href='http://www.huffingtonpost.com/2014/09/08/bibury-england-most-beautiful-village_n_5762240.html?ir=Travel'>Skip London, Go Here<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">16</span></span></a>
         </li>
         <li id='id_trending_5686015' data-beacon='{"p":{"plid":5686015}}'>
           <a href='http://www.huffingtonpost.com/hoppercom/the-10-longest-nonstop-fl_b_5686015.html?ir=Travel'>The 10 Longest Non-Stop Flights from New York</a>
         </li>
+        <li id='id_trending_5784594' data-beacon='{"p":{"plid":5784594}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/dirty-tourist-attractions_n_5784594.html?ir=Travel'>Pack Your Purell Before You Visit The World's 'Filthiest' Tourist Attractions<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">12</span></span></a>
+        </li>
+        <li id='id_trending_5790178' data-beacon='{"p":{"plid":5790178}}'>
+          <a href='http://www.huffingtonpost.com/travel-leisure/best-countries-for-solo-t_b_5790178.html?ir=Travel'>Best Countries for Solo Travelers (PHOTOS)</a>
+        </li>
         <li id='id_trending_5780898' data-beacon='{"p":{"plid":5780898}}'>
           <a href='http://www.huffingtonpost.com/us-news-travel/10-questions-to-ask-befor_b_5780898.html?ir=Travel'>10 Questions To Ask Before Booking A Vacation Rental</a>
-        </li>
-        <li id='id_trending_5772286' data-beacon='{"p":{"plid":5772286}}'>
-          <a href='http://www.huffingtonpost.com/alexa-cortese/when-in-nashville-7-foods_b_5772286.html?ir=Travel'>When in Nashville: 8 Foods to Try<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">12</span></span></a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -864,7 +865,7 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/arts/'>Arts</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124002 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184002 -->
       <ul>
         <li id='id_trending_5792052' data-beacon='{"p":{"plid":5792052}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/drone-burning-man-2014_n_5792052.html?ir=Arts'>The Happiest Attendee At Burning Man 2014 Was This Drone</a>
@@ -878,8 +879,8 @@ jQuery('#fb_like_vertical').mouseenter(function() {
         <li id='id_trending_5762584' data-beacon='{"p":{"plid":5762584}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/art-apps_n_5762584.html?ir=Arts'>18 Apps That Will Inspire Creativity In Your Everyday Life</a>
         </li>
-        <li id='id_trending_5790430' data-beacon='{"p":{"plid":5790430}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/georgian-women-singing-video_n_5790430.html?ir=Arts'>3 Women Singing A Georgian Song Sound Magical</a>
+        <li id='id_trending_5793852' data-beacon='{"p":{"plid":5793852}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/gilda-snowden-dead-dies_n_5793852.html?ir=Arts'>Beloved Detroit Artist Dies At 60</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -916,22 +917,22 @@ jQuery('#fb_like_vertical').mouseenter(function() {
    <a class='topnav_tab_link' href='http://www.huffingtonpost.com/huffpost-home/'>Home</a>
    <div class='menu absolute'>
     <div class='menu_h clearfix'>
-     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_124004 -->
+     <div class='trending' data-beacon='{"p":{"lnid":"trending"}}'>  <!-- last update is 20140910_184007 -->
       <ul>
+        <li id='id_trending_5791802' data-beacon='{"p":{"plid":5791802}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/09/sjp-nyc-townhouse_n_5791802.html?ir=HuffPost+Home'>SJP's Spectacular NYC Townhouse Is Back On The Market</a>
+        </li>
         <li id='id_trending_5787332' data-beacon='{"p":{"plid":5787332}}'>
           <a href='http://www.huffingtonpost.com/2014/09/09/cheap-home-updates_n_5787332.html?ir=HuffPost+Home'>How To Make Your Home Look Awesome For $50 Or Less</a>
         </li>
-        <li id='id_trending_5791802' data-beacon='{"p":{"plid":5791802}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/09/sjp-nyc-townhouse_n_5791802.html?ir=HuffPost+Home'>SJP's Spectacular NYC Townhouse Is Back On The Market</a>
+        <li id='id_trending_5772704' data-beacon='{"p":{"plid":5772704}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/key-to-organizing-your-life_n_5772704.html?ir=HuffPost+Home'>The 9 Baby Steps To Take For An Infinitely More Organized Week</a>
         </li>
         <li id='id_trending_5786536' data-beacon='{"p":{"plid":5786536}}'>
           <a href='http://www.huffingtonpost.com/2014/09/08/jewelry-display-ideas_n_5786536.html?ir=HuffPost+Home'>Don't Hide Your Jewelry -- Make It Your New Favorite Decor</a>
         </li>
-        <li id='id_trending_5760092' data-beacon='{"p":{"plid":5760092}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/08/brilliant-lighting-ideas_n_5760092.html?ir=HuffPost+Home'>8 Real-Life Lighting Ideas That'll Change The Way You See Your Home</a>
-        </li>
-        <li id='id_trending_5772704' data-beacon='{"p":{"plid":5772704}}'>
-          <a href='http://www.huffingtonpost.com/2014/09/10/key-to-organizing-your-life_n_5772704.html?ir=HuffPost+Home'>The 9 Baby Steps To Take For An Infinitely More Organized Week</a>
+        <li id='id_trending_5791988' data-beacon='{"p":{"plid":5791988}}'>
+          <a href='http://www.huffingtonpost.com/2014/09/10/roombot-robot-builds-furniture_n_5791988.html?ir=HuffPost+Home'>In The Future, You'll Never Have To Assemble Furniture Again</a>
         </li>
        <li class='vertical_info'>
          <div class='float_right social_widget'>
@@ -972,33 +973,33 @@ jQuery('#fb_like_vertical').mouseenter(function() {
       <div class="trending tn-hp-live" data-beacon='{"p":{"lnid":"trending"}}'>
        <ul>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/540a17b978c90a0ee8000631">
-          <span class="schedule-status now">Now</span>
-          <span class="segment-title">Radio Host Mark Goodman LIVE</span>
+         <a href="http://live.huffingtonpost.com/r/segment/5408701702a760b9a0000316">
+          <span class="schedule-status ">Next</span>
+          <span class="segment-title">Guinness Book Of World Records 2015</span>
          </a>
         </li>
         <li class="scheduled-soon">
-         <a href="http://live.huffingtonpost.com/r/segment/5405eb8402a7604fe70006ba">
+         <a href="http://live.huffingtonpost.com/r/segment/5408739202a760b9a000032a">
           <span class="schedule-status ">Next</span>
-          <span class="segment-title">'Top Chef' Judge Gail Simmons LIVE</span>
+          <span class="segment-title">How To Face Tough Conversations</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/53dc100078c90ae0c2000531">
-          <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">9/11 Made Me Redefine My Life</span>
+         <a href="http://live.huffingtonpost.com/r/segment/540f57d202a760da9a000207">
+          <span class="schedule-status ">Tomorrow</span>
+          <span class="segment-title">Tavis Smiley LIVE</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/540f342202a7602a660000ff">
-          <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">Free Speech Zone with @AlyonaMink</span>
+         <a href="http://live.huffingtonpost.com/r/segment/540dd42d78c90a3db4000130">
+          <span class="schedule-status ">Tomorrow</span>
+          <span class="segment-title">Beverly Johnson LIVE</span>
          </a>
         </li>
         <li class="">
-         <a href="http://live.huffingtonpost.com/r/segment/53f600f8fe344419f100037b">
-          <span class="schedule-status ">Coming Up</span>
-          <span class="segment-title">ESPN's Mike Golic LIVE</span>
+         <a href="http://live.huffingtonpost.com/r/segment/540f466478c90a0b8200013e">
+          <span class="schedule-status ">Tomorrow</span>
+          <span class="segment-title">FYC: 2014 Toronto Film Festival</span>
          </a>
         </li>
         <li class="vertical_info">
@@ -1199,7 +1200,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
     </h1>
     <div class="stats">
         <a class="label comment" href="http://www.huffingtonpost.com/2014/09/10/als-wedding-story_n_5787742.html?utm_hp_ref=weddings&ir=Weddings#comments" data-beacon='{"p":{"lnid":"cmnts"}}' >
-        Comment    </a>
+        8    </a>
     </div>
 </div>
  
@@ -1207,40 +1208,43 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
         <div class="col-b">
             <ul class="items">
              
-                <li  id="entry_5792214" onmouseover="TrackingData.entry_5792214={id:5792214,blog_id:2,rank:2,zone:1,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5792214,"mpid":2}}'>
+                <li  id="entry_5799980" onmouseover="TrackingData.entry_5799980={id:5799980,blog_id:2,rank:2,zone:1,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5799980,"mpid":2}}'>
     <div class="media">
     <div class="img-wrapper group">
-        <a href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html?utm_hp_ref=weddings&ir=Weddings?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="This Is What Happens When Your Girlfriend Writes Your Grocery List" src="http://i.huffpost.com/gen/2040600/thumbs/n-GORCERY-LIST-ENGAGEMENT-RING-154x114.jpg">
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-invitation-mistak_n_5799980.html?utm_hp_ref=weddings&ir=Weddings?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Here&#039;s Why You Really Should Proofread Your Wedding Invites" src="http://i.huffpost.com/gen/2046402/thumbs/n-WEDDING-INVITATION-154x114.jpg">
         </a>
-        <span class="img-credit">Imgur</span>    </div>
+        <span class="img-credit">thisisdream/Reddit</span>    </div>
     </div>
     <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html?utm_hp_ref=weddings&ir=Weddings" >
-          This Is What Happens When Your Girlfriend Writes Your Grocery List        </a>
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-invitation-mistak_n_5799980.html?utm_hp_ref=weddings&ir=Weddings" >
+          Here's Why You Really Should Proofread Your Wedding Invites        </a>
     </h3>
     <div class="stats">
-        <a class="label comment" href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html?utm_hp_ref=weddings&ir=Weddings#comments" data-beacon='{"p":{"lnid":"cmnts"}}' >
+        <a class="label comment" href="http://www.huffingtonpost.com/2014/09/10/wedding-invitation-mistak_n_5799980.html?utm_hp_ref=weddings&ir=Weddings#comments" data-beacon='{"p":{"lnid":"cmnts"}}' >
         Comment    </a>
     </div>
 </li>
              
-                <li  id="entry_5791874" onmouseover="TrackingData.entry_5791874={id:5791874,blog_id:2,rank:3,zone:1,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5791874,"mpid":3}}'>
+                <li  id="entry_5799088" onmouseover="TrackingData.entry_5799088={id:5799088,blog_id:2,rank:3,zone:1,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5799088,"mpid":3}}'>
     <div class="media">
     <div class="img-wrapper group">
-        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html?utm_hp_ref=weddings&ir=Weddings?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="See Who Got Married This Weekend!" src="http://i.huffpost.com/gen/2040316/thumbs/n-REAL-WEDDINGS-154x114.jpg">
+        <a href="http://www.huffingtonpost.com/2014/09/10/mens-thoughts-on-marriage_n_5799088.html?utm_hp_ref=weddings&ir=Weddings?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="16 Truthful Reasons Men Want To Get Married" src="http://i.huffpost.com/gen/2045492/thumbs/n-IN-LOVE-COUPLE-154x114.jpg">
         </a>
-        <span class="img-credit">oe Hendricks Photography</span>    </div>
+        <span class="img-credit">AbimelecOlan via Getty Images</span>    </div>
     </div>
     <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html?utm_hp_ref=weddings&ir=Weddings" >
-          See Who Got Married This Weekend!        </a>
+        <a href="http://www.huffingtonpost.com/2014/09/10/mens-thoughts-on-marriage_n_5799088.html?utm_hp_ref=weddings&ir=Weddings" >
+          16 Truthful Reasons Men Want To Get Married        </a>
     </h3>
     <div class="stats">
-        <a class="label comment" href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html?utm_hp_ref=weddings&ir=Weddings#comments" data-beacon='{"p":{"lnid":"cmnts"}}' >
+        <a class="label comment" href="http://www.huffingtonpost.com/2014/09/10/mens-thoughts-on-marriage_n_5799088.html?utm_hp_ref=weddings&ir=Weddings#comments" data-beacon='{"p":{"lnid":"cmnts"}}' >
         Comment    </a>
-    </div>
+        		
+	<span class="frontpage_follow_bignews">
+		</span>
+ </div>
 </li>
                         </ul>
         </div>
@@ -1256,7 +1260,72 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
   <div class="cols clearfix">
     <div class="col-a" data-beacon='{"p":{"mlid":"col-a"}}'>
       <ul class="items">
-         <li id="entry_5768362" onmouseover="TrackingData.entry_5768362={id:5768362,blog_id:3,rank:1,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5768362,"mpid":1}}'>
+         <li id="entry_5799596" onmouseover="TrackingData.entry_5799596={id:5799596,blog_id:2,rank:1,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5799596,"mpid":1}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/10/wedding-planning-problems_n_5799596.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Fed-Up Comedian Has The Perfect Solution To Absurd Wedding Costs" src="http://i.huffpost.com/gen/2046364/thumbs/n-BRIDE-MONEY-154x114.jpg">
+        </a>
+        <span class="img-credit">CareyHope via Getty Images</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-planning-problems_n_5799596.html?utm_hp_ref=weddings&ir=Weddings" >
+            Fed-Up Comedian Has The Perfect Solution To Absurd Wedding Costs         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/10/wedding-planning-problems_n_5799596.html#comments" >
+        Comment    </a>
+	</li>
+<li id="entry_5798998" onmouseover="TrackingData.entry_5798998={id:5798998,blog_id:2,rank:2,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5798998,"mpid":2}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/10/fights-couples-have_n_5798998.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="The Totally Pointless Fights All Couples Have" src="http://i.huffpost.com/gen/2045654/thumbs/n-TOILET-PAPER-154x114.jpg">
+        </a>
+        <span class="img-credit">BuzzFeed</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/10/fights-couples-have_n_5798998.html?utm_hp_ref=weddings&ir=Weddings" >
+            The Totally Pointless Fights All Couples Have         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/10/fights-couples-have_n_5798998.html#comments" >
+        Comment    </a>
+	</li>
+<li id="entry_5792214" onmouseover="TrackingData.entry_5792214={id:5792214,blog_id:2,rank:3,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5792214,"mpid":3}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="This Is What Happens When Your Girlfriend Writes Your Grocery List" src="http://i.huffpost.com/gen/2040600/thumbs/n-GORCERY-LIST-ENGAGEMENT-RING-154x114.jpg">
+        </a>
+        <span class="img-credit">Imgur</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html?utm_hp_ref=weddings&ir=Weddings" >
+            This Is What Happens When Your Girlfriend Writes Your Grocery List         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html#comments" >
+        133    </a>
+	</li>
+<li id="entry_5791874" onmouseover="TrackingData.entry_5791874={id:5791874,blog_id:2,rank:4,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5791874,"mpid":4}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="See Who Got Married This Weekend!" src="http://i.huffpost.com/gen/2040316/thumbs/n-REAL-WEDDINGS-154x114.jpg">
+        </a>
+        <span class="img-credit">oe Hendricks Photography</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html?utm_hp_ref=weddings&ir=Weddings" >
+            See Who Got Married This Weekend!         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html#comments" >
+        Comment    </a>
+	</li>
+<li id="entry_5786550" onmouseover="TrackingData.entry_5786550={id:5786550,blog_id:2,rank:5,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5786550,"mpid":5}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Iowa Lesbian Couple Weds After 72 Years Together" src="http://i.huffpost.com/gen/2036200/thumbs/n-GAY-WEDDING-154x114.jpg">
+        </a>
+        <span class="img-credit">Thomas Geyer/Quad-City Times/ZUMA Wire/ Corbis</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html?utm_hp_ref=weddings&ir=Weddings" >
+            Iowa Lesbian Couple Weds After 72 Years Together         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/vivian-boyack-alice-nonie-dubes-wedding_n_5786550.html#comments" >
+        66    </a>
+	</li>
+<li id="entry_5768362" onmouseover="TrackingData.entry_5768362={id:5768362,blog_id:3,rank:6,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5768362,"mpid":6}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/the-knot/7-of-the-sweetest-proposa_b_5768362.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="These Romantic Proposals Will Make You Rethink That Flash Mob" src="http://i.huffpost.com/gen/2024940/thumbs/n-PROPOSALS-154x114.jpg">
@@ -1269,64 +1338,12 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
     <a class="label comment" href="http://www.huffingtonpost.com/the-knot/7-of-the-sweetest-proposa_b_5768362.html#comments" >
         Comment    </a>
 	</li>
-<li id="entry_5790114" onmouseover="TrackingData.entry_5790114={id:5790114,blog_id:2,rank:2,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5790114,"mpid":2}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/09/newborn-onesie-proposes-dad-lisa-keogh_n_5790114.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="Newborn Helps His Dad Propose With World's Most Romantic Onesie" src="http://i.huffpost.com/gen/2039042/thumbs/n-NEWBORN-ONESIE-PROPOSAL-154x114.jpg">
-        </a>
-        <span class="img-credit">Facebook</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/09/newborn-onesie-proposes-dad-lisa-keogh_n_5790114.html?utm_hp_ref=weddings&ir=Weddings" >
-            Newborn Helps His Dad Propose With World's Most Romantic Onesie         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/09/newborn-onesie-proposes-dad-lisa-keogh_n_5790114.html#comments" >
-        19    </a>
-	</li>
-<li id="entry_5787510" onmouseover="TrackingData.entry_5787510={id:5787510,blog_id:2,rank:3,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5787510,"mpid":3}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/wedding-rsvps-on-time_n_5787510.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="Want Wedding Guests To RSVP Faster? This Is How To Frame Your Request" src="http://i.huffpost.com/gen/2036920/thumbs/n-WEDDING-INVITATIONS-154x114.jpg">
-        </a>
-        <span class="img-credit"><a target="_blank" href="https://www.flickr.com/photos/77485110@N00/5804838928">Sarah Parrott | Flickr</a></span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/08/wedding-rsvps-on-time_n_5787510.html?utm_hp_ref=weddings&ir=Weddings" >
-            Want Wedding Guests To RSVP Faster? This Is How To Frame Your Request         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/wedding-rsvps-on-time_n_5787510.html#comments" >
-        Comment    </a>
-	</li>
-<li id="entry_5787282" onmouseover="TrackingData.entry_5787282={id:5787282,blog_id:2,rank:4,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5787282,"mpid":4}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="Beyonce Crashed A Wedding In Italy And Brides Everywhere Died Of Jealousy" src="http://i.huffpost.com/gen/2036750/thumbs/n-BEYONCE-WEDDING-CRASHER-154x114.jpg">
-        </a>
-        <span class="img-credit">Twitter</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=weddings&ir=Weddings" >
-            Beyonce Crashed A Wedding In Italy And Brides Everywhere Died Of Jealousy         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html#comments" >
-        38    </a>
-	</li>
-<li id="entry_5648307" onmouseover="TrackingData.entry_5648307={id:5648307,blog_id:2,rank:5,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5648307,"mpid":5}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/marijuana-wedding_n_5648307.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="This Is What Really Goes Down At A 'Weed Wedding'" src="http://i.huffpost.com/gen/1949290/thumbs/n-WEEDDINGS-154x114.jpg">
-        </a>
-        <span class="img-credit">.</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/08/marijuana-wedding_n_5648307.html?utm_hp_ref=weddings&ir=Weddings" >
-            This Is What Really Goes Down At A 'Weed Wedding'         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/marijuana-wedding_n_5648307.html#comments" >
-        2    </a>
-	</li>
       </ul>
     </div>
     <!-- /.col-a -->
     <div class="col-b" data-beacon='{"p":{"mlid":"col-b"}}'>
       <ul class="items featured">
-      <li id="entry_990322" onmouseover="TrackingData.entry_990322={id:990322,blog_id:2,rank:6,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":990322,"mpid":6}}'>
+      <li id="entry_990322" onmouseover="TrackingData.entry_990322={id:990322,blog_id:2,rank:7,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":990322,"mpid":7}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2011/10/02/etsy-weddings_n_990322.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="PHOTOS: Our Favorite Wedding Finds From Etsy" src="http://i.huffpost.com/gen/1915882/thumbs/n-POM-154x114.jpg">
@@ -1339,31 +1356,31 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
     <a class="label comment" href="http://www.huffingtonpost.com/2011/10/02/etsy-weddings_n_990322.html#comments" >
         9    </a>
 	</li>
-<li id="entry_5785582" onmouseover="TrackingData.entry_5785582={id:5785582,blog_id:2,rank:7,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5785582,"mpid":7}}'>
+<li id="entry_5790114" onmouseover="TrackingData.entry_5790114={id:5790114,blog_id:2,rank:8,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5790114,"mpid":8}}'>
     <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/grandma-flower-girl-_n_5785582.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="94-Year-Old Grandma Is Just About The Best Flower Girl Around" src="http://i.huffpost.com/gen/2035968/thumbs/n-GRANNY-FLOWER-GIRL-154x114.jpg">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/09/newborn-onesie-proposes-dad-lisa-keogh_n_5790114.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Newborn Helps His Dad Propose With World's Most Romantic Onesie" src="http://i.huffpost.com/gen/2039042/thumbs/n-NEWBORN-ONESIE-PROPOSAL-154x114.jpg">
         </a>
-        <span class="img-credit">Mallory Chrisman</span>	</div>
+        <span class="img-credit">Facebook</span>	</div>
     <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/08/grandma-flower-girl-_n_5785582.html?utm_hp_ref=weddings&ir=Weddings" >
-            94-Year-Old Grandma Is Just About The Best Flower Girl Around         </a>
+        <a href="http://www.huffingtonpost.com/2014/09/09/newborn-onesie-proposes-dad-lisa-keogh_n_5790114.html?utm_hp_ref=weddings&ir=Weddings" >
+            Newborn Helps His Dad Propose With World's Most Romantic Onesie         </a>
     </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/grandma-flower-girl-_n_5785582.html#comments" >
-        1    </a>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/09/newborn-onesie-proposes-dad-lisa-keogh_n_5790114.html#comments" >
+        27    </a>
 	</li>
-<li id="entry_5775076" onmouseover="TrackingData.entry_5775076={id:5775076,blog_id:2,rank:8,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5775076,"mpid":8}}'>
+<li id="entry_5787510" onmouseover="TrackingData.entry_5787510={id:5787510,blog_id:2,rank:9,zone:2,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5787510,"mpid":9}}'>
     <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="This Is What True Romance Looks Like When You're Married" src="http://i.huffpost.com/gen/2029754/thumbs/n-RICE-KRISPIES-WIFE-154x114.jpg">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/wedding-rsvps-on-time_n_5787510.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Want Wedding Guests To RSVP Faster? This Is How To Frame Your Request" src="http://i.huffpost.com/gen/2036920/thumbs/n-WEDDING-INVITATIONS-154x114.jpg">
         </a>
-        <span class="img-credit">Reddit / Imgur</span>	</div>
+        <span class="img-credit"><a target="_blank" href="https://www.flickr.com/photos/77485110@N00/5804838928">Sarah Parrott | Flickr</a></span>	</div>
     <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=weddings&ir=Weddings" >
-            This Is What True Romance Looks Like When You're Married         </a>
+        <a href="http://www.huffingtonpost.com/2014/09/08/wedding-rsvps-on-time_n_5787510.html?utm_hp_ref=weddings&ir=Weddings" >
+            Want Wedding Guests To RSVP Faster? This Is How To Frame Your Request         </a>
     </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html#comments" >
-        88    </a>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/wedding-rsvps-on-time_n_5787510.html#comments" >
+        Comment    </a>
 	</li>
       </ul>
     </div>
@@ -1452,7 +1469,18 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
     </div>
             
     <ul class="items stories">
-        <li id="entry_5738216" onmouseover="TrackingData.entry_5738216={id:5738216,blog_id:2,rank:1,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5738216,"mpid":1}}'>
+        <li id="entry_5798870" onmouseover="TrackingData.entry_5798870={id:5798870,blog_id:2,rank:1,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5798870,"mpid":1}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.buzzfeed.com/floperry/super-cute-lesbian-wedding-ideas#4h8h1f4?utm_hp_ref=weddings&ir=Weddings" target="_blank">
+            <img alt="23 Awesome Ideas For A Lesbian Wedding" src="http://i.huffpost.com/gen/2045206/thumbs/n-BRIDE-SIGN-154x114.jpg">
+        </a>
+        <span class="img-credit">Imgur</span>    </div>
+    <h3>
+        <a href="http://www.buzzfeed.com/floperry/super-cute-lesbian-wedding-ideas#4h8h1f4?utm_hp_ref=weddings&ir=Weddings" target="_blank">
+            23 Awesome Ideas For A Lesbian Wedding         </a>
+    </h3>
+    </li>
+<li id="entry_5738216" onmouseover="TrackingData.entry_5738216={id:5738216,blog_id:2,rank:2,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5738216,"mpid":2}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.washingtonpost.com/opinions/catherine-rampell-the-one-fight-to-have-before-your-wedding/2014/08/28/9ccde2c0-2ef1-11e4-994d-202962a9150c_story.html?utm_hp_ref=weddings&ir=Weddings" target="_blank">
             <img alt="This Wedding Planning Fight Is One Worth Having" src="http://i.huffpost.com/gen/2005700/thumbs/n-WEDDING-INVITATIONS-154x114.jpg">
@@ -1463,7 +1491,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             This Wedding Planning Fight Is One Worth Having         </a>
     </h3>
     </li>
-<li id="entry_5738080" onmouseover="TrackingData.entry_5738080={id:5738080,blog_id:2,rank:2,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5738080,"mpid":2}}'>
+<li id="entry_5738080" onmouseover="TrackingData.entry_5738080={id:5738080,blog_id:2,rank:3,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5738080,"mpid":3}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.vanityfair.com/online/daily/2014/08/princess-diana-prince-charles-wedding-cake-slice?utm_hp_ref=weddings&ir=Weddings" target="_blank">
             <img alt="A Slice Of Princess Diana's Wedding Cake Just Sold For $1,375" src="http://i.huffpost.com/gen/2005498/thumbs/n-PRINCESS-DIANA-154x114.jpg">
@@ -1474,7 +1502,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             A Slice Of Princess Diana's Wedding Cake Just Sold For $1,375         </a>
     </h3>
             </li>
-<li id="entry_5680109" onmouseover="TrackingData.entry_5680109={id:5680109,blog_id:2,rank:3,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5680109,"mpid":3}}'>
+<li id="entry_5680109" onmouseover="TrackingData.entry_5680109={id:5680109,blog_id:2,rank:4,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5680109,"mpid":4}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.whowhatwear.com/celebrity-engagement-rings?utm_hp_ref=weddings&ir=Weddings" target="_blank">
             <img alt="15 Celeb Engagement Rings That Will Knock Your Socks Off" src="http://i.huffpost.com/gen/1966547/thumbs/n-KATE-MIDDLETON-ENGAGEMENT-RING-154x114.jpg">
@@ -1485,17 +1513,6 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             15 Celeb Engagement Rings That Will Knock Your Socks Off         </a>
     </h3>
             </li>
-<li id="entry_5660148" onmouseover="TrackingData.entry_5660148={id:5660148,blog_id:2,rank:4,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"newsa","plid":5660148,"mpid":4}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.buzzfeed.com/katherinenevitt/i-been-drinkin?utm_hp_ref=weddings&ir=Weddings" target="_blank">
-            <img alt="If You've Been To A Wedding, You've Probably Had These 68 Thoughts" src="http://i.huffpost.com/gen/1954358/thumbs/n-ADAM-SANDLER-154x114.jpg">
-        </a>
-        <span class="img-credit">spacecadet.tumblr.com</span>    </div>
-    <h3>
-        <a href="http://www.buzzfeed.com/katherinenevitt/i-been-drinkin?utm_hp_ref=weddings&ir=Weddings" target="_blank">
-            If You've Been To A Wedding, You've Probably Had These 68 Thoughts         </a>
-    </h3>
-    </li>
     </ul>
         <!-- /.stories -->
         <div class="quote news_main_info" id="entry_2403793" onmouseover="TrackingData.entry_2403793={id:2403793,blog_id:3,rank:2,zone:5,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"mnid":"quote","plid":2403793,"mpid":2}}'>
@@ -1864,7 +1881,59 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
                      <div class="col-d">
                           <div class='hr top'></div><div class="mod mod-advice" data-beacon='{"p":{"mlid":"mod-advice","mnid":"advice"}}'>
     <ul class="items divided">
-      <li id="entry_5785868" onmouseover="TrackingData.entry_5785868={id:5785868,blog_id:2,rank:1,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5785868,"mpid":1}}'>
+      <li id="entry_5787282" onmouseover="TrackingData.entry_5787282={id:5787282,blog_id:2,rank:1,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5787282,"mpid":1}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Beyonce Crashed A Wedding In Italy And Brides Everywhere Died Of Jealousy" src="http://i.huffpost.com/gen/2036750/thumbs/n-BEYONCE-WEDDING-CRASHER-large.jpg">
+        </a>
+        <span class="img-credit">Twitter</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html?utm_hp_ref=weddings&ir=Weddings" >
+            Beyonce Crashed A Wedding In Italy And Brides Everywhere Died Of Jealousy         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/beyonce-wedding-crash-_n_5787282.html#comments" >
+        38    </a>
+	</li>
+<li id="entry_5775076" onmouseover="TrackingData.entry_5775076={id:5775076,blog_id:2,rank:2,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5775076,"mpid":2}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="This Is What True Romance Looks Like When You're Married" src="http://i.huffpost.com/gen/2029754/thumbs/n-RICE-KRISPIES-WIFE-large.jpg">
+        </a>
+        <span class="img-credit">Reddit / Imgur</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=weddings&ir=Weddings" >
+            This Is What True Romance Looks Like When You're Married         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html#comments" >
+        93    </a>
+	</li>
+<li id="entry_5648307" onmouseover="TrackingData.entry_5648307={id:5648307,blog_id:2,rank:3,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5648307,"mpid":3}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/marijuana-wedding_n_5648307.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="This Is What Really Goes Down At A 'Weed Wedding'" src="http://i.huffpost.com/gen/1949290/thumbs/n-WEEDDINGS-large.jpg">
+        </a>
+        <span class="img-credit">.</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/08/marijuana-wedding_n_5648307.html?utm_hp_ref=weddings&ir=Weddings" >
+            This Is What Really Goes Down At A 'Weed Wedding'         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/marijuana-wedding_n_5648307.html#comments" >
+        2    </a>
+	</li>
+<li id="entry_5785582" onmouseover="TrackingData.entry_5785582={id:5785582,blog_id:2,rank:4,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5785582,"mpid":4}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/08/grandma-flower-girl-_n_5785582.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="94-Year-Old Grandma Is Just About The Best Flower Girl Around" src="http://i.huffpost.com/gen/2035968/thumbs/n-GRANNY-FLOWER-GIRL-large.jpg">
+        </a>
+        <span class="img-credit">Mallory Chrisman</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/08/grandma-flower-girl-_n_5785582.html?utm_hp_ref=weddings&ir=Weddings" >
+            94-Year-Old Grandma Is Just About The Best Flower Girl Around         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/grandma-flower-girl-_n_5785582.html#comments" >
+        1    </a>
+	</li>
+<li id="entry_5785868" onmouseover="TrackingData.entry_5785868={id:5785868,blog_id:2,rank:5,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5785868,"mpid":5}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/08/dancing-kid-wedding_n_5785868.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="Little Kid's Dance Floor Moves Will Make Your Day -- Nay, Your Year" src="http://i.huffpost.com/gen/2035836/thumbs/n-DANCING-KID-WEDDING-large.jpg">
@@ -1877,7 +1946,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
     <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/dancing-kid-wedding_n_5785868.html#comments" >
         1    </a>
 	</li>
-<li id="entry_5783678" onmouseover="TrackingData.entry_5783678={id:5783678,blog_id:2,rank:2,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5783678,"mpid":2}}'>
+<li id="entry_5783678" onmouseover="TrackingData.entry_5783678={id:5783678,blog_id:2,rank:6,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5783678,"mpid":6}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="Neil Patrick Harris Marries David Burtka In Italy" src="http://i.huffpost.com/gen/2034096/thumbs/n-NEIL-PATRICK-HARRIS-DAVID-large.jpg">
@@ -1888,59 +1957,7 @@ var ap_wires_unit = new CommonPaginator({'moduleName': 'ap_wires',
             Neil Patrick Harris Marries David Burtka In Italy         </a>
     </h3>
     <a class="label comment" href="http://www.huffingtonpost.com/2014/09/08/neil-patrick-harris-marries-david-burtka_n_5783678.html#comments" >
-        64    </a>
-	</li>
-<li id="entry_5754546" onmouseover="TrackingData.entry_5754546={id:5754546,blog_id:3,rank:3,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5754546,"mpid":3}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/bridal-guide/10-of-our-favorite-fall-w_b_5754546.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="It's That Time Of Year! 10 Of Our Favorite Fall Wedding Ideas" src="http://i.huffpost.com/gen/2024982/thumbs/n-FALL-WEDDING-large.jpg">
-        </a>
-        <span class="img-credit">Lauren Fair Photography </span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/bridal-guide/10-of-our-favorite-fall-w_b_5754546.html?utm_hp_ref=weddings&ir=Weddings" >
-            It's That Time Of Year! 10 Of Our Favorite Fall Wedding Ideas         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/bridal-guide/10-of-our-favorite-fall-w_b_5754546.html#comments" >
-        Comment    </a>
-	</li>
-<li id="entry_5772748" onmouseover="TrackingData.entry_5772748={id:5772748,blog_id:2,rank:4,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5772748,"mpid":4}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/05/bachelorette-party-music-video_n_5772748.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="This Epic Bachelorette Party Blows All Those Boozy Fests Out Of The Water" src="http://i.huffpost.com/gen/2027510/thumbs/n-BACHELORETTE-PARTY-VIDEO-large.jpg">
-        </a>
-        <span class="img-credit">Vimeo/Rantz and Raves</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/05/bachelorette-party-music-video_n_5772748.html?utm_hp_ref=weddings&ir=Weddings" >
-            This Epic Bachelorette Party Blows All Those Boozy Fests Out Of The Water         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/bachelorette-party-music-video_n_5772748.html#comments" >
-        24    </a>
-	</li>
-<li id="entry_5774980" onmouseover="TrackingData.entry_5774980={id:5774980,blog_id:2,rank:5,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5774980,"mpid":5}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/05/daughter-wedding-hospital-lisa-wilson-pantoja_n_5774980.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="Bride Gives Dying Father The Best Gift A Daughter Could Give" src="http://i.huffpost.com/gen/2029452/thumbs/n-DAVID-HALIBURTON-WILSON-large.jpg">
-        </a>
-        <span class="img-credit">Facebook / David Haliburton Wilson</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/05/daughter-wedding-hospital-lisa-wilson-pantoja_n_5774980.html?utm_hp_ref=weddings&ir=Weddings" >
-            Bride Gives Dying Father The Best Gift A Daughter Could Give         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/daughter-wedding-hospital-lisa-wilson-pantoja_n_5774980.html#comments" >
-        22    </a>
-	</li>
-<li id="entry_5773366" onmouseover="TrackingData.entry_5773366={id:5773366,blog_id:2,rank:6,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5773366,"mpid":6}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/05/pinterest-wedding-email_n_5773366.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="That Time Pinterest Congratulated Women On Their Non-Existent Weddings" src="http://i.huffpost.com/gen/2028750/thumbs/n-FUNNY-BRIDE-large.jpg">
-        </a>
-        <span class="img-credit">Fuse via Getty Images</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/05/pinterest-wedding-email_n_5773366.html?utm_hp_ref=weddings&ir=Weddings" >
-            That Time Pinterest Congratulated Women On Their Non-Existent Weddings         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/pinterest-wedding-email_n_5773366.html#comments" >
-        3    </a>
+        65    </a>
 	</li>
   </ul>
 </div>
@@ -2177,72 +2194,72 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
   <div data-beacon='{"p":{"mnid":"all_ndn_pages"}}' id="all_ndn_pages">
   <ul class="slides-content">
   
-     <li class="item" data-title="No Technology Nuptials" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518285340&sitesection=huffingtonpost" data-id="518285340" data-image="http://pthumbnails.5min.com/10365707/518285340_5.jpg">
+     <li class="item" data-title="Upcycle Your Wedding" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518234571&sitesection=huffingtonpost" data-id="518234571" data-image="http://pthumbnails.5min.com/10364692/518234571_c_140_105.jpg">
       <div class="media large_entry">
-        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518285340&sitesection=huffingtonpost" target="partners">
-          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10365707/518285340_5_300_150.jpg">
+        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518234571&sitesection=huffingtonpost" target="partners">
+          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10364692/518234571_c_300_150.jpg">
         </a>
       </div>
       <div class="caption">
-        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518285340&sitesection=huffingtonpost" >Play</a>
+        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518234571&sitesection=huffingtonpost" >Play</a>
         <h3>
-          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518285340&sitesection=huffingtonpost" >No Technology Nuptials</a>
+          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518234571&sitesection=huffingtonpost" >Upcycle Your Wedding</a>
         </h3>
       </div>
     </li>
   
-     <li class="item" data-title="&#39;TV Wedding&#39;: Jamie and Brian&#39;s Serendipitous Ceremony" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247674&sitesection=huffingtonpost" data-id="518247674" data-image="http://pthumbnails.5min.com/10364954/518247674_c_140_105.jpg">
+     <li class="item" data-title="Brides-to-Be Get Plastic Surgery on Hands for Engagement Selfies" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518255812&sitesection=huffingtonpost" data-id="518255812" data-image="http://pthumbnails.5min.com/10365117/518255812_c_140_105.jpg">
       <div class="media large_entry">
-        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247674&sitesection=huffingtonpost" target="partners">
-          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10364954/518247674_c_300_150.jpg">
+        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518255812&sitesection=huffingtonpost" target="partners">
+          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10365117/518255812_c_300_150.jpg">
         </a>
       </div>
       <div class="caption">
-        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247674&sitesection=huffingtonpost" >Play</a>
+        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518255812&sitesection=huffingtonpost" >Play</a>
         <h3>
-          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247674&sitesection=huffingtonpost" >'TV Wedding': Jamie and Brian's Serendipitous Ceremony</a>
+          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518255812&sitesection=huffingtonpost" >Brides-to-Be Get Plastic Surgery on Hands for Engagement Selfies</a>
         </h3>
       </div>
     </li>
   
-     <li class="item" data-title="&#39;TV Wedding&#39;: The Rockin&#39; Stelter Reception" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247669&sitesection=huffingtonpost" data-id="518247669" data-image="http://pthumbnails.5min.com/10364954/518247669_c_140_105.jpg">
+     <li class="item" data-title="Groomsman: How I Kicked Bridesmaid in Head" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518322816&sitesection=huffingtonpost" data-id="518322816" data-image="http://pthumbnails.5min.com/10366457/518322816_3.jpg">
       <div class="media large_entry">
-        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247669&sitesection=huffingtonpost" target="partners">
-          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10364954/518247669_c_300_150.jpg">
+        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518322816&sitesection=huffingtonpost" target="partners">
+          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10366457/518322816_3_300_150.jpg">
         </a>
       </div>
       <div class="caption">
-        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247669&sitesection=huffingtonpost" >Play</a>
+        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518322816&sitesection=huffingtonpost" >Play</a>
         <h3>
-          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518247669&sitesection=huffingtonpost" >'TV Wedding': The Rockin' Stelter Reception</a>
+          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518322816&sitesection=huffingtonpost" >Groomsman: How I Kicked Bridesmaid in Head</a>
         </h3>
       </div>
     </li>
   
-     <li class="item" data-title="Evolution Of The Wedding Dress" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518292672&sitesection=huffingtonpost" data-id="518292672" data-image="http://pthumbnails.5min.com/10365854/518292672_c_140_105.jpg">
+     <li class="item" data-title="Wedding Tips: Picking Out The Perfect Bridesmaid Dresses" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518264249&sitesection=huffingtonpost" data-id="518264249" data-image="http://pthumbnails.5min.com/10365285/518264249_3.jpg">
       <div class="media large_entry">
-        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518292672&sitesection=huffingtonpost" target="partners">
-          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10365854/518292672_c_300_150.jpg">
+        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518264249&sitesection=huffingtonpost" target="partners">
+          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10365285/518264249_3_300_150.jpg">
         </a>
       </div>
       <div class="caption">
-        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518292672&sitesection=huffingtonpost" >Play</a>
+        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518264249&sitesection=huffingtonpost" >Play</a>
         <h3>
-          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518292672&sitesection=huffingtonpost" >Evolution Of The Wedding Dress</a>
+          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518264249&sitesection=huffingtonpost" >Wedding Tips: Picking Out The Perfect Bridesmaid Dresses</a>
         </h3>
       </div>
     </li>
   
-     <li class="item" data-title="Wedding Invitation Etiquette" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518240010&sitesection=huffingtonpost" data-id="518240010" data-image="http://pthumbnails.5min.com/10364801/518240010_cv1_140_105.jpg">
+     <li class="item" data-title="UPS Guy Moonlights as Love Matchmaker" data-link="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518372102&sitesection=huffingtonpost" data-id="518372102" data-image="http://pthumbnails.5min.com/10367443/518372102_5.jpg">
       <div class="media large_entry">
-        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518240010&sitesection=huffingtonpost" target="partners">
-          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="518240010_300_150">
+        <a class="widget_entry_img" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518372102&sitesection=huffingtonpost" target="partners">
+          <img alt="" src="http://s.huffpost.com/images/blank.gif" class="unloaded-image img_border unloaded-image widget_thumb" longdesc="http://pthumbnails.5min.com/10367443/518372102_5_300_150.jpg">
         </a>
       </div>
       <div class="caption">
-        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518240010&sitesection=huffingtonpost" >Play</a>
+        <a class="icon-video" href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518372102&sitesection=huffingtonpost" >Play</a>
         <h3>
-          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518240010&sitesection=huffingtonpost" >Wedding Invitation Etiquette</a>
+          <a href="http://www.huffingtonpost.com/newsinc/landing_page.html?vid=518372102&sitesection=huffingtonpost" >UPS Guy Moonlights as Love Matchmaker</a>
         </h3>
       </div>
     </li>
@@ -2271,38 +2288,6 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                     <div class="slides-content">
                      <ul class="items" data-beacon='{"p":{"lnid":"page0"}}'>
                  
-              <li data-beacon='{"p":{"lnid":"sec0", "plid":5775076}}'>
-                <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
-                                <div class="media">
-                  <div class="img-wrapper group">
-                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">
-                      <img alt="" src="http://i.huffpost.com/gen/2029754/thumbs/s-RICE-KRISPIES-WIFE-mini.jpg" width="79" height="62">
-                    </a>
-                                      </div>
-                </div>
-                <h3>
-                  <a href="http://www.huffingtonpost.com/weddings/">Weddings</a>
-                </h3>
-                <h4>
-                  <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">This Is What True Romance Looks Like When You're Married</a>
-                </h4>
-                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/08\/husband-wife-love-notes_n_5775076.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5775076","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
-	<div class="relative">
-		<div class="facebook_like_button connect_widget button_count">
-			<div class="connect_button_slider float_left">
-                            <div class="connect_button_container">
-                                <a href="javascript:void(0);" class="connect_widget_like_button clearfix like_button_no_like"><span class="liketext">Like</span></a>
-                            </div>
-                        </div>
-			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
-                                <div class="connect_widget_button_count_count">116k</div>
-                    			</div>
-		<div class="fb_like_xml absolute"></div>
-	</div>
-</div>
-                </div>
-              </li>
-                 
               <li data-beacon='{"p":{"lnid":"sec0", "plid":5792214}}'>
                 <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
                                 <div class="media">
@@ -2327,7 +2312,71 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                             </div>
                         </div>
 			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
-                                <div class="connect_widget_button_count_count">1.7k</div>
+                                <div class="connect_widget_button_count_count">2.5k</div>
+                    			</div>
+		<div class="fb_like_xml absolute"></div>
+	</div>
+</div>
+                </div>
+              </li>
+                 
+              <li data-beacon='{"p":{"lnid":"sec0", "plid":5775076}}'>
+                <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
+                                <div class="media">
+                  <div class="img-wrapper group">
+                    <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">
+                      <img alt="" src="http://i.huffpost.com/gen/2029754/thumbs/s-RICE-KRISPIES-WIFE-mini.jpg" width="79" height="62">
+                    </a>
+                                      </div>
+                </div>
+                <h3>
+                  <a href="http://www.huffingtonpost.com/weddings/">Weddings</a>
+                </h3>
+                <h4>
+                  <a href="http://www.huffingtonpost.com/2014/09/08/husband-wife-love-notes_n_5775076.html?utm_hp_ref=mostpopular">This Is What True Romance Looks Like When You're Married</a>
+                </h4>
+                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/08\/husband-wife-love-notes_n_5775076.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5775076","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
+	<div class="relative">
+		<div class="facebook_like_button connect_widget button_count">
+			<div class="connect_button_slider float_left">
+                            <div class="connect_button_container">
+                                <a href="javascript:void(0);" class="connect_widget_like_button clearfix like_button_no_like"><span class="liketext">Like</span></a>
+                            </div>
+                        </div>
+			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
+                                <div class="connect_widget_button_count_count">124k</div>
+                    			</div>
+		<div class="fb_like_xml absolute"></div>
+	</div>
+</div>
+                </div>
+              </li>
+                 
+              <li data-beacon='{"p":{"lnid":"sec0", "plid":5775606}}'>
+                <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
+                                <div class="media">
+                  <div class="img-wrapper group">
+                    <a href="http://www.huffingtonpost.com/2014/09/09/kathy-masunaga-sweet-revenge_n_5775606.html?utm_hp_ref=mostpopular">
+                      <img alt="" src="http://i.huffpost.com/gen/2029922/thumbs/s-KATHY-MASUNAGA-SWEET-REVENGE-mini.jpg" width="79" height="62">
+                    </a>
+                                      </div>
+                </div>
+                <h3>
+                  <a href="http://www.huffingtonpost.com/divorce/">Divorce</a>
+                </h3>
+                <h4>
+                  <a href="http://www.huffingtonpost.com/2014/09/09/kathy-masunaga-sweet-revenge_n_5775606.html?utm_hp_ref=mostpopular">After An Awful Marriage, This Woman Got The Sweetest Revenge (Literally)</a>
+                </h4>
+                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/09\/kathy-masunaga-sweet-revenge_n_5775606.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5775606","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
+	<div class="relative">
+		<div class="facebook_like_button connect_widget button_count">
+			<div class="connect_button_slider float_left">
+                            <div class="connect_button_container">
+                                <a href="javascript:void(0);" class="connect_widget_like_button clearfix like_button_no_like"><span class="liketext">Like</span></a>
+                            </div>
+                        </div>
+			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
+                                <div class="connect_widget_button_count_count">11k</div>
                     			</div>
 		<div class="fb_like_xml absolute"></div>
 	</div>
@@ -2359,7 +2408,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                             </div>
                         </div>
 			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
-                                <div class="connect_widget_button_count_count">30k</div>
+                                <div class="connect_widget_button_count_count">32k</div>
                     			</div>
 		<div class="fb_like_xml absolute"></div>
 	</div>
@@ -2367,22 +2416,22 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                 </div>
               </li>
                  
-              <li data-beacon='{"p":{"lnid":"sec0", "plid":5775606}}'>
+              <li data-beacon='{"p":{"lnid":"sec0", "plid":5792464}}'>
                 <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
                                 <div class="media">
                   <div class="img-wrapper group">
-                    <a href="http://www.huffingtonpost.com/2014/09/05/kathy-masunaga-sweet-revenge-divorce-pie_n_5775606.html?utm_hp_ref=mostpopular">
-                      <img alt="" src="http://i.huffpost.com/gen/2029922/thumbs/s-KATHY-MASUNAGA-SWEET-REVENGE-mini.jpg" width="79" height="62">
+                    <a href="http://www.huffingtonpost.com/2014/09/09/bored-kid-white-house-photo_n_5792464.html?utm_hp_ref=mostpopular">
+                      <img alt="" src="http://i.huffpost.com/gen/2040698/thumbs/s-OBAMA-mini.jpg" width="79" height="62">
                     </a>
                                       </div>
                 </div>
                 <h3>
-                  <a href="http://www.huffingtonpost.com/divorce/">Divorce</a>
+                  <a href="http://www.huffingtonpost.com/parents/">Parents</a>
                 </h3>
                 <h4>
-                  <a href="http://www.huffingtonpost.com/2014/09/05/kathy-masunaga-sweet-revenge-divorce-pie_n_5775606.html?utm_hp_ref=mostpopular">After An Awful Marriage, This Woman Got The Sweetest Revenge (Literally)</a>
+                  <a href="http://www.huffingtonpost.com/2014/09/09/bored-kid-white-house-photo_n_5792464.html?utm_hp_ref=mostpopular">Bored Kid At The White House Really Can't Be Bothered With The President</a>
                 </h4>
-                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/05\/kathy-masunaga-sweet-revenge-divorce-pie_n_5775606.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5775606","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
+                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/09\/bored-kid-white-house-photo_n_5792464.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5792464","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
 	<div class="relative">
 		<div class="facebook_like_button connect_widget button_count">
 			<div class="connect_button_slider float_left">
@@ -2391,7 +2440,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                             </div>
                         </div>
 			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
-                                <div class="connect_widget_button_count_count">6.8k</div>
+                                <div class="connect_widget_button_count_count">7.4k</div>
                     			</div>
 		<div class="fb_like_xml absolute"></div>
 	</div>
@@ -2399,22 +2448,22 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                 </div>
               </li>
                  
-              <li data-beacon='{"p":{"lnid":"sec0", "plid":5781606}}'>
+              <li data-beacon='{"p":{"lnid":"sec0", "plid":5792792}}'>
                 <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
                                 <div class="media">
                   <div class="img-wrapper group">
-                    <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular">
-                      <img alt="" src="http://i.huffpost.com/gen/2035934/thumbs/s-RAY-RICE-mini.jpg" width="79" height="62">
+                    <a href="http://www.huffingtonpost.com/2014/09/09/connie-britton-father-figure-dating-life_n_5792792.html?utm_hp_ref=mostpopular">
+                      <img alt="" src="http://i.huffpost.com/gen/2041094/thumbs/s-CONNIE-BRITTON-mini.jpg" width="79" height="62">
                     </a>
                                       </div>
                 </div>
                 <h3>
-                  <a href="http://www.huffingtonpost.com/women/">Women</a>
+                  <a href="http://www.huffingtonpost.com/parents/">Parents</a>
                 </h3>
                 <h4>
-                  <a href="http://www.huffingtonpost.com/ethlie-ann-vare/he-hit-me-and-it-felt-lik_1_b_5781606.html?utm_hp_ref=mostpopular">Ethlie Ann Vare: The Real Reasons Women Like Ray Rice's Wife Janay Stay</a>
+                  <a href="http://www.huffingtonpost.com/2014/09/09/connie-britton-father-figure-dating-life_n_5792792.html?utm_hp_ref=mostpopular">The Quote That Keeps 'Screwing Up' Connie Britton's Dating Life</a>
                 </h4>
-                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/ethlie-ann-vare\/he-hit-me-and-it-felt-lik_1_b_5781606.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5781606","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
+                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/09\/connie-britton-father-figure-dating-life_n_5792792.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5792792","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
 	<div class="relative">
 		<div class="facebook_like_button connect_widget button_count">
 			<div class="connect_button_slider float_left">
@@ -2423,39 +2472,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                             </div>
                         </div>
 			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
-                                <div class="connect_widget_button_count_count">29k</div>
-                    			</div>
-		<div class="fb_like_xml absolute"></div>
-	</div>
-</div>
-                </div>
-              </li>
-                 
-              <li data-beacon='{"p":{"lnid":"sec0", "plid":5790320}}'>
-                <div class="most_popular_entry most_entry_bl" onmouseover="HPFB.likeButton_v2(this, 'like', false)" >
-                                <div class="media">
-                  <div class="img-wrapper group">
-                    <a href="http://www.huffingtonpost.com/2014/09/09/whyistayed-twitter-domestic-violence_n_5790320.html?utm_hp_ref=mostpopular">
-                      <img alt="" src="http://i.huffpost.com/gen/2039730/thumbs/s-WHYISTAYED-mini.jpg" width="79" height="62">
-                    </a>
-                                      </div>
-                </div>
-                <h3>
-                  <a href="http://www.huffingtonpost.com/women/">Women</a>
-                </h3>
-                <h4>
-                  <a href="http://www.huffingtonpost.com/2014/09/09/whyistayed-twitter-domestic-violence_n_5790320.html?utm_hp_ref=mostpopular">Domestic Abuse Survivors Explain Why They Can't 'Just Leave'</a>
-                </h4>
-                  <div  fblike_params='{"width":"90","height":"20","show_faces":"false","href":"http:\/\/www.huffingtonpost.com\/2014\/09\/09\/whyistayed-twitter-domestic-violence_n_5790320.html","background_color":"#ccc","font":"lucida grande","layout":"button_count","entry_id":"5790320","hp_track":"Most Popular - weddings","vertical_id":0}' class="float_left i_v_fb_like like_fb_like_action  i_v_with_count" >
-	<div class="relative">
-		<div class="facebook_like_button connect_widget button_count">
-			<div class="connect_button_slider float_left">
-                            <div class="connect_button_container">
-                                <a href="javascript:void(0);" class="connect_widget_like_button clearfix like_button_no_like"><span class="liketext">Like</span></a>
-                            </div>
-                        </div>
-			                                <div class="connect_widget_button_count_nub"><s></s><i></i></div>
-                                <div class="connect_widget_button_count_count">38k</div>
+                                <div class="connect_widget_button_count_count">82</div>
                     			</div>
 		<div class="fb_like_xml absolute"></div>
 	</div>
@@ -2470,6 +2487,50 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     <h2>Slideshows</h2>
   </div>
   <ul class="slides-content">
+       <li data-beacon='{"p":{"plid":5799980}}'>
+      <div class="media">
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-invitation-mistak_n_5799980.html">
+                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/356742/slide_356742_3931250_free.jpg" width="300" height="218">
+        </a>
+      </div>
+      <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-invitation-mistak_n_5799980.html">
+       Kids Make The Funniest Spelling Mistakes         </a>
+      </h3>
+    </li>
+       <li data-beacon='{"p":{"plid":5799596}}'>
+      <div class="media">
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-planning-problems_n_5799596.html">
+                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/334498/slide_334498_3352471_free.jpg" width="300" height="218">
+        </a>
+      </div>
+      <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/10/wedding-planning-problems_n_5799596.html">
+       The Funniest Wedding Photobombs        </a>
+      </h3>
+    </li>
+       <li data-beacon='{"p":{"plid":5799088}}'>
+      <div class="media">
+        <a href="http://www.huffingtonpost.com/2014/09/10/mens-thoughts-on-marriage_n_5799088.html">
+                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/357190/slide_357190_3943776_free.jpg" width="300" height="218">
+        </a>
+      </div>
+      <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/10/mens-thoughts-on-marriage_n_5799088.html">
+       45 Emotional Grooms' Reactions        </a>
+      </h3>
+    </li>
+       <li data-beacon='{"p":{"plid":5798998}}'>
+      <div class="media">
+        <a href="http://www.huffingtonpost.com/2014/09/10/fights-couples-have_n_5798998.html">
+                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/367510/slide_367510_4200206_free.jpg" width="300" height="218">
+        </a>
+      </div>
+      <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/10/fights-couples-have_n_5798998.html">
+       Funniest Engagement Photos        </a>
+      </h3>
+    </li>
        <li data-beacon='{"p":{"plid":5787742}}'>
       <div class="media">
         <a href="http://www.huffingtonpost.com/2014/09/10/als-wedding-story_n_5787742.html">
@@ -2479,50 +2540,6 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
       <h3>
         <a href="http://www.huffingtonpost.com/2014/09/10/als-wedding-story_n_5787742.html">
        Emotional Wedding Moments         </a>
-      </h3>
-    </li>
-       <li data-beacon='{"p":{"plid":5787742}}'>
-      <div class="media">
-        <a href="http://www.huffingtonpost.com/2014/09/10/als-wedding-story_n_5787742.html">
-                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/366914/slide_366914_4189334_free.jpg" width="300" height="218">
-        </a>
-      </div>
-      <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/10/als-wedding-story_n_5787742.html">
-       ALS Wedding Photos         </a>
-      </h3>
-    </li>
-       <li data-beacon='{"p":{"plid":5792214}}'>
-      <div class="media">
-        <a href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html">
-                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/342765/slide_342765_3548368_free.jpg" width="300" height="218">
-        </a>
-      </div>
-      <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/09/funny-girlfriend-note_n_5792214.html">
-       Passive Aggressive Roommate Notes        </a>
-      </h3>
-    </li>
-       <li data-beacon='{"p":{"plid":5791874}}'>
-      <div class="media">
-        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html">
-                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/367136/slide_367136_4192818_free.jpg" width="300" height="218">
-        </a>
-      </div>
-      <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html">
-       Real Weddings of the Week!        </a>
-      </h3>
-    </li>
-       <li data-beacon='{"p":{"plid":5791874}}'>
-      <div class="media">
-        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html">
-                    <img alt="" src="http://i.huffpost.com/gadgets/slideshows/367138/slide_367138_4192828_free.jpg" width="300" height="218">
-        </a>
-      </div>
-      <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/09/real-weddings_n_5791874.html">
-       Real Weddings of the Week        </a>
       </h3>
     </li>
      </ul>
@@ -2535,7 +2552,59 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
 <!-- /.mod-slideshow -->
 <div class='hr top'></div><div class="mod mod-advice" data-beacon='{"p":{"mlid":"mod-advice","mnid":"advice"}}'>
     <ul class="items divided">
-      <li id="entry_5769394" onmouseover="TrackingData.entry_5769394={id:5769394,blog_id:2,rank:7,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5769394,"mpid":7}}'>
+      <li id="entry_5754546" onmouseover="TrackingData.entry_5754546={id:5754546,blog_id:3,rank:7,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5754546,"mpid":7}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/bridal-guide/10-of-our-favorite-fall-w_b_5754546.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="It's That Time Of Year! 10 Of Our Favorite Fall Wedding Ideas" src="http://i.huffpost.com/gen/2024982/thumbs/n-FALL-WEDDING-large.jpg">
+        </a>
+        <span class="img-credit">Lauren Fair Photography </span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/bridal-guide/10-of-our-favorite-fall-w_b_5754546.html?utm_hp_ref=weddings&ir=Weddings" >
+            It's That Time Of Year! 10 Of Our Favorite Fall Wedding Ideas         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/bridal-guide/10-of-our-favorite-fall-w_b_5754546.html#comments" >
+        Comment    </a>
+	</li>
+<li id="entry_5772748" onmouseover="TrackingData.entry_5772748={id:5772748,blog_id:2,rank:8,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5772748,"mpid":8}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/05/bachelorette-party-music-video_n_5772748.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="This Epic Bachelorette Party Blows All Those Boozy Fests Out Of The Water" src="http://i.huffpost.com/gen/2027510/thumbs/n-BACHELORETTE-PARTY-VIDEO-large.jpg">
+        </a>
+        <span class="img-credit">Vimeo/Rantz and Raves</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/05/bachelorette-party-music-video_n_5772748.html?utm_hp_ref=weddings&ir=Weddings" >
+            This Epic Bachelorette Party Blows All Those Boozy Fests Out Of The Water         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/bachelorette-party-music-video_n_5772748.html#comments" >
+        24    </a>
+	</li>
+<li id="entry_5774980" onmouseover="TrackingData.entry_5774980={id:5774980,blog_id:2,rank:9,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5774980,"mpid":9}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/05/daughter-wedding-hospital-lisa-wilson-pantoja_n_5774980.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="Bride Gives Dying Father The Best Gift A Daughter Could Give" src="http://i.huffpost.com/gen/2029452/thumbs/n-DAVID-HALIBURTON-WILSON-large.jpg">
+        </a>
+        <span class="img-credit">Facebook / David Haliburton Wilson</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/05/daughter-wedding-hospital-lisa-wilson-pantoja_n_5774980.html?utm_hp_ref=weddings&ir=Weddings" >
+            Bride Gives Dying Father The Best Gift A Daughter Could Give         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/daughter-wedding-hospital-lisa-wilson-pantoja_n_5774980.html#comments" >
+        22    </a>
+	</li>
+<li id="entry_5773366" onmouseover="TrackingData.entry_5773366={id:5773366,blog_id:2,rank:10,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5773366,"mpid":10}}'>
+    <div class="img-wrapper group">
+        <a class="media" href="http://www.huffingtonpost.com/2014/09/05/pinterest-wedding-email_n_5773366.html?utm_hp_ref=weddings&ir=Weddings" >
+            <img alt="That Time Pinterest Congratulated Women On Their Non-Existent Weddings" src="http://i.huffpost.com/gen/2028750/thumbs/n-FUNNY-BRIDE-large.jpg">
+        </a>
+        <span class="img-credit">Fuse via Getty Images</span>	</div>
+    <h3>
+        <a href="http://www.huffingtonpost.com/2014/09/05/pinterest-wedding-email_n_5773366.html?utm_hp_ref=weddings&ir=Weddings" >
+            That Time Pinterest Congratulated Women On Their Non-Existent Weddings         </a>
+    </h3>
+    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/pinterest-wedding-email_n_5773366.html#comments" >
+        3    </a>
+	</li>
+<li id="entry_5769394" onmouseover="TrackingData.entry_5769394={id:5769394,blog_id:2,rank:11,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5769394,"mpid":11}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/05/unconditional-love_n_5769394.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="This Is What It Really Means To Love Someone Unconditionally" src="http://i.huffpost.com/gen/2025058/thumbs/n-COUPLE-HOLDING-HANDS-HOSPITAL-large.jpg">
@@ -2548,7 +2617,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     <a class="label comment" href="http://www.huffingtonpost.com/2014/09/05/unconditional-love_n_5769394.html#comments" >
         15    </a>
 	</li>
-<li id="entry_5763394" onmouseover="TrackingData.entry_5763394={id:5763394,blog_id:3,rank:8,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5763394,"mpid":8}}'>
+<li id="entry_5763394" onmouseover="TrackingData.entry_5763394={id:5763394,blog_id:3,rank:12,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5763394,"mpid":12}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/emma-nicholson/7-surefire-ways-to-improve-your-sex-life_b_5763394.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="7 Surefire Ways to Improve Your Sex Life After Tying The Knot " src="http://i.huffpost.com/gen/2024828/thumbs/n-SEX-large.jpg">
@@ -2561,7 +2630,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     <a class="label comment" href="http://www.huffingtonpost.com/emma-nicholson/7-surefire-ways-to-improve-your-sex-life_b_5763394.html#comments" >
         41    </a>
 	</li>
-<li id="entry_5767496" onmouseover="TrackingData.entry_5767496={id:5767496,blog_id:2,rank:9,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5767496,"mpid":9}}'>
+<li id="entry_5767496" onmouseover="TrackingData.entry_5767496={id:5767496,blog_id:2,rank:13,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5767496,"mpid":13}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/04/men-wedding-thoughts_n_5767496.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="17 Honest Thoughts Men Have About Their Wedding Day" src="http://i.huffpost.com/gen/2024430/thumbs/n-GROOM-large.jpg">
@@ -2578,7 +2647,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     
         
             
-	            <li id="entry_5762384" onmouseover="TrackingData.entry_5762384={id:5762384,blog_id:2,rank:10,zone:6,vertical:71,ab_headline:'b'};" data-beacon='{"p":{"plid":5762384,"mpid":10}}'>
+	            <li id="entry_5762384" onmouseover="TrackingData.entry_5762384={id:5762384,blog_id:2,rank:14,zone:6,vertical:71,ab_headline:'b'};" data-beacon='{"p":{"plid":5762384,"mpid":14}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/04/funny-marriage-compromise_n_5762384.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="10 Couples Who Really, Truly Understand That Marriage Takes Compromise" src="http://i.huffpost.com/gen/2024662/thumbs/n-SPLIT-large.jpg">
@@ -2594,7 +2663,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
             
         
     
-<li id="entry_5762470" onmouseover="TrackingData.entry_5762470={id:5762470,blog_id:2,rank:11,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5762470,"mpid":11}}'>
+<li id="entry_5762470" onmouseover="TrackingData.entry_5762470={id:5762470,blog_id:2,rank:15,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5762470,"mpid":15}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/04/marriage-advice_n_5762470.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="21 Secrets To A Happy Marriage" src="http://i.huffpost.com/gen/2023436/thumbs/n-HAPPY-OLD-COUPLE-large.jpg">
@@ -2607,7 +2676,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     <a class="label comment" href="http://www.huffingtonpost.com/2014/09/04/marriage-advice_n_5762470.html#comments" >
         8    </a>
 	</li>
-<li id="entry_5733596" onmouseover="TrackingData.entry_5733596={id:5733596,blog_id:3,rank:12,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5733596,"mpid":12}}'>
+<li id="entry_5733596" onmouseover="TrackingData.entry_5733596={id:5733596,blog_id:3,rank:16,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5733596,"mpid":16}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/rachel-weinstein/the-top-five-reasons-i-st_b_5733596.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="5 Reasons I (Still) Believe In Marriage" src="http://i.huffpost.com/gen/2020246/thumbs/n-HAPPY-COUPLE-large.jpg">
@@ -2620,7 +2689,7 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     <a class="label comment" href="http://www.huffingtonpost.com/rachel-weinstein/the-top-five-reasons-i-st_b_5733596.html#comments" >
         Comment    </a>
 	</li>
-<li id="entry_5754710" onmouseover="TrackingData.entry_5754710={id:5754710,blog_id:2,rank:13,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5754710,"mpid":13}}'>
+<li id="entry_5754710" onmouseover="TrackingData.entry_5754710={id:5754710,blog_id:2,rank:17,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5754710,"mpid":17}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/03/inspiring-marriage-stories_n_5754710.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="23 Husbands Describe The Moment They Knew They Found 'The One'" src="http://i.huffpost.com/gen/2015264/thumbs/n-COUPLE-IN-LOVE-large.jpg">
@@ -2631,9 +2700,9 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
             23 Husbands Describe The Moment They Knew They Found 'The One'         </a>
     </h3>
     <a class="label comment" href="http://www.huffingtonpost.com/2014/09/03/inspiring-marriage-stories_n_5754710.html#comments" >
-        43    </a>
+        47    </a>
 	</li>
-<li id="entry_5759030" onmouseover="TrackingData.entry_5759030={id:5759030,blog_id:2,rank:14,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5759030,"mpid":14}}'>
+<li id="entry_5759030" onmouseover="TrackingData.entry_5759030={id:5759030,blog_id:2,rank:18,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5759030,"mpid":18}}'>
     <div class="img-wrapper group">
         <a class="media" href="http://www.huffingtonpost.com/2014/09/03/princess-diana-wedding-dress-sons_n_5759030.html?utm_hp_ref=weddings&ir=Weddings" >
             <img alt="Princess Diana's Wedding Dress Is Changing Hands" src="http://i.huffpost.com/gen/2017314/thumbs/n-PRINCESS-DIANA-WEDDING-DRESS-large.jpg">
@@ -2645,58 +2714,6 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
     </h3>
     <a class="label comment" href="http://www.huffingtonpost.com/2014/09/03/princess-diana-wedding-dress-sons_n_5759030.html#comments" >
         56    </a>
-	</li>
-<li id="entry_5738282" onmouseover="TrackingData.entry_5738282={id:5738282,blog_id:3,rank:15,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5738282,"mpid":15}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/damona-hoffman/6-crucial-questions-to-as_b_5738282.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="6 Crucial Questions To Ask Before Moving In Together" src="http://i.huffpost.com/gen/2006094/thumbs/n-MOVING-IN-TOGETHER-large.jpg">
-        </a>
-        <span class="img-credit">IPGGutenbergUKLtd via Getty Images</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/damona-hoffman/6-crucial-questions-to-as_b_5738282.html?utm_hp_ref=weddings&ir=Weddings" >
-            6 Crucial Questions To Ask Before Moving In Together         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/damona-hoffman/6-crucial-questions-to-as_b_5738282.html#comments" >
-        3    </a>
-	</li>
-<li id="entry_5683414" onmouseover="TrackingData.entry_5683414={id:5683414,blog_id:2,rank:16,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5683414,"mpid":16}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/08/25/unveiled-bridal-events_n_5683414.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="California Brides, The Unveiled Bridal Event Is Coming To A City Near You!" src="http://i.huffpost.com/gen/1981380/thumbs/n-UNVEILED-PIC-large.jpg">
-        </a>
-        <span class="img-credit">Courtesy of Unveiled </span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/08/25/unveiled-bridal-events_n_5683414.html?utm_hp_ref=weddings&ir=Weddings" >
-            California Brides, The Unveiled Bridal Event Is Coming To A City Near You!         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/08/25/unveiled-bridal-events_n_5683414.html#comments" >
-        2    </a>
-	</li>
-<li id="entry_5755174" onmouseover="TrackingData.entry_5755174={id:5755174,blog_id:2,rank:17,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5755174,"mpid":17}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/02/real-weddings_n_5755174.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="See Who Got Married This Weekend!" src="http://i.huffpost.com/gen/2015236/thumbs/n-REAL-WED-large.jpg">
-        </a>
-        <span class="img-credit">Waterhouse Studios</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/02/real-weddings_n_5755174.html?utm_hp_ref=weddings&ir=Weddings" >
-            See Who Got Married This Weekend!         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/02/real-weddings_n_5755174.html#comments" >
-        Comment    </a>
-	</li>
-<li id="entry_5754262" onmouseover="TrackingData.entry_5754262={id:5754262,blog_id:2,rank:18,zone:6,vertical:71,ab_headline:'a'};" data-beacon='{"p":{"plid":5754262,"mpid":18}}'>
-    <div class="img-wrapper group">
-        <a class="media" href="http://www.huffingtonpost.com/2014/09/02/slim-engagement-ring-box-_n_5754262.html?utm_hp_ref=weddings&ir=Weddings" >
-            <img alt="This Handy-Dandy, Super Slim Ring Box Is A Game Changer" src="http://i.huffpost.com/gen/2014206/thumbs/n-SKINNY-RING-large.jpg">
-        </a>
-        <span class="img-credit">Andrew Zo</span>	</div>
-    <h3>
-        <a href="http://www.huffingtonpost.com/2014/09/02/slim-engagement-ring-box-_n_5754262.html?utm_hp_ref=weddings&ir=Weddings" >
-            This Handy-Dandy, Super Slim Ring Box Is A Game Changer         </a>
-    </h3>
-    <a class="label comment" href="http://www.huffingtonpost.com/2014/09/02/slim-engagement-ring-box-_n_5754262.html#comments" >
-        3    </a>
 	</li>
   </ul>
 </div>
@@ -2798,6 +2815,12 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
         
             <li>
                 <h5>
+                    <a href="http://feedproxy.google.com/~r/typepad/style_me_pretty/~3/iZvYYN9YoKM/">Vibrant Open Air Wedding in Santa Barbara</a>
+                </h5>
+            </li>
+        
+            <li>
+                <h5>
                     <a href="http://feedproxy.google.com/~r/typepad/style_me_pretty/~3/bsLZLdiukYY/">DIY “Will You Be My Groomsman?” Box</a>
                 </h5>
             </li>
@@ -2808,37 +2831,31 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
                 </h5>
             </li>
         
-            <li>
-                <h5>
-                    <a href="http://feedproxy.google.com/~r/typepad/style_me_pretty/~3/JGBu-Ytkjs0/">Glamorous Garden Wedding at the Beverly Hills Hotel</a>
-                </h5>
-            </li>
-        
     </ul>
 </li>
 </li><li><li>
     <h4>
-        <a class="logo-5" href="http://offbeatbride.com/">
-            Offbeat Bride &raquo;
+        <a class="logo-4" href="http://greenweddingshoes.com/">
+            Green Wedding Shoes &raquo;
         </a>
     </h4>
     <ul>
         
             <li>
                 <h5>
-                    <a href="http://offbeatbride.com/2014/09/goth-washington-wedding">The goth glam sizzles at this Washington barn wedding</a>
+                    <a href="http://feedproxy.google.com/~r/GreenWeddingShoes/~3/Hw6LqlmB5zI/">Beautiful Boho Wedding Dresses from Dreamers & Lovers</a>
                 </h5>
             </li>
         
             <li>
                 <h5>
-                    <a href="http://offbeatbride.com/2014/09/australia-retro-chic-wedding">Stephanie & James' Snow White meets Americana retro wedding</a>
+                    <a href="http://feedproxy.google.com/~r/GreenWeddingShoes/~3/a9QJCk_bGq8/">Gorgeous Bohemian Nicaraguan Wedding: Maja + Wes</a>
                 </h5>
             </li>
         
             <li>
                 <h5>
-                    <a href="http://offbeatbride.com/2014/09/destination-wedding-photography">What are destination wedding photographer Dustin Cantrell's 3 favorite things about offbeat weddings?</a>
+                    <a href="http://feedproxy.google.com/~r/GreenWeddingShoes/~3/BCzkOAnziX8/">Organic Botanical Floral Inspiration</a>
                 </h5>
             </li>
         
@@ -2926,14 +2943,14 @@ jQuery('#af-blackberry_bubble .closable').live('click', function(){
 
 
 
-<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_bottom_1x1" class="ad_store "></div>            
+<div style="width:300px" id="ad_store_adtech_header" class="ad_store "></div><div style="width:300px" id="ad_store_top_1x1" class="ad_store "></div><div style="width:300px" id="ad_store_big_news_link" class="ad_store "></div><div style="width:300px" id="ad_store_right_rail_300x250_lower" class="ad_store "></div><div style="width:300px" id="ad_store_bottom_1x1" class="ad_store "></div>            
             <div id="console"></div>
                 <script type="text/javascript">
-                    if(HPAds.ad_check_page_config('adtech_header'))HPAds.ad_store_push('adtech_header', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('top_1x1'))HPAds.ad_store_push('top_1x1', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('bottom_1x1'))HPAds.ad_store_push('bottom_1x1', '', 300, false, false, false, false);
+                    if(HPAds.ad_check_page_config('adtech_header'))HPAds.ad_store_push('adtech_header', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('top_1x1'))HPAds.ad_store_push('top_1x1', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('big_news_link'))HPAds.ad_store_push('big_news_link', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('right_rail_300x250_lower'))HPAds.ad_store_push('right_rail_300x250_lower', '', 300, false, false, false, false);if(HPAds.ad_check_page_config('bottom_1x1'))HPAds.ad_store_push('bottom_1x1', '', 300, false, false, false, false);
                     HPAds.ad_store_move_to_place(false);
-                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["bottom_1x1"]=true; HPAds.page_spots["leaderboard_flex"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["top_1x1"]=true; 
+                    HPAds.page_spots["adtech_header"]=true; HPAds.page_spots["asset_inserts"]=true; HPAds.page_spots["big_news_link"]=true; HPAds.page_spots["bottom_1x1"]=true; HPAds.page_spots["bottom_728x90"]=true; HPAds.page_spots["leaderboard_flex"]=true; HPAds.page_spots["right_rail_300x250_lower"]=true; HPAds.page_spots["right_rail_flex"]=true; HPAds.page_spots["top_1x1"]=true; 
                 </script>
-<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410367314,"entry":0,"vertical":"weddings","vertical-id":71,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostWeddings","current_vertical_twitter_name":"huffpostwedding","vertical\/bignews":"weddings"}); });</script>
+<script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410388969,"entry":0,"vertical":"weddings","vertical-id":71,"vertical-name":"","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffPostWeddings","current_vertical_twitter_name":"huffpostwedding","vertical\/bignews":"weddings"}); });</script>
 
 <!--if user has AOL's referrer we display AOL NavBar -->
 <script type="text/javascript" src='http://s1.huffpost.com/assets/js.php?v=1410282423&f=aolunb.js'></script>

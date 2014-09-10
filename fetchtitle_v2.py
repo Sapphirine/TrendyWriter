@@ -6,8 +6,6 @@
 # (USAGE) python fetchtitle_v2.py | tee debug.txt
 #         (only if necessary) grep 'ERROR' debug.txt > error.txt
 
-
-
 import urllib
 from HTMLParser import HTMLParser
 
@@ -18,23 +16,22 @@ store_url = 'url/all_urls.txt'
 
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser): 
-
     def __init__(self, get_url, url):
         # call super constructor
         HTMLParser.__init__(self)
         self.get_url = get_url
         self.url = url
         self.found_a  = False
-
         self.found_h1 = False
         self.found_h2 = False
         self.found_h3 = False
         self.found_h4 = False
         self.found_h5 = False
         self.found_h6 = False
-
         self.found_li = False
-        
+
+        self.url_list = []
+        self.topic_list = []
         
     def handle_starttag(self, tag, attrs):
         # print "Encountered a start tag:", tag, attrs
@@ -60,22 +57,53 @@ class MyHTMLParser(HTMLParser):
                 self.found_a = True
                 for attr in attrs:
                     if attr[0] == 'href':
-                        if attr[1][0:7] == 'http://' and attr[1][-4:] != '.pdf'\
-                             and attr[1][-4:] != '.asp': 
-                            print '[INFO] href = ', attr[1]
-                            with open(store_url, 'a') as writing_file:
-                                writing_file.write(attr[1] + '\n');
-                        elif attr[1][0:1] != '#' and attr[1][0:5] != 'https'\
-                             and attr[1][0:] != '/':
-                            if attr[1][0:1] == '/':
+                        url = attr[1] 
+                        if url[-1:] != '/':
+                            url += '/'
+                        # if the url starting with 'http://'
+                        if url[0:7] == 'http://' and url[-4:] != '.pdf'\
+                         and url[-4:] != '.asp': 
+                            # eliminate duplicated url
+                            if not url in self.url_list:
+                                print '[INFO] href = ', url
+                                with open(store_url, 'a') as writing_file:
+                                    writing_file.write(url + '\n')
+                                self.url_list.append(url + '/')  
+                            else:
+                                print '[DUPLICATE] href = ', url  
+                        # other url starting without 'http://'
+                        elif url[0:1] != '#' and url[0:5] != 'https'\
+                         and url[0:] != '/' and url[0:10] != 'javascript':
+                            # if the url is a absolute path
+                            if url[0:1] == '/':
+                                # if '/' is not the final character 
                                 if self.url[7:].index('/') != (len(self.url[7:])-1):
-                                    with open(store_url, 'a') as writing_file:
-                                        writing_file.write('http://' + self.url[7:][:self.url[7:].index('/')] + attr[1] + '\n');
+                                    if not url in  self.url_list:
+                                        print '[INFO] href = ', url
+                                        with open(store_url, 'a') as writing_file:
+                                            writing_file.write('http://' + self.url[7:][:self.url[7:].index('/')]\
+                                             + url + '\n')
+                                        self.url_list.append(url)
+                                    else:
+                                        print '[DUPLICATE] href = ', url
+                                # if '/' is the final character
                                 else:
-                                    print '[INFO] href = ', attr[1]
+                                    if not url in  self.url_list:
+                                        print '[INFO] href = ', url
+                                        with open(store_url, 'a') as writing_file:
+                                            writing_file.write(self.url + url[1:] + '\n')
+                                        self.url_list.append(url)
+                                    else:
+                                        print '[DUPLICATE] href = ', url
+                            # if the url is a relative path
+                            else:
+                                if not url in  self.url_list:
+                                    print '[INFO] href = ', url
                                     with open(store_url, 'a') as writing_file:
-                                        writing_file.write(self.url + attr[1][1:] + '\n');
-
+                                        writing_file.write(self.url + url + '\n')
+                                    self.url_list.append(url)
+                                else:
+                                    print '[DUPLICATE] href = ', url
 
     def handle_endtag(self, tag):
         #print "Encountered an end tag :", tag
@@ -103,23 +131,26 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         # print "Encountered some data  :", data
         if self.get_url == False:
-            if (self.found_a == True and ( \
-                    (self.found_h1 == True)\
-                 or (self.found_h2 == True)\
-                 or (self.found_h3 == True)\
-                 or (self.found_h4 == True)\
-                 or (self.found_h5 == True)\
-                 or (self.found_h6 == True))):
-                
-                # "print" can only output ascii encoded normal String
-                #,so use "encode()" method to return ascii normal String.
-                print '[INFO] Data = ', data.encode ('utf-8').strip()
+            if (self.found_a == True and (\
+                (self.found_h1 == True)\
+             or (self.found_h2 == True)\
+             or (self.found_h3 == True)\
+             or (self.found_h4 == True)\
+             or (self.found_h5 == True)\
+             or (self.found_h6 == True))):
+            # eliminate duplicated topics
+                if not data.encode ('utf-8').strip() in self.topic_list:
+                    # "print" can only output ascii encoded normal String
+                    #,so use "encode()" method to return ascii normal String.
+                    print '[INFO] Data = ', data.encode ('utf-8').strip()
 
-                with open (store_topic, 'a') as writing_file:
-                    # Use "encode()" method to return ascii normal String 
-                    writing_file.write (data.encode('utf-8').strip())
-                    writing_file.write ('\n');
-
+                    with open (store_topic, 'a') as writing_file:
+                        # Use "encode()" method to return ascii normal String 
+                        writing_file.write (data.encode('utf-8').strip())
+                        writing_file.write ('\n') 
+                    self.topic_list.append(data.encode ('utf-8').strip())
+                else:
+                    print '[DUPLICATE] Data = ', data.encode ('utf-8').strip()
         else:
             if self.found_li == True and self.found_a == True:
                 # print 'Link data = ', data
@@ -130,7 +161,6 @@ class MyHTMLParser(HTMLParser):
         pass
 
 def main():
-
     # Clean the processing files
     open (store_url, 'w').close ()
     open (store_topic, 'w').close ()
@@ -157,7 +187,7 @@ def main():
     parser.feed (htmltxt.decode ('utf-8'))
 
     # read urls from the url recording file.
-    i = 0;
+    i = 0 
     with open (store_url, 'r') as reading_file:
         for pageUrl in reading_file:
             store_html_path = store_html + str(i) + '.html'
@@ -174,11 +204,13 @@ def main():
             parser = MyHTMLParser (False, url)
             # "feed" method's parameter had better be unicode
             #,so use decode('utf-8') to restore to unicode string.
-            parser.feed (htmltxt2.decode ('utf-8'))
-
+            try:
+                parser.feed (htmltxt2.decode ('utf-8'))
+            except Exception:
+                print '[ERROR] Parsing Error: ', pageUrl , ' in ', store_html_path
+                parser.feed (unicode(htmltxt2, errors='ignore'))
             parser.close ()
             fHandle.close ()
-
             i += 1
 
 if __name__ == '__main__' :
