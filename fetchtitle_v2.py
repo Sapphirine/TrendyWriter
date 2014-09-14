@@ -33,14 +33,18 @@ from HTMLParser import HTMLParser
 
 from htmlentitydefs import name2codepoint 
 
+# store path variables:
 store_html = 'res/url_'
 store_homepage = 'res/home_.html'
 store_topic = 'topic/all_topics.txt'
 store_url = 'url/all_urls.txt'
 
-DEBUG = False
+# debug variables:
+DEBUG = True
+debug_url = 'http://www.huffingtonpost.com/science/'
+debug_storepath = 'debug/debug_page.html'
 
-# Create a subclass and override the handler methods.
+# (note) Create a subclass and override the handler methods.
 class MyHTMLParser(HTMLParser): 
     url_list = []
     topic_list = []
@@ -86,10 +90,10 @@ class MyHTMLParser(HTMLParser):
                         url = attr[1] 
                         if url[-1:] != '/':
                             url += '/'
-                        # if the url starting with 'http://'
+                        # If the url starting with 'http://'.
                         if url[0:7] == 'http://' and url[-4:] != '.pdf'\
                          and url[-4:] != '.asp': 
-                            # eliminate duplicated url
+                            # Eliminate duplicated url.
                             if not url in MyHTMLParser.url_list:
                                 print '[INFO] href = ', url
                                 with open(store_url, 'a') as writing_file:
@@ -97,12 +101,12 @@ class MyHTMLParser(HTMLParser):
                                 MyHTMLParser.url_list.append(url + '/')  
                             else:
                                 print '[DUPLICATE] href = ', url  
-                        # other url starting without 'http://'
+                        # If other url starting without 'http://'.
                         elif url[0:1] != '#' and url[0:5] != 'https'\
                          and url[0:] != '/' and url[0:10] != 'javascript':
-                            # if the url is a absolute path
+                            # If the url is a absolute path.
                             if url[0:1] == '/':
-                                # if '/' is not the final character 
+                                # If '/' is not the final character.
                                 if self.url[7:].index('/') != (len(self.url[7:])-1):
                                     if not url in  MyHTMLParser.url_list:
                                         print '[INFO] href = ', url
@@ -112,7 +116,7 @@ class MyHTMLParser(HTMLParser):
                                         MyHTMLParser.url_list.append(url)
                                     else:
                                         print '[DUPLICATE] href = ', url
-                                # if '/' is the final character
+                                # If '/' is the final character.
                                 else:
                                     if not url in  MyHTMLParser.url_list:
                                         print '[INFO] href = ', url
@@ -121,7 +125,7 @@ class MyHTMLParser(HTMLParser):
                                         MyHTMLParser.url_list.append(url)
                                     else:
                                         print '[DUPLICATE] href = ', url
-                            # if the url is a relative path
+                            # If the url is a relative path.
                             else:
                                 if not url in  MyHTMLParser.url_list:
                                     print '[INFO] href = ', url
@@ -164,14 +168,14 @@ class MyHTMLParser(HTMLParser):
              or (self.found_h4 == True)\
              or (self.found_h5 == True)\
              or (self.found_h6 == True))):
-                # eliminate duplicated topics
+                # Eliminate duplicated topics.
                 if not data.encode ('utf-8').strip() in MyHTMLParser.topic_list:
-                    # The "print" can only output ascii encoded normal String
-                    # ,so use "encode()" method to return ascii normal String.
+                    # The "print" can only output Ascii encoded normal String
+                    # ,so use "encode()" method to return Ascii normal String.
                     print '[INFO] Data = ', data.encode ('utf-8').strip()
 
                     with open (store_topic, 'a') as writing_file:
-                        # Use "encode()" method to return ascii normal String 
+                        # Use "encode()" method to return Ascii normal String 
                         writing_file.write (data.encode('utf-8').strip())
                         writing_file.write ('\n') 
                     MyHTMLParser.topic_list.append(data.encode ('utf-8').strip())
@@ -206,32 +210,39 @@ class MyHTMLParser(HTMLParser):
 def main():
     welcome_text()
     if DEBUG:
-        pass
+        urllib.urlretrieve (debug_url, debug_storepath)
+
+        debugHandle = urllib.urlopen (debug_url)
+        debug_htmltxt = debugHandle.read ()
+        debugHandle.close()
+
+        url_parser = MyHTMLParser (False, debug_url)
+        url_parser.feed(debug_htmltxt.decode('utf-8'))
+        url_parser.close()
+
     else:
-        # Clean the processing files
+        # Clean the to-be-processing files.
         open (store_url, 'w').close ()
         open (store_topic, 'w').close ()
 
         url = raw_input('Enter an url : ')
         if url[-1:] != '/':
            url += '/'
-        
-        # (DEBUG)
-        # url = 'http://www.reuters.com/finance/markets/'
 
-        # Generate a file from the url (replace the old ones if file existed).
+        # Generate a file from the specified URL (replace the old ones if file existed).
         urllib.urlretrieve (url, store_homepage)
 
-        # Make sure to use urlopen to open html file(unicode).
+        # Make sure to use urlopen to open html file(Unicode).
         homeHandle = urllib.urlopen (url)
-        # "read()" return ascii encoded normal String(htmltxt)
+        # Method "read()" return Ascii encoded normal String(htmltxt).
         htmltxt = homeHandle.read ()
         homeHandle.close ()
         
-        parser = MyHTMLParser (True, url)
-        # The "feed" method's parameter had better be unicode
-        # ,so use decode('utf-8') to restore to unicode string.
-        parser.feed (htmltxt.decode ('utf-8'))
+        url_parser = MyHTMLParser (True, url)
+        # The "feed" method's parameter had better be Unicode
+        # ,so use decode('utf-8') to restore to Unicode string.
+        url_parser.feed (htmltxt.decode ('utf-8'))
+        url_parser.close()
 
         # Read each url from the url recording file.
         i = 0 
@@ -240,17 +251,19 @@ def main():
                 store_html_path = store_html + str(i) + '.html'
                 print '[INFO] Processing: ', pageUrl, ' to ', store_html_path
 
+                # Read html text from Web.
                 fHandle = urllib.urlopen (pageUrl)
-                # "read()" return ascii encoded normal String(htmltxt2)
+                # "read()" return Ascii encoded normal String(htmltxt2)
                 htmltxt2 = fHandle.read ()
                 
-                # 'w' will overwrite the original file with a new one
+                # Store reading html text to a file.
+                # (note) Parameter 'w' will overwrite the original file with a new one.
                 with open (store_html_path, 'w') as retPage:
                     retPage.write (htmltxt2)
 
                 parser = MyHTMLParser (False, url)
-                # The "feed" method's parameter had better be unicode
-                # ,so use decode('utf-8') to restore to unicode string.
+                # The "feed" method's parameter had better be Unicode
+                # ,so use decode('utf-8') to restore to Unicode string.
                 try:
                     parser.feed (htmltxt2.decode ('utf-8'))
                     
