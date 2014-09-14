@@ -1,924 +1,1497 @@
-<!DOCTYPE html>
-<html>
+<!--[if !IE]> This has been served from cache <![endif]-->
+<!--[if !IE]> Request served from apache server: S264630NJ2XSF02 <![endif]-->
+<!--[if !IE]> Cached on Sat, 13 Sep 2014 19:50:41 GMT and will expire on Sat, 13 Sep 2014 19:55:40 GMT <![endif]-->
+<!--[if !IE]> token: 50855f18-eebd-471e-981b-1497ef2fd23a <![endif]-->
+<!--[if !IE]> CSTAT-UUID: 87d50ea6-3f46-40c0-a789-c3b3b84b60fe <![endif]-->
+<!--[if !IE]> App Server /S264630NJ2XSF48/ <![endif]-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQAVVVQGwEHV1RTBAU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
-
-  <!-- Site Properities -->
-  <title>New Republic</title>
-
-    <meta name="description" content="The New Republic tackles politics, culture, and big ideas from an unbiased and thought-provoking perspective." />
-  <meta name="keywords" content="politics, domestic and foreign policy, book reviews, washington, congress, capitol hill, white house, literature, arts" />
-  
-  <!-- Mobile Properities -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-144x144.png" />
-
-  <meta name="apple-mobile-web-app-title" content="New Republic">
-  <meta name="google-site-verification" content="yjAiUZ-nXs91TSe9Er7xAnQBp2C8V2gg-mpTF7aZh20" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Social Properities -->
-  <meta property="twitter:account_id" content="82689705" />
-  <meta property="fb:app_id" content="219642118178156" />
-  <meta property="fb:admins" content="100001770781440" />
-  <meta property="fb:admins" content="19000185" />
-  <meta property="fb:admins" content="2400669" />
-  <meta property="fb:admins" content="600931" />
-  <meta property="fb:admins" content="5" />
-  <link href="https://plus.google.com/+thenewrepublic/" rel="publisher" />
-
-  <meta name="parsely-page" content='{"title":"TNR Home Page","link":"http:\/\/www.newrepublic.com\/","type":"frontpage"}' />
-  <link rel="canonical" href="http://www.newrepublic.com/" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="The New Republic" href="http://www.newrepublic.com/rss.xml" />
-<link rel="shortcut icon" href="http://www.newrepublic.com/sites/default/files/newrepublic-icon.ico" type="image/vnd.microsoft.icon" />
-<meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<meta property="og:site_name" content="New Republic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.newrepublic.com/" />
-<meta property="og:title" content="New Republic" />
-<meta name="dcterms.title" content="New Republic" />
-<meta name="dcterms.type" content="Text" />
-<meta name="dcterms.format" content="text/html" />
-<meta name="dcterms.identifier" content="http://www.newrepublic.com/" />
-  <link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_4hPmAO_Nvj6jiRjsl7yjW6iGzgIXcDYAzsF_zjCZPRU.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_tMu85oxBwJeA0ft2jJBpmbx9QUljMx-rJlqB5RG-kRg.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_e6NSrz0eAtXd6XIybK4UIc7su1S1lr86zr5Zpcjhfb0.css" media="all" />
-<link rel="stylesheet" type="text/css" href="/sites/all/themes/tnr/build/devices/print.css" media="print">
-  <!-- Reset JS before Page Load !-->
-<script src="/sites/all/themes/tnr/javascript/reset.js"></script>
-  <!-- Google Analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-10465183-1']);
-  _gaq.push(['_setDomainName', 'newrepublic.com']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+<script language="javascript">
+        if (location.href.indexOf('/commentsChild?') == -1){
+                document.write("<scr"+"ipt type='text/javascript' src='//nexus.ensighten.com/reuters/Bootstrap.js'></scr"+"ipt>");
+        }
 </script>
 
-<!-- comScore -->
-<script>
-var _comscore = _comscore || [];
-_comscore.push({ c1: "2", c2: "15230262" });
-(function() {
-var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-el.parentNode.insertBefore(s, el);
-})();
-</script>  
-<!-- Google Ads -->
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
+<title>Politics & Political News | Reuters.com</title>
+		<meta id="MetaDescription" name="description" content="Find out what’s happening in the world of politics at Reuters.com.  Get up to the minute, impartial political news coverage on the leaders, policies and agendas that shape our world."></meta>
+		<meta id="MetaKeywords" name="keywords" content="Politics, political news, political commentary, coverage, Rueters, Roiters">
 
-// pusher
-window.googletag     = window.googletag || {}
-window.googletag.cmd = window.googletag.cmd || [];
 
-// loader
-(function() {
-  var
-    gads   = document.createElement('script'),
-    useSSL = 'https:' == document.location.protocol,
-    node
-  ;
-  gads.async = true;
-  gads.type  = 'text/javascript';
-  gads.src   = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-  node       = document.getElementsByTagName('script')[0];
-  node.parentNode.insertBefore(gads, node);
-})();
-//--><!]]>
-</script>
+<meta name="parsely-page" content='{"type": "sectionpage","tags": "[Politics, political news, political commentary, coverage, Rueters, Roiters]", "title": "", "link": "", "image_url": "", "post_id": "", "pub_date": "", "section": "", "author": "" }' >
+			<link rel="shortcut icon" href="http://s3.reutersmedia.net/resources/images/favicon.ico" />
+  <link rel="icon" href="http://s3.reutersmedia.net/resources/images/favicon.ico"  />
+	<link href="http://s3.reutersmedia.net/resources_v2/css/rcom-main.css" rel="stylesheet" />
+<style type="text/css">
 
-<!-- Google Ad Leaderboards -->
-<script type="text/javascript">
-// push ads available on all pages onready without jquery (not available till end of page)
-document.onreadystatechange = function () {
-  var
-    state = document.readyState
-  ;
-  if (state === 'interactive' && window.site !== undefined) {
-    site.utilities.load.ads([
-      {
-        name  : '/25738720/Web-HomePage-LB0',
-        id    : 'leaderboard-ad',
-        sizes : [
-          [970, 90],
-          [728, 90]
-        ]
-      },
-      {
-        name  : '/25738720/Mobile-HomePage-LB0',
-        id    : 'mobile-leaderboard-ad',
-        sizes : [
-          [320, 50]
-        ]
-      }
-    ]);
-  }
-};
-</script>
+#feature-elections .moduleHeader {
+	margin: 0;
+	padding: 0;
+	height: 58px;
+	background: url("/resources/media/global/assets/art/special-elections.gif") top left no-repeat;
+}
+#feature-elections h3 {
+	margin: 0;
+	padding: 0;
+	text-indent: -2000px;
+	height: 58px;
+	overflow: hidden;
+}
+#feature-elections .moduleHeader h3 a {
+	display: block;
+	height: 58px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.focus .module {
+	background: #F3F3F3;
+	margin: 0 0 15px 0;
+}
+.focus .module .moduleHeader {
+	margin: 0;
+}
+.focus .module .moduleBody {
+	margin: 15px 15px 0 15px;
+	padding-bottom: 5px;
+	width: 270px;
+	display: inline;
+	overflow: hidden;
+}
+
+.focus .module .moduleBody .dividerInlineH {
+	height: 5px;
+	background: #D6D6D6;
+	background-image: none;
+	float: none;
+	width: 270px;
+	margin: 0 0 10px 0;
+	clear: both;
+	overflow: hidden;
+}
+
+.focus .module .moduleBody .moduleBody {
+	margin: 0;
+	width: auto;
+	display: inline;
+}
+
+.focus .module .moduleBody .feature {
+	padding: 0;
+}
+
+.focus .module .moduleBody ul li {
+	padding: 0;
+	margin: 0 0 10px 0;
+	background: none;
+}
+
+.focus .module .moduleBody .moreLink {
+	margin: 0 0 10px 0;
+}
+
+.module .moduleBody .gallery.feature .photo,
+.focus.gallery .module .moduleBody .feature .photo,
+.gallery .module .moduleBody .feature .photo {
+	float: left !important;
+	margin: 0 0 5px 0 !important;
+}
+
+.focus .module .moduleBody .inline-modules .module { margin: 0 0 10px 0; padding: 0; }
+.focus .module .moduleBody .inline-modules .moduleBody { margin: 0; padding: 0; }
+.newsletter .moduleBody p{
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 10px 10px;
+}
+.newsletter .moduleBody .button{
+	background: url(http://www.reuters.com/resources/media/global/images/2012_elections_btn_bg.gif) no-repeat center;
+	margin:10px 0;
+	text-align: center;
+	-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+}
+.newsletter .moduleBody .button a{
+	color: #FFF;
+	display: block;
+	font-size: 12px;
+    font-weight: bold;
+	padding: 7px 0;
+}
+
+
+
+</style><script src="http://s3.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/yahoo/yahoo-min.js" type="text/javascript"></script>
+	<script src="http://s4.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/event/event-min.js" type="text/javascript"></script>
+	<script src="http://s3.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/dom/dom-min.js" type="text/javascript"></script>
+	<script src="http://s4.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
+	<script src="http://s3.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/animation/animation-min.js" type="text/javascript"></script>
+	<script src="http://s3.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/connection/connection-min.js" type="text/javascript"></script>
+	<script src="http://s2.reutersmedia.net/resources_v2/js/libraries/yui_2_7_0/cookie/cookie-min.js" type="text/javascript"></script>
+<script src="http://s3.reutersmedia.net/resources_v2/js/libraries/jquery-1.6.1.min.js" type="text/javascript"></script>
+<script src="http://s3.reutersmedia.net/resources_v2/js/rcom-main.js"></script>
+	<script src="http://s4.reutersmedia.net/resources_v2/js/rcom-agent.js"></script>
+	<script src="http://s4.reutersmedia.net/resources_v2/js/extensions.js"></script>
+	<script src="http://s4.reutersmedia.net/resources_v2/js/rcom-ads.js"></script>
+	<script src="http://s4.reutersmedia.net/resources_v2/js/rcom-wt-mlt.js"></script>
+	<script src="http://s2.reutersmedia.net/resources_v2/js/rcom-pid.js"></script>
+	<script src="http://s3.reutersmedia.net/resources_v2/js/rcom-geoIP.js"></script>
+<script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/rcom-tns.js"></script>
+<link href="/resources_v2/css/rcom-section.css" rel="stylesheet" />
+<link href="/resources_v2/css/rcom-topic-rework.css" rel="stylesheet" />
+<script language="javascript" src="/resources_v2/js/rcom-section.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="Reuters: Politics News" href="http://feeds.reuters.com/reuters/politicsNews">
+<link rel="alternate" type="application/rss+xml" title="Reuters: Front Row Washington" href="http://blogs.reuters.com/frontrow/feed/">
+
 
 </head>
-<body id="homepage" >
-    
-  <div class="ui inverted page navigation container">
-        <div class="ui relaxed fitted grid">
-      <div class="left column">
-                <h1>New Republic</h1>
-                <span itemscope itemtype="http://schema.org/Organization">
-          <a class="logo ui image" itemprop="url" href="/" >
-            <img itemprop="logo" src="/sites/all/themes/tnr/assets/images/logo-white-100-slim.png">
-          </a>
-        </span>
-        <div class="ui compact basic inverted large mobile button">
-          <i class="list layout icon"></i> Menu
-        </div>
-        <nav class="ui divided horizontal category inverted list">
-          <a href="/tags/politics" class="item">Politics</a>
-          <a href="/tags/culture" class="item">Culture</a>
-          <a href="/current-issue" class="item">Magazine</a>
-        </nav>
-        <nav class="ui horizontal sub category inverted list">
-          <a href="/latest" class="item">The Latest</a>
-          <a href="/tags/israel-palestine" class="item">Israel/Palestine</a>
-          <a href="/qed" class="item">Q.E.D.</a>
-          <a href="/tags/books" class="item">Books</a>
-          <a href="/tags/ferguson" class="item">Ferguson</a>
-          <a href="/tags/future-work" class="sponsored item">
-            Next Republic
-            <i class="triangle down icon"></i>
-          </a>
-        </nav>
-        <div class="ui sponsored wide popup">
-          <div class="ui four column fitted grid">
-            <div class="column">
-              <a href="/project/next-republic">
-                <img class="ui image" src="/sites/all/themes/tnr/assets/images/suisse/next-republic-navcallout.jpg" alt="Next Republic">
-              </a>
-            </div>
-              <div class="column">
-    <div class="ui headline">
-      <h3 class="ui rubric header">
-        <a href="/tags/psychology" class="title">Psychology</a>      </h3>
-      <a class="ui image" href="/article/119378/hijab-can-improve-body-image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/u184683/hijabi.jpg?itok=bal26sSW" />
-              </a>
-      <h3 class="ui header">
-        <a href="/article/119378/hijab-can-improve-body-image">
-          Women Who Wear Hijab Can Have a Better Body Image, Study Says        </a>
-        <div class="sub header">
-                  </div>
-      </h3>
-      <div class="author">
-        <a href="/authors/alice-robb">Alice Robb</a>      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui headline">
-      <h3 class="ui rubric header">
-        <a href="/tags/gender" class="title">Gender</a>      </h3>
-      <a class="ui image" href="/article/119363/why-there-arent-more-top-female-scientists-leaky-pipeline">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/female_scientist.jpg?itok=v9uPfiRu" />
-              </a>
-      <h3 class="ui header">
-        <a href="/article/119363/why-there-arent-more-top-female-scientists-leaky-pipeline">
-          Women Don't Stick with the Sciences. Here's Why.        </a>
-        <div class="sub header">
-                  </div>
-      </h3>
-      <div class="author">
-        <a href="/authors/rotem-ben-shachar">Rotem Ben-Shachar</a>      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui headline">
-      <h3 class="ui rubric header">
-        <a href="/tags/gender" class="title">Gender</a>      </h3>
-      <a class="ui image" href="/article/119343/impact-quotas-corporate-gender-equality">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/u18558/gender_quotas.jpg?itok=rPFZo-WS" />
-              </a>
-      <h3 class="ui header">
-        <a href="/article/119343/impact-quotas-corporate-gender-equality">
-          Gender Quotas Worked in Norway. Why Not Here?        </a>
-        <div class="sub header">
-                  </div>
-      </h3>
-      <div class="author">
-        <a href="/authors/alice-lee">Alice Lee</a>      </div>
-    </div>
-  </div>
-          </div>
-        </div>
-      </div>
-      <div class="right column">
-        <div class="ui right floated red subscribe buttons">
-          <div class="ui dropdown button">
-            <a target="_blank" href="/subscription/self/header">Subscribe Now</a>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <a class="item" href="/subscription/self/dropdown">Order a Subscription</a>
-              <a class="item" href="/subscription/gift/header">Give a Gift</a>
-              <a class="item" href="/subscription/international/header">International Orders</a>
-              <a class="item" href="/subscription/canada/header">Canadian Orders</a>
-              <a class="item" href="/subscription/digital/header">Digital Subscription</a>
-            </div>
-          </div>
-        </div>
-        <div class="ui small inverted secondary user menu">
-                  <a class="login item" href="/page/account-information">Sign In</a>
-                </div>
-        <div class="ui search">
-          <div class="ui small icon input">
-            <input class="prompt" type="text" name="q" autocomplete="off" placeholder="Search...">
-            <i class="search icon"></i>
-          </div>
-          <div class="results"></div>
-        </div>
-      </div>
-    </div>
-    <div class="ui fluid inverted vertical logged-out mobile menu">
-      <a class="item" href="/page/account-information">Sign In</a>
-      <a class="item" href="/subscription/self/header">Subscribe</a>
-      <div class="header item">Sections</div>
-      <a href="/latest" class="item">The Latest</a>
-      <a href="/qed" class="item">QED</a>
-      <a href="/tags/politics" class="item">Politics</a>
-      <a href="/tags/culture" class="item">Culture</a>
-      <a href="/current-issue" class="item">The Magazine</a>
-      <a href="/tags/future-work" class="item">Next Republic</a>
-    </div>
-  </div>
-<script type="text/javascript">
-site.page.config = {
-  node: {
-    id: 119379  },
-  ads        : [
-    {
-      name  : '/25738720/Web-HomePage1',
-      id    : 'homepage-ad',
-      sizes : [
-        [300, 250],
-        [300, 600]
-      ]
-    },
-    {
-      name  : '/25738720/Mobile-HomePage1',
-      id    : 'homepage-mobile-ad',
-      sizes : [
-        [300, 250],
-        [320, 50]
-      ]
-    }
-  ]
-};
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9SLGS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>if (location.href.indexOf('/commentsChild?') == -1){ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
+(window,document,'script','dataLayer','GTM-W9SLGS'); }</script>
+<!-- End Google Tag Manager -->
+
+<script>
+var revop_wtfpc = YAHOO.util.Cookie.get("WT_FPC"); // read webtrends cookie
+if (revop_wtfpc==null) {
+	var u = ";U=NC;";
+	}
+else
+	{
+	var u = ";U="+revop_wtfpc+";";
+	}
+</script> <!-- see if snrd cookie was set by trigger page -->
+<script>
+var srnd = YAHOO.util.Cookie.get("srnd_keyword");
+var srnd_sequence = YAHOO.util.Cookie.get("srnd_sequence");
+if (srnd!=null && srnd!="")
+  {
+         var srnd="srnd="+srnd+";srnd_sequence="+srnd_sequence+";";
+  }
+
 </script>
-<div class="ui page content container">
-  <div class="ui fitted stackable article grid">
-    <div class="sixteen wide mobile only column">
-      <a class="ui fluid image" href="/article/119383/obamas-campaign-against-isis-end-halfheartedness">
-  <img src="http://www.newrepublic.com/sites/default/files/u184683/obama_0.jpg">
-</a>
-<h2 class="ui inverted black block header">
-  <a href="/article/119383/obamas-campaign-against-isis-end-halfheartedness">
-    <span class="headline">Obama Against ISIS: The End of Halfheartedness?</span>
-      </a>
-    <div class="author sub header">
-    <a href="/authors/leon-wieseltier">Leon Wieseltier</a>  </div>
-  </h2>    </div>
-    <div class="eleven wide main column">
-      <div class="lede">
-  <a class="ui image" href="/article/119383/obamas-campaign-against-isis-end-halfheartedness">
-    <div class="placeholder" data-image="http://www.newrepublic.com/sites/default/files/u184683/obama_0.jpg"></div>
-  </a>
-  <h2 class="title">
-    <a href="/article/119383/obamas-campaign-against-isis-end-halfheartedness">
-      <span class="headline">Obama Against ISIS: The End of Halfheartedness?</span>
-            <i class="large right arrow icon"></i>
-    </a>
-        <div class="author">
-      <a href="/authors/leon-wieseltier">Leon Wieseltier</a>    </div>
-      </h2>
-  </div>    </div>
-    <div class="five wide side column">
-      <div class="ui headlines">
-                  <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/119360/scalia-court-one-reviewed-justin-driver">
-                      How Scalia's Beliefs Completely Changed the Supreme Court                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/justin-driver" class="author">Justin Driver</a>        </span>
-            </div>
-                <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/119390/andrew-cuomos-primary-frights-five-lessons-hillary-clinton">
-                      Five Lessons for Hillary Clinton From Andrew Cuomo's Primary Scare                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/alec-macgillis" class="author">Alec MacGillis</a>        </span>
-            </div>
-                <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/119385/apple-watch-and-healthkit-could-help-spur-mobile-medical-revolution">
-                      The Apple Watch Could Spark a Health Care Revolution                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/jonathan-cohn" class="author">Jonathan Cohn</a>        </span>
-            </div>
-                <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/118953/narcissists-have-sex-more-often">
-                      Why Narcissists Have More Sex                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/jeffrey-kluger" class="author">Jeffrey Kluger</a>        </span>
-            </div>
-      </div>
-      <a href="/TopFeaturedLogoLink" class="ui image top featured" >
-  <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/default_images/next-republic-homepage.png?itok=fmOqsLge">
-</a>
-<div class="ui headlines">
-                <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/119363/why-there-arent-more-top-female-scientists-leaky-pipeline">
-                      Women Don't Stick with the Sciences. Here's Why.                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/rotem-ben-shachar" class="author">Rotem Ben-Shachar</a>        </span>
-            </div>
-                <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/119378/hijab-can-improve-body-image">
-                      Women Who Wear Hijab Can Have a Better Body Image, Study Says                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/alice-robb" class="author">Alice Robb</a>        </span>
-            </div>
-                <div class="headline" itemscope itemtype="http://schema.org/Article">
-      <h3 class="header" itemprop="name">
-        <a href="/article/119343/impact-quotas-corporate-gender-equality">
-                      Gender Quotas Worked in Norway. Why Not Here?                  </a>
-      </h3>
-              <span class="author">
-          <a href="/authors/alice-lee" class="author">Alice Lee</a>        </span>
-            </div>
-    
-  <div class="sponsor mention">
-    <a target="_blank" href="https://www.credit-suisse.com/?WT.mc_id=cadv_disp_ca14002_cr0002_cso_us_en_20140827_kwi">
-      <img src="/sites/all/themes/tnr/assets/images/suisse/credit-suisse-241x35.jpg" alt="with support from Credit Suisse">
-    </a>
-  </div>
 
+
+<link href="http://s4.reutersmedia.net/resources_v2/css/rcom-masthead-nav-new.css" rel="stylesheet" />
+<script src="/assets/info" type="text/javascript"></script>
+<script type="text/javascript">
+var currentUsedEdition = 'BETAUS';
+</script>
+
+<div id="header">
+<a name="top" id="top" style="position: absolute;overflow:hidden;">&nbsp;</a>
+	<div id="marketsHeader"></div>
+    <div id="market-cont"><div id="md-toggle"></div></div>
+	<div id="masthead">
+		<div class="mast-strip">
+		<div id="logo"><a id="logoLink" href="/" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'logo','label':''});" ><img src="http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif" alt="Reuters" border="0" /></a></div>
+
+	<div id="editionsTop" class="panel editions">
+			<ul id="editionSwitchTop" class="editionSwitch">
+				<li>
+					<div class="currentEditionTitle">Edition:</div>
+					<div class="currentEdition">U.S.</div>
+					<div class="editionArrow"></div>
+					<ul>
+                    	<li><a href="http://af.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});" >Africa</a></li>
+						<li><a href="http://ara.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});" >Arabic</a></li>
+						<li><a href="http://ar.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});" >Argentina</a></li>
+						<li><a href="http://br.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});" >Brazil</a></li>
+						<li><a href="http://ca.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});" >Canada</a></li>
+						<li><a href="http://cn.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">China</a></li>
+						<li><a href="http://fr.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">France</a></li>
+						<li><a href="http://de.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Germany</a></li>
+<li><a href="http://in.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">India</a></li>
+<li><a href="http://it.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Italy</a></li>
+						<li><a href="http://jp.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Japan</a></li>
+						<li><a href="http://lta.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Latin America</a></li>
+						<li><a href="http://mx.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Mexico</a></li>
+				    <li><a href="http://ru.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Russia</a></li>
+						<li><a href="http://es.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">Spain</a></li>
+<li><a href="http://uk.reuters.com" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'edition switcher','label':$(this).attr('href')});">United Kingdom</a></li>
+</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="search" class="panel">
+		<div id="searchbox">
+			<form id="searchForm" name="searchbox" method="get" action="/search" autocomplete="off">
+				<input id="searchfield" name="blob" type="text" value="Search News & Quotes" size="30"
+					onfocus="var strSearchValue = document.forms['searchbox'].blob.value;if(strSearchValue.trim() == 'Search News & Quotes'){document.forms['searchbox'].blob.value = '';}"
+					onblur="var strSearchValue = document.forms['searchbox'].blob.value;if(strSearchValue.trim() == ''){document.forms['searchbox'].blob.value = 'Search News & Quotes';}"
+					onkeypress="if(event.keyCode == 13) {document.forms['searchbox'].submit();return false;}" maxlength="128"
+				/>
+				<input type="submit" id="searchbuttonNav" onclick="return Reuters.utils.submitSearch();" value="" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'search','label': document.forms['searchbox'].blob.value});" >
+			</form>
+		</div>
+	</div>
+		<div id="utilities" class="panel"></div>
+	</div>
+	</div>
+
+	<div id="dd-navigation">
+    	<div id="nav-strip">
+            <ul>
+                <li class="nav-item no-subnav" id="nav-item_1"><a href="/home" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Home</span></a>
+                    </li>
+                <li class="nav-item" id="nav-item_2"><a href="/finance" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Business</span></a>
+                    <div class="subnav " id="subnav_2">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/finance" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Business Home</a></li>
+                            <li class=""><a href="/finance/economy" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Economy</a></li>
+                            <li class=""><a href="http://newsandinsight.thomsonreuters.com/Legal/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Legal</a></li>
+                            <li class=""><a href="/finance/deals" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Deals</a></li>
+                            <li class=""><a href="/news/video?videoChannel=5" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Business Video</a></li>
+                            <li class=""><a href="/subjects/aerospace-and-defense" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Aerospace & Defense</a></li>
+                            <li class=""><a href="/subjects/banks" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Financial Institutions </a></li>
+                            <li class=""><a href="/subjects/autos" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Autos</a></li>
+                            <li class=""><a href="/finance/summits" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Reuters Summits</a></li>
+                            <li class="lastChild "><a href="/finance/smallBusiness" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Small Business</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_3"><a href="/finance/markets" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Markets</span></a>
+                    <div class="subnav double" id="subnav_3">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/finance/markets" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Markets Home</a></li>
+                            <li class=""><a href="/finance/markets/us" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >U.S. Markets</a></li>
+                            <li class=""><a href="/finance/markets/europe" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >European Markets</a></li>
+                            <li class=""><a href="/finance/markets/asia" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Asian Markets</a></li>
+                            <li class=""><a href="/finance/global-market-data" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Global Market Data</a></li>
+                            <li class=""><a href="/finance/markets/indices" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Indices</a></li>
+                            <li class=""><a href="/finance/stocks" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Stocks</a></li>
+                            <li class="lastChild "><a href="/finance/bonds" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Bonds</a></li>
+                            </ul><ul class="two"><li class=""><a href="/finance/currencies" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Currencies</a></li>
+                            <li class=""><a href="/finance/commodities" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Comm & Energy</a></li>
+                            <li class=""><a href="/finance/futures" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Futures</a></li>
+                            <li class=""><a href="/finance/funds" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Funds</a></li>
+                            <li class=""><a href="http://www.pehub.com/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >peHUB</a></li>
+                            <li class=""><a href="/finance/EarningsUS" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Earnings</a></li>
+                            <li class="lastChild "><a href="/finance/markets/dividends" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Dividends</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_4"><a href="/news/world" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">World</span></a>
+                    <div class="subnav double" id="subnav_4">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/news/world" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >World Home</a></li>
+                            <li class=""><a href="/news/us" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >U.S.</a></li>
+                            <li class=""><a href="/subjects/specialReports" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Special Reports</a></li>
+                            <li class=""><a href="http://www.reuters.com/investigates" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Reuters Investigates</a></li>
+                            <li class=""><a href="/subjects/euro-zone" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Euro Zone</a></li>
+                            <li class=""><a href="/subjects/middle-east" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Middle East</a></li>
+                            <li class="lastChild "><a href="/places/china" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >China</a></li>
+                            </ul><ul class="two"><li class=""><a href="/places/japan" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Japan</a></li>
+                            <li class=""><a href="/places/mexico" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Mexico</a></li>
+                            <li class=""><a href="/places/brazil" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Brazil</a></li>
+                            <li class=""><a href="/places/africa" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Africa</a></li>
+                            <li class=""><a href="/places/russia" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Russia</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/india" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >India Insight</a></li>
+                            <li class="lastChild "><a href="/news/video?videoChannel=117760" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >World Video</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item active" id="nav-item_5"><a href="/politics" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Politics</span></a>
+                    <div class="subnav " id="subnav_5">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class="active "><a href="/politics" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Politics Home</a></li>
+                            <li class=""><a href="/subjects/supreme-court" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Supreme Court</a></li>
+                            <li class="lastChild "><a href="/news/video?videoChannel=1003" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Politics Video</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_6"><a href="/news/technology" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Tech</span></a>
+                    <div class="subnav " id="subnav_6">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/news/technology" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Technology Home</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/mediafile" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >MediaFile</a></li>
+                            <li class=""><a href="/news/science" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Science</a></li>
+                            <li class=""><a href="/news/video?videoChannel=6" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Tech Video</a></li>
+                            <li class="lastChild "><a href="/bizfinance/technology/Top100Innovators" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Top 100 Global Innovators</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_7"><a href="http://blogs.reuters.com/us/" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Opinion</span></a>
+                    <div class="subnav double" id="subnav_7">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="http://blogs.reuters.com/us/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Opinion Home</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/ian-bremmer/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Ian Bremmer</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/stories-id-like-to-see/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Steven Brill</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/hugo-dixon/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Hugo Dixon</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/alison-frankel/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Alison Frankel</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/jamesrgaines/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Jim Gaines</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/edward-hadas/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Edward Hadas</a></li>
+                            <li class="lastChild "><a href="http://blogs.reuters.com/anatole-kaletsky" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Anatole Kaletsky</a></li>
+                            </ul><ul class="two"><li class=""><a href="http://blogs.reuters.com/mark-leonard" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Mark Leonard</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/john-lloyd" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >John Lloyd</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/david-rohde" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >David Rohde</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/reihan-salam/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Reihan Salam</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/jackshafer" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Jack Shafer</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/nicholas-wapshott/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Nicholas Wapshott</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/great-debate" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >The Great Debate</a></li>
+                            <li class="lastChild "><a href="http://blogs.reuters.com/data-dive/ " target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Data Dive</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_8"><a href="http://blogs.reuters.com/breakingviews/" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Breakingviews</span></a>
+                    <div class="subnav " id="subnav_8">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="http://blogs.reuters.com/breakingviews/category/equities/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Equities</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/breakingviews/category/credit" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Credit</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/breakingviews/category/private-equity/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Private Equity</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/breakingviews/category/m-a/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >M&A</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/breakingviews/category/macro-markets/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Macro & Markets</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/breakingviews/category/politics/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Politics</a></li>
+                            <li class="lastChild "><a href="/video/breakingviews" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Breakingviews Video</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_9"><a href="/finance/personal-finance" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Money</span></a>
+                    <div class="subnav double" id="subnav_9">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/finance/personal-finance" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Money Home</a></li>
+                            <li class=""><a href="/subjects/us-lipper-awards" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Lipper Awards</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/globalinvesting" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Global Investing</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/unstructuredfinance/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Unstructured Finance</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/linda-stern/ " target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Linda Stern</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/mark-miller/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Mark Miller</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/john-wasik/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >John Wasik</a></li>
+                            <li class="lastChild "><a href="http://blogs.reuters.com/jim-saft/" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >James Saft</a></li>
+                            </ul><ul class="two"><li class=""><a href="https://commerce.us.reuters.com/purchase/default.do" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Analyst Research</a></li>
+                            <li class=""><a href="http://alerts.us.reuters.com/US/company.asp" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Alerts</a></li>
+                            <li class=""><a href="http://portfolio.us.reuters.com/US/watchlist/create.asp" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Watchlist</a></li>
+                            <li class=""><a href="http://portfolio.us.reuters.com/US/public/index.asp" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Portfolio</a></li>
+                            <li class=""><a href="http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Stock Screener</a></li>
+                            <li class=""><a href="http://funds.us.reuters.com/US/screener/screener.asp" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Fund Screener</a></li>
+                            <li class="lastChild "><a href="/news/video?videoChannel=303" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Personal Finance Video</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_10"><a href="/news/lifestyle" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Life</span></a>
+                    <div class="subnav " id="subnav_10">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/news/health" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Health</a></li>
+                            <li class=""><a href="/news/sports" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Sports</a></li>
+                            <li class=""><a href="http://brazil-soccer.reuters.com" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >World Cup</a></li>
+                            <li class=""><a href="/news/entertainment/arts" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Arts</a></li>
+                            <li class=""><a href="/news/entertainment" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Entertainment</a></li>
+                            <li class=""><a href="/news/oddlyEnough" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Oddly Enough</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/faithworld" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Faithworld</a></li>
+                            <li class="lastChild "><a href="/news/video?videoChannel=1004" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Lifestyle Video</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item" id="nav-item_11"><a href="/news/pictures" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Pictures</span></a>
+                    <div class="subnav " id="subnav_11">
+                       
+                        <div class="subnav-inner">
+                        <ul class="one">
+                       
+                            <li class=""><a href="/news/pictures" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Pictures Home</a></li>
+                            <li class=""><a href="http://blogs.reuters.com/photo" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Reuters Photographers</a></li>
+                            <li class="lastChild "><a href="http://blogs.reuters.com/fullfocus" target="_top" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sub-sections','label':$(this).attr('href')});" >Full Focus</a></li>
+                            </ul>
+                      
+                       </div>
+                       
+                       </div>
+
+                       </li>
+                <li class="nav-item no-subnav" id="nav-item_12"><a href="/video" onmousedown="dataLayer.push({'event':'click-event','category':'navigation','action':'sections','label':$(this).attr('href')});" ><span class="primary-link">Video</span></a>
+                    </li>
+                </ul>
+       	</div>
+    </div>
+</div>
+<script src="http://s2.reutersmedia.net/resources_v2/js/libraries/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="http://s4.reutersmedia.net/resources_v2/js/rcom-nav.js" type="text/javascript"></script>
+
+<div id="content"><div class="section bleeding" id="breakingNewsBand">
+	<div class="sectionContent">
+<div class="hidden">
 
 </div>
-    </div>
-  </div>
-  <div class="sidebar">
-    <div class="variable advertisement module">
-  <div id="homepage-ad"></div>
-  <div id="homepage-mobile-ad"></div>
-</div>    <div class="subscription module ui red stacked secondary center aligned segment">
-  <h3 class="ui header">
-    Current Issue
-    <div class="sub header">
-      September 15, 2014    </div>
-  </h3>
-  <a href="/subscription/self/rightrail/cover" class="ui cover image">
-    <img typeof="foaf:Image" src="http://www.newrepublic.com/sites/default/files/styles/magazine_block_cover/public/u184683/091514_cover.online.jpg?itok=gZFXuMaa" alt="" />  </a>
-  <div class="ui divider"></div>
-  <a class="ui large red fluid fade animated button" href="/subscription/self/rightrail" target="_blank">
-    <span class="visible content">SUBSCRIBE NOW</span>
-    <span class="hidden content">Save up to 82%</span>
-  </a>
-</div>  </div>
-  <div class="featured stories">
-    <div class="three column fitted doubling ui grid">
-            <div class="row">
-    <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119387">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/air-travel" class="title">air travel</a>      </h2>
-      <a href="/article/119387/epa-may-issue-airline-emission-regulations" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/lede_art_plane_0.jpg?itok=DIUAeECB" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119387/epa-may-issue-airline-emission-regulations">
-                      The EPA May Finally Start to Curb Airplane Emissions—But Consumers Will Be the Ones Who Pay                  </a>
-      </h3>
-      <div class="author"><a href="/authors/rebecca-leber" class="author">Rebecca Leber</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119376">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/health" class="title">Health</a>      </h2>
-      <a href="/article/119376/ebola-drug-zmapp-darpa-program-could-get-it-africa" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/ebola.jpg?itok=RqPcbM7O" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119376/ebola-drug-zmapp-darpa-program-could-get-it-africa">
-                      DARPA May Have a Way to Stop Ebola in Its Tracks                  </a>
-      </h3>
-      <div class="author"><a href="/authors/brian-till" class="author">Brian Till</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119375">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/gender" class="title">Gender</a>      </h2>
-      <a href="/article/119375/jack-ripper-versus-feminists" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/u184683/lede_art_ripper.jpg?itok=G_IBxzu2" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119375/jack-ripper-versus-feminists">
-                      Our Jack the Ripper Obsession Is Misogynist                   </a>
-      </h3>
-      <div class="author"><a href="/authors/katie-engelhart" class="author">Katie Engelhart</a></div>
-    </div>
-  </div>
-    </div>
-              <div class="row">
-    <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119399">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/domestic-violence" class="title">Domestic Violence</a>      </h2>
-      <a href="/article/119399/goodell-should-resign-if-nfl-saw-second-tape-ray-rice-monday" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/146600130.jpg?itok=rL_m1LY1" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119399/goodell-should-resign-if-nfl-saw-second-tape-ray-rice-monday">
-                      If Roger Goodell Saw That Tape He Needs to Step Down as NFL Commissioner                  </a>
-      </h3>
-      <div class="author"><a href="/authors/danny-vinik" class="author">Danny Vinik</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119378">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/psychology" class="title">Psychology</a>      </h2>
-      <a href="/article/119378/hijab-can-improve-body-image" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/u184683/hijabi.jpg?itok=rZ0PBYLJ" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119378/hijab-can-improve-body-image">
-                      Women Who Wear Hijab Can Have a Better Body Image, Study Says                  </a>
-      </h3>
-      <div class="author"><a href="/authors/alice-robb" class="author">Alice Robb</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="71896">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/100-years-100-stories" class="title">100 Years 100 Stories</a>      </h2>
-      <a href="/article/71896/duty-harsh-criticism" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/lede_art_rw1.jpg?itok=sHPOqT3Z" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/71896/duty-harsh-criticism">
-                      It Is Our Duty to Practice Harsh Criticism                  </a>
-      </h3>
-      <div class="author"><a href="/authors/rebecca-west-0" class="author">Rebecca West</a></div>
-    </div>
-  </div>
-    </div>
-        <div class="row">
-    <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119386">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/health-care" class="title">Health Care</a>      </h2>
-      <a href="/article/119386/employer-insurance-premiums-kaiser-hret-survey-shows-no-big-increase" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/health_care_adam_berry_stringer_getty.jpg?itok=qaDUcdCG" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119386/employer-insurance-premiums-kaiser-hret-survey-shows-no-big-increase">
-                      These Charts Are Good News if Your Employer Pays for Health Insurance                  </a>
-      </h3>
-      <div class="author"><a href="/authors/jonathan-cohn" class="author">Jonathan Cohn</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119384">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/qedaily" class="title">QEDaily</a>      </h2>
-      <a href="/article/119384/gop-has-no-plan-increase-wages-can-still-win-november" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/157158750.jpg?itok=G7fUc6qT" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119384/gop-has-no-plan-increase-wages-can-still-win-november">
-                      No Agenda, No Problem: The GOP May Win in November Without a Plan to Raise Wages                  </a>
-      </h3>
-      <div class="author"><a href="/authors/danny-vinik" class="author">Danny Vinik</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119382">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/politics" class="title">Politics</a>      </h2>
-      <a href="/article/119382/washington-cant-make-its-mind-about-senators-residency" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/mary-landrieu_pic.jpg?itok=ACJn_FW2" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119382/washington-cant-make-its-mind-about-senators-residency">
-                      Beltway Pundits  Can't Decide Whether They Want Senators to Live in Washington or Not                  </a>
-      </h3>
-      <div class="author"><a href="/authors/alec-macgillis" class="author">Alec MacGillis</a></div>
-    </div>
-  </div>
-    </div>
-        <div class="row">
-    <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119381">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/tech" class="title">Tech</a>      </h2>
-      <a href="/article/119381/apples-watch-personalized-mood-ring" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/apple-watch.jpg?itok=QxY2nd-U" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119381/apples-watch-personalized-mood-ring">
-                      Apple's Watch Is Like a High-Tech Mood Ring                   </a>
-      </h3>
-      <div class="author"><a href="/authors/jacob-silverman" class="author">Jacob Silverman</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119377">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/minimum-wage" class="title">Minimum Wage</a>      </h2>
-      <a href="/article/119377/us-ratio-minimum-wage-median-low-international-standards" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/490816219.jpg?itok=76F-A4_Q" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119377/us-ratio-minimum-wage-median-low-international-standards">
-                      This Chart Shows How Meager U.S. Minimum Wage Truly Is                  </a>
-      </h3>
-      <div class="author"><a href="/authors/danny-vinik" class="author">Danny Vinik</a></div>
-    </div>
-  </div>
-        <div class="column">
-    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119371">
-      <h2 class="ui rubric header" itemprop="articleSection">
-        <a href="/tags/influence" class="title">Influence</a>      </h2>
-      <a href="/article/119371/think-tanks-foreign-contributions" class="image">
-                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/shutterstock_161265062.jpg?itok=3cNf5cVL" alt="">
-              </a>
-      <h3 class="header">
-        <a href="/article/119371/think-tanks-foreign-contributions">
-                      Foreign Funding of Think Tanks Is Corrupting Our Democracy                  </a>
-      </h3>
-      <div class="author"><a href="/authors/john-b-judis" class="author">John B. Judis</a></div>
-    </div>
-  </div>
-    </div>
-        <div class="one column row">
-        <div class="column">
-          <a class="ui fluid more large blue button" href="/latest">
-            More Articles
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+
+<div class="linebreak"></div>
+	<div class="sectionColumns">
+
+<div class="gridPanel grid12">
+<div id="breakingNewsContent"></div>
+<script type="text/javascript">
+Reuters.utils.replaceContent("breakingNewsContent", "/assets/breakingNews", null, null);
+</script>
+
 </div>
 
-<script src="http://ad.doubleclick.net/adj/N884.1195.THENEWREPUBLIC1/B8170992.4;sz=1x1;ord=[timestamp]?">
+</div>
+
+</div>
+</div>
+<div class="section bleeding" id="bannerStrip">
+	<div class="sectionContent">
+<div class="sectionColumns">
+
+<div class="gridPanel grid12">
+<style>
+
+
+#bannerStrip 
+.sectionContent { width: 990px; }
+.sectionContent .grid12 { width: 960px !important; }
+.sectionContent .grid12 .ad { margin: 0; }
+#homepageSponsorBand, #adTopBanner { margin-bottom: 0px; }
+
+
+</style> 
+
+<div class="linebreak"></div>
+	<div class="ad" id="leaderboard">
+
+		<script language="javascript" type="text/javascript">
+
+		  var adsrc = 'us.reuters/news/politics;' + 'type=leaderboard;sz=728x90;tile=1;' + '';
+		  adsrc = TR.createDFPUrl(adsrc); 
+		  if ( typeof(AD_TRACKER) != 'undefined' ) {
+		     adsrc = AD_TRACKER.processAdSrcType(adsrc);
+		  }
+
+		  
+		  if ((typeof (hideAllAds) == 'undefined' || hideAllAds == false) && (typeof (AD_TRACKER) == 'undefined' || AD_TRACKER.isAdHidden('leaderboard') == false) &&
+		      (typeof (hideAd_13892688) == 'undefined' || hideAd_13892688 == false)) {
+              if (typeof (TR) !== "undefined") {
+                 TR.writeDFPURL("http://ad.doubleclick.net/N4735792/adj/" + adsrc);
+              }
+		  }
+
+		  </script>
+
+		<noscript>
+		    <a href="http://ad.doubleclick.net/N4735792/jump/us.reuters/news/politics;type=leaderboard;sz=728x90;tile=1;ord=5775?" target="_blank">
+		      <img src="http://ad.doubleclick.net/N4735792/ad/us.reuters/news/politics;type=leaderboard;sz=728x90;tile=1;ord=5775?" width="728" height="90" border="0" alt="">
+		    </a>
+		</noscript>
+
+		</div>
+
+		</div>
+
+</div>
+
+</div>
+</div>
+<div class="section" id="adTopContent">
+	<div class="sectionContent">
+
+
+<div class="linebreak"></div>
+	<div class="sectionColumns">
+
+<div class="gridPanel grid12">
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="section gridlined8">
+	<div class="sectionContent">
+<div id="sectionHeader"><div id="sectionTitle"><h1>Politics News<span id="topicDataInfo"></span></h1>
+	</div><div id="followButton" class="hidden"><span class="hrefClone" onclick="Reuters.tns.CURRENT_USER.saveTopic(11, 'politicsNews', 'Politics');">Follow Politics</span></div>
+<script type="text/javascript">Reuters.tns.currentTopic = { "topicId": 11, "topicName": 'politicsNews', "topicTitle": "Politics"}</script>
+<div id="sectionHeaderTopics"><div id="headerTopics">
+<div class="sectionRelatedTopics">
+
+	<ul><h3>Related Topics: </h3> 
+	<li><a href="/news/us">U.S.</a></li><li><a href="http://live.reuters.com/Event/Politics">Latest Updates</a></li></ul>
+</div>
+
+	</div>
+</div></div><div class="sectionColumns">
+
+<div class="column1 gridPanel grid8">
+<span name="trackingEnabledModule" moduleName="Editorial Feature [S]" moduleId="18211301">
+              <script language="javascript">addImpression("18211301_Editorial Feature [S]");</script>
+      </span>
+      <div class="columnLeft"><div id="topStory" class="gridPanel grid4"><div class="module">
+		
+		<div class="moduleBody">
+		<div class="topStory"><div class="photo">
+				<a href="/article/2014/09/13/us-usa-texas-politics-idUSKBN0H80M220140913"  ><img
+        		src="http://s3.reutersmedia.net/resources/r/?m=02&d=20140913&t=2&i=973387541&w=300&fh=&fw=&ll=&pl=&r=LYNXMPEA8C0AM"
+        		border="0" alt="Photo"
+        		 /></a>
+</div><h2><a href="/article/2014/09/13/us-usa-texas-politics-idUSKBN0H80M220140913"  >Texas governor's race heats up over new book</a>
+<span class="timestamp">12:37pm EDT</span></h2><p>DALLAS  - The race for Texas governor entered a new chapter this week with the release of a memoir from Democratic candidate Wendy Davis that rekindled attention on abortion and led to an ethics complaint from her opponent, Republican Greg Abbott.</p>
+	</div></div>
+		</div>
+		</div></div><div class="columnRight"><div id="latestHeadlines" class="gridPanel grid4"><div class="module">
+		
+		<div class="moduleHeader">
+				<h3>
+					<a href="/news/archive/politicsNews?view=page">
+					Latest Politics Headlines</a>
+					</h3>
+			</div>
+		<div class="moduleBody">
+		<ul>
+		<li><a href="/article/2014/09/13/us-ukraine-crisis-usa-sanctions-idUSKBN0H71N320140913"  >U.S. intensifies sanctions on Russia over Ukraine</a>
+<span class="video">| <a href="/video/2014/09/12/new-russia-sanctions-will-they-bite?videoId=343117610&newsChannel=politicsNews"  ><img src="http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif" border="0" height="11px" width="43px" alt="Video" /></a>
+</span>
+		<div class="relatedHeadlineInfo">
+	<span class="timestamp">12 Sep 2014</span> </div>
+	</li><li><a href="/article/2014/09/12/us-usa-colorado-politician-idUSKBN0H72E920140912"  >Colorado candidate gets death threat after questioning Sandy Hook massacre</a>
+<div class="relatedHeadlineInfo">
+	<span class="timestamp">12 Sep 2014</span> </div>
+	</li><li><a href="/article/2014/09/12/us-usa-california-breakup-idUSKBN0H72LS20140912"  >Plan to divide California into six states fails to qualify for ballot</a>
+<div class="relatedHeadlineInfo">
+	<span class="timestamp">12 Sep 2014</span> </div>
+	</li><li><a href="/article/2014/09/13/us-usa-louisiana-election-idUSKBN0H800H20140913"  >Louisiana U.S. Senator Landrieu's campaign repays U.S. for airfare</a>
+<div class="relatedHeadlineInfo">
+	<span class="timestamp">12 Sep 2014</span> </div>
+	</li></ul>
+	<div id="latestBlogHeadlines"></div></div>
+		</div>
+		</div></div><div class="sectionDivider"></div>
+
+<div class="linebreak"></div>
+	<div id="moreVideoStrip"><div class="module">
+		
+		<div class="moduleHeader">
+				<h3>
+					<a href="/news/video?videoChannel=1003">
+					Politics Video</a>
+					</h3>
+			</div>
+		<div class="moduleBody">
+		<style>
+/* General Site Changes */
+
+.gridlined8 {
+  background: none;
+}
+
+.gridPanel {
+  overflow: visible;
+}
+
+#moreVideoStrip:before,
+#moreVideoStrip:after,
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+#moreVideoStrip:after,
+.group:after {
+  clear: both;
+}
+
+#moreVideoStrip
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Native Video Ad */
+
+#moreVideoStrip {
+  clear: both;
+}
+
+#moreVideoStrip  .photo4up {
+  margin-bottom: 10px;
+  float: none;
+}
+
+#moreVideoStrip .mediaList  .columnLeft {
+  margin-right: 22px;
+}
+
+#moreVideoStrip  .mediaList .columnCenter {
+  margin-right: 14px;
+}
+
+#moreVideoStrip .columnRight,
+.inactive-sponsored-video {
+  display: none;
+}
+
+#moreVideoStrip .size193 .feature {
+  width: 192px;
+  padding-bottom: 0;
+  margin-top: 0;
+  background: none;
+}
+
+#moreVideoStrip .feature h2 {
+  margin-bottom: 0;
+}
+
+#moreVideoStrip .sponsored-video {
+  width: 192px;
+  padding: 8px;
+  margin: -8px -8px 0 0;
+  background: #f5f5f5;
+}
+
+#moreVideoStrip a {
+  display: block;
+  margin-bottom: 3px;
+}
+
+#moreVideoStrip .feature {
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+#moreVideoStrip .feature .photo {
+  margin: 0;
+  float: none;
+} 
+
+#moreVideoStrip .feature .photo img {
+  width: 100%;
+}
+
+#moreVideoStrip .sponsor {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  color: #666;
+}
+
+#moreVideoStrip .sponsor .sponsor-text,
+#moreVideoStrip .sponsor .sponsor-logo {
+  float: left;
+}
+
+#moreVideoStrip .sponsor .sponsor-text {
+  margin-top: -1px;
+}
+
+#moreVideoStrip .sponsor .sponsor-logo {
+  width: 68px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.video-type,
+.video-length {
+  margin: 0;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 18px;
+  color: #666;
+}
+
+.sponsored-video .video-type {
+  text-transform: uppercase;
+}
+
+#moreVideoStrip .show-video {
+  display: block;
+}
+</style>
+<div class="mediaList videoList size193">
+<div class="photo4up"><div class="columnLeft">
+		<div class="feature"><div class="photo">
+                 <a href="/video/2014/09/11/boehner-has-doubts-on-obamas-plan-to-des?videoId=342411723&videoChannel=1003"  >                	
+					  <div class="videoOverlay"></div>
+                      <img
+        		src="http://s2.reutersmedia.net/resources/r/?d=20140911&i=94205403&w=193&r=94205403-1&t=2"
+        		border="0" alt="Boehner has doubts on Obama's plan to destroy Islamic State"
+        		 />
+     	</a>
+			</div><h2><span class="timestamp">Rough Cut<br /></span>
+        <a href="/video/2014/09/11/boehner-has-doubts-on-obamas-plan-to-des?videoId=342411723&videoChannel=1003"  >Boehner has doubts on Obama's plan to destroy Islamic State</a>
+		<span class="timestamp">(1:32)</span>
+        </h2></div></div><div class="columnCenter">
+		<div class="feature"><div class="photo">
+                 <a href="/video/2014/09/11/obama-lays-out-strategy-to-ultimately-de?videoId=342009295&videoChannel=1003"  >                	
+					  <div class="videoOverlay"></div>
+                      <img
+        		src="http://s2.reutersmedia.net/resources/r/?d=20140911&i=94155804&w=193&r=94155804-1&t=2"
+        		border="0" alt="Obama lays out strategy to "ultimately destroy ISIL""
+        		 />
+     	</a>
+			</div><h2><span class="timestamp">Report<br /></span>
+        <a href="/video/2014/09/11/obama-lays-out-strategy-to-ultimately-de?videoId=342009295&videoChannel=1003"  >Obama lays out strategy to "ultimately destroy ISIL"</a>
+		<span class="timestamp">(1:56)</span>
+        </h2></div></div><div class="columnRight">
+		<div class="feature"><div class="photo">
+                 <a href="/video/2014/09/11/it-will-take-time-to-eradicate-a-cancer?videoId=341940320&videoChannel=1003"  >                	
+					  <div class="videoOverlay"></div>
+                      <img
+        		src="http://s2.reutersmedia.net/resources/r/?d=20140911&i=94149133&w=193&r=94149133-1&t=2"
+        		border="0" alt=""It will take time to eradicate a cancer like ISIL" - President Obama"
+        		 />
+     	</a>
+			</div><h2><span class="timestamp">Agency<br /></span>
+        <a href="/video/2014/09/11/it-will-take-time-to-eradicate-a-cancer?videoId=341940320&videoChannel=1003"  >"It will take time to eradicate a cancer like ISIL" - President Obama</a>
+		<span class="timestamp">(2:04)</span>
+        </h2></div></div><div class="linebreak"></div></div></div><!-- end mediaList -->
+</div>
+		</div>
+		</div><div class="linebreak"></div>
+	<div class="columnRight inactive-sponsored-video"><!-- us.reuters/news/politics -->
+<script type="text/javascript">
+var ord = window.ord || Math.floor(Math.random() * 1e16);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4735792/adj/us.reuters/news/politics;type=bi_video;sz=1x1;ord=' + ord + '?"><\/script>');
 </script>
 <noscript>
-<a href="http://ad.doubleclick.net/jump/N884.1195.THENEWREPUBLIC1/B8170992.4;sz=1x1;ord=[timestamp]?">
-<img src="http://ad.doubleclick.net/ad/N884.1195.THENEWREPUBLIC1/B8170992.4;sz=1x1;ord=[timestamp]?" border=0 width=1 height=1 alt="Advertisement"></A>
+<a href="http://ad.doubleclick.net/N4735792/jump/us.reuters/news/politics;type=bi_video;sz=1x1;ord=[timestamp]?">
+<img src="http://ad.doubleclick.net/N4735792/ad/us.reuters/news/politics;type=bi_video;sz=1x1;ord=[timestamp]?" width="1" height="1" />
+</a>
 </noscript>
 
-<div class="ui page footer container">
-  <div class="ui relaxed stackable fitted grid">
-    <div class="sixteen wide mobile only center aligned column">
-      <div class="ui horizontal inverted icon divider">
-        <i class="circular inverted sitemap icon"></i>
-      </div>
-      <h5 class="ui inverted header">Sections</h5>
-      <div class="ui relaxed inverted fitted selection list">
-        <a href="/latest" class="item">The Latest</a>
-        <a href="/tags/politics" class="item">Politics</a>
-        <a href="/tags/culture" class="item">Culture</a>
-        <a href="/current-issue" class="item">The Magazine</a>
-      </div>
-      <select name="section" class="sections">
-        <option value="">More</option>
-        <optgroup label="Categories">
-          <option value="/tags/books/">Books</option>
-          <option value="/tags/economy/">Economy</option>
-          <option value="/tags/film/">Film</option>
-          <option value="/tags/plank/">The Plank</option>
-          <option value="/tags/politics/">Politics</option>
-          <option value="/tags/technology/">Technology</option>
-          <option value="/tags/world/">World</option>
-        </optgroup>
-        <optgroup label="New Republic">
-          <option value="/current-issue">Current Issue</option>
-          <option value="/page/about-new-republic">About</option>
-          <option value="/page/advertise-new-republic">Advertise</option>
-          <option value="/page/contact-us">Contact Us</option>
-          <option value="/page/jobs-and-internships">Jobs &amp; Internships</option>
-          <option value="/page/privacy-policy" rel="nofollow">Privacy Policy</option>
-          <option value="/tags/home-news">Home News</option>
-          <option value="/tags/events">Events</option>
-          <option value="/ebsco">Archives</option>
-          <option value="/page/rss-feeds">RSS</option>
-        </optgroup>
-      </select>
-    </div>
-    <div class="ten wide sitemap column">
-      <div class="ui horizontal inverted icon divider">
-        <i class="circular inverted sitemap icon"></i>
-      </div>
-      <div class="ui three column grid">
-        <div class="column">
-          <h5 class="ui inverted header">Sections</h5>
-          <div class="ui small relaxed inverted fitted selection list">
-            <a class="item" href="/tags/books/">Books</a>
-            <a class="item" href="/tags/economy/">Economy</a>
-            <a class="item" href="/tags/film/">Film</a>
-            <a class="item" href="/tags/plank/">The Plank</a>
-            <a class="item" href="/tags/politics/">Politics</a>
-            <a class="item" href="/tags/technology/">Technology</a>
-            <a class="item" href="/tags/world/">World</a>
-            <a class="item" href="/tags/events/">Events</a>
-          </div>
-        </div>
-        <div class="column">
-          <h5 class="ui inverted header">The Magazine</h5>
-          <div class="ui small relaxed inverted fitted selection list">
-            <a class="item" href="/latest">Our Latest</a>
-            <a class="item" href="/current-issue">Current Issue</a>
-          </div>
-          <h5 class="ui inverted header">Subscriptions</h5>
-          <div class="ui small relaxed inverted fitted selection list">
-            <a class="item" href="/subscription/self/footer/textlink">Order a Subscription</a>
-            <a class="item" href="/subscription/gift/footer/textlink">Give a Gift</a>
-            <a class="item" href="/page/subscriber-services">Subscriber Services</a>
-            <a class="item" href="/ebsco">Archives</a>
-            <a class="item" href="/page/frequently-asked-questions">FAQ</a>
-          </div>
-        </div>
-        <div class="column">
-          <h5 class="ui inverted header">The New Republic</h5>
-          <div class="ui small relaxed inverted fitted selection list">
-            <a class="item" href="/page/about-new-republic">About</a>
-            <a class="item" href="/page/advertise-new-republic">Advertise</a>
-            <a class="item" href="/newsletter">Newsletter</a>
-            <a class="item" href="/page/contact-us">Contact Us</a>
-            <a class="item" href="/page/jobs-and-internships">Jobs &amp; Internships</a>
-            <a class="item" href="/page/privacy-policy" rel="nofollow">Privacy Policy</a>
-            <a class="item" href="/tags/home-news">Home News</a>
-            <a class="item" href="/page/rss-feeds">RSS</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="six wide signup column">
-      <div class="ui horizontal inverted icon divider">
-        <i class="circular inverted bullhorn icon"></i>
-      </div>
-      <h4 class="ui red header">Sign Up For The New Republic Daily</h4>
-      <p>Sign up now to get your dose of politics, culture, and big ideas with our free daily newsletter.</p>
-      <form class="ui form" method="post" action="http://link.newrepublic.com/s/TNR">
-  <input type="hidden" name="list[Master List]" value="1" />
-  <input type="hidden" name="vars[marketing]" value="TRUE" />
-  <input type="hidden" name="vars[source]" value="daily_footer" />
-  <input type="hidden" name="vars[tnr_daily]" value="TRUE" />
-  <div class="field">
-    <div class="ui fluid left labeled icon input">
-      <input type="text" name="email" placeholder="Enter e-mail" data-validate="email"  />
-      <i class="mail icon"></i>
-    </div>
-  </div>
-  <div class="ui blue submit button" type="submit">Sign Up</div>
-  <div class="ui success message">
-    <i class="checkmark icon"></i>
-    Signed up!
-  </div>
-</form>    </div>
-    <div class="six wide promo column">
-      <div class="ui horizontal inverted icon divider">
-        <i class="circular inverted bullhorn icon"></i>
-      </div>
-      <h4 class="ui header">
-        <a href="/subscription/self/footer/callout">Subscribe Now</a>
-      </h4>
-      <h5 class="ui inverted header">
-        Get The New Republic for <b>$19.97/year</b>
-      </h5>
-      <a class="ui left floated image" href="/subscription/self/footer/callout">
-        <img typeof="foaf:Image" src="http://www.newrepublic.com/sites/default/files/styles/curr_issue_cover_footer/public/u184683/091514_cover.online.jpg?itok=Bi-xL7iU" alt="" />      </a>
-      <div class="ui small inverted fitted selection list">
-        <a class="item" href="/subscription/self/footer/callout">
-          <i class="book icon"></i>
-          Subscribe Now
-        </a>
-        <a class="item" href="/subscription/gift/footer">
-          <i class="gift icon"></i>
-          Give a Gift
-        </a>
-        <a class="item" href="/subscription/international/footer">
-          <i class="globe icon"></i>
-          International Orders
-        </a>
-        <a class="item" href="/subscription/digital/footer">
-          <i class="tablet icon" ></i>
-          Digital Subscription
-        </a>
-      </div>
-    </div>
-  </div>
-  <a class="ui centered small logo image" href="/">
-    <img src="/sites/all/themes/tnr/assets/images/logo-white.png">
-  </a>
-  <div class="social">
-<!--     <div class="slim twitter sharrre"
-      data-user="tnr"
-      data-url="http://www.newrepublic.com"
-      data-title="Follow"
-    ></div> -->
-    <div class="slim facebook sharrre"
-      data-url="http://www.facebook.com/thenewrepublic"
-      data-title="Like">
-    </div>
-    <div class="slim google sharrre"
-      data-url="http://www.newrepublic.com"
-      data-title="Plus">
-    </div>
-  </div>
-  <div class="ui mini centered divided inverted horizontal copyright link list">
-    <a class="item" href="/page/masthead">Masthead</a>
-    <div class="item">
-      Copyright 2014 &copy; The New Republic.
-      All Rights Reserved.
-    </div>
-  </div>
-</div>    <div class="ui modal" id="overlay"></div>  <div class="script">
-  <!--[if lt IE 9]>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <![endif]-->
-  <!--[if (gte IE 9) | (!IE)]><!-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <!--<![endif]-->
-<script type="text/javascript" src="http://www.newrepublic.com/sites/default/files/js/js_bYu3NJYPuBJM5poe8mzfA2KHHjA4ui-bvdVhtq6_YBA.js"></script>
+<script>
 
-  <!-- Site Config !-->
-  <script src="/sites/all/themes/tnr/build/ui/definitions/globals/site.js"></script>
+(function($) {
+    var $moreVideoStrip = $('#moreVideoStrip');
+    var $video = $moreVideoStrip.find('.columnRight:not(.inactive-sponsored-video, .sponsored-video)');
+    var $videoAd = $('.inactive-sponsored-video');
 
-  <!-- Site Overlay !-->
-  <script type="text/javascript">
-  $.extend(true, site.config, $.parseJSON('{"loggedIn":false,"node":{"id":null},"overlay":{"force_display_nodes":[],"targeted_overlay_nodes":[],"tnr_overlay_nodes":[],"tnr_paywall_nodes":[],"visit_times_targeted":["1"],"visit_times_general":["1"],"visit_times_paywall":false},"staging":false,"subsection":false,"tag":{"ids":[]},"topTerm":null}'));
-  // global debug settings
-  $.site('disable debug');
-    $.site('disable console');
-    </script>
+    function showSponsoredVideo() {
+        $moreVideoStrip.find('.sponsored-video')
+                                           .toggleClass('show-video');
+    };
 
-  <script type="text/javascript" src="http://www.newrepublic.com/sites/default/files/js/js_B6_6pPZmPuIn7sHbUHpZhb0g9gCuv5G3v1s35c1_8EI.js"></script>
+    function  showVideo() {
+        $video.toggleClass('show-video');
+    };
 
-  
-</div>  <div class="tracking">
+    function adExists() {
+       console.log('FEATURE Length: ' + $videoAd.find('.feature').length);
+        return $videoAd.find('.feature').length > 0;
+    };
 
-  <!-- Google Remarketing -->
-  <script type="text/javascript">
-  /* <![CDATA[ */
-  var
-    google_conversion_id = 993343767,
-    google_conversion_label = 'gzoeCIDN0QMQkLP42wM',
-    google_custom_params = window.google_tag_params,
-    google_remarketing_only = true
-  ;
-  /* ]]> */
-  </script>
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
-
-  <!-- Quantcast Script -->
-  <script type="text/javascript">
-  _qoptions={
-    qacct : 'p-abwxcJNao5fsc'
-  };
-  </script>
-  <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
-
-  <!-- Parse.ly -->
-  <div id="parsely-root" style="display: none">
-    <div id="parsely-cfg" data-parsely-site="tnr.com"></div>
-  </div>
-  <script>
-  (function(s, p, d) {
-    var h=d.location.protocol, i=p+"-"+s,
-        e=d.getElementById(i), r=d.getElementById(p+"-root"),
-        u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
-        :"static."+p+".com";
-    if (e) return;
-    e = d.createElement(s); e.id = i; e.async = true;
-    e.src = h+"//"+u+"/p.js"; r.appendChild(e);
-  })("script", "parsely", document);
-  </script>
- 
-    <!-- START horizon sailthru -->
-  <script type="text/javascript">
-    (function() {
-      function loadHorizon() {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-      loadHorizon();
-      var oldOnLoad = window.onload;
-      window.onload = function() {
-        if (typeof oldOnLoad === 'function') {
-          oldOnLoad();
+    function toggle() {
+        if (adExists()) {
+            insertNativeAdHTML();
+            showSponsoredVideo();
+        } else {
+            showVideo();
         }
-        Sailthru.setup({
-          domain: 'horizon.newrepublic.com'
-        });
-      };
-    })();
-  </script>
-  
-  <!-- Nielsen Online SiteCensus V6.0 -->
-  <script type="text/javascript">
-    (function () {
-      var image = new Image(1, 1);
-      image.onerror = image.onload = function () {
-        image.onerror = image.onload = null;
-      };
-      image.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-106312h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
-    })();
-  </script>
+    };
 
-  <!-- AdRoll -->
-  <script type="text/javascript">
-  adroll_adv_id = "SIJVU24MGJE47PAYLLPPOJ";
-  adroll_pix_id = "6WNJ733UAJGY3LIFHE43PT";
-  (function () {
-  var oldonload = window.onload;
-  window.onload = function(){
-     __adroll_loaded=true;
-     var scr = document.createElement("script");
-     var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-     scr.setAttribute('async', 'true');
-     scr.type = "text/javascript";
-     scr.src = host + "/j/roundtrip.js";
-     ((document.getElementsByTagName('head') || [null])[0] ||
-      document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-     if(oldonload){oldonload()}};
-  }());
-  </script>
+   function  insertNativeAdHTML() {
+        var $videoAdContainer;
+        var $videoAdFeature = $videoAd.find('.feature');
 
-  <!-- ChartBeat -->
-  <script type="text/javascript">
-  var _sf_async_config={uid:34517,domain:"tnr.com"};
-  _sf_async_config.useCanonical = true;
-  (function(){
-    function loadChartbeat() {
-    window._sf_endpt=(new Date()).getTime();
-    var e = document.createElement('script');
-    e.setAttribute('language', 'javascript');
-    e.setAttribute('type', 'text/javascript');
-    e.setAttribute('src',
-       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-       "js/chartbeat.js");
-    document.body.appendChild(e);
-    }
-    var oldonload = window.onload;
-    window.onload = (typeof window.onload != 'function') ?
-     loadChartbeat : function() { oldonload(); loadChartbeat(); };
-  })();
-  </script>
+        $videoAdFeature.wrap('<div class="columnRight sponsored-video"></div>');        
+        $videoAdContainer = $videoAd.find('.sponsored-video');
+        $videoAdContainer.insertAfter($video);
+        $moreVideoStrip.find('> .sponsored-video').remove();
+    };
 
-  <!-- Optimizely -->
-  <script src="//cdn.optimizely.com/js/113744585.js"></script>
+   $(document).ready(toggle);
+})(jQuery);
 
-  <div class="pixels">
-    <!-- Collective Media pixel -->
-    <img src="http://b.collective-media.net/seg/cm/l1dd" width="1" height="1" />
-    <noscript>
-      <!-- Quantcast Pixel -->
-      <img src="http://pixel.quantserve.com/pixel/p-abwxcJNao5fsc.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
-      <!-- Google Re-marketing Pixel -->
-      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/993343767/?value=0&amp;label=gzoeCIDN0QMQkLP42wM&amp;guid=ON&amp;script=0"/>
-      <!-- Neilsen Census Pixel -->
-      <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-106312h&amp;cg=0&amp;cc=1&amp;ts=noscript"
-      width="1" height="1" alt="" />
-      <!-- ComScore -->
-      <img src="http://b.scorecardresearch.com/p?c1=2&c2=15230262&cv=2.0&cj=1" />
-    </noscript>
-  </div>
-</div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"71240f55fe","applicationID":"2735134","transactionName":"YFRUZkcECEcHV0ZaXFkeY0BcSkldCFBXSx1HWUY=","queueTime":0,"applicationTime":3,"ttGuid":"","agentToken":"","atts":"TBNXEA8eG0k=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</script></div><div class="linebreak"></div>
+	
+
+<div class="linebreak"></div>
+	<script>if (document.documentElement || document.body){
+if (document.getElementById("topStory").innerHTML.search('<div class="photo">') != false
+&& document.getElementById("latestBlogHeadlinesLoader") != null) { document.getElementById("latestBlogHeadlines").innerHTML = document.getElementById("latestBlogHeadlinesLoader").innerHTML;}
+}</script><div id="moreSectionNews" class="more-section-news-top gridPanel grid8"><div class="module">
+		
+		<div class="moduleHeader">
+				<h3>
+					Recent Politics News</h3>
+			</div>
+		<div class="moduleBody">
+		<style>
+.more-section-news-top .module {
+  margin-bottom: 0;
+}
+</style><div class="feature"><div class="photo">
+				<a href="/article/2014/09/12/us-usa-immigration-mexico-perry-idUSKBN0H71YO20140912"  ><img
+        		src="http://s2.reutersmedia.net/resources/r/?m=02&d=20140912&t=2&i=973107533&w=140&fh=&fw=&ll=&pl=&r=LYNXMPEA8B0XC"
+        		border="0" alt="Photo"
+        		 /></a>
+</div><h2><a href="/article/2014/09/12/us-usa-immigration-mexico-perry-idUSKBN0H71YO20140912"  >Mexico President slams Texas governor over border crackdown</a>
+</h2><p>MEXICO CITY  - Texas Gov. Rick Perry's deployment of National Guard troops on the U.S.-Mexican border is "reprehensible" and puts neighborly relations at risk, Mexican President Enrique Pena Nieto said in an interview published on Friday.</p>
+	<div class="relatedInfo">
+			<span class="relatedTopics">
+			<!-- /politics, Politics, /politics -->
+				<!-- /news/world, World, /politics -->
+				<a href="/news/world">World</a>, <!-- /places/mexico, Mexico, /politics -->
+				<a href="/places/mexico">Mexico</a>, <!-- /subjects/2012-mexico-election, Mexico Election, /politics -->
+				<a href="/subjects/2012-mexico-election">Mexico Election</a></span>
+			<span class="timestamp">12 Sep 2014</span></div>
+	</div><div class="feature"><div class="photo">
+				<a href="/article/2014/09/12/us-iraq-crisis-usa-coordinator-idUSKBN0H722420140912"  ><img
+        		src="http://s3.reutersmedia.net/resources/r/?m=02&d=20140912&t=2&i=973137038&w=140&fh=&fw=&ll=&pl=&r=LYNXMPEA8B0YQ"
+        		border="0" alt="Photo"
+        		 /></a>
+</div><h2><a href="/article/2014/09/12/us-iraq-crisis-usa-coordinator-idUSKBN0H722420140912"  >Former U.S. Afghanistan commander to lead effort against Islamic State</a>
+</h2><p>WASHINGTON  - President Barack Obama has chosen retired Marine Corps General John Allen, who served as the top U.S. commander in Afghanistan, to coordinate international efforts to fight Islamic State militants in Iraq and Syria, a U.S. official said on Friday.</p>
+	<div class="relatedInfo">
+			<span class="relatedTopics">
+			<!-- /politics, Politics, /politics -->
+				<!-- /news/world, World, /politics -->
+				<a href="/news/world">World</a>, <!-- /places/afghanistan, Afghanistan, /politics -->
+				<a href="/places/afghanistan">Afghanistan</a></span>
+			<span class="timestamp">12 Sep 2014</span></div>
+	</div><div id="moreRecentHeadlines"></div></div>
+		</div>
+		</div><div class="linebreak"></div>
+	<style type="text/css">
+/* Native Article Ad */
+
+.sponsored-article {
+  clear: both;
+}
+
+.sponsored-article .feature {
+  padding: 15px 0;
+  float: none;
+}
+
+.sponsored-article .sponsored-content {
+  width: 100%;
+  padding: 11px 8px 10px;
+  margin-left: -8px;
+  background-color: #f5f5f5;
+}
+
+.sponsored-article .sponsored-content-label {
+  padding: 0 6px;
+  margin-bottom: 13px;
+  border: 1px solid #ccc;
+  float: left;
+  font-size: 11px;
+  line-height: 18px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.sponsored-article .sponsor {
+  margin-top: -1px;
+  float: right;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  color: #666;
+}
+
+.sponsored-article .sponsor .sponsor-text,
+.sponsored-article .sponsor .sponsor-logo {
+  float: left;
+}
+
+.sponsored-article .sponsor .sponsor-text {
+  margin-top: -1px;
+}
+
+.sponsored-article .sponsor .sponsor-logo {
+  width: 68px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.sponsored-article .thumbnail {
+  width: 140px;
+  height: 93px;
+  margin-right: 10px;
+  float: left;
+  clear: both;
+}
+
+.sponsored-article h2 {
+  margin-top: 33px;
+}
+
+#sponsored-article.sponsored-article a {
+  color: #333 !important;
+}
+
+#sponsored-article.sponsored-article p {
+  margin-bottom: 0;
+}
+</style>
+
+<!--[if lte IE 7]>
+<style type="text/css">
+.sponsored-article > .thumbnail +  h2 {
+  margin: 42px 0 0 150px;
+}
+
+.sponsored-article h2 {
+  margin-top: 42px; 
+}
+</style>
+<![endif]-->
+
+<div id="sponsored-article" class="sponsored-article">
+<!-- us.reuters/news/politics -->
+<script type="text/javascript">
+var ord = window.ord || Math.floor(Math.random() * 1e16);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N4735792/adj/us.reuters/news/politics;type=bi_content;sz=1x1;ord=' + ord + '?"><\/script>');
+</script>
+<noscript>
+<a href="http://ad.doubleclick.net/N4735792/jump/us.reuters/news/politics;type=bi_content;sz=1x1;ord=[timestamp]?">
+<img src="http://ad.doubleclick.net/N4735792/ad/us.reuters/news/politics;type=bi_content;sz=1x1;ord=[timestamp]?" width="1" height="1" />
+</a>
+</noscript>
+</div><div class="linebreak"></div>
+	<div id="moreSectionNews" class="more-section-news-bottom gridPanel grid8"><div class="module">
+		
+		<div class="moduleBody">
+		<style>
+.more-section-news-bottom {
+  border:none !important;
+}
+
+#moreSectionNews.more-section-news-bottom {
+  padding-top: 0;
+}
+
+.more-section-news-bottom .moduleBody {
+  margin-top: 0;
+}
+</style><div class="feature"><div class="photo">
+				<a href="/article/2014/09/13/us-iraq-crisis-kerry-idUSKBN0H71UP20140913"  ><img
+        		src="http://s2.reutersmedia.net/resources/r/?m=02&d=20140912&t=2&i=973231903&w=140&fh=&fw=&ll=&pl=&r=LYNXMPEA8B0VH"
+        		border="0" alt="Photo"
+        		 /></a>
+</div><h2><a href="/article/2014/09/13/us-iraq-crisis-kerry-idUSKBN0H71UP20140913"  >Kerry opposes Iran role in anti-Islamic State coalition</a>
+</h2><p>ANKARA  - U.S. Secretary of State John Kerry said on Friday it was "not appropriate" for Iran to join talks on confronting Islamic State militants, as he appeared to play down how fast countries can commit to force or other steps in an emerging coalition. |&nbsp;<span class="inlineLinks"><a href="/video/2014/09/12/us-wins-regional-support-for-syria-iraq?videoId=343236466&newsChannel=politicsNews"  >Video</a>
+</span></p>
+	<div class="relatedInfo">
+			<span class="relatedTopics">
+			<!-- /politics, Politics, /politics -->
+				<!-- /news/world, World, /politics -->
+				<a href="/news/world">World</a>, <!-- /places/turkey, Turkey, /politics -->
+				<a href="/places/turkey">Turkey</a></span>
+			<span class="timestamp">12 Sep 2014</span></div>
+	</div><div class="feature"><h2><a href="/article/2014/09/12/us-usa-california-senator-idUSKBN0H721A20140912"  >California state senator gets jail time in voter fraud case</a>
+</h2><p>LOS ANGELES  - A California state senator convicted on eight felony counts of perjury and voter fraud was sentenced to 90 days in jail on Friday in one of three ethics scandals involving Democratic lawmakers in the most populous U.S. state.</p>
+	<div class="relatedInfo">
+			<span class="relatedTopics">
+			<!-- /politics, Politics, /politics -->
+				<!-- /news/us, U.S., /politics -->
+				<a href="/news/us">U.S.</a></span>
+			<span class="timestamp">12 Sep 2014</span></div>
+	</div><div class="feature"><div class="photo">
+				<a href="/article/2014/09/12/us-usa-justice-districtofcolumbia-idUSKBN0H71X320140912"  ><img
+        		src="http://s3.reutersmedia.net/resources/r/?m=02&d=20140912&t=2&i=973093794&w=140&fh=&fw=&ll=&pl=&r=LYNXMPEA8B0WJ"
+        		border="0" alt="Photo"
+        		 /></a>
+</div><h2><a href="/article/2014/09/12/us-usa-justice-districtofcolumbia-idUSKBN0H71X320140912"  >Washington U.S. attorney sets up first unit to ID wrongful convictions</a>
+</h2><p>WASHINGTON  - The U.S. Attorney's Office in Washington has set up the first federal unit in the nation to identify and investigate cases that ended in wrongful convictions, the office said on Friday.</p>
+	<div class="relatedInfo">
+			<span class="timestamp">12 Sep 2014</span></div>
+	</div><div id="moreRecentHeadlines"></div></div>
+		</div>
+		</div><div class="linebreak"></div>
+	<script type="text/javascript" src="http://s1.reutersmedia.net/resources_v2/js/rcom-next20.js"></script>
+<script type="text/javascript">
+Reuters.n20s.init("politicsNews", "");
+</script>
+
+<div>
+<script type="text/javascript">
+  TR.insertBussUnit("http:\/\/ad.doubleclick.net\/N4735792\/adj\/us.reuters;type=BizDev_Section_SP1;sz=610x1");
+</script>
+<div class="linebreak"></div>
+</div><div class="linebreak"></div>
+	
+
+</div>
+
+<div class="column2 gridPanel grid4">
+<script type="text/javascript">
+try { Reuters.section.drawFollow(
+	'Politics News',
+	'http://www.facebook.com/pages/Reuters-Politics/198439576900287', 
+	'reuterspolitics',
+	'http://feeds.reuters.com/Reuters/PoliticsNews',
+	'http://feedburner.google.com/fb/a/mailverify?uri=Reuters/PoliticsNews&amp;loc=en_US'
+); } catch(e) {}
+</script><div class="ad" id="mpu">
+
+		<script language="javascript" type="text/javascript">
+
+		  var adsrc = 'us.reuters/news/politics;' + 'type=mpu;sz=300x250;tile=2;' + '';
+		  adsrc = TR.createDFPUrl(adsrc); 
+		  if ( typeof(AD_TRACKER) != 'undefined' ) {
+		     adsrc = AD_TRACKER.processAdSrcType(adsrc);
+		  }
+
+		  
+		  if ((typeof (hideAllAds) == 'undefined' || hideAllAds == false) && (typeof (AD_TRACKER) == 'undefined' || AD_TRACKER.isAdHidden('mpu') == false) &&
+		      (typeof (hideAd_13892702) == 'undefined' || hideAd_13892702 == false)) {
+              if (typeof (TR) !== "undefined") {
+                 TR.writeDFPURL("http://ad.doubleclick.net/N4735792/adj/" + adsrc);
+              }
+		  }
+
+		  </script>
+
+		<noscript>
+		    <a href="http://ad.doubleclick.net/N4735792/jump/us.reuters/news/politics;type=mpu;sz=300x250;tile=2;ord=2095?" target="_blank">
+		      <img src="http://ad.doubleclick.net/N4735792/ad/us.reuters/news/politics;type=mpu;sz=300x250;tile=2;ord=2095?" width="300" height="250" border="0" alt="">
+		    </a>
+		</noscript>
+
+		</div>
+
+		<div class="module">
+		
+		<div class="moduleHeader">
+				<h3>
+					<a href="http://www.reuters.com/news/video?videoChannel=1003">
+					Politics Video</a>
+					</h3>
+			</div>
+		<div class="moduleBody">
+		<div class="mediaList videoList size300">
+<div class="photo4up"><div class="feature"><div class="photo">
+                 <a href="/news/video/story?videoId=342411723&videoChannel=1003"  >                	
+                  <div class="videoOverlay"></div>
+                  <img
+        		src="http://s2.reutersmedia.net/resources/r/?d=20140911&i=94205403&w=300&r=94205403-1&t=2"
+        		border="0" alt="Boehner has doubts on Obama's plan to destroy Islamic State"
+        		 />
+     	</a>
+			</div><h2><a href="/news/video/story?videoId=342411723&videoChannel=1003"  >Boehner has doubts on Obama's plan to destroy Islamic State</a>
+		</h2><div class="actionButton breaking"><a href="/news/video/story?videoId=342411723&videoChannel=1003"  >Watch Video</a></div>
+	</div><div class="feature"><div class="photo">
+                 <a href="/news/video/story?videoId=342009295&videoChannel=1003"  >                	
+                  <div class="videoOverlay"></div>
+                  <img
+        		src="http://s2.reutersmedia.net/resources/r/?d=20140911&i=94155804&w=300&r=94155804-1&t=2"
+        		border="0" alt="Obama lays out strategy to "ultimately destroy ISIL""
+        		 />
+     	</a>
+			</div><h2><a href="/news/video/story?videoId=342009295&videoChannel=1003"  >Obama lays out strategy to "ultimately destroy ISIL"</a>
+		</h2><div class="actionButton breaking"><a href="/news/video/story?videoId=342009295&videoChannel=1003"  >Watch Video</a></div>
+	</div><div class="feature"><div class="photo">
+                 <a href="/news/video/story?videoId=341940320&videoChannel=1003"  >                	
+                  <div class="videoOverlay"></div>
+                  <img
+        		src="http://s2.reutersmedia.net/resources/r/?d=20140911&i=94149133&w=300&r=94149133-1&t=2"
+        		border="0" alt=""It will take time to eradicate a cancer like ISIL" - President Obama"
+        		 />
+     	</a>
+			</div><h2><a href="/news/video/story?videoId=341940320&videoChannel=1003"  >"It will take time to eradicate a cancer like ISIL" - President Obama</a>
+		</h2><div class="actionButton breaking"><a href="/news/video/story?videoId=341940320&videoChannel=1003"  >Watch Video</a></div>
+	</div></div></div><!-- end mediaList -->
+</div>
+		</div>
+		
+
+<div id="feature-elections" class="focus gallery">
+
+</div><div class="linebreak"></div>
+	<div class="ad" id="mpulow">
+
+		<script language="javascript" type="text/javascript">
+
+		  var adsrc = 'us.reuters/news/politics;' + 'type=mpulow;sz=300x250;tile=3;' + '';
+		  adsrc = TR.createDFPUrl(adsrc); 
+		  if ( typeof(AD_TRACKER) != 'undefined' ) {
+		     adsrc = AD_TRACKER.processAdSrcType(adsrc);
+		  }
+
+		  
+		  if ((typeof (hideAllAds) == 'undefined' || hideAllAds == false) && (typeof (AD_TRACKER) == 'undefined' || AD_TRACKER.isAdHidden('mpulow') == false) &&
+		      (typeof (hideAd_13520930) == 'undefined' || hideAd_13520930 == false)) {
+              if (typeof (TR) !== "undefined") {
+                 TR.writeDFPURL("http://ad.doubleclick.net/N4735792/adj/" + adsrc);
+              }
+		  }
+
+		  </script>
+
+		<noscript>
+		    <a href="http://ad.doubleclick.net/N4735792/jump/us.reuters/news/politics;type=mpulow;sz=300x250;tile=3;ord=0630?" target="_blank">
+		      <img src="http://ad.doubleclick.net/N4735792/ad/us.reuters/news/politics;type=mpulow;sz=300x250;tile=3;ord=0630?" width="300" height="250" border="0" alt="">
+		    </a>
+		</noscript>
+
+		</div>
+
+		<div class="linebreak"></div>
+	
+
+<div class="section">
+	<div class="sectionContent">
+<div class="sectionColumns">
+
+<div class="gridPanel grid12">
+<script type="text/javascript">
+	Reuters.namespace("info");
+	Reuters.info.outbrain_env = 'produsx';
+</script>
+<script type="text/javascript">
+targetUrl = window.location.pathname;
+document.write('<div class="OUTBRAIN" data-src="http://www.reuters.com' + targetUrl +'?env' + Reuters.info.outbrain_env +'=0" data-widget-id="SF_2" data-ob-template="reuters" ></div>');
+</script>
+<script type="text/javascript" src="http://widget.perfectmarket.com/reuters/load.js"></script>
+
+<div class="linebreak"></div>
+	</div>
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+<div class="column3">
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="section">
+	<div class="sectionContent">
+<div class="sectionColumns">
+
+<div class="gridPanel grid12">
+<div id="footerTopicTarget"></div><div id="footerTopics">
+<div class="sectionRelatedTopics">
+
+	<ul><h3>Related Topics: </h3> 
+	<li><a href="/news/us">U.S.</a></li><li><a href="http://live.reuters.com/Event/Politics">Latest Updates</a></li></ul>
+</div>
+
+	</div>
+<div class="section" id="topSections">
+<div class="sectionContent">
+<link href="/resources_v2/css/rcom-topsections.css" rel="stylesheet" />
+<div id="topSectionsLoader"></div>
+<script language="javascript">Reuters.utils.replaceContent("topSectionsLoader", "/assets/sharedModuleLoader?view=RSM-US-Top-Sections-2", null, null);</script><div class="linebreak"></div>
+	</div></div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="section bleeding" id="footerHead">
+	<div class="sectionContent">
+<div id="footerHeader"><div class="columnLeft"><div class="logo"><div id="footerLogo"><a href="/">&nbsp;</a></div></div></div><div class="columnLeft">	<div id="editionsFooter" class="panel editions">
+			<ul id="editionSwitchFooter" class="editionSwitch">
+				<li>
+					<div class="currentEditionTitle">Edition:</div>
+					<div class="currentEdition">U.S.</div>
+					<div class="editionArrow"></div>
+					<ul>
+						<li><a href="http://ara.reuters.com">Arabic</a></li>
+						<li><a href="http://ar.reuters.com">Argentina</a></li>
+						<li><a href="http://br.reuters.com">Brazil</a></li>
+						<li><a href="http://ca.reuters.com">Canada</a></li>
+						<li><a href="http://cn.reuters.com">China</a></li>
+						<li><a href="http://fr.reuters.com">France</a></li>
+						<li><a href="http://de.reuters.com">Germany</a></li>
+						<li><a href="http://in.reuters.com">India</a></li>
+						<li><a href="http://it.reuters.com">Italy</a></li>
+						<li><a href="http://jp.reuters.com">Japan</a></li>
+						<li><a href="http://lta.reuters.com">Latin America</a></li>
+						<li><a href="http://mx.reuters.com">Mexico</a></li>
+					    <li><a href="http://ru.reuters.com">Russia</a></li>
+						<li><a href="http://es.reuters.com">Spain</a></li>
+						<li><a href="http://uk.reuters.com">United Kingdom</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+<script type="text/javascript">
+if(Reuters.info.edition == "BETAUS") {
+	$("#editionSwitchFooter .currentEdition").text('U.S.');
+} else {
+	$("#editionSwitchFooter .currentEdition").text(Reuters.info.edition);
+}
+</script></div><div class="columnRight"><div id="topLink"><a href="#top"><p>Back to top</p></a></div></div></div><div class="sectionColumns">
+
+<div class="column1">
+</div>
+
+<div class="column2">
+</div>
+
+<div class="column3">
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="section bleeding" id="footer">
+	<div class="sectionContent">
+<div class="sectionColumns">
+
+<div class="gridPanel grid12">
+<div class="columnLeft"><div class="gridPanel grid12">
+<span class="footerparent">Reuters.com</span>
+<ul>
+	<li class="h-links"><a href="http://www.reuters.com/finance">Business</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/finance/markets">Markets</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/news/world">World</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/news/politics">Politics</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/news/technology">Technology</a></li>
+	<li class="h-links"><a href="http://blogs.reuters.com/us/">Opinion</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/finance/personal-finance">Money</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/news/pictures">Pictures</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/news/video">Videos</a></li>
+	<li class="h-linkend"><a href="http://www.reuters.com/assets/siteindex">Site Index</a></li>
+</ul>
+
+
+
+</div></div><div class="columnLeft"><div class="gridPanel grid12"><span class="footerparent">More from Reuters</span>
+<ul>
+    <li class="h-links"><a href="http://thomsonreuters.com/news-services/">Reuters News Agency</a></li>
+    <li class="h-links"><a href="http://thomsonreuters.com/site/reuters-brand-attribution-guidelines/">Brand Attribution Guidelines</a></li>
+    <li class="h-linkend"><a href="http://thomsonreuters.com/site/delivery-options/">Delivery Options</a></li>
+</ul></div></div><div class="columnLeft"><div class="gridPanel grid12"><span class="footerparent">Support & Contact</span>
+<ul>
+	<li class="h-links"><a href="http://reuters.zendesk.com">Support</a></li>
+	<li class="h-linkend"><a href="http://reuters.zendesk.com/anonymous_requests/new">Corrections</a></li>
+</ul>
+</div></div><div class="columnLeft"><div id="footer-utilities" class="gridPanel grid12"></div></div><div class="columnLeft"><div class="gridPanel grid12">
+<span class="footerparent">Connect with Reuters</span>
+<ul>
+<li id="foot-twitter"><a href="http://www.twitter.com/reuters">Twitter</a>&nbsp;&nbsp;</li>
+<li id="foot-facebook"><a href="http://www.facebook.com/Reuters">Facebook</a>&nbsp;&nbsp;</li>
+<li id="foot-linkedin"><a href="http://www.linkedin.com/today/reuters.com">LinkedIn</a>&nbsp;&nbsp;</li>
+<li id="foot-rssfeed"><a href="http://www.reuters.com/tools/rss">RSS</a>&nbsp;&nbsp;</li>
+<li id="foot-podcasts"><a href="http://www.reuters.com/tools/podcasts">Podcast</a>&nbsp;&nbsp;</li>
+<li id="foot-newsletters"><a href="https://commerce.us.reuters.com/profile/pages/newsletter/begin.do">Newsletters</a>&nbsp;&nbsp;</li>
+<li id="foot-mobile"><a href="http://www.reuters.com/tools/mobile">Mobile</a></li>
+</ul>
+</div></div><div class="columnLeft"><div class="gridPanel grid12"><span class="footerparent">About</span>
+<ul>
+	<li class="h-links"><a href="http://www.reuters.com/privacy-policy">Privacy Policy</a></li>
+	<li class="h-links"><a href="http://www.reuters.com/terms-of-use">Terms of Use</a></li>
+	 <li class="h-links"><a href="http://sales.reuters.com/" target="_blank">Advertise With Us</a></li>
+         <li class="h-links" id="evidon-footer"><a id="_bapw-link" href="#" target="_blank"><img id="_bapw-icon" border="0" src="https://cdn.betrad.com/pub/icon1.png" /><span id="evidon-text">AdChoices</span></a></li>
+	<li class="h-linkend" id="footer-endrow"><a href="http://thomsonreuters.com/copyright/">Copyright</a></li>
+</ul>
+<script>/**/(function(){var g=285,i=1237,a=false,h=document,j=h.getElementById("_bapw-link"),e=(h.location.protocol=="https:"),f=(e?"https":"http")+"://",c=f+(e?"a248.e.akamai.net/betterad.download.akamai.com/91609":"cdn.betrad.com")+"/pub/";function b(k){var d=new Image();d.src=f+"l.betrad.com/pub/p.gif?pid="+g+"&ocid="+i+"&i"+k+"=1&r="+Math.random()}h.getElementById("_bapw-icon").src=c+"icon1.png";j.onmouseover=function(){if(/#$/.test(j.href)){j.href="http://info.evidon.com/pub_info/"+g+"?v=1"}};j.onclick=function(){var k=window._bap_p_overrides;function d(n,q){var o=h.getElementsByTagName("head")[0]||h.documentElement,m=a,l=h.createElement("script");function p(){l.onload=l.onreadystatechange=null;o.removeChild(l);q()}l.src=n;l.onreadystatechange=function(){if(!m&&(this.readyState=="loaded"||this.readyState=="complete")){m=true;p()}};l.onload=p;o.insertBefore(l,o.firstChild)}if(k&&k.hasOwnProperty(g)){if(k[g].new_window){b("c");return true}}this.onclick="return "+a;d(f+"ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js",function(){d(c+"pub2.js",function(){BAPW.i(j,{pid:g,ocid:i})})});return a};b("i")}());/**/</script>
+</div></div><div id="tr-intro" class="gridPanel grid12"><div id="tr-description"><img src="http://s4.reutersmedia.net/resources_v2/images/tr-source-txt.gif" border="0" /></div></div><div class="linebreak"></div>
+	<div id="tr-logo" class="gridPanel grid12"><a href="http://www.thomsonreuters.com/"><div id="tr-footer">&nbsp;</div></a></div><div class="linebreak"></div>
+	<div id="tr-info" class="gridPanel grid12"><div class="tr-products">
+<div id="tr-eikon">
+<div class="tr-header1"><a href="http://thomsonreuters.com/products_services/financial/eikon/" onclick="dcsMultiTrack('DCS.dcssip','thomsonreuterseikon.com','DCS.dcsuri','/','WT.ti','Offsite: thomsonreuterseikon.com','WT.dl','24','WT.z_offsite','http://thomsonreuterseikon.com/');"></a></div>
+<div class="tr-descr">Our Flagship financial information platform incorporating Reuters Insider</div>
+</div>
+
+<div id="tr-elektron">
+<div class="tr-header1"><a href="http://thomsonreuters.com/products_services/financial/financial_products/a-z/elektron/" onclick="dcsMultiTrack('DCS.dcssip','www.pehub.com','DCS.dcsuri','/','WT.ti','Offsite: www.pehub.com','WT.dl','24','WT.z_offsite','http://www.pehub.com/');"OnClick="dcsMultiTrack('DCS.dcssip','thomsonreuters.com','DCS.dcsuri','/','WT.ti','Offsite: thomsonreuters.com','WT.dl','24','WT.z_offsite','http://thomsonreuters.com/');"></a></div>
+<div class="tr-descr">An ultra-low latency infrastructure for electronic trading and data distribution</div>
+</div>
+
+<div id="tr-accelus">
+<div class="tr-header1"><a href="http://www.accelus.thomsonreuters.com/" onclick="dcsMultiTrack('DCS.dcssip','www.accelus.thomsonreuters.com','DCS.dcsuri','/','WT.ti','Offsite: www.accelus.thomsonreuters.com','WT.dl','24','WT.z_offsite','http://www.accelus.thomsonreuters.com/');"></a></div>
+<div class="tr-descr">A connected approach to governance, risk and compliance</div>
+</div>
+
+<div id="tr-westlaw">
+<div class="tr-header3"><a href="http://west.thomson.com/westlawnext/default.aspx" onclick="dcsMultiTrack('DCS.dcssip','west.thomson.com','DCS.dcsuri','/westlawnext/default.aspx','WT.ti','Offsite: west.thomson.com','WT.dl','24','WT.z_offsite','http://west.thomson.com/westlawnext/default.aspx');"></a></div>
+<div class="tr-descr">Our next generation legal research platform</div>
+</div>
+
+<div id="tr-onesource">
+<div class="tr-header1"><a href="http://onesource.thomsonreuters.com/" onclick="dcsMultiTrack('DCS.dcssip','onesource.thomsonreuters.com','DCS.dcsuri','/','WT.ti','Offsite: onesource.thomsonreuters.com','WT.dl','24','WT.z_offsite','http://onesource.thomsonreuters.com/');"></a></div>
+<div class="tr-descr">Our global tax workstation</div>
+</div>
+
+<div id="tr-linklist">
+<ul>
+<li class="tr-descr"><a href="http://thomsonreuters.com/">Thomsonreuters.com</a></li>
+<li class="tr-descr"><a href="http://thomsonreuters.com/about/">About Thomson Reuters</a></li>
+<li class="tr-descr"><a href="http://ir.thomsonreuters.com">Investor Relations</a></li>
+<li class="tr-descr"><a href="http://careers.thomsonreuters.com/">Careers</a></li>
+<li class="tr-descr"><a href="http://thomsonreuters.com/about/contact_us/">Contact Us</a></li>
+</ul>
+</div>
+
+</div></div><div class="linebreak"></div>
+	</div>
+
+</div>
+
+<div id="disclaimer"><p><a href="http://www.thomsonreuters.com">Thomson Reuters</a> is the world's largest international multimedia news agency, providing <a href="http://www.reuters.com/finance/markets/us">investing news</a>, <a href="http://www.reuters.com/news/world">world news</a>, <a href="http://www.reuters.com/finance">business news</a>, <a href="http://www.reuters.com/news/technology">technology news</a>, headline news, <a href="http://www.reuters.com/finance/smallBusiness">small business news</a>, news alerts, <a href="http://www.reuters.com/finance/personal-finance">personal finance</a>, <a href="http://www.reuters.com/finance/stocks">stock market</a>, and <a href="http://funds.us.reuters.com/US/overview.asp">mutual funds information</a> available on Reuters.com, <a href="http://www.reuters.com/news/video">video</a>, <a href="http://www.reuters.com/tools/mobile">mobile</a>, and interactive television platforms. Thomson Reuters journalists are subject to an <a href="http://handbook.reuters.com">Editorial Handbook</a> which requires fair presentation and disclosure of relevant interests.</p>
+
+<p>NYSE and AMEX quotes delayed by at least 20 minutes. Nasdaq delayed by at least 15 minutes. For a complete <a href="http://www.reuters.com/info/disclaimer" target="_blank">list of exchanges and delays, please click here</a>.</p></div><div id="Footer1"></div><img src="http://www.bizographics.com/collect/?fmt=gif&url=reuters.com&pid=501" width="1" height="1" border="0" alt="">
+<div class="linebreak"></div>
+	</div>
+</div>
+
+
+</div>
+
+<SCRIPT TYPE="text/javascript">
+document.write("<SCR"+"IPT TYPE='text/javascript' SRC='" + "http" + (window.location.protocol.indexOf('https:')==0?'s':'') + "://js.revsci.net/gateway/gw.js?csid=I07714' CHARSET='ISO-8859-1'"+"><\/SCR"+"IPT>");
+</SCRIPT>
+
+<script type="text/javascript">
+<!--
+      I07714.DM_cat("us.reuters > news > politics");
+      I07714.DM_tag();
+//-->
+</SCRIPT><!-- Begin comScore Tag -->
+<noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035630&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag --><META name="DCSext.rChannel" content="News">
+<META name="DCSext.rCountry" content="BETAUS">
+<META name="WT.cg_n" content="News - Politics">
+<META name="WT.cg_s" content="Politics">
+<META name="DCSext.DartZone" content="us.reuters/news/politics">
+    <script type="text/javascript">
+var loginCookieValue =  YAHOO.util.Cookie.get("login");
+if(loginCookieValue != null && loginCookieValue != ''){
+
+	loginMeta = document.createElement('META');
+	loginMeta.name = 'WT.z_li';
+
+	var customerId = YAHOO.util.Cookie.get("customerId");
+	var socialLoginProvider = YAHOO.util.Cookie.get("socialLoginProvider");
+	if(customerId != null && customerId != '' && socialLoginProvider != null && socialLoginProvider != ''){
+		socialLoginProvider = socialLoginProvider.toLowerCase();
+		if(socialLoginProvider == 'google'){
+			loginMeta.content = "2";
+		} else if(socialLoginProvider == 'facebook'){
+			loginMeta.content = "3";
+		} else if(socialLoginProvider == 'linkedin'){
+			loginMeta.content = "4";
+		} else if(socialLoginProvider=='aol'){
+			loginMeta.content = "5";
+		} else if(socialLoginProvider=='twitter'){
+			loginMeta.content = "6";
+		} else if(socialLoginProvider=='myspace'){
+			loginMeta.content = "7";
+		} else if(socialLoginProvider=='yahoo'){
+			loginMeta.content = "8";
+		}
+	} else {
+		loginMeta.content = "1";
+	}
+
+	document.getElementsByTagName('head')[0].appendChild(loginMeta);
+   }
+
+var registeredCookieValue =  YAHOO.util.Cookie.get("ruus");
+
+if(registeredCookieValue != null && registeredCookieValue != 'undefined' && registeredCookieValue != ''){
+	registeredMeta = document.createElement('META');
+	registeredMeta.name = "WT.z_registered";
+	registeredMeta.content = encodeURIComponent(registeredCookieValue);
+	document.getElementsByTagName('head')[0].appendChild(registeredMeta);
+}
+
+</script>
+<META name="DCSext.ContentChannel"  content="Politics">
+
+		<META name="DCSext.ContentType"  content="News Topic">
+    <!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+<!-- Version: 8.6.0 -->
+<!-- Tag Builder Version: 2.1.0  -->
+<!-- Created: 2/9/2009 17:21:12 -->
+
+<script src="http://s4.reutersmedia.net/resources_v2/js/webtrends.js" type="text/javascript"></script>
+   <script type="text/javascript">
+var _tag=new WebTrends();
+_tag.dcsGetId();
+</script>
+<script type="text/javascript">
+setModuleImpressionTracking();
+_tag.dcsCollect();
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsncwimc10000kzgoor3wv9x_3f2v/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.0"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+
+
+
+</body>
 </html>
+

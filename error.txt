@@ -1,4 +1,0 @@
-[ERROR] Parsing Error:  http://www.huffingtonpost.com/syndication/
-[ERROR] Parsing Error:  http://english.aljazeera.net/
-[ERROR] Parsing Error:  http://www.talkleft.com/
-[ERROR] Parsing Error:  http://www.huffingtonpost.com/syndication
