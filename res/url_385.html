@@ -1,84 +1,917 @@
+<!DOCTYPE html>
 <html>
 <head>
-		
-		
-    <title>Something's Gone Terribly Wrong</title>
-    <meta property="og:title" content="Something's Gone Terribly Wrong" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.huffingtonpost.com/p/huffington-post.html/" />
-    <meta property="og:image" content="http://s0.huffpost.com/images/404/summer-zora-3.jpg" />
-    <meta property="og:site_name" content="The Huffington Post" />
-    
-        
-    <meta name="robots" content="noindex,nofollow" />
-    <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1410282423&f=404.css" />
-    <script src="http://s.huffpost.com/assets/js.php?v=1410282423&f=jquery.js"></script>
+    <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQAVVVQGwEHV1RTBAU="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({1:[function(t,e){function n(t,e,n){n||(n={}) for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0 a>u u++)r[u].apply(s,e) return s}function r(t,e){var n=o[t]||(o[t]=[]) n.push(e)}var o={},i="nr@context" e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0 t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2)) if(e(window),"getPrototypeOf"in Object){for(var i=document i&&!i.hasOwnProperty("addEventListener") )i=Object.getPrototypeOf(i) i&&e(i) for(var a=XMLHttpRequest.prototype a&&!a.hasOwnProperty("addEventListener") )a=Object.getPrototypeOf(a) a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2) e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0] "string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2) n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] window.XMLHttpRequest=function(t){var n=new a(t) try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 u>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d) if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data") c&&(n.cat=c.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr") var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2) t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var d=e(o) d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}} for(var f=0 u>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t] return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={} e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1 if(t===window)return 0 if(o.call(t,"__nr"))return t.__nr try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=u.createElement("script") e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]} u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f) try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="") var i,s,u,d="-"===r.charAt(0) for(u=0 u<e.length u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2) e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]) </script>
 
-	<script type="text/javascript">
+  <!-- Site Properities -->
+  <title>New Republic</title>
 
-		bN_cfg = {
-			h: location.hostname,
-			p: {"dL_ch":"us.hpmguncat","dL_dpt":"error","cobrand":"HuffPost"}
-		};
-		        
-		function runOmni() {
-		  s_265.pfxID = 'hpo';
-		  s_265.channel = "us.hpmguncat";
-		  s_265.linkInternalFilters = 'javascript:,huffingtonpost.com';
-		  s_265.prop16 = 'page';
-		  s_265.prop1 = 'error';
-		  s_265.prop2 = 'error';
-		  s_265.pageName = "" + document.title;
-		  s_265.prop12 = "" + document.URL.split('?')[0];
-		  s_265.prop17 = location.hostname;
-		  s_265.t();  
-		}
-		
-		s_265_account = "aol404error";
-		
-		(function(d){
-			var s = d.createElement('script');
-			s.src = "http://o.aolcdn.com/os_merge/?file=/aol/beacon.min.js&file=/aol/omniture.min.js";
-			d.getElementsByTagName('head')[0].appendChild(s);
-		})(document);
-	</script>
+    <meta name="description" content="The New Republic tackles politics, culture, and big ideas from an unbiased and thought-provoking perspective." />
+  <meta name="keywords" content="politics, domestic and foreign policy, book reviews, washington, congress, capitol hill, white house, literature, arts" />
+  
+  <!-- Mobile Properities -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-144x144.png" />
+
+  <meta name="apple-mobile-web-app-title" content="New Republic">
+  <meta name="google-site-verification" content="yjAiUZ-nXs91TSe9Er7xAnQBp2C8V2gg-mpTF7aZh20" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Social Properities -->
+  <meta property="twitter:account_id" content="82689705" />
+  <meta property="fb:app_id" content="219642118178156" />
+  <meta property="fb:admins" content="100001770781440" />
+  <meta property="fb:admins" content="19000185" />
+  <meta property="fb:admins" content="2400669" />
+  <meta property="fb:admins" content="600931" />
+  <meta property="fb:admins" content="5" />
+  <link href="https://plus.google.com/+thenewrepublic/" rel="publisher" />
+
+  <meta name="parsely-page" content='{"title":"TNR Home Page","link":"http:\/\/www.newrepublic.com\/","type":"frontpage"}' />
+  <link rel="canonical" href="http://www.newrepublic.com/" />
+<meta http-equiv="Content-Type" content="text/html  charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="The New Republic" href="http://www.newrepublic.com/rss.xml" />
+<link rel="shortcut icon" href="http://www.newrepublic.com/sites/default/files/newrepublic-icon.ico" type="image/vnd.microsoft.icon" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<meta property="og:site_name" content="New Republic" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.newrepublic.com/" />
+<meta property="og:title" content="New Republic" />
+<meta name="dcterms.title" content="New Republic" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="http://www.newrepublic.com/" />
+  <link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_4hPmAO_Nvj6jiRjsl7yjW6iGzgIXcDYAzsF_zjCZPRU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_tMu85oxBwJeA0ft2jJBpmbx9QUljMx-rJlqB5RG-kRg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_e6NSrz0eAtXd6XIybK4UIc7su1S1lr86zr5Zpcjhfb0.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/sites/all/themes/tnr/build/devices/print.css" media="print">
+  <!-- Reset JS before Page Load !-->
+<script src="/sites/all/themes/tnr/javascript/reset.js"></script>
+  <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [] 
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js' 
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]) 
+  _gaq.push(['_setAccount', 'UA-10465183-1']) 
+  _gaq.push(['_setDomainName', 'newrepublic.com']) 
+  _gaq.push(['_trackPageview']) 
+  (function() {
+    var ga = document.createElement('script')  ga.type = 'text/javascript'  ga.async = true 
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' 
+    var s = document.getElementsByTagName('script')[0]  s.parentNode.insertBefore(ga, s) 
+  })() 
+</script>
+
+<!-- comScore -->
+<script>
+var _comscore = _comscore || [] 
+_comscore.push({ c1: "2", c2: "15230262" }) 
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]  s.async = true 
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js" 
+el.parentNode.insertBefore(s, el) 
+})() 
+</script>  
+<!-- Google Ads -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+// pusher
+window.googletag     = window.googletag || {}
+window.googletag.cmd = window.googletag.cmd || [] 
+
+// loader
+(function() {
+  var
+    gads   = document.createElement('script'),
+    useSSL = 'https:' == document.location.protocol,
+    node
+   
+  gads.async = true 
+  gads.type  = 'text/javascript' 
+  gads.src   = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js' 
+  node       = document.getElementsByTagName('script')[0] 
+  node.parentNode.insertBefore(gads, node) 
+})() 
+//--><!]]>
+</script>
+
+<!-- Google Ad Leaderboards -->
+<script type="text/javascript">
+// push ads available on all pages onready without jquery (not available till end of page)
+document.onreadystatechange = function () {
+  var
+    state = document.readyState
+   
+  if (state === 'interactive' && window.site !== undefined) {
+    site.utilities.load.ads([
+      {
+        name  : '/25738720/Web-HomePage-LB0',
+        id    : 'leaderboard-ad',
+        sizes : [
+          [970, 90],
+          [728, 90]
+        ]
+      },
+      {
+        name  : '/25738720/Mobile-HomePage-LB0',
+        id    : 'mobile-leaderboard-ad',
+        sizes : [
+          [320, 50]
+        ]
+      }
+    ]) 
+  }
+} 
+</script>
+
 </head>
-<body>
-    <div id="fb-root"></div>
-    <div id="container">
-        <a href="http://www.huffingtonpost.com"><img src="/images/v/logos/logo_homepage_hp.png" /></a>
-        <h1>Oh, Noes! A 404!</h1>
-        <div id="factory_floor">
-            <div id="social">
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=46744042133";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                <div id="facebook_like" class="social_button">
-                <div class="fb-like" data-href="http://www.huffingtonpost.com/404/" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-colorscheme="light" data-font="arial" data-action="like" ref="" style="width: 90px" ></div>                </div>
-                <div id="tweet" class="social_button">
-                
-
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.huffingtonpost.com/404/" data-via="" data-recommend="" data-hashtag="" data-text="" data-size="small" data-lang="en" >Tweet</a>
-
-                </div>
-            </div>
-            <img src="http://s0.huffpost.com/images/404/summer-zora-3.jpg" alt="somethings gone terribly wrong" />
-            <h4>
-                <a href="http://www.huffingtonpost.com/">Feel free to continue to the Huffington Post &raquo;</a>
-            </h4>
-            <p>or</p>
-            <form id="aol-news-search" action="http://www.huffingtonpost.com/search.php/?">
-            	<input name="q" type="text" />
-            	<input type="submit" value="Search" />
-            	<input type="hidden" name="s_it" value="hp-404" />
-            </form>
-        </div><!-- / #factory_floor -->
-    </div><!-- / end #container -->
+<body id="homepage" >
     
-</body>
+  <div class="ui inverted page navigation container">
+        <div class="ui relaxed fitted grid">
+      <div class="left column">
+                <h1>New Republic</h1>
+                <span itemscope itemtype="http://schema.org/Organization">
+          <a class="logo ui image" itemprop="url" href="/" >
+            <img itemprop="logo" src="/sites/all/themes/tnr/assets/images/logo-white-100-slim.png">
+          </a>
+        </span>
+        <div class="ui compact basic inverted large mobile button">
+          <i class="list layout icon"></i> Menu
+        </div>
+        <nav class="ui divided horizontal category inverted list">
+          <a href="/tags/politics" class="item">Politics</a>
+          <a href="/tags/culture" class="item">Culture</a>
+          <a href="/current-issue" class="item">Magazine</a>
+        </nav>
+        <nav class="ui horizontal sub category inverted list">
+          <a href="/latest" class="item">The Latest</a>
+          <a href="/qed" class="item">Q.E.D.</a>
+          <a href="/tags/books" class="item">Books</a>
+          <a href="/climate" class="item">Climate</a>
+          <a href="/tags/isis" class="item">ISIS</a>
+          <a href="/tags/future-work" class="sponsored item">
+            Next Republic
+            <i class="triangle down icon"></i>
+          </a>
+        </nav>
+        <div class="ui sponsored wide popup">
+          <div class="ui four column fitted grid">
+            <div class="column">
+              <a href="/project/next-republic">
+                <img class="ui image" src="/sites/all/themes/tnr/assets/images/suisse/next-republic-navcallout.jpg" alt="Next Republic">
+              </a>
+            </div>
+              <div class="column">
+    <div class="ui headline">
+      <h3 class="ui rubric header">
+        <a href="/tags/psychology" class="title">Psychology</a>      </h3>
+      <a class="ui image" href="/article/119378/hijab-can-improve-body-image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/u184683/hijabi.jpg?itok=bal26sSW" />
+              </a>
+      <h3 class="ui header">
+        <a href="/article/119378/hijab-can-improve-body-image">
+          Women Who Wear Hijab Can Have a Better Body Image, Study Says        </a>
+        <div class="sub header">
+                  </div>
+      </h3>
+      <div class="author">
+        <a href="/authors/alice-robb">Alice Robb</a>      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui headline">
+      <h3 class="ui rubric header">
+        <a href="/tags/gender" class="title">Gender</a>      </h3>
+      <a class="ui image" href="/article/119363/why-there-arent-more-top-female-scientists-leaky-pipeline">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/female_scientist.jpg?itok=v9uPfiRu" />
+              </a>
+      <h3 class="ui header">
+        <a href="/article/119363/why-there-arent-more-top-female-scientists-leaky-pipeline">
+          Women Don't Stick with the Sciences. Here's Why.        </a>
+        <div class="sub header">
+                  </div>
+      </h3>
+      <div class="author">
+        <a href="/authors/rotem-ben-shachar">Rotem Ben-Shachar</a>      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui headline">
+      <h3 class="ui rubric header">
+        <a href="/tags/gender" class="title">Gender</a>      </h3>
+      <a class="ui image" href="/article/119343/impact-quotas-corporate-gender-equality">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/u18558/gender_quotas.jpg?itok=rPFZo-WS" />
+              </a>
+      <h3 class="ui header">
+        <a href="/article/119343/impact-quotas-corporate-gender-equality">
+          Gender Quotas Worked in Norway. Why Not Here?        </a>
+        <div class="sub header">
+                  </div>
+      </h3>
+      <div class="author">
+        <a href="/authors/alice-lee">Alice Lee</a>      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+      <div class="right column">
+        <div class="ui right floated red subscribe buttons">
+          <div class="ui dropdown button">
+            <a target="_blank" href="/subscription/self/header">Subscribe Now</a>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="/subscription/self/dropdown">Order a Subscription</a>
+              <a class="item" href="/subscription/gift/header">Give a Gift</a>
+              <a class="item" href="/subscription/international/header">International Orders</a>
+              <a class="item" href="/subscription/canada/header">Canadian Orders</a>
+              <a class="item" href="/subscription/digital/header">Digital Subscription</a>
+            </div>
+          </div>
+        </div>
+        <div class="ui small inverted secondary user menu">
+                  <a class="login item" href="/page/account-information">Sign In</a>
+                </div>
+        <div class="ui search">
+          <div class="ui small icon input">
+            <input class="prompt" type="text" name="q" autocomplete="off" placeholder="Search...">
+            <i class="search icon"></i>
+          </div>
+          <div class="results"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui fluid inverted vertical logged-out mobile menu">
+      <a class="item" href="/page/account-information">Sign In</a>
+      <a class="item" href="/subscription/self/header">Subscribe</a>
+      <div class="header item">Sections</div>
+      <a href="/latest" class="item">The Latest</a>
+      <a href="/qed" class="item">QED</a>
+      <a href="/tags/politics" class="item">Politics</a>
+      <a href="/tags/culture" class="item">Culture</a>
+      <a href="/current-issue" class="item">The Magazine</a>
+      <a href="/tags/future-work" class="item">Next Republic</a>
+    </div>
+  </div>
+<script type="text/javascript">
+site.page.config = {
+  node: {
+    id: 119429  },
+  ads        : [
+    {
+      name  : '/25738720/Web-HomePage1',
+      id    : 'homepage-ad',
+      sizes : [
+        [300, 250],
+        [300, 600]
+      ]
+    },
+    {
+      name  : '/25738720/Mobile-HomePage1',
+      id    : 'homepage-mobile-ad',
+      sizes : [
+        [300, 250],
+        [320, 50]
+      ]
+    }
+  ]
+} 
+</script>
+<div class="ui page content container">
+  <div class="ui fitted stackable article grid">
+    <div class="sixteen wide mobile only column">
+      <a class="ui fluid image" href="/article/119412/feminisms-future-debate">
+  <img src="http://www.newrepublic.com/sites/default/files/u184683/lede_art_feminism.jpg">
+</a>
+<h2 class="ui inverted black block header">
+  <a href="/article/119412/feminisms-future-debate">
+    <span class="headline">Feminism Has Conquered the Culture. Now Comes the Hard Part</span>
+      </a>
+    <div class="author sub header">
+    <a href="/authors/rebecca-traister">Rebecca Traister</a> and <a href="/authors/judith-shulevitz">Judith Shulevitz</a>  </div>
+  </h2>    </div>
+    <div class="eleven wide main column">
+      <div class="lede">
+  <a class="ui image" href="/article/119412/feminisms-future-debate">
+    <div class="placeholder" data-image="http://www.newrepublic.com/sites/default/files/u184683/lede_art_feminism.jpg"></div>
+  </a>
+  <h2 class="title">
+    <a href="/article/119412/feminisms-future-debate">
+      <span class="headline">Feminism Has Conquered the Culture. Now Comes the Hard Part</span>
+            <span class="caption">A debate on how to harness this unprecedented opportunity</span>
+            <i class="large right arrow icon"></i>
+    </a>
+        <div class="author">
+      <a href="/authors/rebecca-traister">Rebecca Traister</a> and <a href="/authors/judith-shulevitz">Judith Shulevitz</a>    </div>
+      </h2>
+  </div>    </div>
+    <div class="five wide side column">
+      <div class="ui headlines">
+                  <div class="headline" itemscope itemtype="http://schema.org/Article">
+      <h3 class="header" itemprop="name">
+        <a href="/article/1194 /hillary-clinton-harkin-steak-fry">
+                      Hillary Clinton's Iffy First Trip to Iowa                  </a>
+      </h3>
+              <span class="author">
+          <a href="/authors/noam-scheiber" class="author">Noam Scheiber</a>        </span>
+            </div>
+                <div class="headline" itemscope itemtype="http://schema.org/Article">
+      <h3 class="header" itemprop="name">
+        <a href="/article/119444/obama-should-anticipate-his-strategy-defeat-isis-will-fail">
+                      Obama's Scariest ISIS Comment Yet: 'I'm Not Going to Anticipate Failure'                  </a>
+      </h3>
+              <span class="author">
+          <a href="/authors/danny-vinik" class="author">Danny Vinik</a>        </span>
+            </div>
+                <div class="headline" itemscope itemtype="http://schema.org/Article">
+      <h3 class="header" itemprop="name">
+        <a href="/article/119436/how-stop-domestic-violence-experts-offer-5-steps-policymakers">
+                      Five Ways to Fight Domestic Violence                  </a>
+      </h3>
+              <span class="author">
+          <a href="/authors/jonathan-cohn" class="author">Jonathan Cohn</a>        </span>
+            </div>
+                <div class="headline" itemscope itemtype="http://schema.org/Article">
+      <h3 class="header" itemprop="name">
+        <a href="/article/119380/molly-ringwald-cindy-sherman-talk-style">
+                      "It’s Scary What the Fashion World Presents as Women"                  </a>
+      </h3>
+              <span class="author">
+          <a href="/authors/molly-ringwald" class="author">Molly Ringwald</a> and <a href="/authors/cindy-sherman" class="author">Cindy Sherman</a>        </span>
+            </div>
+      </div>
+      <a href="/TopFeaturedLogoLink" class="ui image top featured" >
+  <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/default_images/next-republic-homepage.png?itok=fmOqsLge">
+</a>
+<div class="ui headlines">
+                <div class="headline" itemscope itemtype="http://schema.org/Article">
+      <h3 class="header" itemprop="name">
+        <a href="/article/119363/why-there-arent-more-top-female-scientists-leaky-pipeline">
+                      Women Don't Stick with the Sciences. Here's Why.                  </a>
+      </h3>
+              <span class="author">
+          <a href="/authors/rotem-ben-shachar" class="author">Rotem Ben-Shachar</a>        </span>
+            </div>
+                <div class="headline" itemscope itemtype="http://schema.org/Article">
+      <h3 class="header" itemprop="name">
+        <a href="/article/118692/halle-berry-octavia-spencer-black-oscar-winners-head-tv">
+                      Why Network TV Has Become Home to Black Female Oscar Winners                  </a>
+      </h3>
+              <span class="author">
+          <a href="/authors/esther-breger" class="author">Esther Breger</a>        </span>
+            </div>
+    
+  <div class="sponsor mention">
+    <a target="_blank" href="https://www.credit-suisse.com/?WT.mc_id=cadv_disp_ca14002_cr0002_cso_us_en_20140827_kwi">
+      <img src="/sites/all/themes/tnr/assets/images/suisse/credit-suisse-241x35.jpg" alt="with support from Credit Suisse">
+    </a>
+  </div>
+
+
+</div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="variable advertisement module">
+  <div id="homepage-ad"></div>
+  <div id="homepage-mobile-ad"></div>
+</div>    <div class="subscription module ui red stacked secondary center aligned segment">
+  <h3 class="ui header">
+    Current Issue
+    <div class="sub header">
+      September 29, 2014    </div>
+  </h3>
+  <a href="/subscription/self/rightrail/cover" class="ui cover image">
+    <img typeof="foaf:Image" src="http://www.newrepublic.com/sites/default/files/styles/magazine_block_cover/public/u184683/092914_cover.online.jpg?itok=vz8Yaw6a" alt="" />  </a>
+  <div class="ui divider"></div>
+  <a class="ui large red fluid fade animated button" href="/subscription/self/rightrail" target="_blank">
+    <span class="visible content">SUBSCRIBE NOW</span>
+    <span class="hidden content">Save up to 82%</span>
+  </a>
+</div>  </div>
+  <div class="featured stories">
+    <div class="three column fitted doubling ui grid">
+            <div class="row">
+    <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119433">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/isis" class="title">ISIS</a>      </h2>
+      <a href="/article/119433/if-isis-not-islamic-then-inquisition-was-not-catholic" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/sunni.jpg?itok=lkbvDKv6" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119433/if-isis-not-islamic-then-inquisition-was-not-catholic">
+                      If ISIS Is Not Islamic, then the Inquisition Was Not Catholic                  </a>
+      </h3>
+      <div class="author"><a href="/authors/jerry-coyne" class="author">Jerry A. Coyne</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119435">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/science" class="title">Science</a>      </h2>
+      <a href="/article/119435/soft-robot-can-walk-though-fire" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/harvard-robot-091214-lede.png?itok=r4RSixll" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119435/soft-robot-can-walk-though-fire">
+                      Engineers Created This Soft Pink Robot to Save You in a Fire                  </a>
+      </h3>
+      <div class="author"><a href="/authors/molly-mirhashem" class="author">Molly Mirhashem</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119356">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/essay" class="title">Essay</a>      </h2>
+      <a href="/article/119356/charles-james-reviewed-jennifer-homans" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/lede_art_homans_2.jpg?itok=AzZi2LlV" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119356/charles-james-reviewed-jennifer-homans">
+                      Charles James Was an Artist—But Don't Hang His Works in a Museum                  </a>
+      </h3>
+      <div class="author"><a href="/authors/jennifer-homans" class="author">Jennifer Homans</a></div>
+    </div>
+  </div>
+    </div>
+              <div class="row">
+    <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119442">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/100-years-100-stories" class="title">100 Years 100 Stories</a>      </h2>
+      <a href="/article/119442/irving-howe-value-canon-essay-literature-and-education" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/lede_art_books_1.jpg?itok=735Neyaq" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119442/irving-howe-value-canon-essay-literature-and-education">
+                      You Should Absolutely, Positively Read the Canon in College                  </a>
+      </h3>
+      <div class="author"><a href="/authors/irving-howe" class="author">Irving Howe</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119441">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/obamacare" class="title">Obamacare</a>      </h2>
+      <a href="/article/119441/poll-obamacare-medicaid-expansion-responses-change-without-label" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/obamacare_march_24_joe_raedle_0.jpg?itok=T-s-aEJb" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119441/poll-obamacare-medicaid-expansion-responses-change-without-label">
+                      Survey: Republicans Like Obamacare a Lot More if You Call It by a Different Name                  </a>
+      </h3>
+      <div class="author"><a href="/authors/jonathan-cohn" class="author">Jonathan Cohn</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119440">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/qedaily" class="title">QEDaily</a>      </h2>
+      <a href="/article/119440/states-raised-their-minimum-wages-had-stronger-job-growth" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/453790555.jpg?itok=VQrzJOyv" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119440/states-raised-their-minimum-wages-had-stronger-job-growth">
+                      Here's What Happened When 13 States Raised Their Minimum Wages                  </a>
+      </h3>
+      <div class="author"><a href="/authors/danny-vinik" class="author">Danny Vinik</a></div>
+    </div>
+  </div>
+    </div>
+        <div class="row">
+    <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119361">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/books" class="title">Books</a>      </h2>
+      <a href="/article/119361/review-history-lincolns-republican-party-heather-cox-richardson" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/640px-abraham_lincoln_half_length_seated_april_10_1865.jpg?itok=znSwfzpe" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119361/review-history-lincolns-republican-party-heather-cox-richardson">
+                      Was the Spiritual Father of the GOP Actually a Democrat?                  </a>
+      </h3>
+      <div class="author"><a href="/authors/geoffrey-kabaservice" class="author">Geoffrey Kabaservice</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119424">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/foreign-policy" class="title">Foreign Policy</a>      </h2>
+      <a href="/article/119424/isis-and-syria-why-us-should-eliminate-bashar-al-assad-first" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/assad-gettyimages-091214-lede.jpg?itok=K1TiFXKg" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119424/isis-and-syria-why-us-should-eliminate-bashar-al-assad-first">
+                      We Can't Destroy ISIS Without Destroying Bashar al Assad First                  </a>
+      </h3>
+      <div class="author"><a href="/authors/fred-hof" class="author">Fred Hof</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119434">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/tv" class="title">TV</a>      </h2>
+      <a href="/article/119434/friends-20th-anniversary-nbc-sitcoms-legacy" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/friends-091214-lede.jpg?itok=8ZAjbz-I" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119434/friends-20th-anniversary-nbc-sitcoms-legacy">
+                      'Not Very Entertaining, Clever, or Original”: How NBC Almost Killed 'Friends'                  </a>
+      </h3>
+      <div class="author"><a href="/authors/andrew-harrison" class="author">Andrew Harrison</a></div>
+    </div>
+  </div>
+    </div>
+        <div class="row">
+    <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119432">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/history" class="title">History</a>      </h2>
+      <a href="/article/119432/history-female-titles-mistress-miss-mrs-or-ms" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/women_names.jpg?itok=IZTjxziQ" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119432/history-female-titles-mistress-miss-mrs-or-ms">
+                      When 'Mistress' Meant 'Mrs.' and 'Miss' Meant 'Prostitute'                  </a>
+      </h3>
+      <div class="author"><a href="/authors/alexandra-buxton" class="author">Alexandra Buxton</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119431">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/movies" class="title">Movies</a>      </h2>
+      <a href="/article/119431/how-digital-cinema-took-over-35mm-film" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/kids_watching_movie.jpg?itok=wutNWxPU" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119431/how-digital-cinema-took-over-35mm-film">
+                      The Triumph of Digital Will Be the Death of Many Movies                  </a>
+      </h3>
+      <div class="author"><a href="/authors/helen-alexander-and-rhys-blakely" class="author">Helen Alexander and Rhys Blakely</a></div>
+    </div>
+  </div>
+        <div class="column">
+    <div class="ui headline" itemscope itemtype="http://schema.org/Article" data-id="119423">
+      <h2 class="ui rubric header" itemprop="articleSection">
+        <a href="/tags/congress" class="title">Congress</a>      </h2>
+      <a href="/article/119423/house-republicans-invite-more-men-witnesses" class="image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/168 5566.jpg?itok=ftXm2JbE" alt="">
+              </a>
+      <h3 class="header">
+        <a href="/article/119423/house-republicans-invite-more-men-witnesses">
+                      Men in Congress Literally Don't Listen to Women                  </a>
+      </h3>
+      <div class="author"><a href="/authors/rebecca-leber" class="author">Rebecca Leber</a></div>
+    </div>
+  </div>
+    </div>
+        <div class="one column row">
+        <div class="column">
+          <a class="ui fluid more large blue button" href="/latest">
+            More Articles
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="http://ad.doubleclick.net/adj/N884.1195.THENEWREPUBLIC1/B8170992.4 sz=1x1 ord=[timestamp]?">
+</script>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/N884.1195.THENEWREPUBLIC1/B8170992.4 sz=1x1 ord=[timestamp]?">
+<img src="http://ad.doubleclick.net/ad/N884.1195.THENEWREPUBLIC1/B8170992.4 sz=1x1 ord=[timestamp]?" border=0 width=1 height=1 alt="Advertisement"></A>
+</noscript>
+
+<div class="ui page footer container">
+  <div class="ui relaxed stackable fitted grid">
+    <div class="sixteen wide mobile only center aligned column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted sitemap icon"></i>
+      </div>
+      <h5 class="ui inverted header">Sections</h5>
+      <div class="ui relaxed inverted fitted selection list">
+        <a href="/latest" class="item">The Latest</a>
+        <a href="/tags/politics" class="item">Politics</a>
+        <a href="/tags/culture" class="item">Culture</a>
+        <a href="/current-issue" class="item">The Magazine</a>
+      </div>
+      <select name="section" class="sections">
+        <option value="">More</option>
+        <optgroup label="Categories">
+          <option value="/tags/books/">Books</option>
+          <option value="/tags/economy/">Economy</option>
+          <option value="/tags/film/">Film</option>
+          <option value="/tags/plank/">The Plank</option>
+          <option value="/tags/politics/">Politics</option>
+          <option value="/tags/technology/">Technology</option>
+          <option value="/tags/world/">World</option>
+        </optgroup>
+        <optgroup label="New Republic">
+          <option value="/current-issue">Current Issue</option>
+          <option value="/page/about-new-republic">About</option>
+          <option value="/page/advertise-new-republic">Advertise</option>
+          <option value="/page/contact-us">Contact Us</option>
+          <option value="/page/jobs-and-internships">Jobs &amp  Internships</option>
+          <option value="/page/privacy-policy" rel="nofollow">Privacy Policy</option>
+          <option value="/tags/home-news">Home News</option>
+          <option value="/tags/events">Events</option>
+          <option value="/ebsco">Archives</option>
+          <option value="/page/rss-feeds">RSS</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="ten wide sitemap column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted sitemap icon"></i>
+      </div>
+      <div class="ui three column grid">
+        <div class="column">
+          <h5 class="ui inverted header">Sections</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/tags/books/">Books</a>
+            <a class="item" href="/tags/economy/">Economy</a>
+            <a class="item" href="/tags/film/">Film</a>
+            <a class="item" href="/tags/plank/">The Plank</a>
+            <a class="item" href="/tags/politics/">Politics</a>
+            <a class="item" href="/tags/technology/">Technology</a>
+            <a class="item" href="/tags/world/">World</a>
+            <a class="item" href="/tags/events/">Events</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">The Magazine</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/latest">Our Latest</a>
+            <a class="item" href="/current-issue">Current Issue</a>
+          </div>
+          <h5 class="ui inverted header">Subscriptions</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/subscription/self/footer/textlink">Order a Subscription</a>
+            <a class="item" href="/subscription/gift/footer/textlink">Give a Gift</a>
+            <a class="item" href="/page/subscriber-services">Subscriber Services</a>
+            <a class="item" href="/ebsco">Archives</a>
+            <a class="item" href="/page/frequently-asked-questions">FAQ</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">The New Republic</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/page/about-new-republic">About</a>
+            <a class="item" href="/page/advertise-new-republic">Advertise</a>
+            <a class="item" href="/newsletter">Newsletter</a>
+            <a class="item" href="/page/contact-us">Contact Us</a>
+            <a class="item" href="/page/jobs-and-internships">Jobs &amp  Internships</a>
+            <a class="item" href="/page/privacy-policy" rel="nofollow">Privacy Policy</a>
+            <a class="item" href="/tags/home-news">Home News</a>
+            <a class="item" href="/page/rss-feeds">RSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide signup column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted bullhorn icon"></i>
+      </div>
+      <h4 class="ui red header">Sign Up For The New Republic Daily</h4>
+      <p>Sign up now to get your dose of politics, culture, and big ideas with our free daily newsletter.</p>
+      <form class="ui form" method="post" action="http://link.newrepublic.com/s/TNR">
+  <input type="hidden" name="list[Master List]" value="1" />
+  <input type="hidden" name="vars[marketing]" value="TRUE" />
+  <input type="hidden" name="vars[source]" value="daily_footer" />
+  <input type="hidden" name="vars[tnr_daily]" value="TRUE" />
+  <div class="field">
+    <div class="ui fluid left labeled icon input">
+      <input type="text" name="email" placeholder="Enter e-mail" data-validate="email"  />
+      <i class="mail icon"></i>
+    </div>
+  </div>
+  <div class="ui blue submit button" type="submit">Sign Up</div>
+  <div class="ui success message">
+    <i class="checkmark icon"></i>
+    Signed up!
+  </div>
+</form>    </div>
+    <div class="six wide promo column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted bullhorn icon"></i>
+      </div>
+      <h4 class="ui header">
+        <a href="/subscription/self/footer/callout">Subscribe Now</a>
+      </h4>
+      <h5 class="ui inverted header">
+        Get The New Republic for <b>$19.97/year</b>
+      </h5>
+      <a class="ui left floated image" href="/subscription/self/footer/callout">
+        <img typeof="foaf:Image" src="http://www.newrepublic.com/sites/default/files/styles/curr_issue_cover_footer/public/u184683/092914_cover.online.jpg?itok=ZeKELmYP" alt="" />      </a>
+      <div class="ui small inverted fitted selection list">
+        <a class="item" href="/subscription/self/footer/callout">
+          <i class="book icon"></i>
+          Subscribe Now
+        </a>
+        <a class="item" href="/subscription/gift/footer">
+          <i class="gift icon"></i>
+          Give a Gift
+        </a>
+        <a class="item" href="/subscription/international/footer">
+          <i class="globe icon"></i>
+          International Orders
+        </a>
+        <a class="item" href="/subscription/digital/footer">
+          <i class="tablet icon" ></i>
+          Digital Subscription
+        </a>
+      </div>
+    </div>
+  </div>
+  <a class="ui centered small logo image" href="/">
+    <img src="/sites/all/themes/tnr/assets/images/logo-white.png">
+  </a>
+  <div class="social">
+<!--     <div class="slim twitter sharrre"
+      data-user="tnr"
+      data-url="http://www.newrepublic.com"
+      data-title="Follow"
+    ></div> -->
+    <div class="slim facebook sharrre"
+      data-url="http://www.facebook.com/thenewrepublic"
+      data-title="Like">
+    </div>
+    <div class="slim google sharrre"
+      data-url="http://www.newrepublic.com"
+      data-title="Plus">
+    </div>
+  </div>
+  <div class="ui mini centered divided inverted horizontal copyright link list">
+    <a class="item" href="/page/masthead">Masthead</a>
+    <div class="item">
+      Copyright 2014 &copy  The New Republic.
+      All Rights Reserved.
+    </div>
+  </div>
+</div>    <div class="ui modal" id="overlay"></div>  <div class="script">
+  <!--[if lt IE 9]>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <![endif]-->
+  <!--[if (gte IE 9) | (!IE)]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <!--<![endif]-->
+<script type="text/javascript" src="http://www.newrepublic.com/sites/default/files/js/js_bYu3NJYPuBJM5poe8mzfA2KHHjA4ui-bvdVhtq6_YBA.js"></script>
+
+  <!-- Site Config !-->
+  <script src="/sites/all/themes/tnr/build/ui/definitions/globals/site.js"></script>
+
+  <!-- Site Overlay !-->
+  <script type="text/javascript">
+  $.extend(true, site.config, $.parseJSON('{"loggedIn":false,"node":{"id":null},"overlay":{"force_display_nodes":[],"targeted_overlay_nodes":[],"tnr_overlay_nodes":[],"tnr_paywall_nodes":[],"visit_times_targeted":["1"],"visit_times_general":["1"],"visit_times_paywall":false},"staging":false,"subsection":false,"tag":{"ids":[]},"topTerm":null}')) 
+  // global debug settings
+  $.site('disable debug') 
+    $.site('disable console') 
+    </script>
+
+  <script type="text/javascript" src="http://www.newrepublic.com/sites/default/files/js/js_B6_6pPZmPuIn7sHbUHpZhb0g9gCuv5G3v1s35c1_8EI.js"></script>
+
+  
+</div>  <div class="tracking">
+
+  <!-- Google Remarketing -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var
+    google_conversion_id = 993343767,
+    google_conversion_label = 'gzoeCIDN0QMQkLP42wM',
+    google_custom_params = window.google_tag_params,
+    google_remarketing_only = true
+   
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+  <!-- Quantcast Script -->
+  <script type="text/javascript">
+  _qoptions={
+    qacct : 'p-abwxcJNao5fsc'
+  } 
+  </script>
+  <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+
+  <!-- Parse.ly -->
+  <div id="parsely-root" style="display: none">
+    <div id="parsely-cfg" data-parsely-site="tnr.com"></div>
+  </div>
+  <script>
+  (function(s, p, d) {
+    var h=d.location.protocol, i=p+"-"+s,
+        e=d.getElementById(i), r=d.getElementById(p+"-root"),
+        u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+        :"static."+p+".com" 
+    if (e) return 
+    e = d.createElement(s)  e.id = i  e.async = true 
+    e.src = h+"//"+u+"/p.js"  r.appendChild(e) 
+  })("script", "parsely", document) 
+  </script>
+ 
+    <!-- START horizon sailthru -->
+  <script type="text/javascript">
+    (function() {
+      function loadHorizon() {
+        var s = document.createElement('script') 
+        s.type = 'text/javascript' 
+        s.async = true 
+        s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js' 
+        var x = document.getElementsByTagName('script')[0] 
+        x.parentNode.insertBefore(s, x) 
+      }
+      loadHorizon() 
+      var oldOnLoad = window.onload 
+      window.onload = function() {
+        if (typeof oldOnLoad === 'function') {
+          oldOnLoad() 
+        }
+        Sailthru.setup({
+          domain: 'horizon.newrepublic.com'
+        }) 
+      } 
+    })() 
+  </script>
+  
+  <!-- Nielsen Online SiteCensus V6.0 -->
+  <script type="text/javascript">
+    (function () {
+      var image = new Image(1, 1) 
+      image.onerror = image.onload = function () {
+        image.onerror = image.onload = null 
+      } 
+      image.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-106312h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('') 
+    })() 
+  </script>
+
+  <!-- AdRoll -->
+  <script type="text/javascript">
+  adroll_adv_id = "SIJVU24MGJE47PAYLLPPOJ" 
+  adroll_pix_id = "6WNJ733UAJGY3LIFHE43PT" 
+  (function () {
+  var oldonload = window.onload 
+  window.onload = function(){
+     __adroll_loaded=true 
+     var scr = document.createElement("script") 
+     var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com") 
+     scr.setAttribute('async', 'true') 
+     scr.type = "text/javascript" 
+     scr.src = host + "/j/roundtrip.js" 
+     ((document.getElementsByTagName('head') || [null])[0] ||
+      document.getElementsByTagName('script')[0].parentNode).appendChild(scr) 
+     if(oldonload){oldonload()}} 
+  }()) 
+  </script>
+
+  <!-- ChartBeat -->
+  <script type="text/javascript">
+  var _sf_async_config={uid:34517,domain:"tnr.com"} 
+  _sf_async_config.useCanonical = true 
+  (function(){
+    function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime() 
+    var e = document.createElement('script') 
+    e.setAttribute('language', 'javascript') 
+    e.setAttribute('type', 'text/javascript') 
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js") 
+    document.body.appendChild(e) 
+    }
+    var oldonload = window.onload 
+    window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+  })() 
+  </script>
+
+  <!-- Optimizely -->
+  <script src="//cdn.optimizely.com/js/113744585.js"></script>
+
+  <div class="pixels">
+    <!-- Collective Media pixel -->
+    <img src="http://b.collective-media.net/seg/cm/l1dd" width="1" height="1" />
+    <noscript>
+      <!-- Quantcast Pixel -->
+      <img src="http://pixel.quantserve.com/pixel/p-abwxcJNao5fsc.gif" style="display: none " border="0" height="1" width="1" alt="Quantcast"/>
+      <!-- Google Re-marketing Pixel -->
+      <img height="1" width="1" style="border-style:none " alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/993343767/?value=0&amp label=gzoeCIDN0QMQkLP42wM&amp guid=ON&amp script=0"/>
+      <!-- Neilsen Census Pixel -->
+      <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-106312h&amp cg=0&amp cc=1&amp ts=noscript"
+      width="1" height="1" alt="" />
+      <!-- ComScore -->
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=15230262&cv=2.0&cj=1" />
+    </noscript>
+  </div>
+</div><script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"71240f55fe","applicationID":"2735134","transactionName":"YFRUZkcECEcHV0ZaXFkeY0BcSkldCFBXSx1HWUY=","queueTime":0,"applicationTime":9,"ttGuid":"","agentToken":"","atts":"TBNXEA8eG0k=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
 </html>

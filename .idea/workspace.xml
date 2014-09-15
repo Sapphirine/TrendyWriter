@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYSIS_IN_BACKGROUND" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="be9eaf9a-19fc-4629-ae40-f21a0f0017fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/TrendyWrite_api.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic/all_topics.txt" afterPath="$PROJECT_DIR$/topic/all_topics.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/url/all_urls.txt" afterPath="$PROJECT_DIR$/url/all_urls.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.txt" afterPath="$PROJECT_DIR$/debug.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug/debug_page.html" afterPath="$PROJECT_DIR$/debug/debug_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetchtitle_v2.py" afterPath="$PROJECT_DIR$/fetchtitle_v2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/home_.html" afterPath="$PROJECT_DIR$/res/home_.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_0.html" afterPath="$PROJECT_DIR$/res/url_0.html" />
@@ -88,6 +88,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_162.html" afterPath="$PROJECT_DIR$/res/url_162.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_163.html" afterPath="$PROJECT_DIR$/res/url_163.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_164.html" afterPath="$PROJECT_DIR$/res/url_164.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_165.html" afterPath="$PROJECT_DIR$/res/url_165.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_166.html" afterPath="$PROJECT_DIR$/res/url_166.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_167.html" afterPath="$PROJECT_DIR$/res/url_167.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_168.html" afterPath="$PROJECT_DIR$/res/url_168.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_169.html" afterPath="$PROJECT_DIR$/res/url_169.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_17.html" afterPath="$PROJECT_DIR$/res/url_17.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_170.html" afterPath="$PROJECT_DIR$/res/url_170.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_171.html" afterPath="$PROJECT_DIR$/res/url_171.html" />
@@ -158,22 +163,178 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_23.html" afterPath="$PROJECT_DIR$/res/url_23.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_230.html" afterPath="$PROJECT_DIR$/res/url_230.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_231.html" afterPath="$PROJECT_DIR$/res/url_231.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_232.html" afterPath="$PROJECT_DIR$/res/url_232.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_233.html" afterPath="$PROJECT_DIR$/res/url_233.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_234.html" afterPath="$PROJECT_DIR$/res/url_234.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_235.html" afterPath="$PROJECT_DIR$/res/url_235.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_236.html" afterPath="$PROJECT_DIR$/res/url_236.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_237.html" afterPath="$PROJECT_DIR$/res/url_237.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_238.html" afterPath="$PROJECT_DIR$/res/url_238.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_239.html" afterPath="$PROJECT_DIR$/res/url_239.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_24.html" afterPath="$PROJECT_DIR$/res/url_24.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_240.html" afterPath="$PROJECT_DIR$/res/url_240.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_241.html" afterPath="$PROJECT_DIR$/res/url_241.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_242.html" afterPath="$PROJECT_DIR$/res/url_242.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_243.html" afterPath="$PROJECT_DIR$/res/url_243.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_244.html" afterPath="$PROJECT_DIR$/res/url_244.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_245.html" afterPath="$PROJECT_DIR$/res/url_245.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_246.html" afterPath="$PROJECT_DIR$/res/url_246.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_247.html" afterPath="$PROJECT_DIR$/res/url_247.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_248.html" afterPath="$PROJECT_DIR$/res/url_248.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_249.html" afterPath="$PROJECT_DIR$/res/url_249.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_25.html" afterPath="$PROJECT_DIR$/res/url_25.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_250.html" afterPath="$PROJECT_DIR$/res/url_250.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_251.html" afterPath="$PROJECT_DIR$/res/url_251.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_252.html" afterPath="$PROJECT_DIR$/res/url_252.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_253.html" afterPath="$PROJECT_DIR$/res/url_253.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_254.html" afterPath="$PROJECT_DIR$/res/url_254.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_255.html" afterPath="$PROJECT_DIR$/res/url_255.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_256.html" afterPath="$PROJECT_DIR$/res/url_256.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_257.html" afterPath="$PROJECT_DIR$/res/url_257.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_258.html" afterPath="$PROJECT_DIR$/res/url_258.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_259.html" afterPath="$PROJECT_DIR$/res/url_259.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_26.html" afterPath="$PROJECT_DIR$/res/url_26.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_260.html" afterPath="$PROJECT_DIR$/res/url_260.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_261.html" afterPath="$PROJECT_DIR$/res/url_261.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_262.html" afterPath="$PROJECT_DIR$/res/url_262.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_263.html" afterPath="$PROJECT_DIR$/res/url_263.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_264.html" afterPath="$PROJECT_DIR$/res/url_264.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_265.html" afterPath="$PROJECT_DIR$/res/url_265.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_266.html" afterPath="$PROJECT_DIR$/res/url_266.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_267.html" afterPath="$PROJECT_DIR$/res/url_267.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_268.html" afterPath="$PROJECT_DIR$/res/url_268.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_269.html" afterPath="$PROJECT_DIR$/res/url_269.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_27.html" afterPath="$PROJECT_DIR$/res/url_27.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_270.html" afterPath="$PROJECT_DIR$/res/url_270.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_271.html" afterPath="$PROJECT_DIR$/res/url_271.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_272.html" afterPath="$PROJECT_DIR$/res/url_272.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_273.html" afterPath="$PROJECT_DIR$/res/url_273.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_274.html" afterPath="$PROJECT_DIR$/res/url_274.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_275.html" afterPath="$PROJECT_DIR$/res/url_275.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_276.html" afterPath="$PROJECT_DIR$/res/url_276.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_277.html" afterPath="$PROJECT_DIR$/res/url_277.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_278.html" afterPath="$PROJECT_DIR$/res/url_278.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_279.html" afterPath="$PROJECT_DIR$/res/url_279.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_28.html" afterPath="$PROJECT_DIR$/res/url_28.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_280.html" afterPath="$PROJECT_DIR$/res/url_280.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_281.html" afterPath="$PROJECT_DIR$/res/url_281.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_282.html" afterPath="$PROJECT_DIR$/res/url_282.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_283.html" afterPath="$PROJECT_DIR$/res/url_283.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_284.html" afterPath="$PROJECT_DIR$/res/url_284.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_285.html" afterPath="$PROJECT_DIR$/res/url_285.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_286.html" afterPath="$PROJECT_DIR$/res/url_286.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_287.html" afterPath="$PROJECT_DIR$/res/url_287.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_288.html" afterPath="$PROJECT_DIR$/res/url_288.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_289.html" afterPath="$PROJECT_DIR$/res/url_289.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_29.html" afterPath="$PROJECT_DIR$/res/url_29.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_290.html" afterPath="$PROJECT_DIR$/res/url_290.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_291.html" afterPath="$PROJECT_DIR$/res/url_291.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_292.html" afterPath="$PROJECT_DIR$/res/url_292.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_293.html" afterPath="$PROJECT_DIR$/res/url_293.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_294.html" afterPath="$PROJECT_DIR$/res/url_294.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_295.html" afterPath="$PROJECT_DIR$/res/url_295.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_296.html" afterPath="$PROJECT_DIR$/res/url_296.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_297.html" afterPath="$PROJECT_DIR$/res/url_297.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_298.html" afterPath="$PROJECT_DIR$/res/url_298.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_299.html" afterPath="$PROJECT_DIR$/res/url_299.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_3.html" afterPath="$PROJECT_DIR$/res/url_3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_30.html" afterPath="$PROJECT_DIR$/res/url_30.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_300.html" afterPath="$PROJECT_DIR$/res/url_300.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_301.html" afterPath="$PROJECT_DIR$/res/url_301.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_302.html" afterPath="$PROJECT_DIR$/res/url_302.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_303.html" afterPath="$PROJECT_DIR$/res/url_303.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_304.html" afterPath="$PROJECT_DIR$/res/url_304.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_305.html" afterPath="$PROJECT_DIR$/res/url_305.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_306.html" afterPath="$PROJECT_DIR$/res/url_306.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_307.html" afterPath="$PROJECT_DIR$/res/url_307.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_308.html" afterPath="$PROJECT_DIR$/res/url_308.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_309.html" afterPath="$PROJECT_DIR$/res/url_309.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_31.html" afterPath="$PROJECT_DIR$/res/url_31.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_310.html" afterPath="$PROJECT_DIR$/res/url_310.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_311.html" afterPath="$PROJECT_DIR$/res/url_311.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_312.html" afterPath="$PROJECT_DIR$/res/url_312.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_313.html" afterPath="$PROJECT_DIR$/res/url_313.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_314.html" afterPath="$PROJECT_DIR$/res/url_314.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_315.html" afterPath="$PROJECT_DIR$/res/url_315.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_316.html" afterPath="$PROJECT_DIR$/res/url_316.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_317.html" afterPath="$PROJECT_DIR$/res/url_317.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_318.html" afterPath="$PROJECT_DIR$/res/url_318.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_319.html" afterPath="$PROJECT_DIR$/res/url_319.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_32.html" afterPath="$PROJECT_DIR$/res/url_32.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_320.html" afterPath="$PROJECT_DIR$/res/url_320.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_321.html" afterPath="$PROJECT_DIR$/res/url_321.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_322.html" afterPath="$PROJECT_DIR$/res/url_322.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_323.html" afterPath="$PROJECT_DIR$/res/url_323.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_324.html" afterPath="$PROJECT_DIR$/res/url_324.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_325.html" afterPath="$PROJECT_DIR$/res/url_325.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_326.html" afterPath="$PROJECT_DIR$/res/url_326.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_327.html" afterPath="$PROJECT_DIR$/res/url_327.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_328.html" afterPath="$PROJECT_DIR$/res/url_328.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_329.html" afterPath="$PROJECT_DIR$/res/url_329.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_33.html" afterPath="$PROJECT_DIR$/res/url_33.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_330.html" afterPath="$PROJECT_DIR$/res/url_330.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_331.html" afterPath="$PROJECT_DIR$/res/url_331.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_332.html" afterPath="$PROJECT_DIR$/res/url_332.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_333.html" afterPath="$PROJECT_DIR$/res/url_333.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_334.html" afterPath="$PROJECT_DIR$/res/url_334.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_335.html" afterPath="$PROJECT_DIR$/res/url_335.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_336.html" afterPath="$PROJECT_DIR$/res/url_336.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_337.html" afterPath="$PROJECT_DIR$/res/url_337.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_338.html" afterPath="$PROJECT_DIR$/res/url_338.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_339.html" afterPath="$PROJECT_DIR$/res/url_339.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_34.html" afterPath="$PROJECT_DIR$/res/url_34.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_340.html" afterPath="$PROJECT_DIR$/res/url_340.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_341.html" afterPath="$PROJECT_DIR$/res/url_341.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_342.html" afterPath="$PROJECT_DIR$/res/url_342.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_343.html" afterPath="$PROJECT_DIR$/res/url_343.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_344.html" afterPath="$PROJECT_DIR$/res/url_344.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_345.html" afterPath="$PROJECT_DIR$/res/url_345.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_346.html" afterPath="$PROJECT_DIR$/res/url_346.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_347.html" afterPath="$PROJECT_DIR$/res/url_347.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_348.html" afterPath="$PROJECT_DIR$/res/url_348.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_349.html" afterPath="$PROJECT_DIR$/res/url_349.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_35.html" afterPath="$PROJECT_DIR$/res/url_35.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_350.html" afterPath="$PROJECT_DIR$/res/url_350.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_351.html" afterPath="$PROJECT_DIR$/res/url_351.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_352.html" afterPath="$PROJECT_DIR$/res/url_352.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_353.html" afterPath="$PROJECT_DIR$/res/url_353.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_354.html" afterPath="$PROJECT_DIR$/res/url_354.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_355.html" afterPath="$PROJECT_DIR$/res/url_355.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_356.html" afterPath="$PROJECT_DIR$/res/url_356.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_357.html" afterPath="$PROJECT_DIR$/res/url_357.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_358.html" afterPath="$PROJECT_DIR$/res/url_358.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_359.html" afterPath="$PROJECT_DIR$/res/url_359.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_36.html" afterPath="$PROJECT_DIR$/res/url_36.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_360.html" afterPath="$PROJECT_DIR$/res/url_360.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_361.html" afterPath="$PROJECT_DIR$/res/url_361.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_362.html" afterPath="$PROJECT_DIR$/res/url_362.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_363.html" afterPath="$PROJECT_DIR$/res/url_363.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_364.html" afterPath="$PROJECT_DIR$/res/url_364.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_365.html" afterPath="$PROJECT_DIR$/res/url_365.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_366.html" afterPath="$PROJECT_DIR$/res/url_366.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_367.html" afterPath="$PROJECT_DIR$/res/url_367.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_368.html" afterPath="$PROJECT_DIR$/res/url_368.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_369.html" afterPath="$PROJECT_DIR$/res/url_369.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_37.html" afterPath="$PROJECT_DIR$/res/url_37.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_370.html" afterPath="$PROJECT_DIR$/res/url_370.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_371.html" afterPath="$PROJECT_DIR$/res/url_371.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_372.html" afterPath="$PROJECT_DIR$/res/url_372.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_373.html" afterPath="$PROJECT_DIR$/res/url_373.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_374.html" afterPath="$PROJECT_DIR$/res/url_374.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_375.html" afterPath="$PROJECT_DIR$/res/url_375.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_376.html" afterPath="$PROJECT_DIR$/res/url_376.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_377.html" afterPath="$PROJECT_DIR$/res/url_377.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_378.html" afterPath="$PROJECT_DIR$/res/url_378.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_379.html" afterPath="$PROJECT_DIR$/res/url_379.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_38.html" afterPath="$PROJECT_DIR$/res/url_38.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_380.html" afterPath="$PROJECT_DIR$/res/url_380.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_381.html" afterPath="$PROJECT_DIR$/res/url_381.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_382.html" afterPath="$PROJECT_DIR$/res/url_382.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_383.html" afterPath="$PROJECT_DIR$/res/url_383.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_384.html" afterPath="$PROJECT_DIR$/res/url_384.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_385.html" afterPath="$PROJECT_DIR$/res/url_385.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_386.html" afterPath="$PROJECT_DIR$/res/url_386.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_387.html" afterPath="$PROJECT_DIR$/res/url_387.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_39.html" afterPath="$PROJECT_DIR$/res/url_39.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_4.html" afterPath="$PROJECT_DIR$/res/url_4.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_40.html" afterPath="$PROJECT_DIR$/res/url_40.html" />
@@ -241,6 +402,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_97.html" afterPath="$PROJECT_DIR$/res/url_97.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_98.html" afterPath="$PROJECT_DIR$/res/url_98.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_99.html" afterPath="$PROJECT_DIR$/res/url_99.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcount.py" afterPath="$PROJECT_DIR$/wordcount.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrendyWrite_api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -252,7 +415,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchtitle_v2.coverage" NAME="fetchtitle_v2 Coverage Results" MODIFIED="1410744932198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$wordcount.coverage" NAME="wordcount Coverage Results" MODIFIED="1410805708276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchtitle_v2.coverage" NAME="fetchtitle_v2 Coverage Results" MODIFIED="1410809461177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -269,11 +433,33 @@
       <file leaf-file-name="fetchtitle_v2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.110946745" vertical-offset="2775" max-vertical-offset="4215">
-              <caret line="190" column="55" selection-start-line="190" selection-start-column="55" selection-end-line="190" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.48586118" vertical-offset="2976" max-vertical-offset="4575">
+              <caret line="211" column="56" selection-start-line="211" selection-start-column="56" selection-end-line="211" selection-end-column="56" />
               <folding>
-                <element signature="e#520#533#0" expanded="true" />
+                <element signature="e#580#593#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wordcount.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordcount.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1170">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+              <folding>
+                <element signature="e#110#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hottest_singleword.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filter/hottest_singleword.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="13770" max-vertical-offset="275640">
+              <caret line="797" column="12" selection-start-line="797" selection-start-column="12" selection-end-line="797" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -291,6 +477,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/ref/sample.py" />
+        <option value="$PROJECT_DIR$/topic/all_topics.txt" />
+        <option value="$PROJECT_DIR$/wordcount.py" />
+        <option value="$PROJECT_DIR$/filter/hottest_words.txt" />
         <option value="$PROJECT_DIR$/fetchtitle_v2.py" />
       </list>
     </option>
@@ -298,6 +488,37 @@
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
     <option name="height" value="800" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -325,6 +546,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,16 +565,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="true" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -378,6 +641,27 @@
       <module name="TrendyWrite_api" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fetchtitle_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="wordcount" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wordcount.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -469,6 +753,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -490,9 +777,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -535,12 +819,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.fetchtitle_v2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.wordcount" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.fetchtitle_v2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.wordcount" />
       </list>
     </recent_temporary>
   </component>
@@ -556,28 +842,48 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25444266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39942113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2584814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37073863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2584814" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33972603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32294616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914772" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -603,10 +909,49 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="4500">
+          <caret line="201" column="1" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="1" />
+          <folding>
+            <element signature="e#580#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1050">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#110#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic/all_topics.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="29835">
+          <caret line="337" column="0" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/url_0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="19716" max-vertical-offset="43530">
+          <caret line="1333" column="45" selection-start-line="1333" selection-start-column="45" selection-end-line="1333" selection-end-column="45" />
+          <folding>
+            <marker date="1410807974000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410807974000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4155">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#520#533#0" expanded="true" />
+            <element signature="e#580#593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,16 +968,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.06656805" vertical-offset="150" max-vertical-offset="4185">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ref/sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11312217" vertical-offset="0" max-vertical-offset="3615">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/url_0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="19716" max-vertical-offset="43530">
+          <caret line="1333" column="45" selection-start-line="1333" selection-start-column="45" selection-end-line="1333" selection-end-column="45" />
+          <folding>
+            <marker date="1410807974000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410807974000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/348993582/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1669" max-vertical-offset="77265">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchtitle_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="5123" max-vertical-offset="8640">
+          <caret line="354" column="0" selection-start-line="354" selection-start-column="0" selection-end-line="354" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic/all_topics.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8895" max-vertical-offset="176160">
+          <caret line="588" column="19" selection-start-line="588" selection-start-column="19" selection-end-line="588" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/hottest_singleword.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13770" max-vertical-offset="275640">
+          <caret line="797" column="12" selection-start-line="797" selection-start-column="12" selection-end-line="797" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/hottest_words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7194245" vertical-offset="0" max-vertical-offset="417">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44527364" vertical-offset="17236" max-vertical-offset="25110">
+          <caret line="1226" column="0" selection-start-line="1226" selection-start-column="0" selection-end-line="1226" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1170">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+          <folding>
+            <element signature="e#110#125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.110946745" vertical-offset="2775" max-vertical-offset="4215">
-          <caret line="190" column="55" selection-start-line="190" selection-start-column="55" selection-end-line="190" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.48586118" vertical-offset="2976" max-vertical-offset="4575">
+          <caret line="211" column="56" selection-start-line="211" selection-start-column="56" selection-end-line="211" selection-end-column="56" />
           <folding>
-            <element signature="e#520#533#0" expanded="true" />
+            <element signature="e#580#593#0" expanded="true" />
           </folding>
         </state>
       </provider>

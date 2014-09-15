@@ -1,651 +1,2440 @@
-<!doctype html>
-<html lang="en-US"    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:og="http://opengraphprotocol.org/schema/"
-    xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en">
+
 <head>
-<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
-<meta charset="UTF-8">
-<title>ThinkProgress</title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" href="http://thinkprogress.org/wp-content/themes/tp4/images/apple-touch-icon.png"/>
-
-<!-- Basic CSS for the site, MOBILE FIRST -->
-<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013.css?cb=20140924" rel="stylesheet" type="text/css" media="all">
-
-<!-- Midsize Styling (nooks, kindles, small tablets, etc) -->
-<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013-midsize.css?cb=20140924" rel="stylesheet" type="text/css" media="only screen and (min-width:480px) and (max-width:767px)">
-
-<!-- "Almost Big" Styling (big tablets, small notebooks) -->
-<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013-almostbig.css?cb=20140924" rel="stylesheet" type="text/css" media="only screen and (min-width:767px) and (max-width:959px)">
-
-<!-- Progressively Enhanced Design for Bigger Screens -->
-<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013-big.css?cb=20140924" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
-
-<!-- The fix for the high-resolution phones, mostly android, just up to the ratio of 2 -->
-<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013.css?cb=20140924" rel="stylesheet" type="text/css" media="
-only screen and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 1.99),
-only screen and (-o-min-device-pixel-ratio: 3/2) and(-o-max-device-pixel-ratio: 3.99/2),
-only screen and (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 1.99),
-only screen and (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 1.99)">
-
-<!-- The retina iPad fix to make it render the bigger style, not the phone style -->
-<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013-almostbig.css?cb=20140924" rel="stylesheet" type="text/css" media="only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)">
-
-<!-- Print CSS -->
-<link type="text/css" rel="stylesheet" media="print" href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013-print.css?cb=20140924">
-
-<!-- Old IE Browser support -->
-<!--[if IE]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-	<link href="http://thinkprogress.org/wp-content/themes/tp4/css/Think2013-IE8.css?cb=20140924" rel="stylesheet" type="text/css" media="screen">
-<![endif]-->
-
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="expires" content="0" />
-<meta name="bitly-verification" content="131cfbb2e3a1">
-<meta name="google-site-verification" content="HDCaom2KPSt1X92eD5CiYHCkWvb5nP09lhEAOPZ5rts" />
-
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
-<!-- This fixes the orientation switch bug in iOS... forces a better resize when someone rotates an iPhone or iPad -->
-<script type="text/javascript">
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-    var viewportmeta = document.querySelector('meta[name="viewport"]');
-    if (viewportmeta) {
-        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
-        document.body.addEventListener('gesturestart', function () {
-            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
-        }, false);
-    }
-}
-</script>
-
-
-<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.7 - http://yoast.com/wordpress/seo/ -->
-<link rel="canonical" href="http://thinkprogress.org/" />
-<!-- / Yoast WordPress SEO plugin. -->
-
-<link rel='stylesheet' id='mobile-menu-css'  href='http://thinkprogress.org/wp-content/themes/tp4/css/mobile-menu.css?ver=3.9.1' type='text/css' media='all' />
-<script type='text/javascript' src='http://thinkprogress.org/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://thinkprogress.org/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://thinkprogress.org/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 3.9.1" />
-<link rel='shortlink' href='http://thkpr.gs/3567186' />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@ThinkProgress" />
-<meta name="twitter:title" content="ThinkProgress" />
-<meta name="twitter:description" content="Hard-hitting progressive political news and analysis." />
-<meta name="twitter:image" content="http://thinkprogress.org/wp-content/themes/tp4/images/TPforFB-300px.png" />
-<meta property="fb:admins" content="100001364918392"/>
-<meta property="fb:app_id" content="144881328916524" />
-<meta property="og:url" content="http://thinkprogress.org/" />
-<meta property="og:image" content="http://thinkprogress.org/wp-content/themes/tp4/images/TPforFB-300px.png" />
-<meta property="og:description" content="Hard-hitting progressive political news and analysis." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="ThinkProgress" />
-<div id="fb-root"></div>
-<script>
-window.fbAsyncInit = function() {
-	// init the FB JS SDK
-	FB.init({
-		appId      : '144881328916524', // App ID from the App Dashboard
-		status     : true, // check the login status upon init?
-		cookie     : true, // set sessions cookies to allow your server to access the session?
-		xfbml      : true  // parse XFBML tags on this page?
-    });
-
-    // Additional initialization code such as adding Event Listeners goes here
-    FB.Event.subscribe('edge.create',
-	    function(response) {
-		    console.log('You liked the URL: ' + response);
-			if(response == "http://facebook.com/thinkprogress"){
-				window.optimizely = window.optimizely || [];
-	    		window.optimizely.push(['trackEvent', 'facebook_site_like']);
-				set_cookie('fbpromo', 1, 365, '/');
-			}
-	});
-
-  };
-
-
-  (function(d, debug){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document, /*debug*/ false));
-</script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $("#s").suggest("?method=autocomplete",{});
-        $("#qrybox").suggest("?method=autocomplete",{});
-    });
-</script>
+		<title>Information for the World's Business Leaders - Forbes.com</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, maximum-scale=2.0" />
+		<meta name="description" content="Forbes is a leading source for reliable business news and financial information. Read news, politics, economics, business &amp  finance on Forbes.com" />
+		<meta name="keywords" content="Business news, market analysis, company profiles, personal finance, management, entrepreneurship, investments, financial advice, economy, technology news." />
+		<meta name="apple-itunes-app" content="app-id=588647136" />
+		<meta property="og:title" content="Information for the World   s Business Leaders" />
+		<meta property="og:site_name" content="Forbes.com" />
+		<meta property="og:url" content="http://www.forbes.com/home_usa/" />
+		<meta property="og:image" content="http://images.forbes.com/media/assets/forbes_1200x1200.jpg" />
+		<meta name="sailthru.image.full" content="http://images.forbes.com/media/assets/forbes_1200x1200.jpg" />
+		<meta property="og:description" content="Forbes is a leading source for reliable business news and financial information. Read news, politics, economics, business &amp  finance on Forbes.com" />
+		<meta property="fb:app_id" content="123694841080850" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@forbes" />
+		<link rel="canonical"   href="http://www.forbes.com/home_usa/" />
+		<link rel="alternate" type="application/rss+xml" title="Information for the World's Business Leaders - Forbes.com - RSS" href="http://www.forbes.com/real-time/feed2/" />
+	<script type="text/javascript" src="http://images.forbes.com/scripts/js_options.js"></script>
 	<script type="text/javascript">
-	  gaTrackingUrl = "/";
-	  isSingle = false;
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    	(function (){
 
-	  ga('create', 'UA-246439-1', 'thinkprogress.org');
-      ga('require', 'displayfeatures');
-	  ga('send', 'pageview');
-	</script>    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MDDZPF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MDDZPF');</script>
-    <!-- End Google Tag Manager -->
-    	<script src="//cdn.optimizely.com/js/173711848.js"></script><link rel="alternate" type="application/rss+xml" title="ThinkProgress RSS Feed" href="http://thinkprogress.org/homepagefeed/" />
-<link rel="alternate" type="application/rss+xml" title="ThinkProgress All Content RSS Feed" href="http://thinkprogress.org/feed/" />
+			window.displayedChannel = 'home' 
+			window.displayedSection = 'Main' 
 
-</head>
-<body class="home blog">
+			// Check if welcome ad is not disabled
+			if(typeof forbes !== "undefined" && typeof forbes.js_options !== "undefined" && !forbes.js_options.welcome_ad_disable ){
 
-<div id="sb-site">
-<div id="wrapper">
-<div id="container"> <!-- Container is the basic frame around the main site -->
-<header>  <!-- Header contains social tools, the main nav, search, and the trending bar -->
-    	<div class="header-social">
-	<div class="fb-like" data-href="http://facebook.com/thinkprogress" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-  <a href="https://twitter.com/thinkprogress" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow</a>
+				var midnight = new Date(),
+					offset = -4 // if offset is not set, by default time is UTC 6:00am i.e EST 1am & EDT 12am for dailyWelcomeCookie expiration
+				 
 
-	<!--AddThis Button Start-->
-	<script type="text/javascript">var addthis_config = {
-          services_compact: 'digg, stumbleupon, reddit, tumblr, posterous, more',
-          services_exclude: 'print, gmail, mailto, favorites, email, twitter, facebook',
-          pubid: 'thinkprogress',
-          data_track_clickback: false
-	};
+				if(midnight.getUTCHours() >= -offset)
+					midnight.setUTCDate(midnight.getUTCDate()+1)
+				 
+
+				midnight.setUTCHours(-offset) 
+				midnight.setUTCMinutes(00) 
+				midnight.setUTCSeconds(00) 
+
+
+				var welcomeCookie = "welcomeAd=sessionCookie",
+					interstitial_cookie = '_forbes_exit_interstitial_timer',
+					tomorrow = new Date(),
+					month = tomorrow.getMonth(),
+					day = tomorrow.getDate(),
+					dailyWelcomeCookie = 'dailyWelcomeCookie=dailyCookie',
+					browser_user_agent = window.navigator.userAgent.toLowerCase(),
+					page_type = 'us',
+					swimlane = '',
+					brand_voice = 'false'
+				 
+
+				if ((document.cookie.indexOf(welcomeCookie)==-1 || document.cookie.indexOf(dailyWelcomeCookie) == -1)
+					&& (window.navigator.userAgent.indexOf("Mozilla")>-1)
+					&& (browser_user_agent.indexOf("googlebot")==-1)
+					&& (browser_user_agent.indexOf("google web preview")==-1)
+					&& (window.location.host.indexOf("forbes.com")!=-1)
+					&& (window.location.search.indexOf("partner=yahoo")==-1)
+					&& (window.location.search.indexOf("partner=msn")==-1)
+					&& (window.location.search.indexOf("partner=aol")==-1)
+					&& (window.location.search.indexOf("partner=omg")==-1)
+					&& (window.location.search.indexOf("partner=huffpo")==-1)
+					&& (window.location.search.indexOf('nowelcome')==-1)
+					&& (swimlane.indexOf("rico")!=0 || page_type != 'article')
+					&& brand_voice==='false'){
+
+					if(document.cookie.indexOf(welcomeCookie) == -1 ){
+						document.cookie = welcomeCookie +'__welcome'+(month+1)+day+'  path=/  domain=.forbes.com' 
+					}
+
+					if(document.cookie.indexOf(dailyWelcomeCookie) == -1){
+						document.cookie = dailyWelcomeCookie+'_forDate'+(month+1)+day+'  path=/  domain=.forbes.com  expires=' + midnight.toGMTString() 
+					}
+
+					// check if interstitial's cookie hasn't been set already
+					if(document.cookie.indexOf( interstitial_cookie ) == -1){
+
+						// it doesn't exist  let's create the interstitial cookie and set it
+						// with the current timestamp
+
+						var now = new Date(),
+							now_time = now.getTime(),
+							expiration_date = new Date()
+						 
+
+						expiration_date
+							.setDate( expiration_date.getDate() + 365)
+						 
+
+						// set interstitial cookie to the current time
+						document.cookie = interstitial_cookie + '='+ now_time +'  path=/  domain=.forbes.com  expires=' + expiration_date.toUTCString() 
+					}
+
+					if (document.cookie.indexOf(welcomeCookie) != -1 || document.cookie.indexOf(dailyWelcomeCookie) != -1){
+
+						// this cookie is used by interstitial_ad.js to determine if the user received a
+						// welcome ad before viewing the current page.
+						document.cookie="last_welcomead_url"+ "=" +escape(document.URL)+" path=/  domain=.forbes.com" 
+
+						document.cookie="toURL"+ "=" +escape(document.URL)+" path=/  domain=.forbes.com" 
+						document.cookie="refURL"+ "=" +escape(document.referrer)+" path=/  domain=.forbes.com" 
+						this.location='http://www.forbes.com/fdc/welcome_mjx.shtml' 
+					}
+				}
+
+			}
+		})() 
 	</script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=thinkprogress"></script>
-	<!-- AddThis Button END -->
+	<script type='text/javascript'>
 
-	<a href="http://think-progress.tumblr.com/"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/tumblr-20px.png" alt="Tumblr Icon" class="tumblr"></a>
-	<a href="/rss-feeds/"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/rss20.png" width="20" height="20" alt="RSS Icon" class="rss"></a>
+	var googletag = googletag || {} 
+googletag.cmd = googletag.cmd || [] 
+(function() {
+  var gads = document.createElement('script') 
+  gads.async = true 
+  gads.type = 'text/javascript' 
+  var useSSL = 'https:' == document.location.protocol 
+  gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js' 
+  var node = document.getElementsByTagName('script')[0] 
+  node.parentNode.insertBefore(gads, node) 
+})() 
 
-</div>    <nav class="mobile-nav">
-    	<a id="mobile-nav-toggle" class="sb-toggle-left"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/menu-24.png" class="mobile-menu-button" alt="mobile menu button"></a>
-    	<a id="mobile-trending-toggle" class="sb-toggle-right right"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/trend-arrow.png" class="mobile-menu-button" alt="trending button"> <span>TRENDING</span></a>
-    </nav>
+	</script>
+		<link rel="stylesheet" type="text/css" href="http://i.forbesimg.com/scripts/combined/css/global.2b9abfaa2ccf48b1e1a54a3634b3a07563759dff.css" />
+		<link rel="stylesheet" type="text/css" href="http://i.forbesimg.com/scripts/combined/css/home.2bffef85b004f83cab8af953a9ec3022ea15 05.css" />
+		<script type="text/javascript" src="http://i.forbesimg.com/scripts/combined/js/head.1295dc0cac17029b6f94bddc877908facebddbca.js"></script>
+<script type="text/javascript" src="http://images.forbes.com/scripts/polar_homepage_desktop.js"></script>
+	<script type='text/javascript'>
 
-    <a href="/">
-<img src="http://thinkprogress.org/wp-content/themes/tp4/images/NewLogos/TP-logo-home.png" alt="ThinkProgress Logo" class="logo">
-</a><nav id="site-navigation" class="main"><ul id="main-nav" class="issues"><li class="home"><a href="/">FRONT</a></li><li id="menu-item-2568301" class="climate menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2568301"><a href="/climate/issue/">Climate</a></li>
-<li id="menu-item-2310491" class="economy menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310491"><a href="/economy/issue/">Economy</a></li>
-<li id="menu-item-2310501" class="health menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310501"><a href="/health/issue/">Health</a></li>
-<li id="menu-item-2310521" class="justice menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310521"><a href="/justice/issue/">Justice</a></li>
-<li id="menu-item-2310531" class="lgbt menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310531"><a href="/lgbt/issue/">LGBT</a></li>
-<li id="menu-item-3217101" class="world menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-3217101"><a href="/world/issue/">World</a></li>
-<li id="menu-item-3342181" class="culture menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-3342181"><a href="/culture/issue/">Culture</a></li>
-<li id="menu-item-2310551" class="sports menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310551"><a href="/sports/issue/">Sports</a></li>
-<li id="menu-item-3471260" class="election menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-3471260"><a href="/election/issue/">Election</a></li>
-</ul></nav>
-    <div class="secondary">  <!-- Secondary Nav is for trending and search -->
-        <div class="trending"><div id="trending-navigation"><ul><li class="trendingnow">TRENDING:</li><li><a href="http://thinkprogress.org/tag/climate-change/">CLIMATE CHANGE</a></li><li><a href="http://thinkprogress.org/tag/ferguson/">FERGUSON</a></li><li><a href="http://thinkprogress.org/tag/immigration/">IMMIGRATION</a></li><li><a href="http://thinkprogress.org/tag/isis/">ISIS</a></li><li><a href="http://thinkprogress.org/tag/womens-health/">WOMEN'S HEALTH</a></li></ul></div></div>        <div class="search">
-            <form method="get" action="/search/" >
-                <input name="query" value="" maxlength="100" class="inputbox" type="text">
-                <input src="http://thinkprogress.org/wp-content/themes/tp4/images/magnifying_glass.png" class="searchicon" type="image" alt="Maginifying Glass Icon">
-            </form>
-        </div>
-    </div> <!-- Close secondary -->
+	if(typeof amznads != 'undefined' && typeof amznads.getTokens == 'function') {
+        amznads.tasks.push( function() {
+            try {
+                amznads.setTargetingForGPTAsync('amznslots') 
+            } catch(e) { /*ignore*/}
+        }) 
+	}
+
+		googletag.cmd.push(function() {
+		
+				googletag.defineSlot('/7175/fdc.forbes/home', [[728, 90], [970, 66], [970, 250], [970, 90], [1, 1]], 'top').addService(googletag.pubads()).setTargeting('pos', 'top') 
+				googletag.defineSlot('/7175/fdc.forbes/home', [[728, 90],[970, 66],[970, 250],[970,90]], 'hpbanner').addService(googletag.pubads()).setTargeting('pos', 'hpbanner') 
+				googletag.defineSlot('/7175/fdc.forbes/home', [[980, 45]], 'tradingctr').addService(googletag.pubads()).setTargeting('pos', 'tradingctr') 
+
+			<!-- if no specialslot and swimlane, populate displayChannel & displaySection -->
+				googletag.pubads().setTargeting('displayChannel','home') 
+				googletag.pubads().setTargeting('displaySection','Main') 
+			
+			<!-- Populate all the values from the map -->
+					googletag.pubads().setTargeting('id', 'home_usa') 
+			
+			<!-- if map has swimlane, then put in @chasec macro & pass no value to swimlane-->
+			
+			<!-- if map has specialslot, put in @chasec macro -->
+			
+			
+			<!-- populate Krux -->
+			if(Krux.dfppKeyValues && Krux.segments && Krux.segments.length > 0) {
+      			googletag.pubads().setTargeting('ksgmnt', Krux.segments) 
+				googletag.pubads().setTargeting("kuid",Krux.user) 
+    		}
+
+			googletag.pubads().collapseEmptyDivs() 
+			googletag.pubads().enableSingleRequest() 
+			googletag.enableServices() 
+		}) 
+
+	</script>
+</head>
+
+<body class="body_homepage">
+
+	<!-- Header -->
+	
+<header class="global enable_sticky_header">
+	<div class="container minimum">
+		<nav>
+			<span class="edittools-goggles-hitmask">
+				<span class="edittools-goggles-hitarea">
+					<span class="edittools-goggles-toggle attach-click" title="Toggle Edit Tools"></span>
+				</span>
+			</span>
+			<span class="edittools-goggles-rule"></span>
+
+
+<div class="account_wrapper gradient_grey">
+		<a class="button account" href="http://blogs.forbes.com/account/" data-ga-event="Header,LinkFollowed,account" data-ga-event-trigger="click">
+			<span class="border left"></span>
+			<span class="icon arrow"></span>
+			<img src="http://i.forbesimg.com/assets/img/anon_avatar.png" alt="">
+		</a>
+
+	<div class="rollover rollover_box" style="display:none ">
+		<span class="icon arrow"></span>
+
+
+
+			<div class="one_column">
+
+				<div class="external_auth_options">
+					<h3>Log in with your social account:</h3>
+					<div id="gigya_accountdropdown_extralarge_div"></div>
+					<div class="clear"></div>
+				</div>
+
+				<hr class="dotted">
+
+				<h3>Or, you can
+					<a class="ajaxify unireg_login" href="http://blogs.forbes.com/account/login/" label="login">log in</a>
+					or
+					<a class="ajaxify unireg_register" href="http://blogs.forbes.com/account/register/" label="signup">sign up</a>
+					using Forbes.
+				</h3>
+			</div>
+
+
+	</div><!--end div.rollover_account-->
+</div><!-- end div.account_wrapper-->
+
+			<ul class="main gradient_grey">
+	<li class="home">
+		<a href="http://www.forbes.com" class="button logo" data-nav-ajax-url="/header/channels" data-ga-event="Header,LinkFollowed,home" data-ga-event-trigger="click">
+			<span class="border right"></span>
+			<span class="icon arrow"></span>
+			<img class="svg" style="display:none " alt="Forbes" src="http://i.forbesimg.com/assets/img/forbes_logo/forbes_logo_white.svg">
+			<img class="png" alt="Forbes" src="http://i.forbesimg.com/assets/img/forbes_logo/forbes_logo_white.png">
+		</a>
+
+		<div class="rollover rollover_box"><!-- ie --></div>
+	</li>
+
+	<li class="menu menu1 gradient_grey">
+		<a href="http://www.forbes.com/real-time/" class="button" data-ga-event="Header,LinkFollowed,realtime" data-ga-event-trigger="click">
+			<span class="border left"></span>
+			<span class="border right"></span>
+			<span class="label main">New Posts</span>
+		</a>
+		<span class="gradient_edge"></span>
+	</li>
+
+	<li class="menu menu2 gradient_grey">
+
+
+				<a href="http://www.forbes.com/most-popular/" class="button" data-ga-event="Header,LinkFollowed,popular" data-ga-event-trigger="click">
+					<span class="border left"></span>
+					<span class="border right"></span>
+					<span class="label main"><span class="collapsable">Most </span>Popular</span>
+				</a>
+
+				<a href="http://www.forbes.com/sites/mikeozanian/2014/08/20/the-nfls-most-valuable-teams/" class="label sub edittools-item" data-et-location="headersubnav1" data-et-context="headersubnav" data-et-item-type="link" data-et-item_id="headersubnav1" data-ga-event="Header,LinkFollowed,popularpromo" data-ga-event-trigger="click">
+					NFL Team Values
+				</a>
+		<span class="gradient_edge"></span>
+	</li>
+
+
+	<li class="menu menu3 gradient_grey">
+
+
+
+				<a href="http://www.forbes.com/lists/" class="button" data-ga-event="Header,LinkFollowed,lists" data-ga-event-trigger="click">
+					<span class="border left"></span>
+					<span class="border right"></span>
+					<span class="label main">Lists</span>
+				</a>
+
+				<a href="http://www.forbes.com/innovative-companies/" class="label sub edittools-item" data-et-location="headersubnav2" data-et-context="headersubnav" data-et-item-type="link" data-et-item_id="headersubnav2" data-ga-event="Header,LinkFollowed,listspromo" data-ga-event-trigger="click">
+					Most Innovative Companies
+				</a>
+		<span class="gradient_edge"></span>
+	</li>
+
+
+	<li class="menu menu4 gradient_grey">
+
+
+				<a href="http://www.forbes.com/video/" class="button" data-ga-event="Header,LinkFollowed,video" data-ga-event-trigger="click">
+					<span class="border left"></span>
+					<span class="border right"></span>
+					<span class="label main">Video</span>
+				</a>
+
+				<a href="http://www.forbes.com/video/3697385567001" class="label sub edittools-item" data-et-location="headersubnav3" data-et-context="headersubnav" data-et-item-type="link" data-et-item_id="headersubnav3" data-ga-event="Header,LinkFollowed,videopromo" data-ga-event-trigger="click">
+					Country Cash Kings
+				</a>
+		<span class="gradient_edge"></span>
+	</li>
+
+
+	<li class="search gradient_grey global_search_control typeahead_anchor">
+		<span class="border left"></span>
+		<span class="border right"></span>
+		<form class="form_global_search" action="/search/">
+			<div class="search_bar">
+				<div class="input_holder">
+					<input name="q" class="search_input" type="text" value="" placeholder="Search" data-placeholder-short="Search" data-placeholder-long="Search companies, people and lists" autocomplete="off">
+					<input class="form_submit" type="submit" value="submit">
+					<span class="loading_msg"></span>
+					<span class="loading_spinner"><img src="http://i.forbesimg.com/assets/img/loading_spinners/16px_grey.gif" height="16" width="16" alt=""></span>
+				</div>
+			</div>
+		</form>
+		
+		<div class="typeahead_results_holder">
+			<div class="box_topper"></div>
+			<div class="results"><ul></ul></div>
+		</div><!-- end div.typeahead_results_holder -->
+		
+	</li><!-- end li.search-->
+			</ul>
+		</nav>
+	</div><!-- end div.container (opened by js doc write) -->
 </header>
 
 
+<div class="top_link_strip">
 
-    <div class="features"><!-- begin features -->
-<div class="primary-feature optimizely-eligible">
-    <a href="http://thinkprogress.org/health/2014/09/13/3567186/peterson-child-abuse-allegations/"  >
-        <img src="http://images.thinkprogress.org/wp-content/uploads/2014/09/AP257964735381-copy-639x426.jpg">
-        <h2 class="story-title">Adrian Peterson 8217;s Child Abuse Allegations Reopen Debate Over Corporal Punishment</h2>
-    </a>
-</div><!-- end primary-feature optimizely-eligible -->
-<div class="secondary-feature top optimizely-eligible">
-    <a href="http://thinkprogress.org/home/2014/09/13/3567190/muslim-americans-respond-to-steve-kings-suggestion-that-mosques-should-be-spied-on-its-reprehensible/"  >
-        <img src="http://images.thinkprogress.org/wp-content/uploads/2013/08/steve_king_lrg_tpftd-e1375966546843-320x213.jpg">
-        <h3 class="story-title">Steve King 8217;s Plan To Defeat ISIS: Spy On Muslim Americans In Mosques</h3>
-    </a>
-</div><!-- end secondary-feature top optimizely-eligible -->
-<div class="secondary-feature bottom optimizely-eligible">
-    <a href="http://thinkprogress.org/sports/2014/09/14/3567266/womens-group-to-fly-goodell-must-go-banners-over-three-nfl-stadiums-on-game-day/"  >
-        <img src="http://images.thinkprogress.org/wp-content/uploads/2014/03/NFL-logo-320x213.jpg">
-        <h3 class="story-title">Women 8217;s Group To Fly  8216;Goodell Must Go 8217; Banners Over Three NFL Stadiums On Game Day</h3>
-    </a>
-</div><!-- end secondary-feature bottom optimizely-eligible -->
-</div><!-- end features -->
-<script type="text/javascript">
-                jQuery(document).ready(function(){
-                processOptimizely(jQuery(".features"));
-                });
-</script>    
-    <div class="story-block"><!-- begin story block 1 -->
-        <div class="story-flow">
-                                                        <div id="post-3567248" class="story-preview world">
-    <h5><a href="/world/issue/">World</a></h5>
-    <a href="http://thinkprogress.org/world/2014/09/14/3567248/senator-we-all-get-killed-back-here-at-home-if-obama-doesnt-send-troops-back-into-iraq/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2013/10/lindsey-graham-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/world/2014/09/14/3567248/senator-we-all-get-killed-back-here-at-home-if-obama-doesnt-send-troops-back-into-iraq/">Senator:  8216;We All Get Killed Back Here At Home 8217; If Obama Doesn 8217;t Send Combat Troops Back Into Iraq</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=igor">Igor Volsky</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 14, 2014">September 14, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/world/2014/09/14/3567248/senator-we-all-get-killed-back-here-at-home-if-obama-doesnt-send-troops-back-into-iraq/">Lindsey Graham goes all in. </a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>229</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>4,413</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>2</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567248 story preview -->                
-                                            <div id="post-3567244" class="story-preview climate">
-    <h5><a href="/climate/issue/">Climate</a></h5>
-    <a href="http://thinkprogress.org/climate/2014/09/14/3567244/utility-fees-end-wisconsin-solar/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/07/shutterstock_143499745-e1405092911790-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/climate/2014/09/14/3567244/utility-fees-end-wisconsin-solar/">Push To Impose Extra Fees On Solar Customers Draws Outrage In Wisconsin</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=kkroh">Kiley Kroh</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 14, 2014">September 14, 2014</time>&nbsp;<time class="updated" datetime="September 14, 2014">Updated: September 14, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/climate/2014/09/14/3567244/utility-fees-end-wisconsin-solar/">A recent move by Wisconsin utility We Energies to not only raise electricity rates on all consumers but also to add an additional charge on those who produce their own energy and sell it back to the grid has sparked outrage within the state and beyond.</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>327</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>3,235</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>1</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567244 story preview -->                
-                                            <div id="post-3567251" class="story-preview economy">
-    <h5><a href="/economy/issue/">Economy</a></h5>
-    <a href="http://thinkprogress.org/economy/2014/09/14/3567251/homeless-parking-meters-pasadena/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/03/shutterstock_158492990-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/economy/2014/09/14/3567251/homeless-parking-meters-pasadena/">Parking Meters In Pasadena Will Collect Donations For The Homeless</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=apyke">Alan Pyke</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 14, 2014">September 14, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/economy/2014/09/14/3567251/homeless-parking-meters-pasadena/">Pasadena officials are trying out a flashy, technological response to the debate over panhandling and how to best help the homeless.</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>126</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>2,983</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>12</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567251 story preview -->                
-                    </div><!-- end story flow -->
-        <div class="side"> <!-- open first sidebar -->
+	<div class="left_promo">
+		<!-- promoted subscription link -->
 
-<div id='ad_zone2'></div>
-<div id="twitter-widget"></div>
 
-</div> <!-- close first sidebar -->
-    </div><!-- end story block 1 -->
+			<a data-et-item_id="headersubnavtopleftlink" data-et-item-type="link" data-et-context="headersubnav" data-et-location="headersubnavtopleftlink" class="edittools-item" href="http://bit.ly/17QKNDv">
+			2 FREE issues of Forbes
+			</a>
 
-    <div id='ad_zone4'></div>
-    <div id="triple-feature"></div>    
-    	<div class="sign-up-strip">
-	<!-- <img src="/wp-content/themes/tp4/images/mail-32.png" alt="mail icon" class="icon"> -->
-	<h3>Get ThinkProgress Alerts in Your Inbox:</h3>
-	<form method="post" name="com_sub_c4e_TPAA" action="http://now.eloqua.com/e/f2.aspx" id="signupForm" onsubmit="return emailValidate(this)">
-		<fieldset>
-			<input name="Email" type="text" maxlength="39" class="required email" placeholder="Your email here" value="" />
-			<input type="hidden" value="com_sub_c4e_TPAA" name="elqFormName" />
-            <input type="hidden" value="785" name="elqSiteID" />
-			<input type="submit" value="Subscribe" class="submit" />
-		</fieldset>
-		</form>
 	</div>
-	<p class="sign-up-tease">Want daily updates on important issues? Subscribe to <img src="/wp-content/themes/tp4/images/pr-banner-20.png" alt="The Progress Report">
-    <div class="story-block">
-        <div class="story-flow">
-                                            <div id="post-3567216" class="story-preview climate">
-    <h5><a href="/climate/issue/">Climate</a></h5>
-    <a href="http://thinkprogress.org/climate/2014/09/13/3567216/new-sanctions-loophole-exxonmobil-russia-arctic/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/02/AP070530019861-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/climate/2014/09/13/3567216/new-sanctions-loophole-exxonmobil-russia-arctic/">New Sanctions Against Russia Could Deal Big Blow To ExxonMobil</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=rkoronowski">Ryan Koronowski</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 13, 2014">September 13, 2014</time>&nbsp;<time class="updated" datetime="September 13, 2014">Updated: September 13, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/climate/2014/09/13/3567216/new-sanctions-loophole-exxonmobil-russia-arctic/">Exxon began drilling the first exploratory well in Russia's arctic Kara Sea last month, but that may have to stop after the new sanctions went into place on Friday</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>265</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>3,214</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>15</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567216 story preview -->                
-                                            <div id="post-3567252" class="story-preview lgbt">
-    <h5><a href="/lgbt/issue/">LGBT</a></h5>
-    <a href="http://thinkprogress.org/lgbt/2014/09/14/3567252/idaho-70000-marriage-ban/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/09/Monte-Neil-Stewart-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/lgbt/2014/09/14/3567252/idaho-70000-marriage-ban/">Idaho Has Spent Over $70,000 Defending Its Ban On Same-Sex Marriage</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=zford">Zack Ford</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 14, 2014">September 14, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/lgbt/2014/09/14/3567252/idaho-70000-marriage-ban/">...and there's not much to show for it.</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>53</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>27</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>0</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567252 story preview -->                
-                                            <div id="post-3567260" class="story-preview climate">
-    <h5><a href="/climate/issue/">Climate</a></h5>
-    <a href="http://thinkprogress.org/climate/2014/09/14/3567260/california-farmers-rent-pop-up-wetlands-for-migrating-birds/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/09/11581574076_df8248e1a7_h-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/climate/2014/09/14/3567260/california-farmers-rent-pop-up-wetlands-for-migrating-birds/">California Rice Farmers Rent Crucial  8216;Pop-Up 8217; Wetlands For Migrating Birds</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=aphillips">Ari Phillips</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 14, 2014">September 14, 2014</time>&nbsp;<time class="updated" datetime="September 14, 2014">Updated: September 14, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/climate/2014/09/14/3567260/california-farmers-rent-pop-up-wetlands-for-migrating-birds/">Millions of birds migrating south for the winter will benefit from this program to bring wetlands to drought-ridden California. </a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>116</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>829</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>7</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567260 story preview -->                
-                                            <div id="post-3567034" class="story-preview justice">
-    <h5><a href="/justice/issue/">Justice</a></h5>
-    <a href="http://thinkprogress.org/justice/2014/09/12/3567034/george-zimmerman-reportedly-threatened-to-kill-a-man-during-a-road-rage-incident/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/02/georgezimmermanap-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/justice/2014/09/12/3567034/george-zimmerman-reportedly-threatened-to-kill-a-man-during-a-road-rage-incident/">George Zimmerman Reportedly Threatened To  8216;F*cking Kill 8217; A Man During A Road Rage Incident</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=ian-m">Ian Millhiser</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 12, 2014">September 12, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/justice/2014/09/12/3567034/george-zimmerman-reportedly-threatened-to-kill-a-man-during-a-road-rage-incident/">This is the third time police have investigated allegations of violent behavior against Zimmerman since he was acquitted on murder and manslaughter charges for the killing of Trayvon Martin.</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>1,129</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>13,690</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>22</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3567034 story preview -->                
-                                            <div id="post-3566925" class="story-preview world">
-    <h5><a href="/world/issue/">World</a></h5>
-    <a href="http://thinkprogress.org/world/2014/09/12/3566925/vladimir-putins-strategy-for-countering-us-sanctions-ignore-them/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2013/08/vladputin-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/world/2014/09/12/3566925/vladimir-putins-strategy-for-countering-us-sanctions-ignore-them/">Putin: U.S. Trying To Punish Russia Will Actually Benefit Russian Democracy</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=hbrown">Hayes Brown</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 12, 2014">September 12, 2014</time>&nbsp;<time class="updated" datetime="September 12, 2014">Updated: September 12, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/world/2014/09/12/3566925/vladimir-putins-strategy-for-countering-us-sanctions-ignore-them/">In Vladimir Putin's mind, everything is always coming up Vladimir Putin.</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>62</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>197</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>37</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3566925 story preview -->                
-                                            <div id="post-3566733" class="story-preview immigration">
-    <h5><a href="/justice/issue/">Immigration</a></h5>
-    <a href="http://thinkprogress.org/immigration/2014/09/12/3566733/government-deportations-down/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/02/stop-deportation-raid-immigration-reform-e1392394589596-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/immigration/2014/09/12/3566733/government-deportations-down/">This Year, The Government Is On Track To Deport Fewest Number Of Immigrants Since 2007</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=eylee">Esther Yu-Hsi Lee</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 12, 2014">September 12, 2014</time>&nbsp;<time class="updated" datetime="September 12, 2014">Updated: September 12, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/immigration/2014/09/12/3566733/government-deportations-down/">Deportations could be down 15 percent this year. </a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>117</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>71</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>1</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3566733 story preview -->                
-                                            <div id="post-3566747" class="story-preview lgbt">
-    <h5><a href="/lgbt/issue/">LGBT</a></h5>
-    <a href="http://thinkprogress.org/lgbt/2014/09/12/3566747/dramatists-guild-spamalot/"><img class="preview-pic unveil" src="http://thinkprogress.org/wp-content/themes/tp4/images/spacer.gif" data-src="http://images.thinkprogress.org/wp-content/uploads/2014/09/Stephen-Schwartz-256x171.jpg"></a>
-    <div class="preview-text">
-        <h4><a href="http://thinkprogress.org/lgbt/2014/09/12/3566747/dramatists-guild-spamalot/"> 8216;Wicked 8217; Composer Rebukes High School For Canceling Musical Over  8216;Homosexual Themes 8217;</a></h4>
-        <p class="timestamp"><span class="byline"> by <a href="http://thinkprogress.org/?person=zford">Zack Ford</a> </span><span class="posted-on">Posted on <time class="published" datetime="September 12, 2014">September 12, 2014</time>&nbsp;<time class="updated" datetime="September 12, 2014">Updated: September 12, 2014</time></span></p>
-        <p class="tease"><a href="http://thinkprogress.org/lgbt/2014/09/12/3566747/dramatists-guild-spamalot/">Composer Stephen Schwartz, writing on behalf of the Dramatists Guild, has criticized a high school that censored a "Spamalot" production over its gay content.</a></p>
-		<div class="counts">
-			<a class="twitter-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/twitter-bird-16.png" alt="twitter bird"><span>102</span> Tweets</a>
-			<a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/facebook-16.png" alt="facebook icon"><span>2,676</span> Shares</a>
-			<!-- <a class="facebook-count"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/gplus-16.png" alt="facebook icon"><span>6</span> Shares</a> -->
-		</div>
-    </div> <!-- end preview text -->
-</div> <!-- end post-3566747 story preview -->                
-                    </div><!-- end story flow -->
-        <div class="side"> <!-- open second sidebar  -->
 
-<div id='ad_zone3'></div>
-<div id="gravity-widget" class="side-box"></div>
+		<div id="header_userinfo">
 
-<div id="twitter-widget"></div>
+			<!-- login header -->		<div class="ribbon-item">			<a class="inlink inlink-topnav" href="http://blogs.forbes.com/help/">Help</a>		</div>		<span class="divider">|</span>		<div class="gigya_chicklet_mask">			<div class="ribbon-item ribbon-item-gigya">				<div class="login_options">					<span>Connect</span>				</div>				<div id="gigyalogindiv" class="gigya_chicklet_holder"></div>			</div>			<span class="divider">|</span>		</div>		<div class="last ribbon-item">			<a class="unireg_register ajaxify regbutton regbutton-signup" href="http://blogs.forbes.com/account/register/" title="Sign up for a Forbes account" data-ga-event="Account,Signup,headersignuptext" data-ga-event-trigger="click">Sign up</a></div><span class="divider">|</span><div class="ribbon-item"><a class="unireg_login ajaxify regbutton regbutton-login" href="http://blogs.forbes.com/account/login/" title="Log in to your Forbes account" data-ga-event="Account,Login,headerlogintext" data-ga-event-trigger="click">Log in</a>		</div><!-- end login header -->
 
-<div id='ad_zone8'></div>
-</div> <!-- close second sidebar -->
-    </div><!-- end story block -->
+	</div><!--end div#header_userinfo -->
 
-            <div id='ad_zone5'></div>
-        
-    <div class="story-block">
-        <div id="story-flow-infinite" class="story-flow">
-        </div><!-- end story flow -->
-        <div class="side"> <!-- open third sidebar  -->
-
-<div id="sidebar-donate-ad" class="side-box"></div>
-
-<div id="sidebar-capaf-logo" class="side-box"></div>
-
-<footer>
-<p><a href="/about/">About ThinkProgress</a> | <a href="/contact/">Contact Us</a> | <a href="/terms/">Terms of Use</a> | <a href="http://www.americanprogressaction.org/about/c4-privacy-policy/">Privacy Policy (off-site)</a> | <a href="/state-notices/">State Notices</a> | <a href="http://thinkprogress.org/reuse-policy/">Reuse Policy</a> | <a href="/rss-feeds/">RSS</a> | <a href="/advertise/">Advertise</a> | <a href="http://thinkprogress.org/donate">Donate</a></p>
-<p>&copy; 2005-2014 Center for American Progress Action Fund</p>
-</footer>
-
-</div> <!-- close third sidebar  -->
-    </div><!-- end story block -->
-    
-
-<div class="post-navigation"><p class="postnav left"><a href="http://thinkprogress.org/page/2/" >Older</a></p>
-<p class="postnav right"></p></div>
-</div> <!-- Close Container -->
-</div> <!--/#wrapper-->
-</div> <!--/#sb-site-->
-
- <div id="mobile-navigation" class="main"><ul id="main-mobile-nav" class="sb-slidebar sb-left"><li class="home"><a href="/"><img src="http://thinkprogress.org/wp-content/themes/tp4/images/TP-white.png"> FRONT</a></li><li class="climate menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2568301"><a href="/climate/issue/">Climate</a></li>
-<li class="economy menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310491"><a href="/economy/issue/">Economy</a></li>
-<li class="health menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310501"><a href="/health/issue/">Health</a></li>
-<li class="justice menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310521"><a href="/justice/issue/">Justice</a></li>
-<li class="lgbt menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310531"><a href="/lgbt/issue/">LGBT</a></li>
-<li class="world menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-3217101"><a href="/world/issue/">World</a></li>
-<li class="culture menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-3342181"><a href="/culture/issue/">Culture</a></li>
-<li class="sports menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-2310551"><a href="/sports/issue/">Sports</a></li>
-<li class="election menu-item menu-item-type-taxonomy menu-item-object-issue menu-item-3471260"><a href="/election/issue/">Election</a></li>
-</ul></div>
-<div class="sb-slidebar sb-right">
-  <div class="trending"><div id="trending-navigation"><ul><li class="trendingnow">TRENDING:</li><li><a href="http://thinkprogress.org/tag/climate-change/">CLIMATE CHANGE</a></li><li><a href="http://thinkprogress.org/tag/ferguson/">FERGUSON</a></li><li><a href="http://thinkprogress.org/tag/immigration/">IMMIGRATION</a></li><li><a href="http://thinkprogress.org/tag/isis/">ISIS</a></li><li><a href="http://thinkprogress.org/tag/womens-health/">WOMEN'S HEALTH</a></li></ul></div></div></div>
-
-<script type='text/javascript' src='/elqNow/elqCfg.js'></script>
-<script type='text/javascript' src='/elqNow/elqImg.js'></script>
-
-
-<script>window._taboola = window._taboola || [];window._taboola.push({ home: 'auto' });</script>
-<script>
-//Initialize DFP Ads
-var googletag = googletag || {};
-googletag.cmd = googletag.cmd || [];
-(function() {
-    var gads = document.createElement('script');
-    gads.async = true;
-    gads.type = 'text/javascript';
-    var useSSL = 'https:' == document.location.protocol;
-    gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-    var node = document.getElementsByTagName('script')[0];
-    node.parentNode.insertBefore(gads, node);
-})();
-googletag.cmd.push(function() {
-    // These ads always display no matter what.
-    googletag.defineSlot('/17107625/TP_Ad_Zone3', [300, 250], 'div-gpt-ad-1380123696490-0').addService(googletag.pubads());googletag.defineSlot('/17107625/TP_Ad_Zone8', [300, 250], 'div-gpt-ad-1380124247238-0').addService(googletag.pubads());    //Load ad slots only on pages they should appear
-googletag.defineSlot('/17107625/TP_Ad_Zone2', [300, 250], 'div-gpt-ad-1380123695885-0').addService(googletag.pubads());googletag.defineSlot('/17107625/TP_Ad_Zone4', [728, 90], 'div-gpt-ad-1380123696982-0').addService(googletag.pubads());googletag.defineSlot('/17107625/TP_Ad_Zone5', [728, 90], 'div-gpt-ad-1380123697713-0').addService(googletag.pubads());
-
-    googletag.pubads()
-    .setTargeting("domain","thinkprogress.org").setTargeting("pagetype","home").setTargeting("issue","all")
-    .enableSingleRequest();
-
-    googletag.enableServices();
-});
-
-//Enquire.js Ad Display Logic
-jQuery(document).ready(function(){
-
-    //Non Wide Display Ad Setup
-      //Setup leaderboard Ad Zones for all pages that are not of wide-display type
-    var tp_ad_zone4 = "<!-- TP_Ad_Zone4 -->\n    <div class='banner-ad tp-advertisement'>\n    <div class='tp-ad-label'>\n        <a href='\/advertise\/'>Advertisement<\/a>\n    <\/div>\n    <div id='div-gpt-ad-1380123696982-0' style='width:728px; height:90px;'><\/div>\n    <script type='text\/javascript'>\n        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380123696982-0'); });\n    <\/script>\n    <\/div>";    var tp_ad_zone5 = "<!-- TP_Ad_Zone5 -->\n    <div class='banner-ad tp-advertisement'>\n    <div class='tp-ad-label'>\n        <a href='\/advertise\/'>Advertisement<\/a>\n    <\/div>\n    <div id='div-gpt-ad-1380123697713-0' style='width:728px; height:90px;'><\/div>\n    <script type='text\/javascript'>\n        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380123697713-0'); });\n    <\/script>\n    <\/div>";    var gravityWidget = "  <div id=\"grv-personalization-13\"><\/div>\r\n<script type='text\/javascript'>\r\n  \/\/<![CDATA[\r\n    (function(){\r\n    window.gravityInsightsParams = {\r\n      'type': 'content',\r\n      'action': '',\r\n      'site_guid': '8e9372b5e0f099519daea57d17d06dc8'\r\n    };\r\n    var adServerReq,bUrl,cburl,doUseGravityUserGuid,includeJs,jq,pfurl,type,ug,wlPrefix,wlUrl,_ref,_ref1,_ref2;includeJs=function(a){var b;b=document.createElement(\"script\");b.async=!0;b.src=a;a=document.getElementsByTagName(\"script\")[0];return a.parentNode.insertBefore(b,a)};bUrl=\"\";ug=(doUseGravityUserGuid=!0===gravityInsightsParams.useGravityUserGuid?1:0)?\"\":gravityInsightsParams.user_guid||(null!=(_ref=\/grvinsights=([^;]+)\/.exec(document.cookie))?_ref[1]:void 0)||\"\";\r\n    wlUrl=(wlPrefix=\"http:\/\/rma-api.gravity.com\/v1\/api\/intelligence\",jq=(null!=(_ref1=window.jQuery)?null!=(_ref2=_ref1.fn)?_ref2.jquery:void 0:void 0)||\"\",type=\"iframe\",adServerReq=gravityInsightsParams.ad||\"\",cburl=gravityInsightsParams.cburl||\"\",pfurl=gravityInsightsParams.pfurl||\"\",\"\"+wlPrefix+\"\/wl?jq=\"+jq+\"&sg=\"+gravityInsightsParams.site_guid+\"&ug=\"+ug+\"&ugug=\"+doUseGravityUserGuid+\"&id=grv-personalization-13&pl=13\"+(\"&type=\"+type+\"&ad=\"+adServerReq+\"&cburl=\")+encodeURIComponent(cburl)+\"&pfurl=\"+\r\n    encodeURIComponent(pfurl)+(\"&x=\"+(new Date).getTime())+(\"undefined\"!==typeof forceArticleIds&&null!==forceArticleIds&&forceArticleIds.join?\"&ai=\"+forceArticleIds.join(\",\"):\"\")+(\"undefined\"!==typeof apids&&null!==apids&&\"\"!==apids?\"&apids=\"+encodeURIComponent(apids):\"\"));bUrl&&includeJs(bUrl);wlUrl&&(window.gravityInsightsParams.sidebar&&(window.gravityInsightsParams.wlStartTime=(new Date).getTime()),includeJs(wlUrl));})();\r\n  \/\/]]>\r\n<\/script>";jQuery("#gravity-widget").append(gravityWidget);
-    enquire.register('screen and (min-width: 767px)', {
-      setup : function() {
-      },
-      match : function() {
-          //When we are in GREATER than small tablet size enable leaderboards
-          jQuery('#ad_zone4').append(tp_ad_zone4);
-          jQuery('#ad_zone5').append(tp_ad_zone5);
-      },
-      unmatch : function () {
-          //When we are in LESS than small tablet size disable leaderboards
-          jQuery('#ad_zone4').empty();
-          jQuery('#ad_zone5').empty();
-      }
-    });
-    
-    //Setup Taboola Widgets for all singular pages
-    
-    //Wide Display Ad Setup
-    
-    //This is a hack to make ad's disappear on 7in tablets
-    enquire.register('screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)', {
-        match : function() {
-            jQuery('#ad_zone4').empty();
-            jQuery('#ad_zone5').empty();
-        }
-    });
-
-    // display single post and sidebar ads on both desktop and mobile
-    var tp_ad_zone2 = "<!-- TP_Ad_Zone2 -->\n    <div class='side-box tp-advertisement'>\n    <div class='tp-ad-label'>\n        <a href='\/advertise\/'>Advertisement<\/a>\n    <\/div>\n    <div id='div-gpt-ad-1380123695885-0' style='width:300px; height:250px;'><\/div>\n    <script type='text\/javascript'>\n        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380123695885-0'); });\n    <\/script>\n    <\/div>\n    ";jQuery('#ad_zone2').append(tp_ad_zone2);    var tp_ad_zone3 = "<!-- TP_Ad_Zone3 -->\n    <div class='side-box tp-advertisement'>\n    <div class='tp-ad-label'>\n        <a href='\/advertise\/'>Advertisement<\/a>\n    <\/div>\n    <div id='div-gpt-ad-1380123696490-0' style='width:300px; height:250px;' class='side-box tp-advertisement'><\/div>\n    <script type='text\/javascript'>\n        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380123696490-0'); });\n    <\/script>\n    <\/div>";jQuery('#ad_zone3').append(tp_ad_zone3);    var tp_ad_zone8 = "<!-- TP_Ad_Zone8 -->\n    <div class='side-box tp-advertisement'>\n    <div class='tp-ad-label'>\n        <a href='\/advertise\/'>Advertisement<\/a>\n    <\/div>\n    <div id='div-gpt-ad-1380124247238-0' style='width:300px; height:250px;' class='side-box tp-advertisement'><\/div>\n    <script type='text\/javascript'>\n        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380124247238-0'); });\n    <\/script>\n    <\/div>";jQuery('#ad_zone8').append(tp_ad_zone8);
-    // display the sidebar donate ad on either desktop or mobile
-    var sidebarDonateAd = "<a href=\"\/donate\/\"><img src=\"http:\/\/thinkprogress.org\/wp-content\/themes\/tp4\/images\/donate.jpg\" class=\"side-ad\" alt=\"Donation Ad\"><\/a>";
-    jQuery("#sidebar-donate-ad").append(sidebarDonateAd);
-
-    // display AOL Mobile ads (device detection handled by DFP)
-    
-});
-</script>
-
-	 <script>
-  (function($) {
-    jQuery(document).ready(function() {
-    enquire.register('screen and (max-width: 765px)', {
-	      setup : function() {
-	      },
-	      match : function() {
-              jQuery.slidebars();
-	      },
-	      unmatch : function () {
-	      }
-	  });
-    });
-    // Weird hackery fix for iOS scrolling.
-    jQuery('body').css("min-height","1000px");
-  }) (jQuery);
-
-    </script>	<script type='text/javascript'>
-	    var _sf_async_config={};
-	    /** CONFIGURATION START **/
-	    _sf_async_config.uid = 8871;
-	    _sf_async_config.domain = "thinkprogress.org";
-	    _sf_async_config.sections = "Home Page";
-	    _sf_async_config.authors = "ThinkProgress";
-	    _sf_async_config.useCanonical = true;
-
-	    /** CONFIGURATION END **/
-	    (function(){
-	      function loadChartbeat() {
-	        window._sf_endpt=(new Date()).getTime();
-	        var e = document.createElement('script');
-	        e.setAttribute('language', 'javascript');
-	        e.setAttribute('type', 'text/javascript');
-	        e.setAttribute('src',
-	           (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
-	           'js/chartbeat.js');
-	        document.body.appendChild(e);
-	      }
-	      var oldonload = window.onload;
-	      window.onload = (typeof window.onload != 'function') ?
-	         loadChartbeat : function() { oldonload(); loadChartbeat(); };
-	    })();
-	</script>	<!-- Quantcast Tag -->
-<script type="text/javascript">
-var _qevents = _qevents || [];
-
-(function() {
-var elem = document.createElement('script'); elem.src = (document.location.protocol == "https:" ? "https://secure" :
-"http://edge") + ".quantserve.com/quant.js"; elem.async = true; elem.type = "text/javascript"; var scpt = document.getElementsByTagName('script')[0];
-scpt.parentNode.insertBefore(elem, scpt); })();
-
-_qevents.push({
-qacct:"p-50sAsQjbtTMWQ"
-});
-</script>
-
-<noscript>
-<div style="display:none;">
-<img src="//pixel.quantserve.com/pixel/p-50sAsQjbtTMWQ.gif" border="0"
-height="1" width="1" alt="Quantcast"/>
+	<div class="clear"></div>
 </div>
-</noscript>
-<!-- End Quantcast tag --><!-- web3-->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script type='text/javascript' src='http://thinkprogress.org/wp-includes/js/jquery/suggest.min.js?ver=1.1-20110113'></script>
-<script type='text/javascript' src='http://cdn.taboolasyndication.com/libtrc/thinkprogress/loader.js'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-content/themes/tp4/js/jquery.tpinfinitescroll.js?ver=20140924'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-content/themes/tp4/js/tp.js?ver=20140924'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-content/themes/tp4/js/jquery.unveil.min.js?ver=20140924'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-content/themes/tp4/js/jquery.validate.min.js?ver=20140924'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-content/themes/tp4/js/jquery.slidebars.min.js?ver=20140924'></script>
-<script type='text/javascript' src='http://thinkprogress.org/wp-content/themes/tp4/js/jquery.enquire.min.js?ver=20140924'></script>
-            <!-- NEWSROOM SCRIPT -->
-            <script>
-            window._newsroom = window._newsroom || [];
-            window._newsroom.push({pageTemplate: 'home'});
-            window._newsroom.push({pageDashboard: 'home'});
-            window._newsroom.push('auditClicks');
-            window._newsroom.push('trackPage');
-            !function (e, f, u) {
-            e.async = 1;
-            e.src = u;
-            f.parentNode.insertBefore(e, f);
-            }(document.createElement('script'),
-            document.getElementsByTagName('script')[0], '//c2.taboola.com/nr/thinkprogress/newsroom.js');
-            </script>
-            <!-- END NEWSROOM SCRIPT -->
-        
-<script>
-jQuery(document).ready(function(){
-    jQuery("img.unveil").unveil(200);
-    //Setup Triple Feature
-    var tripleFeatureCode = "<div class=\"triple-feature\">\n<div class=\"third optimizely-eligible\">\n<a  href=\"http:\/\/thinkprogress.org\/economy\/2014\/09\/12\/3566891\/wage-theft-robberies\/\"><img src=\"http:\/\/images.thinkprogress.org\/wp-content\/uploads\/2014\/09\/suitcase-money-321x214.jpg\" alt=\"The Biggest Robbers In America Are Employers\">\n<h4 class=\"story-title\">The Biggest Robbers In America Are Employers<\/h4><\/a>\n<\/div>\n<div class=\"third optimizely-eligible\">\n<a  href=\"http:\/\/thinkprogress.org\/world\/2014\/09\/11\/3566181\/why-isis-is-in-fact-not-islamic\/\"><img src=\"http:\/\/images.thinkprogress.org\/wp-content\/uploads\/2014\/09\/Obama-ISIS-speech-321x214.jpg\" alt=\"Why ISIS Is Not, In Fact, Islamic\">\n<h4 class=\"story-title\">Why ISIS Is Not, In Fact, Islamic<\/h4><\/a>\n<\/div>\n<div class=\"third optimizely-eligible\">\n<a  href=\"http:\/\/thinkprogress.org\/justice\/2014\/09\/11\/3566493\/georgia-secretary-of-state-laments-minority-voters\/\"><img src=\"http:\/\/images.thinkprogress.org\/wp-content\/uploads\/2014\/09\/BrianKempPhoto-321x214.jpg\" alt=\"Georgia Secretary Of State Laments That Democrats Are Registering Minority Voters\">\n<h4 class=\"story-title\">Georgia Secretary Of State Laments That Democrats Are Registering Minority Voters<\/h4><\/a>\n<\/div>\n";
-    processOptimizely(jQuery("#triple-feature"));
 
-    // display the sidebar capaf logo
-    var sidebarCAPAFLogo = "<a href=\"http:\/\/www.americanprogressaction.org\"><img src=\"http:\/\/thinkprogress.org\/wp-content\/themes\/tp4\/images\/capaf-logo.gif\" alt=\"CAP Action Logo\" class=\"fit side-box\"><\/a>";
-    jQuery("#sidebar-capaf-logo").append(sidebarCAPAFLogo);
+	<div id="top" class="leaderboard above_header">
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('top')}) 
+		</script>
+	</div>
 
-    //Display Triple Feature on All Pages Not Single
-            jQuery("#triple-feature").append(tripleFeatureCode);
+
+
+	<section class="stack top_stories">
+		<div class="stack_wrapper clearfix">
+			<h2>Top Stories</h2>
+			<div class="follow_links">
+				<span class="follow">Follow Forbes</span>
+				<ul>
+					<li><a target="_blank" href="http://www.youtube.com/forbes" class="youtube"></a></li>
+					<li><a target="_blank" href="https://plus.google.com/u/0/102281638880464201271/posts" class="google_plus"></a></li>
+					<li><a target="_blank" href="http://www.linkedin.com/today/forbes.com" class="linkedin"></a></li>
+					<li><a target="_blank" href="http://twitter.com/forbes" class="twitter"></a></li>
+					<li class="left"><a target="_blank" href="http://www.facebook.com/forbes" class="facebook"></a></li>
+				</ul>
+			</div><!-- end div.sharing_controls -->
+
+			<div class="forbesui navpills country_toggle">
+				<ul>
+					<li class="active">
+						<a href="http://www.forbes.com/home_usa/">U.S.</a>
+						<span class="arrow"><span class="icon"></span></span>
+					</li>
+					<li class="">
+						<a href="http://www.forbes.com/home_europe/">Europe</a>
+						<span class="arrow"><span class="icon"></span></span>
+					</li>
+					<li class="">
+						<a href="http://www.forbes.com/home_asia/">Asia</a>
+						<span class="arrow"><span class="icon"></span></span>
+					</li>
+				</ul>
+			</div><!-- end div.country_toggle -->
+
+
+	<!-- Getting '/shared/promo/mainstory_withheadlines.ftl' -->
+
+
+
+
+
+		<!-- /shared/promo/ -->
+		<!-- mainstory_withheadlines -->
+		<!-- /shared/promo/mainstory_withheadlines.ftl -->
+				<div class="edittools-promoblock mainstory_withheadlines" data-et-context="topstories" data-et-location-id="hometopfeature" data-et-panel-id="panel9">
+
+
+			<article data-et-content-id="content_5416ecc1e4b03b61661e7ec8" class="feature promostory promostory-1">
+
+				<a class="editable editable-img  " href="http://www.forbes.com/sites/briansolomon/2014/09/15/apple-hits-new-record-with-over-4-million-iphone-6-preorders/">
+					<img src="http://i.forbesimg.com/images/channels/hometopfeature_panel9_0_mainstory-1410801149.jpg" alt="Apple Hits Record With Over 4M iPhone 6 Preorders" />
+					
+					
+				</a>
+
+
+	 					<h3 class="editable editable-hed"><a href="http://www.forbes.com/sites/briansolomon/2014/09/15/apple-hits-new-record-with-over-4-million-iphone-6-preorders/">Apple Hits Record With Over 4M iPhone 6 Preorders</a></h3>
+
+				<p class="editable editable-dek">
+					Apple is counting on the new, larger phones to continue the company’s stellar growth trajectory. Analysts estimate the phones will be Apple’s best selling yet.
+				</p>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/106505" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/briansolomon/' class="avatar">
+					<img src='http://1.gravatar.com/avatar/35ddb932a22 b934ddc0357f9365095?s=40&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Brian Solomon" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/briansolomon/' class="user">Brian Solomon</a>, Forbes Staff				</span>
+		</cite>
+
+
+
+			</article>
+
+		<div class="headline_list">
+			<ul>
+
+						<li class="promostory promostory-2 " data-et-content-id="content_54170377e4b03b61661e7fe6">
+		 		 					<h4 class="editable editable-hed">
+		 		 					    <a href="http://www.forbes.com/sites/steveschaefer/2014/09/15/morgan-stanley-thinks-elon-musk-is-right-about-teslas-stock-price/">Morgan Stanley Thinks Elon Musk Is Right About Tesla's Stock Price</a>
+		 		 					</h4>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/70" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/steveschaefer/' class="avatar">
+					<img src='http://0.gravatar.com/avatar/20c61d477b12417d0083594f31846a1a?s=40&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Steve Schaefer" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/steveschaefer/' class="user">Steve Schaefer</a>, Forbes Staff				</span>
+		</cite>
+
+
+				    	</li>
+
+						<li class="promostory promostory-3 " data-et-content-id="content_5413888de4b03b61661e78d3">
+		 		 					<h4 class="editable editable-hed">
+		 		 					    <a href="http://www.forbes.com/sites/ryanmac/2014/09/15/twitch-ceo-emmett-shear-amazon-minecraft-microsoft/">Twitch CEO Sounds Off On Amazon Deal, Microsoft's Play For 'Minecraft'</a>
+		 		 					</h4>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/203790" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/ryanmac/' class="avatar">
+					<img src='http://0.gravatar.com/avatar/01628e68b83f6455a2ce19f4d9dd2b59?s=40&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Ryan Mac" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/ryanmac/' class="user">Ryan Mac</a>, Forbes Staff				</span>
+		</cite>
+
+
+				    	</li>
+
+						<li class="promostory promostory-4 " data-et-content-id="content_5416e0cde4b03b61661e7e20">
+		 		 					<h4 class="editable editable-hed">
+		 		 					    <a href="http://www.forbes.com/sites/kenrapoza/2014/09/15/cognizant-shares-rise-on-merger-deal/">Cognizant Shares Rise On Merger</a>
+		 		 					</h4>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/20560" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/kenrapoza/' class="avatar">
+					<img src='http://blogs-images.forbes.com/kenrapoza/files/2014/08/Kenneth-Rapoza_avatar_1409059920-40x40.jpg' alt="Kenneth Rapoza" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/kenrapoza/' class="user">Kenneth Rapoza</a>, Contributor				</span>
+		</cite>
+
+
+				    	</li>
+
+						<li class="promostory promostory-5 " data-et-content-id="content_54137977e4b03b61661e78b4">
+		 		 					<h4 class="editable editable-hed">
+		 		 					    <a href="http://www.forbes.com/sites/kbrauer/2014/09/15/takata-air-bag-recall-could-dwarf-gm-and-toyota-recalls/">Takata Air Bag Recall Could Dwarf GM And Toyota Recalls</a>
+		 		 					</h4>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/1159985" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/kbrauer/' class="avatar">
+					<img src='http://0.gravatar.com/avatar/8d9ae9fc0aad85aa86320b0a342d4af3?s=40&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Karl Brauer" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/kbrauer/' class="user">Karl Brauer</a>, Contributor				</span>
+		</cite>
+
+
+				    	</li>
+
+						<li class="promostory promostory-6 " data-et-content-id="content_54162bfce4b03b61661e7cc0">
+		 		 					<h4 class="editable editable-hed">
+		 		 					    <a href="http://www.forbes.com/sites/stevensalzberg/2014/09/15/heres-something-you-may-not-want-to-know-about-your-risk-of-breast-cancer/">Something You Don't Want To Know About Your Risk Of Breast Cancer</a>
+		 		 					</h4>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/93" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/stevensalzberg/' class="avatar">
+					<img src='http://1.gravatar.com/avatar/dc5da198c4410fb dacaa6eee677f7c?s=40&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Steven Salzberg" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/stevensalzberg/' class="user">Steven Salzberg</a>, Contributor				</span>
+		</cite>
+
+
+				    	</li>
+
+						<li class="promostory promostory-7 " data-et-content-id="content_540a4f56e4b03c80856efe5d">
+		 		 					<h4 class="editable editable-hed">
+		 		 					    <a href="http://www.forbes.com/sites/richardnalley/2014/09/12/presidential-material-tony-goldwyn-on-his-role-of-a-lifetime/">Scandal's Tony Goldwyn Takes Charge In The New Power Suit</a>
+		 		 					</h4>
+
+
+
+
+
+
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/621" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/richardnalley/' class="avatar">
+					<img src='http://0.gravatar.com/avatar/88ca6e269daf4657fbeda2afb7b79289?s=40&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Richard Nalley" />
+				</a>
+
+				<span class="name_and_desc">
+<a href='http://www.forbes.com/sites/richardnalley/' class="user">Richard Nalley</a>, Contributor				</span>
+		</cite>
+
+
+				    	</li>
+			</ul>
+		</div><!-- end div.headline_list -->
+	</div>
+ 
+
+	<div class="video_block brightcove_wrapper">
+		<!-- Start of Brightcove Player -->
+		<div class="video_data" data-key-values="id=home_usa " data-sz="300x255" data-volume="0.1" data-next-page=""></div>
+		<object id="homepage_video" class="BrightcoveExperience advanced buffer_limit rendition_selection">
+			<param name="bgcolor" value="#FFFFFF" />
+			<param name="width" value="300" />
+			<param name="height" value="540" />
+			<param name="playerID" value="2540257912001" />
+			<param name="playerKey" value="AQ~~,AAAB6EYTR0k~,fdb8Mwy5g9Ho0pTdnL5otGNLR2CRf73j" />
+			<param name="isVid" value="true" />
+			<param name="isUI" value="true" />
+			<param name="dynamicStreaming" value="true" />
+			<param name="autoStart" value="true" />
+			<param name="@playlistCombo" value="2563863406001"/>
+			<param name="includeAPI" value="true" />
+			<param name="wmode" value="transparent" />
+	  		<param name="templateLoadHandler" value="forbes.brightcove_video.homepage_video.onTemplateLoaded" />
+	  		<param name="templateReadyHandler" value="forbes.brightcove_video.homepage_video.onTemplateReady" />
+		</object>
+		<!-- End of Brightcove Player -->
+	</div>
+
+			<div class="clear"></div>
+		</div><!-- div.stack_wrapper -->
+	</section>
+
+	<section class="stack most_popular">
+		<div class="stack_wrapper clearfix">
+			<h2>Most Popular</h2>
+
+			<section class="popular_top_stories">
+				<ol>
+			<li class="edittools-contentitem first_item" data-et-id="content_54151f63e4b03b61661e7b09">
+				<h3><a href="http://www.forbes.com/sites/scottmendelson/2014/09/15/katniss-revealed-in-hunger-games-mockingjay-part-i-final-trailer/">'Hunger Games: Mockingjay Part I' Gets A Final Trailer</a></h3>
+					<span class="reason" data-reason="FB">Active on Facebook<span class="icon"></span></span>
+			</li>
+			<li class="edittools-contentitem" data-et-id="content_5415cfa9e4b03b61661e7c04">
+				<h3><a href="http://www.forbes.com/sites/erikkain/2014/09/15/why-destiny-may-be-the-most-controversial-game-of-the-year/">Why 'Destiny' May Be The Most Controversial Game Of The Year</a></h3>
+					<span class="reason" data-reason="CM-D">+62 comments in last 24 hours<span class="icon"></span></span>
+			</li>
+			<li class="edittools-contentitem" data-et-id="content_5416ecc1e4b03b61661e7ec8">
+				<h3><a href="http://www.forbes.com/sites/briansolomon/2014/09/15/apple-hits-new-record-with-over-4-million-iphone-6-preorders/">Apple Hits New Record With Over 4 Million iPhone 6 Preorders</a></h3>
+					<span class="reason" data-reason="TW">Active on Twitter<span class="icon"></span></span>
+			</li>
+			<li class="edittools-contentitem" data-et-id="content_5416472ae4b03b61661e7d30">
+				<h3><a href="http://www.forbes.com/sites/louiscolumbus/2014/09/15/demand-for-3d-printing-skills-is-accelerating-globally/">Demand For 3D Printing Skills Is Accelerating Globally</a></h3>
+					<span class="reason" data-reason="LI">Active on LinkedIn<span class="icon"></span></span>
+			</li>
+			<li class="edittools-contentitem" data-et-id="content_5411e70be4b03b61661e6f1f">
+				<h3><a href="http://www.forbes.com/sites/andersonantunes/2014/09/11/5-reasons-why-brazils-president-dilma-rousseff-should-not-be-reelected/">5 Reasons Why Brazil's President Dilma Rousseff Should Not Be Re-Elected</a></h3>
+					<span class="reason" data-reason="FB">Active on Facebook<span class="icon"></span></span>
+			</li>
+				</ol>
+
+				<div class="about_forbes_velocity">
+					<p>Calculated using Forbes Velocity, a combination of views, shares and comments.</p>
+				</div>
+
+				<a class="more" href="http://www.forbes.com/most-popular/">See More Popular Stories »</a>
+			</section>
+
+<section class="social_web use_large_icons">
+	<h4>Active on Social Web</h4>
+	<div class="icon_toggle clearfix">
+		<span class="icon facebook active"><span class="arrow"></span></span>
+		<span class="icon twitter"><span class="arrow"></span></span>
+		<span class="icon linked_in"><span class="arrow"></span></span>
+	</div>
+	<div class="list_wrapper">
+		<div class="list_inner_wrapper">
+			<ol class="facebook active">
+						<li class="first_item">
+							<a href="http://www.forbes.com/sites/scottmendelson/2014/09/15/katniss-revealed-in-hunger-games-mockingjay-part-i-final-trailer/">'Hunger Games: Mockingjay Part I' Gets A Final Trailer</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/andersonantunes/2014/09/11/5-reasons-why-brazils-president-dilma-rousseff-should-not-be-reelected/">5 Reasons Why Brazil's President Dilma Rousseff Should Not Be Re-Elected</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/adamhartung/2014/09/05/obama-outperforms-reagan-on-jobs-growth-and-investing/">Obama Outperforms Reagan On Jobs, Growth And Investing</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/georgeleef/2014/09/12/time-for-civil-asset-forfeiture-laws-to-meet-the-same-fate-as-jim-crow/">Time For Civil Asset Forfeiture Laws To Meet The Same Fate As Jim Crow</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/brettarends/2014/09/12/scottish-independence-englands-shameful-secret/">Scottish Independence: England's Shameful Secret</a>
+						</li>
+			</ol>
+			<ol class="twitter">
+						<li class="first_item">
+							<a href="http://www.forbes.com/sites/briansolomon/2014/09/15/apple-hits-new-record-with-over-4-million-iphone-6-preorders/">Apple Hits New Record With Over 4 Million iPhone 6 Preorders</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/ryanmac/2014/09/15/twitch-ceo-emmett-shear-amazon-minecraft-microsoft/">Twitch CEO Sounds Off On Amazon Deal And Microsoft's Play For 'Minecraft'</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/samanthasharf/2014/09/15/microsoft-to-buy-minecraft-maker-mojang-for-2-5-billion/">Microsoft To Buy Minecraft Maker Mojang For $2.5 Billion</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/lauriewerner/2014/09/15/touring-marlon-brandos-island/">An Island You Can't Refuse: Marlon Brando's Tahitian Paradise</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/ellenhuet/2014/09/15/the-league-dating-app-for-the-elite/">Are You 'Kind Of A Big Deal?' Dating App For Elites Will Protect Your 'Personal Brand'</a>
+						</li>
+			</ol>
+			<ol class="linked_in">
+						<li class="first_item">
+							<a href="http://www.forbes.com/sites/louiscolumbus/2014/09/15/demand-for-3d-printing-skills-is-accelerating-globally/">Demand For 3D Printing Skills Is Accelerating Globally</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/lisaquast/2014/09/15/how-to-spot-a-bad-boss-before-you-accept-the-job-offer/">How To Spot A Bad Boss -- Before You Accept The Job Offer</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/arieladams/2014/09/15/luxury-watch-industryleader-reaction-to-apple-watch-jean-claude-biver-speaks/">Luxury Watch Industry Leader Reacts To Apple Watch: Jean-Claude Biver Speaks</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/glennllopis/2014/09/15/7-words-define-what-employees-expect-from-leadership/">7 Words Define What Employees Expect From Leadership</a>
+						</li>
+						<li class="">
+							<a href="http://www.forbes.com/sites/karstenstrauss/2014/09/14/8-books-every-new-entrepreneur-should-read/">8 Books Every New Entrepreneur Should Read</a>
+						</li>
+			</ol>
+			<div class="clear"></div>	
+		</div>
+	</div>
+</section><!--end section.social_web-->
+
+		</div><!-- div.stack_wrapper -->
+	</section>
+
+	<div id="hpbanner" class="leaderboard mid_page">
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('hpbanner')}) 
+		</script>
+	</div>
+
+	<!--Start: Special Feature-->
+		<section class="stack special_feature">
+				<div class="stack_wrapper clearfix">
+		<div class="edittools-promoblock" data-et-removable="true" data-et-context="specialfeature" data-et-location-id="homespecialfeature" data-et-panel-id="panel1">
+		<article data-et-content-id="content_538756fce4b08357292035aa" class="promostory promostory-1">
+				<div class="special_feature_left">
+					<h4>Featured</h4>
+					<h3 class="editable editable-hed"><a href='http://www.forbes.com/powering-productivity/'>Powering Productivity</a></h3>
+					<div class="dek editable editable-dek">Helping technology professionals become more productive in their work and personal lives.</div>
+				</div>
+				<div class="special_feature_right">
+					<a href="http://www.forbes.com/powering-productivity/" class="featured_image editable editable-img  ">
+						<img src="http://i.forbesimg.com/images/channels/homespecialfeature_panel1_0_singlepromo-14107902 .jpg" alt="Powering Productivity" />
+						
+						
+					</a>
+				</div>
+			</article>
+		</div>
+		</div>
+		</section>
+	<!--End: Special Feature-->
+
+	<!--Start: User Engagement Stack-->
+    <section class="stack user_engagement">
+        <div class="stack_wrapper clearfix">
+
+            <!--Start: Dashboard -->
+	<h2>Follow on Forbes</h2>
+	<div class="pitch">
+		<p>Follow Forbes writers, people, places, companies and organizations that interest you.</p>
+		<p class="smaller">
+			<a class="ajaxify unireg_login" href="http://blogs.forbes.com/account/login/">Log In</a>
+			or
+			<a class="ajaxify unireg_register" href="http://blogs.forbes.com/account/register/">Sign Up</a>
+			to follow.
+		</p>
+	</div>
+            <!--End: DashBoard-->
+			
+            <!--Start: Following-->
+
+    <div class="entity_holder">
+            
     
-    enquire.register("screen and (min-width: 767px)", {
-        setup : function() {
-            // display the twitter widget on desktop
-            var twitterWidget = "<div class=\"side-box\">\r\n<h3>Recent Tweets<\/h3>\r\n<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/thinkprogress\" data-widget-id=\"243442411941019648\">Tweets by @thinkprogress<\/a>\r\n<\/div>";
-            jQuery("#twitter-widget").append(twitterWidget);
-        },
-        match : function() {
-            // display overlay
-            var overlayCode = "<style>\n\/*temp overlay*\/\ndiv#overlay {\n    display: none;\n    z-index: 2;\n    background: #000;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0px;\n    left: 0px;\n    text-align: center;\n    filter: alpha(opacity=60);\n    -khtml-opacity: 0.60;\n    -moz-opacity: 0.60;\n    opacity: 0.60;\n}\ndiv#specialBox {\n    display: none;\n    position: fixed;\n    padding: 5px;\n    z-index: 3;\n    margin: -169px auto auto -347px;\n    width: 694px;\n    height: 338px;\n    left: 50%;\n    top: 50%;\n    background: white;\n    color: #000;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 5px 5px 10px black;\n    background-image: url(http:\/\/thinkprogress.org\/wp-content\/uploads\/2014\/08\/overlays-19-e1408969156266.png);\n    background-size: contain;\n\n}\nspan#close-overlay-button {\n    display: block;\n    position: absolute;\n    margin: -10px -10px 0 0;\n    padding-bottom: 20px;\n    padding-top: -20px;\n    top: 0px;\n    right: 0px;\n    font-size: 25px;\n    font-weight: bold;\n    width: 30px;\n    height: 30px;\n    color: white;\n    text-align: center;\n    text-decoration: none;\n    background-color: red;\n    border: 1px solid red;\n    border-radius: 40px;\n    -webkit-border-radius: 40px;\n    -moz-border-radius: 40px;\n    box-shadow: 2px 2px 2px #111111;\n}\nspan#close-overlay-link {\n    position: absolute;\n    display: block;\n    bottom: 3px;\n    left: 50%;\n    margin-left: -8em;\n    text-decoration: none;\n    text-align: center;\n    font-size: .8em;\n    text-transform: uppercase;\n    font-weight: bold;\n    color: white;\n    text-shadow: 1px 1px 2px black;\n}\n<\/style>\n<script>\n\/**\n * tracking code\n *\/\noverlayTrackingCode = \"com_sub_c4e_TPAA_overlay6\";\n\n\/**\n * Temp new overlay work in progress\n *\/\njQuery(document).ready(function(){\n    \/\/ see if cookies are enabled\n    try {\n        var cookies_enabled = false;\n        set_cookie('lorem_ipsum', 1, 1, '\/');\n        var val = get_cookie('lorem_ipsum');\n        if(val){\n            cookies_enabled = true;\n            delete_cookie('lorem_ipsum', '\/');\n        }\n    } catch (e){\n        \/\/ do nothing\n    }\n\n    \/\/ if cookies are not enabled, don't display the overlay\n    if (false === cookies_enabled) {\n        return;\n    }\n\n    \/\/ see if there's an existing cookie of the name\n    var cookie = get_cookie('2014_08_24_a');\n\n    \/\/ if there is, then just exit -- don't show the overlay\n    if (cookie) {\n        return;\n    }\n\n    \/\/ otherwise, set a value for the cookie so we won't show\n    \/\/ the overlay again too soon\n    set_cookie('2014_08_24_a', 1, 30, '\/');\n\n    jQuery(\"#overlay, #specialBox\").fadeToggle();\n\n    \/\/ we need the experiment to activate only after the popup is loaded\n    window.optimizely = window.optimizely || [];\n    window.optimizely.push([\"activate\"]);\n\n    ga('send', 'event', {\n      'eventCategory': 'Overlay',\n      'eventAction': 'Loaded',\n      'eventLabel': \"com_sub_c4e_TPAA_overlay6\"\n    });\n\n    jQuery(\"#overlay, #close-overlay-button, #close-overlay-link\").click(function(event){\n        jQuery(\"#overlay, #specialBox\" ).fadeToggle();\n        ga('send', 'event', {\n          'eventCategory': 'Overlay',\n          'eventAction': 'Exit',\n          'eventLabel': \"com_sub_c4e_TPAA_overlay6\"\n        });\n    });\n\n});\n<\/script>\n<!-- Start Overlay -->\n<div id=\"overlay\"><\/div>\n<!-- End Overlay -->\n<!-- Start Special Centered Box -->\n<div id=\"specialBox\">\n  <style type=\"text\/css\">\r\n.o-form {position: relative; top: 160px; display:block; text-align: center; }\r\n.o-text {width:200px;padding: 5px 10px;border:1px solid #999;font-size:.9em;color:#999; margin-right:5px; }\r\n.o-button {\r\n\t-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;\r\n\t-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;\r\n\tbox-shadow:inset 0px 1px 0px 0px #bee2f9;\r\n\tbackground:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #2793d1), color-stop(1, #003f7a) );\r\n\tbackground:-moz-linear-gradient( center top, #2793d1 5%, #003f7a 100% );\r\n\tfilter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2793d1', endColorstr='#003f7a');\r\n\tbackground-color:#2793d1;\r\n\t-moz-border-radius:11px;\r\n\t-webkit-border-radius:11px;\r\n\tborder-radius:11px;\r\n\tborder:1px solid #3866a3;\r\n\tdisplay:inline-block;\r\n\tcolor:#ffffff;\r\n\tfont-family:Arial Black;\r\n\tfont-size:21px;\r\n\tfont-weight:bold;\r\n\tpadding:4px 40px;\r\n\tmargin-bottom:2px;\r\n\ttext-decoration:none;\r\n\tvertical-align:bottom;\r\n}.o-button:hover {\r\n\tbackground:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #003f7a), color-stop(1, #2793d1) );\r\n\tbackground:-moz-linear-gradient( center top, #003f7a 5%, #2793d1 100% );\r\n\tfilter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#003f7a', endColorstr='#2793d1');\r\n\tbackground-color:#003f7a;\r\n\ttext-decoration:none;\r\n\tcolor:#333;\r\n}.o-button:active {\r\n\tposition:relative;\r\n\ttop:1px;\r\n}\r\n.o-description {\r\n    position: absolute;\r\n    color:white;\r\n    text-shadow: 2px 2px 2px black;\r\n    text-align:center;\r\n    top:2em;\r\n    font-size:2em;\r\n    width:30%; \r\n    right: 1em;\r\n    line-height: 1.2em;\r\n}\r\n\r\n.o-table {display: inline-block;}\r\n.o-table td {\r\n    text-align: left;\r\n    vertical-align: top;\r\n}\r\n.o-table label.error {text-align: left;}\r\n<\/style>\r\n<script>\r\njQuery(document).ready(function(){\r\n    jQuery(\"#overlay-form\").validate({\r\n        messages: {\r\n            email: \"Valid Email is required\",\r\n            Zip: \"Valid ZIP Code is required\"\r\n        },\r\n        submitHandler: function(form) {\r\nga('send', 'event', {\r\n          'eventCategory': 'Overlay',\r\n          'eventAction': 'Loaded',\r\n          'eventLabel': \"{overlayTrackingCode}\"\r\n        });\r\n            form.submit();\r\n        }\r\n    });\r\n    jQuery(\"#overlay-submit\").click(function(event){\r\n        event.preventDefault();\r\n        jQuery(\"#overlay-form\").submit();\r\n    });\r\n});\r\n<\/script>\r\n<div style=\"text-align: center;white-space:nowrap;\" align=\"top\">\r\n\r\n<form action=\"http:\/\/now.eloqua.com\/e\/f2.aspx\" method=\"post\" class=\"act o-form\" id=\"overlay-form\">\r\n<input type=\"hidden\" name=\"elqFormName\" value=\"com_sub_c4e_TPAA_overlay6\"> \r\n<input type=\"hidden\" name=\"elqSiteID\" value=\"785\">\r\n<table class=\"o-table\">\r\n<tr>\r\n<td><input name=\"email\" type=\"text\" placeholder=\"Email\" class=\"o-text required email\"><\/td>\r\n<td><input name=\"Zip\" type=\"text\" placeholder=\"ZIP Code\" class=\"o-text required zipcodeUS\"><\/td>\r\n<td><a href=\"#\" class=\"o-button\" id=\"overlay-submit\">Sign Up<\/a><\/td><\/tr>\r\n<\/table>\r\n<input type=\"submit\" style=\"display:none;\">\r\n<\/form>\r\n\r\n<\/div>\n  <span id=\"close-overlay-button\" href=\"javascript:void(0);\">&times;<\/span>\n  <span id=\"close-overlay-link\" href=\"javascript:void(0);\">close and continue to the site<\/span>\n<\/div>\n<!-- End Special Centered Box -->";
-            jQuery("body").append(overlayCode);
-            //Display Triple Feature on Single Posts
-                    },
-        unmatch : function() {
-            //Hide Triple Feature on Single Posts When Mobile
-                    }
-    });
+		
+		
+        <div class="forbesui navpills recommendations_toggle clearfix">
+            <ul>
+                <li class="active loaded">
+                        <a data-id="general" data-ajax-url="/ajax/homepage/user_engagement/" href="/find-more/writers/">Recommended</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="business" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_1&name=business" href="/find-more/writers/">Business</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="investing" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_2&name=investing" href="/find-more/writers/">Investing</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="technology" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_3&name=technology" href="/find-more/writers/">Technology</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="entrepreneurs" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_4&name=entrepreneurs" href="/find-more/writers/">Entrepreneurs</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="opinions" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_5&name=opinions" href="/find-more/writers/">Op/Ed</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="leadership" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_6&name=leadership" href="/find-more/writers/">Leadership</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+                <li>
+                        <a data-id="lifestyle" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_7&name=lifestyle" href="/find-more/writers/">Lifestyle</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+		<li>
+                        <a data-id="lists" data-ajax-url="/ajax/homepage/user_engagement/?id=channel_8&name=lists" href="/find-more/writers/">Lists</a>
+                        <span class="arrow"><span class="icon"></span></span>
+                </li>
+            </ul>
+        </div><!-- end div.recommendations_toggle -->
 
-});
-</script>
+        <div class="avatars">
+            <div class="loading_scrim" style="display:none "></div>
+            <div class="loading_spinner" style="display:none "><img src="http://i.forbesimg.com/assets/img/loading_spinners/43px_on_transparent.gif" alt=""></div>
+    <ul id="recommendations_general" class="avatar_list clearfix">
+    <li class="info_card_anchor new_row">
+	
+		
+	        <span class="activity_count just_published">
+	                4
+	        </span>
+        <a href="http://www.forbes.com/sites/dorothypomerantz/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/54" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/0e45452c1b29cf6495527fcedb507fd1?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Dorothy Pomerantz">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                6
+	        </span>
+        <a href="http://www.forbes.com/sites/jeffbercovici/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/5421" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/407e4ff6ba3b63d6334a59c2ec615514?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Jeff Bercovici">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                10
+	        </span>
+        <a href="http://www.forbes.com/sites/maggiemcgrath/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/940909" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/a4ddae946ce0a7463f0cc6278d84c538?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Maggie McGrath">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                3
+	        </span>
+        <a href="http://www.forbes.com/profile/bill-gates/" class="enable_info_card box_link" data-entity-id="faris/5772" data-entity-type="person">
+        	<img src="http://i.forbesimg.com/media/lists/people/bill-gates_65x65.jpg" alt="Bill Gates">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                4
+	        </span>
+        <a href="http://www.forbes.com/sites/georgeanders/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/219467" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/82c35a25ff9df2af0fcb1f9b317618b4?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="George Anders">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                10
+	        </span>
+        <a href="http://www.forbes.com/sites/erikkain/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/186 " data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/0b95268a1a76ca3c83a2112b38af5958?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Erik Kain">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                3
+	        </span>
+        <a href="http://www.forbes.com/sites/steveschaefer/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/70" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/20c61d477b12417d0083594f31846a1a?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Steve Schaefer">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                2
+	        </span>
+        <a href="http://www.forbes.com/sites/ericjackson/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/22018" data-entity-type="author">
+        	<img src="http://1.gravatar.com/avatar/dcc009e494f6fe6a0655e3de377af052?s=62&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Eric Jackson">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                13
+	        </span>
+        <a href="http://www.forbes.com/sites/susanadams/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/250" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/440613347274ca1dd817225238b83bab?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Susan Adams">
+        </a>
+    </li>
+    <li class="info_card_anchor new_row">
+	
+		
+	        <span class="activity_count ">
+	                6
+	        </span>
+        <a href="http://www.forbes.com/sites/samanthasharf/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/353268" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/c7041225ee8544653120d0732c9767f6?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Samantha Sharf">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                7
+	        </span>
+        <a href="http://www.forbes.com/sites/briansolomon/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/106505" data-entity-type="author">
+        	<img src="http://1.gravatar.com/avatar/35ddb932a22 b934ddc0357f9365095?s=62&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Brian Solomon">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                6
+	        </span>
+        <a href="http://www.forbes.com/sites/kathycaprino/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/144530" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/8a388ec08003c9053f8c3e4e605c2498?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Kathy Caprino">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                1
+	        </span>
+        <a href="http://www.forbes.com/sites/theapothecary/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/308" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/63e50440e403d1dcd4c8f8b263b51216?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Avik Roy">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                1
+	        </span>
+        <a href="http://www.forbes.com/sites/jonathansalembaskin/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/158163" data-entity-type="author">
+        	<img src="http://1.gravatar.com/avatar/32813061519cd3a7202f1599c4e7fce7?s=62&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Jonathan Salem Baskin">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                7
+	        </span>
+        <a href="http://www.forbes.com/sites/kashmirhill/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/1069" data-entity-type="author">
+        	<img src="http://1.gravatar.com/avatar/1d11df86e86dd42305270b82b4bca597?s=62&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Kashmir Hill">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                2
+	        </span>
+        <a href="http://www.forbes.com/sites/joelkotkin/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/2068" data-entity-type="author">
+        	<img src="http://0.gravatar.com/avatar/25b6a3bfe55c2127725c4ed84f6dfccd?s=62&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Joel Kotkin">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                3
+	        </span>
+        <a href="http://www.forbes.com/sites/zackomalleygreenburg/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/72" data-entity-type="author">
+        	<img src="http://1.gravatar.com/avatar/7c0dc769b20209dd0361cdbdd62f0631?s=62&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="Zack O'Malley Greenburg">
+        </a>
+    </li>
+    <li class="info_card_anchor">
+	
+		
+	        <span class="activity_count ">
+	                1
+	        </span>
+        <a href="http://www.forbes.com/sites/jmaureenhenderson/" class="enable_info_card box_link" data-entity-id="blogAuthorId/blog/author/29616" data-entity-type="author">
+        	<img src="http://1.gravatar.com/avatar/de5169faac033e043bc7298620030bf5?s=62&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D62&amp r=G" alt="J. Maureen Henderson">
+        </a>
+    </li>
+
+    </ul>
+        </div>
+
+        <span class="find_more">
+                <a class="ajaxify launch_find_more_to_follow" href="/find-more/writers/">+ Find more to follow on Forbes</a>
+        </span>
+    </div>
+            <!--End: Following-->
+
+            <!--Start: News Feed-->
+            <!--End: News Feed-->
+
+		</div><!--end div.stack_wrapper-->
+    </section>
+	<!--End: User Engagement Stack-->
+
+    <section class="stack forbes_video">
+		<div class="stack_wrapper clearfix">
+			<h2>Forbes Video <span class="subnav"><a href="http://www.youtube.com/forbes">Forbes on YouTube</a></span></h2>
+
+	<!-- Getting '/shared/promo/largeimage_fourfeature.ftl' -->
+
+
+
+
+
+		<!-- /shared/promo/ -->
+		<!-- largeimage_fourfeature -->
+		<!-- /shared/promo/largeimage_fourfeature.ftl -->
+					<section data-et-context="videostack" data-et-location-id="homevideo" data-et-panel-id="panel1" class="editorial-promotions edittools-promoblock clearfix largeimage_fourfeature">
+
+
+					<div class="large_feature fleft col-sm-6 clearfix">
+
+						<article data-et-content-id="content_540fca3ae4b03b61661e6281" class="promostory promostory-1 video-promo">
+
+
+								<a class="editable editable-img video " href="http://www.forbes.com/video/3776715592001/" data-ga-event="Promo,InsideForbes,1" data-ga-event-trigger="click">
+									<img src="http://i.forbesimg.com/images/channels/homevideo_panel1_0_mainvideo-1410802048.jpg" alt="Top Six Moments At Apple's Event" />
+		 							
+									<span class="play_button"><div class="icon"></div></span>
+								</a>
+
+
+							<h4 class="editable editable-hed"><a href="http://www.forbes.com/video/3776715592001/" data-ga-event="Promo,InsideForbes,1" data-ga-event-trigger="click">
+							    Top Six Moments At Apple's Event</a>
+							</h4>
+
+
+							<div class="editable editable-dek description">FORBES discusses the recent Apple product showcase in Cupertino.</div>
+							<!--a href="http://www.forbes.com/video/3776715592001/">See the full list  187 </a-->
+						</article>
+					</div>
+
+			<div class="four_features fleft col-sm-6 clearfix">
+				<ul class="clearfix col-sm-6">
+							<li class="fleft clearfix">
+								<article data-et-content-id="content_52855c31e4b0d181e3c3ff12" class="promostory promostory-2">
+
+
+										<a class="editable editable-img video " href="http://www.forbes.com/video/2761451812001/"  title="See Photos" data-ga-event="Promo,InsideForbes,1" data-ga-event-trigger="click">
+											<img alt="College Costs For Your Family" src="http://i.forbesimg.com/images/channels/homevideo_panel15_1_mainvideo-1410016425.jpg" />
+		 									
+		 									<span class="play_button"><span class="icon"></span></span>
+										</a>
+
+
+
+		 	 		 					<h4 class="editable editable-hed"><a href="http://www.forbes.com/video/2761451812001/" data-ga-event="Promo,InsideForbes, 2" data-ga-event-trigger="click">College Costs For Your Family</a></h4>
+								</article>
+		 					</li>
+							<li class="fleft clearfix">
+								<article data-et-content-id="content_5407228be4b0bb45818b87d5" class="promostory promostory-3">
+
+
+										<a class="editable editable-img video " href="http://www.forbes.com/video/3763756278001/"  title="See Photos" data-ga-event="Promo,InsideForbes,2" data-ga-event-trigger="click">
+											<img alt="Hollywood's Highest-Paid TV Actresses Of 2014" src="http://i.forbesimg.com/images/channels/homevideo_panel14_2_mainvideo-1410016352.jpg" />
+		 									
+		 									<span class="play_button"><span class="icon"></span></span>
+										</a>
+
+
+
+		 	 		 					<h4 class="editable editable-hed"><a href="http://www.forbes.com/video/3763756278001/" data-ga-event="Promo,InsideForbes, 3" data-ga-event-trigger="click">Hollywood's Highest-Paid TV Actresses Of 2014</a></h4>
+								</article>
+		 					</li>
+				</ul>
+
+				<ul class="clearfix col-sm-6">
+							<li class="fleft clearfix">
+
+								<article data-et-content-id="content_53fb6ad5e4b0bb45818b5615" class="promostory promostory-4">
+
+
+										<a class="editable editable-img video " href="http://www.forbes.com/video/3747780765001/"  data-ga-event="Promo,InsideForbes, 3" data-ga-event-trigger="click">
+		 									<img alt="Hollywood's Highest-Paid TV Actors Of 2014" src="http://i.forbesimg.com/images/channels/homevideo_panel14_3_mainvideo-1410016338.jpg" />
+		 									
+		 									<span class="play_button"><span class="icon"></span></span>
+										</a>
+
+
+		 								<h4 class="editable editable-hed"><a href="http://www.forbes.com/video/3747780765001/" data-ga-event="Promo,InsideForbes, 4" data-ga-event-trigger="click">Hollywood's Highest-Paid TV Actors Of 2014</a></h4>
+								</article>
+		  					</li>
+							<li class="fleft clearfix">
+
+								<article data-et-content-id="content_5405f4e3e4b0bb45818b82e3" class="promostory promostory-5">
+
+
+										<a class="editable editable-img video " href="http://www.forbes.com/video/3756305376001/"  data-ga-event="Promo,InsideForbes, 4" data-ga-event-trigger="click">
+		 									<img alt="Righting China's Environmental Course" src="http://i.forbesimg.com/images/channels/homevideo_panel14_4_mainvideo-1410016340.jpg" />
+		 									
+		 									<span class="play_button"><span class="icon"></span></span>
+										</a>
+
+
+		 								<h4 class="editable editable-hed"><a href="http://www.forbes.com/video/3756305376001/" data-ga-event="Promo,InsideForbes, 5" data-ga-event-trigger="click">Righting China's Environmental Course</a></h4>
+								</article>
+		  					</li>
+				</ul>
+			</div>
+		</section>
+ 
+		</div><!-- div.stack_wrapper -->
+	</section>
+
+
+	<section class="stack markets">
+		<div class="stack_wrapper clearfix">
+			<h2>Markets</h2>
+
+			<div class="wikinvest">
+				<div id="nv_tickerboard" style="width:620px  height: 420px  position: relative  margin:0px  padding:0px">
+					<iframe scrolling="no" src="http://www.wikinvest.com/partner/Forbes/oauth/api/getwidewidgetframe?l=home" frameborder="0" width="620" height="420" marginheight="0" marginwidth="0" style="border: none "></iframe>
+					<div class="nv_data_disclaimer" style="display:none ">
+						<a style="color:#AAAAAA" href="http://www.wikinvest.com/" target="_blank">Wikinvest</a> data is provided as-is, delayed, and subject to <a href="http://www.wikinvest.com/site/Terms_of_Service" target="_blank" style="color:#AAAAAA">Terms</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="investing_stories clearfix">
+				<h6>Top Investing Stories</h6>
+	<ul>
+		<li>
+			<h3><a href="http://www.forbes.com/sites/briansolomon/2014/09/15/apple-hits-new-record-with-over-4-million-iphone-6-preorders/">Apple Hits New Record With Over 4 Million iPhone 6 Preorders</a></h3>
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/106505" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/briansolomon/' class="avatar">
+					<img src='http://1.gravatar.com/avatar/35ddb932a22 b934ddc0357f9365095?s=40&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Brian Solomon" />
+				</a>
+			<span class="name_and_desc">
+				<a href='http://www.forbes.com/sites/briansolomon/' class="user" itemprop="author">Brian Solomon</a>, Forbes Staff
+			</span>
+		</cite>
+		</li>
+		<li>
+			<h3><a href="http://www.forbes.com/sites/nextavenue/2014/06/18/10-job-interview-questions-you-should-ask/">10 Job Interview Questions You Should Ask</a></h3>
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/531080" data-entity-type="author" >
+				<a href='http://blogs.forbes.com/people/nextavenue/' class="avatar">
+					<img src='http://1.gravatar.com/avatar/19470d7db6c0981855a6c77a0b38d6de?s=40&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Next Avenue" />
+				</a>
+			<span class="name_and_desc">
+				<a href='http://blogs.forbes.com/people/nextavenue/' class="user" itemprop="author">Next Avenue</a>, Contributor
+			</span>
+		</cite>
+		</li>
+		<li>
+			<h3><a href="http://www.forbes.com/sites/chuckjones/2014/09/13/how-do-the-iphone-6s-lead-times-compare-to-the-5s-and-what-could-it-mean/">How Do The iPhone 6's Lead Times Compare To The 5s' And What Could It Mean?</a></h3>
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/312726" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/chuckjones/' class="avatar">
+					<img src='http://1.gravatar.com/avatar/f249c3bf2ab0de837b82ab0d11a66eb8?s=40&amp d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Chuck Jones" />
+				</a>
+			<span class="name_and_desc">
+				<a href='http://www.forbes.com/sites/chuckjones/' class="user" itemprop="author">Chuck Jones</a>, Contributor
+			</span>
+		</cite>
+		</li>
+		<li>
+			<h3><a href="http://www.forbes.com/sites/samanthasharf/2014/09/15/microsoft-to-buy-minecraft-maker-mojang-for-2-5-billion/">Microsoft To Buy Minecraft Maker Mojang For $2.5 Billion</a></h3>
+
+
+		<cite class="entity_block type_inline_block enable_info_card" data-entity-id="blogAuthorId/blog/author/353268" data-entity-type="author">
+				<a href='http://www.forbes.com/sites/samanthasharf/' class="avatar">
+					<img src='http://0.gravatar.com/avatar/c7041225ee8544653120d0732c9767f6?s=40&amp d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp r=G' alt="Samantha Sharf" />
+				</a>
+			<span class="name_and_desc">
+				<a href='http://www.forbes.com/sites/samanthasharf/' class="user" itemprop="author">Samantha Sharf</a>, Forbes Staff
+			</span>
+		</cite>
+		</li>
+	</ul>
+			</div>
+
+	<div id="tradingctr" class="featured_brokers">
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('tradingctr')}) 
+		</script>
+	</div>
+			<!-- end div.featured_brokers -->
+
+		</div><!-- div.stack_wrapper -->
+	</section>
+
+
+	<section class="stack features">
+		<div class="stack_wrapper clearfix">
+			<h2>Recommended</h2>
+
+	<!-- Getting '/shared/promo/eight_features.ftl' -->
+
+
+
+
+
+		<!-- /shared/promo/ -->
+		<!-- eight_features -->
+		<!-- /shared/promo/eight_features.ftl -->
+				<div class="edittools-promoblock eight_features" data-et-context="homefeatures" data-et-location-id="homefeatures" data-et-panel-id="panel1">
+
+
+				<div class="clear"></div>
+
+			<div class="first_item feature promostory promostory-1" data-et-content-id="content_5411f45ce4b03b61661e6fb7">
+				<a href="http://www.forbes.com/sites/joelkotkin/2014/09/11/baby-boomtowns-the-u-s-cities-attracting-the-most-families/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel17_0_feature-1410793836.jpg" alt="The U.S. Cities Attracting The Most Families">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/sites/joelkotkin/2014/09/11/baby-boomtowns-the-u-s-cities-attracting-the-most-families/">The U.S. Cities Attracting The Most Families</a>
+ 					</h3>
+			</div>
+
+
+
+			<div class="feature promostory promostory-2" data-et-content-id="content_540f2029e4b03c80856f105e">
+				<a href="http://www.forbes.com/sites/matthewherper/2014/09/10/medicines-manhattan-project-can-the-worlds-richest-doctor-fix-health-care/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel17_1_feature-1410793873.jpg" alt="Can The World's Richest Doctor Fix Health Care?">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/sites/matthewherper/2014/09/10/medicines-manhattan-project-can-the-worlds-richest-doctor-fix-health-care/">Can The World's Richest Doctor Fix Health Care?</a>
+ 					</h3>
+			</div>
+
+
+
+			<div class="feature promostory promostory-3" data-et-content-id="content_53fe519ae4b0bb45818b6736">
+				<a href="http://www.forbes.com/sites/hollieslade/2014/08/27/warring-billionaires-finally-settle-family-score-with-market-basket-deal/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel17_2_feature-141079 13.jpg" alt="Demoulas Billionaires Finally Settle Family Score">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/sites/hollieslade/2014/08/27/warring-billionaires-finally-settle-family-score-with-market-basket-deal/">Demoulas Billionaires Finally Settle Family Score</a>
+ 					</h3>
+			</div>
+
+
+
+			<div class="feature promostory promostory-4" data-et-content-id="content_540f118ae4b03c80856f0ef8">
+				<a href="http://www.forbes.com/sites/kashmirhill/2014/09/10/meet-the-ex-nsa-and-ex-unit-8200-spies-cashing-in-on-security-fears/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel17_3_feature-1410794035.jpg" alt="Meet The Spies Cashing In On Security Fears">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/sites/kashmirhill/2014/09/10/meet-the-ex-nsa-and-ex-unit-8200-spies-cashing-in-on-security-fears/">Meet The Spies Cashing In On Security Fears</a>
+ 					</h3>
+			</div>
+
+
+				<div class="clear"></div>
+
+			<div class="first_item feature promostory promostory-5" data-et-content-id="content_540877c8e4b03c80856ef215">
+				<a href="http://www.forbes.com/special-report/2014/financial-planning-playbook.html" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel15_4_feature-1410447930.png" alt="Financial Planning Playbook">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/special-report/2014/financial-planning-playbook.html">Financial Planning Playbook</a>
+ 					</h3>
+			</div>
+
+
+
+			<div class="feature promostory promostory-6" data-et-content-id="content_531a5577e4b0971730665374">
+				<a href="http://www.forbes.com/vehicles/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel1_5_feature-1410797656.jpg" alt="Vehicles">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/vehicles/">Vehicles</a>
+ 					</h3>
+			</div>
+
+
+
+			<div class="feature promostory promostory-7" data-et-content-id="content_53cedecfe4b008749a578428">
+				<a href="http://www.forbes.com/whats-next/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel1_6_feature-1410797698.jpg" alt="What's Next">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/whats-next/">What's Next</a>
+ 					</h3>
+			</div>
+
+
+
+			<div class="feature promostory promostory-8" data-et-content-id="content_534c5981e4b0677d2d9a64c4">
+				<a href="http://www.forbes.com/ceo-network/" class="featured_image editable editable-img  ">
+					<img src="http://i.forbesimg.com/images/channels/homefeatures_panel16_7_feature-1410533117.jpg" alt="CEO Network">
+					
+					
+				</a>
+
+ 					<h3 class="editable editable-hed">
+ 					    <a href="http://www.forbes.com/ceo-network/">CEO Network</a>
+ 					</h3>
+			</div>
+	</div>
+ 
+		</div><!-- div.stack_wrapper -->
+	</section>
+
+	<section class="stack lists">
+		<div class="stack_wrapper clearfix">
+			<h2>Forbes Lists</h2>
+
+	<div class="realtime_billionaires">
+		<div class="clearfix">
+			<h6>Billionaire Ticker</h6>
+			<span class="subnav"><a href="/billionaires/list/">Real-Time Billionaires  187 </a></span>
+		</div>
+		<div class="realtime-ticker clearfix">
+			<div class="loading_spinner"><img alt="loading" src="http://i.forbesimg.com/assets/img/loading_spinners/16px_on_transparent.gif"></div>
+			<div class="prev"><a id="ticker-prev" class="ticker-controls"><span class="icon">&nbsp </span></a></div>
+			<div id="ticker-container">
+				<div id="ticker">
+					<div class="inner">
+						<ul class="trendscontent">
+
+
+	<li data-item="sheldonadelson">
+
+		<a href="/profile/sheldon-adelson/">
+			<img alt="Sheldon Adelson" src="http://i.forbesimg.com/media/lists/people/sheldon-adelson_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Sheldon Adelson</span>
+				<div class="change">
+					<span class="down">$-414.5 M -1.3%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="theoalbrechtjr">
+
+		<a href="/profile/theo-albrecht-jr/">
+			<img alt="Theo Albrecht Jr" src="http://i.forbesimg.com/media/lists/people/no-pic_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Theo Albrecht Jr</span>
+				<div class="change">
+					<span class="up">$212 K 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="paulallen">
+
+		<a href="/profile/paul-allen/">
+			<img alt="Paul Allen" src="http://i.forbesimg.com/media/lists/people/paul-allen_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Paul Allen</span>
+				<div class="change">
+					<span class="down">$-4.8 M -0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="princealwaleedbintalalalsaud">
+
+		<a href="/profile/prince-alwaleed-bin-talal-alsaud/">
+			<img alt="Prince Alwaleed Bin Talal Alsaud" src="http://i.forbesimg.com/media/lists/people/prince-alwaleed-bin-talal-alsaud_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Prince Alwaleed Bin Talal Alsaud</span>
+				<div class="change">
+					<span class="down">$-109.1 M -0.5%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="mukeshambani">
+
+		<a href="/profile/mukesh-ambani/">
+			<img alt="Mukesh Ambani" src="http://i.forbesimg.com/media/lists/people/mukesh-ambani_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Mukesh Ambani</span>
+				<div class="change">
+					<span class="down">$-277.7 M -1.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="bernardarnault">
+
+		<a href="/profile/bernard-arnault/">
+			<img alt="Bernard Arnault" src="http://i.forbesimg.com/media/lists/people/bernard-arnault_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Bernard Arnault</span>
+				<div class="change">
+					<span class="up">$212.6 M 0.7%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="steveballmer">
+
+		<a href="/profile/steve-ballmer/">
+			<img alt="Steve Ballmer" src="http://i.forbesimg.com/media/lists/people/steve-ballmer_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Steve Ballmer</span>
+				<div class="change">
+					<span class="down">$-160 M -0.7%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="lilianebettencourt">
+
+		<a href="/profile/liliane-bettencourt/">
+			<img alt="Liliane Bettencourt" src="http://i.forbesimg.com/media/lists/people/liliane-bettencourt_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Liliane Bettencourt</span>
+				<div class="change">
+					<span class="down">$-91.6 M -0.3%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="jeffbezos">
+
+		<a href="/profile/jeff-bezos/">
+			<img alt="Jeff Bezos" src="http://i.forbesimg.com/media/lists/people/jeff-bezos_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Jeff Bezos</span>
+				<div class="change">
+					<span class="down">$-717 M -2.4%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="lenblavatnik">
+
+		<a href="/profile/len-blavatnik/">
+			<img alt="Len Blavatnik" src="http://i.forbesimg.com/media/lists/people/len-blavatnik_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Len Blavatnik</span>
+				<div class="change">
+					<span class="up">$8 M 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="michaelbloomberg">
+
+		<a href="/profile/michael-bloomberg/">
+			<img alt="Michael Bloomberg" src="http://i.forbesimg.com/media/lists/people/michael-bloomberg_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Michael Bloomberg</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="sergeybrin">
+
+		<a href="/profile/sergey-brin/">
+			<img alt="Sergey Brin" src="http://i.forbesimg.com/media/lists/people/sergey-brin_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Sergey Brin</span>
+				<div class="change">
+					<span class="down">$-184.2 M -0.6%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="warrenbuffett">
+
+		<a href="/profile/warren-buffett/">
+			<img alt="Warren Buffett" src="http://i.forbesimg.com/media/lists/people/warren-buffett_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Warren Buffett</span>
+				<div class="change">
+					<span class="up">$443.7 M 0.7%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="alikodangote">
+
+		<a href="/profile/aliko-dangote/">
+			<img alt="Aliko Dangote" src="http://i.forbesimg.com/media/lists/people/aliko-dangote_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Aliko Dangote</span>
+				<div class="change">
+					<span class="up">$1 K 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="michaeldell">
+
+		<a href="/profile/michael-dell/">
+			<img alt="Michael Dell" src="http://i.forbesimg.com/media/lists/people/michael-dell_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Michael Dell</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="leonardodelvecchio">
+
+		<a href="/profile/leonardo-del-vecchio/">
+			<img alt="Leonardo Del Vecchio" src="http://i.forbesimg.com/media/lists/people/leonardo-del-vecchio_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Leonardo Del Vecchio</span>
+				<div class="change">
+					<span class="down">$-142.4 M -0.8%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="larryellison">
+
+		<a href="/profile/larry-ellison/">
+			<img alt="Larry Ellison" src="http://i.forbesimg.com/media/lists/people/larry-ellison_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Larry Ellison</span>
+				<div class="change">
+					<span class="up">$127.8 M 0.3%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="charlesergen">
+
+		<a href="/profile/charles-ergen/">
+			<img alt="Charles Ergen" src="http://i.forbesimg.com/media/lists/people/charles-ergen_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Charles Ergen</span>
+				<div class="change">
+					<span class="down">$-46.1 M -0.3%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="micheleferrero">
+
+		<a href="/profile/michele-ferrero/">
+			<img alt="Michele Ferrero" src="http://i.forbesimg.com/media/lists/people/michele-ferrero_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Michele Ferrero</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="mikhailfridman">
+
+		<a href="/profile/mikhail-fridman/">
+			<img alt="Mikhail Fridman" src="http://i.forbesimg.com/media/lists/people/mikhail-fridman_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Mikhail Fridman</span>
+				<div class="change">
+					<span class="down">$-22.4 M -0.1%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="billgates">
+
+		<a href="/profile/bill-gates/">
+			<img alt="Bill Gates" src="http://i.forbesimg.com/media/lists/people/bill-gates_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Bill Gates</span>
+				<div class="change">
+					<span class="down">$-161.1 M -0.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="haroldhamm">
+
+		<a href="/profile/harold-hamm/">
+			<img alt="Harold Hamm" src="http://i.forbesimg.com/media/lists/people/harold-hamm_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Harold Hamm</span>
+				<div class="change">
+					<span class="up">$227.1 M 1.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="carlicahn">
+
+		<a href="/profile/carl-icahn/">
+			<img alt="Carl Icahn" src="http://i.forbesimg.com/media/lists/people/carl-icahn_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Carl Icahn</span>
+				<div class="change">
+					<span class="down">$-114.1 M -0.4%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="susanneklatten">
+
+		<a href="/profile/susanne-klatten/">
+			<img alt="Susanne Klatten" src="http://i.forbesimg.com/media/lists/people/susanne-klatten_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Susanne Klatten</span>
+				<div class="change">
+					<span class="down">$-36.5 M -0.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="philknight">
+
+		<a href="/profile/phil-knight/">
+			<img alt="Phil Knight" src="http://i.forbesimg.com/media/lists/people/phil-knight_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Phil Knight</span>
+				<div class="change">
+					<span class="down">$-46.1 M -0.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="davidkoch">
+
+		<a href="/profile/david-koch/">
+			<img alt="David Koch" src="http://i.forbesimg.com/media/lists/people/david-koch_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">David Koch</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="charleskoch">
+
+		<a href="/profile/charles-koch/">
+			<img alt="Charles Koch" src="http://i.forbesimg.com/media/lists/people/charles-koch_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Charles Koch</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="leeshaukee">
+
+		<a href="/profile/lee-shau-kee/">
+			<img alt="Lee Shau Kee" src="http://i.forbesimg.com/media/lists/people/lee-shau-kee_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Lee Shau Kee</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="jorgepaulolemann">
+
+		<a href="/profile/jorge-paulo-lemann/">
+			<img alt="Jorge Paulo Lemann" src="http://i.forbesimg.com/media/lists/people/jorge-paulo-lemann_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Jorge Paulo Lemann</span>
+				<div class="change">
+					<span class="up">$529.6 M 2.3%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="likashing">
+
+		<a href="/profile/li-ka-shing/">
+			<img alt="Li Ka-shing" src="http://i.forbesimg.com/media/lists/people/li-ka-shing_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Li Ka-shing</span>
+				<div class="change">
+					<span class="up">$45.6 M 0.1%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="jacquelinemars">
+
+		<a href="/profile/jacqueline-mars/">
+			<img alt="Jacqueline Mars" src="http://i.forbesimg.com/media/lists/people/jacqueline-mars_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Jacqueline Mars</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="forrestmarsjr">
+
+		<a href="/profile/forrest-mars-jr/">
+			<img alt="Forrest Mars Jr" src="http://i.forbesimg.com/media/lists/people/forrest-mars-jr_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Forrest Mars Jr</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="johnmars">
+
+		<a href="/profile/john-mars/">
+			<img alt="John Mars" src="http://i.forbesimg.com/media/lists/people/no-pic_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">John Mars</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="amancioortega">
+
+		<a href="/profile/amancio-ortega/">
+			<img alt="Amancio Ortega" src="http://i.forbesimg.com/media/lists/people/amancio-ortega_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Amancio Ortega</span>
+				<div class="change">
+					<span class="up">$924 M 1.4%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="michaelotto">
+
+		<a href="/profile/michael-otto/">
+			<img alt="Michael Otto" src="http://i.forbesimg.com/media/lists/people/michael-otto_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Michael Otto</span>
+				<div class="change">
+					<span class="down">$-2.2 M -0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="larrypage">
+
+		<a href="/profile/larry-page/">
+			<img alt="Larry Page" src="http://i.forbesimg.com/media/lists/people/larry-page_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Larry Page</span>
+				<div class="change">
+					<span class="down">$-186.7 M -0.6%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="stefanpersson">
+
+		<a href="/profile/stefan-persson/">
+			<img alt="Stefan Persson" src="http://i.forbesimg.com/media/lists/people/stefan-persson_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Stefan Persson</span>
+				<div class="change">
+					<span class="up">$517.1 M 1.6%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="ginarinehart">
+
+		<a href="/profile/gina-rinehart/">
+			<img alt="Gina Rinehart" src="http://i.forbesimg.com/media/lists/people/gina-rinehart_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Gina Rinehart</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="dieterschwarz">
+
+		<a href="/profile/dieter-schwarz/">
+			<img alt="Dieter Schwarz" src="http://i.forbesimg.com/media/lists/people/no-pic_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Dieter Schwarz</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="dilipshanghvi">
+
+		<a href="/profile/dilip-shanghvi/">
+			<img alt="Dilip Shanghvi" src="http://i.forbesimg.com/media/lists/people/dilip-shanghvi_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Dilip Shanghvi</span>
+				<div class="change">
+					<span class="down">$-218.1 M -1.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="carlosslimhelu">
+
+		<a href="/profile/carlos-slim-helu/">
+			<img alt="Carlos Slim Helu" src="http://i.forbesimg.com/media/lists/people/carlos-slim-helu_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Carlos Slim Helu</span>
+				<div class="change">
+					<span class="up">$885.9 M 1%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="masayoshison">
+
+		<a href="/profile/masayoshi-son/">
+			<img alt="Masayoshi Son" src="http://i.forbesimg.com/media/lists/people/masayoshi-son_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Masayoshi Son</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="georgesoros">
+
+		<a href="/profile/george-soros/">
+			<img alt="George Soros" src="http://i.forbesimg.com/media/lists/people/george-soros_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">George Soros</span>
+				<div class="change">
+					<span class="">$0 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="davidthomson">
+
+		<a href="/profile/david-thomson/">
+			<img alt="David Thomson" src="http://i.forbesimg.com/media/lists/people/david-thomson_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">David Thomson</span>
+				<div class="change">
+					<span class="down">$-61.8 M -0.3%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="alisherusmanov">
+
+		<a href="/profile/alisher-usmanov/">
+			<img alt="Alisher Usmanov" src="http://i.forbesimg.com/media/lists/people/alisher-usmanov_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Alisher Usmanov</span>
+				<div class="change">
+					<span class="down">$-98.9 M -0.5%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="christywalton">
+
+		<a href="/profile/christy-walton/">
+			<img alt="Christy Walton" src="http://i.forbesimg.com/media/lists/people/christy-walton_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Christy Walton</span>
+				<div class="change">
+					<span class="down">$-57.8 M -0.2%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="jimwalton">
+
+		<a href="/profile/jim-walton/">
+			<img alt="Jim Walton" src="http://i.forbesimg.com/media/lists/people/jim-walton_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Jim Walton</span>
+				<div class="change">
+					<span class="up">$8.2 M 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="alicewalton">
+
+		<a href="/profile/alice-walton/">
+			<img alt="Alice Walton" src="http://i.forbesimg.com/media/lists/people/alice-walton_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Alice Walton</span>
+				<div class="change">
+					<span class="up">$8.2 M 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="srobsonwalton">
+
+		<a href="/profile/s-robson-walton/">
+			<img alt="S. Robson Walton" src="http://i.forbesimg.com/media/lists/people/s-robson-walton_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">S. Robson Walton</span>
+				<div class="change">
+					<span class="up">$9.6 M 0%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+	<li data-item="markzuckerberg">
+
+		<a href="/profile/mark-zuckerberg/">
+			<img alt="Mark Zuckerberg" src="http://i.forbesimg.com/media/lists/people/mark-zuckerberg_50x50.jpg">
+			<div class="ticker-info">
+				<span class="name">Mark Zuckerberg</span>
+				<div class="change">
+					<span class="down">$-1.3 B -3.8%</span>
+				</div>
+			</div>
+		</a>
+	</li>
+
+
+						</ul>
+					</div> <!-- End: .inner -->
+					<span class="fade fade-left">&nbsp </span></a><span class="fade fade-right">&nbsp </span></a>
+				</div> <!-- End: #ticker -->
+			</div> <!-- End: #ticker-container -->
+			<div class="next"><a id="ticker-next" class="ticker-controls"><span class="icon">&nbsp </span></a></div>
+		</div> <!-- End: .realtime-ticker -->
+	</div> <!-- End: .realtime_billionaires -->
+
+
+
+	<!-- Getting '/shared/promo/mainstory_twofeatures.ftl' -->
+
+
+
+
+
+		<!-- /shared/promo/ -->
+		<!-- mainstory_twofeatures -->
+		<!-- /shared/promo/mainstory_twofeatures.ftl -->
+				<div class="edittools-promoblock mainstory_twofeatures clearfix" data-et-context="liststack" data-et-location-id="homelists" data-et-panel-id="panel3">
+
+
+			<article data-et-content-id="content_5411f45ce4b03b61661e6fb7" class="feature promostory promostory-1">
+
+				<a class="editable editable-img  " href="http://www.forbes.com/sites/joelkotkin/2014/09/11/baby-boomtowns-the-u-s-cities-attracting-the-most-families/">
+					<img src="http://i.forbesimg.com/images/channels/homelists_panel3_0_list-1410794083.jpg" alt="Baby Boomtowns: The U.S. Cities Attracting The Most Families" />
+					
+
+	 				
+				</a>
+	 					<h3 class="editable editable-hed"><a href="http://www.forbes.com/sites/joelkotkin/2014/09/11/baby-boomtowns-the-u-s-cities-attracting-the-most-families/">Baby Boomtowns: The U.S. Cities Attracting The Most Families</a></h3>
+				<p class="editable editable-dek">
+					Affordable metro areas in the South and Intermountain West are seeing big spikes in their child populations.
+				</p>
+
+			</article>
+
+		<div class="twofeatures">
+			<ul>
+
+
+						<li class="promostory promostory-2" data-et-content-id="content_540661e2e4b0bb45818b853f">
+
+								<a class="editable editable-img  " href="http://www.forbes.com/sites/erincarlyle/2014/09/03/the-most-expensive-homes-for-sale-in-the-world-right-now/">
+									<img src="http://i.forbesimg.com/images/channels/homelists_panel3_1_list-14107941 .jpg" alt="The Most Expensive Homes For Sale Right Now" />
+									
+			 						
+								</a>
+
+	 		 					<h4 class="editable editable-hed">
+	 		 					    <a href="http://www.forbes.com/sites/erincarlyle/2014/09/03/the-most-expensive-homes-for-sale-in-the-world-right-now/">The Most Expensive Homes For Sale Right Now</a>
+	 		 					</h4>
+
+				    	</li>
+
+
+						<li class="promostory promostory-3" data-et-content-id="content_54062f9be4b0bb45818b8488">
+
+								<a class="editable editable-img  " href="http://www.forbes.com/sites/vannale/2014/09/03/sofia-vergara-is-the-highest-paid-tv-actress-of-2014-for-third-year/">
+									<img src="http://i.forbesimg.com/images/channels/homelists_panel3_2_list-1410794190.jpg" alt="Sofia Vergara Is Again The Highest-Paid TV Actress" />
+									
+			 						
+								</a>
+
+	 		 					<h4 class="editable editable-hed">
+	 		 					    <a href="http://www.forbes.com/sites/vannale/2014/09/03/sofia-vergara-is-the-highest-paid-tv-actress-of-2014-for-third-year/">Sofia Vergara Is Again The Highest-Paid TV Actress</a>
+	 		 					</h4>
+
+				    	</li>
+			</ul>
+		</div><!-- end div.headline_list -->
+	</div>
+ 
+
+
+	<!-- Getting '/shared/promo/hometoplists.ftl' -->
+
+
+
+
+
+		<!-- /shared/promo/ -->
+		<!-- hometoplists -->
+		<!-- /shared/promo/hometoplists.ftl -->
+			
+<div class="top_lists">
+	<h6>Top Lists</h6>
+
+	<ul data-et-context="liststack" data-et-location="hometoplists" data-et-panel-id="" class="editorial-promotions edittools-list">
+		<li class="editable edittools-item" data-et-item_id="14" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/billionaires">The World's Billionaires</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="18" data-et-location="footernav" data-et-item-type="content">
+			<a href="http://www.forbes.com/most-promising-companies/">America's Most Promising Companies</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="16" data-et-location="footernav" data-et-item-type="link">
+			<a href="http://www.forbes.com/best-places-for-business/">The Best Places In America For Business And Careers</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="9" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/private">America's Largest Private Companies</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="19" data-et-location="footernav" data-et-item-type="link">
+			<a href="http://www.forbes.com/special-report/2014/30-under-30/finance.html">FORBES 30 Under 30</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="7" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/celebrities/">Celebrity 100</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="3" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/forbes400">Forbes 400 Richest Americans</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="6" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/global2000">Global 2000 Leading Companies</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="8" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/colleges">America's Best Colleges</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="10" data-et-location="footernav" data-et-item-type="link">
+			<a href="http://www.forbes.com/best-small-companies/">America's Best Small Companies</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="11" data-et-location="footernav" data-et-item-type="link">
+			<a href="http://www.forbes.com/nhl-valuations/">Hockey's Most Valuable Teams</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="12" data-et-location="footernav" data-et-item-type="link">
+			<a href="http://www.forbes.com/midas/">The Midas List: Top Tech Investors</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="13" data-et-location="footernav" data-et-item-type="link">
+			<a href="http://www.forbes.com/innovative-companies/">The World's Most Innovative Companies</a>
+		</li>
+		<li class="editable edittools-item" data-et-item_id="17" data-et-location="footernav" data-et-item-type="topic">
+			<a href="http://www.forbes.com/power-women">100 Most Powerful Women</a>
+		</li>
+	</ul>
+</div>
+
+
+ 
+
+		</div><!-- div.stack_wrapper -->
+	</section><!--end section.stack.lists-->
+
+
+    <!-- Start: footer -->
+        
+<footer class="universal-footer">
+	<div class="footer-center">
+
+		<!-- END EDITORIAL PROMOTIONS -->
+
+		<section class="lower-footer-links clearfix">
+
+
+			<div class="channels">
+				<ul data-et-context="footer" data-et-location="footernav" class="edittools-list">
+					<li class="home">
+						<a href="http://www.forbes.com/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Forbes</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="14" data-et-location="footernav" data-et-item-type="topic">
+						<a href="http://www.forbes.com/business/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Business</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="7" data-et-location="footernav" data-et-item-type="link">
+						<a href="http://www.forbes.com/investing/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Investing</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="8" data-et-location="footernav" data-et-item-type="link">
+						<a href="http://www.forbes.com/technology/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Technology</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="13" data-et-location="footernav" data-et-item-type="topic">
+						<a href="http://www.forbes.com/entrepreneurs/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Entrepreneurs</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="9" data-et-location="footernav" data-et-item-type="link">
+						<a href="http://www.forbes.com/opinion/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Op/Ed</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="10" data-et-location="footernav" data-et-item-type="link">
+						<a href="http://www.forbes.com/leadership/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Leadership</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="11" data-et-location="footernav" data-et-item-type="link">
+						<a href="http://www.forbes.com/lifestyle/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Lifestyle</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="12" data-et-location="footernav" data-et-item-type="link">
+						<a href="http://www.forbes.com/lists/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Lists</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="conferences footer-list fleft">
+				<h5><a href="http://www.forbes.com/conferences/">Conferences</a></h5>
+
+				<ul data-et-context="footer" data-et-location="footerconferences" class="edittools-list">
+
+						<li class="editable edittools-item" data-et-item_id="15" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/conferences/2014/under30-2014.html" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Under 30 Summit</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="16" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://forbesglobalceoconference.com/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Global CEO Conference</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="14" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/conferences/2014/cio-2014.html" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes CIO Summit</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="1" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/conferences/2014/cmo-2014.html" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes CMO Summit</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="11" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/conferences/2014/ReinventingAmerica-Indy.html" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Reinventing America: The Innovation Summit</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="3" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/conferences/2014/healthcare-2014.html" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Healthcare Summit</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="5" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/conferences/2015/ReinventingAmerica-Chicago.html" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Reinventing America Summit</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="8" data-et-location="footerconferences" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/sites/forbespr/2014/07/09/forbes-and-svg-partners-will-host-forbes-reinventing-america-the-agtech-summit-july-2015-in-salinas-valley/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Reinventing America: The AgTech Summit</a>
+	        			</li>
+				</ul>
+			</div>
+			<div class="products_newsletter footer-list fleft">
+				<h5>Education</h5>
+				<ul>
+					<li><a href="http://www.ashford.edu/degrees/online/business.htm/" target="_blank" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Forbes School of Business at Ashford University</a></li>
+				</ul>
+
+				
+
+			<!-- <div class="products_newsletter footer-list fleft">  -->
+				<h5><a href="http://www.newsletters.forbes.com/">Newsletters</a></h5>
+
+				<ul data-et-context="footer" data-et-location="footernewsletters" class="edittools-list">
+
+						<li class="editable edittools-item" data-et-item_id="1" data-et-location="footernewsletters" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/newsletters/forbes-investor/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Investor</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="2" data-et-location="footernewsletters" data-et-item-type="link">
+	            			<a href="https://www.specialsituationsurvey.com/newsletters/sss/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Special Situation Survey</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="3" data-et-location="footernewsletters" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/newsletters/forbes-dividend-investor/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Dividend Investor</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="5" data-et-location="footernewsletters" data-et-item-type="link">
+	            			<a href="http://www.forbes.com/newsletters/forbes-premium-income-report/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Premium Income Report</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="6" data-et-location="footernewsletters" data-et-item-type="link">
+	            			<a href="http://onforb.es/1dK9tEh" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Investing Newsletters</a>
+	        			</li>
+				</ul>
+			<!-- </div> -->
+				
+			</div>		
+
+			<div class="company-info footer-list fleft">
+				<h5>Products</h5>
+
+				<ul data-et-context="footer" data-et-location="footerproducts" class="edittools-list">
+
+						<li class="editable edittools-item" data-et-item_id="3" data-et-location="footerproducts" data-et-item-type="link">
+	            			<a href="https://www.forbesid.com/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Identity Protection</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="4" data-et-location="footerproducts" data-et-item-type="link">
+	            			<a href="http://www.forbesmagazine.com/newsfeeds/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Newsfeeds</a>
+	        			</li>
+						<li class="editable edittools-item" data-et-item_id="5" data-et-location="footerproducts" data-et-item-type="link">
+	            			<a href="http://forbesreprints.magreprints.com/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Reprints & Permissions</a>
+	        			</li>
+				</ul>
+				
+				<h5>Company Info</h5>
+				<ul>
+					<li><a href="http://www.forbesmedia.com/" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Advertise</a></li>
+					<li><a href="http://www.forbes.com/sites/forbespr/" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click" class="exit_trigger_set ga_tracked">Forbes Press Room</a></li>
+					<li><a href="https://www2.apply2jobs.com/forbes/" target="_blank" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Forbes Careers</a></li>
+					<li><a href="http://www.forbes.com/fdc/contact.html" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Contact Us</a></li>
+					<li><a href="http://www.forbes.com/fdc/sitemap.html" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Sitemap</a></li>
+					<li><a href="http://blogs.forbes.com/help/" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Help</a></li>
+				</ul>
+			</div>
+				<div class="publications fleft">
+			<div class="clearfix">
+           		<a href="http://www.forbes.com/forbes" data-ga-event="Footer,LinkFollowed,magazine" data-ga-event-trigger="click" class="exit_trigger_set ga_tracked"><img src="http://images.forbes.com/media/current_covers/forbes_120x160.jpg" alt="Forbes Magazine"></a>
+            	<a href="http://www.forbes.com/forbes-life-magazine" data-ga-event="Footer,LinkFollowed,magazine" data-ga-event-trigger="click" class="exit_trigger_set ga_tracked"><img src="http://images.forbes.com/media/current_covers/forbeslife_120x160.jpg" alt="ForbesLife"></a>
+            	<a href="http://www.forbes.com/forbesasia/" data-ga-event="Footer,LinkFollowed,magazine" data-ga-event-trigger="click" class="exit_trigger_set ga_tracked"><img src="http://images.forbes.com/media/current_covers/forbesasia_120x160.jpg" alt="ForbesAsia"></a>
+            </div>
+				
+				<ul class="subscriptions">
+					<ul data-et-context="footer" data-et-location="footermagazine" class="edittools-list">
+							<li class="editable edittools-item" data-et-item_id="6" data-et-location="footermagazine" data-et-item-type="link">
+	            				<a href="https://subs.forbesmagazine.com/servlet/OrdersGateway?cds_mag_code=FRB&cds_page_id=150007" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2 Free Issues</a>
+	        				</li>
+							<li class="editable edittools-item" data-et-item_id="4" data-et-location="footermagazine" data-et-item-type="link">
+	            				<a href="http://www.forbesmagazine.com/" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Subscriber Services</a>
+	        				</li>
+							<li class="editable edittools-item" data-et-item_id="5" data-et-location="footermagazine" data-et-item-type="link">
+	            				<a href="https://subs.forbesmagazine.com/loc/FRB/IZEG101" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Gift Subscription</a>
+	        				</li>
+					</ul>
+				</ul>
+
+				<div class="affiliate-sites">
+					<ul>
+						<li><a href="http://www.forbeschina.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes China</a></li>
+						<li><a href="http://www.forbesindia.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes India</a></li>
+						<li><a href="http://www.forbes.co.il/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Israel</a></li>
+						<li><a href="http://www.forbes.com.mx/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Mexico</a></li>
+						<li><a href="http://www.forbesmiddleeast.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Middle East</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://www.forbes.pl/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Poland</a></li>
+						<li><a href="http://www.forbes.ro/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Romania</a></li>
+						<li><a href="http://www.forbesrussia.ru/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Russia</a></li>
+						<li><a href="http://forbesmagazine.es/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Spain</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://www.realclear.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">RealClear</a></li>
+						<li><a href="http://www.realclearpolitics.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">RealClear Politics</a></li>
+						<li><a href="http://www.realclearmarkets.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">RealClear Markets</a></li>
+						<li><a href="http://www.realclearworld.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">RealClear World</a></li>
+						<li><a href="http://www.realclearsports.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">RealClear Sports</a></li>
+					</ul>
+				</div>
+			</div>
+
+        </section>
+
+		
+		<section class="legalese clearfix">
+			<small>2014 Forbes.com LLC 153  &nbsp  All Rights Reserved</small>
+			<ul>
+				<li><a href="/terms" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Terms and Conditions</a></li>
+				<li><a href="http://www.forbes.com/fdc/privacy.html" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Privacy Statement</a></li>
+				<li><a href="http://corporate.morningstar.com/us/asp/subject.aspx?xmlfile=5501.xml" target="_blank" data-ga-event="Footer,LinkFollowed,partner" data-ga-event-trigger="click">Market Data by Morningstar</a></li>
+				<li><a onclick="(function(){forbes.event_tracking.track_ga_event(['Footer','LinkFollowed','partner']) var s=document.createElement('script') s.src='http://preferences.truste.com/js/buildJsFilev2.jsp?domain=forbes.com&amp type=epref' s.onreadystatechange=function(){if(script.readyState=='loaded'||script.readyState=='complete'){view(trusteId) }} s.onload=function(){view(trusteId) } document.getElementsByTagName('head')[0].appendChild(s) })()" style="cursor:pointer " target="_blank">AdChoices</a></li>
+			</ul>
+		</section>
+	</div>
+</footer>
+	<!-- End: footer -->
+
+        <script type="text/javascript">
+            //<![CDATA[
+                var ppi_AjaxURI = '/wp-admin/admin-ajax.php'
+                	,imagesBaseCdn = 'http://i.forbesimg.com'
+					,followBarLocation = ''  
+            //]]>
+        </script>
+    <!--Start: Gigya Configs-->
+        <script type="text/javascript">
+            var gigya_conf = {
+                siteName: 'forbes.com',
+                APIkey: '3_8Fcn29ZQ5lcRRr8BsC6Y2q8eRKPl567JTM6IWXsqW4eqW57_fNx29GDl9YdzZLvH',
+                connectWithoutLoginBehavior: 'alwaysLogin',
+                enabledProviders: 'facebook,twitter,linkedin,googleplus,yahoo,messenger,wordpress,aol,blogger,openid,foursquare,typepad'
+            } 
+
+            (function() {
+				var po = document.createElement('script') 
+				po.type = 'text/javascript' 
+				//po.async = true 
+				po.src = 'http://cdn.gigya.com/js/socialize.js?apiKey=3_8Fcn29ZQ5lcRRr8BsC6Y2q8eRKPl567JTM6IWXsqW4eqW57_fNx29GDl9YdzZLvH' 
+
+				var s = document.getElementsByTagName('script')[0] 
+				s.parentNode.insertBefore(po, s) 
+			})() 
+
+			(function() {
+				var po = document.createElement('script') 
+				po.type = 'text/javascript' 
+				//po.async = true 
+				po.src = 'http://cdn.gigya.com/js/gigyaGAIntegration.js' 
+
+				var s = document.getElementsByTagName('script')[0] 
+				s.parentNode.insertBefore(po, s) 
+			})() 
+        </script>
+    <!--End: Giya Configs -->
+	<script type="text/javascript">
+		var google_tag_channel = "" 
+		var google_tag_section = "" 
+		var google_tag_swimlane = "" 
+		var google_tag_specialslot = "" 
+		var google_tag_article_special_slot = "" 
+		var google_tag_display_channel = "home" 
+		var google_tag_display_section = "Main" 
+		var google_tag_zone = "home" 
+		var google_tag_article_id = "home_usa" 
+	</script>
+		<script type="text/javascript" src="http://i.forbesimg.com/scripts/combined/js/global.9b54854e38f728e06e627d05bb57cc4a01e2f087.js"></script>
+		<script type="text/javascript" src="http://i.forbesimg.com/scripts/combined/js/home.46a880d88af1f7f8763b7eabe0bf142a5ea1c10c.js"></script>
+<span class="lazy_load_js" data-files="http://i.forbesimg.com/scripts/combined/js/globallazy.f2a2501f646cecb9ff388368ba8274958466553c.js"></span>
+    <script type="text/javascript">
+        forbes.bootstrap.init() 
+    </script>
 
 </body>
 </html>

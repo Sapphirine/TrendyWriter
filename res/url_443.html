@@ -1,0 +1,1321 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html  charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta content="notranslate" name="google" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgICUlVWGwEJVVJRBgI="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({1:[function(t,e){function n(t,e,n){n||(n={}) for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0 a>u u++)r[u].apply(s,e) return s}function r(t,e){var n=o[t]||(o[t]=[]) n.push(e)}var o={},i="nr@context" e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0 t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2)) if(e(window),"getPrototypeOf"in Object){for(var i=document i&&!i.hasOwnProperty("addEventListener") )i=Object.getPrototypeOf(i) i&&e(i) for(var a=XMLHttpRequest.prototype a&&!a.hasOwnProperty("addEventListener") )a=Object.getPrototypeOf(a) a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2) e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0] "string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2) n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] window.XMLHttpRequest=function(t){var n=new a(t) try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 u>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d) if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data") c&&(n.cat=c.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr") var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2) t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var d=e(o) d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}} for(var f=0 u>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t] return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={} e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1 if(t===window)return 0 if(o.call(t,"__nr"))return t.__nr try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=u.createElement("script") e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]} u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f) try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="") var i,s,u,d="-"===r.charAt(0) for(u=0 u<e.length u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2) e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]) </script>
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/apple-touch-icon.png">
+<!--[if IE]><link rel="shortcut icon" href="http://www.nationaljournal.com/favicon.ico?v=3"><![endif]-->
+<meta name="msapplication-TileColor" content="#252525">
+<meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+
+<meta property="fb:app_id" content="1420640618178948" />
+<meta property="article:publisher" content="https://www.facebook.com/nationaljournal" />
+
+    <title>Politics - NationalJournal.com</title>
+<link rel="canonical" href="http://www.nationaljournal.com/politics" />
+
+
+    <meta name="description" content="National Journal delivers the latest political news and analysis. National Journal   s political coverage provides in-depth analysis on campaigns, elections, and trends shaping America." />    
+    <meta property="og:description" content="National Journal   s political coverage provides in-depth analysis on campaigns, elections, and trends shaping America." />
+<meta property="og:title" content="Politics" />
+<meta property="og:type" content="channel" />
+<meta property="og:url" content="http://www.nationaljournal.com/politics" />
+    <meta property="og:image" content="http://www.nationaljournal.com/nationaljournal-fb.png" />
+<meta property="og:site_name" content="www.nationaljournal.com" />
+<meta name="syndication-source" content="http://www.nationaljournal.com/politics" />
+
+
+    <link href="/js/libs/jquery_ui/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="/css/global.min.css?1410555497" /><script>
+	var cssFiles = '[]' 
+</script>
+
+
+    <script>
+    var DESKTOP_SCREENSIZE = 1120 
+    var LAPTOP_SCREENSIZE = 1000 
+    var TABLET_SCREENSIZE = 740 
+    var PHONE_SCREENSIZE = 320 
+    
+    var ANIMATION_SPEED = 350 
+    var CMF_SITE_URL  = "http://www.nationaljournal.com" 
+    var MEDIA_MANAGER_REST_URL  = "http://cdn-media.nationaljournal.com/" 
+    
+    var GOOGLE_PLUS_ACCOUNT_ID = '10110978 89792704485' 
+    
+    var SOCIAL_COOKIE_TTL = 30 
+    
+    var UPGRADE_BROSWER_COOKIE_NAME = "dontshowupgradebrowser" 
+    var UPGRADE_BROSWER_COOKIE_TTL = 30 
+
+    var ALMANAC_SEARCH_AUTOCOMPLETE_URL = '/almanac/ajax/autoComplete' 
+    var ALMANAC_DISTRICT_AJAX_URL = '/almanac/ajax/getDistrict' 
+    var ALMANAC_SAVED_QUERY_AJAX_URL = '/almanac/ajax/savedQuery' 
+    var ALMANAC_SEARCH_URL = '/almanac/search' 
+    var ALMANAC_AJAX_SEARCH_URL = '/almanac/ajax/search' 
+    var ALMANAC_SEARCH_REDIRECT_URL = '/almanac/search?doRedirect=true&queryString={string}' 
+    var ALMANAC_STATE_IMAGE_URL = '/img/almanac/states/' 
+    
+    var GOOGLE_API_KEY = 'ABQIAAAAKm6rlwI749ER1XLX6FQ4NRR2xMPL4T21GWiFu7RsroKbVATRFBRBhJ999ZBCwAtyMamcFpYV9J9HLw' 
+    var OMNITURE_REPORT_SUITE = 'atlanticnationaljournal2013prod' 
+    var ADSERVICE_USE_ASYNC = 1 
+    var AD_SITE_NAME = 'nationaljournalonline' 
+    var ADS_SITE_ID = '1594' 
+        var PAGE_LOADING = 'ajax' 
+    
+    var CDN_ENABLE_COOKIE = '_usecache' 
+    
+    var DISQUS_SHORTNAME = 'nationaljournal' 
+    var FACEBOOK_APPID = '1420640618178948' 
+    var GRAVITY_TESTING = 'false' 
+    var GRAVITY_SITE_URL = 'http://rma-api.gravity.com/v0/site/c3b6ed27b540e1c1121abfe3c59edc6c' 
+    var GRAVITY_DEFAULT_USER = '81d46a2 7443820e877959b5bdd68c9' 
+    var GRAVITY_DEFAULT_URL = 'http://www.nationaljournal.com/washington-inside-out/could-america-become-a-banana-republic-20140416' 
+    var JOB_SITE_URL = 'http://careers.nationaljournal.com/' 
+    
+    var SHARE_THIS = 'facebook' 
+</script>
+ 
+    <!-- SiteCatalyst code version: H.17. Copyright 1997-2010 Omniture, Inc. More info available at http://www.omniture.com -->
+<script type="text/javascript" Src="/js/libs/omniture/core.js?1405115774"></script> 
+
+
+<script>
+    var s = s || {} 
+            s.prop1 = '' 
+            s.prop2 = '' 
+            s.prop3 = 'politics' 
+            s.prop4 = '12' 
+            s.prop5 = 'channel' 
+            s.prop6 = 'politics' 
+            s.prop7 = '' 
+            s.prop8 = '' 
+            s.prop9 = '' 
+            s.prop10 = '' 
+            s.prop11 = '' 
+            s.prop12 = '' 
+            s.prop13 = '' 
+            s.prop14 = '' 
+            s.prop15 = '' 
+            s.prop16 = '' 
+            s.prop17 = 'free' 
+            s.prop18 = '/blogs/hotlineoncall' 
+            s.prop19 = '' 
+            s.prop20 = '' 
+            s.prop21 = '' 
+            s.prop22 = '' 
+            s.prop23 = '' 
+            s.prop24 = '' 
+            s.prop25 = '' 
+            s.prop26 = '' 
+            s.prop27 = '' 
+            s.prop28 = '' 
+            s.prop29 = '' 
+            s.prop30 = '' 
+            s.prop31 = '' 
+            s.prop32 = '' 
+            s.prop33 = 'not_set' 
+            s.prop34 = '' 
+            s.prop35 = '' 
+            s.prop36 = '' 
+            s.prop37 = 'politics' 
+            s.prop38 = '' 
+            s.prop  = '' 
+            s.prop40 = '' 
+            s.prop41 = '' 
+            s.prop42 = '' 
+            s.prop43 = '' 
+            s.prop44 = '' 
+            s.prop45 = '' 
+            s.prop46 = 'simplecrawler/0.1' 
+            s.prop47 = '209.196.30.212' 
+            s.prop48 = '' 
+            s.prop49 = '' 
+            s.prop50 = '' 
+            s.prop51 = '' 
+            s.prop52 = 'channel_12' 
+            s.prop53 = '' 
+            s.prop54 = '' 
+            s.prop55 = '' 
+            s.prop56 = '' 
+            s.prop57 = '' 
+            s.prop58 = '' 
+            s.prop59 = '' 
+            s.prop60 = '' 
+            s.prop61 = '' 
+            s.prop62 = '' 
+            s.prop63 = '' 
+            s.prop64 = '' 
+            s.prop65 = '' 
+            s.pageName = 'politics' 
+            s.channel = 'politics' 
+    </script>
+
+    <script type="text/javascript">
+    var googletag = googletag || {} 
+    googletag.cmd = googletag.cmd || [] 
+    (function() {
+      var gads = document.createElement("script") 
+      gads.async = true 
+      gads.type = "text/javascript" 
+      var useSSL = "https:" == document.location.protocol 
+      gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js" 
+      var node =document.getElementsByTagName("script")[0] 
+      node.parentNode.insertBefore(gads, node) 
+     })() 
+</script>
+<!-- Peer  tagging code. -->
+<script type="text/javascript">
+    var ord = Number(ord) || Math.floor(Math.random()*10e12) 
+    var p _ids_DFP = '' 
+    var p _ids_GPT = '' 
+
+    function afterFinished_1388() {
+        var pList = p _KVP('p', ',') 
+        pList = pList.replace(/(^\s*,)|(,\s*$)/g, '') 
+        p _ids_DFP = ' p=' + pList.replace(/(p\=)/g, '') 
+        p _ids_GPT = '[' + pList.replace(/(p\=)/g, '') + ']' 
+    }
+</script>
+<script id="peer ScriptLoader" type="text/javascript" src="http://stags.peer .net/1388/trg_1388.js?NationalJournal"></script>
+<!-- Criteo tagging code. -->
+<script type='text/javascript'>
+var crtg_nid = '3114' 
+var crtg_cookiename = 'crtg_national' 
+var crtg_varname = 'crtg_content' 
+function crtg_getCookie(c_name){ var i,x,y,ARRCookies=document.cookie.split(" ") for(i=0 i<ARRCookies.length i++){x=ARRCookies[i].substr(0,ARRCookies[i].indexOf("=")) y=ARRCookies[i].substr(ARRCookies[i].indexOf("=")+1) x=x.replace(/^\s+|\s+$/g,"") if(x==c_name){return unescape(y) } }return'' }
+var crtg_content = crtg_getCookie(crtg_cookiename) 
+var crtg_rnd=Math.floor(Math.random()*99999999999) 
+(function(){
+var crtg_url=location.protocol+'//rtax.criteo.com/delivery/rta/rta.js?netId='+escape(crtg_nid) 
+crtg_url +='&cookieName='+escape(crtg_cookiename) 
+crtg_url +='&rnd='+crtg_rnd 
+crtg_url +='&varName=' + escape(crtg_varname) 
+var crtg_script=document.createElement('script') crtg_script.type='text/javascript' crtg_script.src=crtg_url crtg_script.async=true 
+if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script) 
+else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script) 
+})() 
+</script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" Src="/js/libs/jquery/jquery.min.js?1377892963"></script> 
+<script type="text/javascript" Src="/js/libs/jquery_ui/jquery-ui.min.js?1377892964"></script> 
+<script type="text/javascript" Src="/js/libs/jquery_mobile/jquery.mobile.custom.js?1377892964"></script><!--[if lt IE 8]>
+	<script type="text/javascript" Src="/js/libs/history/json3.min.js?1 0581618"></script>	<script>
+		var isIE7 = true 
+	</script>
+<![endif]-->
+<script type="text/javascript" Src="/js/libs/history/history.min.js?1 0581618"></script><script type="text/javascript" Src="/js/libs/history/jquery.history.min.js?1 0581618"></script><script type="text/javascript" Src="/js/nj/njHelper.min.js?1409260377"></script><script type="text/javascript" Src="/js/nj/njGeoHelper.min.js?1380901740"></script> 
+<script type="text/javascript" Src="/js/plugins/jquery.lazyload.min.js?1 2003275"></script> 
+<script type="text/javascript" Src="/js/plugins/jquery.outside-events.min.js?1379364942"></script><script type="text/javascript" Src="/js/plugins/jquery.swipeScroll.min.js?1381240934"></script> 
+<script type="text/javascript" Src="/js/plugins/jquery.activeForm.min.js?1381240962"></script> 
+<script type="text/javascript" Src="/js/plugins/jquery.njSlideShow.min.js?1383338795"></script> 
+<script type="text/javascript" Src="/js/plugins/jquery.cookie.min.js?1381173184"></script> 
+<script type="text/javascript" Src="/js/plugins/jquery.resizeend.min.js?1377892963"></script><script type="text/javascript" Src="/js/plugins/google.jsapi.min.js?1380637792"></script><script type="text/javascript" Src="/js/nj/njSlideshow.min.js?1 8720055"></script> 
+<script type="text/javascript" Src="/js/elements/global.min.js?1408740921"></script><script type="text/javascript" Src="/js/elements/widgets.min.js?140926 9"></script><script type="text/javascript" Src="/js/elements/search.min.js?1408121902"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" Src="/js/plugins/html5shiv.min.js?1381173184"></script>	<script type="text/javascript" Src="/js/plugins/css3-mediaqueries.min.js?1 2312815"></script>	<script type="text/javascript" Src="/js/elements/upgrade_browser.min.js?1381173185"></script><style>
+   iframe{dispplay: none }
+</style>
+<script>
+	var isIE = true 
+	$(document).ready(function(){
+		$('iframe').one('load', function(){
+			$(this).show() 
+		})
+	})
+</script>
+<![endif]-->
+
+<script>
+googletag.cmd.push(function(){
+	if (typeof isIE7 == 'undefined')
+		googletag.pubads().collapseEmptyDivs(true) 
+	//else
+	//	googletag.pubads().collapseEmptyDivs() 
+	googletag.pubads().disableInitialLoad() 
+	googletag.pubads().enableSingleRequest() 
+			//enabled for time being
+		//googletag.disablePublisherConsole() 
+		googletag.enableServices() 
+}) 
+</script>
+
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [] 
+  _comscore.push({ c1: "2", c2: "646 21" }) 
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]  s.async = true 
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js" 
+    el.parentNode.insertBefore(s, el) 
+  })() 
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=646 21&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- Chartbeat -->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script></head>
+<body>
+    <p class="noText noHeight"><a href="#skipNav">Skip Navigation</a></p>
+    <div id="upgradeBrowser" class="hide">
+	<a href="#" class="close">Close and don't show again.</a>
+	<h2>Your browser is out of date. </h2>
+	<h3>You may not get the full experience here on National Journal.</h3>
+	<h3>Please upgrade your browser to any of the following supported browsers:</h3>
+	<ul>
+		<li><a href="https://www.google.com/intl/en/chrome/browser" class="chrome" target="_blank">Google Chrome (opens in a new window)</a></li>
+		<li><a href="http://www.mozilla.org/en-US/firefox/new/" class="ff" target="_blank">Mozilla Firefox (opens in a new window)</a></li>
+		<li><a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" class="ie" target="_blank">Microsoft Internet Explorer (opens in a new window)</a></li>
+	</ul>
+</div>
+
+<noscript>
+	<div id="noJavascript">
+		<h2>OOPS! You do not have javascript enabled. </h2>
+		<h3>To read the National Journal please turn on javascript.</h3>
+		<h3>Once enabled, <a href="/">reload the site</a>.</h3>
+	</div>
+</noscript>     
+
+
+<section id="walkingHeader" class="hide">
+    <div class="walkingHeaderInfo">
+        <div class="logoArea">
+            <a href="#" class="hamburger">Reveal Navigation</a>
+            <a href="/" class="logo">National Journal Homepage</a>
+        </div>
+        <h2 class="noPhone">
+            <span class="nonMobile">Politics</span>
+            <span class="tabletOnly">Politics</span>
+        </h2>
+    </div>
+        <section id="nextStoryHeader">
+        <a href="" data-mrefid="article_nextstory">
+            <div id="content" class="hide">
+                <span class="red">NEXT : </span>
+                <span class="title"></span>
+            </div>
+        </a>
+    </section>
+</section>
+    <div id="prestitial" class="hide">
+    <div id="prestitialLogo"></div>
+    <div id="prestitialBar">
+        <div>
+            <div id="prestitialTimer">This ad will end in <span></span> seconds</div>
+            <div id="prestitialClose"><a href="#">Close X</a></div>
+        </div>        
+    </div>    
+    <div class="ad gptAd">
+    				<span id="prestitial_politics_front"
+				class="gptAd adunit"
+				data-zone="politics_front"
+				data-ord="1271597710"
+				data-customtargetting='{"njid":"channel_12","njclassname":"channel","topics":"","user":"free","pos":"prestitial"}'
+													data-desktop="640x480"
+									data-tablet="640x480"
+									data-phone="300x250"
+							><span>&nbsp </span></span>
+            </div>
+</div>
+
+    <header>
+        <ul id="signOutMenu" class="hide">
+    <li><a class="bold" href="/logout">Sign Out</a></li>
+    <li><a href="/account">My Account</a></li>
+    <li><a href="/account/myalerts">My Alerts</a></li>
+</ul>
+<div id="signInForm" class="hide">
+    <div id="signInFormUpArrow"></div>
+    <div id="signInBox">
+    	<a class="close mobileOnly">Close X</a>
+    	<span class="free"><p>Not a member or subscriber?  <a href="/learn-more">Learn More &raquo </a></p></span>
+        <form id="signInFormCommon" action="/login" method="post">
+            <input type="hidden" name="controllerName" value="login" />
+            <input type="hidden" name="action" value="login" />
+            <fieldset>
+                <legend><label for="Username">Username</label></legend>
+                <input id="Username" name="username" type="text" placeholder="Email Address" class="required email" />
+            </fieldset>
+            <fieldset>
+                <legend><label for="Password">Password</label></legend>
+                <input id="Password" name="password" type="password" class="required" />
+            </fieldset>
+            <input type="submit" id="memberSignIn" value="Sign In" class="submit noreset" />
+            <a class="forgotPW" href="/forgotpassword">Forget Your Password?</a>
+            <span class="isIpUser hide">
+	    		<p class="noAccount"><strong>Don't have an account?</strong> <a href="/register">Register &raquo </a></p>
+	    	</span>
+        </form>
+    </div>
+</div>        <form id="headSearch" class="nonMobile" action="/search" method="get">
+    <label for="searchBox" class="noText noHeight">Search National Journal</label>
+    <input type="text" id="searchBox" name="query" placeholder="Search" />
+    <input type="submit" id="searchButton" class="mobileSearchIcon" value="Search" data-mrefid="site_search" />
+</form>        <div id="outerCanvas"></div>
+        
+        <span class="isMember hide">
+            <div id="canvasNav"></div>
+            <section id="membershipNav">
+                <ul class="scrollArea">
+                    <li><a href="/membership">Membership</a></li>
+                    <li class="empty">i</li>
+                    <li><a href="/hotline">Hotline</a></li>
+                    <li><a href="/hotline/race-tracker">Race Tracker</a></li>
+                    <li><a href="/daily">Daily</a></li>
+                    <li><a href="/magazine">Magazine</a></li>
+                    <li><a href="/almanac">Almanac</a></li>
+                    <li><a href="/daybook">Daybook</a></li>
+                    <li><a href="/membership/presentations">Presentations</a></li>
+                    <li><a href="/membership/research">Research</a></li>
+                    <li><a href="/membership/events">Events</a></li>
+                    <li><a href="/library">Document Library</a></li>
+                </ul>
+            </section>
+        </span>
+        <section id="nameplate">
+            <a href="#" id="hamburger" class="hamburger noText noHeight">Reveal Navigation</a>
+            <div id="closeOverlay" class="hide"></div>
+<nav id="globalNav" class="hide">
+    <ul id="mainNav">
+    	<div class="walkingHeaderInfo">
+	        <a href="#" class="hamburger noText noHeight">Hide Navigation</a>
+	        <a href="/" class="logo noText noHeight">National Journal Homepage</a>
+	    </div>
+        <li><a class="primary" href="/white-house">White House</a></li>
+        <li><a class="primary" href="/congress">Congress</a></li>
+        <li><a class="primary" href="/politics">Politics</a></li>
+        <li><a class="primary" href="/energy">Energy</a></li>
+        <li><a class="primary" href="/health-care">Health Care</a></li>
+        <li><a class="primary" href="/defense">Defense</a></li>
+        <li><a class="primary" href="/tech">Tech</a></li>
+        <li><a id="expandMembership" class="primary" href="#">Membership &rsaquo </a></li>
+        <li><a class="primary" href="http://jobs.nationaljournal.com/" target="_blank">Job Board</a></li>
+                        <li class="label">Featured:</li>
+            	                
+    	<li>
+    	    <a href="/video">
+    	            	        Video
+    	    </a>
+    	</li>
+        	                
+    	<li>
+    	    <a href="/next-america">
+    	            	        The Next America
+    	    </a>
+    	</li>
+        	                
+    	<li>
+    	    <a href="/next-economy">
+    	            	        The Next Economy
+    	    </a>
+    	</li>
+        	                
+    	<li>
+    	    <a href="/events">
+    	            	        NJ LIVE Events
+    	    </a>
+    	</li>
+            <li><a class="primary" href="/learn-more">Subscribe</a></li>
+        <span class="isMember hide">	
+            <li><a href="#" id="expandAccount">My Account &rsaquo </a></li>
+        </span>
+        <span class="free">
+            <li class="mobileOnly"><a href="/login" id="expandLogIn">Sign In</a></li>
+        </span>
+    </ul>
+    <div id="gradientFadeNav" class="phoneOnly"></div>
+    <div class="subNav hide">
+        <div class="walkingHeaderInfo"></div>
+	    <ul id="memberNav" class="hide">
+	        <li><a href="/membership">Membership Home</a></li>
+	        <li><a href="/hotline">Hotline</a></li>
+	        <li><a href="/hotline/race-tracker"><span class="noPhone">Hotline's</span> Race Tracker</a></li>
+	        <li><a href="/daily">Daily</a></li>
+	        <li><a href="/magazine">Magazine</a></li>
+	        <li><a href="/almanac">Almanac</a></li>
+	        <li><a href="/daybook">Daybook</a></li>
+	        <li><a href="/membership/presentations">Presentations</a></li>
+	        <li><a href="/membership/research">Research</a></li>
+	        <li><a href="/membership/events">Events</a></li>
+	        <li><a href="/library">Document Library</a></li>
+	    </ul>
+	    <ul id="accountNav" class="hide">
+	        <li><a href="/logout">Sign Out</a></li>
+	        <li><a href="/account">Account</a></li>
+	        <li><a href="/account/myalerts">Alerts</a></li>
+	    </ul>
+	    <div id="gradientFadeNavSecond" class="phoneOnly"></div>
+    </div>
+</nav>            <div id="tools">
+                <a id="openSearch" class="mobileOnly" href="#">Search</a>
+                <span class="isLoggedIn hide">
+                    <a href="#" class="signOut dropArrow nonMobile">
+                        <span class="nonMobile">Welcome Back</span><span id="usernameDisplay"></span>
+                    </a>
+                </span>
+                <span class="isIpUser hide">
+                    <a href="#" class="signIn nonMobile dropArrow"><span class="nonMobile">Welcome Back </span> | Sign In</a>
+                </span>
+                <span class="free"> 
+                    <a href="#" class="signIn nonMobile dropArrow">Sign In</a>
+                </span>
+            </div>
+            <div id="logo">
+    <h1><a href="/">National Journal</a></h1>
+</div>
+    <!--<div id="bug">
+        <h1>Politics</h1>
+    </div>-->    
+        </section>
+        <section id="leadAd">
+               
+               			<span id="top_politics_front"
+				class="gptAd adunit"
+				data-zone="politics_front"
+				data-ord="9816592996"
+				data-customtargetting='{"njid":"channel_12","njclassname":"channel","topics":"","user":"free","pos":"top"}'
+													data-desktop="728x90,10x1"
+									data-tablet="728x90,10x1"
+									data-phone="300x50,10x1"
+							><span>&nbsp </span></span>
+                            </section>
+    </header>
+    <p class="noText noHeight"><a id="skipNav">&nbsp </a></p>
+<section id="channelTopSection">
+    <!-- channel title -->
+
+
+	<div class="widget noBorder" data-mrefid="ChannelTitle">
+		<div class="nj2013channelTitle sponsorImage">
+			<div class="reportTitle">
+								<h3>Politics</h3>
+			</div>
+			
+						
+							<div class="reportSponsor">
+									</div>
+				
+			
+		</div>
+	</div>
+</section>
+
+<section id="channelLeftTopRail">
+    </section>
+
+<section id="channelMain">
+    <!-- featured -->
+<!-- extra large featured -->
+    
+        	    	
+    	    		    	    	
+    	<div class="widget noBorder" data-mrefid="PoliticsLead">
+    		<div class="nj2013MegaFeatured">
+    	        		
+    		    			<div class="featured">
+    				    					<div class="featuredPhoto">
+    						    						<a href="/politics/republicans-newest-2014-weapon-foreign-policy-20140910">
+							    <img src="/img/1x1.gif" class="lazy" alt=""
+    								data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=34618&format=nj2013_8_columns" 
+    								data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=34618&format=nj2013_1024_8_columns" 
+    								data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=34618&format=nj2013_8_columns" 
+    								data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=34618&format=nj2013_phone_full" 
+    							/>
+    							    						</a>
+    					</div>
+    				    				<div class="featuredText">
+    					<div class="tileBG"></div>
+    					    					
+    					<h3><a href="/politics/republicans-newest-2014-weapon-foreign-policy-20140910">Republicans' Newest 2014 Weapon: Foreign Policy</a></h3>
+    						    						    			        	<span class="byline3">By <a rel="author" href="/reporters/bio/234">Emily Schultheis</a></span>
+	    			         
+    			            				</div>
+    				    					    					    				    			</div>
+    		</div>
+    	</div>
+		
+			<div class="widget" data-name="River" data-mrefid="PoliticsRiver">
+						<span class="isMember hide">
+    			            </span>
+			<div class="river">
+	
+
+		
+    
+    
+		
+
+    
+
+    
+    
+    
+
+
+
+	
+    
+
+    
+    
+    
+
+
+
+<span class="isMember hide">
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/did-i-mention-i-ve-been-to-israel-20140915">
+		<img src="/img/1x1.gif" class="lazy" alt=" Mike Huckabee, the former governor of Arkansas, in an interview with National Journal in Washington, D.C. "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/did-i-mention-i-ve-been-to-israel-20140915">Did I Mention I've Been to Israel?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/13">Ron Fournier</a>				</span>
+	
+			<p> Mike Huckabee touts his foreign policy experience, revealing a shift in presidential politics ahead of the 2016 race. </p>
+		
+</div>	
+</div>
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/alison-lundergan-grimes-shows-mitch-mcconnell-how-to-hold-a-gun-in-a-new-ad-20140915">
+		<img src="/img/1x1.gif" class="lazy" alt=""
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/alison-lundergan-grimes-shows-mitch-mcconnell-how-to-hold-a-gun-in-a-new-ad-20140915">Alison Lundergan Grimes Shows Mitch McConnell How to Hold a Gun in a New Ad</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/241">Rebecca Nelson</a>				</span>
+	
+			<p> Yet another reminder of how important guns are in Kentucky, especially for a candidate trying to distance herself from the president. </p>
+		
+</div>	
+</div>
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/is-hillary-clinton-too-hawkish-for-iowa-democrats-20140915">
+		<img src="/img/1x1.gif" class="lazy" alt=""
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/is-hillary-clinton-too-hawkish-for-iowa-democrats-20140915">Is Hillary Clinton Too Hawkish for Iowa Democrats?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/153">Matt Vasilogambros</a>				</span>
+	
+			<p> Despite the pageantry of the Harkin Steak Fry, Iowa Democrats still recall her vote for the Iraq War. </p>
+		
+</div>	
+</div>
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/the-future-of-campaign-finance-reform-may-rest-with-silicon-valley-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" Apple co-founder Steve Wozniak has lended his support to MaydayPAC, a crowdfunded super PAC trying to elect candidates who favor campaign finance reform. "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/the-future-of-campaign-finance-reform-may-rest-with-silicon-valley-20140912">The Future of Campaign Finance Reform May Rest With Silicon Valley</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/231">Jamie Lovegrove</a>				</span>
+	
+			<p> The debate in Congress this week was a sideshow to a longer, well-funded fight. </p>
+		
+</div>	
+</div>
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/magazine/dinesh-d-souza-is-winning-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" This portrait can only be used with the Simon van Zuylen-Wood story that ran in the 9/13/2014 issue of National Journal.&amp nbsp  "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/magazine/dinesh-d-souza-is-winning-20140912">Dinesh D'Souza Is Winning</a></h4>
+			<span class="byline4">
+					By <span>Simon van Zuylen-Wood</span>
+				</span>
+	
+			<p> Conservatism's former enfant terrible has been cast out of polite society and may soon face jail time. But business has never been better. </p>
+		
+</div>	
+</div>
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/magazine/poll-would-gop-control-of-the-senate-bring-a-grand-bargain-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" WASHINGTON, DC - MARCH 14: US President Barack Obama (R) walks with Speaker of the House John Boehner (R-OH) after a luncheon at the US Capitol, on March 14, 2014 in Washington, DC. Speaker Boehner hosted a lunch for Prime Minister Enda Kenny of Ireland in honor of St. Patricks Day on Sunday. (Photo by Mark Wilson/Getty Images) "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/magazine/poll-would-gop-control-of-the-senate-bring-a-grand-bargain-20140912">Poll: Would GOP Control of the Senate Bring a 'Grand Bargain'?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/121">Michael Catalini</a>, <a rel="author" href="/reporters/bio/104">Peter Bell</a> and <a rel="author" href="/reporters/bio/156">Sarah Mimms</a>				</span>
+	
+			<p> "That ship has sailed," says one Republican Insider. </p>
+		
+</div>	
+</div>
+			
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/magazine/poll-which-campaign-trend-are-you-paying-closest-attention-to-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" Lilyan Maitan stands in a voting booth during the Republican primary election April 24, 2012 at St. George Greek Orthodox Church in Philadelphia, Pennsylvania. Turnout is expected to be low as Former Massachusetts Gov. Mitt Romney continues his campaign as the presumptive GOP candidate.&amp nbsp  "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/magazine/poll-which-campaign-trend-are-you-paying-closest-attention-to-20140912">Poll: Which Campaign Trend Are You Paying Closest Attention To?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/121">Michael Catalini</a>, <a rel="author" href="/reporters/bio/104">Peter Bell</a> and <a rel="author" href="/reporters/bio/156">Sarah Mimms</a>				</span>
+	
+			<p> Insiders are split between unlimited spending and hyper-targeted use of data. </p>
+		
+</div>	
+</div>
+		
+			
+		    
+		
+
+			
+						<a class="riverMore" href="#" 
+			   data-channelid="12" 
+			   data-template="widget/wcmNJ2013/common/river/display.tpl" 
+			   data-wid="widget_524a2decb0815" 
+			   data-cutoff="180" 
+			   data-copy="teaser"
+			   data-omniture="PoliticsRiver" 
+			   data-query="%28%28classname%3A%28article%20slideshow%29%20AND%20includeinriver%3Atrue%29%20%28classname%3A%28video%20photo%29%20AND%20embedonly%3Afalse%29%29%20AND%20workflowstate%3A%28published%20publishedModified%29%20AND%20%28channelid%3A%2812%20282%29%20OR%20vertical%3Apolitics%29" 
+			   data-orderby="publicationdate desc" 
+			   data-limit="7"
+			   data-page="1"
+			   data-offset="0" 
+			   data-kickers="0"
+			>
+				<span class="downArrow"></span>
+		   		See More
+			</a>
+			</span>	
+<span class="free">
+						
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/did-i-mention-i-ve-been-to-israel-20140915">
+		<img src="/img/1x1.gif" class="lazy" alt=" Mike Huckabee, the former governor of Arkansas, in an interview with National Journal in Washington, D.C. "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=5872&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/did-i-mention-i-ve-been-to-israel-20140915">Did I Mention I've Been to Israel?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/13">Ron Fournier</a>				</span>
+	
+			<p> Mike Huckabee touts his foreign policy experience, revealing a shift in presidential politics ahead of the 2016 race. </p>
+		
+</div>	
+</div>
+					
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/alison-lundergan-grimes-shows-mitch-mcconnell-how-to-hold-a-gun-in-a-new-ad-20140915">
+		<img src="/img/1x1.gif" class="lazy" alt=""
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=33591&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/alison-lundergan-grimes-shows-mitch-mcconnell-how-to-hold-a-gun-in-a-new-ad-20140915">Alison Lundergan Grimes Shows Mitch McConnell How to Hold a Gun in a New Ad</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/241">Rebecca Nelson</a>				</span>
+	
+			<p> Yet another reminder of how important guns are in Kentucky, especially for a candidate trying to distance herself from the president. </p>
+		
+</div>	
+</div>
+					
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/is-hillary-clinton-too-hawkish-for-iowa-democrats-20140915">
+		<img src="/img/1x1.gif" class="lazy" alt=""
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41686&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/is-hillary-clinton-too-hawkish-for-iowa-democrats-20140915">Is Hillary Clinton Too Hawkish for Iowa Democrats?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/153">Matt Vasilogambros</a>				</span>
+	
+			<p> Despite the pageantry of the Harkin Steak Fry, Iowa Democrats still recall her vote for the Iraq War. </p>
+		
+</div>	
+</div>
+					
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/politics/the-future-of-campaign-finance-reform-may-rest-with-silicon-valley-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" Apple co-founder Steve Wozniak has lended his support to MaydayPAC, a crowdfunded super PAC trying to elect candidates who favor campaign finance reform. "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41659&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/politics/the-future-of-campaign-finance-reform-may-rest-with-silicon-valley-20140912">The Future of Campaign Finance Reform May Rest With Silicon Valley</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/231">Jamie Lovegrove</a>				</span>
+	
+			<p> The debate in Congress this week was a sideshow to a longer, well-funded fight. </p>
+		
+</div>	
+</div>
+					
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/magazine/dinesh-d-souza-is-winning-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" This portrait can only be used with the Simon van Zuylen-Wood story that ran in the 9/13/2014 issue of National Journal.&amp nbsp  "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41601&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/magazine/dinesh-d-souza-is-winning-20140912">Dinesh D'Souza Is Winning</a></h4>
+			<span class="byline4">
+					By <span>Simon van Zuylen-Wood</span>
+				</span>
+	
+			<p> Conservatism's former enfant terrible has been cast out of polite society and may soon face jail time. But business has never been better. </p>
+		
+</div>	
+</div>
+					
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/magazine/poll-would-gop-control-of-the-senate-bring-a-grand-bargain-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" WASHINGTON, DC - MARCH 14: US President Barack Obama (R) walks with Speaker of the House John Boehner (R-OH) after a luncheon at the US Capitol, on March 14, 2014 in Washington, DC. Speaker Boehner hosted a lunch for Prime Minister Enda Kenny of Ireland in honor of St. Patricks Day on Sunday. (Photo by Mark Wilson/Getty Images) "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=40215&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/magazine/poll-would-gop-control-of-the-senate-bring-a-grand-bargain-20140912">Poll: Would GOP Control of the Senate Bring a 'Grand Bargain'?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/121">Michael Catalini</a>, <a rel="author" href="/reporters/bio/104">Peter Bell</a> and <a rel="author" href="/reporters/bio/156">Sarah Mimms</a>				</span>
+	
+			<p> "That ship has sailed," says one Republican Insider. </p>
+		
+</div>	
+</div>
+					
+
+	
+
+
+<div class="defaultRiver article">
+	    
+    	
+	
+
+    
+
+	<div class="articlePhoto">
+		<a href="/magazine/poll-which-campaign-trend-are-you-paying-closest-attention-to-20140912">
+		<img src="/img/1x1.gif" class="lazy" alt=" Lilyan Maitan stands in a voting booth during the Republican primary election April 24, 2012 at St. George Greek Orthodox Church in Philadelphia, Pennsylvania. Turnout is expected to be low as Former Massachusetts Gov. Mitt Romney continues his campaign as the presumptive GOP candidate.&amp nbsp  "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_1_column_large" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_1024_1_column_large" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_1_column_large" 
+            data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&action=get&id=41610&format=nj2013_square_mobile_76" 
+		/>
+				</a>
+	</div>
+
+<div class="article">
+
+						
+	
+												
+	
+		
+		
+	<h4><a href="/magazine/poll-which-campaign-trend-are-you-paying-closest-attention-to-20140912">Poll: Which Campaign Trend Are You Paying Closest Attention To?</a></h4>
+			<span class="byline4">
+					By <a rel="author" href="/reporters/bio/121">Michael Catalini</a>, <a rel="author" href="/reporters/bio/104">Peter Bell</a> and <a rel="author" href="/reporters/bio/156">Sarah Mimms</a>				</span>
+	
+			<p> Insiders are split between unlimited spending and hyper-targeted use of data. </p>
+		
+</div>	
+</div>
+		
+		    
+		
+	
+			
+						
+			<a class="riverMore" href="#" 
+			   data-channelid="12" 
+			   data-template="widget/wcmNJ2013/common/river/display.tpl" 
+			   data-wid="widget_524a2decb0815" 
+			   data-cutoff="180" 
+			   data-copy="teaser"
+			   data-omniture="PoliticsRiver" 
+			   data-query="%28%28classname%3A%28article%20slideshow%29%20AND%20includeinriver%3Atrue%29%20%28classname%3A%28video%20photo%29%20AND%20embedonly%3Afalse%29%29%20AND%20workflowstate%3A%28published%20publishedModified%29%20AND%20%28channelid%3A%2812%20282%29%20OR%20vertical%3Apolitics%29" 
+			   data-orderby="publicationdate desc" 
+			   data-limit="7"
+			   data-page="1"
+			   data-offset="0"
+			   data-kickers="0"
+			>
+				<span class="downArrow"></span>
+		   		See More
+			</a>
+			</span>	
+	</div>
+</div>
+</section>
+
+<section id="channelLeftRail">
+    	    <div id="channelLeftRailTopAd" class="ad">
+	        			<span id="channel_left_top_politics_front"
+				class="gptAd adunit"
+				data-zone="politics_front"
+				data-ord=" 94031646"
+				data-customtargetting='{"njid":"channel_12","njclassname":"channel","topics":"","user":"free","pos":"channel_left_top"}'
+													data-desktop="300x1120,300x600,300x250"
+									data-tablet="300x250"
+									data-phone="300x250"
+							><span>&nbsp </span></span>
+        	    </div>
+        
+
+    <!-- Most Read Widget -->
+
+                
+                    
+<div class="widget noBorder" data-mrefid="MostRead">
+	<div class="nj2013mostread" data-limit="5">
+	    	        <h4 class="flag">Most Read</h4>
+	    
+	    	    <a class="mainLink" href="/magazine/dinesh-d-souza-is-winning-20140912"><img src="/img/1x1.gif" class="lazy" alt="This portrait can only be used with the Simon van Zuylen-Wood story that ran in the 9/13/2014 issue of National Journal.&nbsp "
+			data-desktop_src="http://cdn-media.nationaljournal.com/?controllerName=image&amp action=get&amp id=41601&amp format=nj2013_4_columns" 
+			data-laptop_src="http://cdn-media.nationaljournal.com/?controllerName=image&amp action=get&amp id=41601&amp format=nj2013_1024_4_columns" 
+			data-tablet_src="http://cdn-media.nationaljournal.com/?controllerName=image&amp action=get&amp id=41601&amp format=nj2013_4_columns" 
+	        data-phone_src="http://cdn-media.nationaljournal.com/?controllerName=image&amp action=get&amp id=41601&amp format=nj2013_phone_full" /></a><div class="sub"><span>1.</span><a class="storyLink" href="/magazine/dinesh-d-souza-is-winning-20140912">Dinesh D'Souza Is Winning</a></div><div class="sub"><span>2.</span><a class="storyLink" href="/tech/despite-obama-s-pledge-to-curb-it-nsa-mass-surveillance-wins-rubber-stamp-20140913">Despite Obama’s Pledge to Curb It, NSA Mass Surveillance Wins Rubber Stamp</a></div><div class="sub"><span>3.</span><a class="storyLink" href="/pictures-video/what-a-getty-photographer-captured-before-he-was-arrested-in-ferguson-20140818">What a Getty Photographer Captured Before He Was Arrested in Ferguson</a></div><div class="sub"><span>4.</span><a class="storyLink" href="/congress/russia-s-militarization-of-the-north-pole-has-u-s-lawmakers-on-edge-20140911">Russia's Militarization of the North Pole Has U.S. Lawmakers on Edge</a></div><div class="sub"><span>5.</span><a class="storyLink" href="/white-house/when-doves-cry-20140914">When Doves Cry</a></div>	</div>
+</div>
+    	    <div id="channelLeftRailBottomAd" class="ad noTablet">
+	        			<span id="channel_left_bottom_politics_front"
+				class="gptAd adunit"
+				data-zone="politics_front"
+				data-ord="7881147935"
+				data-customtargetting='{"njid":"channel_12","njclassname":"channel","topics":"","user":"free","pos":"channel_left_bottom"}'
+													data-desktop="300x250"
+									data-tablet=""
+									data-phone="300x250"
+							><span>&nbsp </span></span>
+        	    </div>
+    </section>
+
+<footer>
+	<div id="outerCanvasFoot"></div>
+    <section id="footerGetUsEverywhere" class="footLinks">
+        <span class="red">GET US EVERYWHERE</span>
+        <ul>
+            <li><a href="/learn-more" target="_blank">Membership / Subscriptions</a></li>
+            <li><a href="https://www.facebook.com/NationalJournal" target="_blank">Facebook</a></li>
+            <li><a href="/newsletters" target="_blank">Newsletters</a></li>
+            <li><a href="https://twitter.com/nationaljournal" target="_blank">Twitter</a></li>
+            <li><a href="/rss" target="_blank">RSS</a></li>
+            <li><a href="https://plus.google.com/+NationalJournal" target="_blank">Google Plus</a></li>
+            
+        </ul>
+    </section>    
+    <section id="footerAboutNationalJournal" class="footLinks">
+        <span class="red">NATIONAL JOURNAL</span>
+        <ul>
+            <li><a href="/about-us" target="_blank">About Us</a></li>
+            <li><a href="/reporters" target="_blank">Editorial Bios</a></li>
+            <li><a href="/contact-us" target="_blank">Contact Us</a></li>
+            <li><a href="/membership/bios" target="_blank">Membership Team Bios</a></li>
+            <li><a href="/press-room" target="_blank">Press Room</a></li>
+            <li><a href="http://www.atlanticmedia.com/category/national-journal/" target="_blank">NJ Leadership</a></li>
+            <li><a href="/events" target="_blank">NJ Events</a></li>
+            <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
+            <li><a href="/advertise" target="_blank">Advertise</a></li>
+            <li><a href="/terms-of-service" target="_blank">Terms of Service</a></li>
+            <li><a href="/advertise/?page_id=2449" target="_blank">Advertising Guidelines</a></li>
+        </ul>
+    </section>
+    <section id="footerCorporate" class="footLinks">
+        <span class="red">ATLANTIC MEDIA</span>
+        <ul>
+            <li><a href="http://www.atlanticmedia.com/about" target="_blank">About</a></li>
+            <li><a href="http://www.atlanticmedia.com/careers" target="_blank">Careers</a></li>
+            <li><a href="http://www.atlanticmedia.com/brands" target="_blank">Brands</a></li>  
+            <li><a href="http://www.atlanticmedia.com/press" target="_blank">Press</a></li>             
+            <li><a href="http://www.atlanticmedia.com/culture" target="_blank">Culture</a></li>
+            <li><a href="http://www.atlanticmedia.com/category/executive-team" target="_blank">Leadership</a></li>
+        </ul>
+    </section>
+    <section id="footerCopyright">
+        <span class="left">Copyright &copy  2014 by National Journal Group Inc.</span>
+        <span class="right">CDN powered by Edgecast Networks</span>
+    </section>
+</footer>
+
+<!-- bizo -->
+<script type="text/javascript" language="javascript" src="/js/bizo.js"></script>
+
+<!-- Chartbeat -->
+<script type="text/javascript">
+var _sf_async_config={uid:17 6,domain:"nationaljournal.com"} 
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime() 
+    var e = document.createElement('script') 
+    e.setAttribute('language', 'javascript') 
+    e.setAttribute('type', 'text/javascript') 
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ?
+"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
+"http://static.chartbeat.com/") +
+       "js/chartbeat.js") 
+    document.body.appendChild(e) 
+  }
+  var oldonload = window.onload 
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+})() 
+</script>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <a id="parsely-cfg" data-parsely-site="nationaljournal.com"
+     href="http://parsely.com">Powered by the Parse.ly Publisher Platform (P3).</a>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com" 
+  if (e) return 
+  e = d.createElement(s)  e.id = i  e.async = true 
+  e.src = h+"//"+u+"/p.js"  r.appendChild(e) 
+})("script", "parsely", document) 
+</script>
+<!-- END Parse.ly Include -->
+
+<!-- Gravity 
+<script type='text/javascript'>
+  //<![CDATA[
+    (function(){
+    window.gravityInsightsParams = {
+      'type': 'content',
+      'action': '',
+      'site_guid': 'c3b6ed27b540e1c1121abfe3c59edc6c'
+    } 
+    var adServerReq,bUrl,doUseGravityUserGuid,includeJs,jq,type,ug,wlPrefix,wlUrl,_ref,_ref1,_ref2 bUrl="https:"===document.location.protocol?"https://b-ssl.grvcdn.com/moth-min.js":"http://b.grvcdn.com/moth-min.js" ug=(doUseGravityUserGuid=!0===gravityInsightsParams.useGravityUserGuid?1:0)?"":gravityInsightsParams.user_guid||(null!=(_ref=/grvinsights=([^ ]+)/.exec(document.cookie))?_ref[1]:void 0)||"" wlUrl=(wlPrefix="","") 
+    includeJs=function(a){var b b=document.createElement("script") b.async=!0 b.src=a a=document.getElementsByTagName("script")[0] return a.parentNode.insertBefore(b,a)} bUrl&&includeJs(bUrl) wlUrl&&(window.gravityInsightsParams.sidebar&&(window.gravityInsightsParams.wlStartTime=(new Date).getTime()),includeJs(wlUrl)) })() 
+  //]]>
+</script>
+--><script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"5b042f4bea","applicationID":"2913313","transactionName":"NlJVMkEFWBAAWhIKXA8YYhRaS18NBVweTUMJRw==","queueTime":0,"applicationTime":130,"ttGuid":"","agentToken":"","atts":"GhVWRAkfSx4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

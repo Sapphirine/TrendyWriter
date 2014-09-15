@@ -1,14 +1,17 @@
 #!/usr/bin/env python2.6
 
-"""
+"""@package default
 [TODO]
-(0) Implement Debug Mode.
-(1) Duplication of data(url?) still exists.
-(2) Filter the data that contains html original text(i.e. html tag).
-(3) To process large-scale data efficiently, it is necessary.
+(1) Filter the data that contains html original text(i.e. html tag),
+using formal way.
+(2) To process large-scale data efficiently, it is necessary.
 to generate the hashcode of all urls and titles, and "mod 1024" to
-seperate a number of buckets, in order to eliminate duplicate urls 
+separate a number of buckets, in order to eliminate duplicate urls
 and titles.
+(3) Retrieve data from Ajax as well.
+(4) Retrieve data inside the tag <i> and <b>
+
+More details.
 """
 
 """
@@ -21,6 +24,7 @@ import urllib
 from HTMLParser import HTMLParser
 # from htmlentitydefs import name2codepoint
 
+
 # store path variables:
 store_html = 'res/url_'
 store_homepage = 'res/home_.html'
@@ -29,7 +33,7 @@ store_url = 'url/all_urls.txt'
 
 # debug variables:
 DEBUG = True
-debug_url = 'http://www.reuters.com/finance/markets'
+debug_url = 'http://www.c-span.org/'
 debug_storepath = 'debug/debug_page.html'
 
 
@@ -80,10 +84,10 @@ class MyHTMLParser(HTMLParser):
                 self.found_h5 = True
             if tag == 'h6':
                 self.found_h6 = True
-        else:
+        elif self.get_url:
             if tag == 'li':
                 self.found_li = True
-            if tag == 'a' and self.found_li == True:
+            if tag == 'a' and self.found_li:
                 self.found_a = True
                 for attr in attrs:
                     if attr[0] == 'href':
@@ -111,7 +115,7 @@ class MyHTMLParser(HTMLParser):
                                     if not url in MyHTMLParser.url_list:
                                         print '[INFO] href = ', url
                                         with open(store_url, 'a') as writing_file:
-                                            writing_file.write('http://' + self.url[7:][:self.url[7:].index('/')] \
+                                            writing_file.write('http://' + self.url[7:][:self.url[7:].index('/')]
                                                                + url + '\n')
                                         MyHTMLParser.url_list.append(url)
                                     else:
@@ -136,7 +140,7 @@ class MyHTMLParser(HTMLParser):
                                     print '[DUPLICATE] href = ', url
 
     def handle_endtag(self, tag):
-        if self.get_url == False:
+        if not self.get_url:
             if tag == 'a':
                 self.found_a = False
             if tag == 'h1':
@@ -151,28 +155,29 @@ class MyHTMLParser(HTMLParser):
                 self.found_h5 = False
             if tag == 'h6':
                 self.found_h6 = False
-        else:
+        elif self.get_url:
             if tag == 'li':
                 self.found_li = False
             if tag == 'a':
                 self.found_a = False
 
     def handle_data(self, data):
-        if len(data.split()) > 1 or DEBUG:
+        if not DEBUG or MyHTMLParser.filter(data):
             if not self.get_url:
-                if (self.found_a == True and (
-                                            (self.found_h1 == True) or (self.found_h2 == True) or (
-                                                self.found_h3 == True) or (
-                                            self.found_h4 == True) or (self.found_h5 == True) or (
-                                    self.found_h6 == True))):
+                # @formatter:off
+                if self.found_a and (
+                   self.found_h1 or self.found_h2 or
+                   self.found_h3 or self.found_h4 or
+                   self.found_h5 or self.found_h6):
                     # Eliminate duplicated topics.
+                    # @formatter:on
                     if not data.encode('utf-8').strip() in MyHTMLParser.topic_list:
                         # The "print" can only output Ascii encoded normal String
                         # ,so use "encode()" method to return Ascii normal String.
                         print '[INFO] Data = ', data.encode('utf-8').strip()
 
                         with open(store_topic, 'a') as writing_file:
-                            # Use "encode()" method to return Ascii normal String 
+                            # Use "encode()" method to return Ascii normal String
                             writing_file.write(data.encode('utf-8').strip())
                             writing_file.write('\n')
                         MyHTMLParser.topic_list.append(data.encode('utf-8').strip())
@@ -191,6 +196,25 @@ class MyHTMLParser(HTMLParser):
         # Print the symbol of special character in HTML(i.e. '&#number' or '#name').
         self.handle_data(self.unescape('&#{};'.format(name)))
 
+    @staticmethod
+    def filter(origin_data):
+        # Eliminate general topic word.
+        if len(origin_data.split()) > 1:
+            # Eliminate words like "more politics", "more health", etc.
+            if (origin_data.split()[0].lower() == 'more') and (len(origin_data.split()) <= 2):
+                return False
+            # Eliminate JavaScript codes
+            elif len(origin_data.split()) > 30:
+                return False
+            else:
+                return True
+        # Keep one word, which might be a person's name.
+        elif len(origin_data.split()) == 1 and origin_data.split()[0][0:1].isupper() \
+                and origin_data.split()[0][1:].islower():
+            return True
+        else:
+            return False
+
 
 def main():
     welcome_text()
@@ -198,10 +222,10 @@ def main():
     if DEBUG:
         urllib.urlretrieve(debug_url, debug_storepath)
 
-        debugHandle = urllib.urlopen(debug_url)
-        debug_htmltxt = debugHandle.read()
+        debug_handler = urllib.urlopen(debug_url)
+        debug_htmltxt = debug_handler.read()
         debug_htmltxt = debug_htmltxt.replace('&#', ' ')
-        debugHandle.close()
+        debug_handler.close()
 
         # with open(debug_storepath) as reading_file:
         # debug_htmltxt2 = reading_file.read()
@@ -247,10 +271,12 @@ def main():
                 # "read()" return Ascii encoded normal String(htmltxt2)
                 htmltxt2 = fetch_handler.read()
 
-                # (TODO) TEMPORARY SOLUTION.. 
+                # (TODO) TEMPORARY SOLUTION..
+                # @formatter:off
                 # (still need to get rid of  number and(or) ';' following by the next word without any space)
-                htmltxt2 = htmltxt2.replace('&#', ' ')
-
+                htmltxt2 = htmltxt2.replace('&#', ' ').replace(';', ' ').replace('039', ' ').replace('8217', ' ')\
+                                   .replace('039', ' ').replace('8217', ' ').replace('8216', ' ').replace('39', ' ')
+                # @formatter:on
                 # (note) Parameter 'w' will overwrite the original file with a new one.
                 # Store reading html text to a file.
                 with open(store_html_path, 'w') as retPage:
@@ -272,4 +298,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

@@ -1,0 +1,1476 @@
+<!doctype html>
+<!--[if IE 7]> <html class="no-js oldie ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+<head>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFVlRbGwcDV1ZRBwQ="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({1:[function(t,e){function n(t,e,n){n||(n={}) for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0 a>u u++)r[u].apply(s,e) return s}function r(t,e){var n=o[t]||(o[t]=[]) n.push(e)}var o={},i="nr@context" e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0 t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2)) if(e(window),"getPrototypeOf"in Object){for(var i=document i&&!i.hasOwnProperty("addEventListener") )i=Object.getPrototypeOf(i) i&&e(i) for(var a=XMLHttpRequest.prototype a&&!a.hasOwnProperty("addEventListener") )a=Object.getPrototypeOf(a) a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2) e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0] "string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2) n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] window.XMLHttpRequest=function(t){var n=new a(t) try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 u>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d) if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data") c&&(n.cat=c.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr") var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2) t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var d=e(o) d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}} for(var f=0 u>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t] return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={} e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1 if(t===window)return 0 if(o.call(t,"__nr"))return t.__nr try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=u.createElement("script") e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]} u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f) try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="") var i,s,u,d="-"===r.charAt(0) for(u=0 u<e.length u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2) e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]) </script>
+<title>The New Yorker</title>
+
+<meta name="copyright" content="Copyright (c) Conde Nast 2014">
+<meta name="author" content="">
+<meta name="description" itemprop="description" content="">
+
+<meta itemprop="name" content="The New Yorker">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- minimal-ui=1 -->
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="The New Yorker">
+
+<meta name="environment" content="prod">
+<link rel="shortcut icon" href="/wp-content/assets/dist/img/icon/favicon.ico">
+<link rel="apple-touch-icon" href="/wp-content/assets/dist/img/icon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/wp-content/assets/dist/img/icon/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/wp-content/assets/dist/img/icon/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/assets/dist/img/icon/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/assets/dist/img/icon/apple-touch-icon-144x144-precomposed.png">
+
+<meta property="fb:app_id" content="179662042076731">
+<meta property="fb:admins" content="648235154,789168297,688620285">
+
+	<script src="/wp-content/assets/dist/js/tny-reajs.min.js"></script>
+
+<script>
+	var TNY = TNY || {} 
+	TNY.initIsMobile = TNY.reajs.checkViewport('mobile') 
+</script>
+
+<link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="//stats2.newyorker.com" /><link rel="dns-prefetch" href="//sstats.newyorker.com" />
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.newyorker.com/" />
+<link rel="publisher" href="https://plus.google.com/+newyorker"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Homepage - The New Yorker" />
+<meta property="og:url" content="http://www.newyorker.com/" />
+<meta property="og:site_name" content="The New Yorker" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@newyorker"/>
+<meta name="twitter:domain" content="The New Yorker"/>
+<meta name="twitter:creator" content="@newyorker"/>
+<meta name="google-site-verification" content="-nKOYcVdExhyjBctoaH6CahmVCRCDOxla7t1wSsO5ao" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WP_VARS = {"THEME_URI":"http:\/\/www.newyorker.com\/wp-content\/themes\/tny","ajaxurl":"https:\/\/www.newyorker.com\/wp-admin\/admin-ajax.php"} 
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-common/cn.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-common/popups/1.1.0/cn.popups-1.1.0.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-common/cn.mobile.js?ver=20130717'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var deviceviews = {"mobileMax":"600","tabletMax":"850"} 
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/mu-plugins/cn-wordpress/lib/js/jquery.devices.js?ver=20130717'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var s_account = "conde-newyorker" 
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/config/cn-fe-stats/s_code.js?ver=20130717'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var platformEnvironment = "production" 
+var sitehost = "http:\/\/www.newyorker.com" 
+var omniture_init = [] 
+CN.omniture = CN.omniture || {} CN.omniture.conf = {"s_account":"conde-newyorker","server":"stats2.newyorker.com","secureServer":"sstats.newyorker.com","internalFilters":"javascript:,newyorker.com,advancemags.com"}  
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-stats/omniture.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-ads/cn.dart.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-ads/cn.ad.arsaccelerator.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-ads/cn.ad.refresh.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-ecom/cn.ecom.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-ecom/ecomfw.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-ecom/promotheus/promotheus.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel='shortlink' href='http://www.newyorker.com/' />
+<!-- wp-parsely Plugin Version 1.6 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.6' />
+<meta name='parsely-page' id='parsely-page' content='{"type":"sectionpage","title":"Homepage","link":"http:\/\/www.newyorker.com\/"}' />
+
+		<style type="text/css">
+			body.customize-support #hd.collapsed #nav-container {
+				margin-top: 28px 
+			}
+		</style>        <!-- Google Site Speed -->
+        <script type="text/javascript">var _ga_start = (new Date()).getTime() </script>
+                    <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'NYR',
+                    title:            'The New Yorker',
+                    name:             'newyorker',
+                    alias:            'newyorker.com',
+                    domain:           'newyorker.com',
+                    tld:              'newyorker.com',
+                    baseUrl:          'http://www.newyorker.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            userServiceUrl: 'http://user-service.condenast.com',
+userServiceKey: 'TE7pnBDUEVco2vXPPNQVZNFlipc=',
+ecomUrl: 'https://subscribe.newyorker.com/api/circ/xml/Transaction',
+socialRes: 'http://www.newyorker.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                }) 
+
+                CN.isMobile = TNY.initIsMobile 
+                CN.isTablet = jQuery.devices.tablet() 
+                CN.checkDeviceView = jQuery.devices.checkDeviceView 
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init version 2 -->
+                <script type="text/javascript">
+                //<!--
+                    CN.dartKwsArray = [ "" ] 
+
+                
+                    CN.dart.init({
+                        adUnits: {
+                            unit1: CN.isMobile ? 'newyorker.mobile.dart' : 'newyorker.dart',
+                            unit2: 'home',
+                            unit3: '',
+                            unit4: ''
+                        },
+                        kws: CN.dartKwsArray,
+                        charmap : {' ' : '+', '-' : '_'}
+                    }) 
+                                //-->
+                    </script>
+                            <script type="text/javascript">
+                CN.popups = CN.popups || {} 
+                CN.popups.setCookieLife(48) 
+                CN.popups.setExiting(false, {
+                    path: '/exit-pop/',
+                    width: 460,
+                    height: 295,
+                }).excludeExitPath( '/wp-admin', '/wp-login.php' ).excludeExitDomain("newyorker.com","www.newyorker.com","origin.www.newyorker.com") 
+                CN.popups.setATGArriving(false).setATGLayer(false).setATGExiting(false) 
+
+                        CN.popups.setLayer(false).setArriving(false) 
+                CN.popups.init() 
+                    </script>
+                        <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix='
+                                        + '&amp browser_path=%2F'
+                                        + '&amp cat_prefixes=%2C'
+                                        + '&amp site_prefix=newyorker'
+                                        + '&amp subdomain=mprod'
+                                        + '&amp url_name=' 
+
+                                var metaKeyWords = (function() {
+                        var
+                            i                  = 0,
+                            metaKeywordContent = '',
+                            nameAttribute      = null,
+                            metaCollection     = document.getElementsByTagName('meta') 
+
+                        for (i=0 i<metaCollection.length i++) {
+                            nameAttribute = metaCollection[i].name.search(/keywords/) 
+                            if (nameAttribute!= -1) {
+                                metaKeywordContent = metaCollection[i].content 
+                                metaKeywordContent = metaKeywordContent.replace(/,/g,'%2C')  // to replace ,
+                                metaKeywordContent = metaKeywordContent.replace(/ /g,'')  // to replace space
+                            }
+                        }
+                        return encodeURIComponent(metaKeywordContent) 
+                    })() 
+            
+                    var deviceParams = (function() {
+                                                    if ( CN.checkDeviceView('desktop') ) {
+                                    return 'AMS_NYR_HOMEPAGE_RIGHTRAIL_A%2CAMS_NYR_CONTENTRIVER%2CAMS_NYR_POPUP_FLOATINGAD%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_GLOBAL_HEADER%2CAMS_NYR_GLOBAL_HEADERCALLOUT%2CAMS_NYR_GLOBAL_NAVBAR%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_NYR_GLOBAL_NAVBAR_STICKY%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY' 
+                                }
+                                                                if ( CN.checkDeviceView('tablet') ) {
+                                    return 'AMS_NYR_HOMEPAGE_RIGHTRAIL_A%2CAMS_NYR_CONTENTRIVER%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_TABLET_GLOBAL_SUBNAV' 
+                                }
+                                                                if ( CN.checkDeviceView('mobile') ) {
+                                    return 'AMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_MOBILE_GLOBAL_SUBNAV' 
+                                }
+                                                    })() 
+
+            
+                    return {
+                        'ams_ads_script_src' : 'https://subscribe.newyorker.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp keywords=' + metaKeyWords + ''
+                                                + '&amp position_list=' + deviceParams + ''
+                    } 
+                })() 
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>') }
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })() 
+            //-->
+            </script>
+            	<link rel="stylesheet" href="/wp-content/assets/dist/css/core-533.min.css">
+
+<script src="//assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-9cb2a d627a819b6ca42ab76f651dbfa7b1a535.js"></script>
+<script src="//use.typekit.net/wth6gwt.js"></script>
+<script>try{Typekit.load() }catch(e){}</script>
+
+</head>
+<body class="homepage">
+  <nav role="navigation" class="mobile-nav">
+  <ul class="nav-links" >
+    <li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books  038  Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science  038  Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+	<li id="subscribe">
+		<div id="AMS_NYR_MOBILE_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_MOBILE_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+} else { CN.debug.info( "AMS_NYR_MOBILE_GLOBAL_SUBNAV not in pageAds.")  }
+}
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>		<div id="AMS_NYR_TABLET_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_TABLET_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+} else { CN.debug.info( "AMS_NYR_TABLET_GLOBAL_SUBNAV not in pageAds.")  }
+}
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>    </li>
+    <li class="menu-item sub-nav mob-sign-in block-list user-ln-status-mobi"><a id="user-sign-in" class="mobi-sign-in-button" title="Sign in to your account">Sign In</a>  
+<span id="mobi-nav-link" class="link-sub-hamnav"> Link your subscription</span></li>
+	<li id="mobi-account-link-1" class="menu-item sub-nav hiddenMobiMenu"></li>
+	<li id="mobi-account-link-2" class="menu-item sub-nav hiddenMobiMenu"></li>
+  </ul>
+</nav>
+  <div class="page-container">
+    <div class="header-ad">
+
+  <div class="advertisement"><div id="headerMobile320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="headerMobile320x50_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "headerMobile", { sz: ( "320x50" ), kws: [ "top" ], collapse: true } ) 
+} 
+}</script></div><div class="advertisement"><div id="header728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="header728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header", { sz: "728x90", kws: [ "" ], collapse: true } ) 
+} 
+}</script></div></div>
+
+<header id="hd" role="banner">
+	<div id="nav-container">
+		<div id="mobile-nav-container">
+			<div id="mobile-logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<nav role="navigation" id="primary-nav">
+				<ul>
+					<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books  038  Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science  038  Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+					<li id="subscribe">
+					<div id="AMS_NYR_GLOBAL_NAVBAR_STICKY" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds.")  }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>						<div id="subscribe-rollover">
+							<div class="subscribe-links-wrapper">
+								<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0, 9,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249, 9,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds.")  }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>							</div>
+						</div>
+										</li>
+						<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 					<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle smallnav-search">Search</a></li>
+
+				</ul>
+			</nav>
+		</div>
+		<section class="logo-container">
+			<span title="" id="mobile-nav" class="icon-menu"></span>
+
+					<div class="subscribe-links">
+				<div id="AMS_NYR_GLOBAL_HEADER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="//subscribe.condenet.com/images_covers/cover_newyorker_80.jpg">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).html( pageAds.AMS_NYR_GLOBAL_HEADER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADER not in pageAds.")  }
+}
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div><div id="AMS_NYR_GLOBAL_HEADERCALLOUT" class="ecom-placement"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYT_global_headercallout_150x110.png" usemap="#GLOBAL_HEADERCALLOUT_MAP" width="150" height="110" border="0"><map id="GLOBAL_HEADERCALLOUT_MAP" name="GLOBAL_HEADERCALLOUT_MAP"><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="1,12,76,107" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="78,12,147,40" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Renew your Subscription" alt="Renew your Subscription to the New Yorker magazine" coords="78,42,147,56" href="https://w1.buysub.com/pubs/N3/NYR/login.jsp?cds_page_id=135517&cds_mag_code=NYR" target="_blank" /><area shape="rect" title="Give a Gift Subscription" alt="Give a Subscription to The New Yorker as a Gift" coords="78,58,147,75" href="http://www.newyorker.com/go/giftfailsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe to The New Yorker outside the USA" coords="78,77,147,107" href="http://www.newyorker.com/go/internationalfailsafe" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).html( pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds.")  }
+}
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>			</div>
+		
+			<div id="logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<div class="social-and-user-links">
+				<ul class="user-info">
+
+					<span id="sign_in" class="user-ln-status">
+					<li id="sign-in-list" class="demo-link big plain"><span data-type="sign-in" class="header-nav-link" id="sign-in" title="Sign in to your account"><span id="fallback-signin-link">Sign in</span></span></li>
+					<li class="demo-link big plain"></li>&nbsp |&nbsp 
+					<li id="link-sub-nav" class="nav-menu">Link your subscription</li>
+					</span>
+					<li class="n-store"><a href="http://www.condenaststore.com/~/new-yorker-store?utm_medium=referral&amp utm_source=NewYorker&amp utm_content=SHOP&amp AID=1247905545" target="_blank" title="The New Yorker Store">TNY Store</a></li>
+					
+
+					<li class="demo-link big plain"><span id="sign-out-wrapper" class="big plain"></span></li>
+				</ul>
+				<ul class="social-menu">
+					<li class="facebook"><a href="https://facebook.com/newyorker" title="Facebook">F</a></li>
+					<li class="twitter"><a href="https://twitter.com/newyorker" title="Twitter">T</a></li>
+					<li class="google-plus"><a href="https://plus.google.com/+newyorker/posts" title="Google+">G+</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<nav role="navigation" id="primary-nav">
+			<ul>
+				<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books  038  Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science  038  Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+				<li id="subscribe">
+				<div id="AMS_NYR_GLOBAL_NAVBAR" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR not in pageAds.")  }
+}
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>					<div id="subscribe-rollover">
+						<div class="subscribe-links-wrapper">
+							<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0, 9,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249, 9,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds.")  }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div>						</div>
+					</div>
+								</li>
+					<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 				<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle bignav-search">Search</a></li>
+
+			</ul>
+			<div id="floatingAd" style="display:none "><div id="floatingAd_content"><div id="AMS_NYR_POPUP_FLOATINGAD" class="ecom-placement">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_POPUP_FLOATINGAD != 'undefined' ) {
+  jQuery( "#AMS_NYR_POPUP_FLOATINGAD" ).html( pageAds.AMS_NYR_POPUP_FLOATINGAD.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+} else { CN.debug.info( "AMS_NYR_POPUP_FLOATINGAD not in pageAds.")  }
+}
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for tablet */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for mobile */
+                    })() 
+                                }
+            //-->
+            </script>
+            </div><div id="floatingAd_header"><a href="javascript:void(0)" class="close">Close</a></div></div>
+		</nav>
+	</div>
+
+
+</header>    <div class="content-wrapper">
+  <div id="main" role="main" class="index homepage-index">
+    
+<div class="header-pushdown"><div class="advertisement"><div id="header_pushdown970x418_frame" class="displayAd displayAd970x418Js" data-cb-ad-id="header_pushdown970x418_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header_pushdown", { sz: "970x418", kws: [ "top" ], collapse: true } ) 
+} 
+}</script></div></div>
+<div id="page-header" class="featured-header">
+  <section id="featured" class="normal-feature single">
+<article class="" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="7007" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/bigger-better" title="" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25461-728-375.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/on-and-off-the-avenue" title="On and Off the Avenue" itemprop="articleSection">On and Off the Avenue</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/bigger-better" title="Empowering the Plus Sizes" itemprop="name">Empowering the Plus Sizes</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/lizzie-widdicombe" title="Lizzie Widdicombe" rel="author" itemprop="name author">Lizzie Widdicombe</a></span></h3>      <p class="p-summary" itemprop="description">Can full-figured clothing find a place in the high-fashion world?
+
+
+</p>
+      </section>
+  </article>
+</section>
+</div>
+
+<section id="secondary-featured" class="module-container-rail">
+      <div class="secondary-features module-container-stacked">
+        <div class="secondary-large secondary-feature module">
+          <div class="stories">
+          <article class="large story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="7957" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/last-amazon" title="" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25478-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/annals-of-entertainment" title="Annals of Entertainment" itemprop="articleSection">Annals of Entertainment</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/last-amazon" title="Wonder Woman’s Secret Past " itemprop="name">Wonder Woman’s Secret Past </a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/jill-lepore" title="Jill Lepore" rel="author" itemprop="name author">Jill Lepore</a></span></h3>      <p class="p-summary" itemprop="description">Feminism, free love, and a superhero’s real powers.
+
+</p>
+      </section>
+  </article>
+<article class="large story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="1190" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/name-fight" title="" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25502illu-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/comment" title="Comment" itemprop="articleSection">Comment</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/name-fight" title="Are We at War?" itemprop="name">Are We at War?</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/amy-davidson" title="Amy Davidson" rel="author" itemprop="name author">Amy Davidson</a></span></h3>      <p class="p-summary" itemprop="description">The President called the fight against ISIS a “counterterrorism campaign.” When it comes to military action, what’s in a name?
+</p>
+      </section>
+  </article>
+</div><div class="stories">          </div>
+        </div>
+        <div class="other-features secondary-feature module">
+          <div class="stories">
+
+            <article class="small story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="6636" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/camera" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25490-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/a-reporter-at-large" title="A Reporter at Large" itemprop="articleSection">A Reporter at Large</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/camera" title="Film Everything" itemprop="name">Film Everything</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/nick-paumgarten" title="Nick Paumgarten" rel="author" itemprop="name author">Nick Paumgarten</a></span></h3>      <p class="p-summary" itemprop="description">Experience and memory in the age of GoPro.
+</p>
+      </section>
+  </article>
+<article class="small story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="1645" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/culture/cultural-comment/alone-virtual-museum" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/Alone-in-the-Virtual-Museum-2-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/culture/cultural-comment" title="Cultural Comment" itemprop="articleSection">Cultural Comment</a></h4>
+	    <h2><a href="http://www.newyorker.com/culture/cultural-comment/alone-virtual-museum" title="Alone in the Virtual Museum" itemprop="name">Alone in the Virtual Museum</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/alexandra-schwartz" title="Alexandra Schwartz" rel="author" itemprop="name author">Alexandra Schwartz</a></span></h3>      <p class="p-summary" itemprop="description">It’s a relief to find an experience that is nearly effortless in actual life slowed down and warped in the digital realm.
+</p>
+      </section>
+  </article>
+<article class="small story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="744" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/pentagon-cop-aid-hits-snags" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25488-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/shouts-murmurs" title="Shouts &amp  Murmurs" itemprop="articleSection">Shouts &amp  Murmurs</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/pentagon-cop-aid-hits-snags" title="Pentagon’s Cop Aid Hits Snags" itemprop="name">Pentagon’s Cop Aid Hits Snags</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/bruce-mccall" title="Bruce McCall" rel="author" itemprop="name author">Bruce McCall</a></span></h3>      <p class="p-summary" itemprop="description">“Our XX-B Annihilator Halftrack Urban Ambassador is out of fuel and nobody can find the gas cap.”
+
+</p>
+      </section>
+  </article>
+            </div>
+        </div>
+    </div>
+
+    <aside class="container-rail">
+      <div class="advertisement"><div id="featuredSideRail300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="featuredSideRail300x250_frame"></div><div id="featuredSideRail300x50_frame" class="displayAd displayAd300x50Js" data-cb-ad-id="featuredSideRail300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "featuredSideRail", { sz: ( CN.isMobile ? "300x50" : "300x250" ), kws: [ "nyrHPtop" ], collapse: true } ) 
+}
+}</script></div>    </aside>
+
+</section>
+
+<div class="module the-latest-container full-latest">
+	<h5 class="popping">The Latest</h5>
+	<div class="stories">
+	
+		<article itemscope itemtype="http://schema.org/Article">
+			<div class="story-info">
+				<span class="timestamp today" title="2 hours ago"><span>Today</span> <time datetime="20140915" itemprop="datePublished">12:42 pm</time></span>
+				<h4><a href="http://www.newyorker.com/news/daily-comment" title="Amy Davidson" itemprop="articleSection">Amy Davidson</a></h4>
+			</div>
+						<figure>
+				<a href="http://www.newyorker.com/news/daily-comment/comment-podcast-name-fight" title="Comment Podcast: The Name of the Fight" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/dailycomment-0915-144-110.jpg" alt="Comment Podcast: The Name of the Fight" /></a>
+			</figure>
+						<section class="story-content">
+				<h2 class="recirc-header"><a href="http://www.newyorker.com/news/daily-comment/comment-podcast-name-fight" title="Comment Podcast: The Name of the Fight" itemprop="name">Comment Podcast: The Name of the Fight</a></h2>
+				<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/the-new-yorker" title="The New Yorker" rel="author" itemprop="name author">The New Yorker</a></span></h3>				<p class="p-summary">Listen to “The Name of the Fight,” Amy Davidson’s Comment about whether we are at war in Syria and Iraq.</p>			</section>
+		</article>
+	
+		<article itemscope itemtype="http://schema.org/Article">
+			<div class="story-info">
+				<span class="timestamp today" title="3 hours ago"><span>Today</span> <time datetime="20140915" itemprop="datePublished">12:17 pm</time></span>
+				<h4><a href="http://www.newyorker.com/culture/cultural-comment" title="Cultural Comment" itemprop="articleSection">Cultural Comment</a></h4>
+			</div>
+						<figure>
+				<a href="http://www.newyorker.com/culture/cultural-comment/alone-virtual-museum" title="Alone in the Virtual Museum" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/Alone-in-the-Virtual-Museum-2-144-110-1.jpg" alt="Alone in the Virtual Museum" /></a>
+			</figure>
+						<section class="story-content">
+				<h2 class="recirc-header"><a href="http://www.newyorker.com/culture/cultural-comment/alone-virtual-museum" title="Alone in the Virtual Museum" itemprop="name">Alone in the Virtual Museum</a></h2>
+				<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/alexandra-schwartz" title="Alexandra Schwartz" rel="author" itemprop="name author">Alexandra Schwartz</a></span></h3>				<p class="p-summary">The notion that those of us who view art on our screens don’t care about the difference between an actual work and its reproduction is demonstrably wrong.</p>			</section>
+		</article>
+	
+		<article itemscope itemtype="http://schema.org/Article">
+			<div class="story-info">
+				<span class="timestamp today" title="3 hours ago"><span>Today</span> <time datetime="20140915" itemprop="datePublished">11:38 am</time></span>
+				<h4><a href="http://www.newyorker.com/humor/daily-shouts" title="Daily Shouts" itemprop="articleSection">Daily Shouts</a></h4>
+			</div>
+						<figure>
+				<a href="http://www.newyorker.com/humor/daily-shouts/week-week" title="It’s Week Week" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/Week-Week-144-110.jpg" alt="It’s Week Week" /></a>
+			</figure>
+						<section class="story-content">
+				<h2 class="recirc-header"><a href="http://www.newyorker.com/humor/daily-shouts/week-week" title="It’s Week Week" itemprop="name">It’s Week Week</a></h2>
+				<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/colin-stokes" title="Colin Stokes" rel="author" itemprop="name author">Colin Stokes</a></span></h3>				<p class="p-summary">Here’s a rundown of what not to miss this Week Week, the week that everyone in the industry has been preparing for all year.</p>			</section>
+		</article>
+	
+		<article itemscope itemtype="http://schema.org/Article">
+			<div class="story-info">
+				<span class="timestamp today" title="4 hours ago"><span>Today</span> <time datetime="20140915" itemprop="datePublished">10:55 am</time></span>
+				<h4><a href="http://www.newyorker.com/humor/borowitz-report" title="Borowitz Report" itemprop="articleSection">Borowitz Report</a></h4>
+			</div>
+						<figure>
+				<a href="http://www.newyorker.com/humor/borowitz-report/integrity-disqualifies-sanders-white-house" title="Integrity Disqualifies Sanders for White House" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/Bernie-Sanders-144-110.jpg" alt="Integrity Disqualifies Sanders for White House" /></a>
+			</figure>
+						<section class="story-content">
+				<h2 class="recirc-header"><a href="http://www.newyorker.com/humor/borowitz-report/integrity-disqualifies-sanders-white-house" title="Integrity Disqualifies Sanders for White House" itemprop="name">Integrity Disqualifies Sanders for White House</a></h2>
+				<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/andy-borowitz" title="Andy Borowitz" rel="author" itemprop="name author">Andy Borowitz</a></span></h3>				<p class="p-summary">According to some experts, the electoral system has developed a number of safeguards to prevent someone with backbone from occupying the Presidency.</p>			</section>
+		</article>
+	
+		<article itemscope itemtype="http://schema.org/Article">
+			<div class="story-info">
+				<span class="timestamp today" title="5 hours ago"><span>Today</span> <time datetime="20140915" itemprop="datePublished">10:30 am</time></span>
+				<h4><a href="http://www.newyorker.com/business/currency" title="Currency" itemprop="articleSection">Currency</a></h4>
+			</div>
+						<figure>
+				<a href="http://www.newyorker.com/business/currency/whats-deal-olive-garden" title="What’s the Deal with Olive Garden?" itemprop="image url"><img src="http://www.newyorker.com/wp-content/uploads/2014/09/Olive-Garden-144-110.jpg" alt="What’s the Deal with Olive Garden?" /></a>
+			</figure>
+						<section class="story-content">
+				<h2 class="recirc-header"><a href="http://www.newyorker.com/business/currency/whats-deal-olive-garden" title="What’s the Deal with Olive Garden?" itemprop="name">What’s the Deal with Olive Garden?</a></h2>
+				<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/vauhini-vara" title="Vauhini Vara" rel="author" itemprop="name author">Vauhini Vara</a></span></h3>				<p class="p-summary">For a diner, Starboard Value’s plan makes sense, but, for investors in Darden, the plan will be harder to evaluate.</p>			</section>
+		</article>
+		</div>
+</div>
+
+<aside class="promo mid-cm"><div id="AMS_NYR_CONTENTRIVER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" data-mobile="http://www.newyorker.com/go/mobilefailsafe" target="_blank"><img class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_ContentRiver_DesktopRedesign_1020x130.jpg" data-src-tablet="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_ContentRiver_TabletRedesign_728x90.jpg" data-src-mobile="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Mobile_300x50.NavyTote.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_CONTENTRIVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_CONTENTRIVER" ).html( pageAds.AMS_NYR_CONTENTRIVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_CONTENTRIVER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_CONTENTRIVER not in pageAds.")  }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_CONTENTRIVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_CONTENTRIVER" ).html( pageAds.AMS_NYR_CONTENTRIVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_CONTENTRIVER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_CONTENTRIVER not in pageAds.")  }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_CONTENTRIVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_CONTENTRIVER" ).html( pageAds.AMS_NYR_CONTENTRIVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_CONTENTRIVER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_CONTENTRIVER not in pageAds.")  }
+}
+                    })() 
+                                }
+            //-->
+            </script>
+            </div></aside>
+
+<section id="magazine-content">
+     
+    <div id="editors-choice" class="titled-curation big-titled-curation module">
+
+    <h5 class="popping">Spotlight</h5>        <div class="stories">
+                <article class="child0 story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="6734" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/unlikely-ballerina" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25469-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/profiles" title="Profiles" itemprop="articleSection">Profiles</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/unlikely-ballerina" title="An Unlikely Ballerina" itemprop="name">An Unlikely Ballerina</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/rivka-galchen" title="Rivka Galchen" rel="author" itemprop="name author">Rivka Galchen</a></span></h3>      <p class="p-summary" itemprop="description">Misty Copeland’s goal is to be A.B.T.’s first African-American principal dancer.
+</p>
+      </section>
+  </article>
+                <article class="child1 story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="4835" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/big-ritz" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25491_rd-320-240-1.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/a-critic-at-large" title="A Critic at Large" itemprop="articleSection">A Critic at Large</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/big-ritz" title="The Legend of Scott &amp  Zelda" itemprop="name">The Legend of Scott &amp  Zelda</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/adam-gopnik" title="Adam Gopnik" rel="author" itemprop="name author">Adam Gopnik</a></span></h3>      <p class="p-summary" itemprop="description">The Fitzgeralds and the art of cracking up.
+</p>
+      </section>
+  </article>
+                <article class="child2 story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="820" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/survivors-9" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25499illu-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/field-trip" title="Field Trip" itemprop="articleSection">Field Trip</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/survivors-9" title="Danger: Keep Off" itemprop="name">Danger: Keep Off</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/raffi-khatchadourian" title="Raffi Khatchadourian" rel="author" itemprop="name author">Raffi Khatchadourian</a></span></h3>      <p class="p-summary" itemprop="description">A photographer hunts for the world’s oldest living things.
+</p>
+      </section>
+  </article>
+                <article class="child3 story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="5130" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/15/transformation-3" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140915_r25454-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/medical-dispatch" title="Medical Dispatch" itemprop="articleSection">Medical Dispatch</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/15/transformation-3" title="Cancer Transformed" itemprop="name">Cancer Transformed</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/jerome-groopman" title="Jerome Groopman" rel="author" itemprop="name author">Jerome Groopman</a></span></h3>      <p class="p-summary" itemprop="description">Is it possible to control malignant cells without killing them?
+</p>
+      </section>
+  </article>
+          </div>
+    </div>
+
+</section>
+<div class="recirc-container module-container">
+  
+<div id="contributors" class="module contributors">
+  <h5 class="small">Contributors</h5>
+    <ul>
+        <li>
+      <article itemscope itemtype="http://schema.org/Person">
+                    <figure>
+              <a href="http://www.newyorker.com/contributors/sasha-frere-jones" title="Sasha Frere-Jones" itemprop="url"><img width="320" height="320" src="http://www.newyorker.com/wp-content/uploads/2014/03/frerejones.png" class="attachment-medium wp-post-image" alt="frerejones" itemprop="thumbnail" /></a>
+            </figure>
+                <section itemscope itemtype="http://schema.org/Article">
+          <h3><a href="http://www.newyorker.com/contributors/sasha-frere-jones" title="Sasha Frere-Jones" itemprop="name author">Sasha Frere-Jones</a></h3>
+          <h2><a href="http://www.newyorker.com/magazine/2014/09/22/growth-spurt" title="Perfume Genius’s Exuberant New Album" itemprop="headline">Perfume Genius’s Exuberant New Album</a></h2>
+          <div>
+            <a class="light-button" href="http://www.newyorker.com/contributors/sasha-frere-jones/all" title="All work from Sasha Frere-Jones">All work</a>
+          </div>
+        </section>
+      </article>
+    </li>
+        <li>
+      <article itemscope itemtype="http://schema.org/Person">
+                    <figure>
+              <a href="http://www.newyorker.com/contributors/rebecca-mead" title="Rebecca Mead" itemprop="url"><img width="320" height="320" src="http://www.newyorker.com/wp-content/uploads/2014/03/mead.png" class="attachment-medium wp-post-image" alt="mead" itemprop="thumbnail" /></a>
+            </figure>
+                <section itemscope itemtype="http://schema.org/Article">
+          <h3><a href="http://www.newyorker.com/contributors/rebecca-mead" title="Rebecca Mead" itemprop="name author">Rebecca Mead</a></h3>
+          <h2><a href="http://www.newyorker.com/culture/cultural-comment/kicking-the-bucket-list" title="Kicking the Bucket List" itemprop="headline">Kicking the Bucket List</a></h2>
+          <div>
+            <a class="light-button" href="http://www.newyorker.com/contributors/rebecca-mead/all" title="All work from Rebecca Mead">All work</a>
+          </div>
+        </section>
+      </article>
+    </li>
+        <li>
+      <article itemscope itemtype="http://schema.org/Person">
+                    <figure>
+              <a href="http://www.newyorker.com/contributors/hilton-als" title="Hilton Als" itemprop="url"><img width="320" height="320" src="http://www.newyorker.com/wp-content/uploads/2014/03/hiltonals.jpg" class="attachment-medium wp-post-image" alt="hiltonals" itemprop="thumbnail" /></a>
+            </figure>
+                <section itemscope itemtype="http://schema.org/Article">
+          <h3><a href="http://www.newyorker.com/contributors/hilton-als" title="Hilton Als" itemprop="name author">Hilton Als</a></h3>
+          <h2><a href="http://www.newyorker.com/magazine/2014/09/22/urban-blight-3" title="Bard of the Bourgeoisie" itemprop="headline">Bard of the Bourgeoisie</a></h2>
+          <div>
+            <a class="light-button" href="http://www.newyorker.com/contributors/hilton-als/all" title="All work from Hilton Als">All work</a>
+          </div>
+        </section>
+      </article>
+    </li>
+      </ul>
+  <div class="button-container">
+    <a href="http://www.newyorker.com/contributors" title="More Contributors" class="light-button">More Contributors</a>
+  </div>
+</div>
+
+<div id="most-popular" class="module most-popular">
+  <h5 class="small">Most Popular</h5>
+  <ol>
+    <li>
+      <p><a href="//www.newyorker.com/humor/borowitz-report/integrity-disqualifies-sanders-white-house?src=mp">Integrity Disqualifies Sanders for White House</a></p>
+      <h3>By Andy Borowitz</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/business/currency/whats-deal-olive-garden?src=mp">What’s the Deal with Olive Garden?</a></p>
+      <h3>By Vauhini Vara</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/09/22/last-amazon?src=mp">The Last Amazon</a></p>
+      <h3>By Jill Lepore</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/09/22/camera?src=mp">We Are a Camera</a></p>
+      <h3>By Nick Paumgarten</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/09/22/bigger-better?src=mp">The Plus Side</a></p>
+      <h3>By Lizzie Widdicombe</h3>
+</li>
+  </ol>
+</div>
+<!-- cached -->
+
+
+</div>
+
+<section id="in-the-magazine" class="module">
+<h5 class="popping">The Magazine</h5>
+
+<ul class="related-links">
+  <li><a href="/goings-on-about-town">Goings on About Town</a></li>
+  <li><a href="/magazine/talk-of-the-town/">The Talk of the Town</a></li>
+  <li><a href="/magazine/shouts-murmurs/">Shouts &amp  Murmurs</a></li>
+  <li><a href="/magazine/reporting/">Reporting</a></li>
+  <li><a href="/magazine/fiction/">Fiction</a></li>
+  <li><a href="/magazine/critics/">The Critics</a></li>
+  <li><a href="/magazine/poems/">Poems</a></li>
+</ul>
+
+  <div class="issue-container">
+    <ul class="issue-covers">
+              <li>
+          <a href="http://www.newyorker.com/magazine/2014/09/22" title="Table of Contents"><figure class="cover-image"><img width="400" height="545" src="http://www.newyorker.com/wp-content/uploads/2014/09/2014_09_22-400.jpg" class="attachment-400x9999 wp-post-image" alt="2014_09_22" /></figure></a>
+          <h2><a href="http://www.newyorker.com/magazine/2014/09/22" title="Table of Contents">September 22, 2014</h2>
+          <a href="http://www.newyorker.com/magazine/2014/09/22" title="Table of Contents" class="light-button">Table of Contents</a>
+        </li>
+              <li>
+          <a href="http://www.newyorker.com/magazine/2014/09/15" title="Table of Contents"><figure class="cover-image"><img width="400" height="545" src="http://www.newyorker.com/wp-content/uploads/2014/09/2014_09_15-400.jpg" class="attachment-400x9999 wp-post-image" alt="2014_09_15" /></figure></a>
+          <h2><a href="http://www.newyorker.com/magazine/2014/09/15" title="Table of Contents">September 15, 2014</h2>
+          <a href="http://www.newyorker.com/magazine/2014/09/15" title="Table of Contents" class="light-button">Table of Contents</a>
+        </li>
+              <li>
+          <a href="http://www.newyorker.com/magazine/2014/09/08" title="Table of Contents"><figure class="cover-image"><img width="400" height="545" src="http://www.newyorker.com/wp-content/uploads/2014/09/2014_09_081-400.jpg" class="attachment-400x9999 wp-post-image" alt="CV1_TNY_09_08_14Ulriksen.indd" /></figure></a>
+          <h2><a href="http://www.newyorker.com/magazine/2014/09/08" title="Table of Contents">September 8, 2014</h2>
+          <a href="http://www.newyorker.com/magazine/2014/09/08" title="Table of Contents" class="light-button">Table of Contents</a>
+        </li>
+              <li>
+          <a href="http://www.newyorker.com/magazine/2014/09/01" title="Table of Contents"><figure class="cover-image"><img width="400" height="545" src="http://www.newyorker.com/wp-content/uploads/2014/08/2014_09_014-400.jpg" class="attachment-400x9999 wp-post-image" alt="2014_09_01" /></figure></a>
+          <h2><a href="http://www.newyorker.com/magazine/2014/09/01" title="Table of Contents">September 1, 2014</h2>
+          <a href="http://www.newyorker.com/magazine/2014/09/01" title="Table of Contents" class="light-button">Table of Contents</a>
+        </li>
+          </ul>
+  </div>
+</section>
+
+<section id="cartoons-module">
+
+		<div class="module-container-rail">
+			<section id="cartoons" class="media module">
+				<h5 class="small">Cartoons from the Issue</h5>
+			
+<figure itemprop='' id='gallery-2824467' class='gallery-wrapper'>
+
+<div class='gallery owl-carousel'>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18608-320.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18608-690.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18608.png' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18608.png' data-ratio='1.457' data-caption='“She’s had work.”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18497-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18497-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18497-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18497.jpg' data-ratio='2.578'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18467-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18467-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18467-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18467.jpg' data-ratio='1.010' data-caption='“Oh, come on—I just want to see if my friend is in there!”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18479-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18479-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18479-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18479.jpg' data-ratio='1.485' data-caption='“May I air-quote you?”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18517-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18517-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18517-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18517.jpg' data-ratio='1.277' data-caption='“All of our plastic utensils are manufactured locally.”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18406-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18406-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18406-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18406.jpg' data-ratio='1.360'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18459-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18459-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18459-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18459.jpg' data-ratio='1.590' data-caption='“How does this make you feel?”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl portrait' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18432-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18432-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18432-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18432.jpg' data-ratio='0.787'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18407-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18407-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18407-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18407.jpg' data-ratio='1.863'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18458-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18458-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18458-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18458.jpg' data-ratio='1.509' data-caption='“Don’t let it slam.”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18465-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18465-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18465-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18465.jpg' data-ratio='1.262' data-caption='“It’s sad, but it’s not laugh-out-loud sad.”'  alt='' title=''/>
+<img class='owl-lazy lazyOwl landscape' data-thumbnail-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18484-500.jpg' data-medium-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18484-600.jpg' data-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18484-1000.jpg' data-full-src='http://www.newyorker.com/wp-content/uploads/2014/09/140922_a18484.jpg' data-ratio='1.533' data-caption='“I’m glad to see that <u>almost</u> everyone has been taking advantage of the new executive fitness center.”'  alt='' title=''/>
+
+</div>
+<figcaption class='gallery-caption' itemprop='description'>
+<div class='caption'>“She’s had work.”</div>
+<div class='credit' itemprop='copyrightHolder'><span class='hideFromView'>Credit</span></div></figcaption>
+
+</figure>
+		<a class="more-link" href="/humor">MORE CARTOONS</a>
+				<a class="more-link" href="http://contest.newyorker.com/CaptionContest.aspx?affiliate=ny-caption" target="_blank">CAPTION CONTEST</a>
+		<a class="more-link" href="http://www.condenaststore.com/~/cartoon-bank" target="_blank">BUY OR LICENSE</a>
+	</section>
+			<aside class="container-rail">
+		<div class="advertisement"><div id="yrailBottomAll300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottomAll300x250_frame"></div><div id="yrailBottomAll300x50_frame" class="displayAd displayAd300x50Js" data-cb-ad-id="yrailBottomAll300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailBottomAll", { sz: ( CN.isMobile ? "300x50" : "300x250" ), kws: [ "nyrHPbottom" ], collapse: true } ) 
+}
+}</script></div>		</aside>
+	</div>
+		</section>
+
+
+<div class="other-features-large secondary-feature module">
+  <div class="stories">
+    <article class="small story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="159" />
+    <h5 class="small">Goings On About Town</h5>
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/week-9" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25467-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/goings-on-about-town" title="Goings On About Town" itemprop="articleSection">Goings On About Town</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/week-9" title="Sonic Claustrophobia" itemprop="name">Sonic Claustrophobia</a></h2>
+          <p class="p-summary" itemprop="description">Worldless Music Series presents “There Will Be Blood,” with Jonny Greenwood.
+</p>
+      </section>
+      <div class="button-container">
+      <a href="http://www.newyorker.com/goings-on-about-town" title="More Contributors" class="light-button">
+        More Goings On About Town      </a>
+    </div>
+  </article>
+<article class="small story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="917" />
+    <h5 class="small">The Financial Page</h5>
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/home-free" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25495-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/the-financial-page" title="The Financial Page" itemprop="articleSection">The Financial Page</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/home-free" title="Give the Homeless Homes" itemprop="name">Give the Homeless Homes</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/james-surowiecki" title="James Surowiecki" rel="author" itemprop="name author">James Surowiecki</a></span></h3>      <p class="p-summary" itemprop="description">In Utah and other states, the simplest approach to chronic homelessness has also turned out to be the cheapest.
+</p>
+      </section>
+      <div class="button-container">
+      <a href="http://www.newyorker.com/business" title="More Contributors" class="light-button">
+        More Business      </a>
+    </div>
+  </article>
+<article class="small story" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="wordCount" content="826" />
+    <h5 class="small">The Talk of the Town</h5>
+              <figure>
+          <a href="http://www.newyorker.com/magazine/2014/09/22/southbound" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="http://www.newyorker.com/wp-content/uploads/2014/09/140922_r25500-320-240.jpg" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/magazine/old-man-river-dept" title="Old Man River Dept." itemprop="articleSection">Old Man River Dept.</a></h4>
+	    <h2><a href="http://www.newyorker.com/magazine/2014/09/22/southbound" title="Mr. Canoe" itemprop="name">Mr. Canoe</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/ben-mcgrath" title="Ben McGrath" rel="author" itemprop="name author">Ben McGrath</a></span></h3>      <p class="p-summary" itemprop="description">Dick Conant, who’s spent months canoeing the Hudson, isn’t an outdoorsman so much as a nomad.
+</p>
+      </section>
+      <div class="button-container">
+      <a href="http://www.newyorker.com/magazine/talk-of-the-town" title="More Contributors" class="light-button">
+        More Talk of <br>the Town      </a>
+    </div>
+  </article>
+  </div>
+</div>
+
+ 
+    <div id="daily-correspondents" class="titled-curation curated-blog-list module">
+
+    <h5 class="popping">Our Columnists</h5>        <div class="stories">
+                <article class="child0 story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="1066" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/news/john-cassidy" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="/wp-content/assets/dist/img/header_graphics/contributors/cassidy.png" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/news/john-cassidy" title="John Cassidy" itemprop="articleSection">John Cassidy</a></h4>
+	    <h2><a href="http://www.newyorker.com/news/john-cassidy/obamas-war-isis-realist-relents" title="A Realist Relents" itemprop="name">A Realist Relents</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/john-cassidy" title="John Cassidy" rel="author" itemprop="name author">John Cassidy</a></span></h3>      <p class="p-summary" itemprop="description">In pledging to “ultimately destroy” ISIS, the President adopted the maximalist language of John McCain and Dick Cheney.
+</p>
+      </section>
+  </article>
+                <article class="child1 story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="946" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/news/amy-davidson" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="/wp-content/assets/dist/img/header_graphics/contributors/davidson.png" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/news/amy-davidson" title="Amy Davidson" itemprop="articleSection">Amy Davidson</a></h4>
+	    <h2><a href="http://www.newyorker.com/news/amy-davidson/ray-rice-video-shows" title="What the Ray Rice Video Really Shows" itemprop="name">What the Ray Rice Video Really Shows</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/amy-davidson" title="Amy Davidson" rel="author" itemprop="name author">Amy Davidson</a></span></h3>      <p class="p-summary" itemprop="description">What did people think it looks like when a man beats up a woman?
+</p>
+      </section>
+  </article>
+                <article class="child2 story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="244" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/humor/borowitz-report" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="/wp-content/assets/dist/img/header_graphics/contributors/borowitz.png" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/humor/borowitz-report" title="Borowitz Report" itemprop="articleSection">Borowitz Report</a></h4>
+	    <h2><a href="http://www.newyorker.com/humor/borowitz-report/integrity-disqualifies-sanders-white-house" title="Integrity Disqualifies Sanders for White House" itemprop="name">Integrity Disqualifies Sanders for White House</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/andy-borowitz" title="Andy Borowitz" rel="author" itemprop="name author">Andy Borowitz</a></span></h3>      <p class="p-summary" itemprop="description">The electoral system has developed safeguards to prevent someone with backbone from occupying the Presidency.
+</p>
+      </section>
+  </article>
+                <article class="child3 story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="1780" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/science/maria-konnikova" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="/wp-content/assets/dist/img/header_graphics/contributors/konnikova.png" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/science/maria-konnikova" title="Maria Konnikova" itemprop="articleSection">Maria Konnikova</a></h4>
+	    <h2><a href="http://www.newyorker.com/science/maria-konnikova/can-memories-implanted-removed" title="Making “Eternal Sunshine” Real" itemprop="name">Making “Eternal Sunshine” Real</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/maria-konnikova" title="Maria Konnikova" rel="author" itemprop="name author">Maria Konnikova</a></span></h3>      <p class="p-summary" itemprop="description">Erasing painful memories has proven successful in rats, and, one day, it may be possible in humans.
+</p>
+      </section>
+  </article>
+                <article class="child4 story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="1224" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/culture/sarah-larson" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="/wp-content/assets/dist/img/header_graphics/contributors/larson.png" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/culture/sarah-larson" title="Sarah Larson" itemprop="articleSection">Sarah Larson</a></h4>
+	    <h2><a href="http://www.newyorker.com/culture/sarah-larson/ira-glass-modern-dancer" title="Ira Glass, Modern Dancer" itemprop="name">Ira Glass, Modern Dancer</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/sarah-larson" title="Sarah Larson" rel="author" itemprop="name author">Sarah Larson</a></span></h3>      <p class="p-summary" itemprop="description">The “This American Life” host experiments with a new form.
+</p>
+      </section>
+  </article>
+                <article class="child5 story" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="wordCount" content="826" />
+    
+              <figure>
+          <a href="http://www.newyorker.com/culture/richard-brody" title="" itemprop="image url"><img class="lazy-image" data-lazy-src="/wp-content/assets/dist/img/header_graphics/contributors/brody.png" alt="" /></a>
+        </figure>
+        <section>
+        	  <h4><a href="http://www.newyorker.com/culture/richard-brody" title="Richard Brody" itemprop="articleSection">Richard Brody</a></h4>
+	    <h2><a href="http://www.newyorker.com/culture/richard-brody/renoirs-rare-patchwork-masterpiece" title="Renoir’s Masterpiece" itemprop="name">Renoir’s Masterpiece</a></h2>
+    <h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/richard-brody" title="Richard Brody" rel="author" itemprop="name author">Richard Brody</a></span></h3>      <p class="p-summary" itemprop="description">The conspiratorial air in “Night at the Crossroads” seems to come from a pack of vultures feeding at a cadaver.
+</p>
+      </section>
+  </article>
+          </div>
+    </div>
+
+
+<section id="podcast-module" class="module media">
+
+		<h5  class="popping"> Podcasts</h5>
+		<div id="podcast" class="track-167308105">
+		<figure>
+		<iframe width="100%" height="125" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/167308105&amp color=ff5500&amp auto_play=false&amp hide_related=false&amp show_comments=true&amp show_user=true&amp show_reposts=false"></iframe><script>TNY.scPopulateList = TNY.scPopulateList || []  TNY.scPopulateList.push("167308105") </script>			<figcaption>
+																
+											</figcaption>
+		</figure>
+		<div class="button-container">
+			<a href="http://www.newyorker.com/podcasts" class="light-button" title="More Podcasts">More Podcasts</a>
+		</div>
+	</div>
+</section>
+
+
+		    <section id="photobooth-module" class="media module featured">
+		    		      <h5 class="popping">Photo Booth</h5>
+		    
+				<figure>
+					<a class="isSlideshow" href="http://www.newyorker.com/culture/photo-booth/konstantin-petrovs-world-trade-center-photographs">
+						<img src="http://www.newyorker.com/wp-content/uploads/2014/09/2-Petrov_DSCN52001-1040-450.jpg" alt="Photo Booth">
+
+						</a>					<figcaption>
+													<h2><a href="http://www.newyorker.com/culture/photo-booth/konstantin-petrovs-world-trade-center-photographs" title="Konstantin Petrov’s World Trade Center Photographs">Konstantin Petrov’s World Trade Center Photographs</a></h2>
+																      <h3>By
+				        				          <a href="http://www.newyorker.com/contributors/the-new-yorker">The New Yorker</a>
+				        				      </h3>
+				    							<p class="p-summary">Photographs from atop the World Trade Center, months before 9/11.</p>
+											</figcaption>
+				</figure>
+								  <div class="button-container">
+						<a class="light-button" href="http://www.newyorker.com/culture/photo-booth" title="Photo Booth" itemprop="blogSection">
+								More Photo Booth						</a>
+					</div>
+								
+			</section>
+	
+
+
+<!-- Video Module: Unable to load CNE video feed 53beda9469702d7ece170000, Homepage -->
+
+  <section id="newsletter-signup">
+    <h5 class="popping">Sign up to get the best of The New Yorker delivered to your inbox every day</h5>
+    	<div class="newsletterContainer">
+	      <form action="http://www.newyorker.com/wp-admin/admin-ajax.php" method="post" name="newsletter-form" id="newsletter-form" novalidate="novalidate">
+	      <input type="hidden" name="action" value="newsletter_subscribe">
+	      <input type="hidden" name="formName" value="newsletter-form">
+	      <input type="hidden" name="url" value="http://www.newyorker.com"><input type="hidden" name="source_code" value="footer-unit">    <fieldset>
+	          <legend><h5>Sign up for newsletters</h5></legend>
+	          <label for="newsletter-email" class="replace">E-mail address</label>
+	          <input name="email" id="newsletter-email" type="email" placeholder="E-mail address" required="" class="">
+	          <button type="submit" name="submit-newsletter" id="submit-newsletter-content">Sign up</button>
+	      </fieldset>
+	      <div class="form_response"></div>        
+	          <ul>
+	              <li>
+
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_217" name="newsletterId[]" value="217""">
+	                      <label for="newsletterId_217">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_442" name="newsletterId[]" value="442">
+	                      <label for="newsletterId_442">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5122" name="newsletterId[]" value="5122" checked="checked">
+	                      <label for="newsletterId_5122">
+	                  </fieldset>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5129" name="newsletterId[]" value="5129">
+	                      <label for="newsletterId_5129">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	          </ul>
+	      </form>
+	    <span id="newsletter-message"></span>
+      </div>
+  </section>
+  </div>
+  <section id="promotions" class="container">
+	<ul>
+		<li>
+			<h5><a href="/jigsaw">Jigsaw<span>&nbsp </span>Puzzle</a></h5>
+			<figure>
+				<a href="/jigsaw"><img src="/wp-content/assets/img/promotions/jigsaw.png" alt="Jigsaw Puzzle"/></a>
+			</figure>
+		</li>
+		<li id="links-strongbox">
+			<h5><a href="https://projects.newyorker.com/strongbox/">Strongbox<span>&nbsp </span>Submissions</a></h5>
+			<figure>
+				<a href="https://projects.newyorker.com/strongbox/"><img src="/wp-content/assets/img/promotions/strongbox.png" alt="Strongbox" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" taregt="_blank">Goings On<span>&nbsp </span>App</a></h5>
+			<figure>
+				<a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" target="_blank"><img src="/wp-content/assets/img/promotions/tny-goat.jpg" alt="Goings On App" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="/about/us">About<span>&nbsp </span>Us</a></h5>
+			<figure>
+				<a href="/about/us"><img src="/wp-content/assets/img/promotions/tnr-digital.png" alt="About Us" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="http://contest.newyorker.com/">Caption<span>&nbsp </span>Contest</a></h5>
+			<figure>
+				<a href="http://contest.newyorker.com/"><img src="/wp-content/assets/img/promotions/caption-contest.png" alt="Caption Contest" /></a>
+			</figure>
+		</li>
+		<li class="festival">
+			<h5><a href="/festival/">The New Yorker<span>&nbsp </span>Festival</a></h5>
+			<figure>
+				<a href="/festival/"><img src="/wp-content/assets/img/promotions/tny-FestIcon.jpg" alt="The New Yorker Festival" /></a>
+			</figure>
+		</li>
+	</ul>
+</section>
+
+<div class="entry-unrelated">
+	<div id="modal-strongbox">
+		<a href="#" id="links-strongbox-close" title="Close"> 10005 </a>
+		<div id="sb-header" role="banner">
+	
+			<h1 class="sb-main">
+				<span>The New Yorker</span> Strongbox
+				<svg width="135" height="135" xmlns="http://www.w3.org/2000/svg">
+					<defs><linearGradient spreadMethod="pad" y2="0.07813" x2="0.88281" y1="0.91797" x1="0.07422" id="svg_14"><stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+					<g>
+					<path d="m6.74918,27.25192l61.0069,-21.50198l60.75703,21.50198l-0.25,81.50894l-60.75703,20.502l-61.2569,-21.502l0.5,-80.50894z" stroke-width="8" stroke="#ffffff" fill="#000000"/>
+					<path d="m68.00609,49.00389l56.506,-19.50197l0,76.25794l-57.006,19.25301l0.5,-76.00897z" stroke-width="0" stroke="#000000" fill="url(#svg_14)"/>
+					<ellipse ry="4.875" rx="4.876" cy="95.634" cx="23.376" stroke-width="0" stroke="#000000" fill="#f70707"/>
+					</g>
+				</svg>
+			</h1><br/>
+	
+			<div class="sb-contain">
+				<p>Strongbox is a new way for you to share information, messages, and files with our writers and editors and is designed to provide you with a greater degree of anonymity and security than afforded by conventional e-mail.</p>
+				<p>To help protect your anonymity, Strongbox is only accessible using the Tor network (<strong>https://www.torproject.org</strong>). When using Strongbox, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+				<p>You can read our full privacy promise <a href="#strongbox-privacy-promise" alt="privacy promise">here</a>.</p>
+				<p><em>The New Yorker</em> Strongbox is powered by <a href="https://pressfreedomfoundation.org/securedrop" title="SecureDrop" id="sb-securedrop-logo">SecureDrop</a>.</p>
+			</div>
+		</div>
+		<div id="sb-main" role="main">
+			<div id="sb-points">
+				<div class="sb-contain">
+					<h2>To get to Strongbox and begin using it to contact writers and editors at <em>The New Yorker</em>, just follow <strong>these&nbsp two&nbsp steps</strong>:</h2>
+					<ol>
+						<li><i>1</i>Download and install software to access the Tor Project: <strong>https://www.torproject.org</strong>. This should only take a few minutes. </li>
+						<li><i>2</i>Once you have access to the Tor network, go to Strongbox at <strong>http://strngbxhwyuu37a3.onion</strong>, where you will find further instructions on how to submit files and messages to <em>The New Yorker</em>.</li>
+					</ol>
+					<p class="sb-instructions">You will be assigned a randomly generated and unique code name as part of the process. If a writer or editor at <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> wants to contact you about the information you have submitted, he or she will leave a message for you in Strongbox. These messages are the only way we will be able to reach you, and this message can only be accessed using your code name.</p>
+				</div>
+			</div>
+			<div id="sb-privacy">
+				<div class="sb-contain">
+					<h3 id="strongbox-privacy-promise">Our privacy promise</h3>
+					<p><a name="strongbox-privacy-promise" href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker's</em></a> Strongbox is designed to let you communicate with our writers and editors with greater anonymity and security than afforded by conventional e-mail.</p>
+					<p>When you visit or use our public Strongbox server at <i>http://strngbxhwyuu37a3.onion</i>, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and our parent company, Cond 233  Nast, will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+					<p>Strongbox servers are under the physical control of <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and Cond 233  Nast.</p>
+					<p>Strongbox is designed to be accessed only through a &ldquo hidden service&rdquo  on the Tor anonymity network, which is set up to conceal both your online and physical location from us and to offer full end-to-end encryption for your communications with us. This provides a higher level of security and anonymity in your communication with us than afforded by standard e-mail or unencrypted Web forms. Strongbox does not provide perfect security. Among other risks, if you share your unique code name, or if your computer is compromised, any activities, including communications through Strongbox, should be considered compromised as well.</p>
+					<p>The system is provided on an &ldquo as is&rdquo  basis, with no warranties or representations, and any use of it is at the user's own risk.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<aside id="footer-ad">
+			<!-- Need to have mobile ad sizes reevaluated -->
+		  <div class="advertisement"><div id="footerMobile320x51_frame" class="displayAd displayAd320x51Js" data-cb-ad-id="footerMobile320x51_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "footerMobile", { sz: ( "320x51" ), kws: [ "bottom" ], collapse: true } ) 
+} 
+}</script></div>		  <div class="advertisement"><div id="footer728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="footer728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "footer", { sz: "728x90", kws: [ "bottom" ], collapse: true } ) 
+} 
+}</script></div>		</aside>
+
+		<div id="digital-editions"><div id="AMS_NYR_GLOBAL_FOOTER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" data-mobile="http://www.newyorker.com/go/mobilefailsafe" target="_blank"><img class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_Desktop_1020x180.jpg" data-src-tablet="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_TabletRedesign_728x128.jpg" data-src-mobile="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Mobile_300x50.NavyTote.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds.")  }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds.")  }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) ) 
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } ) 
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds.")  }
+}
+                    })() 
+                                }
+            //-->
+            </script>
+            </div></div>
+		<footer>
+			<nav id="tny-footer">
+			  			  <ul>
+			    			    <li><a href="" title=""></a></li>
+			    				<li><a href="/about/us/?src=tny-footer" title="About Us">About Us</a></li>
+				<li><a href="/about/faq/?src=tny-footer" title="Frequently Asked Questions">FAQ</a></li>
+				<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=NYR" title="Customer Care">Customer Care</a></li>
+				<li><a href="http://www.condenaststore.com/-se/cartoonbank.htm?utm_medium=referral&amp utm_source=NewYorker&amp utm_content=tny-footer&amp AID=1247905545" title="">Cartoon Bank</a></li>
+				<li><a href="http://www.newyorkeronthetown.com/?src=tny-footer" title="">On The Town</a></li>
+				<li><a href="/about/feeds/?src=tny-footer" title="">RSS</a></li>
+				<li><a href="/about/contact/?src=tny-footer" title="">Contact Us</a></li>
+			  </ul>
+			  			  <ul>
+		    	<li><a href="http://www.condenaststore.com/-se/newyorkerstore.htm?utm_medium=referral&amp utm_source=NewYorker&amp utm_content=tny-footer&amp AID=1247905545" title="">The New Yorker Store</a></li>
+			    <li><a href="http://www.condenast.com/careers?src=tny-footer" title="">Careers</a></li>
+			    <li><a href="http://www.condenast.com/reprints-permissions?src=tny-footer" title="">Reprints/Permissions</a></li>
+			    <li><a href="/about/press/?src=tny-footer" title="Press Center">Press</a></li>
+			    <li><a href="http://www.condenast.com/brands/new-yorker/media-kit/?src=tny-footer" title="">The New Yorker Media Kit</a></li>
+			  </ul>
+			</nav>
+			<div id="conde-footer">
+  <div class="global-footer-logo">
+    <a href="http://www.condenast.com?src=tny-footer" title="Cond&eacute  Nast Digital">Cond&eacute  Nast Digital</a>
+  </div>
+  <div class="global-footer-subscriptions">
+      <form action="/" name="sub_dropmenus" id="sub_dropmenus">
+        <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="sub_list" id="sub_list" size="1">
+            <option selected="selected" value="">Subscribe to a magazine</option>
+            <option value="">
+            </option><option value="http://www.magazinestoresubscriptions.com?src=univdropdown">View All Titles</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?src=tny-footer">Allure</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?src=tny-footer">Architectural Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?src=tny-footer">Bon App&eacute tit</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?src=tny-footer">Brides</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?src=tny-footer">Cond&eacute  Nast Traveler</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?src=tny-footer">Details</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?src=tny-footer">Glamour</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?src=tny-footer">Golf Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?src=tny-footer">Golf World</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?src=tny-footer">GQ</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?src=tny-footer">Lucky</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?src=tny-footer">Self</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?src=tny-footer">Teen Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?src=tny-footer">The New Yorker</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?src=tny-footer">Vanity Fair</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?src=tny-footer">Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?src=tny-footer">W</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div class="global-footer-sister-sites">
+      <form action="/" name="mag_dropmenus" id="mag_dropmenus">
+          <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="mag_list" id="mag_list">
+            <option selected="selected" value="">Other Cond&eacute  Nast sites</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="http://www.allure.com?src=tny-footer">Allure</option>
+            <option value="http://www.architecturaldigest.com?src=tny-footer">Architectural Digest</option>
+            <option value="http://www.arstechnica.com?src=tny-footer">Ars Technica</option>
+            <option value="http://www.bonappetit.com?src=tny-footer">Bon App&eacute tit</option>
+            <option value="http://www.brides.com?src=tny-footer">Brides.com</option>
+            <option value="http://www.concierge.com/cntraveler?src=tny-footer">Cond&eacute  Nast Traveler</option>
+            <option value="http://www.concierge.com?src=tny-footer">Concierge</option>
+            <option value="http://www.details.com?src=tny-footer">Details</option>
+            <option value="http://www.epicurious.com?src=tny-footer">Epicurious</option>
+            <option value="http://www.glamour.com?src=tny-footer">Glamour</option>
+            <option value="http://www.golfdigest.com?src=tny-footer">Golf Digest</option>
+            <option value="http://www.golfworld.com?src=tny-footer">Golf World</option>
+            <option value="http://www.gq.com?src=tny-footer">GQ</option>
+            <option value="http://www.hotelchatter.com?src=tny-footer">Hotel Chatter</option>
+            <option value="http://www.jaunted.com?src=tny-footer">Jaunted</option>
+            <option value="http://www.luckymag.com?src=tny-footer">Lucky</option>
+            <option value="http://www.nutritiondata.com?src=tny-footer">NutritionData</option>
+            <option value="http://www.reddit.com?src=tny-footer">Reddit</option>
+            <option value="http://thescene.com?src=tny-footer">The Scene</option>
+            <option value="http://www.self.com?src=tny-footer">Self</option>
+            <option value="http://www.style.com?src=tny-footer">Style</option>
+            <option value="http://www.teenvogue.com?src=tny-footer">Teen Vogue</option>
+            <option value="http://www.vanityfair.com?src=tny-footer">Vanity Fair</option>
+            <option value="http://www.vegaschatter.com?src=tny-footer">Vegas Chatter</option>
+            <option value="http://www.vogue.com?src=tny-footer">Vogue</option>
+            <option value="http://www.wmagazine.com?src=tny-footer">W</option>
+            <option value="http://www.wired.com?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div id="copy">
+  	<p><small>Use of this site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy">User Agreement</a> (effective January 1, 2014) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective January 1, 2014). <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Cond&eacute  Nast. <a href="http://www.condenast.com/privacy-policy#privacypolicy-optout">Ad Choices&nbsp <img width="10" height="10" src="/wp-content/assets/dist/img/icon/ad_choices_arrow.png" alt="Ad Choices"></a></small></p>
+  </div>
+</div>
+		</footer>
+	</div> <!-- end .content-wrapper -->
+</div> <!-- end .page-container -->
+            <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    facebook     : {pageid: "9258148868"},
+                                    isiFrame     : true
+                }) 
+            //-->
+            </script>
+            
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="newyorker.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com" 
+  if (e) return 
+  e = d.createElement(s)  e.id = i  e.async = true 
+  e.src = h+"//"+u+"/p.js"  r.appendChild(e) 
+})("script", "parsely", document) 
+</script>
+<!-- END Parse.ly Include: Standard -->
+            <script type="text/javascript" class="omniture_block">
+            //<!--
+                CN.stats.omniture.init() 
+                CN.stats.omniture.setStatus( CN.site.httpStatusCode ) 
+
+            var mobile_view = jQuery.devices.getDeviceView() 
+CN.stats.omniture.setMobileView( mobile_view ) 
+
+                if ( CN.cookie.get('amg_user_partner') != '' ) {
+                    CN.stats.omniture.setCustomProp( "52", CN.cookie.get('amg_user_partner') ) 
+                }
+
+                CN.stats.omniture.setContentType( "Index" ) 
+
+                if ( CN.stats.omniture.setReferrer !== undefined && document.referrer.match( CN.site.tld ) ) {
+                    var referrer = document.referrer 
+                    referrer=referrer.split("?")[0] 
+                    CN.stats.omniture.setReferrer( referrer ) 
+                }
+
+                if ( CN.stats.omniture.setKeywords !== undefined ) {
+                    CN.stats.omniture.setKeywords( "index" ) 
+                }
+
+            if ( CN.url.params('event') == 'loginsuccess' ) {
+ CN.stats.omniture.trackAction( 'login', document, { events: 'event21' } ) 
+}
+if(CN.isMobile){ CN.stats.omniture.setCustomProp('51', 'mobile') } 
+                // Run page tracking (also calls .init() again )
+                if ( CN.preventAutoTrack != true ) {
+                    CN.stats.omniture.doPageTracking() 
+                }
+            //-->
+            </script>
+            <noscript>
+                <a href="http://www.omniture.com" title="Web Analytics">
+                    <img src="http://condenast.112.2o7.net/b/ss/conde-newyorker/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" />
+                </a>
+            </noscript>
+                    <script type="text/javascript">
+        //<!--
+            var _gaq = _gaq || [] 
+            var _ga_end = (new Date()).getTime() 
+            var _ga_total = parseInt(_ga_end - _ga_start) 
+            var _ga_sample_percent = 50 
+        _gaq.push(['a._setAccount', 'UA-8293713-14']) 
+_gaq.push(['a._trackPageview']) 
+if (0 < _ga_total && _ga_total < 1000*60*60) {
+_gaq.push(['a._trackTiming', 'Page', 'Load Time', _ga_total, 'Page Load Time', 100]) 
+}
+            (function() {
+            var ga = document.createElement('script')  ga.type = 'text/javascript'  ga.async = true 
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' 
+            var s = document.getElementsByTagName('script')[0]  s.parentNode.insertBefore(ga, s) 
+            })() 
+        //-->
+        </script>
+        <div id="fancyModal" class="fancy modal" aria-hidden="true"></div>
+  
+<script>
+window.jQuery || document.write('<script src="/wp-content/assets/dist/js/vendors/jquery/jquery.min.js"><\/script>') 
+_satellite.pageBottom() 
+</script>
+
+
+    <script src="/wp-content/assets/dist/js/core-533.min.js"></script> 
+
+<script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"2907deeb56","applicationID":"4337305","transactionName":"YlIEZhNSXxEAABYNW1sYM0AIHFgMBQYaSkRdRw==","queueTime":0,"applicationTime":11,"ttGuid":"","agentToken":"","atts":"ThUHEFtITB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>
