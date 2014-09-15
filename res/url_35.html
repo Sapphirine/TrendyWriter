@@ -59,8 +59,8 @@
 <meta name="image" content="http://i.huffpost.com/gen/2057296/thumbs/s-SANAA-YEMEN-small.jpg" />
 <meta name="thumbnail" content="http://i.huffpost.com/gen/2057296/thumbs/o-SANAA-YEMEN-facebook.jpg" />
     <meta name="og:see_also" content="http://www.huffingtonpost.com/2014/09/13/bahn-shop-yum_n_5815926.html" />
-<meta name="og:see_also" content="http://www.huffingtonpost.com/2014/09/12/starbucks-tattoos_n_5811888.html" />
-<meta name="og:see_also" content="http://www.huffingtonpost.com/2014/09/13/worst-economies_n_5816648.html" />
+<meta name="og:see_also" content="http://www.huffingtonpost.com/2014/09/12/san-diego-cab-drivers-odor-test_n_5808702.html" />
+<meta name="og:see_also" content="http://www.huffingtonpost.com/2014/09/12/nevada-tesla-gigafactory_n_5808818.html" />
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="alternate" href="android-app://com.huffingtonpost.android/http/www.huffingtonpost.com/2014/09/13/worst-economies_n_5816648.html"/>
     <link rel="stylesheet" href="http://s0.huffpost.com/assets/css.php?v=1410282423&f=phoenix%2Fapp.css" type="text/css">
@@ -177,7 +177,7 @@ var __gravity_params  = {
 }
 </script>
     <!-- RUM header -->
-    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACgUGVVNSBA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>    <!-- GA, Data Layer and Omniture -->
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>    <!-- GA, Data Layer and Omniture -->
     <script type="text/javascript">
 var _gaq = _gaq || [];
 HPTrack.async = true;
@@ -476,12 +476,12 @@ adSetInView('0');
 			</li>
 			<li>
 				<a href="http://www.huffingtonpost.com/?country=JP">
-					<span>&#26085;&#26412; (Japan)</span> <strong>JP</strong>
+					<span> 26085; 26412; (Japan)</span> <strong>JP</strong>
 				</a>		
 			</li>
 			<li>
 				<a href="http://www.huffingtonpost.com/?country=KR">
-					<span>&#54620;&#44397; (Korea)</span> <strong>KR</strong>
+					<span> 54620; 44397; (Korea)</span> <strong>KR</strong>
 				</a>		
 			</li>
 			<li>
@@ -757,13 +757,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5815072"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html?ir=Politics">More Details About Video Capturing Witness Reaction To Michael Brown Shooting</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html?ir=Politics#comments">611</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html?ir=Politics#comments">635</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815492"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/bill-maher-john-kline_n_5815492.html?ir=Politics">Bill Maher Announces 'Winning Loser' Of His 'Flip A District' Campaign</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/bill-maher-john-kline_n_5815492.html?ir=Politics#comments">97</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/bill-maher-john-kline_n_5815492.html?ir=Politics#comments">99</a>
                                     </article>
                                 </li>
                                                             							
@@ -806,13 +806,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                         <!-- left colum -->
                         <section class="more-stories trending"  >
                             <ul>
-                                                                                            <li data-id="5806902"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/wild-turkey-business_n_5806902.html?ir=Small+Business">Wild Turkey Maker Reaches 60th Year In Business</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/wild-turkey-business_n_5806902.html?ir=Small+Business#comments">37</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5807266"  >
+                                                                                            <li data-id="5807266"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/habits-great-innovators_n_5807266.html?ir=Small+Business">7 Smart Habits Of Great Innovators</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/habits-great-innovators_n_5807266.html?ir=Small+Business#comments">0</a>
@@ -861,7 +855,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5814418"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/alqaeda-india-attacks-ship_n_5814418.html?ir=WorldPost">New Al Qaeda Branch Attacks Wrong Ship</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/alqaeda-india-attacks-ship_n_5814418.html?ir=WorldPost#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/alqaeda-india-attacks-ship_n_5814418.html?ir=WorldPost#comments">571</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5816368"  >
@@ -873,19 +867,19 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5814128"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/isis-deal-syria_n_5814128.html?ir=WorldPost">Reports: ISIS Strikes Deal With Moderate Syrian Rebels</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/isis-deal-syria_n_5814128.html?ir=WorldPost#comments">851</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/isis-deal-syria_n_5814128.html?ir=WorldPost#comments">869</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5807114"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/11/greece-archeology_n_5807114.html?ir=WorldPost">Archeologists Make Remarkable Find In Greek Underground Chambers</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/greece-archeology_n_5807114.html?ir=WorldPost#comments">127</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/greece-archeology_n_5807114.html?ir=WorldPost#comments">134</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815286"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/syrians-lebanon-revenge-attacks_n_5815286.html?ir=WorldPost">Syrians Suffer Revenge Attacks In Lebanon After ISIS Beheadings</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/syrians-lebanon-revenge-attacks_n_5815286.html?ir=WorldPost#comments">67</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/syrians-lebanon-revenge-attacks_n_5815286.html?ir=WorldPost#comments">68</a>
                                     </article>
                                 </li>
                                                             							
@@ -931,31 +925,31 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5812750"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/verizon-tv-service_n_5812750.html?ir=Technology">Verizon To Launch Internet TV Service That Lets You Pay For Only The Channels You Want</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/verizon-tv-service_n_5812750.html?ir=Technology#comments">154</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/verizon-tv-service_n_5812750.html?ir=Technology#comments">168</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5806846"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/hbo-go-subscription_n_5806846.html?ir=Technology">You May Soon Be Able To Get HBO Without Paying For Cable</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/hbo-go-subscription_n_5806846.html?ir=Technology#comments">105</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/hbo-go-subscription_n_5806846.html?ir=Technology#comments">106</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5810784"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/apple-new-iphone_n_5810784.html?ir=Technology">Apple's Huge New iPhone Is Already Backordered</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/apple-new-iphone_n_5810784.html?ir=Technology#comments">40</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/apple-new-iphone_n_5810784.html?ir=Technology#comments">41</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5810748"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/13/iphone-6-deals_n_5810748.html?ir=Technology">Which iPhone Deal Is Right For You?</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/iphone-6-deals_n_5810748.html?ir=Technology#comments">10</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5811840"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/okcupid-race_n_5811840.html?ir=Technology">Black People And Asian Men Have A Much Harder Time Dating On OKCupid</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/okcupid-race_n_5811840.html?ir=Technology#comments">76</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5805104"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/gmail-passwords-hacked_n_5805104.html?ir=Technology">5 Million Gmail Usernames And Associated Passwords Leaked</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/gmail-passwords-hacked_n_5805104.html?ir=Technology#comments">45</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/okcupid-race_n_5811840.html?ir=Technology#comments">77</a>
                                     </article>
                                 </li>
                                                             							
@@ -998,22 +992,22 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                         <!-- left colum -->
                         <section class="more-stories trending"  >
                             <ul>
-                                                                                            <li data-id="5811616"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media">News Anchor Reveals Devastating Cancer News</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media#comments">268</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5816494"  >
+                                                                                            <li data-id="5816494"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/obama-journalists-isis-speech_n_5816494.html?ir=Media">Obama Met Privately With Top Journalists Before ISIS War Speech</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/obama-journalists-isis-speech_n_5816494.html?ir=Media#comments">0</a>
                                     </article>
                                 </li>
+                                                                <li data-id="5811616"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media">News Anchor Reveals Devastating Cancer News</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media#comments">269</a>
+                                    </article>
+                                </li>
                                                                 <li data-id="5811032"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/new-york-times-isis-obama-war_n_5811032.html?ir=Media">New York Times Casts Doubt On Obama's ISIS War Plan</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/new-york-times-isis-obama-war_n_5811032.html?ir=Media#comments">89</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/new-york-times-isis-obama-war_n_5811032.html?ir=Media#comments">90</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5810260"  >
@@ -1022,10 +1016,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/rachel-maddow-endless-war-isis_n_5810260.html?ir=Media#comments">297</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5805998"  >
+                                                                <li data-id="5810380"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/wall-street-journal-video-400000_n_5805998.html?ir=Media">WSJ: It Can Be Tough Out There For A Family Making $400,000 A Year</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/wall-street-journal-video-400000_n_5805998.html?ir=Media#comments">181</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/ny-times-congress-isis-obama_n_5810380.html?ir=Media">NY Times Hammers Congress, Obama Over ISIS War</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/ny-times-congress-isis-obama_n_5810380.html?ir=Media#comments">99</a>
                                     </article>
                                 </li>
                                                             							
@@ -1070,7 +1064,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5811264"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/jamie-henn/a-climate-movement-that-c_b_5811264.html?ir=Green">A Climate Movement That Can't Be Ignored</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/jamie-henn/a-climate-movement-that-c_b_5811264.html?ir=Green#comments">105</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/jamie-henn/a-climate-movement-that-c_b_5811264.html?ir=Green#comments">113</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5812170"  >
@@ -1079,22 +1073,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/los-angeles-heat-alert_n_5812170.html?ir=Green#comments">22</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5805050"  >
+                                                                <li data-id="5812218"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/cat-lady-looks-like_n_5805050.html?ir=Green">This Is What A Cat Lady Looks Like</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/cat-lady-looks-like_n_5805050.html?ir=Green#comments">14</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5805712"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/warmer-air-ice-shelf_n_5805712.html?ir=Green">Scientists Identify Possible Cause Of Huge Ice Shelf Collapse</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/warmer-air-ice-shelf_n_5805712.html?ir=Green#comments">136</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5805598"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/lynx-protection-expanded_n_5805598.html?ir=Green">Lynx Protection Expanded, But Some Habitat Will Remain Undefended</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/lynx-protection-expanded_n_5805598.html?ir=Green#comments">1</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/summer-snow-storm-record-early_n_5812218.html?ir=Green">Too Soon? Record-Early Snow Hits Parts Of United States</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/summer-snow-storm-record-early_n_5812218.html?ir=Green#comments">54</a>
                                     </article>
                                 </li>
                                                             							
@@ -1140,7 +1122,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5814656"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/adrian-peterson-arrested-jail_n_5814656.html?ir=Sports">Adrian Peterson Turns Himself In To Police</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/adrian-peterson-arrested-jail_n_5814656.html?ir=Sports#comments">179</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/adrian-peterson-arrested-jail_n_5814656.html?ir=Sports#comments">198</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5816322"  >
@@ -1152,7 +1134,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5813210"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/adrian-peterson-child-injury-indicted_n_5813210.html?ir=Sports">REPORTS: Adrian Peterson Indicted In Child Injury Case, Arrest Warrant Issued</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/adrian-peterson-child-injury-indicted_n_5813210.html?ir=Sports#comments">619</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/adrian-peterson-child-injury-indicted_n_5813210.html?ir=Sports#comments">643</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5811380"  >
@@ -1207,7 +1189,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                         <!-- left colum -->
                         <section class="more-stories trending"  >
                             <ul>
-                                                                                            <li data-id="5800882"  >
+                                                                                            <li data-id="5807750"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/hassan-hajjaj-portraits_n_5807750.html?ir=Arts">These Portraits Of Moroccan Hipsters Are More Nuanced Than They Look</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/hassan-hajjaj-portraits_n_5807750.html?ir=Arts#comments">10</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5800882"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/guillaume-bruere_n_5800882.html?ir=Arts">Artist Enters Trancelike State To Create Brutally Honest Portraits</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/guillaume-bruere_n_5800882.html?ir=Arts#comments">3</a>
@@ -1216,13 +1204,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5807386"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/kevin-weir_n_5807386.html?ir=Arts">Artist Turns Vintage Library Of Congress Photos Into Awesomely Creepy GIFs</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/kevin-weir_n_5807386.html?ir=Arts#comments">3</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5800392"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/look-up-and-thrive_n_5800392.html?ir=Arts">This Is What Happens When You Look Up</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/look-up-and-thrive_n_5800392.html?ir=Arts#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/kevin-weir_n_5807386.html?ir=Arts#comments">4</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5807130"  >
@@ -1231,10 +1213,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/paper-art-illusions-yulia-brodskaya_n_5807130.html?ir=Arts#comments">1</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5807750"  >
+                                                                <li data-id="5811824"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/12/hassan-hajjaj-portraits_n_5807750.html?ir=Arts">These Portraits Of Moroccan Hipsters Are More Nuanced Than They Look</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/hassan-hajjaj-portraits_n_5807750.html?ir=Arts#comments">9</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/michael-l-abramson-south-side-photos_n_5811824.html?ir=Arts">Rarely-Seen Photos Spotlight The 1970s Social Scene Of South Side Chicago</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/michael-l-abramson-south-side-photos_n_5811824.html?ir=Arts#comments">13</a>
                                     </article>
                                 </li>
                                                             							
@@ -1279,19 +1261,19 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5812012"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/brain-sleep-classify-words-study_n_5812012.html?ir=Science">The Freaky Thing Your Brain Can Do While You're Asleep</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/brain-sleep-classify-words-study_n_5812012.html?ir=Science#comments">26</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/brain-sleep-classify-words-study_n_5812012.html?ir=Science#comments">30</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5812858"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/why-is-my-poop-green-video_n_5812858.html?ir=Science">Here's Why Your Poop Is Green--It's Just Science</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/why-is-my-poop-green-video_n_5812858.html?ir=Science#comments">4</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/why-is-my-poop-green-video_n_5812858.html?ir=Science#comments">5</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5797100"  >
+                                                                <li data-id="5810124"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/nelson-shipwreck-lake-superior_n_5797100.html?ir=Science">Oddly Intact Ship Located 115 Years After It Sank</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/nelson-shipwreck-lake-superior_n_5797100.html?ir=Science#comments">7</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/sound-atom-captured_n_5810124.html?ir=Science">Scientists Capture The Sound Of A Single Atom</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/sound-atom-captured_n_5810124.html?ir=Science#comments">63</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5809940"  >
@@ -1300,10 +1282,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/solar-storms-impact-earth-video_n_5809940.html?ir=Science#comments">75</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5810124"  >
+                                                                <li data-id="5806796"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/12/sound-atom-captured_n_5810124.html?ir=Science">Scientists Capture The Sound Of A Single Atom</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/sound-atom-captured_n_5810124.html?ir=Science#comments">63</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/11/mars-rover-mount-sharp_n_5806796.html?ir=Science">After Long Drive, Rover Brags About Its Arrival</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/mars-rover-mount-sharp_n_5806796.html?ir=Science#comments">12</a>
                                     </article>
                                 </li>
                                                             							
@@ -1353,16 +1335,24 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                         
                                                                     <li class="scheduled-soon">
                                         <article>
+                                            <a href="http://live.huffingtonpost.com/r/segment/5410b3bf78c90a0b82000307">
+                                                <time class="schedule-status coming-up">Next</time>
+                                                <span class="segment-title">Top Stories For Monday, September 15</span>
+                                            </a>
+                                        </article>
+                                    </li>
+                                                                    <li class="scheduled-soon">
+                                        <article>
                                             <a href="http://live.huffingtonpost.com/r/segment/53fe443302a7604fe70001aa">
                                                 <time class="schedule-status coming-up">Next</time>
                                                 <span class="segment-title">U.S. Senator Kirsten Gillibrand LIVE</span>
                                             </a>
                                         </article>
                                     </li>
-                                                                    <li class="scheduled-soon">
+                                                                    <li class="coming-up">
                                         <article>
                                             <a href="http://live.huffingtonpost.com/r/segment/5410981402a760dceb000420">
-                                                <time class="schedule-status coming-up">Next</time>
+                                                <time class="schedule-status coming-up">Tomorrow</time>
                                                 <span class="segment-title">How An Online Date Turned Into Fate</span>
                                             </a>
                                         </article>
@@ -1380,14 +1370,6 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                             <a href="http://live.huffingtonpost.com/r/segment/54106cb702a760098900035b">
                                                 <time class="schedule-status coming-up">Tomorrow</time>
                                                 <span class="segment-title">James Van Der Beek LIVE</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                                                    <li class="coming-up">
-                                        <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/53fcc1ac02a760884b000106">
-                                                <time class="schedule-status coming-up">Tomorrow</time>
-                                                <span class="segment-title">Actor Zachary Quinto LIVE</span>
                                             </a>
                                         </article>
                                     </li>
@@ -1584,17 +1566,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5811888","mpid":2}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/12/starbucks-tattoos_n_5811888.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2055434/thumbs/r-COFFEE-TATTOO-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Starbucks Baristas Fight To Show Tattoos" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/12/starbucks-tattoos_n_5811888.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Starbucks Baristas Fight To Show Tattoos</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-12 16:01:50" pubdate>2014-09-12 16:01:50</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5777558","mpid":3}}' >
+            <article  data-beacon='{"p":{"plid":"5777558","mpid":2}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/10/state-cigarette-tax-maps_n_5777558.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2031024/thumbs/r-CIGARETTE-TAXES-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for The Decline Of Cigarettes In 2 Captivating Map GIFs" class="async-img-load" /></a>
                 </figure>
@@ -1604,17 +1576,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5814150","mpid":4}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/13/cvs-alabama-lawsuit_n_5814150.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2056876/thumbs/r-CVS-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Major CVS Health Lawsuit Moves Ahead" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/13/cvs-alabama-lawsuit_n_5814150.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Major CVS Health Lawsuit Moves Ahead</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-13 10:51:44" pubdate>2014-09-13 10:51:44</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5808702","mpid":5}}' >
+            <article  data-beacon='{"p":{"plid":"5808702","mpid":3}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/12/san-diego-cab-drivers-odor-test_n_5808702.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2052262/thumbs/r-SAN-DIEGO-TAXI-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Cabbies Say B.O. 'Sniff Test' Reeks Of Discrimination" class="async-img-load" /></a>
                 </figure>
@@ -1624,17 +1586,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5806898","mpid":6}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/11/bikram-yoga-september-11-911-sale-deal-promotion_n_5806898.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2051452/thumbs/r-TWITTER-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Bikram Yoga Studio's 9/11 Sale Goes About As Badly As You'd Expect" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/11/bikram-yoga-september-11-911-sale-deal-promotion_n_5806898.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Bikram Yoga Studio's 9/11 Sale Goes About As Badly As You'd Expect</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-11 18:29:48" pubdate>2014-09-11 18:29:48</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5799784","mpid":7}}' >
+            <article  data-beacon='{"p":{"plid":"5799784","mpid":4}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/10/chipotle-penn-state_n_5799784.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/1744714/thumbs/r-CHIPOTLE-BURRITO-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Chipotle Workers Shut Down Store Over 'Borderline Sweatshop Conditions'" class="async-img-load" /></a>
                 </figure>
@@ -1644,13 +1596,43 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5804676","mpid":8}}' >
+            <article  data-beacon='{"p":{"plid":"5806898","mpid":5}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/11/bikram-yoga-september-11-911-sale-deal-promotion_n_5806898.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2051452/thumbs/r-TWITTER-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Bikram Yoga Studio's 9/11 Sale Goes About As Badly As You'd Expect" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/11/bikram-yoga-september-11-911-sale-deal-promotion_n_5806898.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Bikram Yoga Studio's 9/11 Sale Goes About As Badly As You'd Expect</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-11 18:29:48" pubdate>2014-09-11 18:29:48</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5804676","mpid":6}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/11/ohio-fracking-job-boom_n_5804676.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2053328/thumbs/r-FRACKING-OHIO-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for How The New York Times Overhyped The Benefits Of Fracking" class="async-img-load" /></a>
                 </figure>
                 <strong><a href="http://www.huffingtonpost.com/2014/09/11/ohio-fracking-job-boom_n_5804676.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">How The New York Times Overhyped The Benefits Of Fracking</a></strong>
                                 <!-- need php for times here -->
                 <time class="off" datetime="2014-09-11 11:44:19" pubdate>2014-09-11 11:44:19</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5791490","mpid":7}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/09/this-company-is-taking-a-_n_5791490.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2039696/thumbs/r-WORK-LIFE-BALANCE-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for This Company Is Taking A Radical Approach To Work-Life Balance" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/09/this-company-is-taking-a-_n_5791490.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">This Company Is Taking A Radical Approach To Work-Life Balance</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-09 12:10:43" pubdate>2014-09-09 12:10:43</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5784464","mpid":8}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/08/panera-guns-bread-firearms_n_5784464.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2034670/thumbs/r-PANERA-BREAD-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Panera Becomes The Latest Company To Enact A 'No Guns' Policy" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/08/panera-guns-bread-firearms_n_5784464.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Panera Becomes The Latest Company To Enact A 'No Guns' Policy</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-08 11:27:48" pubdate>2014-09-08 11:27:48</time>
                             </article>
         </li>
             <li class="three-up-item">
@@ -1664,27 +1646,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5814316","mpid":10}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/13/jpmorgan-hackers_n_5814316.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2056866/thumbs/r-JPMORGAN-HACKER-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for JPMorgan Hackers Didn't Steal Any Money: Report" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/13/jpmorgan-hackers_n_5814316.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">JPMorgan Hackers Didn't Steal Any Money: Report</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-13 10:43:54" pubdate>2014-09-13 10:43:54</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5791490","mpid":11}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/09/this-company-is-taking-a-_n_5791490.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2039696/thumbs/r-WORK-LIFE-BALANCE-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for This Company Is Taking A Radical Approach To Work-Life Balance" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/09/this-company-is-taking-a-_n_5791490.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">This Company Is Taking A Radical Approach To Work-Life Balance</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-09 12:10:43" pubdate>2014-09-09 12:10:43</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5804072","mpid":12}}' >
+            <article  data-beacon='{"p":{"plid":"5804072","mpid":10}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/12/payscale-college-majors_n_5804072.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2048648/thumbs/r-COLLEGE-GRADUATES-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Ivy League Schools Don't Guarantee A Great Job Right Out Of College" class="async-img-load" /></a>
                 </figure>
@@ -1694,13 +1656,33 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5784464","mpid":13}}' >
+            <article  data-beacon='{"p":{"plid":"5790392","mpid":11}}' >
                 <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/08/panera-guns-bread-firearms_n_5784464.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2034670/thumbs/r-PANERA-BREAD-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Panera Becomes The Latest Company To Enact A 'No Guns' Policy" class="async-img-load" /></a>
+                    <a href="http://www.huffingtonpost.com/2014/09/09/mcdonalds-august-sales_n_5790392.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2038704/thumbs/r-MCDONALDS-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for McDonald's Has Its Worst Month In 10 Years. Again." class="async-img-load" /></a>
                 </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/08/panera-guns-bread-firearms_n_5784464.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Panera Becomes The Latest Company To Enact A 'No Guns' Policy</a></strong>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/09/mcdonalds-august-sales_n_5790392.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">McDonald's Has Its Worst Month In 10 Years. Again.</a></strong>
                                 <!-- need php for times here -->
-                <time class="off" datetime="2014-09-08 11:27:48" pubdate>2014-09-08 11:27:48</time>
+                <time class="off" datetime="2014-09-09 09:49:43" pubdate>2014-09-09 09:49:43</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5807028","mpid":12}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/11/olive-garden-pasta-pass-ebay_n_5807028.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2051182/thumbs/r-OLIVE-GARDEN-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for PSA: You Can't Share Or Sell Your Pasta Pass" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/11/olive-garden-pasta-pass-ebay_n_5807028.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">PSA: You Can't Share Or Sell Your Pasta Pass</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-11 17:01:52" pubdate>2014-09-11 17:01:52</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5807156","mpid":13}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/12/morning-after-pill-men-access_n_5807156.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2051180/thumbs/r-PLAN-B-PILL-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for 1 In 5 Times, A Man Can't Buy The Morning-After Pill" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/12/morning-after-pill-men-access_n_5807156.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">1 In 5 Times, A Man Can't Buy The Morning-After Pill</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-12 08:50:43" pubdate>2014-09-12 08:50:43</time>
                             </article>
         </li>
             </ul>
@@ -1907,13 +1889,13 @@ document.write('<s'+'cript type="text/javascript">adsonar_placementId='+1523912+
             
 
 	<script type="text/javascript">
-		var hp_slideshow_data_368226 = {"embed_tag":"<HH--236SLIDEEXPAND--368226--HH>","slideshow_id":"368226","title":"5 Worst Economies In The World","created":"2014-09-13 18:55:45","is_anonymous_vote":"yes","lower_rank_value":"","higher_rank_value":"","top_5_text":"","type":"expand","total":5,"list":false,"slideimages":[{"slide_id":"368226","slideimage_id":"4219888","type":"image","title":"5. Angola","title_link":"5_Angola","width":"0","height":"0","credits":"ASSOCIATED PRESS","config":{"image_cache":"1410649380381","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 18:56:31","image_num":"0","caption":"<strong>>><\/strong> GCI score (1-7): 3.04\n<strong>>><\/strong> GDP per capita: &#36;6,638 (45th lowest)\n<strong>>> <\/strong>Debt as a pct. of GDP: 26.6% (29th lowest)\n<strong>>> <\/strong>Pct. of residents using Internet: 19.1% (41st lowest)\n<strong>>><\/strong> Biggest problem in doing business: Access to financing\n\nAngola\u2019s economy has grown considerably in the last decade largely due to an oil boom. Angola is Africa\u2019s second-largest exporter of oil, and its GDP is the fifth-largest on the continent. Angola\u2019s 27-year civil war devastated the country\u2019s economy and infrastructure. Although it has recovered much, the country still has a long way to go. According to the African Development Bank, Angola remains far too reliant on oil, which accounts for a disproportionate share of the country\u2019s economy, as well as most of the country\u2019s exports and government revenues. Access to financing and rampant corruption are among the most problematic factors for doing business in the country. And despite aggressive construction projects, the overall quality of infrastructure was rated at nearly the worst among all countries reviewed.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEvMsOj9\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St. <\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"4","votes":"2","slideimage_crops":[{"id":"2234192","slideimage_id":"4219888","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_original.jpg"},{"id":"2234194","slideimage_id":"4219888","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_free.jpg"},{"id":"2234196","slideimage_id":"4219888","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_smallfree.jpg"},{"id":"2234198","slideimage_id":"4219888","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_small.jpg"},{"id":"2234200","slideimage_id":"4219888","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_splash_900.jpg"},{"id":"2234202","slideimage_id":"4219888","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_splash_600.jpg"},{"id":"2234204","slideimage_id":"4219888","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_splash_small.jpg"},{"id":"2234206","slideimage_id":"4219888","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_sq50.jpg"},{"id":"2234208","slideimage_id":"4219888","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_croppable.jpg"},{"id":"2234210","slideimage_id":"4219888","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219886","type":"image","title":"4. Mauritania","title_link":"4_Mauritania","width":"0","height":"0","credits":"bobrayner\/Flickr","config":{"image_cache":"1410649609919","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 18:55:46","image_num":"1","caption":"Mauritania\n<strong>>> <\/strong>GCI score (1-7): 3.00\n<strong>>> <\/strong>GDP per capita: &#36;2,331 (21st lowest)\n<strong>>><\/strong> Debt as a pct. of GDP: 87.7% (22nd highest)\n<strong>>><\/strong> Pct. of residents using Internet: 6.2% (17th lowest)\n<strong>>> <\/strong>Biggest problem in doing business: Access to financing\n\nLike several other African nations, Mauritania is both one of the world\u2019s poorest nations. While much of the population remains highly dependent on agriculture, segments of Mauritania\u2019s economy utilize natural resource extraction for growth. The country started extracting oil off its western coast in 2006, and the Chinguetti and Tiof oil fields are expected to hold enormous quantities of oil reserves. Future prosperity may be hampered, however, by underdeveloped financial institutions and poor health among the country\u2019s residents. Access to financing was cited as \u2014 by far \u2014 the most problematic factor for doing business in the country. Additionally, there were 350 new cases of tuberculosis last year, among the highest rates in the world. Tuberculosis will continue to have a serious impact on Mauritanian business in the next five years.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEwZXJFq\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St<\/a>. \nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"6","votes":"2","slideimage_crops":[{"id":"2234232","slideimage_id":"4219886","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_original.jpg"},{"id":"2234234","slideimage_id":"4219886","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_free.jpg"},{"id":"2234236","slideimage_id":"4219886","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_smallfree.jpg"},{"id":"2234238","slideimage_id":"4219886","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_small.jpg"},{"id":"2234240","slideimage_id":"4219886","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_splash_900.jpg"},{"id":"2234242","slideimage_id":"4219886","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_splash_600.jpg"},{"id":"2234244","slideimage_id":"4219886","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_splash_small.jpg"},{"id":"2234246","slideimage_id":"4219886","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_sq50.jpg"},{"id":"2234248","slideimage_id":"4219886","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_croppable.jpg"},{"id":"2234250","slideimage_id":"4219886","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219892","type":"image","title":"3. Yemen","title_link":"3_Yemen","width":"0","height":"0","credits":"Richard Messenger\/Flickr","config":{"image_cache":"1410649874159","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 19:08:00","image_num":"2","caption":"Yemen\n<strong>>><\/strong> GCI score (1-7): 2.95\n<strong>>><\/strong> GDP per capita: &#36;2,396 (23rd lowest)\n<strong>>><\/strong> Debt as a pct. of GDP: 49.9% (57th highest)\n<strong>>><\/strong> Pct. of residents using Internet: 20.0% (43rd lowest)\n<strong>>><\/strong> Biggest problem in doing business: Inadequate supply of infrastructure\n\nLimitations on doing business in Yemen stem primarily from security concerns. With the allies waging war on al-Qaeda in Afghanistan throughout much of the past decade, al-Qaeda found a haven in Yemen. The threat of terrorism, crime, and violence pose some of the greatest costs to doing business in Yemen, according to WEF. National police services were also rated among the least reliable in the world. The state of the country\u2019s infrastructure is perhaps even more detrimental to competitiveness. The electrical supply, for example, is plagued with frequent interruptions and voltage fluctuations and is among the least reliable worldwide.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEx6Brja\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St. <\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"13","votes":"3","slideimage_crops":[{"id":"2234252","slideimage_id":"4219892","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_original.jpg"},{"id":"2234254","slideimage_id":"4219892","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_free.jpg"},{"id":"2234256","slideimage_id":"4219892","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_smallfree.jpg"},{"id":"2234258","slideimage_id":"4219892","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_small.jpg"},{"id":"2234260","slideimage_id":"4219892","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_splash_900.jpg"},{"id":"2234262","slideimage_id":"4219892","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_splash_600.jpg"},{"id":"2234264","slideimage_id":"4219892","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_splash_small.jpg"},{"id":"2234266","slideimage_id":"4219892","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_sq50.jpg"},{"id":"2234268","slideimage_id":"4219892","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_croppable.jpg"},{"id":"2234270","slideimage_id":"4219892","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219894","type":"image","title":"2. Chad","title_link":"2_Chad","width":"0","height":"0","credits":"MissNato1\/Flickr","config":{"image_cache":"1410650138042","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 19:12:40","image_num":"3","caption":"Chad\n<strong>>> <\/strong>GCI score (1-7): 2.84\n<strong>>><\/strong> GDP per capita: &#36;2,786 (27th lowest)\n<strong>>> <\/strong>Debt as a pct. of GDP: 30.2% (36th lowest)\n<strong>>><\/strong> Pct. of residents using Internet: 2.3% (9th lowest)\n<strong>>><\/strong> Biggest problem in doing business: Access to financing\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DExnzJ10\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St. <\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"10","votes":"2","slideimage_crops":[{"id":"2234272","slideimage_id":"4219894","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_original.jpg"},{"id":"2234274","slideimage_id":"4219894","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_free.jpg"},{"id":"2234276","slideimage_id":"4219894","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_smallfree.jpg"},{"id":"2234278","slideimage_id":"4219894","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_small.jpg"},{"id":"2234280","slideimage_id":"4219894","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_splash_900.jpg"},{"id":"2234282","slideimage_id":"4219894","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_splash_600.jpg"},{"id":"2234284","slideimage_id":"4219894","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_splash_small.jpg"},{"id":"2234286","slideimage_id":"4219894","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_sq50.jpg"},{"id":"2234288","slideimage_id":"4219894","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_croppable.jpg"},{"id":"2234290","slideimage_id":"4219894","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219896","type":"image","title":"1. Guinea ","title_link":"1_Guinea_","width":"0","height":"0","credits":"unicefguinea\/Flickr","config":{"image_cache":"1410650661329","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 19:15:45","image_num":"4","caption":"Guinea\n<strong>>><\/strong> GCI score (1-7): 2.79\n<strong>>><\/strong> GDP per capita: &#36;1,178 (5th lowest)\n<strong>>><\/strong> Debt as a pct. of GDP: 37.8% (57th lowest)\n<strong>>><\/strong> Pct. of residents using Internet: 1.6% (4th lowest)\n<strong>>><\/strong> Biggest problem in doing business: Access to financing\n\nGuinea was rated by the WEF as the world\u2019s least competitive economy. No country was awarded a worse rating for the provision of basic requirements. The lack of infrastructure is especially problematic for the country, which had some of the world\u2019s lowest quality roads and poorest electricity supply. A macroeconomic environment characterized by a lack of savings and high inflation also limits Guinea\u2019s competitiveness. The country, which is rich in metals resource, derives much of its export revenue from bauxite \u2014 used in making aluminum. However, Guinea\u2019s weak economic development makes attracting investment to its mining sector difficult. Access to financing was cited as the greatest problem for doing business in Guinea.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEyhsTb1\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St.<\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"11","votes":"2","slideimage_crops":[{"id":"2234292","slideimage_id":"4219896","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_original.jpg"},{"id":"2234294","slideimage_id":"4219896","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_free.jpg"},{"id":"2234296","slideimage_id":"4219896","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_smallfree.jpg"},{"id":"2234298","slideimage_id":"4219896","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_small.jpg"},{"id":"2234300","slideimage_id":"4219896","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_splash_900.jpg"},{"id":"2234302","slideimage_id":"4219896","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_splash_600.jpg"},{"id":"2234304","slideimage_id":"4219896","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_splash_small.jpg"},{"id":"2234306","slideimage_id":"4219896","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_sq50.jpg"},{"id":"2234308","slideimage_id":"4219896","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_croppable.jpg"},{"id":"2234310","slideimage_id":"4219896","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_sq50.jpg"}],"more_slideshows":[{"entry_id":"5789826","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/09\/trump-bankruptcy-atlantic-city_n_5789826.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/223741\/slide_223741_926055_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/223741\/slide_223741_926055_small.jpg","title":"Donald Trump","slideshow_id":"223741","vertical":"business"},{"entry_id":"5772526","entry_url":"http:\/\/www.huffingtonpost.com\/jeanne-kelly\/attraction-and-credit-the_b_5772526.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/232944\/slide_232944_1109249_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/232944\/slide_232944_1109249_small.jpg","title":"29 Ways You Waste Cash","slideshow_id":"232944","vertical":"business"},{"entry_id":"5734806","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/08\/29\/malaysia-airlines-layoffs_n_5734806.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/343086\/slide_343086_3605611_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/343086\/slide_343086_3605611_small.jpg","title":"Search For MH370","slideshow_id":"343086","vertical":"business"},{"entry_id":"5808702","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/12\/san-diego-cab-drivers-odor-test_n_5808702.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/298960\/slide_298960_2485531_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/298960\/slide_298960_2485531_small.jpg","title":"The 'Taxi Of Tomorrow' ","slideshow_id":"298960","vertical":"business"}]};
+		var hp_slideshow_data_368226 = {"embed_tag":"<HH--236SLIDEEXPAND--368226--HH>","slideshow_id":"368226","title":"5 Worst Economies In The World","created":"2014-09-13 18:55:45","is_anonymous_vote":"yes","lower_rank_value":"","higher_rank_value":"","top_5_text":"","type":"expand","total":5,"list":false,"slideimages":[{"slide_id":"368226","slideimage_id":"4219888","type":"image","title":"5. Angola","title_link":"5_Angola","width":"0","height":"0","credits":"ASSOCIATED PRESS","config":{"image_cache":"1410649380381","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 18:56:31","image_num":"0","caption":"<strong>>><\/strong> GCI score (1-7): 3.04\n<strong>>><\/strong> GDP per capita:  36;6,638 (45th lowest)\n<strong>>> <\/strong>Debt as a pct. of GDP: 26.6% (29th lowest)\n<strong>>> <\/strong>Pct. of residents using Internet: 19.1% (41st lowest)\n<strong>>><\/strong> Biggest problem in doing business: Access to financing\n\nAngola\u2019s economy has grown considerably in the last decade largely due to an oil boom. Angola is Africa\u2019s second-largest exporter of oil, and its GDP is the fifth-largest on the continent. Angola\u2019s 27-year civil war devastated the country\u2019s economy and infrastructure. Although it has recovered much, the country still has a long way to go. According to the African Development Bank, Angola remains far too reliant on oil, which accounts for a disproportionate share of the country\u2019s economy, as well as most of the country\u2019s exports and government revenues. Access to financing and rampant corruption are among the most problematic factors for doing business in the country. And despite aggressive construction projects, the overall quality of infrastructure was rated at nearly the worst among all countries reviewed.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEvMsOj9\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St. <\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"4","votes":"2","slideimage_crops":[{"id":"2234208","slideimage_id":"4219888","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_croppable.jpg"},{"id":"2234206","slideimage_id":"4219888","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_sq50.jpg"},{"id":"2234204","slideimage_id":"4219888","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_splash_small.jpg"},{"id":"2234202","slideimage_id":"4219888","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_splash_600.jpg"},{"id":"2234200","slideimage_id":"4219888","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_splash_900.jpg"},{"id":"2234198","slideimage_id":"4219888","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_small.jpg"},{"id":"2234196","slideimage_id":"4219888","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_smallfree.jpg"},{"id":"2234194","slideimage_id":"4219888","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_free.jpg"},{"id":"2234192","slideimage_id":"4219888","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_original.jpg"},{"id":"2234210","slideimage_id":"4219888","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219888_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219886","type":"image","title":"4. Mauritania","title_link":"4_Mauritania","width":"0","height":"0","credits":"bobrayner\/Flickr","config":{"image_cache":"1410649609919","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 18:55:46","image_num":"1","caption":"Mauritania\n<strong>>> <\/strong>GCI score (1-7): 3.00\n<strong>>> <\/strong>GDP per capita:  36;2,331 (21st lowest)\n<strong>>><\/strong> Debt as a pct. of GDP: 87.7% (22nd highest)\n<strong>>><\/strong> Pct. of residents using Internet: 6.2% (17th lowest)\n<strong>>> <\/strong>Biggest problem in doing business: Access to financing\n\nLike several other African nations, Mauritania is both one of the world\u2019s poorest nations. While much of the population remains highly dependent on agriculture, segments of Mauritania\u2019s economy utilize natural resource extraction for growth. The country started extracting oil off its western coast in 2006, and the Chinguetti and Tiof oil fields are expected to hold enormous quantities of oil reserves. Future prosperity may be hampered, however, by underdeveloped financial institutions and poor health among the country\u2019s residents. Access to financing was cited as \u2014 by far \u2014 the most problematic factor for doing business in the country. Additionally, there were 350 new cases of tuberculosis last year, among the highest rates in the world. Tuberculosis will continue to have a serious impact on Mauritanian business in the next five years.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEwZXJFq\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St<\/a>. \nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"6","votes":"2","slideimage_crops":[{"id":"2234242","slideimage_id":"4219886","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_splash_600.jpg"},{"id":"2234240","slideimage_id":"4219886","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_splash_900.jpg"},{"id":"2234238","slideimage_id":"4219886","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_small.jpg"},{"id":"2234236","slideimage_id":"4219886","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_smallfree.jpg"},{"id":"2234234","slideimage_id":"4219886","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_free.jpg"},{"id":"2234232","slideimage_id":"4219886","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_original.jpg"},{"id":"2234244","slideimage_id":"4219886","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_splash_small.jpg"},{"id":"2234246","slideimage_id":"4219886","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_sq50.jpg"},{"id":"2234248","slideimage_id":"4219886","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_croppable.jpg"},{"id":"2234250","slideimage_id":"4219886","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219886_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219892","type":"image","title":"3. Yemen","title_link":"3_Yemen","width":"0","height":"0","credits":"Richard Messenger\/Flickr","config":{"image_cache":"1410649874159","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 19:08:00","image_num":"2","caption":"Yemen\n<strong>>><\/strong> GCI score (1-7): 2.95\n<strong>>><\/strong> GDP per capita:  36;2,396 (23rd lowest)\n<strong>>><\/strong> Debt as a pct. of GDP: 49.9% (57th highest)\n<strong>>><\/strong> Pct. of residents using Internet: 20.0% (43rd lowest)\n<strong>>><\/strong> Biggest problem in doing business: Inadequate supply of infrastructure\n\nLimitations on doing business in Yemen stem primarily from security concerns. With the allies waging war on al-Qaeda in Afghanistan throughout much of the past decade, al-Qaeda found a haven in Yemen. The threat of terrorism, crime, and violence pose some of the greatest costs to doing business in Yemen, according to WEF. National police services were also rated among the least reliable in the world. The state of the country\u2019s infrastructure is perhaps even more detrimental to competitiveness. The electrical supply, for example, is plagued with frequent interruptions and voltage fluctuations and is among the least reliable worldwide.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEx6Brja\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St. <\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"13","votes":"3","slideimage_crops":[{"id":"2234252","slideimage_id":"4219892","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_original.jpg"},{"id":"2234254","slideimage_id":"4219892","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_free.jpg"},{"id":"2234256","slideimage_id":"4219892","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_smallfree.jpg"},{"id":"2234258","slideimage_id":"4219892","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_small.jpg"},{"id":"2234260","slideimage_id":"4219892","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_splash_900.jpg"},{"id":"2234262","slideimage_id":"4219892","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_splash_600.jpg"},{"id":"2234264","slideimage_id":"4219892","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_splash_small.jpg"},{"id":"2234266","slideimage_id":"4219892","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_sq50.jpg"},{"id":"2234268","slideimage_id":"4219892","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_croppable.jpg"},{"id":"2234270","slideimage_id":"4219892","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219892_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219894","type":"image","title":"2. Chad","title_link":"2_Chad","width":"0","height":"0","credits":"MissNato1\/Flickr","config":{"image_cache":"1410650138042","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 19:12:40","image_num":"3","caption":"Chad\n<strong>>> <\/strong>GCI score (1-7): 2.84\n<strong>>><\/strong> GDP per capita:  36;2,786 (27th lowest)\n<strong>>> <\/strong>Debt as a pct. of GDP: 30.2% (36th lowest)\n<strong>>><\/strong> Pct. of residents using Internet: 2.3% (9th lowest)\n<strong>>><\/strong> Biggest problem in doing business: Access to financing\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DExnzJ10\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St. <\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"10","votes":"2","slideimage_crops":[{"id":"2234272","slideimage_id":"4219894","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_original.jpg"},{"id":"2234274","slideimage_id":"4219894","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_free.jpg"},{"id":"2234276","slideimage_id":"4219894","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_smallfree.jpg"},{"id":"2234278","slideimage_id":"4219894","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_small.jpg"},{"id":"2234280","slideimage_id":"4219894","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_splash_900.jpg"},{"id":"2234282","slideimage_id":"4219894","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_splash_600.jpg"},{"id":"2234284","slideimage_id":"4219894","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_splash_small.jpg"},{"id":"2234286","slideimage_id":"4219894","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_sq50.jpg"},{"id":"2234288","slideimage_id":"4219894","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_croppable.jpg"},{"id":"2234290","slideimage_id":"4219894","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219894_sq50.jpg"},{"slide_id":"368226","slideimage_id":"4219896","type":"image","title":"1. Guinea ","title_link":"1_Guinea_","width":"0","height":"0","credits":"unicefguinea\/Flickr","config":{"image_cache":"1410650661329","image_type":"jpg","crop":null,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2014-09-13 19:15:45","image_num":"4","caption":"Guinea\n<strong>>><\/strong> GCI score (1-7): 2.79\n<strong>>><\/strong> GDP per capita:  36;1,178 (5th lowest)\n<strong>>><\/strong> Debt as a pct. of GDP: 37.8% (57th lowest)\n<strong>>><\/strong> Pct. of residents using Internet: 1.6% (4th lowest)\n<strong>>><\/strong> Biggest problem in doing business: Access to financing\n\nGuinea was rated by the WEF as the world\u2019s least competitive economy. No country was awarded a worse rating for the provision of basic requirements. The lack of infrastructure is especially problematic for the country, which had some of the world\u2019s lowest quality roads and poorest electricity supply. A macroeconomic environment characterized by a lack of savings and high inflation also limits Guinea\u2019s competitiveness. The country, which is rich in metals resource, derives much of its export revenue from bauxite \u2014 used in making aluminum. However, Guinea\u2019s weak economic development makes attracting investment to its mining sector difficult. Access to financing was cited as the greatest problem for doing business in Guinea.\n\n<strong>Read more:<\/strong> <a href=\"http:\/\/247wallst.com\/special-report\/2014\/09\/09\/the-worst-economies-in-the-world-2\/#ixzz3DEyhsTb1\" target=\"_blank\">The Worst Economies in the World - 24\/7 Wall St.<\/a>\nFollow us: @247wallst on Twitter | 247wallst on Facebook","rating":"11","votes":"2","slideimage_crops":[{"id":"2234292","slideimage_id":"4219896","slide_id":"368226","type":"original","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_original.jpg"},{"id":"2234294","slideimage_id":"4219896","slide_id":"368226","type":"free","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_free.jpg"},{"id":"2234296","slideimage_id":"4219896","slide_id":"368226","type":"smallfree","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_smallfree.jpg"},{"id":"2234298","slideimage_id":"4219896","slide_id":"368226","type":"small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_small.jpg"},{"id":"2234300","slideimage_id":"4219896","slide_id":"368226","type":"splash_900","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_splash_900.jpg"},{"id":"2234302","slideimage_id":"4219896","slide_id":"368226","type":"splash_600","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_splash_600.jpg"},{"id":"2234304","slideimage_id":"4219896","slide_id":"368226","type":"splash_small","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_splash_small.jpg"},{"id":"2234306","slideimage_id":"4219896","slide_id":"368226","type":"sq50","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_sq50.jpg"},{"id":"2234308","slideimage_id":"4219896","slide_id":"368226","type":"croppable","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_croppable.jpg"},{"id":"2234310","slideimage_id":"4219896","slide_id":"368226","type":"compressed","url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_compressed.jpg"}],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_compressed.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/368226\/slide_368226_4219896_sq50.jpg"}],"more_slideshows":[{"entry_id":"5734806","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/08\/29\/malaysia-airlines-layoffs_n_5734806.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/343086\/slide_343086_3605611_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/343086\/slide_343086_3605611_small.jpg","title":"Search For MH370","slideshow_id":"343086","vertical":"business"},{"entry_id":"5789826","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/09\/trump-bankruptcy-atlantic-city_n_5789826.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/223741\/slide_223741_926055_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/223741\/slide_223741_926055_small.jpg","title":"Donald Trump","slideshow_id":"223741","vertical":"business"},{"entry_id":"5742028","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/08\/30\/americas-disappearing-job_n_5742028.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/365192\/slide_365192_4146140_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/365192\/slide_365192_4146140_small.jpg","title":"America\u2019s Disappearing Jobs","slideshow_id":"365192","vertical":"business"},{"entry_id":"5732108","entry_url":"http:\/\/www.huffingtonpost.com\/james-c-gibson\/3-big-differences-between_b_5732108.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/350320\/slide_350320_3759053_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/350320\/slide_350320_3759053_small.jpg","title":"Top 8 Benefits of Financial Education","slideshow_id":"350320","vertical":"business"}]};
 	</script>
 <div class="hp-slideshow-wrapper no-pin" id="hp-slideshow-wrapper-368226" data-slideshow-id="368226" data-beacon="{"p":{"slideshow_id":"368226"}}">
 	<div  class="hp-slideshow-top">
 		<div class="hp-slideshow-main">
 			<div class="hp-slideshow-header">
-				<div class="hp-slideshow-title-icon hp-slideshow-icon">&#xe007;</div>
+				<div class="hp-slideshow-title-icon hp-slideshow-icon"> xe007;</div>
 				<div class="hp-slideshow-title">5 Worst Economies In The World</div>
 					
 				<!-- START: slideshow top navigation -->
@@ -1922,10 +1904,10 @@ document.write('<s'+'cript type="text/javascript">adsonar_placementId='+1523912+
 					<span>of</span>
 					<span class="total-slides"></span>
 					<div class="hp-slideshow-previous-arrow"  data-beacon='{"p":{"event_action":"arrow_top_corner_left"}}' >
-						<span class="hp-slideshow-icon bN">&#xe000;</span>
+						<span class="hp-slideshow-icon bN"> xe000;</span>
 					</div>
 					<div class="hp-slideshow-next-arrow"  data-beacon='{"p":{"event_action":"arrow_top_corner_right"}}' >
-						<span class="hp-slideshow-icon bN">&#xe001;</span>
+						<span class="hp-slideshow-icon bN"> xe001;</span>
 					</div>
 				</div>
 				<!-- END: slideshow top navigation -->
@@ -1953,7 +1935,7 @@ document.write('<s'+'cript type="text/javascript">adsonar_placementId='+1523912+
 										<li class="hp-carousel-item no-pin" data-id="0" data-slide-id="4219888"  data-beacon='{"p":{"event_action":"bottom_thumbnail_nav"}}' >
 						<img class="lazy" data-src="http://i.huffpost.com/gadgets/slideshows/368226/slide_368226_4219888_sq50.jpg" alt="5. Angola"  width="52" height="52"/>
 						<p style="display: none;">>> GCI score (1-7): 3.04
->> GDP per capita: &#36;6,638 (45th lowest)
+>> GDP per capita:  36;6,638 (45th lowest)
 >> Debt as a pct. of GDP: 26.6% (29th lowest)
 >> Pct. of residents using Internet: 19.1% (41st lowest)
 >> Biggest problem in doing business: Access to financing
@@ -1967,7 +1949,7 @@ Follow us: @247wallst on Twitter | 247wallst on Facebook</p>
 						<img class="lazy" data-src="http://i.huffpost.com/gadgets/slideshows/368226/slide_368226_4219886_sq50.jpg" alt="4. Mauritania"  width="52" height="52"/>
 						<p style="display: none;">Mauritania
 >> GCI score (1-7): 3.00
->> GDP per capita: &#36;2,331 (21st lowest)
+>> GDP per capita:  36;2,331 (21st lowest)
 >> Debt as a pct. of GDP: 87.7% (22nd highest)
 >> Pct. of residents using Internet: 6.2% (17th lowest)
 >> Biggest problem in doing business: Access to financing
@@ -1981,7 +1963,7 @@ Follow us: @247wallst on Twitter | 247wallst on Facebook</p>
 						<img class="lazy" data-src="http://i.huffpost.com/gadgets/slideshows/368226/slide_368226_4219892_sq50.jpg" alt="3. Yemen"  width="52" height="52"/>
 						<p style="display: none;">Yemen
 >> GCI score (1-7): 2.95
->> GDP per capita: &#36;2,396 (23rd lowest)
+>> GDP per capita:  36;2,396 (23rd lowest)
 >> Debt as a pct. of GDP: 49.9% (57th highest)
 >> Pct. of residents using Internet: 20.0% (43rd lowest)
 >> Biggest problem in doing business: Inadequate supply of infrastructure
@@ -1995,7 +1977,7 @@ Follow us: @247wallst on Twitter | 247wallst on Facebook</p>
 						<img class="lazy" data-src="http://i.huffpost.com/gadgets/slideshows/368226/slide_368226_4219894_sq50.jpg" alt="2. Chad"  width="52" height="52"/>
 						<p style="display: none;">Chad
 >> GCI score (1-7): 2.84
->> GDP per capita: &#36;2,786 (27th lowest)
+>> GDP per capita:  36;2,786 (27th lowest)
 >> Debt as a pct. of GDP: 30.2% (36th lowest)
 >> Pct. of residents using Internet: 2.3% (9th lowest)
 >> Biggest problem in doing business: Access to financing
@@ -2007,7 +1989,7 @@ Follow us: @247wallst on Twitter | 247wallst on Facebook</p>
 						<img class="lazy" data-src="http://i.huffpost.com/gadgets/slideshows/368226/slide_368226_4219896_sq50.jpg" alt="1. Guinea "  width="52" height="52"/>
 						<p style="display: none;">Guinea
 >> GCI score (1-7): 2.79
->> GDP per capita: &#36;1,178 (5th lowest)
+>> GDP per capita:  36;1,178 (5th lowest)
 >> Debt as a pct. of GDP: 37.8% (57th lowest)
 >> Pct. of residents using Internet: 1.6% (4th lowest)
 >> Biggest problem in doing business: Access to financing
@@ -2026,19 +2008,19 @@ Follow us: @247wallst on Twitter | 247wallst on Facebook</p>
 			<div class="hp-right-pane-header">
 				<div class="hp-right-pane-social">
 					<div class="hp-ss-facebook-share slideshow-share" data-type="facebook">
-						<div class="hp-ss-service-share-facebook-new hp-slideshow-icon" >&#xe002; <span class="bN">Share</span></div>
+						<div class="hp-ss-service-share-facebook-new hp-slideshow-icon" > xe002; <span class="bN">Share</span></div>
 					</div>
 					<div class="hp-ss-twitter-share slideshow-share" data-type="twitter">
-						<div class="hp-ss-service-share-twitter-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"twitter_button"}}' >&#xe003; <span class="bN">Tweet</span></div>
+						<div class="hp-ss-service-share-twitter-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"twitter_button"}}' > xe003; <span class="bN">Tweet</span></div>
 					</div>
 					<div class="hp-ss-pinterest-share slideshow-share" data-type="pinterest">
-						<div class="hp-ss-service-share-pinterest-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"pinterest_button"}}' >&#xe004;</div>
+						<div class="hp-ss-service-share-pinterest-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"pinterest_button"}}' > xe004;</div>
 					</div>
 					<div class="hp-slideshow-share-slideshow"></div>
 					<div class="clearboth"></div>
 				</div>
 				<div class="hp-right-pane-fullscreen"  data-beacon='{"p":{"event_action":"fullscreen"}}' ></div>
-				<div class="hp-right-pane-exit"   data-beacon='{"p":{"event_action":"close_flyout"}}' >&#10006</div>
+				<div class="hp-right-pane-exit"   data-beacon='{"p":{"event_action":"close_flyout"}}' > 10006</div>
 				</div>
 				
 				<!-- START: CAPTION BODY -->
@@ -2104,7 +2086,7 @@ adSetInView('0');
 		<div class="hp-slideshow-share-overlay">
 			<div class="hp-slideshow-share-header">
 				<div class="hp-slideshow-share-title">Share this</div>
-				<a class="hp-slideshow-share-exit" href="#"><span>&#10006</span> close</a>
+				<a class="hp-slideshow-share-exit" href="#"><span> 10006</span> close</a>
 			</div>
 			<textarea class="hp-slideshow-share-url" rows="3" cols="70" spellcheck="false"></textarea>
 			<div class="hp-slideshow-share-options">
@@ -2753,7 +2735,7 @@ background: none !important;
         <!-- END page_content -->
         <!-- page_footer -->
         <section class="footer">
-    <!-- Served from: wfe6.ewr -->
+    <!-- Served from: production-mt-wfe-49-81.use1 -->
     <!-- ads_leaderboard_bottom --> 
         <!-- visual footer -->
     <footer>
@@ -2828,7 +2810,7 @@ background: none !important;
         <!-- ads_bottom_1x1 -->
     <div id="modulous_bottom_1x1" class="ad_spot">
     <script type="application/javascript" 
-src="http://a02.korrelate.net/a/e/d2a.ads?r=30144005&et=a&ago=127&ao=128&px=208&pt=s&lvl=business"></script><!-- ADS Comscore -->
+src="http://a02.korrelate.net/a/e/d2a.ads?r=1088362227&et=a&ago=127&ao=128&px=208&pt=s&lvl=business"></script><!-- ADS Comscore -->
 <script src="http://ar.voicefive.com/bmx3/node.pli?pub=aol2"></script>
 <!-- pub=aolmovies --><!-- AD highlights module tracking -->
 <script type="text/javascript">
@@ -3023,7 +3005,7 @@ span.error.show {
         <!-- END page_wrapper -->
 
     <!-- end RUM -->
-    <script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410717206,"entry":"5816648","vertical":"business","vertical-id":5,"vertical-name":"Business","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffingtonPost","current_vertical_twitter_name":"HuffingtonPost"}); });</script>    <!-- RUM footer -->
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"2661203","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFxENWFMIXhtMbABYFUoYOBhDFRghFkQMWARLEg==","queueTime":0,"applicationTime":458,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>    <script type="text/javascript" src="http://s1.huffpost.com/assets/js.php?v=1410282423&f=phoenix%2Feditions.js%2Clayouts%2F13.js%2Cphoenix%2Ffloating_share.js"></script>
+    <script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410730115,"entry":"5816648","vertical":"business","vertical-id":5,"vertical-name":"Business","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffingtonPost","current_vertical_twitter_name":"HuffingtonPost"}); });</script>    <!-- RUM footer -->
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4028938","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFxENWFMIXhtMbABYFUoYOBhDFRghFkQMWARLEg==","queueTime":0,"applicationTime":273,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>    <script type="text/javascript" src="http://s1.huffpost.com/assets/js.php?v=1410282423&f=phoenix%2Feditions.js%2Clayouts%2F13.js%2Cphoenix%2Ffloating_share.js"></script>
 </body>
 </html>

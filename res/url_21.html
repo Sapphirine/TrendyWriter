@@ -173,7 +173,7 @@ var __taboola_params = [{mode:"autosized-1r-organic",container:"taboola-autosize
 }
 </script>
     <!-- RUM header -->
-    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>    <!-- GA, Data Layer and Omniture -->
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HV1FACgUGVVNSBA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>    <!-- GA, Data Layer and Omniture -->
     <script type="text/javascript">
 var _gaq = _gaq || [];
 HPTrack.async = true;
@@ -472,12 +472,12 @@ adSetInView('0');
 			</li>
 			<li>
 				<a href="http://www.huffingtonpost.com/?country=JP">
-					<span>&#26085;&#26412; (Japan)</span> <strong>JP</strong>
+					<span> 26085; 26412; (Japan)</span> <strong>JP</strong>
 				</a>		
 			</li>
 			<li>
 				<a href="http://www.huffingtonpost.com/?country=KR">
-					<span>&#54620;&#44397; (Korea)</span> <strong>KR</strong>
+					<span> 54620; 44397; (Korea)</span> <strong>KR</strong>
 				</a>		
 			</li>
 			<li>
@@ -753,13 +753,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5815072"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html?ir=Politics">More Details About Video Capturing Witness Reaction To Michael Brown Shooting</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html?ir=Politics#comments">611</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html?ir=Politics#comments">635</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815492"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/bill-maher-john-kline_n_5815492.html?ir=Politics">Bill Maher Announces 'Winning Loser' Of His 'Flip A District' Campaign</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/bill-maher-john-kline_n_5815492.html?ir=Politics#comments">97</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/bill-maher-john-kline_n_5815492.html?ir=Politics#comments">99</a>
                                     </article>
                                 </li>
                                                             							
@@ -805,7 +805,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5815926"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/bahn-shop-yum_n_5815926.html?ir=Business">Taco Bell Owner's Next Big Thing Is Vietnamese Fast Food</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/bahn-shop-yum_n_5815926.html?ir=Business#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/bahn-shop-yum_n_5815926.html?ir=Business#comments">44</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5816648"  >
@@ -814,10 +814,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/worst-economies_n_5816648.html?ir=Business#comments">0</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5811888"  >
+                                                                <li data-id="5814150"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/12/starbucks-tattoos_n_5811888.html?ir=Business">Starbucks Baristas Fight To Show Tattoos</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/starbucks-tattoos_n_5811888.html?ir=Business#comments">120</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/13/cvs-alabama-lawsuit_n_5814150.html?ir=Business">Major CVS Health Lawsuit Moves Ahead</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/cvs-alabama-lawsuit_n_5814150.html?ir=Business#comments">0</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5814316"  >
@@ -826,10 +826,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/jpmorgan-hackers_n_5814316.html?ir=Business#comments">3</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5814150"  >
+                                                                <li data-id="5808818"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/13/cvs-alabama-lawsuit_n_5814150.html?ir=Business">Major CVS Health Lawsuit Moves Ahead</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/cvs-alabama-lawsuit_n_5814150.html?ir=Business#comments">0</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/nevada-tesla-gigafactory_n_5808818.html?ir=Business">Tesla's Huge Tax Break Deal Is Official</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/nevada-tesla-gigafactory_n_5808818.html?ir=Business#comments">288</a>
                                     </article>
                                 </li>
                                                             							
@@ -875,25 +875,25 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5815236"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/paris-hilton-pomeranian_n_5815236.html?ir=Entertainment">Paris Hilton Just Bought The Tiniest Puppy Imaginable For A Ton Of Money</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/paris-hilton-pomeranian_n_5815236.html?ir=Entertainment#comments">487</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/paris-hilton-pomeranian_n_5815236.html?ir=Entertainment#comments">514</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815836"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/mayim-bialik-ariana-grande_n_5815836.html?ir=Entertainment">Mayim Bialik Slams Ariana Grande</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/mayim-bialik-ariana-grande_n_5815836.html?ir=Entertainment#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/mayim-bialik-ariana-grande_n_5815836.html?ir=Entertainment#comments">111</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815352"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/beyonce-nicki-minaj-flawless-remix_n_5815352.html?ir=Entertainment">Beyonce And Nicki Minaj Finally Performed 'Flawless' Remix Live</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/beyonce-nicki-minaj-flawless-remix_n_5815352.html?ir=Entertainment#comments">61</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/beyonce-nicki-minaj-flawless-remix_n_5815352.html?ir=Entertainment#comments">63</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5811314"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/nicki-minaj-high-school_n_5811314.html?ir=Entertainment">Nicki Minaj's High School Won't Let Her Return To Speak To Students</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/nicki-minaj-high-school_n_5811314.html?ir=Entertainment#comments">342</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/nicki-minaj-high-school_n_5811314.html?ir=Entertainment#comments">354</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815242"  >
@@ -941,22 +941,22 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                         <!-- left colum -->
                         <section class="more-stories trending"  >
                             <ul>
-                                                                                            <li data-id="5811616"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media">News Anchor Reveals Devastating Cancer News</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media#comments">268</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5816494"  >
+                                                                                            <li data-id="5816494"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/obama-journalists-isis-speech_n_5816494.html?ir=Media">Obama Met Privately With Top Journalists Before ISIS War Speech</a>
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/obama-journalists-isis-speech_n_5816494.html?ir=Media#comments">0</a>
                                     </article>
                                 </li>
+                                                                <li data-id="5811616"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media">News Anchor Reveals Devastating Cancer News</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/tv-anchor-cancer-dave-benton_n_5811616.html?ir=Media#comments">269</a>
+                                    </article>
+                                </li>
                                                                 <li data-id="5811032"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/new-york-times-isis-obama-war_n_5811032.html?ir=Media">New York Times Casts Doubt On Obama's ISIS War Plan</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/new-york-times-isis-obama-war_n_5811032.html?ir=Media#comments">89</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/new-york-times-isis-obama-war_n_5811032.html?ir=Media#comments">90</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5810260"  >
@@ -965,10 +965,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/rachel-maddow-endless-war-isis_n_5810260.html?ir=Media#comments">297</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5805998"  >
+                                                                <li data-id="5810380"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/wall-street-journal-video-400000_n_5805998.html?ir=Media">WSJ: It Can Be Tough Out There For A Family Making $400,000 A Year</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/wall-street-journal-video-400000_n_5805998.html?ir=Media#comments">181</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/ny-times-congress-isis-obama_n_5810380.html?ir=Media">NY Times Hammers Congress, Obama Over ISIS War</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/ny-times-congress-isis-obama_n_5810380.html?ir=Media#comments">99</a>
                                     </article>
                                 </li>
                                                             							
@@ -1013,7 +1013,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5814418"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/alqaeda-india-attacks-ship_n_5814418.html?ir=WorldPost">New Al Qaeda Branch Attacks Wrong Ship</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/alqaeda-india-attacks-ship_n_5814418.html?ir=WorldPost#comments">0</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/alqaeda-india-attacks-ship_n_5814418.html?ir=WorldPost#comments">571</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5816368"  >
@@ -1025,19 +1025,19 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5814128"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/isis-deal-syria_n_5814128.html?ir=WorldPost">Reports: ISIS Strikes Deal With Moderate Syrian Rebels</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/isis-deal-syria_n_5814128.html?ir=WorldPost#comments">851</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/isis-deal-syria_n_5814128.html?ir=WorldPost#comments">869</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5807114"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/11/greece-archeology_n_5807114.html?ir=WorldPost">Archeologists Make Remarkable Find In Greek Underground Chambers</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/greece-archeology_n_5807114.html?ir=WorldPost#comments">127</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/greece-archeology_n_5807114.html?ir=WorldPost#comments">134</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5815286"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/syrians-lebanon-revenge-attacks_n_5815286.html?ir=WorldPost">Syrians Suffer Revenge Attacks In Lebanon After ISIS Beheadings</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/syrians-lebanon-revenge-attacks_n_5815286.html?ir=WorldPost#comments">67</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/syrians-lebanon-revenge-attacks_n_5815286.html?ir=WorldPost#comments">68</a>
                                     </article>
                                 </li>
                                                             							
@@ -1083,7 +1083,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5814656"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/adrian-peterson-arrested-jail_n_5814656.html?ir=Sports">Adrian Peterson Turns Himself In To Police</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/adrian-peterson-arrested-jail_n_5814656.html?ir=Sports#comments">179</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/adrian-peterson-arrested-jail_n_5814656.html?ir=Sports#comments">198</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5816322"  >
@@ -1095,7 +1095,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5813210"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/adrian-peterson-child-injury-indicted_n_5813210.html?ir=Sports">REPORTS: Adrian Peterson Indicted In Child Injury Case, Arrest Warrant Issued</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/adrian-peterson-child-injury-indicted_n_5813210.html?ir=Sports#comments">619</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/adrian-peterson-child-injury-indicted_n_5813210.html?ir=Sports#comments">643</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5811380"  >
@@ -1153,31 +1153,31 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5812750"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/13/verizon-tv-service_n_5812750.html?ir=Technology">Verizon To Launch Internet TV Service That Lets You Pay For Only The Channels You Want</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/verizon-tv-service_n_5812750.html?ir=Technology#comments">154</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/verizon-tv-service_n_5812750.html?ir=Technology#comments">168</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5806846"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/hbo-go-subscription_n_5806846.html?ir=Technology">You May Soon Be Able To Get HBO Without Paying For Cable</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/hbo-go-subscription_n_5806846.html?ir=Technology#comments">105</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/hbo-go-subscription_n_5806846.html?ir=Technology#comments">106</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5810784"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/apple-new-iphone_n_5810784.html?ir=Technology">Apple's Huge New iPhone Is Already Backordered</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/apple-new-iphone_n_5810784.html?ir=Technology#comments">40</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/apple-new-iphone_n_5810784.html?ir=Technology#comments">41</a>
+                                    </article>
+                                </li>
+                                                                <li data-id="5810748"  >
+                                    <article>
+                                        <a href="http://www.huffingtonpost.com/2014/09/13/iphone-6-deals_n_5810748.html?ir=Technology">Which iPhone Deal Is Right For You?</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/13/iphone-6-deals_n_5810748.html?ir=Technology#comments">10</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5811840"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/okcupid-race_n_5811840.html?ir=Technology">Black People And Asian Men Have A Much Harder Time Dating On OKCupid</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/okcupid-race_n_5811840.html?ir=Technology#comments">76</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5805104"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/gmail-passwords-hacked_n_5805104.html?ir=Technology">5 Million Gmail Usernames And Associated Passwords Leaked</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/gmail-passwords-hacked_n_5805104.html?ir=Technology#comments">45</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/okcupid-race_n_5811840.html?ir=Technology#comments">77</a>
                                     </article>
                                 </li>
                                                             							
@@ -1223,7 +1223,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5811264"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/jamie-henn/a-climate-movement-that-c_b_5811264.html?ir=Green">A Climate Movement That Can't Be Ignored</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/jamie-henn/a-climate-movement-that-c_b_5811264.html?ir=Green#comments">105</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/jamie-henn/a-climate-movement-that-c_b_5811264.html?ir=Green#comments">113</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5812170"  >
@@ -1232,22 +1232,10 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                 <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/los-angeles-heat-alert_n_5812170.html?ir=Green#comments">22</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5805050"  >
+                                                                <li data-id="5812218"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/cat-lady-looks-like_n_5805050.html?ir=Green">This Is What A Cat Lady Looks Like</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/cat-lady-looks-like_n_5805050.html?ir=Green#comments">14</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5805712"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/warmer-air-ice-shelf_n_5805712.html?ir=Green">Scientists Identify Possible Cause Of Huge Ice Shelf Collapse</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/warmer-air-ice-shelf_n_5805712.html?ir=Green#comments">136</a>
-                                    </article>
-                                </li>
-                                                                <li data-id="5805598"  >
-                                    <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/11/lynx-protection-expanded_n_5805598.html?ir=Green">Lynx Protection Expanded, But Some Habitat Will Remain Undefended</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/11/lynx-protection-expanded_n_5805598.html?ir=Green#comments">1</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/summer-snow-storm-record-early_n_5812218.html?ir=Green">Too Soon? Record-Early Snow Hits Parts Of United States</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/summer-snow-storm-record-early_n_5812218.html?ir=Green#comments">54</a>
                                     </article>
                                 </li>
                                                             							
@@ -1293,7 +1281,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                                             <li data-id="5812884"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/ventura-high-school-chick-fil-a_n_5812884.html?ir=Gay+Voices">This High School Has Some Bad News For Chick-Fil-A</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/ventura-high-school-chick-fil-a_n_5812884.html?ir=Gay+Voices#comments">90</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/ventura-high-school-chick-fil-a_n_5812884.html?ir=Gay+Voices#comments">106</a>
                                     </article>
                                 </li>
                                                                 <li data-id="5810786"  >
@@ -1305,19 +1293,19 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                                 <li data-id="5811310"  >
                                     <article>
                                         <a href="http://www.huffingtonpost.com/2014/09/12/same-sex-marriage-stunt_n_5811310.html?ir=Gay+Voices">People Are Pissed About These Men Getting Married.. But NOT For The Reason You Think</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/same-sex-marriage-stunt_n_5811310.html?ir=Gay+Voices#comments">102</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/same-sex-marriage-stunt_n_5811310.html?ir=Gay+Voices#comments">106</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5814144"  >
+                                                                <li data-id="5811500"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/14/james-st-james-after-dark_n_5814144.html?ir=Gay+Voices">After Dark: Meet James. St. James, Original Club Kid And Nightlife Icon</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/14/james-st-james-after-dark_n_5814144.html?ir=Gay+Voices#comments">2</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/cardinal-francis-george-gay-sharia-law-_n_5811500.html?ir=Gay+Voices">Catholic Leader Says Members Of His Church Are Being Forced To Live Under A Pro-Gay 'Sharia Law' In The U.S.</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/cardinal-francis-george-gay-sharia-law-_n_5811500.html?ir=Gay+Voices#comments">92</a>
                                     </article>
                                 </li>
-                                                                <li data-id="5812510"  >
+                                                                <li data-id="5811424"  >
                                     <article>
-                                        <a href="http://www.huffingtonpost.com/2014/09/14/questions-lesbian-mom-_n_5812510.html?ir=Gay+Voices">5 Things You Should Never Ask A Lesbian Mom</a>
-                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/14/questions-lesbian-mom-_n_5812510.html?ir=Gay+Voices#comments">1</a>
+                                        <a href="http://www.huffingtonpost.com/2014/09/12/queerview-september-12_n_5811424.html?ir=Gay+Voices">Here's How Schools Teach Kids To Be Prejudiced</a>
+                                                                                <a data-anchor="#comments" class="comments" href="http://www.huffingtonpost.com/2014/09/12/queerview-september-12_n_5811424.html?ir=Gay+Voices#comments">1</a>
                                     </article>
                                 </li>
                                                             							
@@ -1367,16 +1355,24 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                                         
                                                                     <li class="scheduled-soon">
                                         <article>
+                                            <a href="http://live.huffingtonpost.com/r/segment/5410b3bf78c90a0b82000307">
+                                                <time class="schedule-status coming-up">Next</time>
+                                                <span class="segment-title">Top Stories For Monday, September 15</span>
+                                            </a>
+                                        </article>
+                                    </li>
+                                                                    <li class="scheduled-soon">
+                                        <article>
                                             <a href="http://live.huffingtonpost.com/r/segment/53fe443302a7604fe70001aa">
                                                 <time class="schedule-status coming-up">Next</time>
                                                 <span class="segment-title">U.S. Senator Kirsten Gillibrand LIVE</span>
                                             </a>
                                         </article>
                                     </li>
-                                                                    <li class="scheduled-soon">
+                                                                    <li class="coming-up">
                                         <article>
                                             <a href="http://live.huffingtonpost.com/r/segment/5410981402a760dceb000420">
-                                                <time class="schedule-status coming-up">Next</time>
+                                                <time class="schedule-status coming-up">Tomorrow</time>
                                                 <span class="segment-title">How An Online Date Turned Into Fate</span>
                                             </a>
                                         </article>
@@ -1394,14 +1390,6 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                                             <a href="http://live.huffingtonpost.com/r/segment/54106cb702a760098900035b">
                                                 <time class="schedule-status coming-up">Tomorrow</time>
                                                 <span class="segment-title">James Van Der Beek LIVE</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                                                    <li class="coming-up">
-                                        <article>
-                                            <a href="http://live.huffingtonpost.com/r/segment/53fcc1ac02a760884b000106">
-                                                <time class="schedule-status coming-up">Tomorrow</time>
-                                                <span class="segment-title">Actor Zachary Quinto LIVE</span>
                                             </a>
                                         </article>
                                     </li>
@@ -1618,17 +1606,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5815072","mpid":4}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2056686/thumbs/r-MICHAEL-BROWN-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for More Details About Video Capturing Witness Reaction To Michael Brown Shooting" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">More Details About Video Capturing Witness Reaction To Michael Brown Shooting</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-13 08:38:32" pubdate>2014-09-13 08:38:32</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5806794","mpid":5}}' >
+            <article  data-beacon='{"p":{"plid":"5806794","mpid":4}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/11/schwarzenegger-portrait-maria-shriver_n_5806794.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2050980/thumbs/r-ARNOLD-SCHWARZENEGGER-PORTRAIT-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Schwarzenegger's New Portrait Has A Major 'Oops'" class="async-img-load" /></a>
                 </figure>
@@ -1638,7 +1616,27 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5812996","mpid":6}}' >
+            <article  data-beacon='{"p":{"plid":"5815072","mpid":5}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2056686/thumbs/r-MICHAEL-BROWN-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for More Details About Video Capturing Witness Reaction To Michael Brown Shooting" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/13/michael-brown-shooting-video_n_5815072.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">More Details About Video Capturing Witness Reaction To Michael Brown Shooting</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-13 08:38:32" pubdate>2014-09-13 08:38:32</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5818200","mpid":6}}' >
+                <figure>
+                    <a href="http://www.huffingtonpost.com/2014/09/14/isis-journalist-beheadings_n_5818200.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2057906/thumbs/r-DENIS-MCDONOUGH-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for White House: We 'Didn't Threaten' Families Of Slain U.S. Journalists With Prosecution" class="async-img-load" /></a>
+                </figure>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/14/isis-journalist-beheadings_n_5818200.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">White House: We 'Didn't Threaten' Families Of Slain U.S. Journalists With Prosecution</a></strong>
+                                <!-- need php for times here -->
+                <time class="off" datetime="2014-09-14 10:43:12" pubdate>2014-09-14 10:43:12</time>
+                            </article>
+        </li>
+            <li class="three-up-item">
+            <article  data-beacon='{"p":{"plid":"5812996","mpid":7}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/12/mark-sanford-engagement_n_5812996.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2055628/thumbs/r-MARK-SANFORD-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Mark Sanford Announces Split With Maria Belen Chapur, Addresses Jenny Sanford Complaint" class="async-img-load" /></a>
                 </figure>
@@ -1648,7 +1646,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5813014","mpid":7}}' >
+            <article  data-beacon='{"p":{"plid":"5813014","mpid":8}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/12/militarized-police-california_n_5813014.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2056170/thumbs/r-MRAP-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for School Cops Protecting Kids With... Grenade Launchers, Mine-Resistant Vehicles" class="async-img-load" /></a>
                 </figure>
@@ -1658,7 +1656,7 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5812460","mpid":8}}' >
+            <article  data-beacon='{"p":{"plid":"5812460","mpid":9}}' >
                 <figure>
                     <a href="http://www.huffingtonpost.com/2014/09/12/same-sex-marriage-veterans-benefits_n_5812460.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2055184/thumbs/r-DINA-TITUS-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for House Republicans Shoot Down Measure To Extend Spousal Benefits To Gay Veterans" class="async-img-load" /></a>
                 </figure>
@@ -1668,23 +1666,13 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5813360","mpid":9}}' >
+            <article  data-beacon='{"p":{"plid":"5818202","mpid":10}}' >
                 <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/12/wisconsin-voter-id_n_5813360.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2055916/thumbs/r-JB-VAN-HOLLEN-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Appeals Court Reinstates Wisconsin's Voter ID Law" class="async-img-load" /></a>
+                    <a href="http://www.huffingtonpost.com/2014/09/14/tom-ready-newtown-truther_n_5818202.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2057926/thumbs/r-SANDY-HOOK-ELEMENTARY-SCHOOL-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for GOP Candidate Apologizes For Newtown Truther Remarks" class="async-img-load" /></a>
                 </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/12/wisconsin-voter-id_n_5813360.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Appeals Court Reinstates Wisconsin's Voter ID Law</a></strong>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/14/tom-ready-newtown-truther_n_5818202.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">GOP Candidate Apologizes For Newtown Truther Remarks</a></strong>
                                 <!-- need php for times here -->
-                <time class="off" datetime="2014-09-12 17:29:04" pubdate>2014-09-12 17:29:04</time>
-                            </article>
-        </li>
-            <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5813418","mpid":10}}' >
-                <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/12/six-californias-fails_n_5813418.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2056004/thumbs/r-SIX-CALIFORNIAS-TIM-DRAPER-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for ‘Six Californias' Is Officially Dead" class="async-img-load" /></a>
-                </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/12/six-californias-fails_n_5813418.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">‘Six Californias' Is Officially Dead</a></strong>
-                                <!-- need php for times here -->
-                <time class="off" datetime="2014-09-12 17:54:05" pubdate>2014-09-12 17:54:05</time>
+                <time class="off" datetime="2014-09-14 10:32:53" pubdate>2014-09-14 10:32:53</time>
                             </article>
         </li>
             <li class="three-up-item">
@@ -1698,23 +1686,23 @@ for(var i = 0; i < 2 && i < ads_top_bar_sponsor_links.length; i++) {
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5815388","mpid":12}}' >
+            <article  data-beacon='{"p":{"plid":"5813360","mpid":12}}' >
                 <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/13/syria-obama-isis_n_5815388.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2056958/thumbs/r-BARACK-OBAMA-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Al-Qaida's Syrian Cell Alarms U.S. More Than Islamic State Militants" class="async-img-load" /></a>
+                    <a href="http://www.huffingtonpost.com/2014/09/12/wisconsin-voter-id_n_5813360.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i1.huffpost.com/gen/2055916/thumbs/r-JB-VAN-HOLLEN-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for Appeals Court Reinstates Wisconsin's Voter ID Law" class="async-img-load" /></a>
                 </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/13/syria-obama-isis_n_5815388.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Al-Qaida's Syrian Cell Alarms U.S. More Than Islamic State Militants</a></strong>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/12/wisconsin-voter-id_n_5813360.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">Appeals Court Reinstates Wisconsin's Voter ID Law</a></strong>
                                 <!-- need php for times here -->
-                <time class="off" datetime="2014-09-13 12:03:38" pubdate>2014-09-13 12:03:38</time>
+                <time class="off" datetime="2014-09-12 17:29:04" pubdate>2014-09-12 17:29:04</time>
                             </article>
         </li>
             <li class="three-up-item">
-            <article  data-beacon='{"p":{"plid":"5813514","mpid":13}}' >
+            <article  data-beacon='{"p":{"plid":"5813418","mpid":13}}' >
                 <figure>
-                    <a href="http://www.huffingtonpost.com/2014/09/13/obamacare-labor-working-america_n_5813514.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2056214/thumbs/r-OBAMA-SMILE-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for How Obamacare Could Be A Huge Boon To 'Alt-Labor' Groups" class="async-img-load" /></a>
+                    <a href="http://www.huffingtonpost.com/2014/09/12/six-californias-fails_n_5813418.html"  data-beacon='{"p":{"lnid":"img"}}'  onclick="HPTrack.trackPageview('');"><img data-img-path="http://i0.huffpost.com/gen/2056004/thumbs/r-SIX-CALIFORNIAS-TIM-DRAPER-medium260.jpg" src="http://s1.huffpost.com/images/blank.gif" alt="Image for ‘Six Californias' Is Officially Dead" class="async-img-load" /></a>
                 </figure>
-                <strong><a href="http://www.huffingtonpost.com/2014/09/13/obamacare-labor-working-america_n_5813514.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">How Obamacare Could Be A Huge Boon To 'Alt-Labor' Groups</a></strong>
+                <strong><a href="http://www.huffingtonpost.com/2014/09/12/six-californias-fails_n_5813418.html"  data-beacon='{"p":{"lnid":"hdln"}}'  onclick="HPTrack.trackPageview('');">‘Six Californias' Is Officially Dead</a></strong>
                                 <!-- need php for times here -->
-                <time class="off" datetime="2014-09-13 07:30:15" pubdate>2014-09-13 07:30:15</time>
+                <time class="off" datetime="2014-09-12 17:54:05" pubdate>2014-09-12 17:54:05</time>
                             </article>
         </li>
             </ul>
@@ -1926,13 +1914,13 @@ jQuery(document).ready(function(){ setTimeout(function(){
             
 
 	<script type="text/javascript">
-		var hp_slideshow_data_272853 = {"embed_tag":"<HH--236SLIDEEXPAND--272853--HH>","slideshow_id":"272853","title":"113th Congress Facts","created":"2013-01-03 19:19:35","is_anonymous_vote":null,"lower_rank_value":null,"higher_rank_value":null,"top_5_text":null,"type":"expand","total":7,"list":false,"slideimages":[{"slide_id":"272853","slideimage_id":"1943767","type":"image","title":"The Numbers","title_link":"The_Numbers","width":"0","height":"0","credits":"Getty Images","config":{"image_cache":1357259297758,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:27:58","image_num":"0","caption":"The House has 233 Republicans and 200 Democrats. Each party should pick up one more seat when two vacancies are filled. Going into the election, the GOP edge was 242-193. Senate Democrats will have a caucus of 55, including two independents, Angus King of Maine and Bernie Sanders of Vermont. Republicans have 45. That's a pickup of two seats for Democrats.\n\n<em>(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)<\/em>","rating":"22","votes":"12","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943767_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943767_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943769","type":"image","title":"Women","title_link":"Women","width":"0","height":"0","credits":"AP","config":{"image_cache":1357259484020,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:31:04","image_num":"1","caption":"The House will have 79 women, including 60 Democrats. At the end of the last session, there were 50 Democratic women and 24 Republican women. The new Senate will have 20 women members, an increase of three. That consists of 16 Democrats and four Republicans. The last Senate had 12 Democratic women and five Republicans.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)","rating":"28","votes":"7","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943769_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943769_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943770","type":"image","title":"Freshmen","title_link":"Freshmen","width":"0","height":"0","credits":"AP","config":{"image_cache":1357259599323,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:33:07","image_num":"2","caption":"With two vacancies to be filled, the House has 82 freshmen; 47 Democrats and 35 Republicans. As of the end of the last session, 87 of 103 freshmen were Republicans. The Senate will include 14 new faces, with nine Democrats and the independent King. Five are women. New senators include Brian Schatz, who was sworn in on Dec. 27 to fill the seat of the late Hawaii Democrat Daniel Inouye.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Incoming House freshmen of the 113th Congress pose for a group photo on the East steps of the Capitol in Washington, Thursday, Nov. 15, 2012. AP Photo\/Susan Walsh)<\/em>","rating":"32","votes":"7","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943770_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943770_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943772","type":"image","title":"African Americans","title_link":"African_Americans","width":"0","height":"0","credits":"AP","config":{"image_cache":"1357259760056","text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:35:49","image_num":"3","caption":"The House will have 40 African-Americans, all Democrats. The number of Democrats is unchanged, although two Republicans will be gone: Allen West, R-Fla., lost his re-election bid, and Tim Scott, R-S.C., was appointed to fill the Senate seat of Jim DeMint, R-S.C., who is retiring. Scott will be the first black lawmaker in the Senate since Roland Burris, who retired in 2010 after filling the Illinois Senate seat of Barack Obama for almost two years.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Rep. Tim Scott, R-S.C., who was appointed by South Carolina Gov. Nikki Haley to replace outgoing Sen. Jim DeMint, R-S.C., walks out of the Republican policy luncheon on Capitol Hill in Washington, Tuesday, Dec. 18, 2012. AP Photo\/Susan Walsh)<\/em>","rating":"35","votes":"5","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943772_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943772_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943773","type":"image","title":"Hispanics","title_link":"Hispanics","width":"0","height":"0","credits":"AP","config":{"image_cache":"1357260023445","text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:40:04","image_num":"4","caption":"The new House will have 33 Hispanics, with 25 Democrats and eight Republicans. That's up slightly from last year. The Senate will have three Hispanics: Democrat Robert Menendez of New Jersey, Republican Marco Rubio of Florida and Republican freshman Ted Cruz of Texas.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Rep.-elect Joaquin Castro, D-Texas, speaks with members of the media after a news conference with newly elected Democratic House members on Capitol Hill in Washington, Tuesday, Nov. 13, 2012. AP Photo\/Pablo Martinez Monsivais)<\/em>","rating":"21","votes":"3","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943773_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943773_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943775","type":"image","title":"Other Minorities","title_link":"Other_Minorities","width":"0","height":"0","credits":"AP","config":{"image_cache":1357260100878,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:41:20","image_num":"5","caption":"The new House will have nine Asian Americans, all Democrats. There are two American Indians: Tom Cole, R-Okla., and Ben Lujan, D-N.M.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Sen.-elect, current Rep. Mazie Hirono, D-Hawaii, and her husband, Leighton Oshima ride the Senate Subway on Capitol Hill in Washington, Tuesday, Nov. 13, 2012. AP Photo\/Harry Hamburg)<\/em>","rating":"20","votes":"3","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943775_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943775_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943776","type":"image","title":"Other Facts","title_link":"Other_Facts","width":"0","height":"0","credits":"AP","config":{"image_cache":1357260211469,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:43:21","image_num":"6","caption":"According to CQ Roll Call newspaper, the average age of House members in the 113th Congress is 57; the average age of senators is 62. It estimates that the House will include some 277 Protestants and Catholics, 22 Jews, two Muslims and two Buddhists. The Senate will have 80 Protestants and Catholics and 10 Jews. The House will have its first Hindu, Rep.Tulsi Gabbard, D-Hawaii. Senate freshman Mazie Hirono, also of Hawaii, will be the Senate's only Buddhist and its first Asian American woman. Also for the first time, white men will be a minority among House Democrats.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>Pictured at left: Rep.-elect Tulsi Gabbard, D-Hawaii is seen on stage during a news conference with newly elected Democratic House members, on Capitol Hill in Washington, Tuesday, Nov. 13, 2012. AP Photo\/Pablo Martinez Monsivais)<\/em>","rating":"7","votes":"1","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943776_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943776_sq50.jpg"}],"more_slideshows":[{"entry_id":"5818486","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/14\/paul-ryan-alcoholic-father_n_5818486.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/341982\/slide_341982_3533226_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/341982\/slide_341982_3533226_small.jpg","title":"Paul Ryan","slideshow_id":"341982","vertical":"politics"},{"entry_id":"5815368","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/13\/marco-rubio-immigration_n_5815368.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/234173\/slide_234173_1547099_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/234173\/slide_234173_1547099_small.jpg","title":"Sen. Marco Rubio","slideshow_id":"234173","vertical":"politics"},{"entry_id":"5815072","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/13\/michael-brown-shooting-video_n_5815072.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/362659\/slide_362659_4079954_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/362659\/slide_362659_4079954_small.jpg","title":"Ferguson","slideshow_id":"362659","vertical":"politics"},{"entry_id":"5813514","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/13\/obamacare-labor-working-america_n_5813514.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/234579\/slide_234579_1134976_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/234579\/slide_234579_1134976_small.jpg","title":"Health Care Reform Efforts Throughout History","slideshow_id":"234579","vertical":"politics"}]};
+		var hp_slideshow_data_272853 = {"embed_tag":"<HH--236SLIDEEXPAND--272853--HH>","slideshow_id":"272853","title":"113th Congress Facts","created":"2013-01-03 19:19:35","is_anonymous_vote":null,"lower_rank_value":null,"higher_rank_value":null,"top_5_text":null,"type":"expand","total":7,"list":false,"slideimages":[{"slide_id":"272853","slideimage_id":"1943767","type":"image","title":"The Numbers","title_link":"The_Numbers","width":"0","height":"0","credits":"Getty Images","config":{"image_cache":1357259297758,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:27:58","image_num":"0","caption":"The House has 233 Republicans and 200 Democrats. Each party should pick up one more seat when two vacancies are filled. Going into the election, the GOP edge was 242-193. Senate Democrats will have a caucus of 55, including two independents, Angus King of Maine and Bernie Sanders of Vermont. Republicans have 45. That's a pickup of two seats for Democrats.\n\n<em>(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)<\/em>","rating":"22","votes":"12","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943767_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943767_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943769","type":"image","title":"Women","title_link":"Women","width":"0","height":"0","credits":"AP","config":{"image_cache":1357259484020,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:31:04","image_num":"1","caption":"The House will have 79 women, including 60 Democrats. At the end of the last session, there were 50 Democratic women and 24 Republican women. The new Senate will have 20 women members, an increase of three. That consists of 16 Democrats and four Republicans. The last Senate had 12 Democratic women and five Republicans.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)","rating":"28","votes":"7","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943769_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943769_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943770","type":"image","title":"Freshmen","title_link":"Freshmen","width":"0","height":"0","credits":"AP","config":{"image_cache":1357259599323,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:33:07","image_num":"2","caption":"With two vacancies to be filled, the House has 82 freshmen; 47 Democrats and 35 Republicans. As of the end of the last session, 87 of 103 freshmen were Republicans. The Senate will include 14 new faces, with nine Democrats and the independent King. Five are women. New senators include Brian Schatz, who was sworn in on Dec. 27 to fill the seat of the late Hawaii Democrat Daniel Inouye.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Incoming House freshmen of the 113th Congress pose for a group photo on the East steps of the Capitol in Washington, Thursday, Nov. 15, 2012. AP Photo\/Susan Walsh)<\/em>","rating":"32","votes":"7","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943770_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943770_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943772","type":"image","title":"African Americans","title_link":"African_Americans","width":"0","height":"0","credits":"AP","config":{"image_cache":"1357259760056","text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:35:49","image_num":"3","caption":"The House will have 40 African-Americans, all Democrats. The number of Democrats is unchanged, although two Republicans will be gone: Allen West, R-Fla., lost his re-election bid, and Tim Scott, R-S.C., was appointed to fill the Senate seat of Jim DeMint, R-S.C., who is retiring. Scott will be the first black lawmaker in the Senate since Roland Burris, who retired in 2010 after filling the Illinois Senate seat of Barack Obama for almost two years.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Rep. Tim Scott, R-S.C., who was appointed by South Carolina Gov. Nikki Haley to replace outgoing Sen. Jim DeMint, R-S.C., walks out of the Republican policy luncheon on Capitol Hill in Washington, Tuesday, Dec. 18, 2012. AP Photo\/Susan Walsh)<\/em>","rating":"35","votes":"5","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943772_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943772_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943773","type":"image","title":"Hispanics","title_link":"Hispanics","width":"0","height":"0","credits":"AP","config":{"image_cache":"1357260023445","text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:40:04","image_num":"4","caption":"The new House will have 33 Hispanics, with 25 Democrats and eight Republicans. That's up slightly from last year. The Senate will have three Hispanics: Democrat Robert Menendez of New Jersey, Republican Marco Rubio of Florida and Republican freshman Ted Cruz of Texas.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Rep.-elect Joaquin Castro, D-Texas, speaks with members of the media after a news conference with newly elected Democratic House members on Capitol Hill in Washington, Tuesday, Nov. 13, 2012. AP Photo\/Pablo Martinez Monsivais)<\/em>","rating":"21","votes":"3","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943773_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943773_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943775","type":"image","title":"Other Minorities","title_link":"Other_Minorities","width":"0","height":"0","credits":"AP","config":{"image_cache":1357260100878,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:41:20","image_num":"5","caption":"The new House will have nine Asian Americans, all Democrats. There are two American Indians: Tom Cole, R-Okla., and Ben Lujan, D-N.M.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>(Pictured at left: Sen.-elect, current Rep. Mazie Hirono, D-Hawaii, and her husband, Leighton Oshima ride the Senate Subway on Capitol Hill in Washington, Tuesday, Nov. 13, 2012. AP Photo\/Harry Hamburg)<\/em>","rating":"20","votes":"3","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943775_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943775_sq50.jpg"},{"slide_id":"272853","slideimage_id":"1943776","type":"image","title":"Other Facts","title_link":"Other_Facts","width":"0","height":"0","credits":"AP","config":{"image_cache":1357260211469,"text":{"show_image":null,"image_width_percent":null,"image_height_percent":null},"migrate":{"type_data":{"comment":{"permalink":null},"blog":{"permalink":null}}}},"created":"2013-01-03 19:43:21","image_num":"6","caption":"According to CQ Roll Call newspaper, the average age of House members in the 113th Congress is 57; the average age of senators is 62. It estimates that the House will include some 277 Protestants and Catholics, 22 Jews, two Muslims and two Buddhists. The Senate will have 80 Protestants and Catholics and 10 Jews. The House will have its first Hindu, Rep.Tulsi Gabbard, D-Hawaii. Senate freshman Mazie Hirono, also of Hawaii, will be the Senate's only Buddhist and its first Asian American woman. Also for the first time, white men will be a minority among House Democrats.\n\n(Text <a href=\"http:\/\/www.huffingtonpost.com\/huff-wires\/20130103\/us-new-congress-glance\/\">via the Associated Press<\/a>)\n\n<em>Pictured at left: Rep.-elect Tulsi Gabbard, D-Hawaii is seen on stage during a news conference with newly elected Democratic House members, on Capitol Hill in Washington, Tuesday, Nov. 13, 2012. AP Photo\/Pablo Martinez Monsivais)<\/em>","rating":"7","votes":"1","slideimage_crops":[],"slideimage_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943776_free.jpg","slideimage_thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/272853\/slide_272853_1943776_sq50.jpg"}],"more_slideshows":[{"entry_id":"5818486","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/14\/paul-ryan-alcoholic-father_n_5818486.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/341982\/slide_341982_3533226_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/341982\/slide_341982_3533226_small.jpg","title":"Paul Ryan","slideshow_id":"341982","vertical":"politics"},{"entry_id":"5818212","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/14\/john-kerry-isis_n_5818212.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/342128\/slide_342128_3535798_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/342128\/slide_342128_3535798_small.jpg","title":"John Kerry","slideshow_id":"342128","vertical":"politics"},{"entry_id":"5818202","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/14\/tom-ready-newtown-truther_n_5818202.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/353385\/slide_353385_3841482_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/353385\/slide_353385_3841482_small.jpg","title":"Sandy Hook Shooting Evidence ","slideshow_id":"353385","vertical":"politics"},{"entry_id":"5816774","entry_url":"http:\/\/www.huffingtonpost.com\/2014\/09\/13\/mark-sanford-fiancee-facebook_n_5816774.html","content_type":"image","image_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/22959\/slide_22959_288119_small.jpg","thumbnail_url":"http:\/\/i.huffpost.com\/gadgets\/slideshows\/22959\/slide_22959_288119_small.jpg","title":"Shirtless Politicians","slideshow_id":"22959","vertical":"politics"}]};
 	</script>
 <div class="hp-slideshow-wrapper no-pin" id="hp-slideshow-wrapper-272853" data-slideshow-id="272853" data-beacon="{"p":{"slideshow_id":"272853"}}">
 	<div  class="hp-slideshow-top">
 		<div class="hp-slideshow-main">
 			<div class="hp-slideshow-header">
-				<div class="hp-slideshow-title-icon hp-slideshow-icon">&#xe007;</div>
+				<div class="hp-slideshow-title-icon hp-slideshow-icon"> xe007;</div>
 				<div class="hp-slideshow-title">113th Congress Facts</div>
 					
 				<!-- START: slideshow top navigation -->
@@ -1941,10 +1929,10 @@ jQuery(document).ready(function(){ setTimeout(function(){
 					<span>of</span>
 					<span class="total-slides"></span>
 					<div class="hp-slideshow-previous-arrow"  data-beacon='{"p":{"event_action":"arrow_top_corner_left"}}' >
-						<span class="hp-slideshow-icon bN">&#xe000;</span>
+						<span class="hp-slideshow-icon bN"> xe000;</span>
 					</div>
 					<div class="hp-slideshow-next-arrow"  data-beacon='{"p":{"event_action":"arrow_top_corner_right"}}' >
-						<span class="hp-slideshow-icon bN">&#xe001;</span>
+						<span class="hp-slideshow-icon bN"> xe001;</span>
 					</div>
 				</div>
 				<!-- END: slideshow top navigation -->
@@ -2030,19 +2018,19 @@ Pictured at left: Rep.-elect Tulsi Gabbard, D-Hawaii is seen on stage during a n
 			<div class="hp-right-pane-header">
 				<div class="hp-right-pane-social">
 					<div class="hp-ss-facebook-share slideshow-share" data-type="facebook">
-						<div class="hp-ss-service-share-facebook-new hp-slideshow-icon" >&#xe002; <span class="bN">Share</span></div>
+						<div class="hp-ss-service-share-facebook-new hp-slideshow-icon" > xe002; <span class="bN">Share</span></div>
 					</div>
 					<div class="hp-ss-twitter-share slideshow-share" data-type="twitter">
-						<div class="hp-ss-service-share-twitter-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"twitter_button"}}' >&#xe003; <span class="bN">Tweet</span></div>
+						<div class="hp-ss-service-share-twitter-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"twitter_button"}}' > xe003; <span class="bN">Tweet</span></div>
 					</div>
 					<div class="hp-ss-pinterest-share slideshow-share" data-type="pinterest">
-						<div class="hp-ss-service-share-pinterest-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"pinterest_button"}}' >&#xe004;</div>
+						<div class="hp-ss-service-share-pinterest-new hp-slideshow-icon"  data-beacon='{"p":{"event_action":"pinterest_button"}}' > xe004;</div>
 					</div>
 					<div class="hp-slideshow-share-slideshow"></div>
 					<div class="clearboth"></div>
 				</div>
 				<div class="hp-right-pane-fullscreen"  data-beacon='{"p":{"event_action":"fullscreen"}}' ></div>
-				<div class="hp-right-pane-exit"   data-beacon='{"p":{"event_action":"close_flyout"}}' >&#10006</div>
+				<div class="hp-right-pane-exit"   data-beacon='{"p":{"event_action":"close_flyout"}}' > 10006</div>
 				</div>
 				
 				<!-- START: CAPTION BODY -->
@@ -2108,7 +2096,7 @@ adSetInView('0');
 		<div class="hp-slideshow-share-overlay">
 			<div class="hp-slideshow-share-header">
 				<div class="hp-slideshow-share-title">Share this</div>
-				<a class="hp-slideshow-share-exit" href="#"><span>&#10006</span> close</a>
+				<a class="hp-slideshow-share-exit" href="#"><span> 10006</span> close</a>
 			</div>
 			<textarea class="hp-slideshow-share-url" rows="3" cols="70" spellcheck="false"></textarea>
 			<div class="hp-slideshow-share-options">
@@ -2529,6 +2517,17 @@ adSetInView('0');
 	                <div class="related_news_item widget_item first_child">
 	                    
 	                    <div class="widget_title_text">
+	                		<a href="http://time.com/3373723/times-square-brawl/" target="partners">2 Men Dressed as Superheroes Fight Heckler in Times Square</a>
+							
+							<p><a href="http://time.com/3373723/times-square-brawl/" target="partners" class="readmore_words"> </a></p>
+							
+						</div>
+					</div>
+					<div class="clear"></div>
+				
+	                <div class="related_news_item widget_item ">
+	                    
+	                    <div class="widget_title_text">
 	                		<a href="http://time.com/3373109/911-wedding-photo/" target="partners">Woman Solves Mystery of Lost 9/11 Wedding Photo After 13 Years</a>
 							
 							<p><a href="http://time.com/3373109/911-wedding-photo/" target="partners" class="readmore_words"> </a></p>
@@ -2543,17 +2542,6 @@ adSetInView('0');
 	                		<a href="http://time.com/3372547/the-simpsons-groundskeeper-willie-scottish-independence/" target="partners">The Simpsons’ Groundskeeper Willie Wants an Independent Scotland</a>
 							
 							<p><a href="http://time.com/3372547/the-simpsons-groundskeeper-willie-scottish-independence/" target="partners" class="readmore_words"> </a></p>
-							
-						</div>
-					</div>
-					<div class="clear"></div>
-				
-	                <div class="related_news_item widget_item ">
-	                    
-	                    <div class="widget_title_text">
-	                		<a href="http://time.com/3362587/mario-batali-i-still-have-192-pairs-of-crocs/" target="partners">Mario Batali: ‘I Still Have 192 Pairs of Crocs’</a>
-							
-							<p><a href="http://time.com/3362587/mario-batali-i-still-have-192-pairs-of-crocs/" target="partners" class="readmore_words"> </a></p>
 							
 						</div>
 					</div>
@@ -2660,7 +2648,7 @@ background: none !important;
         <!-- END page_content -->
         <!-- page_footer -->
         <section class="footer">
-    <!-- Served from: production-mt-wfe-58-119.use1 -->
+    <!-- Served from: wfe3.dtc -->
     <!-- ads_leaderboard_bottom --> 
         <!-- visual footer -->
     <footer>
@@ -2735,7 +2723,7 @@ background: none !important;
         <!-- ads_bottom_1x1 -->
     <div id="modulous_bottom_1x1" class="ad_spot">
     <script type="application/javascript" 
-src="http://a02.korrelate.net/a/e/d2a.ads?r=1975315383&et=a&ago=127&ao=128&px=208&pt=s&lvl=politics"></script><!-- ADS Comscore -->
+src="http://a02.korrelate.net/a/e/d2a.ads?r=1200100984&et=a&ago=127&ao=128&px=208&pt=s&lvl=politics"></script><!-- ADS Comscore -->
 <script src="http://ar.voicefive.com/bmx3/node.pli?pub=aol2"></script>
 <!-- pub=aolmovies --><script type="text/javascript">
 
@@ -2800,10 +2788,10 @@ src="http://a02.korrelate.net/a/e/d2a.ads?r=1975315383&et=a&ago=127&ao=128&px=20
     <!--modulous footer -->
         <!-- END modulous footer -->
 
-    <div style="width:300px" id="ad_store_sharebox_260x60" class="ad_store "></div>            
+                
             <div id="console"></div>
                 <script type="text/javascript">
-                    if(HPAds.ad_check_page_config('sharebox_260x60'))HPAds.ad_store_push('sharebox_260x60', '', 300, false, false, false, false);
+                    
                     HPAds.ad_store_move_to_place(false);
                     HPAds.page_spots["sharebox_260x60"]=true; 
                 </script>
@@ -2913,7 +2901,7 @@ span.error.show {
         <!-- END page_wrapper -->
 
     <!-- end RUM -->
-    <script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410717195,"entry":"5815492","vertical":"politics","vertical-id":2,"vertical-name":"Politics","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffingtonPost","current_vertical_twitter_name":"HuffingtonPost"}); });</script>    <!-- RUM footer -->
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"4028938","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFxENWFMIXhtMbABYFUoYOBhDFRgzDFsMQghbEg==","queueTime":0,"applicationTime":527,"ttGuid":"","agentToken":"","atts":"HRUCQQ0eSxw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>    <script type="text/javascript" src="http://s1.huffpost.com/assets/js.php?v=1410282423&f=phoenix%2Feditions.js%2Clayouts%2F13.js%2Cphoenix%2Ffloating_share.js"></script>
+    <script type="text/javascript">huff.use('conf', function(c){ c.set({"mtime":1410730100,"entry":"5815492","vertical":"politics","vertical-id":2,"vertical-name":"Politics","ads\/zone":"","topnav\/version":"2","cookie\/domain":"huffingtonpost.com","websocket\/enabled":true,"websocket\/url":"fiji-production-ws.use1.huffpo.net","websocket\/init":false,"site_blog_id":2,"auth_secure_domain":"secure.huffingtonpost.com","auth_secure_protocol":"https","auth_method":"frame","static_secure_domain":"s-s.huffpost.com","images_secure_domain":"s-i.huffpost.com","images_secure_www_domain":"s-i.huffpost.com","social_tracking":true,"primary_vertical_id":-1,"primary_vertical_name":false,"primary_vertical_facebook_name":"HuffingtonPost","primary_vertical_twitter_name":"HuffingtonPost","current_vertical_facebook_name":"HuffingtonPost","current_vertical_twitter_name":"HuffingtonPost"}); });</script>    <!-- RUM footer -->
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"a2134792db","applicationID":"2661203","transactionName":"MVIBN0UEWBJZAhFeWQgYIBZEEVkMFxENWFMIXhtMbABYFUoYOBhDFRgzDFsMQghbEg==","queueTime":0,"applicationTime":411,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script>    <script type="text/javascript" src="http://s1.huffpost.com/assets/js.php?v=1410282423&f=phoenix%2Feditions.js%2Clayouts%2F13.js%2Cphoenix%2Ffloating_share.js"></script>
 </body>
 </html>
