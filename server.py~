@@ -44,9 +44,9 @@ class myHandler(BaseHTTPRequestHandler):
 		self.end_headers()
 		self.wfile.write(message)
 		
-		if(self.path == "/wordcount"):
+		if(parsed_path == "/wordcount"):
 			try:
-				conn = MySQLdb.connect(host='localhost', user='root', db='test',port=3306)
+				conn = MySQLdb.connect(host='localhost', user='root',passwd='root', db='test',port=3306)
 				cur = conn.cursor()
 				count = cur.execute('describe wordcount')
 				print count
@@ -59,7 +59,7 @@ class myHandler(BaseHTTPRequestHandler):
 				conn.close()
 
 			except MySQLdb.Error,e:
-     				print "Mysql Error %d: %s" % (e.args[0], e.args[1])
+     			print "Mysql Error %d: %s" % (e.args[0], e.args[1])
 
 
 			'''
