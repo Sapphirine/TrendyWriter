@@ -17,3 +17,6 @@ class WordDigest(models.Model):
 	word_text = models.CharField(max_length=30)
 	word_count = models.IntegerField(default=0)
 	retrive_date = models.DateTimeField('date of counting')
+
+	def __str__(self):              # __unicode__ on Python 2
+		return self.word_text
