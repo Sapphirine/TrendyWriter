@@ -21,7 +21,7 @@ for word in words:
 	if not word.isupper():
 		word = word.lower()
 
-	if word not in stop and word.__len__()>=2:
+	if word not in stop and word.__len__()>2:
 		#stemmed_word = stem(wnl.lemmatize(word))
 		stemmed_word = wnl.lemmatize(word)
 		if stemmed_word not in stop:
@@ -37,7 +37,8 @@ for k,v in sorted_counts:
 	if v > 20:
 		#tag = nltk.pos_tag(word_tokenize(k))
 		#if tag[0][1] != 'VB':
-		mnls_word = ['make','get','set','say','said']
+		mnls_word = ['make','get','set','say','said', 'new', 'it\'s', 
+			'don\'t', 'may', 'here\'s', 'like', 'thing', 'one', 'take', 'best']
 		if k not in mnls_word:
 			print k, v
 
