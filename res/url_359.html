@@ -1,643 +1,160 @@
-<title>DRUDGE REPORT 2014 174 </title>
-<META HTTP-EQUIV="X-Headlines" CONTENT="60">
-<script type="text/javascript">
-<!-- 
-var timer = setInterval("autoRefresh()", 1000 * 60 * 3) 
-function autoRefresh(){self.location.reload(true) }
-//--> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>AOL Ad Information</title>
+	<link rel="shortcut icon" href="http://www.aol.com/favicon.ico" type="image/x-icon" />
+	<link href="http://www.blogsmithmedia.com/adinfo.aol.com/media/style.css" rel="stylesheet" type="text/css" />
+	
+       <script>
+
+        var querystringParamName = "fip" 
+        var baseUrl = "http://advertising.com/optout?fip=" 
+        var filter = /[^-0-9A-Za-z+/]/g 
+
+        function go() {
+            try {
+				if(window.location.toLowerCase() == 'http://adinfo.aol.com/facebook-ads/'){
+                    // preload button
+                    this.doOptOut() 
+                }
+            } catch (e) {
+                // ignore
+            }
+        }
+
+        function getUrlVars() {
+            var vars = [], hash 
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&') 
+            for (var i = 0  i < hashes.length  i++) {
+                hash = hashes[i].split('=') 
+                vars.push(hash[0]) 
+                vars[hash[0]] = hash[1] 
+            }
+            return vars 
+        }
+
+        function doOptOut() {
+
+            var cleanVal = '' 
+            var rawVal = getUrlVars()[querystringParamName] 
+
+            if (rawVal) {
+                var decodedVal = decodeURIComponent(rawVal) 
+                cleanVal = decodedVal.replace(filter, '') 
+
+                var img = document.createElement("img") 
+                img.src = baseUrl + cleanVal 
+                document.getElementById("img").appendChild(img) 
+
+                document.getElementById("rawVal").innerHTML = rawVal 
+                document.getElementById("decodedVal").innerHTML = decodedVal 
+                document.getElementById("cleanVal").innerHTML = cleanVal 
+                document.getElementById("pixel").innerHTML = baseUrl + cleanVal 
+
+                document.getElementById("message").innerHTML = "Your opt-out request has been submitted." 
+            }
+            else {
+                window.location = 'http://www.aboutads.info/choices/' 
+            }
+        }
+
+    </script>
+	
+	</head>
+<body onload="go() ">
+<div id="mainContent" class="clearfix">
+<div class="col_1of1">
+<h1>About Our Ads</h1>
+
+<p>To create a more customized online experience for consumers, some of the ads you may receive on AOL sites and services are tailored to previous online behaviors/visits on this device.</p>
+</div>
+
+<div class="col_1of2">
+<div class="box1">
+<h3>Where Can I Learn More About Advertising On AOL?</h3>
+
+<p>The practices of AOL Advertising, including advertising on our network of websites, as well as across other internal sites, products, and services that are offered by AOL Advertising are detailed in our <a href="http://privacy.aol.com/">AOL Privacy Policy</a>.&nbsp <br />
+<br />
+AOL's advertising practices can be found at <a href="http://privacy.aol.com/advertising-and-privacy">Advertising, Analytics, and Privacy</a>.</p>
+</div>
+
+<div class="box1">
+<h3>Where Can I Learn About Third Party Advertisers and Service Providers On AOL?</h3>
+
+<p>AOL uses ad networks and other service providers to help present customized content and&nbsp advertisements on AOL and other websites. See AOL <a href="http://privacy.aol.com/advertising-and-privacy">Advertising, Analytics, and Privacy</a>.&nbsp <br />
+&nbsp </p>
+</div>
+
+<div class="box1">
+<h3>What Are My Choices About Interest-Based Ad Serving From AOL Advertising?</h3>
+
+<p>You can <a href="http://advertising.aol.com/advisibility">view your interest categories</a>, <a href="http://www.aboutads.info/choices/">opt-out of the use of your data</a> for interest-based advertising, and manage the collection and use of your <a href="http://search.aol.com/aol/settings">AOL Search</a> information.<br />
+<br />
+The Self-Regulatory Program for Online Behavioral Advertising offers a <a href="http://www.aboutads.info/">consumer education page</a>.</p>
+</div>
+
+<div class="box1">
+<h3>Questions?</h3>
+
+<p>If you have any questions or concerns, you may contact us at:</p>
+
+<p><b>AOL Privacy</b><br />
+22000 AOL Way<br />
+Dulles, VA 20166</p>
+or <a href="mailto:privacyquestions@aol.com"><strong>email us</strong></a>.
+
+<p></p>
+</div>
+
+<div class="box1">
+<h3>Advertisers and Publishers</h3>
+
+<p><a href="http://advertising.aol.com/technology">Learn more</a> about AOL advertising solutions.</p>
+</div>
+</div>
+
+<div class="col_2of2">
+<div class="box1" id="optOutSection">
+<h3>How to Opt-Out</h3>
+
+<p style="text-align: center "><a class="button1" href="http://www.aboutads.info/choices/" id="ooButton" target="_blank">Opt-Out</a></p>
+
+<p>Clicking the Opt-Out button above will opt you out of behavioral advertising delivered by the AOL Advertising Network.<br />
+<br />
+Please note that you will continue to receive ads  however, we will no longer tailor ads to your preferences and usage.</p>
+</div>
+
+<div class="box1">
+<h3>Where Can I Learn More About Online Advertising?</h3>
+The Self-Regulatory Program for Online Behavioral Advertising offers a <a href="http://www.aboutads.info/">consumer education page</a>.</div>
+
+<div class="videoBox">
+<p></p>
+</div>
+
+<div style="text-align: center "><br />
+&nbsp <a href="http://www.networkadvertising.org/managing/learn_more.asp"><img alt="Network Advertising Initiative logo" border="0" height="44" hspace="4" src="http://www.blogcdn.com/adinfo.aol.com/media/2011/02/logonai.gif" vspace="4" width="121" //></a> <a href="http://www.iab.net/"><img alt="Interactive Advertising Bureau logo" border="0" height="54" hspace="4" src="http://www.blogcdn.com/privacy.aol.com/media/2010/03/iab.gif" vspace="4" width="95" //></a><br />
+&nbsp <a href="http://www.aboutads.info/"><img alt="Advertising Enhanced Notice icon" border="0" height="78" src="http://adinfo.aol.com/media/icon_enhanced_notice.jpg" vspace="4" width="69" /></a></div>
+
+<div><br />
+<br />
+<br />
+AOL is committed to complying with the Digital Advertising Alliance (DAA) Self-Regulatory Principles for Online Behavioral Advertising.</div>
+</div></div>
+
+<div id="footer">
+	<a href="http://www.aol.com"><img width="75" height="65" border="0" alt="AOL.com" src="http://media.blogcdn.com/adinfo.aol.com/media/2010/03/aol-marker-black-75.gif" class="footerBrand"></a>
+	<p>
+<a href="http://corp.aol.com">AOL Inc.</a> |
+<a href="http://privacy.aol.com/">Privacy</a> | 
+<a href="http://legal.aol.com/TOS/">Terms of Service</a>
+	<p> 0169  2014, AOL Inc. All rights reserved. </p>
+</div>
+
+</body>
+</html><script type="text/javascript" id="AolTrafficInfo"  data-blogId="6 ">
+new Image().src = '/traffic/' + '?t=js&bv=&os=&tz=&lg=&rv=&rsv=&pw=%2Fabout-our-ads%2F&cb=1232736342' 
 </script>
-<style type="text/css">
-<!-- 
-@media only screen and (max-device-width: 480px) {
-html {-webkit-text-size-adjust:none } 
-.navigation {font-family: teletype }
-}
-//--> 
-</style>
-</head>
-<body  BGCOLOR="#FFFFFF"      TEXT="#000000"  LINK="#000000"  VLINK="#000000"  ALINK="#000000"    >
-<tt><b>
-<center>
-<!--JavaScript Tag  // Intermarkets Website: DrudgeReport // Page: DrudgeReport - Home  // Placement: DrudgeReport_Home_Top_dynamic (1131607) // created at: Apr 13, 2011 9:35:07 AM -->
-<div id="IMK0001"></div>
-<div id="1131607" align="center" style="width:728px padding:0px margin:0px overflow:visible text-align:center">
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/DrudgeReport/drudgereport_targeting.js"></script>
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/DrudgeReport/DrudgeReport_Home_Top_dynamic.js"></script>
-<noscript><a href="http://adserver.adtechus.com/adlink/3.0/5235/1131607/0/170/ADTECH cookie=info loc=0 key=key1+key2+key3+key4 grp=000001" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5235/1131607/0/170/ADTECH cookie=info excludedSizes=160x600,300x600 loc=0 key=key1+key2+key3+key4 grp=000001" border="0"></a></noscript>
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/AdFeedback/processAdFeedback.js"></script>
-<table border="0"><td width="728" align="center"><b><font face="Arial, Helvetica, sans-serif" size="-4"><script type="text/javascript">loadAdVals("AD FEEDBACK") </script></font></b></td></table>
-</div>
-<!-- End of JavaScript Tag -->
-</center>
-<div id="drudgeTopHeadlines"><BR><BR><BR>
-<! TOP LEFT STARTS HERE><tt><b><BR>
-<A HREF="http://www.nytimes.com/2014/09/16/opinion/roger-cohen-the-great-unraveling.html">The Great Unraveling: <BR>
-It was a time of weakness...<BR>
-It was a time of hatred...<BR>
-It was a time of fever...<BR>
-It was a time of disorientation... </A>
-
-<center><BR><BR><BR>
-
-
-<! MAIN HEADLINE><font FACE="ARIAL,VERDANA,HELVETICA"><font size="+7"><IMG SRC="http://ts1.mm.bing.net/th?&id=HN.608054725290623184&w=300&h=300&c=0&pid=1.9&rs=0&p=0" width=450><BR><A HREF="http://washingtonexaminer.com/cdc-issues-ebola-checklist-now-is-the-time-to-prepare/article/2553 6">CDC: PREPARE FOR EBOLA</A>
-
-
-
-
-
-</center>
-<!-- Main headlines links END --->
-</b></tt>
-</div>
-
-<center>
-<a href="http://www.drudgereport.com/"><img src="http://www.drudgereport.com/i/logo9.gif" border="0" WIDTH="610" HEIGHT="85"></a>
-</center><br>
-
-</b></tt>
-
-<! FIRST COLUMN STARTS HERE>
-<center><table CELLPADDING="3" WIDTH="100%"><tr>
-<td ALIGN="LEFT" VALIGN="TOP" WIDTH="30%"><tt><b>
-
-
-<A HREF="http://news.yahoo.com/rivals-bid-votes-knife-edge-scotland-referendum-114656453.html _ylt=AwrSyCWeDxdU.yYAoL3QtDMD">UPDATE:  British PM heads to Scotland hoping to boost 'No' vote...</A>
-<hr>
-<A HREF="http://www.ubergizmo.com/2014/09/samsung-sgr-a1-robot-sentry-is-one-cold-machine/">Robot sentry shoots targets automatically -- from 2 miles away...</A>
-<hr>
-<A HREF="http://www.cnsnews.com/news/article/ali-meyer/46496145-food-stamp-recipients-can-fill-yankee-stadium-925-times">46,000,000 Americans on Food Stamps...</A>
-<hr>
-<A HREF="http://eagnews.org/vermont-schools-ban-brownies-the-kids-like-kale-here/">Vermont schools ban brownies...<BR><BR>
-'The kids like kale here'...<BR><BR>
-Fruit kebabs...<BR><BR>
-Gluten-free paleo lemon bars...</A>
-<hr>
-<A HREF="http://www.telegraph.co.uk/news/worldnews/northamerica/usa/11096086/Backing-for-Condoleezza-Rice-to-take-over-scandal-hit-NFL.html"><font color=red>UPDATE:  Condoleezza Rice pushed to lead scandal hit NFL...</font></A><BR><BR>
-<A HREF="http://deadline.com/2014/09/sunday-night-football-ratings-miss-america-viewers-big-brother-834458/">Football Ratings Fall Again...</A><BR><BR>
-<A HREF="http://www.usatoday.com/story/sports/nfl/2014/09/15/league-polices-women-roger-goodell/15664335/">League announces 4 women will help shape new policy...</A>
-<hr>
-<A HREF="http://nypost.com/2014/09/14/obamas-ship-is-sinking/">GOODWIN:  Obama ship sinking...</A><BR><BR>
-<A HREF="http://www.washingtontimes.com/news/2014/sep/14/obama-sought-repeal-of-bush-war-statute-now-used-t/"><I>Sought repeal of Bush resolution now used to justify Islamic State strikes...</I></A>
-<hr>
-<A HREF="http://cnsnews.com/mrctv-blog/dan-joseph/video-college-students-sign-petition-support-isis">VIDEO: College Students Sign Petition in Support of ISIS...</A>
-<HR>
-<A HREF="http://www.politico.com/blogs/under-the-radar/2014/09/feds-step-up-terrorist-recruitment-fight-in-us-195459.html">Holder launches media campaign against homegrown terrorists...</A><BR><BR>
-<I><A HREF="http://www.politico.com/blogs/under-the-radar/2014/09/feds-step-up-terrorist-recruitment-fight-in-us-195459.html">'Broad network of community partnerships'...</A></I>
-<HR>
-<A HREF="http://nypost.com/2014/09/14/leo-v-science-vanishing-evidence-for-climate-change/">Geologist: 'Vanishing evidence for climate change'...</A>
-<HR>
-<IMG SRC="http://l1.yimg.com/bt/api/res/1.2/PjO5MRd4McJo5zoXQJ9MKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/67b13d0b32d0aa245f0f6a706700ba48.jpg" width=200><BR><BR>
-<A HREF="http://news.yahoo.com/n-korea-sentences-american-six-years-labour-camp-092042291.html">NKorea jails American to 6 years hard labor...</A>
-<HR>
-<A HREF="http://hosted.ap.org/dynamic/stories/U/US_HEALTH_OVERHAUL_VERSION_2?SITE=AP&SECTION=HOME&TEMPLATE=DEFAULT&CTIME=2014-09-14-07-37-16">CONFUSION:  Hurdles for Obamacare in 2nd sign-up season...</A>
-<HR>
-<A HREF="http://www.telegraph.co.uk/news/worldnews/northamerica/usa/11094232/Super-rich-make-last-stand-against-California-drought.html">Super-rich in last stand against CA drought...</A><BR><BR>
-<A HREF="http://www.theguardian.com/business/2014/sep/14/alarm-almond-farmers-drain-california-dry"><I>Almond supply at risk...</I></A><BR><BR>
-<A HREF="http://www.mercurynews.com/drought/ci_26514043/los-gatos-nudist-colony-accused-stealing-water-from">Nudist camp accused of stealing water...</A>
-<HR>
-<A HREF="http://www.washingtonpost.com/blogs/capital-weather-gang/wp/2014/09/15/bright-fireball-streaks-across-mid-atlantic-northeast-sky-sunday-night/">VIDEO: Fireball lights up sky over eastern USA...</A><BR><BR>
-<I><A HREF="http://hosted.ap.org/dynamic/stories/U/US_SCI_NASA_ASTEROIDS?SITE=AP&SECTION=HOME&TEMPLATE=DEFAULT&CTIME=2014-09-15-14-05-47">NASA inspector blasts asteroid protection program...</A></I>
-<HR>
-<A HREF="http://www.nbcnewyork.com/news/local/Boy-Bitten-Rat-Sleeping-Brooklyn-Apartment-Bite-Marks-Blood-274982511.html">HORROR: Rat Attacks Boy Sleeping in Bed...
-<BR><BR>
-<I>'Blood Everywhere'...</I></A>
-<HR>
- 
-<!--JavaScript Tag  // Website: DrudgeReport // Page: DrudgeReport - Home  // Placement: DrudgeReport_Home_Left_180x150 (1131609) // created at: Apr 13, 2011 9:42:36 AM -->
-<div id="1131609" align="left" style="width:300px padding:0px margin:0px overflow:visible text-align:left">
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/DrudgeReport/DrudgeReport_Home_Left_dynamic.js"></script>
-<noscript><a href="http://adserver.adtechus.com/adlink/3.0/5235/1131609/0/170/ADTECH cookie=info loc=0 key=key1+key2+key3+key4 grp=000001" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5235/1131609/0/170/ADTECH cookie=info excludedSizes=160x600,728x90 loc=0 key=key1+key2+key3+key4 grp=000001" border="0"></a></noscript>
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/AdFeedback/processAdFeedback.js"></script>
-<table border="0"><td width="300" align="left"><b><font face="Arial, Helvetica, sans-serif" size="-4"><script type="text/javascript">loadAdVals("AD FEEDBACK") </script></font></b></td></table>
-</div>
-<!-- End of JavaScript Tag -->
-<hr>
-
-<!    L I N K S    F I R S T    C O L U M N>
-
-
-<A HREF="http://news.myway.com/index/id/world%7Cap.html">AP WORLD</a><br>
-<A HREF="http://news.myway.com/index/id/national%7Cap.html">AP NATIONAL</a><br>
-<A HREF="http://www.lasvegassun.com/news/beltway/">AP WASHINGTON</a><br>
-<A HREF="http://news.myway.com/index/id/business%7Cap.html">AP BUSINESS</a><br>
-<A HREF="http://www.syracuse.com/newsflash/index.ssf/entertainment">AP ENTERTAINMENT</a><br>
-<A HREF="http://news.myway.com/index/id/top|ap.html">AP ON THE HOUR</a><br>
-<A HREF="http://hosted.ap.org/dynamic/fronts/RAW?SITE=AP&SECTION=HOME">AP RAW</a><br>
-<A HREF="http://ap.tbo.com/breaking/national/">AP BREAKING</a><br>
-<A HREF="http://search.news.yahoo.com/search/news?p=a&c=news_photos">AP/REUTERS PHOTO WIRE</a><br>
-<A HREF="http://hosted.ap.org/dynamic/files/specials/videolineups/audio.html?SITE=MNROC&SECTION=HOME">AP AUDIO</A><BR>
-<A HREF="http://www.bloomberg.com/?pid=20601087&sid=a0giIbmAzkss&pos=7">BLOOMBERG</a><br>
-<A HREF="http://home.businesswire.com/portal/site/home/index.jsp?front_door=true&headlineSearchConfigBO=v2*G0">BUSINESS WIRE</A><BR>
-<A HREF="http://www.monstersandcritics.com/news/">DEUTSCHE PRESSE-AGENTUR</A><BR>
-<A HREF="http://news.nasdaq.com/aspxcontent/newsheadlines.aspx?&SourceCode=">DOW JONES</A><BR>
-<A HREF="http://www.efe.com/principal.asp?opcion=0&idioma=INGLES">EFE</A><BR>
-<A HREF="http://www.ians.in">INDO-ASIAN NEWS SERVICE</A><BR>
-<A HREF="http://www.interfax.com">INTERFAX</A><BR>
-<A HREF="http://www2.irna.ir/en/">ISLAMIC REPUBLIC WIRE</a><br>
-<A HREF="http://www.itar-tass.com/en/">ITAR-TASS</A><BR>
-<A HREF="http://english.kyodonews.jp/">KYODO</a><br>
-<A HREF="http://www.mcclatchydc.com">MCCLATCHY [DC]</A><BR>
-<A HREF="http://english.pravda.ru/allnews_en.html">PRAVDA</A><BR>
-<A HREF="https://uk.news.yahoo.com/uk/">PRESS ASSOCIATION</A><BR>
-<A HREF="http://www.ptinews.com/">PRESS TRUST INDIA</A><BR>
-<A HREF="http://www.prnewswire.com/news-releases/news-releases-list/">PR NEWSWIRE</a><br>
-<A HREF="http://biz.yahoo.com/n/y/y0010.html">[SHOWBIZ] PR WIRE</a><br>
-<A HREF="http://public.shns.com">SCRIPPS HOWARD</A><BR>
-<A HREF="http://usinfo.state.gov/usinfo/products/washfile.html">US INFO  WIRE</a><BR>
-<A HREF="http://www.wenn.com/all-news/">WENN SHOWBIZ</A><BR>
-<A HREF="http://www.xinhuanet.com/english/index.htm">XINHUA</A><BR>
-<A HREF="http://english.yonhapnews.co.kr/">YONHAP</A><hr>
-
-<A HREF="http://www.thepaperboy.com/uk/front-pages.cfm">FRONT PAGES UK</A>
-<A HREF="http://www.newseum.org/todaysfrontpages/">WORLD</A><hr>
-<A HREF="http://www.topix.net">LOCAL NEWS BY ZIPCODE</A><hr>
-<A HREF="http://tvbythenumbers.com/">TV RATINGS</A><BR>
-<A HREF="http://boxofficemojo.com/daily/chart/">MOVIE BOXOFFICE</A><HR>
-
-<A HREF="http://www.abcnews.com/">ABCNEWS</a><BR>
-<A HREF="http://www.accesshollywood.com/">ACCESS HOLLYWOOD</A><BR>
-<A HREF="http://adage.com/news_and_features/deadline/index.html">AD AGE DEADLINE</a><br>
-<A HREF="http://www.Adweek.com">ADWEEK</A><BR>
-<A HREF="http://www.antiwar.com/">ANTI-WAR.COM</A><BR>
-<A HREF="http://www.theatlantic.com/">ATLANTIC</A><BR>
-<A HREF="http://www.theatlanticwire.com/">ATLANTIC WIRE</A><BR>
-<A HREF="http://news.bbc.co.uk/default.stm">BBC</a><br>
-<A HREF="http://www.bbc.co.uk/worldservice/news/summary.ram">BBC AUDIO</a><br>
-<A HREF="http://www.bild.com">BILD</A><BR>
-<A HREF="http://www.billboard.com">BILLBOARD </a><br>
-<A HREF="http://www.theblaze.com/">BLAZE</A><BR>
-<A HREF="http://www.boston.com/globe/">BOSTON GLOBE</A><BR>
-<A HREF="http://bostonherald.com/news">BOSTON HERALD</A><BR>
-<A HREF="http://www.breitbart.com/">BREITBART</A><BR>
-<A HREF="http://www.broadcastingcable.com/">BROADCASTING & CABLE</A><BR>
-<A HREF="http://www.businessinsider.com/">BUSINESS INSIDER</A><BR>
-<A HREF="http://www.buzzfeed.com/">BUZZFEED</A><BR>
-<A HREF="http://www.cbsnews.com">CBS NEWS</A><BR>
-<A HREF="http://www.c-span.org">C-SPAN</a><br>
-<A HREF="http://www.suntimes.com/">CHICAGO SUN-TIMES</a><br>
-<A HREF="http://www.chicagotribune.com">CHICAGO TRIB</a><br>
-<A HREF="http://www.csmonitor.com/">CHRISTIAN SCIENCE</a><br>
-<A HREF="http://www.cnbc.com/">CNBC</A><BR>
-<A HREF="http://www.cnn.com">CNN</a><BR>
-<A HREF="http://www.cnn.com/POLITICS/blogs/politicalticker">CNN POLITICAL TICKER</A><BR>
-<A HREF="http://thedailybeast.com">DAILY BEAST</A><BR>
-<A HREF="http://dailycaller.com/">DAILY CALLER</A><BR>
-<A HREF="http://dailykos.com/">DAILY KOS</A><BR>
-<A HREF="http://www.thedailyswarm.com">DAILY SWARM</A><BR>
-<A HREF="http://www.variety.com/">DAILY VARIETY</a><br>
-<A HREF="http://www.deadline.com/hollywood/">DEADLINE HOLLYWOOD</A><BR>
-<A HREF="http://www.spiegel.de/international">DER SPIEGEL</A><BR>
-<A HREF="http://www.eonline.com/index.jsp">E!</a><br>
-<A HREF="http://www.economist.com">ECONOMIST</a><br>
-<A HREF="http://www.editorandpublisher.com/home.aspx">EDITOR & PUBLISHER</A><br>
-<A HREF="http://www.emirates247.com">EMIRATES 24/7</A><BR>
-<A HREF="http://www.ew.com/ew/">ENT WEEKLY</a><br>
-<A HREF="http://www.esquire.com/">ESQUIRE</A><BR>
-<A HREF="http://www.ft.com">FINANCIAL TIMES</A><BR>
-<A HREF="http://www.forbes.com/">FORBES</a><br>
-<A HREF="http://www.foxnews.com">FOXNEWS</a><br>
-<A HREF="http://www.thefoxnation.com/">FOXNEWS NATION</A><BR>
-<A HREF="http://www.france24.com/en/">FRANCE 24</A><BR>
-<A HREF="http://freebeacon.com/">FREE BEACON</A><BR>
-<A HREF="http://www.freerepublic.com/home.htm">FREE REPUBLIC</A><BR>
-<A HREF="http://www.gawker.com">GAWKER</A><BR>
-<A HREF="http://www.hotair.com">HOT AIR</A><BR>
-<A HREF="http://www.hellomagazine.com/">HELLO!</A><BR>
-<A HREF="http://thehill.com">HILL</a><br>
-<A HREF="http://www.hollywoodreporter.com">H'WOOD REPORTER</a><br>
-<A HREF="http://www.huffingtonpost.com">HUFFINGTON POST</A><BR>
-<A HREF="http://www.humanevents.com">HUMAN EVENTS</A><BR>
-<A HREF="http://www.iafrica.com">IAFRICA</A><BR>
-<A HREF="http://www.iht.com">INTERNATIONAL HERALD TRIB</a><br>
-<A HREF="http://www.infowars.com/">INFOWARS</A><BR>
-<A HREF="https://firstlook.org/theintercept/">INTERCEPT</A><BR>
-<A HREF="http://www.investors.com">INVEST BUS DAILY</a><br>
-<A HREF="http://www.jpost.com">JERUSALEM POST</A><BR>
-<A HREF="http://www.dailynewslosangeles.com/">LA DAILY NEWS</A><BR>
-<A HREF="http://www.latimes.com">LA TIMES</a><br>
-<A HREF="http://www.lucianne.com">LUCIANNE.COM</a><BR>
-<A HREF="http://www.mediaweek.com">MEDIA WEEK</a><br>
-<A HREF="http://www.mediaite.com/">MEDIAITE</A><BR>
-<A HREF="http://www.motherjones.com/">MOTHER JONES</A><BR>
-<A HREF="http://www.msnbc.msn.com">MSNBC</a><br>
-<A HREF="http://www.TheNation.com">NATION</a><br>
-<A HREF="http://www.nationalenquirer.com/">NATIONAL ENQUIRER</a><br>
-<A HREF="http://nationaljournal.com/">NATIONAL JOURNAL</A><BR>
-<A HREF="http://www.nationalreview.com">NATIONAL REVIEW</a><br>
-<A HREF="http://www.nbcnews.com/">NBC NEWS</A><BR>
-<A HREF="http://www.thenewrepublic.com/">NEW REPUBLIC</a><br>
-<A HREF="http://www.newsweek.com/newswire">NEWSWEEK</A><BR>
-<A HREF="http://nymag.com">NEW YORK</A><BR>
-<A HREF="http://www.nydailynews.com/">NY DAILY NEWS</a><br>
-<A HREF="http://www.observer.com/">NY OBSERVER</a><br>
-<A HREF="http://www.nypost.com/">NY POST</a><br>
-<A HREF="http://www.nytimes.com">NY TIMES</a><br>
-<A HREF="http://www.nytimes.com/timeswire/">NY TIMES WIRE</A><BR>
-<A HREF="http://www.newyorker.com">NEW YORKER</A><BR>
-<A HREF="http://newsbusters.org/">NEWSBUSTERS</A><BR>
-<A HREF="http://www.newsbytes.com">NEWSBYTES</A><BR>
-<A HREF="http://www.newsmax.com">NEWSMAX</A><BR>
-<A HREF="http://www.newsweek.com/">NEWSWEEK</a><br>
-<A HREF="http://www.kcna.co.jp/index-e.htm">NKOREAN NEWS</a><br>
-<A HREF="http://www.people.com">PEOPLE</a><BR>
-<A HREF="http://www.philly.com/mld/inquirer">PHILLY INQUIRER</A><BR>
-<A HREF="http://www.philly.com/mld/dailynews">PHILLY DAILY NEWS</A><BR>
-<A HREF="http://pjmedia.com/">PJ MEDIA</A><BR>
-<A HREF="http://www.politico.com/">POLITICO</a><BR>
-<A HREF="http://radaronline.com/">RADAR</A><BR>
-<A HREF="http://realclearpolitics.com">REAL CLEAR POLITICS</A><BR>
-<A HREF="http://www.reasonmag.com/">REASON</a><br>
-<A HREF="http://www.redstate.com/">RED STATE</A><BR>
-<A HREF="http://www.rollcall.com/">ROLL CALL</a><br>
-<A HREF="http://www.rollingstone.com">ROLLING STONE</A><BR>
-<A HREF="http://www.salon.com/">SALON</A><BR>
-<A HREF="http://www.sfgate.com/chronicle/">SAN FRAN CHRON</A><BR>
-<A HREF="http://www.seattletimes.com">SEATTLE TIMES</A><BR>
-<A HREF="http://www.sky.com/skynews/home">SKY NEWS</a><br>
-<A HREF="http://www.slate.com">SLATE</a><br>
-<A HREF="http://thesmokinggun.com/">SMOKING GUN</A><BR>
-<A HREF="http://www.splashnewsonline.com/">SPLASH</A><BR>
-<A HREF="http://www.starmagazine.com">STAR</a><br>
-<A HREF="http://www.smh.com.au/text/index.html">SYDNEY MORNING HERALD</A><BR>
-<A HREF="http://talkingpointsmemo.com">TALKING POINTS MEMO</A><BR>
-<A HREF="http://time.com">TIME MAG</a><br>
-<A HREF="http://www.TMZ.com">TMZ</A><BR>
-<A HREF="http://www.dailymail.co.uk/home/index.html">[UK] DAILY MAIL</A><BR>
-<A HREF="http://www.mirror.co.uk">[UK] DAILY MIRROR</a><br>
-<A HREF="http://www.dailyrecord.co.uk/news/">[UK] DAILY RECORD</A><BR>
-<A HREF="http://www.thisislondon.co.uk/news">[UK] EVENING STANDARD</a><br>
-<A HREF="http://www.express.co.uk">[UK] EXPRESS</a><br>
-<A HREF="http://www.guardian.co.uk/world">[UK] GUARDIAN</a><br>
-<A HREF="http://www.independent.co.uk/">[UK] INDEPENDENT </a><br>
-<A HREF="http://www.thesun.co.uk">[UK] SUN</a><br>
-<A HREF="http://www.telegraph.co.uk/">[UK] TELEGRAPH</a><br>
-<A HREF="http://www.usnews.com/usnews/home.htm">US NEWS</a><br>
-<A HREF="http://www.usatoday.com/">USA TODAY</a><br>
-<A HREF="http://www.vanityfair.com">VANITY FAIR</A><BR>
-<A HREF="http://www.theverge.com/">VERGE</A><BR>
-<A HREF="http://www.villagevoice.com/">VILLAGE VOICE</a><br>
-<A HREF="http://www.vox.com/">VOX</A><BR>
-<A HREF="http://online.wsj.com/home-page">WALL STREET JOURNAL</A><BR>
-<A HREF="http://online.wsj.com/public/page/news-viewer.html">WALL STREET JOURNAL FEED</A><BR>
-<A HREF="http://www.washingtonexaminer.com/">WASH EXAMINER</A><BR>
-<A HREF="http://www.washingtonpost.com/">WASH POST</a><br>
-<A HREF="http://www.washingtontimes.com">WASH TIMES</a><br>
-<A HREF="http://www.weeklystandard.com">WEEKLY STANDARD</a><br>
-<A HREF="http://www.wnd.com/">WORLD NET DAILY</A><BR>
-<A HREF="http://www.wowowow.com/">WOWOWOW</A><BR>
-<A HREF="http://www.x17online.com">X17</A><HR>
-
-</b></tt>
-</td>
-<td align="center" valign="top" width="3"><div style="width:1px background-color:#C0C0C0 margin-left:1px margin-right:1px height:2500px "></div></td>
-
-
-<! SECOND COLUMN BEGINS HERE>
-<td ALIGN="LEFT" VALIGN="TOP" WIDTH="30%"><tt><b>
-
-
-
-<A HREF="http://www.dailymail.co.uk/news/article-2756134/Dozens-Christians-including-women-children-arrested-Saudi-Arabia-tip-state-s-Islamist-police-force.html">Saudi police arrest entire Christian prayer meeting...</A>
-<hr>
-<A HREF="http://news.yahoo.com/exclusive-two-apple-medical-trials-shed-light-healthkit-110526873--finance.html _ylt=AwrTWf0fERdUaxkAXEjQtDMD">APPLE medical trials shed light on how HealthKit will work...<BR><BR>
-<I>Gathers data from apps  Viewed by doctors... </I></A>
-<hr>
-<IMG SRC="http://l2.yimg.com/bt/api/res/1.2/8tsEDjXOoPEU0S_WnDxjPg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2014-09-14T230036Z_2057170836_GM1EA9F0JDQ01_RTRMADP_3_USA-POLITICS.JPG" WIDTH=200><BR><BR><A HREF="http://www.nytimes.com/2014/09/15/us/at-a-steak-fry-in-iowa-the-clintons-sell-their-brand-of-sizzle.html">WE'RE BACK...</A>
-<BR><BR>
-<A HREF="http://www.breitbart.com/InstaBlog/2014/09/14/Hillary-Dodges-Immigration-Questions-in-Iowa">Hillary Dodges Immigration Questions in Iowa...</A>
-<BR><BR>
-<A HREF="http://www.nationalreview.com/campaign-spot/387969/hillary-clinton-world-champion-pretend-griller-jim-geraghty
-"><font color=red>'Pretends to Grill Steak That Had Been Pre-Cooked for Her'...</font></A>
-<BR><BR>
-<A HREF="http://www.politico.com/story/2014/09/2016-elections-hillary-clinton-110942.html">Does she really need this?</A>
-<BR><BR>
-<A HREF="http://freebeacon.com/politics/bill-clinton-doesnt-know-bruce-braleys-name/">Bill Doesn't Know Senate Candidate's Name...</A>
-<hr>
-<IMG SRC="http://l3.yimg.com/bt/api/res/1.2/HqEraYshKFhD94qxHL3SbQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fe04b9d780b03c235f0f6a706700d44c.jpg" width=200>
-<BR><BR>
-<A HREF="http://www.washingtonpost.com/politics/shifting-his-views-rand-paul-seeks-broader-appeal--but-may-risk-his-outsider-image/2014/09/14/c89105c8-3869-11e4-bdfb-de4104544a37_story.html">PAPER:  Rand Paul distancing himself from libertarian past...</A><BR><BR>
-<A HREF="http://www.weeklystandard.com/blogs/where-does-rand-stand_804897.html">MAG:  Where Does Rand Stand?</A>
-<hr>
-<A HREF="http://www.myfoxny.com/story/26534182/fbi-launches-national-facial-recognition-system">FBI launches national facial recognition system...</A>
-<HR>
-<A HREF="http://www.google.co.uk/url?url=http://online.wsj.com/articles/were-number-32-1410729349&rct=j&q=&esrc=s&sa=U&ei=rkAWVNqeCYu4ogTsgoGABw&ved=0CBcQqQIwAA&usg=AFQjCNFSx1JQvlRRPIr7H-YCG87qSkyrDw">USA RANKED #32 IN BIZ INDEX...<BR><BR>
-<I>'Tax burden close to  worst in industrialized world'...</I></A>
-<hr>
-<A HREF="http://newsoffice.mit.edu/2014/mit-cheetah-robot-runs-jumps-0915">Cheetah Bot Runs and Jumps UNTETHERED...<BR><BR>
-Will Sprint 30MPH!<BR><BR>
-Quietly...</A>
-<HR>
-<A HREF="http://www.ft.com/cms/s/0/b9ab8ec2-3c09-11e4-a6ce-00144feabdc0.html">Tech chiefs in plea over privacy damage...<BR><BR>
-<I>Backlash...</I></A><BR><BR>
-<A HREF="http://online.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536?mod=WSJ_hpp_sections_tech">THIEL: Competition Is for Losers...</A><BR><BR>
-<A HREF="http://www.google.co.uk/url?url=http://online.wsj.com/articles/venture-capitalist-sounds-alarm-on-silicon-valley-risk-1410740054&rct=j&q=&esrc=s&sa=U&ei=QDQWVNPXLsmLiwLOwoDQAw&ved=0CBYQqQIwAA&usg=AFQjCNG9L3SPLfP4t9EBHI1554upXjGwyQ">Venture Capitalist Sounds Alarm on Silicon Valley Risk...</A>
-<HR>
-<A HREF="http://www.dailymail.co.uk/news/article-2756165/Django-Unchained-actress-claimed-harassed-LAPD-making-boyfriend-car-actually-having-sex-witnesses-claim-police-audio-claims-went-racism-rant.html">UPDATE:  Actress claims she was harassed by LAPD officers for kissing white boyfriend...<BR><BR>
-Was having sex with him in car?</A>
-<hr>
-<A HREF="http://eagnews.org/students-to-be-fingerprinted-to-monitor-their-diets/">School to fingerprint students to 'monitor diets'...</A>
-<HR>
-<A HREF="http://news.yahoo.com/swiss-shield-snowden-political-extradition-u-173827103.html ">UPDATE: Swiss say would shield Snowden from 'political' extradition to USA...</A>
-<HR>
-<A HREF="http://www.usatoday.com/story/news/nation/2014/09/14/prediabetes-rising-diabetes-threatening-usa/15134489/">Diabetes rates fuel national health crisis...</A>
-<HR>
-<A HREF="http://denver.cbslocal.com/2014/09/15/gamers-use-police-hoax-to-lash-out-at-opponents">Gamers Use 'Swatting' Police Hoaxes To Lash Out At Opponents...</A>
-<hr>
-
-<! L I N K S      S E C O N D     C O L U M N>
-
-<A HREF="http://wabcradio.com/">WABC RADIO...</A><BR>
-<A HREF="http://www.iheart.com/live/5874/?autoplay=true">WOR...</A><BR>
-<A HREF="http://www.kfiam640.com/main.html">KFI:  LA... </A><BR>
-<A HREF="http://www.wtop.com/">WTOP: DC...</A><hr>
-<A HREF="http://blogs.abcnews.com/thenote/">ABCNEWS NOTE</A><BR>
-<A HREF="http://www.foxnews.com/category/fox-news-first">FOXNEWS FIRST</A><BR>
-<A HREF="http://www.politico.com/playbook/">MIKE ALLEN PLAYBOOK</A><BR>
-<A HREF="http://firstread.msnbc.msn.com/">MSNBC FIRST READ</A><BR>
-<A HREF="http://www.politico.com/morningscore/">POLITICO MORNING SCORE</A><BR>
-<A HREF="http://voices.washingtonpost.com/44/">WASH POST RUNDOWN...</A><hr>
-<A HREF="http://www.mirror.co.uk/3am/">3 AM GIRLS</A><BR>
-<A HREF="http://pagesix.com/author/cindy-adams/">CINDY ADAMS</A><BR>
-<A HREF="http://www.dailymail.co.uk/tvshowbiz/columnist-1000601/Baz-Bamigboye.html">BAZ BAMIGBOYE</A><BR>
-<A HREF="http://blogs.herald.com/dave_barrys_blog/">DAVE BARRY</A><BR>
-<A HREF="http://www.weeklystandard.com/author/fred-barnes">FRED BARNES</A><BR>
-<A HREF="http://washingtonexaminer.com/author/michael-barone">MICHAEL BARONE</A><BR>
-<A HREF="http://www.theblaze.com/">GLENN BECK</A><BR>
-<A HREF="http://washingtonexaminer.com/politics/washington-secrets">PAUL BEDARD</A><BR>
-<A HREF="http://www.thesun.co.uk/sol/homepage/showbiz/bizarre/">BIZARRE [SUN]</A><BR>
-<A HREF="http://www.cnn.com/POLITICS/borger.commentary/archive">GLORIA BORGER</A><BR>
-<A HREF="http://www.mediaresearch.org/BozellColumns/bozellnewswelcome.asp">BRENT BOZELL</a><BR>
-<A HREF="http://www.cnn.com/POLITICS/brazile.commentary/archive/">DONNA BRAZILE</A><BR>
-<A HREF="http://topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/davidbrooks/index.html">DAVID BROOKS</A><BR>
-<A HREF="http://buchanan.org/blog/columns">PAT BUCHANAN</a><br>
-<A HREF="http://bostonherald.com/news_opinion/columnists/howie_carr">HOWIE CARR</A><BR>
-<A HREF="http://www.townhall.com/columnists/monacharen/archive.shtml">MONA CHAREN</a><br>
-<A HREF="http://www.janetcharltonshollywood.com/">JANET CHARLTON</A><BR>
-<A HREF="http://voices.washingtonpost.com/thefix/">CHRIS CILLIZZA </A><BR>
-<A HREF="http://www.thedailybeast.com/contributors/eleanor-clift.html">ELEANOR CLIFT</A><BR>
-<A HREF="http://sitesearch.washingtonpost.com/cgi-bin/search99.pl?searchdatabase=serf&serf_wp=on&wp=on&day_count=14&byline=Richard+Cohen&source=post/">RICHARD COHEN</A><BR>
-<A HREF="http://www2.nationalmemo.com/?author_name=joeconason">JOE CONASON</a><br>
-<A HREF="http://www.nydailynews.com/entertainment/gossip/confidential">[NY DAILY NEWS] CONFIDENTIAL</A><BR>
-<A HREF="http://www.davidcorn.com">DAVID CORN</A><BR>
-<A HREF="http://www.anncoulter.com">ANN COULTER</a><br>
-<A HREF="http://craigcrawford.com/">CRAIG CRAWFORD</A><BR>
-<A HREF="http://www.mainstreet.com/category/authors/jim-cramer">JIM CRAMER</A><BR>
-<A HREF="http://www.nydailynews.com/authors?author=Stanley%20Crouch">STANLEY CROUCH</A><BR>
-<A HREF="http://www.washingtontimes.com/news/political-theater/">JOSEPH CURL</A><BR>
-<A HREF="http://loudobbs.com/">LOU DOBBS</A><BR>
-<A HREF="http://www.washingtontimes.com/staff/arnaud-de-borchgrave/">DE BORCHGRAVE</A><BR>
-<A HREF="http://topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/maureendowd/index.html">MAUREEN DOWD</A><BR>
-<A HREF="http://www.wnd.com/authors/lelder/">LARRY ELDER</A><BR>
-<A HREF="http://www.creators.com/opinion_show.cfm?columnsName=ses">SUSAN ESTRICH</A><BR>
-<A HREF="http://www.wnd.com/authors/jfarah/">JOSEPH FARAH</a><br>
-<A HREF="http://www.townhall.com/columnists/suzannefields/archive.shtml">SUZANNE FIELDS</a><br>
-<A HREF="http://nikkifinke.com/">NIKKI FINKE</A><BR>
-<A HREF="http://blogs.reuters.com/frontrow/">FIRST DRAFT [REUTERS]</A><BR>
-<A HREF="http://www.mediabistro.com/fishbowldc/">FISHBOWL, DC</A><BR>
-<A HREF="http://www.mediabistro.com/fishbowlny/">FISHBOWL, NYC</A><BR>
-<A HREF="http://www.showbiz411.com">ROGER FRIEDMAN</A><BR>
-<A HREF="http://spectator.org/people/john-h-fund/all">JOHN FUND</A><BR>
-<A HREF="http://www.gertzfile.com">BILL GERTZ</a><br>
-<A HREF="http://www.uexpress.com/georgieannegeyer/">GEORGIE GEYER</A><BR>
-<A HREF="http://www.nationalreview.com/author/897">JONAH GOLDBERG</a><br>
-<A HREF="http://www.boston.com/news/globe/editorial_opinion/oped/goodman/">ELLEN GOODMAN</a><BR>
-<A HREF="https://firstlook.org/theintercept/">GLENN GREENWALD</A><BR>
-<A HREF="http://www.thedailybeast.com/author/lloyd-grove/">LLOYD GROVE</A><BR>
-<A HREF="http://www.hollywoodreporter.com/hr/features/columns/martin_grove/index.jsp">MARTIN GROVE</a><BR>
-<A HREF="http://thepage.time.com">MARK HALPERIN</A><BR>
-<A HREF="http://www.weeklystandard.com/author/stephen-f.-hayes">STEPHEN HAYES</A><BR>
-<A HREF="http://www.miamiherald.com/424">CARL HIAASEN</A><BR>
-<A HREF="http://online.wsj.com/public/search?article-doc-type=%7BWonder+Land%7D&HEADER_TEXT=wonder+land">HENNINGER</A><BR>
-<A HREF="http://www.wnd.com/author/nhentoff/">NAT HENTOFF</a><br>
-<A HREF="http://www.perezhilton.com">PEREZ HILTON</A><BR>
-<A HREF="http://www.hughhewitt.com/blog/">HUGH HEWITT</A><BR>
-<A HREF="http://www.washingtontimes.com/news/nuclear-option/">CHARLIE HURT</A><BR>
-<A HREF="http://www.lauraingraham.com/">LAURA INGRAHAM</A><BR>
-<A HREF="http://www.washingtontimes.com/news/inside-the-beltway/">INSIDE BELTWAY</a><br>
-<A HREF="http://www.washingtontimes.com/news/inside-the-ring/">INSIDE THE RING</a><br>
-<A HREF="http://pagesix.com/author/richard-johnson/">RICHARD JOHNSON</A>
-<BR>
-<A HREF="http://www.infowars.com/">ALEX JONES</A><BR>
-<A HREF="http://washingtonpost.com/wp-dyn/politics/fedpage/columns/intheloop/">AL KAMEN</a><br>
-<A HREF="http://dailycaller.com/kausfiles/">MICKEY KAUS</a><br>
-<A HREF="http://nypost.com/author/keith-j-kelly/">KEITH J. KELLY</A><BR>
-<A HREF="http://www.politico.com/reporters/MichaelKinsley.html">MICHAEL KINSLEY</A><BR>
-<A HREF="http://www.vox.com/authors/ezra-klein">EZRA KLEIN</A><BR>
-<A HREF="http://www.time.com/time/columnist/klein">JOE KLEIN</A><BR>
-<A HREF="http://www.aintitcool.com/">HARRY KNOWLES</a><br>
-<a HREF="http://www.washingtonpost.com/wp-dyn/opinion/columns/krauthammercharles/">KRAUTHAMMER</a><br>
-<A HREF="http://topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/nicholasdkristof/index.html">NICHOLAS KRISTOF</A><BR>
-<A HREF="http://www.weeklystandard.com/author/william-kristol">KRISTOL</A><BR>
-<A HREF="http://www.nytimes.com/top/opinion/editorialsandoped/oped/columnists/paulkrugman/index.html">PAUL KRUGMAN</A><BR>
-<A HREF="http://www.nationalreview.com/kudlows-money-politics">LARRY KUDLOW</A><BR>
-<A HREF="http://www.foxnews.com/category/media-buzz">HOWIE KURTZ</a><br>
-<A HREF="http://www.marklevinshow.com/">MARK LEVIN</A><BR>
-<A HREF="http://www.wnd.com/authors/dlimbaugh/">DAVID LIMBAUGH</A><BR>
-<A HREF="http://www.rushlimbaugh.com">RUSH LIMBAUGH</a><br>
-<A HREF="http://www.hallindsey.com">HAL LINDSEY</A><BR>
-<A HREF="http://www.nationalreview.com/author/56473">RICH LOWRY</a><br>
-<A HREF="http://michellemalkin.com/">MICHELLE MALKIN</a><br>
-<A HREF="http://www.dailymail.co.uk/home/event/article-2712242/columnist-1002901/Piers-Morgan.html">PIERS MORGAN</A>
-<BR>
-<A HREF="http://www.washingtonpost.com/2010/07/06/AB2i8vO_linkset.html">DANA MILBANK</A><BR>
-<A HREF="http://www.dickmorris.com/blog/">DICK MORRIS</a><BR>
-<A HREF="http://online.wsj.com/article/declarations.html">PEGGY NOONAN</A><BR>
-<A HREF="http://www.wnd.com/author/cnorris/">CHUCK NORRIS</A><BR>
-<A HREF="http://www.townhall.com/columnists/marvinolasky/archive.shtml">MARVIN OLASKY</A><BR>
-<A HREF="http://www.billoreilly.com/articles">BILL O'REILLY</A><BR>
-<A HREF="http://pagesix.com/">PAGE SIX</a><br>
-<A HREF="https://www.facebook.com/sarahpalin">SARAH PALIN</A><BR>
-<A HREF="http://nypost.com/author/andrea-peyser/">ANDREA PEYSER</A><BR>
-<A HREF="http://www.breitbart.com/Columnists/James-P-Pinkerton">JIM PINKERTON</A><BR>
-<A HREF="http://www.billpress.com">BILL PRESS</A><BR>
-<A HREF="http://www.washingtontimes.com/staff/wesley-pruden/">WES PRUDEN</a><br>
-<A HREF="http://www.observer.com/author/rex-reed">REX REED</a><br>
-<A HREF="http://www.richardreeves.com/latest_column.html">RICHARD REEVES</a><br>
-<A HREF="http://www.washingtonpost.com/wp-dyn/style/columns/reliablesource/">RELIABLE SOURCE</A><BR>
-<A HREF="http://www.suntimes.com/news/roeper/index.html">RICHARD ROEPER</a><br>
-<A HREF="http://dailycaller.com/author/betsyrothstein/">BETSY ROTHSTEIN</A><BR>
-<A HREF="http://www.michaelsavage.wnd.com/">MICHAEL SAVAGE</A><BR>
-<A HREF="http://www.eagleforum.org/column">SCHLAFLY</a><br>
-<A HREF="http://www.newyorksocialdiary.com/nysd/guestdiary">LIZ SMITH</a><br>
-<A HREF="http://www.suntimes.com/news/sneed/index.html">MICHAEL SNEED</a><BR>
-<A HREF="http://www.townhall.com/columnists/thomassowell/archive.shtml">THOMAS SOWELL</a><BR>
-<A HREF="http://reliablesources.blogs.cnn.com/">BRIAN STELTER</A><BR>
-<A HREF="http://www.steynonline.com/">MARK STEYN</A><BR>
-<A HREF="http://andrewsullivan.thedailybeast.com/">ANDREW SULLIVAN</a><br>
-<A HREF="http://takimag.com/">TAKI THEODORACOPULOS</A><BR>
-<A HREF="http://www.jewishworldreview.com/cols/thomas1.asp">CAL THOMAS</a><br>
-<a HREF="http://www.washingtonpost.com/wp-dyn/style/columns/tvcolumn/">TV COLUMN</a><br>
-<A HREF="http://www.mediabistro.com/tvnewser/">TV NEWSER</A><BR>
-<A HREF="http://www.mediaweek.com/mediaweek/buzz/columnists/berman.jsp">TV PROGRAMMING INSIDER</A><BR>
-<A HREF="http://www.reviewjournal.com/columns-blogs/norm-clarke">VEGAS CONFIDENTIAL</A><BR>
-<A HREF="http://www.hollywood-elsewhere.com/">JEFFREY WELLS</a><br>
-<A HREF="http://www.usnews.com/sections/news/washington-whispers/index.html">WASHINGTON WHISPERS</A><BR>
-<A HREF="http://jewishworldreview.com/cols/will1.asp">GEORGE WILL</a><br>
-<A HREF="http://townhall.com/columnists/WalterEWilliams/">WALTER WILLIAMS</a><BR>
-<A HREF="http://www.jameswolcott.com/">JAMES WOLCOTT</A><BR>
-<A HREF="http://www.usatoday.com/story/money/columnist/wolff/2014/09/14/rupert-murdochs-love-of-tweets/154871 /">MICHAEL WOLFF</A><BR>
-<A HREF="http://campaign2012.washingtonexaminer.com/author/byron-york">BYRON YORK</A><BR>
-<A HREF="http://www.usnews.com/usnews/opinion/mzuckerman.htm">MORT ZUCKERMAN</A><BR>
-<A HREF="http://www.suntimes.com/entertainment/zwecker/index.html">BILL ZWECKER</A><hr>
-
-</b></tt>
-</td>
-
-
-
-<! THIRD COLUMN STARTS HERE>
-<td align="center" valign="top" width="3"><div style="width:1px background-color:#C0C0C0 margin-left:1px margin-right:1px height:2500px "></div></td>
-<td ALIGN="LEFT" VALIGN="TOP" WIDTH="40%"><tt><b>
-
-<A HREF="http://www.infowars.com/u-s-state-department-orders-160000-ebola-hazmat-suits/">REPORT:  State Dept Orders 160,000 Ebola Hazmat Suits...</A>
-<hr>
-<A HREF="http://www.breitbart.com/Breitbart-Texas/2014/09/15/Exclusive-Feds-Find-Anti-Israel-And-Pro-Palestine-911-Message-to-America-On-Border-Fence">REVEALED: Agents find 9/11 terror message draped across border fence...</A><BR><BR>
-<A HREF="http://www.breitbart.com/Breitbart-Texas/2014/09/15/Exclusive-Feds-Find-Anti-Israel-And-Pro-Palestine-911-Message-to-America-On-Border-Fence">Feds hid incident from public...</A><BR><BR>
-<A HREF="http://houston.cbslocal.com/2014/09/15/texas-sheriff-reports-warn-of-isis-terrorist-cells-coming-across-the-border/
-"><font color=red>'Quran Books' Found Along Mexican Border...</font></A><BR><BR>
-<A HREF="http://www.breitbart.com/Breitbart-Texas/2014/09/15/Texas-Law-Enforcement-Prepare-to-Defend-Bridges-From-Militia-Groups">Law enforcement prepares for showdown with militia groups...</A>
-<HR>
-<A HREF="http://www.cbc.ca/news/canada/windsor/enterovirus-d-68-could-be-cause-of-surge-of-admissions-at-ontario-hospital-1.2766312">Midwest mystery virus jumps into Canada...</A><BR><BR>
-<A HREF="http://www.turnto10.com/story/26534786/children-treated-for-respiratory-virus-in-ri">Children treated in RI...</A>
-<HR>
-<A HREF="http://www.nationalreview.com/article/387943/swedish-surprise-john-fund">Swedish Surprise: Anti-Immigration Party Surges...</A><BR><BR>
-<A HREF="http://www.jta.org/2014/09/14/news-opinion/world/far-right-french-party-sees-sharp-rise-in-popularity-among-jewish-voters-surveys-find">SURVEY: Jewish voters turn to Le Pen, France's far right...</A><BR><BR>
-<A HREF="http://www.jpost.com/Diaspora/Study-40-percent-of-European-Jews-hide-their-Jewishness-375412"><I>40% of European Jews hide their religion...</I></A>
-<hr>
-<A HREF="http://www.israelnationalnews.com/News/News.aspx/185135#.VBcSYC5dWmA">British company apologizes for refusing Jewish kids entry to store...</A>
-<hr>
-<IMG SRC="http://l.yimg.com/bt/api/res/1.2/fnc_uGvphBcBItFSIwP.EQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2796dc2c168144225e0f6a706700ac5a.jpg" width=200>
-<BR><BR>
-<A HREF="http://www.cnn.com/2014/09/15/politics/grimes-shoot-ad-kentucky-mcconnell/">KY Senate Dem Ad:  'I'm not Barack Obama'...</A><BR><BR>
-<A HREF="http://www.youtube.com/watch?v=uxJyPsmEask"><I>FLASHBACK: 'I'm Not A Witch'... </I></A>
-<hr>
-<A HREF="http://mashable.com/2014/09/15/the-rise-of-the-robot-pitchman/">Rise of Robot 'Pitchman'...<BR><BR>
-Must-have ad accessory goes high-tech...</A>
-<HR>
-<A HREF="http://www.bloomberg.com/news/2014-09-14/record-s-p-500-masks-47-of-nasdaq-mired-in-bear-market.html
-">Record High Stocks Mask NASDAQ Trouble... <BR><BR>
-<I>Half of Index Mired in Bear Market...</I></A>
-<hr>
-<A HREF="http://www.google.co.uk/url?url=http://online.wsj.com/articles/humans-naturally-follow-crowd-behavior-141054 08&rct=j&q=&esrc=s&sa=U&ei=IxIWVMq7C-_BiwKPyYGQBg&ved=0CBcQqQIwAA&usg=AFQjCNGiSV4OxxFzyDhRal0gm-4pRG-H-w">STUDY:  Humans Naturally Follow Crowd Behavior...</A>
-<HR>
-<A HREF="http://www.pcworld.com/article/2683352/google-wants-to-fly-drones-above-new-mexico.html">GOOGLE Drones to Hover Over New Mexico?</A>
-<HR>
-<A HREF="http://www.computerworld.com/article/2606378/new-data-center-protects-against-solar-storms-and-nuclear-emps.html
-">Secretive new data center to protect against EMP attack...</A>
-<HR>
-
-<A HREF="http://itunes.apple.com/us/app/official-drudge-report-free/id375614185?mt=8">GET IT ON THE GO:  DRUDGE IPHONE/IPAD APP...</A>
-<HR>
-<!--JavaScript Tag  // Website: DrudgeReport // Page: DrudgeReport - Home  // Placement: DrudgeReport_Home_Right_dynamic (1131611) // created at: Apr 13, 2011 9:42:57 AM -->
-<div id="1131611" align="left" style="width:300px padding:0px margin:0px overflow:visible text-align:left">
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/DrudgeReport/DrudgeReport_Home_Right_dynamic.js"></script>
-<noscript><a href="http://adserver.adtechus.com/adlink/3.0/5235/1131611/0/170/ADTECH cookie=info loc=0 key=key1+key2+key3+key4 grp=000001" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5235/1131611/0/170/ADTECH cookie=info excludedSizes=160x600,728x90 loc=0 key=key1+key2+key3+key4 grp=000001" border="0"></a></noscript>
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/AdFeedback/processAdFeedback.js"></script>
-<table border="0"><td width="300" align="left"><b><font face="Arial, Helvetica, sans-serif" size="-4"><script type="text/javascript">loadAdVals("AD FEEDBACK") </script></font></b></td></table>
-</div>
-<!-- End of JavaScript Tag -->
-
-<hr>
-
-<! L I N K S    A N D   S E A R C H E S     3 R D    C O L U M N>
-
-<a href="http://www.france24.com/en/timeline/global/">AGENCE FRANCE-PRESSE</a>
-<br>
-<a href="http://news.yahoo.com/afp.com--all-sections/archive/1.html">AFP NEWS WRAP</a><br>
-<a href="http://www.reuters.com/news/archive/worldNews?date=today">REUTERS WORLD NEWS HIGHLIGHTS</a><br>
-
-<A HREF="http://www.reuters.com/">REUTERS DIGEST</A><br>
-<A HREF="http://www.reuters.com/news/world">REUTERS WORLD</a><br>
-<A HREF="http://www.reuters.com/news/archive/politicsNews?date=today">REUTERS POLITICS</a><br><a href="http://www.reuters.com/news/archive/oddlyEnoughNews?date=today">REUTERS ODD</a><br>
-<A HREF="http://www.upi.com/NewsTrack/">UPI</A>
-<hr>
-
-<!--JavaScript Tag  // Website: DrudgeReport // Page: DrudgeReport - Home  // Placement: DrudgeReport_Home_Bottom-Right_160x600 (1131606) // created at: Apr 13, 2011 9:43:32 AM -->
-<div id="1131606" align="left" style="width:120px padding:0px margin:0px overflow:visible text-align:left">
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/DrudgeReport/DrudgeReport_Home_Bottom-Right_160x600.js"></script>
-<noscript><a href="http://adserver.adtechus.com/adlink/3.0/5235/1131606/0/154/ADTECH cookie=info loc=0 key=key1+key2+key3+key4 grp=000001" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5235/1131606/0/154/ADTECH cookie=info excludedSizes=300x250,728x90 loc=0 key=key1+key2+key3+key4 grp=000001" border="0"></a></noscript>
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/DrudgeReport/drudgereport_postview.js"></script>
-<script type="text/javascript" src="http://cdn.intermarkets.net/u/Intermarkets/AdFeedback/processAdFeedback.js"></script>
-<table border="0"><td width="160" align="left"><b><font face="Arial, Helvetica, sans-serif" size="-4"><script type="text/javascript">loadAdVals("AD FEEDBACK") </script></font></b></td></table>
-<div id="0000001"></div>
-</div>
-<!-- End of JavaScript Tag -->
-<hr>
-
-<A HREF="http://news.google.com/nwshp?hl=en&tab=wn&q=">GOOGLE NEWS</A><BR><BR>
-<form method="get" action="http://search.news.yahoo.com/search/news">
-<input size="15" name="p"><br><input type="submit" value=" SEARCH WIRES"></form><br>
-<form method="get" action="http://www.drudgereportArchives.com/dsp/search.htm">
-
-<input size="15" name="searchFor"><BR>
-<input type="submit" value="SEARCH DRUDGE"></form>
-<hr>
-<a href="http://www.drudgereportarchives.com/dsp/links_recap.htm">RECENT DRUDGE HEADLINES...</a>
-<hr>
-<A HREF="http://www.alexa.com/hoturls">ALEXA LIVE:  HOTTEST PAGES ON INTERNET...</A><BR>
-<A HREF="http://www.viralnewschart.com/">VIRAL NEWS CHART...</A>
-<hr>
-<A HREF="http://www.drudgereport.com/wx.htm">WEATHER ACTION</A><BR>
-<A HREF="http://radar.weather.gov/Conus/Loop/NatLoop_Small.gif">USA RADAR ROLL</A><BR>
-<A HREF="http://www.drudgereport.com/quake.htm">QUAKE SHEET</A>
-<hr>
-<FORM METHOD="POST" ACTION="http://www.drudgereport.com/cgi-bin/fastfeedback.cgi">
-SEND NEWS TIPS TO DRUDGE<br>
-<textarea name="body" rows="10" cols=22></textarea><br>
-<input type="submit" name="Send" value="SUBMIT">
-</FORM>
-<hr>
-
-<A HREF="http://www.militarycity.com/valor/honor.html">THE LIST...</A>
-<hr>
-VISITS TO DRUDGE 9/15/14<BR><BR>
-022,943,258  PAST 24 HOURS<BR>
-747,830,837  PAST 31 DAYS<BR>
-9,661,587,972  PAST YEAR
-<hr>
-<A HREF="https://www.quantcast.com/p-e2qh6t-Out2Ug"><IMG SRC="http://widget.quantcast.com/user/widgetImage?domain=drudgereport.com&widget=10&timeWidth=1&daysOfData=7" border=0></A>
-<hr>
-<A HREF="http://www.drudgereportArchives.com">DRUDGE ARCHIVES</A>
-<HR>
-<a href="http://www.refdesk.com">DRUDGE REFERENCE DESK</a>
-<hr>
-<a href="mailto:drudge@drudgereport.com">EMAIL: DRUDGE@DRUDGEREPORT.COM</a>
-<hr>
-<A HREF="http://www.intermarkets.net/drudgereport.htm">BE SEEN!   RUN ADS ON DRUDGE REPORT...</A><BR><BR>
-<A HREF="http://www.intermarkets.net/privacypolicy.html">PRIVACY POLICY...</A>
-<hr>
-<!-- Page Reloader, Headline Updater, eProof, DRAMini -->
-<script type="text/javascript" src="http://www.google.com/jsapi/"></script>
-<script type="text/javascript">if(window.google && window.google.load){google.load("jquery", "1.4.2") google.load("jqueryui", "1.8.0") }</script>
-<script type="text/javascript" src="http://keisu02.eproof.com/js/v20100407.js"></script>
-<!-- eProof.com end --> 
-
-<!-- Start Quantcast tag -->
-<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
-<script type="text/javascript">_qacct="p-e2qh6t-Out2Ug" quantserve() </script>
 <noscript>
-<a href="http://www.quantcast.com/p-e2qh6t-Out2Ug" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-e2qh6t-Out2Ug.gif" style="display: none " border="0" height="1" width="1" alt="Quantcast"/></a>
+<img src="/traffic/?t=px&bv=JavaScript+Disabled&os=&tz=default&lg=&rv=&rsv=&pw=%2Fabout-our-ads%2F&cb=1545461067" alt="the end" width="1" height="1"border="0" />
 </noscript>
-<!-- End Quantcast tag -->
-
-</b></tt>
-</TD>
-</TR>
-</TABLE></center>
-<BR>
-<BR><BR><BR><BR>
-
-<script type="text/javascript"> 
-<!--	
-// ads breaking timetimer
-if (typeof timer == 'undefined')  {
-  var timer = setInterval("autoRefresh()", 1000 * 60 * 3) 
-  function autoRefresh(){self.location.reload(true) }
-}
-//--> 
-</script>             
-</BODY>
-</HTML>
-<!-- Copyright 2011 by Drudge Report --!>   
-<!-- END -- DO NOT REMOVE THIS LINE --Adrian --!>

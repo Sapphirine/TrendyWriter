@@ -1,2415 +1,489 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" >
+
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQ8EUVRACgUEUlVRBg=="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({1:[function(t,e){function n(t,e,n){n||(n={}) for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0 a>u u++)r[u].apply(s,e) return s}function r(t,e){var n=o[t]||(o[t]=[]) n.push(e)}var o={},i="nr@context" e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0 t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2)) if(e(window),"getPrototypeOf"in Object){for(var i=document i&&!i.hasOwnProperty("addEventListener") )i=Object.getPrototypeOf(i) i&&e(i) for(var a=XMLHttpRequest.prototype a&&!a.hasOwnProperty("addEventListener") )a=Object.getPrototypeOf(a) a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2) e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0] "string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2) n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] window.XMLHttpRequest=function(t){var n=new a(t) try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 u>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d) if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data") c&&(n.cat=c.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr") var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2) t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var d=e(o) d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}} for(var f=0 u>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t] return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={} e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1 if(t===window)return 0 if(o.call(t,"__nr"))return t.__nr try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=u.createElement("script") e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]} u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f) try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="") var i,s,u,d="-"===r.charAt(0) for(u=0 u<e.length u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2) e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]) </script>
-    <title>Business Insider</title>
-    <meta property="description" content="What You Need To Know" />
-<meta property="og:title" content="Business Insider" />
-<meta property="og:type" content="blog" />
-<meta property="og:url" content="http://www.businessinsider.com/" />
-<meta property="og:image" content="http://static1.businessinsider.com/image/4b5f704800000000004527bd/image.png" />
-<meta property="og:site_name" content="Business Insider" />
-<meta property="og:admins" content="61404924,14700889,122084,77 48648" />
-<meta property="og:description" content="The latest news from Business Insider" />    <link href="http://static4.businessinsider.com/assets/css/min-base.css?1410551053" media="screen" rel="stylesheet" type="text/css" />
-<link href="http://static3.businessinsider.com/assets/css/min-home.css?1410551053" media="screen" rel="stylesheet" type="text/css" />
-<link href="http://www.businessinsider.com" rel="canonical" />    <link type="text/css" rel="stylesheet" media="print" href="http://static1.businessinsider.com/assets/css/print.css?1410551053" />   
-    <script type="text/javascript" src="http://static1.businessinsider.com/assets/js/min2.js?1410551053"></script>
+    <script type="text/javascript" src="http://nexus.ensighten.com/reuters/Bootstrap.js"></script>
+    <title>
+                    Jack Shafer | Analysis &amp  Opinion
+            </title>
+
+    <meta property="fb:app_id" content="1446663712275737" />
+    <meta property="og:title" content=" Jack Shafer"/>
+    <meta property="og:site_name" content="Reuters" />
+    <meta property="og:image" content="http://blogs.reuters.com/wp-content/profile-images/upe2_tn_3281-profile-image.jpg" />
+    <meta property="og:url" content="http://blogs.reuters.com/jackshafer/" />
+        <meta property="og:description" content="Jack Shafer on the press &amp  politics" />
+            <meta property="og:type" content="blog" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Reuters">
+    <meta http-equiv="Content-type" content="text/html charset=UTF-8" />
+
+    <!-- Webtrends Meta Data -->
+    <meta name="DCSext.rChannel" content="Blogs" />
+    <meta name="DCSext.rCountry" content=" US " />
+
+    <meta name="WT.cg_n" content="Blogs - Jack Shafer" />
+    <meta name="WT.cg_s" content="Jack Shafer" />
+        <meta name="DCSext.ContentType" content="Blog Topic" />
+        <meta name="DCSext.ContentChannel" content="Jack Shafer" />
+    <meta name="WT.ti" content="Jack Shafer" />
+    <meta name="DCSext.ContentHeadline" content="Jack Shafer" />
+        <!-- End of Webtrends Meta Data -->
+
+
+    <link rel="shortcut icon" href="http://www.reuters.com/resources_v2/images/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Jack Shafer RSS Feed" href="http://blogs.reuters.com/jackshafer/feed/" />
+
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/yahoo/yahoo-min.js" type="text/javascript"></script>
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/event/event-min.js" type="text/javascript"></script>
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/dom/dom-min.js" type="text/javascript"></script>
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/animation/animation-min.js" type="text/javascript"></script>
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/connection/connection-min.js" type="text/javascript"></script>
+    <script src="http://www.reuters.com/resources_v2/js/rcom-agent.js" type="text/javascript"></script>
+
+    <script src="http://www.reuters.com/resources_v2/js/libraries/yui_2_7_0/cookie/cookie-min.js" type="text/javascript"></script>
+
+<script src="http://www.reuters.com/resources_v2/js/libraries/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="http://www.reuters.com/resources_v2/js/libraries/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <!-- DO NOT EDIT OR REMOVE THIS CODE -->
+    <link href="http://www.reuters.com/resources_v2/css/rcom-main.css" rel="stylesheet" />
+    <link href="http://www.reuters.com/resources_v2/css/rcom-section.css" rel="stylesheet" />
+    <link href="http://www.reuters.com/resources_v2/css/rcom-navigation.css" rel="stylesheet" />
+        <link rel="stylesheet" href="http://blogs.reuters.com/jackshafer/wp-content/themes/reuters-blogs-2014/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="http://blogs.reuters.com/jackshafer/wp-content/themes/reuters-blogs-2014/rcom-share.css" type="text/css"/>
+
+    <link rel='stylesheet' id='abuse-css'  href='http://blogs.reuters.com/jackshafer/wp-content/mu-plugins/comment-abuse/abuse.css?v=3 038 ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://blogs.reuters.com/jackshafer/wp-includes/css/dashicons.min.css?ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='http://blogs.reuters.com/jackshafer/wp-includes/js/thickbox/thickbox.css?ver=20131201' type='text/css' media='all' />
+<!--START: Reuters Registration-->
+<!--<script language="JavaScript" type="text/javascript" src="https://commerce.us.reuters.com/login/js/auth_plugin.js"></script>-->
+<script language="JavaScript" type="text/javascript" src="https://commerce.us.reuters.com/login/js/auth_plugin.js?flow=COMMENTS"></script>
+<!--script language="JavaScript" type="text/javascript" src="http://blogs.reuters.com/jackshafer/wp-content/plugins/reuters-registration/js/jquery-1.3.2.min.js"></script-->
+<script language="JavaScript" type="text/javascript" src="http://blogs.reuters.com/jackshafer/wp-content/plugins/reuters-registration/js/jqModal.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://blogs.reuters.com/jackshafer/wp-content/plugins/reuters-registration/js/reuters-registration.js?v=2009120103"></script>
+<!--END: Reuters Registration-->
+<!-- wp-parsely Plugin Version 1.6 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.6' />
+<meta name='parsely-page' id='parsely-page' content='{"type":"frontpage","title":"Jack Shafer","link":"http:\/\/blogs.reuters.com\/jackshafer"}' />
+<!-- Vipers Video Quicktags v6.5.2 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block  max-width: 100%  visibility: visible !important  margin: 10px auto  } .vvqbox img { max-width: 100%  height: 100%  } .vvqbox object { max-width: 100%  } 
+</style>
 <script type="text/javascript">
-    //<![CDATA[
-    homepage_id = "506f6d9b69bedde127000003"     //]]>
-</script>    <!-- optimizely desktop -->
-        <!-- End optimizely desktop -->
-
-        <meta name="tbi-vertical" content="tbi" />
-    <meta name="viewport" content="width=1024" />
-
-    <!--[if gte IE 9]>
-    <style type="text/css">
-        .gradient {
-            filter: none 
-        }
-    </style>
-    <![endif]-->
-
-    <!--[if lt IE 8]>
-        <link type="text/css" rel="stylesheet" media="all" href="http://static3.businessinsider.com/assets/css/ie7_or_lower.css" />
-        <link type="text/css" rel="stylesheet" media="all" href="http://static2.businessinsider.com/assets/css_vendor/font-awesome-ie7.min.css">
-    <![endif]-->
-    <!--[if IE 8]>
-        <link type="text/css" rel="stylesheet" media="all" href="http://static5.businessinsider.com/assets/css/ie8.css" />
-    <![endif]-->
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <script type="text/javascript" src="http://static3.businessinsider.com/assets/js/vendor/ie8/placeholders.min.js"></script>
-    <![endif]-->
-
-    <!--[if IE 9]>
-        <link type="text/css" rel="stylesheet" media="all" href="http://static4.businessinsider.com/assets/css/ie9.css" />
-        <script type="text/javascript" src="http://static5.businessinsider.com/assets/js/shims/Element.classList.js"></script>
-    <![endif]-->
-
+// <![CDATA[
+	var vvqflashvars = {} 
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" } 
+	var vvqattributes = {} 
+	var vvqexpressinstall = "http://blogs.reuters.com/jackshafer/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf" 
+// ]]>
+</script>
     <script type="text/javascript">
-        var vertical = 'businessinsider' 
-        var PageType = 'homepage' 
-        var post_id = '' 
-        var _sf_startpt=(new Date()).getTime() 
-    </script>
-
-    <!-- Kissmetrics -->
-    <script type="text/javascript">
-        var _kmq = _kmq || [] 
-        var _kmk = _kmk || '999f578acebfab6dd29b540ab4ebbcbaafafa774' 
-
-        function _kms(u){
-            setTimeout(function(){
-                var s = document.createElement('script') 
-                var f = document.getElementsByTagName('script')[0] 
-                s.type = 'text/javascript' 
-                s.async = true 
-                s.src = u 
-                f.parentNode.insertBefore(s, f) 
-            }, 1) 
-        }
-            </script>
-    <!-- Kissmetrics -->
-
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds2.feedburner.com/businessinsider" />
-    <link rel="shortcut icon" href="http://static5.businessinsider.com/assets/images/faviconBI.ico" />
-    <link rel="icon" type="image/ico" href="http://static5.businessinsider.com/assets/images/faviconBI.ico" />
-    <link rel="apple-touch-icon" href="http://static4.businessinsider.com/assets/images/apple-touch-icon.png" />
-    <meta name="linkedin:owner" content="mid:218712">
-
-    <!--[if gte IE 9]>
-        <meta name="application-name" content="Business Insider - Home"/>
-        <meta name="msapplication-tooltip" content="Start the page in Site Mode"/>
-        <meta name="msapplication-starturl" content="http://www.businessinsider.com/"/>
-        <meta name="msapplication-window" content="width=800 height=600"/>
-        <meta name="msapplication-navbutton-color" content="#4C7C8D"/>
-
-        <meta name="msapplication-task" content="name=Tech action-uri=http://www.businessinsider.com/sai icon-uri=http://www.businessinsider.com/favicon.ico"/>
-        <meta name="msapplication-task" content="name=Media action-uri=http://www.businessinsider.com/thewire icon-uri=http://www.businessinsider.com/favicon.ico"/>
-        <meta name="msapplication-task" content="name=Wall Street action-uri=http://www.businessinsider.com/clusterstock icon-uri=http://www.businessinsider.com/favicon.ico"/>
-        <meta name="msapplication-task" content="name=Markets action-uri=http://www.businessinsider.com/moneygame icon-uri=http://www.businessinsider.com/favicon.ico"/>
-        <meta name="msapplication-task" content="name=Strategy action-uri=http://www.businessinsider.com/warroom icon-uri=http://www.businessinsider.com/favicon.ico"/>
-    <![endif]-->
-
-    <script type="text/javascript">BI.siteURI = 'http://www.businessinsider.com' </script>
-    <script type="text/javascript">BI.secureURI = 'https://www.businessinsider.com' </script>
-    <script type="text/javascript">BI.staticURI = 'http://static1.businessinsider.com' </script>
-    <script type="text/javascript">BI.env.setDomain('http://www.businessinsider.com') </script>
-
-    <script type="text/javascript" src="//platform.linkedin.com/in.js">
-       api_key: x4dbohswv62d
-       authorize: true
-       scope: r_basicprofile r_emailaddress r_network rw_nus
-    </script>
-
-        <script type="text/javascript">
         window._taboola = window._taboola || [] 
-        _taboola.push({home:'auto'}) 
-        !function (e, f, u) {
+        _taboola.push({
+            article: 'auto'
+        }) 
+        ! function(e, f, u) {
             e.async = 1 
             e.src = u 
             f.parentNode.insertBefore(e, f) 
-        }(
-            document.createElement('script'),
-            document.getElementsByTagName('script')[0],
-            'http://cdn.taboola.com/libtrc/businessinsider/loader.js'
-        ) 
+        }(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/reuters-network/loader.js') 
     </script>
-    
+
+
 </head>
 
+<body>
+    <!--googleoff: index-->
+    <div id="loginbox" class="jqmWindow"></div>
 
-<body class="responsive ">
+    <script type="text/javascript" src="http://www.reuters.com/resources_v2/js/rcom-header-widget.js"></script>
 
-<!-- print only -->
-<img class="print" src="http://static4.businessinsider.com/assets/images/logos/logo-bi-print.png" width="150" />
-
-<!-- FB Connect -->
-<div id="fb-root" data-bi-facebook-root="155043519637"></div>
-<!-- / FB Connect -->
-
-<!--[if lt IE 8]>
-    <div class="container>
-        <div class="row">
-            <div class="alert alert-error alert-block">
-                <h4>Warning!</h4>
-                You are using an outdated version of Internet Explorer.  For security reasons you should <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank" title="Upgrade IE">upgrade your browser</a>. Please go to Windows Updates and install the latest version.
-            </div>
+    <div class="section bleeding" id="blogsBannerStrip">
+  <div class="sectionContent">
+    <div class="sectionColumns">
+      <div class="gridPanel grid12">
+        <div class="ad" id="adDiv_LeaderBoard">
+          <script type="text/javascript">
+    TR.insertDFP("http://ad.doubleclick.net/adj/us.reuters/news/opinion/jackshafer type=leaderboard tile=1 sz=728x90 ")
+          </script>
+          <noscript><a href="http://ad.doubleclick.net/jump/us.reuters/news/opinion/jackshafer type=leaderboard tile=1 sz=728x90 ord= 03?" target="_blank"><img src="http://ad.doubleclick.net/ad/us.reuters/news/opinion/jackshafer type=leaderboard tile=1 tile=1 sz=728x90 ord= 03?" width="728" height="90" border="0" alt="" /></a></noscript>
         </div>
-    </div>
-<![endif]-->
-
-
-<!-- new masthead -->
-<div class="masthead">
-    <div class="masthead-bottom-gradient"></div>
-    <div class="container">
-        <div class="row">
-
-            <!-- BI Logo -->
-            <div class="span2 logo">
-                <div class="sprites logo-background"></div>
-                <div class="sprites logo-background-oneline"></div>
-                <a class="logo-link" href="/" title="Business Insider"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="Business Insider"></a>
-            </div>
-
-            <div class="span10 navigation">
-                <div class="row">
-
-                    <!-- user_menubar -->
-                    
-<div class="login-social loggedout">
-    <ul class="login">
-        <li class="user-login dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" rel="nofollow">Login <i class="fa fa-chevron-down"></i></a>
-
-            <!-- user login menu -->
-            <ul class="dropdown-menu popover bottom" role="menu">
-                <!-- <div class="arrow-up"><div></div></div> -->
-                <!-- <a class="sprites bi-icon-close bi-icon-login" href="#">&nbsp </a> -->
-
-                <div class="arrow"></div>
-
-                <form name="login-form" action="https://www.businessinsider.com/login" method="post">
-                    <fieldset>
-                        <!-- <label for="username">Username</label> -->
-                        <input class="text" tabindex="1" name="username" type="text" value="" placeholder="Username or email">
-
-                        <!-- <label for="password">Password</label> -->
-                        <input class="text" type="password" tabindex="2" name="password" value="" placeholder="Password">
-
-                        <label class="checkbox" for="remember">
-                            <input type="checkbox" name="remember" id="remember"> Remember me
-                        </label>
-
-                        <input class="btn submit" value="Login" type="submit" />                        <span class="help-block"><a href="/forgot">I forgot username or password</a></span>
-                </form>
-                <hr>
-
-                <a id="tw_login_link" class="btn btn-social twitter" href="/register?action=twitter&first=twitter" rel="nofollow"><i class="fa fa-twitter"></i> Login with Twitter</a>
-
-                <a class="btn btn-social facebook" href="#" onclick="return BI.FB_Core.login(true)"><i class="fa fa-facebook"></i> Login with Facebook</a>
-
-                <a id="linkedin_login_link" class="btn btn-social linkedin" href="/register?action=linkedin&first=linkedin" rel="nofollow"><i class="fa fa-linkedin"></i> Login with LinkedIn</a>
-
-                <span id="gplus_login_button" class="btn btn-social google-plus" rel="nofollow"><i class="fa fa-google-plus"></i> Login with Google</span>
-
-            </ul>
-            <!-- / user login menu -->
-        </li>
-
-        <li class="ks-menubar-register"><a id="menubar-register" href="https://www.businessinsider.com/register?first=index" rel="nofollow">Register</a></li>
-    </ul>
-
-    <!-- social + share links -->
-    <ul class="sprites social">
-        <li>
-            <a href="//www.facebook.com/businessinsider" title="Like us on Facebook" target="_blank"><i class="fa fa-facebook ks-header-facebook"></i></a>
-        </li>
-        <li>
-            <a href="//twitter.com/businessinsider" title="Follow us on Twitter" target="_blank"><i class="fa fa-twitter ks-header-twitter"></i></a>
-        </li>
-        <li>
-            <a href="//plus.google.com/+BusinessInsider/posts" rel="publisher" title="Follow us on Google+" target="_blank"><i class="fa fa-google-plus ks-header-google-plus"></i></a>
-        </li>
-        <li class="last-social">
-            <a href="//www.linkedin.com/today/businessinsider.com" title="Connect with us on LinkedIn" target="_blank"><i class="fa fa-linkedin ks-header-linkedin"></i></a>
-        </li>
-    </ul>
-</div><!-- login social -->
-
-
-<!-- Kontera -->
-<script type="text/javascript">
-			BI.showKontera = false 
-	</script>
-<!-- / Kontera -->
-
-<script type="text/javascript">
-    BI.displayPunditRequestLinks = "non-logged-in" 
-</script>
-
-                    <!-- Non-verticals -->
-                    <div class="non-verticals">
-                        <ul class="sprites">
-                            <li class="sprites"><a href="/events">Events</a></li>
-                            <li class="sprites"><a href="http://intelligence.businessinsider.com">BI Intelligence</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                
-                <div class="row">
-                    <!-- Search -->
-                    <div class="span4 nav-search">
-                        <form method="get" action="/s" class="search-field">
-                            <input class="sprites" name="q" type="text" placeholder="Search">
-                            <button type="submit" title="Search"></button>
-                        </form>
-                    </div>
-
-                    <!-- Main Nav -->
-                    <div class="main-nav">
-                        <ul>
-                                                                                    <li class="Tech">
-                                <a class="item" data-dropdown-id="dropdown-Tech" href="/sai">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    Tech                                </a>
-                            </li>
-                                                                                    <li class="Finance">
-                                <a class="item" data-dropdown-id="dropdown-Finance" href="/clusterstock">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    Finance                                </a>
-                            </li>
-                                                                                    <li class="Politics">
-                                <a class="item" data-dropdown-id="dropdown-Politics" href="/politics">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    Politics                                </a>
-                            </li>
-                                                                                    <li class="Strategy">
-                                <a class="item" data-dropdown-id="dropdown-Strategy" href="/warroom">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    Strategy                                </a>
-                            </li>
-                                                                                    <li class="Life">
-                                <a class="item" data-dropdown-id="dropdown-Life" href="/thelife">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    Life                                </a>
-                            </li>
-                                                                                    <li class="Entertainment">
-                                <a class="item" data-dropdown-id="dropdown-Entertainment" href="/thewire">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    Entertainment                                </a>
-                            </li>
-                                                                                    <li class="All">
-                                <a class="item" data-dropdown-id="dropdown-All" href="/">
-                                    <div class="triangle triangle-left"></div>
-                                    <div class="triangle triangle-right"></div>
-                                    All                                </a>
-                            </li>
-                                                    </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Nav Dropdowns -->
-    <div class="main-nav-dropdown ks-nav-dropdown" style="border-color: #185f7c">
-    </div>
-</div>
-<!-- / new masthead -->
-
-<style type="text/css" id="leaderboard_styles">
-.info {
-	float: right 
-	clear: both 
-	margin: 2px 0 
-}
-#interstitial-countdown span {
-	font-weight: bold 
-}
-#main-content, #ft {
-	display: none 
-}
-.interstitial-ad-content {
-	width: 980px 
-	margin: 70px auto 
-}
-.interstitial_body {
-	margin: 1em auto 
-	padding: 1em 0 
-	display: table 
-}
-.leaderboard_hidden {
-	display: none 
-}
-</style>
-
-<script>
-// the rest of the JS is added to the footer, via interstitial.js
-(function() {
-
-	//as soon as it renders, doesnt need jquery. needs the bi lib
-	function onRender() {
-		var inAd = document.getElementById('interstitial-ad-content') 
-		var leaderStyles = document.getElementById('leaderboard_styles') 
-
-		if (BI.cookies.get('iad') == 1) {
-			//this is to handle when the user uses the back button from a post back to home
-			inAd.parentNode.removeChild(inAd) 
-			leaderStyles.parentNode.removeChild(leaderStyles) 
-		} else {
-			inAd.style.display = 'block' 
-			inAd.setAttribute('data-bi-ad','interstitial') 
-			amplify.publish('interstitialAdToBeShown') 
-
-			//update link
-			document.getElementById('interstitial-link').href = window.location 
-
-			//set the cookie for them
-			BI.cookies.set('iad',1) 
-		}
-	}
-
-	// Do stuff ASAP
-	document.addEventListener('DOMContentLoaded', onRender) 
-}())
-</script>
-
-<div class="interstitial-ad-content" id="interstitial-ad-content" style="display: none">
-	<p class="info"><a id="interstitial-link" href="http://www.businessinsider.com">Continue to Business Insider &raquo </a></p>
-	<p class="info" id="interstitial-countdown">You will be redirected in <span></span> seconds.</p>
-	<div class="interstitial_body" style="clear: both">
-		
-
-<div data-bi-ad class="ad dfp" data-adunit="desktop/home/home/homepage" data-pagetype="homepage" data-region="Welcome Ad" data-sizes="640x480,600x480,600x600" data-url="/"></div>
-<script type="text/javascript">
-	(function() {
-		'use strict' 
-
-		// Notify the DFP code that a new ad has just been rendered
-		amplify.publish('adRender') 
-	}()) 
-</script>
-	</div>
-</div>
-
-<div id="main-content" class="container">
-    <!-- flash messages -->
-    
-        <div class="subnav-container">
-        <div class="subnav-content">
-            
-
-<div data-bi-ad class="ad dfp" data-adunit="desktop/home/home/homepage" data-pagetype="homepage" data-pos="atf" data-region="Subnav" data-sizes="728x90,970x250,970x90" data-url="/"></div>
-<script type="text/javascript">
-	(function() {
-		'use strict' 
-
-		// Notify the DFP code that a new ad has just been rendered
-		amplify.publish('adRender') 
-	}()) 
-</script>
-        </div>
-    </div>
-    
-    
-    <div class="siteskin-dropshadow">
-        <div class="row primary-row">
-                            <div class="breaking-module-rendered" id="breaking-module-rendered">
-                    
-<div class="page-top">	
-</div>                </div>
-                        <div class="span8">
-                <div class="breaking-module-siteskin" id="breaking-module-siteskin"></div>
-    <div id="share-email-tmpl">
-    <div id="shareEmailModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="shareEmailModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="shareEmailModalLabel"></h3>
-      </div>
-      <div class="modal-body">
-        <div class="share-email-error alert alert-error display-none"></div>
-
-        <div class="share-email-body">
-            <div class="register">
-                <form id="form_form" class="form-horizontal" action="#" method="post">
-                    <div class="control-group">
-                        <label for="mail_from" class="control-label">From</label>
-                        <div class="controls">
-                            <input type="text" name="mail_from" class="mail-from" placeholder="Your Email Address" />
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label for="mail_to" class="control-label">To</label>
-                        <div class="controls">
-                            <input type="text" name="mail_to" class="mail-to" placeholder="Friend's Email Address" />
-                        </div>
-                    </div>
-                    <input type="hidden" name="action" value="email" />
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="submit" class="btn submit email-post" value="Send" />
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="share-email-success" style="display:none">
-            <div class="alert alert-success">
-                You have successfully emailed the post.
-            </div>
-        </div>
-
       </div>
     </div>
-</div>
-
-
-
-<div id="content" class="content homepage" data-bi-homepage data-bi-heatmap="506f6d9b69bedde127000003" data-bi-ts="1410807838" >
-
-    
-    
-    
-    <!-- Touts -->
-            <div class="touts tout-style-huffpo">
-            <div class="tout-style-headline align-center">
-	<div class="tout tout-0 id-5416fee0eab8ea6e5e0c 30">
-		<h1 class="overridable"><a class="title" href="http://www.businessinsider.com/wes-calvert-starboard-value-2014-9">This 25-Year-Old Analyst Destroyed Olive Garden</a></h1>
-		<div class="headline-image">
-			<a href="http://www.businessinsider.com/wes-calvert-starboard-value-2014-9"><img class="river-thumb" src="http://static6.businessinsider.com/image/5416fedcecad042c2c3a4129-840-420/meet-the-25-year-old-rising-star-who-worked-on-that-epic-hedge-fund-presentation-on-olive-garden.jpg" width="840" height="420" /></a>		</div>
-
-		
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Finance' class='fa fa-stop' style='color: #cf4e00'></i><a href="http://www.businessinsider.com/author/julia-la-roche">Julia La Roche</a></li>
-																					        			
-		    		        <li class="pageviews"><span class="sprites fire views" title="views">34,982</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/wes-calvert-starboard-value-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/wes-calvert-starboard-value-2014-9#comments">41</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-	</div>
-</div>
-        </div>
-        <!-- / Touts -->
-
-    <div class="row-fluid">
-
-        <div class="span9">
-
-            <h3 class="underlined">What's Happening</h3>
-
-            <!-- River -->
-                            <div class="river">
-                    <div class="id-54172e256bb3f7ed1b3a412d border-bottom bigpicture">
-	<span class="river_stack_id" id="541735076da811027a06f4b6" style="display:none"></span>
-    <h2 class="overridable"><a class="title" href="http://www.businessinsider.com/alibaba-brings-down-nasdaq-september-15-2014-9">Traders Are Blaming Today's Tech Stock Sell-Off On Alibaba ... And It Isn't Even Public Yet</a></h2>
-    
-        <a href="http://www.businessinsider.com/alibaba-brings-down-nasdaq-september-15-2014-9"><img class="river-thumb" src="http://static2.businessinsider.com/image/54172ed36bb3f7af233a4129-620-465/traders-are-blaming-todays-tech-stock-sell-off-on-alibaba--and-it-isnt-even-public-yet.jpg" width="620" height="465" /></a>
-    
-    
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Markets' class='fa fa-stop' style='color: #cf4e00'></i><a href="http://www.businessinsider.com/author/myles-udland">Myles Udland</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410806640">Sep. 15, 2014,  2:44 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">1,035</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/alibaba-brings-down-nasdaq-september-15-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/alibaba-brings-down-nasdaq-september-15-2014-9#comments">1</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-	<!-- If there is a tracking pixel render it here -->
-	
-</div><div class="id-541723bf69bedd1b1c1a57ae border-bottom bigpicture">
-	<span class="river_stack_id" id="541724d16bb3f72c783a4129" style="display:none"></span>
-    <h2 class="overridable"><a class="title" href="http://www.businessinsider.com/how-to-delete-u2-from-itunes-2014-9">Apple Is On The Defensive Over U2 Album It Forced Everyone To Download</a></h2>
-    
-        <a href="http://www.businessinsider.com/how-to-delete-u2-from-itunes-2014-9"><img class="river-thumb" src="http://static5.businessinsider.com/image/541723eeecad04773f3a412e-620-465/apple-created-a-webpage-just-to-let-people-delete-that-u2-album-from-itunes.jpg" width="620" height="465" /></a>
-    
-    
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/lisa-eadicicco">Lisa Eadicicco</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410802800">Sep. 15, 2014,  1:40 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">6,913</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/how-to-delete-u2-from-itunes-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/how-to-delete-u2-from-itunes-2014-9#comments">18</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-	<!-- If there is a tracking pixel render it here -->
-	
-</div> <div class="row-fluid post-river-twocolumn border-bottom id-541700466da811e17506f4b2 featurepost">
-	<div class="span6 river-image">
-		<a href="http://www.businessinsider.com/olive-garden-is-blatantly-distorting-the-the-real-debate-about-its-unlimited-breadsticks-2014-9"><img src="http://static5.businessinsider.com/image/5413071069bedd 070793bc-403-302/olive-garden-is-blatantly-distorting-the-real-debate-about-its-unlimited-breadsticks.jpg" alt="Olive Garden Is Blatantly Distorting The Real Debate About Its Unlimited Breadsticks" border="0" /></a>	</div>
-
-	<div class="span6">
-		<h2 class="feature-post overridable">
-			<a class="title" href="http://www.businessinsider.com/olive-garden-is-blatantly-distorting-the-the-real-debate-about-its-unlimited-breadsticks-2014-9">Olive Garden Is Blatantly Distorting The Real Debate About Its Unlimited Breadsticks</a>		</h2>
-
-					
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Finance' class='fa fa-stop' style='color: #cf4e00'></i><a href="http://www.businessinsider.com/author/joe-weisenthal">Joe Weisenthal</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410794340">Sep. 15, 2014, 11:19 AM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">9,276</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/olive-garden-is-blatantly-distorting-the-the-real-debate-about-its-unlimited-breadsticks-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/olive-garden-is-blatantly-distorting-the-the-real-debate-about-its-unlimited-breadsticks-2014-9#comments">22</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-			</div>
-
-	<!-- If there is a tracking pixel render it here -->
-	
-	<span class="river_stack_id" id="541704cf69beddea0b1a57b2" style="display: none"></span>
-</div> <div class="row-fluid post-river-twocolumn border-bottom id-5416f f6bb3f7932f3a412f featurepost">
-	<div class="span6 river-image">
-		<a href="http://www.businessinsider.com/heres-why-microsoft-is-paying-25-billion-for-minecraft-2014-9"><img src="http://static3.businessinsider.com/image/53d2f06569bedd2d3082041b-403-302/heres-why-microsoft-is-paying-25-billion-for-minecraft.jpg" alt="Minecraft Treehouse" border="0" /></a>	</div>
-
-	<div class="span6">
-		<h2 class="feature-post overridable">
-			<a class="title" href="http://www.businessinsider.com/heres-why-microsoft-is-paying-25-billion-for-minecraft-2014-9">Here's Why Microsoft Is Paying $2.5 Billion For Minecraft</a>		</h2>
-
-					
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/jay-yarow">Jay Yarow</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410790620">Sep. 15, 2014, 10:17 AM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">5,405</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/heres-why-microsoft-is-paying-25-billion-for-minecraft-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/heres-why-microsoft-is-paying-25-billion-for-minecraft-2014-9#comments">15</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-			</div>
-
-	<!-- If there is a tracking pixel render it here -->
-	
-	<span class="river_stack_id" id="541727daeab8ea2f050c 30" style="display: none"></span>
-</div> <div class="row-fluid post-river-twocolumn border-bottom id-5416f32f6bb3f7292f3a412f featurepost">
-	<div class="span6 river-image">
-		<a href="http://www.businessinsider.com/minecraft-creator-markus-notch-persson-is-leaving-mojang-2014-9"><img src="http://static2.businessinsider.com/image/5416f1fa69bedd143d1a57b0-403-302/entrepreneur-who-just-became-a-billionaire-writes-extraordinary-letter-about-leaving-his-company-to-save-his-sanity.jpg" alt="markus presson angry birds minecraft" border="0" /></a>	</div>
-
-	<div class="span6">
-		<h2 class="feature-post overridable">
-			<a class="title" href="http://www.businessinsider.com/minecraft-creator-markus-notch-persson-is-leaving-mojang-2014-9">Entrepreneur Who Just Became A Billionaire Writes Extraordinary Letter About Leaving His Company To Save His Sanity</a>		</h2>
-
-					
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/dave-smith">Dave Smith</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410790560">Sep. 15, 2014, 10:16 AM</li>		        			
-		    		        <li class="pageviews"><span class="sprites fire views" title="views">21,032</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/minecraft-creator-markus-notch-persson-is-leaving-mojang-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/minecraft-creator-markus-notch-persson-is-leaving-mojang-2014-9#comments">14</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-			</div>
-
-	<!-- If there is a tracking pixel render it here -->
-	
-	<span class="river_stack_id" id="5416f58f69bedde54d1a57ad" style="display: none"></span>
-</div>
-<div class="sponsor-post id-541256686bb3f77b79bc2abb">
-	<div class="row-fluid">
-					<div class="span6">
-				<a class="image clickable" href="http://www.businessinsider.com/sc/intel-helping-designers-build-smarter-devices-2014-9"><img src="http://static5.businessinsider.com/image/54134fdc69beddb348579818-373-279/intel-is-helping-designers-build-smarter-devices-with-better-hardware-and-software.jpg" /></a>
-			</div>
-		
-		<div class="span6 river-post" data-bi-post-id="541256686bb3f77b79bc2abb">
-			<h2 class="overridable">
-				<a class="title" href="http://www.businessinsider.com/sc/intel-helping-designers-build-smarter-devices-2014-9">Intel Is Helping Designers Build Smarter Devices With Better Hardware And Software</a>			</h2>
-
-			
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-													        			        <li class="date" data-bi-format="date" rel="1410797940">Sep. 15, 12:19 PM</li>		        			
-		    
-		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-			<h5 class="text-ad tooltip-sponsor">SPONSOR CONTENT <a href="/sponsor-posts" class="tooltip-sponsor" data-toggle="tooltip" title="Sponsor content is written by or on behalf of marketers looking to reach the Business Insider audience. Business Insider's editorial staff is not involved in the development of sponsor content. " data-original-title="Sponsor content is written by or on behalf of marketers looking to reach the Business Insider audience. Business Insider's editorial staff is not involved in the development of sponsor content. "><i class="fa fa-info-circle"></i></a></h5>
-
-	        <!-- If there is a tracking pixel render it here -->
-	        
-		</div>
-
-		<span class="river_stack_id" id="54171c1f69bedd53781a57b5" style="display:none"></span>
-	</div>
-</div>
-<div class="id-54107dfa6da811eb7c100136 border-bottom bigpicture">
-	<span class="river_stack_id" id="5416e0ce69bedd3c721a57ab" style="display:none"></span>
-    <h2 class="overridable"><a class="title" href="http://www.businessinsider.com/most-persuasive-english-words-2014-9">The 4 Most Persuasive Words In The English Language</a></h2>
-    
-        <div class="corner-flag"><a href="http://www.businessinsider.com/most-persuasive-english-words-2014-9"><img class="river-thumb" src="http://static6.businessinsider.com/image/5410e082ecad043d0b5253c3-620-465/the-4-most-persuasive-words-in-the-english-language.jpg" width="620" height="465" /></a><a href="http://www.businessinsider.com/most-persuasive-english-words-2014-9"><div class="corner video"><i class="sprites"></i></div></a></div>
-    
-    
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Strategy' class='fa fa-stop' style='color: #a11d0b'></i><a href="http://www.businessinsider.com/author/matt-johnston">Matt Johnston</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410780660">Sep. 15, 2014,  7:31 AM</li>		        			
-		    		        <li class="pageviews"><span class="sprites fire views" title="views">13,305</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-	<!-- If there is a tracking pixel render it here -->
-	
-</div><div class="id-54172d07ecad04ab683a4129 border-bottom bigpicture">
-	<span class="river_stack_id" id="54172f92eab8ea46250c 33" style="display:none"></span>
-    <h2 class="overridable"><a class="title" href="http://www.businessinsider.com/anthony-scaramucci-mitt-romney-will-run-in-2016-2014-9">One Of Romney's Biggest Wall Street Backers Thinks He'll Run In 2016</a></h2>
-    
-        <a href="http://www.businessinsider.com/anthony-scaramucci-mitt-romney-will-run-in-2016-2014-9"><img class="river-thumb" src="http://static3.businessinsider.com/image/54172d1f69beddef4d1a57ab-620-465/one-of-romneys-biggest-wall-street-backers-thinks-hell-run-in-2016.jpg" width="620" height="465" /></a>
-    
-    
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Politics' class='fa fa-stop' style='color: #3f8e3b'></i><a href="http://www.businessinsider.com/author/colin-campbell">Colin Campbell</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410805620">Sep. 15, 2014,  2:27 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">1,296</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/anthony-scaramucci-mitt-romney-will-run-in-2016-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/anthony-scaramucci-mitt-romney-will-run-in-2016-2014-9#comments">5</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-	<!-- If there is a tracking pixel render it here -->
-	
-</div> <div class="row-fluid post-river-twocolumn border-bottom id-5411b7ad6bb3f72f1c25dd37 featurepost">
-	<div class="span6 river-image">
-		<a href="http://www.businessinsider.com/finance-people-to-follow-on-twitter-2014-9"><img src="http://static3.businessinsider.com/image/51fab6b7ecad04c728000035-403-302/the-102-finance-people-you-have-to-follow-on-twitter.jpg" alt="The 102 Finance People You Have To Follow On Twitter" border="0" /></a>	</div>
-
-	<div class="span6">
-		<h2 class="feature-post overridable">
-			<a class="title" href="http://www.businessinsider.com/finance-people-to-follow-on-twitter-2014-9">The 102 Finance People You Have To Follow On Twitter</a>		</h2>
-
-					
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Finance' class='fa fa-stop' style='color: #cf4e00'></i><a href="http://www.businessinsider.com/author/linette-lopez">Linette Lopez</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410798480">Sep. 15, 2014, 12:28 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites fire views" title="views">132,274</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/finance-people-to-follow-on-twitter-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/finance-people-to-follow-on-twitter-2014-9#comments">3</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-			</div>
-
-	<!-- If there is a tracking pixel render it here -->
-	
-	<span class="river_stack_id" id="5417199ceab8ea12410c 3d" style="display: none"></span>
-</div> <div class="row-fluid post-river-twocolumn border-bottom id-540db53e69bedde62e255d17 featurepost">
-	<div class="span6 river-image">
-		<a href="http://www.businessinsider.com/occidental-sexual-assault-2014-9"><img src="http://static5.businessinsider.com/image/5417164decad044b073a412f-403-302/too-drunk-to-consent-a-leaked-sexual-assault-investigation-highlights-the-latest-campus-debate.jpg" alt="TOO DRUNK TO CONSENT: A Leaked Sexual-Assault Investigation Highlights The Latest Campus Debate" border="0" /></a>	</div>
-
-	<div class="span6">
-		<h2 class="feature-post overridable">
-			<a class="title" href="http://www.businessinsider.com/occidental-sexual-assault-2014-9">A Leaked Sexual Assault Investigation Highlights The Latest Campus Debate</a>		</h2>
-
-					
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Education' class='fa fa-stop' style='color: #984b55'></i><a href="http://www.businessinsider.com/author/peter-jacobs">Peter Jacobs</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410803100">Sep. 15, 2014,  1:45 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">2,254</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/occidental-sexual-assault-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/occidental-sexual-assault-2014-9#comments">7</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-			</div>
-
-	<!-- If there is a tracking pixel render it here -->
-	
-	<span class="river_stack_id" id="54172a156bb3f7ff0b3a4130" style="display: none"></span>
-</div> <div class="row-fluid post-river-twocolumn border-bottom id-5411fa0169beddb1528bb28f featurepost">
-	<div class="span6 river-image">
-		<a href="http://www.businessinsider.com/grace-choi-mink-2014-9"><img src="http://static2.businessinsider.com/image/541722516da811a52306f4b1-403-302/meet-the-harvard-brainiac-who-figured-out-how-to-3d-print-makeup-from-any-home-computer.jpg" alt="Meet The Harvard Brainiac Who Figured Out How To 3D Print Makeup From Any Home Computer" border="0" /></a>	</div>
-
-	<div class="span6">
-		<h2 class="feature-post overridable">
-			<a class="title" href="http://www.businessinsider.com/grace-choi-mink-2014-9">Meet The Harvard Brainiac Who Figured Out How To 3D Print Makeup From Any Home Computer</a>		</h2>
-
-					
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Game Changers' class='fa fa-stop' style='color: #325a66'></i><a href="http://www.businessinsider.com/author/alyson-shontell">Alyson Shontell</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="141079 20">Sep. 15, 2014, 11:12 AM</li>		        			
-		    		        <li class="pageviews"><span class="sprites red views" title="views">4,104</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/grace-choi-mink-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/grace-choi-mink-2014-9#comments">12</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-			</div>
-
-	<!-- If there is a tracking pixel render it here -->
-	
-	<span class="river_stack_id" id="541706916bb3f7df7e3a412c" style="display: none"></span>
-</div><div class="id-541733cc6da811027a06f4b1 border-bottom bigpicture">
-	<span class="river_stack_id" id="541737cd6da811fb0a06f4b8" style="display:none"></span>
-    <h2 class="overridable"><a class="title" href="http://www.businessinsider.com/tiger-woods-working-out-2014-9">Tiger Woods Is Obsessed With Working Out</a></h2>
-    
-        <a href="http://www.businessinsider.com/tiger-woods-working-out-2014-9"><img class="river-thumb" src="http://static5.businessinsider.com/image/53 7ff86bb3f71605849e34-620-465/tiger-woods-is-obsessed-with-working-out.jpg" width="620" height="465" /></a>
-    
-    
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Sports' class='fa fa-stop' style='color: #2b679f'></i><a href="http://www.businessinsider.com/author/tony-manfred">Tony Manfred</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410807120">Sep. 15, 2014,  2:52 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites orange views" title="views">769</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-	<!-- If there is a tracking pixel render it here -->
-	
-</div>
-<div class="river-enhanced">
-	<span class="river_stack_id" id="521cb972eab8eabe672ad428" style="display:none "></span>
-
-							<div  class="row-fluid border-bottom id-540a0538ecad04c2551fa4ae">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/the-best-places-to-visit-in-croatia-2014-9"><img class="river-thumb" src="http://static5.businessinsider.com/image/540a04beecad047e521fa4ad-265-199/the-best-places-to-visit-in-croatia.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="540a0538ecad04c2551fa4ae">
-
-        <h3><a href="http://www.businessinsider.com/the-best-places-to-visit-in-croatia-2014-9">The Best Places To Visit In Croatia</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Life Contributors' class='fa fa-stop' style='color: #984b55'></i><a target="_blank" href="http://www.thecultureist.com/2014/09/03/guide-exploring-allure-croatia/">JJ Fox</a>, <a target="_blank" href="http://www.thecultureist.com/">The Culture-ist</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410807180">Sep. 15,  2:53 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">183</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-54136287eab8ea1e58d132d4">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/professors-read-mean-reviews-from-students-2014-9"><img class="river-thumb" src="http://static5.businessinsider.com/image/54136013eab8ea8853d132ce-265-199/watch-a-bunch-of-professors-read-mean-reviews-from-their-students.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="54136287eab8ea1e58d132d4">
-
-        <h3><a href="http://www.businessinsider.com/professors-read-mean-reviews-from-students-2014-9">Watch A Bunch Of Professors Read Mean Reviews From Their Students</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Education' class='fa fa-stop' style='color: #984b55'></i><a href="http://www.businessinsider.com/author/peter-jacobs">Peter Jacobs</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410807120">Sep. 15,  2:52 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">187</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-541725286bb3f798783a412a">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/new-york-candidate-attacked-for-being-dolphins-fan-2014-9"><img class="river-thumb" src="http://static5.businessinsider.com/image/5417280869bedd292e1a57b4-265-199/new-york-gubernatorial-candidate-attacked-for-being-a-dolphins-fan.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="541725286bb3f798783a412a">
-
-        <h3><a href="http://www.businessinsider.com/new-york-candidate-attacked-for-being-dolphins-fan-2014-9">New York Gubernatorial Candidate Attacked For Being A Dolphins Fan</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Politics' class='fa fa-stop' style='color: #3f8e3b'></i><a href="http://www.businessinsider.com/author/colin-campbell">Colin Campbell</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410807106">Sep. 15,  2:51 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">159</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-54172dcb6da811af5b06f4b2">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/polyvore-ceo-jess-lee-advice-from-marissa-mayer-2014-9"><img class="river-thumb" src="http://static2.businessinsider.com/image/5417296469bedd0e361a57cc-265-199/how-a-piece-of-advice-from-marissa-mayer-shaped-this-ceos-career.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="54172dcb6da811af5b06f4b2">
-
-        <h3><a href="http://www.businessinsider.com/polyvore-ceo-jess-lee-advice-from-marissa-mayer-2014-9">How A Piece Of Advice From Marissa Mayer Shaped This CEO's Career</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/jillian-donfro">Jillian D'Onfro</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410806992">Sep. 15,  2:49 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">374</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-541721e369bedd221c1a57ac">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/most-popular-foods-jawbone-2014-9"><img class="river-thumb" src="http://static4.businessinsider.com/image/541730aaeab8ea70220c 33-265-199/jawbone-figured-out-the-most-popular-foods-in-the-world-thanks-to-its-new-food-logging-app.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="541721e369bedd221c1a57ac">
-
-        <h3><a href="http://www.businessinsider.com/most-popular-foods-jawbone-2014-9">Jawbone Figured Out The Most Popular Foods In The World Thanks To Its New Food-Logging App</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/lisa-eadicicco">Lisa Eadicicco</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410806907">Sep. 15,  2:48 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites orange views" title="views">412</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-54172a885afbd36d068b456b">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/r-deluged-with-comments-us-fcc-to-continue-net-neutrality-outreach-2014-9"><img class="river-thumb" src="http://static3.businessinsider.com/image/54172f156bb3f7b5233a412b-265-199/the-fcc-will-stop-accepting-public-comments-on-its-proposal-that-could-be-a-disaster-for-internet-freedom.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="54172a885afbd36d068b456b">
-
-        <h3><a href="http://www.businessinsider.com/r-deluged-with-comments-us-fcc-to-continue-net-neutrality-outreach-2014-9">The FCC Will Stop Accepting Public Comments On Its Proposal That Could Be A Disaster For Internet Freedom</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech Contributors' class='fa fa-stop' style='color: #01819e'></i>Alina Selyukh, <a target="_blank" href="http://www.reuters.com">Reuters</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410806280">Sep. 15,  2:38 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">236</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-54172e1369bedd314b1a57ae">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/the-un-is-withdrawing-from-parts-of-the-golan-2014-9"><img class="river-thumb" src="http://static3.businessinsider.com/image/54172f25ecad0474693a4132-265-199/the-part-of-syria-directly-controlled-by-the-un-is-now-too-dangerous-for-peacekeepers.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="54172e1369bedd314b1a57ae">
-
-        <h3><a href="http://www.businessinsider.com/the-un-is-withdrawing-from-parts-of-the-golan-2014-9">The Part Of Syria Directly Controlled By The UN Is Now Too Dangerous For Peacekeepers</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Military & Defense' class='fa fa-stop' style='color: #3f8e3b'></i><a href="http://www.businessinsider.com/author/armin-rosen">Armin Rosen</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410806168">Sep. 15,  2:36 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">221</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-5416fef86bb3f743633a412a">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/september-fomc-meeting-preview-2014-9"><img class="river-thumb" src="http://static6.businessinsider.com/image/54171b906bb3f786523a412c-265-199/heres-everything-thats-happened-since-the-last-time-fed-chair-janet-yellen-gave-a-big-press-conference.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="5416fef86bb3f743633a412a">
-
-        <h3><a href="http://www.businessinsider.com/september-fomc-meeting-preview-2014-9">Here's Everything That's Happened Since The Last Time Fed Chair Janet Yellen Gave A Big Press Conference</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Markets' class='fa fa-stop' style='color: #cf4e00'></i><a href="http://www.businessinsider.com/author/myles-udland">Myles Udland</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410806166">Sep. 15,  2:36 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">134</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-54170ef5eab8eaaf170c 30">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/harvard-indestructable-soft-rescue-robot-2014-9"><img class="river-thumb" src="http://static3.businessinsider.com/image/54171bc3eab8ea3b500c 30-265-199/this-crazy-robot-keeps-going-even-after-being-run-over-and-lit-on-fire.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="54170ef5eab8eaaf170c 30">
-
-        <h3><a href="http://www.businessinsider.com/harvard-indestructable-soft-rescue-robot-2014-9">This Crazy Robot Keeps Going Even After Being Run Over And Lit On Fire</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Science' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/ajai-raj">Ajai Raj</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410805761">Sep. 15,  2:29 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites grey views" title="views">261</span></li>
-		    
-		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
-				        <a href="http://www.businessinsider.com/harvard-indestructable-soft-rescue-robot-2014-9#comments" class="views sprites comments-icon"></a>
-						<a class="comment_count" href="http://www.businessinsider.com/harvard-indestructable-soft-rescue-robot-2014-9#comments">1</a>			        </li>
-		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-					<div  class="row-fluid border-bottom id-541728156da811ce3f06f4b3">
-
-    <div class="span4 river-image">
-		<a href="http://www.businessinsider.com/analyst-iphone-sales-expectations-100-million-2014-2014-9"><img class="river-thumb" src="http://static2.businessinsider.com/image/54172d29eab8ea13180c 32-265-199/ubs-apple-could-sell-100-million-iphones-in-the-second-half-of-2014.jpg" width="265" height="199" /></a>    </div>
-
-    <div class="span8 river-post" data-bi-post-id="541728156da811ce3f06f4b3">
-
-        <h3><a href="http://www.businessinsider.com/analyst-iphone-sales-expectations-100-million-2014-2014-9">UBS: Apple Could Sell 100 Million iPhones In The Second Half Of 2014</a></h3>
-        
-        
-<div class="flex byline">
-	
-	
-	<div class="flex-item">
-		<div class="list-pipes">
-			<ul>
-																		<li class="all-caps author-byline ks-author-byline"><i title='Tech' class='fa fa-stop' style='color: #01819e'></i><a href="http://www.businessinsider.com/author/sam-colt">Sam Colt</a></li>
-																					        			        <li class="date" data-bi-format="date" rel="1410805400">Sep. 15,  2:23 PM</li>		        			
-		    		        <li class="pageviews"><span class="sprites orange views" title="views">446</span></li>
-		    
-		    		        		    
-			</ul>
-
-		</div>
-	</div>
-</div>
-
-        
-    </div>
-    
-</div>
-			</div>                </div>
-
-                <!-- River Loading Spinner -->
-                <div data-load-more-notification style="display: none ">
-                    <div class="sprites bi-spinner">
-                        <div class="rotating"></div>
-                    </div>
-                    <div class="spinner-text">Loading more...</div>
-                </div>
-                <!-- /River Loading Spinner -->
-                
-                <!-- SHOW NO PAGINATION FOR SUBVERTICALS (category) PAGES FOR BRAND BLOGS/GAMECHANGES -->
-                                    <!-- Pagination -->
-                    
-	<ul class="pager cf">
-		<li class="previous disabled">
-			<a class="float-left btn button-white disabled" href="#"><i class="fa fa-chevron-left"></i> Previous</a>
-		</li>
-		<li class="next">
-			<a class="float-right btn button-white" href="?page=2">Next <i class="fa fa-chevron-right"></i></a>
-		</li>
-	</ul>
-
-                    <!-- / Pagination -->
-                                        <!-- / River -->
-
-            </div>
-                            <div class="trending-container span3">
-                    <div class="trending ks-trending-recirculation">
-                        <h3 class="underlined">Trending</h3>
-                    </div>
-                </div>
-                </div>
-
-</div>
-
-                        </div>
-                                                    <div class="span4">
-                                <div class="main-rail">
-                                                                            
-<div id="right-rail" class="right-rail">
-	<div class="sl-layout-post">
-		<!-- PERFECT MARKET RR -->
-					<!-- Only show at uppermost top if skin is active -->
-			
-			<!-- Vertical Host -->
-													<!-- / Vertical Host -->
-
-			<!-- Countdown Clock  -->
-						<!-- / Countdown Clock  -->
-
-			
-
-<div data-bi-ad class="ad dfp" data-adunit="desktop/home/home/homepage" data-pagetype="homepage" data-region="Top Right Rail" data-sizes="300x60,300x168" data-url="/"></div>
-<script type="text/javascript">
-	(function() {
-		'use strict' 
-
-		// Notify the DFP code that a new ad has just been rendered
-		amplify.publish('adRender') 
-	}()) 
-</script>
-
-			<!-- BI Live Widget (Above Fold Placement) -->
-										
-			<!-- Newsletters -->
-			
-<div class="right-subscribe">
-	<div class="right-news">
-		<h3>Get <span class="news-vert">Business Insider</span> Emails &amp  Alerts</h3>
-		<div class="alert" id="news-alert"></div>
-		<form class="form" action="/newsletter?source=sidebar" method="post">
-			<div class="input-append">
-				<input id="news-email" name="email" type="text" placeholder="Email Address" data-email="">
-				<button class="btn submit" id="news-signup" type="submit">Sign-Up</button>
-			</div>
-			<a class="pull-right smallest" href="/newsletter">Learn More  187 </a>
-
-			<div id="newsletter-expand" class="newsletter-preview-links" style="display:none">
-				<ul>
-											<li>
-							<label class="checkbox">
-								<input type="checkbox" name="newsletters[]" value="Business Insider Select" checked="checked">
-									Business Insider Select							</label>
-						</li>
-									</ul>
-				<div class="divider">More</div>
-				<div class="accordion" id="news-categories">
-																											<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id1">
-									<i class="fa fa-caret-right"></i><span>Featured</span>
-								</a>
-							</div>
-							<div id="news-category-id1" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Business Insider Select"
-														checked="checked"													/>
-													Business Insider Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Tech Select"
-																											/>
-													Tech Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Tech Chart Of The Day"
-																											/>
-													Tech Chart Of The Day												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Markets Chart Of The Day"
-																											/>
-													Markets Chart Of The Day												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="10 Things Before the Opening Bell"
-																											/>
-													10 Things Before the Opening Bell												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Instant MBA"
-																											/>
-													Instant MBA												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Breaking News"
-																											/>
-													Breaking News												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Master Events List"
-																											/>
-													Business Insider Events												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id2">
-									<i class="fa fa-caret-right"></i><span>Entertainment</span>
-								</a>
-							</div>
-							<div id="news-category-id2" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Entertainment Select"
-																											/>
-													Entertainment Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Sports Select"
-																											/>
-													Sports Select												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id3">
-									<i class="fa fa-caret-right"></i><span>Finance</span>
-								</a>
-							</div>
-							<div id="news-category-id3" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Finance Select"
-																											/>
-													Finance Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Markets Select"
-																											/>
-													Markets Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Monday Scouting Report"
-																											/>
-													Monday Scouting Report												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Your Money Select"
-																											/>
-													Your Money Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Financial Advisor Insights"
-																											/>
-													Financial Advisor Insights												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Smart Investor"
-																											/>
-													Smart Investor												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id4">
-									<i class="fa fa-caret-right"></i><span>Strategy</span>
-								</a>
-							</div>
-							<div id="news-category-id4" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Strategy Select"
-																											/>
-													Strategy Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Advertising Select"
-																											/>
-													Advertising Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Retail Select"
-																											/>
-													Retail Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Careers Select"
-																											/>
-													Careers Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Marketing Mondays"
-																											/>
-													Marketing Mondays												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Advertising: The Brief"
-																											/>
-													Advertising: The Brief												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id5">
-									<i class="fa fa-caret-right"></i><span>Politics</span>
-								</a>
-							</div>
-							<div id="news-category-id5" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Politics Select"
-																											/>
-													Politics Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Military Select"
-																											/>
-													Military Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Law & Order Select"
-																											/>
-													Law & Order Select												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id6">
-									<i class="fa fa-caret-right"></i><span>Life</span>
-								</a>
-							</div>
-							<div id="news-category-id6" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Life Select"
-																											/>
-													Life Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Transportation Select"
-																											/>
-													Transportation Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Education Select"
-																											/>
-													Education Select												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id7">
-									<i class="fa fa-caret-right"></i><span>Tech</span>
-								</a>
-							</div>
-							<div id="news-category-id7" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Enterprise Select"
-																											/>
-													Enterprise Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Science Select"
-																											/>
-													Science Select												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Mobile Chart Of The Day"
-																											/>
-													Mobile Chart Of The Day												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="E-Commerce Chart Of The Day"
-																											/>
-													E-Commerce Chart Of The Day												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Payments Chart Of The Day"
-																											/>
-													Payments Chart Of The Day												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Digital Media Chart Of The Day"
-																											/>
-													Digital Media Chart Of The Day												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id8">
-									<i class="fa fa-caret-right"></i><span>Charts of the Day</span>
-								</a>
-							</div>
-							<div id="news-category-id8" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Sports Chart Of The Day"
-																											/>
-													Sports Chart Of The Day												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-																	<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id9">
-									<i class="fa fa-caret-right"></i><span>Top 10 Things</span>
-								</a>
-							</div>
-							<div id="news-category-id9" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<ul>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="10 Things In Tech You Need To Know"
-																											/>
-													10 Things In Tech You Need To Know												</label>
-											</li>
-																																																						<li>
-												<label class="checkbox">
-													<input type="checkbox" name="newsletters[]" value="Closing Bell"
-																											/>
-													Closing Bell												</label>
-											</li>
-																			</ul>
-								</div>
-							</div>
-						</div>
-									</div>
-			</div>
-		</form>
-	</div>
-</div>
-
-			<!-- Show here if skin is not active -->
-												<div class="right-ad">
-						<div class="ad-height-250">
-							<h5 class="text-ad">Advertisement</h5>
-							
-
-<div data-bi-ad class="ad dfp" data-adunit="desktop/home/home/homepage" data-pagetype="homepage" data-region="Upper 300" data-sizes="300x250,300x600,300x400,300x1050" data-url="/"></div>
-<script type="text/javascript">
-	(function() {
-		'use strict' 
-
-		// Notify the DFP code that a new ad has just been rendered
-		amplify.publish('adRender') 
-	}()) 
-</script>
-						</div>
-					</div>
-		        		    
-			<!-- Your Money -->
-							<div class="stock-ticker ks-rr-your-money">
-	<h3 class="underlined">Your Money</h3>
-    <table class="xignite-indices">
-	                <tr>
-                <td>
-                    NASDAQ Composite                </td>
-                <td class="price">4,523</td>
-                <td>
-                                            <span class="xignite-indices-red">
-                            -44.57                        </span>
-                                    </td>
-                <td>
-                                            <span class="xignite-indices-red">
-                            (-0.976%)
-                        </span>
-                                    </td>
-            </tr>
-                    <tr>
-                <td>
-                    S&P 500                </td>
-                <td class="price">1,985</td>
-                <td>
-                                            <span class="xignite-indices-red">
-                            -0.45                        </span>
-                                    </td>
-                <td>
-                                            <span class="xignite-indices-red">
-                            (-0.023%)
-                        </span>
-                                    </td>
-            </tr>
-                    <tr>
-                <td>
-                    NYSE Composite                </td>
-                <td class="price">10,916</td>
-                <td>
-                                            <span class="xignite-indices-green">
-                            +4.2                        </span>
-                                    </td>
-                <td>
-                                            <span class="xignite-indices-green">
-                            (+0.038%)
-                        </span>
-                                    </td>
-            </tr>
-            </table>
-
-            <div class="ad-marketswidget margin-top">
-            <h5 class="text-ad">Sponsored By</h5>
-
-                            <div class="marketswidget-unit">
-                    
-
-<div data-bi-ad class="ad dfp" data-adunit="desktop/home/home/homepage" data-pagetype="homepage" data-region="Stock Widget 1" data-sizes="88x31" data-url="/"></div>
-<script type="text/javascript">
-	(function() {
-		'use strict' 
-
-		// Notify the DFP code that a new ad has just been rendered
-		amplify.publish('adRender') 
-	}()) 
-</script>
-                </div>
-            
-                    </div>
-    </div>			
-			<div id="taboola-right-rail-thumbnails"></div>
-<script type="text/javascript">
-	window._taboola = window._taboola || [] 
-	_taboola.push({
-		mode: 'organic-thumbnails-a',
-		container: 'taboola-right-rail-thumbnails',
-		placement: 'Right Rail Thumbnails',
-		target_type: 'video'
-	}) 
-</script>
-							<!-- Linkedin App -->
-									<div class="linkedin">
-    <div class="header">
-        <a class="logo"><span>LinkedIn</span></a>
-    </div>
-
-    <div class="tabbable ks-rr-linkedin">
-        <div class="tab-content">
-            <div id="selected-listings" class="tab-pane active">
-                                    <ul class="media-list">
-                                                    <li class="media">
-                                <a class="pull-left" href="http://www.businessinsider.com/beacons-and-ibeacons-create-a-new-market-2013-12"><img src="http://static3.businessinsider.com/image/52b88cc269bedd4b02759570--45/beacons-what-they-are-how-they-work-and-why-apples-ibeacon-technology-is-ahead-of-the-pack.jpg" height="45"></a>
-                                <div class="listings">
-                                    <div class="media-body">
-                                        <p>
-                                            <span class="float-right share-button">
-                                                <script type="IN/Share" data-counter="right" data-url="http://www.businessinsider.com/beacons-and-ibeacons-create-a-new-market-2013-12"></script>
-                                            </span>
-
-                                            <a href="http://www.businessinsider.com/beacons-and-ibeacons-create-a-new-market-2013-12">
-                                                BEACONS: What They Are, How They Work, And Why Apple's iBeacon Technology Is Ahead Of The Pack                                             </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                                                    <li class="media">
-                                <a class="pull-left" href="http://www.businessinsider.com/tim-cook-ibm-has-what-we-need-2014-9"><img src="http://static2.businessinsider.com/image/541380b46da811b97e583c82--45/tim-cook-heres-how-ibm-is-going-to-help-us-sell-a-lot-more-iphones-and-ipads.jpg" height="45"></a>
-                                <div class="listings">
-                                    <div class="media-body">
-                                        <p>
-                                            <span class="float-right share-button">
-                                                <script type="IN/Share" data-counter="right" data-url="http://www.businessinsider.com/tim-cook-ibm-has-what-we-need-2014-9"></script>
-                                            </span>
-
-                                            <a href="http://www.businessinsider.com/tim-cook-ibm-has-what-we-need-2014-9">
-                                                Tim Cook: Here's How IBM Is Going To Help Us Sell A Lot More iPhones And iPads                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                                                    <li class="media">
-                                <a class="pull-left" href="http://www.businessinsider.com/this-world-map-shows-every-device-connected-to-the-internet-2014-9"><img src="http://static5.businessinsider.com/image/54136f8d6bb3f7dc17e92dd2--45/this-world-map-shows-every-device-connected-to-the-internet.jpg" height="45"></a>
-                                <div class="listings">
-                                    <div class="media-body">
-                                        <p>
-                                            <span class="float-right share-button">
-                                                <script type="IN/Share" data-counter="right" data-url="http://www.businessinsider.com/this-world-map-shows-every-device-connected-to-the-internet-2014-9"></script>
-                                            </span>
-
-                                            <a href="http://www.businessinsider.com/this-world-map-shows-every-device-connected-to-the-internet-2014-9">
-                                                This World Map Shows Every Device Connected To The Internet                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                                            </ul>
-                            </div>
-
-            <div id="network-listings" class="tab-pane">
-                <p class="not-logged">
-                    <a class="linkedin_login_link" href="/register?action=linkedin"">Login with LinkedIn</a> to see what your friends are reading on Business Insider. <br />
-                    <a class="btn linkedin" href="/register?action=linkedin"" rel="nofollow"><i class="fa fa-linkedin"></i> Login with LinkedIn</a>
-                </p>
-                <ul>
-                </ul>
-                <p class="no-articles" style="display: none">
-                    No articles have recently been shared in your network.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="footer border-top-dotted">
-        <p><a href="/trending_on_linkedin">More  187 </a></p>
-            </div>
-</div>							
-		 	                <div class="right-ad">
-                    <div>
-                        <div class="sponsored-content-widget ks-rr-sponsored-content-widget">
-    <h3 class="underlined">Sponsored Content</h3>
-    <ul class="media-list">
-                <li id="id-541365bc6da8110b73583c84" class="media">
-                        <a class="pull-left" href="http://www.businessinsider.com/how-to-3d-print-lipstick-makeup-eyeshadow-and-nail-polish-from-a-home-computer-2014-9">
-                                    <img src="http://static2.businessinsider.com/image/5416fe95eab8eaaa530c 3a-60/how-to-hack-your-home-printer-so-it-will-3d-print-any-lipstick-nail-polish-eye-shadow-or-other-makeup-you-want.jpg" alt="How To Hack Your Home Printer So It Will 3D Print Any Lipstick, Nail Polish, Eye Shadow Or Other Makeup You Want" />
-                            </a>
-            <div class="media-body">
-                <p><a class="title" href="http://www.businessinsider.com/how-to-3d-print-lipstick-makeup-eyeshadow-and-nail-polish-from-a-home-computer-2014-9">How To Hack Your Home Printer So It Will 3D Print Any Lipstick, Nail Polish, Eye Shadow Or Other Makeup You Want</a></p>
-            </div>
-            <p class="align-right">
-                <a href="http://www.businessinsider.com/game-changers">More &quot Game Changers&quot  »</a>            </p>
-        </li>
-                <li id="id-53f371d36bb3f7701f8f0795" class="media">
-                        <a class="pull-left" href="http://www.businessinsider.com/sc/fixed-income-investors-income-famine-2014-9">
-                                    <img src="http://static5.businessinsider.com/image/53f79497ecad04df3635ca51-60/weve-hit-the-fifth-year-of-income-famine--heres-why-investors-should-be-worried.jpg" alt="We've Hit The Fifth Year Of 'Income Famine' — Here's Why Investors Should Be Worried" />
-                            </a>
-            <div class="media-body">
-                <p><a class="title" href="http://www.businessinsider.com/sc/fixed-income-investors-income-famine-2014-9">We've Hit The Fifth Year Of 'Income Famine' — Here's Why Investors Should Be Worried</a></p>
-            </div>
-            <p class="align-right">
-                <a href="http://www.businessinsider.com/think-global">More &quot Think Global&quot  »</a>            </p>
-        </li>
-                <li id="id-5411fa0169beddb1528bb28f" class="media">
-                        <a class="pull-left" href="http://www.businessinsider.com/grace-choi-mink-2014-9">
-                                    <img src="http://static2.businessinsider.com/image/541722516da811a52306f4b1-403-302/meet-the-harvard-brainiac-who-figured-out-how-to-3d-print-makeup-from-any-home-computer.jpg" alt="Meet The Harvard Brainiac Who Figured Out How To 3D Print Makeup From Any Home Computer" />
-                            </a>
-            <div class="media-body">
-                <p><a class="title" href="http://www.businessinsider.com/grace-choi-mink-2014-9">Meet The Harvard Brainiac Who Figured Out How To 3D Print Makeup From Any Home Computer</a></p>
-            </div>
-            <p class="align-right">
-                <a href="http://www.businessinsider.com/game-changers">More &quot Game Changers&quot  »</a>            </p>
-        </li>
-                <li id="id-5405eb4969bedd912fd79890" class="media">
-                        <a class="pull-left" href="http://www.businessinsider.com/scott-leonards-the-liberated-ceo-2014-9">
-                                    <img src="http://static3.businessinsider.com/image/54061fbc6bb3f7e92c44e2ef-60/how-one-ceo-successfully-ran-his-business-while-sailing-around-the-world-for-3-years.jpg" alt="How One CEO Successfully Ran His Business While Sailing Around The World For 3 Years" />
-                            </a>
-            <div class="media-body">
-                <p><a class="title" href="http://www.businessinsider.com/scott-leonards-the-liberated-ceo-2014-9">How One CEO Successfully Ran His Business While Sailing Around The World For 3 Years</a></p>
-            </div>
-            <p class="align-right">
-                <a href="http://www.businessinsider.com/category/anywhere-workplace">More &quot The Anywhere Workplace&quot  »</a>            </p>
-        </li>
-            </ul>
-</div>                    </div>
-                </div>
-            
-			<!-- Facebook Promo -->
-			
-			<!-- Facebook App -->
-			<div class="facebook-app-container" style="display:none ">
-	<h3 class="underlined">Welcome, <span id="fb-username"></span>!</h3>
-	<div class="facebook-app media">
-
-		<div class="fb-profile-pic pull-left"></div>
-
-		<div class="media-body">
-
-			<h5>You are logged into Facebook</h5>
-
-			<h5>Social: <a class="switch-off" href=""></a></h5>
-
-			<ul class="clearfix">
-				<li class="bi-popover activity"><a href="">Your Activity</a><span>|</span>
-					<div class="popover bottom">
-						<div class="arrow"></div>
-						<h3 class="popover-title">These articles have been shared on your timeline. You can remove them here:</h3>
-						<div class="popover-content">
-							<div class="fb-remove-articles"></div>
-						</div>
-					</div>
-				</li>
-				<li class="bi-popover options"><a href="">Options</a>
-					<div class="popover bottom">
-						<div class="arrow"></div>
-						<h3 class="popover-title">Notify me when a story is shared.</h3>
-						<div class="popover-content">
-							<div>						
-								<form id="fb-app-form">
-									<label class="radio inline">
-										<input type="radio" name="shared" value="true" id="notify_yes">Yes</label>
-									<label class="radio inline">
-										<input type="radio" name="shared" value="false" id="notify_no">No</label>
-								</form>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-
-		</div>	
-
-	</div>
-</div>
-
-	        <!-- Google App -->
-	        <div class="google-app-container" style="display:none ">
-    <h3 class="underlined">Welcome, <span id="gp-username"></span>!</h3>
-    <div class="google-app media">
-
-        <div class="gp-profile-pic pull-left"></div>
-
-        <div class="media-body">
-
-            <h5>You are logged in with Google</h5>
-
-            <h5>Social: <a class="switch-off" href=""></a></h5>
-
-            <ul class="clearfix">
-                <li class="bi-popover activity"><a href="">Your Activity</a><span>|</span>
-                    <div class="popover bottom">
-                        <div class="arrow"></div>
-                        <h3 class="popover-title">These articles have been added to your Google activity log. You can remove them here:</h3>
-                        <div class="popover-content">
-                            <div class="gp-remove-articles"></div>
-                        </div>
-                    </div>
-                </li>
-                <li class="bi-popover options"><a href="">Options</a>
-                    <div class="popover bottom">
-                        <div class="arrow"></div>
-                        <h3 class="popover-title">Notify me when a story is shared.</h3>
-                        <div class="popover-content">
-                            <div>                       
-                                <form id="gp-app-form">
-                                    <label class="radio inline">
-                                        <input type="radio" name="shared" value="true" id="notify_yes">Yes</label>
-                                    <label class="radio inline">
-                                        <input type="radio" name="shared" value="false" id="notify_no">No</label>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-        </div>  
-
-    </div>
-</div>
-
-			<!-- Editorial Sidebar -->
-							<!-- editorial sidebar -->
-<div id="editorial" class="ks-rr-editorial" data-bi-heatmap="editorial">
-	<h3 class="underlined">Watch & Learn</h3>
-	<div>
-		<p><a href="http://www.businessinsider.com/siri-tricks-you-never-knew-existed-2014-9"><img src="http://static2.businessinsider.com/image/5416f1d5eab8ea27290c 30-340/siri-planes-overhead.jpg" border="0" alt="Siri Planes Overhead" /></a></p>
-<ul>
-<li><a href="http://www.businessinsider.com/siri-tricks-you-never-knew-existed-2014-9">Cool Siri Tricks You Never Knew Existed</a></li>
-<li><a href="http://www.businessinsider.com/iphone-hacks-tricks-ios-apple-2014-6">10 Things You Didn't Know Your iPhone Could Do</a></li>
-<li><a href="http://www.businessinsider.com/email-iphone-tricks-2014-8">Email Tricks You Didn't Know You Could Do On Your iPhone</a></li>
-</ul>	</div>
-</div>
-<!-- / editorial sidebar -->
-			
-			<!-- Trending -->
-			<div class="trending ks-trending-recirculation">
-				<h3 class="underlined">Trending</h3>
-			</div>
-
-			<!-- Read Me -->
-			
-							<!-- The Hive -->
-				<!--Original Hive Module-->
-<div class="thehive-module ks-rr-hive">
-	<h3 class="underlined clearfix"><a class="pull-right link-rss" href="http://www.businessinsider.com/thehive.rss" title="RSS"><i class="fa fa-rss"></i></a>The Hive <a id="info" href="/thehive/whatsthis" data-toggle="tooltip" title="About The Hive"><i class="fa fa-info-circle"></i></a></h3>
-
-	<h4>What Smart People Are Reading</h4>
-
-	<ul>
-					<li id="541737375afbd33f498b456c" class="media">
-
-				<span class="pull-left badge badge-info">3</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://mashable.com/2014/09/15/how-to-delete-u2-free-album-itunes-apple/" target="_blank">Want to Delete U2's Free Album? Apple Created a Help Page
-for That</a>
-				</div>
-
-			</li>
-					<li id="5416e31d5afbd31c148b45b5" class="media">
-
-				<span class="pull-left badge badge-info">3</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://blogs.wsj.com/economics/2014/09/14/how-does-janet-yellen-spend-her-time-check-her-calendar/" target="_blank">How Does Janet Yellen Spend Her Time? Check Her Calendar -
-Real Time Economics</a>
-				</div>
-
-			</li>
-					<li id="541668f55afbd3a8288b4567" class="media">
-
-				<span class="pull-left badge badge-info">3</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://bigstory.ap.org/article/ap-appoints-dharapak-asia-pacific-photo-editor" target="_blank">AP appoints Dharapak as Asia-Pacific photo editor</a>
-				</div>
-
-			</li>
-					<li id="54172e145afbd3511b8b45b3" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://www.hammacher.com/Product/Default.aspx?sku=86250&PID=1492714" target="_blank">The Buffet Eater's Wine Glass</a>
-				</div>
-
-			</li>
-					<li id="54172e145afbd3511b8b45b2" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://www.huffingtonpost.com/2014/09/15/debo-adegbile-doj-civil-rights-division_n_5824002.html" target="_blank">Principles
-More Important Than A Job Title</a>
-				</div>
-
-			</li>
-					<li id="54172dd95afbd3511b8b456b" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://www.youtube.com/watch?v=-YkLPxQp_y0&feature=youtu.be" target="_blank">Last Week Tonight with John Oliver: Scottish Independence -
-YouTube</a>
-				</div>
-
-			</li>
-					<li id="541703ac5afbd3fb3f8b4569" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://www.vox.com/2014/9/15/6111911/41-maps-and-charts-that-explain-the-midwest" target="_blank">41 maps (and charts) that explain the Midwest</a>
-				</div>
-
-			</li>
-					<li id="541729285afbd33f7f8b456c" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://mashable.com/2014/09/15/500-migrant-workers-feared-dead/" target="_blank">500 Migrant Workers Feared Dead After Human Traffickers Ram
-Their Boat</a>
-				</div>
-
-			</li>
-					<li id="541729285afbd33f7f8b4567" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://www.buzzfeed.com/mariahsummers/olive-garden-owner-defends-breadstick-strategy-as-conveying" target="_blank">Olive Garden Owner Defends Breadstick Strategy As Conveying
-"Italian Generosity"</a>
-				</div>
-
-			</li>
-					<li id="541729285afbd33f7f8b4569" class="media display-none"">
-
-				<span class="pull-left badge badge-info">2</span>
-
-				<div class="media-body">
-					<a class="hive-link" href="http://www.businessinsider.com/ubs-apple-watch-too-many-features-2014-9" target="_blank">UBS Apple Watch Too Many Features</a>
-				</div>
-
-			</li>
-		
-					</ul>
-			</ul>
-
-	<div class="footer border-top-dotted clearfix">
-					<div class="pull-left">
-				<a id="hive-more" href="#">More</a>
-			</div>
-				<a class="pull-right" href="http://www.businessinsider.com/thehive">See All  187 </a>
-	</div>
-</div>			
-			<!-- Editorial Sidebar 2 -->
-							<!-- editorial sidebar 2 -->
-<div id="editorial2" class="ks-rr-editorial-2" data-bi-heatmap="editorial2">
-	<h3 class="underlined">The Pulse of Digital</h3>
-	<div>
-		<p><a href="http://www.businessinsider.com/faq-beacons-and-apples-ibeacon-system-2014-7?utm_source=House&amp utm_term=RR&amp utm_campaign=RR"><img src="http://static1.businessinsider.com/image/53dbc2216da8118f4dc71306/beacons_image.png" border="0" alt="Social Media Disruption" width="340" /></a></p>
-<ul>
-<li><a href="http://www.businessinsider.com/faq-beacons-and-apples-ibeacon-system-2014-7?utm_source=House&amp utm_term=RR&amp utm_campaign=RR">BEACONS FAQ: It's Time To Set The Story Straight</a></li>
-<li><a href="http://www.businessinsider.com/the-programmatic-ad-report-2014-7?utm_source=House&amp utm_term=RR&amp utm_campaign=RR">THE PROGRAMMATIC ADVERTISING REPORT: Forecasts And Top Trends</a></li>
-<li><a href="http://www.businessinsider.com/the-future-of-the-payments-industry-2014-slide-deck-2014-7?utm_source=House&amp utm_term=RR&amp utm_campaign=RR">The Future of Payments [SLIDE DECK]</a><span style="color: #222222  line-height: 1.5em ">&nbsp <br />&nbsp </span></li>
-</ul>
-<div style="border-top: 1px solid #ddd  margin-top: 20px  margin-left: -20px  width: 340px ">
-<div style="margin: 30px 20px 0px 20px ">
-<h3 class="underlined">Read Business Insider On The Go</h3>
-<div class="content" style="height: 190px  text-align: center !important  background-image: url('http://static2.businessinsider.com/image/520a3568ecad04d97a000017/greybackground.png')  background-repeat: no-repeat  background-position: bottom center  overflow: hidden ">
-<div style="float: left  margin-top: 21px  display: block  z-index: 1  width: 300px  border-bottom: 1px solid #9d9d9d "><a href="/about/mobile"><img src="http://static3.businessinsider.com/image/529e59f9ecad046316dfbba8-260/.png" border="0" /></a></div>
-<div style="z-index: 100  margin: 0px 15px 86px 200px  position: absolute  height: 90px  width: 90px  -moz-border-radius: 45px  border-radius: 45px  background-color: #2e79a6  -moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.6)  -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.6)  box-shadow: -3px 3px 4px rgba(0,0,0,0.6)  text-align: center  vertical-align: middle !important ">
-<p style="font-family: Helvetica Neue, Arial, sans-serif  color: white  font-size: 18px  font-weight: 100  line-height: 20px  margin-top: 23px ">FREE App<br />Download</p>
-</div>
-</div>
-<div style="text-align: center !important  width: 100%  display: block "><a href="https://itunes.apple.com/us/app/business-insider/id554260576?mt=8"><img src="http://static2.businessinsider.com/image/51e9584f69beddbb1d000003-208/appstorebadgeen.png" border="0" style="margin: 20px 0px 10px 0px " /></a> <br /><a href="http://www.businessinsider.com/about/mobile">Available for iPhone, iPad, Android, BlackBerry and Windows</a> <br /> <a href="http://www.businessinsider.com/about/mobile"><img src="http://static1.businessinsider.com/image/51e95c6aeab8ea3845000009/appleicon.png" border="0" style="margin: 10px 5px " /></a> <a href="http://www.businessinsider.com/about/mobile"><img src="http://static4.businessinsider.com/image/51e95c6aeab8eab74700000b/androidicon.png" border="0" style="margin: 10px 5px " /></a><a href="http://www.businessinsider.com/about/mobile"><img src="http://static1.businessinsider.com/image/51e95c6aecad04b45d000002/.png" border="0" style="margin: 10px 5px " /></a><a href="http://www.businessinsider.com/about/mobile"><img src="http://static5.businessinsider.com/image/5271611eeab8ea5e3bfb295b/windowsicon.png" border="0" style="margin: 10px 5px " /></a></div>
-</div>
-</div>	</div>
-</div>
-<!-- / editorial sidebar 2 -->
-			
-			<!-- BI Live Widget (Below Fold Placement) -->
-										
-			<!-- Author Sold -->
-							<div class="right-ad">
-					<div>
-						<h5 class="text-ad">Advertisement</h5>
-						
-
-<div data-bi-ad class="ad dfp" data-adunit="desktop/home/home/homepage" data-pagetype="homepage" data-region="Lower 300" data-sizes="300x250" data-url="/"></div>
-<script type="text/javascript">
-	(function() {
-		'use strict' 
-
-		// Notify the DFP code that a new ad has just been rendered
-		amplify.publish('adRender') 
-	}()) 
-</script>
-					</div>
-				</div>
-			
-			<!-- Jobs Widget -->
-			
-<!-- Jobs Module -->
-<div class="jobs ks-rr-jobs">
-	<h5 class="text-ad pull-right"><a href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin026" title="Visit Career Builder"><img src="http://static3.businessinsider.com/assets/images/careerbuilder.png" alt="Career Builder"></a></h5>
-	<h3 class="underlined">Find A Job</h3>
-
-	<div class="row-fluid">
-		<div class="span6">
-			<ul>
-				<li>
-					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=technology&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin020">Tech Jobs</a>
-				</li>
-				<li class="">
-					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=media&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin021">Media Jobs</a>
-				</li>
-				<li class="">
-					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=finance&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin022">Finance Jobs</a>
-				</li>
-			</ul>
-		</div>
-		<div class="span6">
-			<ul>
-				<li>
-					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=c-level&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin023">C-Level Jobs</a>
-				</li>
-				<li>
-					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=design&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin024">Design Jobs</a>
-				</li>
-				<li>
-					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=sales&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin025">Sales Jobs</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="footer border-top-dotted clearfix">
-		<div class="pull-right">
-			<a href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin026">See All Jobs</a>
-		</div>
-	</div>
-
-</div>
-
-
-
-
-			<!-- Partners -->
-			<div class="right-ad">
-				<div class="partner-thanks clearfix">
-				<h3 class="underlined">Thanks to our partners</h3>
-					<a href="http://hub.am/16BKYF8" title="Visit Datapipe" target="_blank"><img class="pull-left" src="http://static6.businessinsider.com/assets/images/partners/datapipe7.png" alt="Datapipe" /></a>
-					<a href="http://www.catchpoint.com/" title="Visit Catchpoint" target="_blank"><img class="pull-left" src="http://static1.businessinsider.com/assets/images/partners/catchpoint7.png" alt="Catchpoint - Web Performance Monitoring" /></a>
-					<a href="http://www.ooyala.com/?utm_source=BusinessInsider&utm_medium=Sponsor&utm_campaign=Rebranding" title="Visit Ooyala" target="_blank"><img class="pull-left" src="http://static6.businessinsider.com/assets/images/partners/ooyala7.png" alt="Ooyala" /></a>
-				</div>
-			</div>
-
-			<!-- Google Adsense -->
-			            <!-- / Google Adsense -->
-
-			</div>
-</div>
-                                                                    </div>
-                            </div>
-                        
-                    </div>
-                </div>
-
-                
+  </div>
+</div><div id="content" class="blogs">
+    <div class="section gridlined8">
+        <div class="sectionContent">
+            <div id="sectionHeader">
+                <div id="preamble"><a href="/">&nbsp Analysis &amp  Opinion</a></div>
+                <div id="sectionTitle">
+                    <h1>Jack Shafer</h1>
                 </div>
             </div>
-        </div>
 
-        <div class="footer" data-bi-footer>
+      <div class="sectionColumns">
+        <div class="column1 gridPanel grid8">
+          <!--googleon: index-->
+	              	      <div class="module" id="post-3350">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/11/14/you-cant-build-a-better-internet-out-of-red-tape/">You can   t build a better Internet out of red tape</a></h2>
 
-            <div class="container border-top">
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">November 14, 2014</div>
+			</div>
 
-                <div class="list-pipes">
-                    <ul>
-                    <li>* Copyright &copy  2014 Business Insider Inc. All rights reserved.<span> Registration on or use of this site constitutes acceptance of our
-                            <a href="/terms">Terms of Service</a>
-                            and
-                            <a href="/privacy-policy">Privacy Policy</a>.</span>
-                        </li>
-                        <li><a href="/disclaimer">Disclaimer</a></li>
-                        <li><a href="/commerce-on-business-insider">Commerce Policy</a></li>
-                    </ul>
-                </div>
-                <div class="list-pipes">
-                    <ul>
-                        <li>
-                            Powered by <a href="http://www.mongodb.org">MongoDB</a>
-                        </li>
-                        <li>
-                            Hosted by <a href="http://hub.am/16BKYF8">Datapipe</a>
-                        </li>
-                        <li>
-                            Stock quotes by <a href="http://ycharts.com">YCharts</a>
-                        </li>
-                        <li>
-                            <a href="http://nytm.org/made">Made in NYC</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="international-links border-top list-pipes">
-                    <ul>International Editions:
-                        <li><a href="http://www.businessinsider.com.au/">AUS</a></li><li><a href="http://www.businessinsider.co.id/">ID</a></li><li><a href="http://www.businessinsider.in/">IN</a></li><li><a href="http://www.businessinsider.my/">MY</a></li><li><a href="http://www.businessinsider.sg/">SG</a></li>                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="http://static5.businessinsider.com/assets/js/min-foot.js?1410551053"></script>
-<script type="text/javascript" src="http://static6.businessinsider.com/assets/js/app/components/ads/interstitial.js"></script>
-
-<!--[if gte IE 9]>
-<script type="text/javascript">amplify.publish("ie9-pinned-site", {"hid":null,"vertical":"businessinsider"}) </script><![endif]-->
-
-<!-- Google Tag Manager -->
-<noscript><iframe src=""//www.googletagmanager.com/ns.html?id=GTM-NS64GV""
-height=""0"" width=""0"" style=""display:none visibility:hidden""></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[] w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'}) var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'' j.async=true j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl f.parentNode.insertBefore(j,f) 
-})(window,document,'script','dataLayer','GTM-NS64GV') </script>
-<!-- End Google Tag Manager -->
-
-<!-- Twitter widget.js -->
-<script type="text/javascript">
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0] if(!d.getElementById(id)){
-        js=d.createElement(s) 
-        js.id=id 
-        js.src="https://platform.twitter.com/widgets.js" 
-        js.async=true 
-        fjs.parentNode.insertBefore(js,fjs) 
-    }}(document,"script","twitter-wjs") 
-</script>
-<!-- /Twitter widget.js -->
-
-            <!-- Tynt -->
-        <script class="post-loaded" type="text/javascript" data-src="http://tcr.tynt.com/javascripts/Tracer.js?user=a-j2SKmdSr37y5adbiUzgI&amp s=142"></script>
-        <!-- / Tynt -->
-    
-    <!-- START Nielsen Online SiteCensus V6.0 -->
-    <!-- COPYRIGHT 2010 Nielsen Online -->
-    <script type="text/javascript">
-    (function () {
-        var d = new Image(1, 1) 
-        d.onerror = d.onload = function () { d.onerror = d.onload = null  } 
-        d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-103525h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('') 
-    })() 
-    </script>
-    <noscript>
-        <div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-103525h&amp cg=0&amp cc=1&amp ts=noscript" width="1" height="1" alt="" /></div>
-    </noscript>
-    <!-- END Nielsen Online SiteCensus V6.0 -->
-
-    <!-- Begin comScore Tag -->
-    <script type="text/javascript">
-        var _comscore = _comscore || [] 
-        _comscore.push({ c1: "2", c2: "9900186" }) 
-        (function() {
-            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]  s.async = true 
-            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js" 
-            el.parentNode.insertBefore(s, el) 
-        })() 
-    </script>
-    <noscript>
-        <img src="http://b.scorecardresearch.com/p?c1=2&c2=9900186&cv=2.0&cj=1" />
-    </noscript>
-    <!-- End comScore Tag -->
-
-    <!-- Chartbeat -->
-    <script type="text/javascript">
-        // chartbeat wants the vars in global
-
-        window._sf_async_config={uid:14447,domain:"businessinsider.com"} 
-        window._sf_async_config.useCanonical = true 
-
-        //only set the following if on a sponsored post
-        
-        (function(){
-          function loadChartbeat() {
-            window._sf_endpt=(new Date()).getTime() 
-            var e = document.createElement('script') 
-            e.setAttribute('language', 'javascript') 
-            e.setAttribute('type', 'text/javascript') 
-            e.setAttribute('src',
-               (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
-               "static.chartbeat.com/js/chartbeat_pub.js") 
-            document.body.appendChild(e) 
-          }
-          var oldonload = window.onload 
-          window.onload = (typeof window.onload != 'function') ?
-             loadChartbeat : function() { oldonload()  loadChartbeat()  } 
-        })() 
-    </script>
-    <!-- / Chartbeat -->
-
-    <!-- BEGIN Krux Control Tag for "businessinsider.com" -->
-<!-- Source: /snippet/controltag?confid=I2I9M2yx&site=businessinsider.com&edit=1 -->
-<script class="kxct" data-id="I2I9M2yx" data-timing="async" data-version="1.9" type="text/javascript">
-  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]) 
-  (function(){
-    var k=document.createElement('script') k.type='text/javascript' k.async=true 
-    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]) 
-    k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
-      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=I2I9M2yx"
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/broadband">Broadband</a> | <a href="http://blogs.reuters.com/jackshafer/tag/fiber-optics">fiber optics</a> | <a href="http://blogs.reuters.com/jackshafer/tag/internet">internet</a> | <a href="http://blogs.reuters.com/jackshafer/tag/net-neutrality">Net Neutrality</a> | <a href="http://blogs.reuters.com/jackshafer/tag/web">Web</a>	</div>
    
-    var s=document.getElementsByTagName('script')[0] s.parentNode.insertBefore(k,s) 
-  }()) 
-</script>
-<!-- END Krux Controltag -->
-            <!-- Sailthru Concierge -->
-        <script type="text/javascript" src="http://ak.sail-horizon.com/horizon/v1.js"></script>
-        <script type="text/javascript" src="http://ak.sail-horizon.com/scout/v1.js"></script>
-        <script type="text/javascript">
-        $(function() {
-            // Sailthru Concierge
-            if (window.Sailthru) {
-                var sailthruOpts = {
-                    domain: 'horizon.businessinsider.com'
-                                    } 
-                if (window.outerWidth < 800) { //on small screens we dont want the flyout to appear
-                    delete sailthruOpts.concierge 
-                }
-                Sailthru.setup(sailthruOpts) 
-            }
-        }) 
-        </script>
-        <!-- / Sailthru Concierge -->
-                <!-- Skimlinks -->
-        <script class="post-loaded" type="text/javascript" data-src="http://s.skimresources.com/js/35871X943606.skimlinks.js"></script>
-        <!-- /Skimlinks -->
+<div class="postcontent"><p><img class="alignnone  wp-image-3353" alt="A NBN Co worker arranges fibre-optic cables used in the National Broadband Network in west Sydney" src="http://blogs.reuters.com/jackshafer/files/2014/11/RTX11NQL-1-1024x648.jpg" width="614" height="389" />
+</p><p>If the latest installment in the long-running net neutrality <a href="http://www.nytimes.com/2014/11/13/technology/pressure-mounts-on-fcc-head-over-open-internet-rules.html">debate</a> has rendered you mentally exhausted, allow me to approach the future-of-the-Internet argument from a less draining direction. You needn   t worry about mastering such tech and regulatory topics as Title II regulations, peering, and fast lanes.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/11/14/you-cant-build-a-better-internet-out-of-red-tape/">Continue Reading...</a></div>
 
-    
-<!-- Perfect market JS -->
-    <!-- End Perfect market JS-->
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3334">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/11/11/stop-or-ill-write-why-cops-shouldnt-fake-being-reporters/">Stop or I   ll write! Why cops shouldn   t fake being reporters.</a></h2>
 
-<!-- kontera contextual ads -->
-<script>
-window.dc_PublisherID = 0 
-// yea this only works inline
-if (typeof BI != 'undefined' && typeof BI.showKontera != 'undefined' && BI.showKontera === true) {
-	// 1) Check for a "ke" cookie and set it = 1 with an 24 hour expire but ONLY if it is not present already
-	if (!BI.cookies.get('ke')) {
-		BI.cookies.set('ke',1,24)  // (key, val, hrs)
-	}
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">November 11, 2014</div>
+			</div>
 
-	// 2) insert kontera tag on the page but ONLY IF this is a *non-sponsored post* page.
-	if (typeof post != 'undefined' && typeof BI.post.sponsored === 'undefined') {
-		// yeaaaaa globals
-		window.dc_PublisherID = 107754        // set to desktop ID
-		window.dc_AdLinkColor = '#007705'     // set color for desktop
+   
+<div class="postcontent"><p><img class="alignnone  wp-image-3336" alt="FBI Director Comey testifies before a Senate Homeland Security Committee hearing on Capitol Hill in Washington" src="http://blogs.reuters.com/jackshafer/files/2014/11/RTX15DIA-1024x728.jpg" width="614" height="437" />
+</p><p>Federal Bureau of Investigation Director James B. Comey waved his truncheon at the <i>New York Times </i>last week in a concise <a href="http://www.nytimes.com/2014/11/07/opinion/to-catch-a-crook-the-fbis-use-of-deception.html?_r=0">letter</a> of protest addressed to the paper   s editor. The FBI, <a href="http://www.nytimes.com/2014/11/01/opinion/deceptions-of-the-fbi.html?_r=0">denounced</a> in a Nov. 1 <i>Times </i>editorial for impersonating an Associated Press reporter in a 2007 Seattle-area case, had nothing to apologize for, insisted Comey. While the impersonation was  8220 unusual, 8221  he wrote, it was still proper, appropriate, and lawful.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/11/11/stop-or-ill-write-why-cops-shouldnt-fake-being-reporters/">Continue Reading...</a></div>
 
-		if (navigator.userAgent.match(/iPhone|iPad|iPod|Android|Blackberry|IEMobile/i)) {
-			window.dc_PublisherID = 225522     // set to mobile ID
-			window.dc_AdLinkColor = '#007705'     // set color for mobile
-		}
-	}
-}
-</script>
-<script type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3327">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/11/05/one-journalists-vote-for-divided-government/">One journalist   s vote for divided government</a></h2>
 
-<!-- taboola -->
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">November 5, 2014</div>
+			</div>
+
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/congress">congress</a> | <a href="http://blogs.reuters.com/jackshafer/tag/election">election</a> | <a href="http://blogs.reuters.com/jackshafer/tag/investigation">investigation</a> | <a href="http://blogs.reuters.com/jackshafer/tag/midterms">midterms</a> | <a href="http://blogs.reuters.com/jackshafer/tag/white-house">White House</a>	</div>
+   
+<div class="postcontent"><p><img class="alignnone  wp-image-3329" alt="U.S. President Barack Obama departs after delivering remarks on student loans at the White House in Washington" src="http://blogs.reuters.com/jackshafer/files/2014/11/obamgress-1024x655.jpg" width="614" height=" 3" />
+</p><p>Count the Washington press corps as unintended beneficiaries of last night   s slaughter of the Democrats by the Republicans. Now, with the Republicans taking of the Senate in addition to the House, leaving them in control of all congressional committees, we can expect up to twice as many Capitol Hill investigations into alleged fraud, abuse, waste, and perfidy by the Obama administration. <i>Witnesses called! Testimony given! Evidence subpoenaed! Executive privilege claimed! </i></p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/11/05/one-journalists-vote-for-divided-government/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3321">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/10/31/in-covering-politics-a-little-speculation-aint-a-bad-thing/">In covering politics, a little speculation ain   t a bad thing</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">October 31, 2014</div>
+			</div>
+
+   
+<div class="postcontent"><p><img class="alignleft" alt="" src="http://static.reuters.com/resources/media/global/assets/images/20141031/20141031_6261084220141031202623.jpg" width="380" height="215" />
+</p><p>With the great burden of the 2014 campaign season largely behind us, and commercial haulers queuing to feed the countless tons of now-obsolete political coverage to the nation   s landfills, it   s a good time to visit Tom Wicker   s timeless confession about the nature of political journalism.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/10/31/in-covering-politics-a-little-speculation-aint-a-bad-thing/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3315">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/10/29/our-appetite-for-fake-ebola-stories-and-other-bunk/">Our appetite for fake Ebola stories and other bunk</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">October 29, 2014</div>
+			</div>
+
+   
+<div class="postcontent"><p><img class="alignleft" alt="" src="http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/1/0/f/4/RTR4AZMZ.jpg" width="437" height="284" />
+</p><p>As if the genuine horrors of Ebola weren   t enough, a website called the <a href="http://nationalreport.net/texas-town-quarantined-family-five-test-positive-ebola-virus/">National Report</a> has taken to ginning up hoax  8220 reports 8221  about the disease. Over the past month, the site has published at least seven fake stories about Ebola, including one reporting that authorities quarantined the entire town of Purdon, Texas. It would be generous to describe the National Report   s treatment of current events as  8220 satirical. 8221  In addition to this bogus (and stupid) story, the site has published others about Texas kindergarteners getting Ebola from a Liberian foreign exchange student  the government   s plan to implant RFID chips in citizens during a pilot Ebola vaccination program  the president   s promise that Obamacare will cover the coming epidemic  and more.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/10/29/our-appetite-for-fake-ebola-stories-and-other-bunk/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3299">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/10/22/ben-bradlee-the-last-giant-standing/">Ben Bradlee, the last giant standing</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">October 22, 2014</div>
+			</div>
+
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/ben-bradlee">ben bradlee</a> | <a href="http://blogs.reuters.com/jackshafer/tag/newspapers">newspapers</a> | <a href="http://blogs.reuters.com/jackshafer/tag/the-washington-post">The Washington Post</a> | <a href="http://blogs.reuters.com/jackshafer/tag/watergate">watergate</a>	</div>
+   
+<div class="postcontent"><p><img class="alignnone  wp-image-3304" alt="Ben Bradlee, a former Washington Post executive editor discusses about the Watergate Hotel burglary and stories for the Post at the Richard Nixon Presidential Library in Yorba Linda" src="http://blogs.reuters.com/jackshafer/files/2014/10/RTR2LDTB-11-1024x677.jpg" width="614" height="406" />
+</p><p>One of the great payoffs of having lived a long life arrives on the day the newspapers publish your obituary. By out-lasting your competitors and foes, the storyline naturally bends your way. Time blurs precise recollection in favor of generous feelings, which we tend to bestow upon most famous survivors, no matter what sort of lives they lived.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/10/22/ben-bradlee-the-last-giant-standing/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3284">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/10/17/gamergate-we-now-know-what-evil-lurks-in-the-heart-of-man-or-trolls/">GamerGate: We now know what evil lurks in the heart of man  8211  or trolls</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">October 17, 2014</div>
+			</div>
+
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/gamergate">GamerGate</a> | <a href="http://blogs.reuters.com/jackshafer/tag/misogyny">misogyny</a> | <a href="http://blogs.reuters.com/jackshafer/tag/sexual-harassment">sexual harassment</a> | <a href="http://blogs.reuters.com/jackshafer/tag/trolls">Trolls</a> | <a href="http://blogs.reuters.com/jackshafer/tag/twitter">twitter</a>	</div>
+   
+<div class="postcontent"><p><a href="http://blogs.reuters.com/jackshafer/files/2014/10/RTR30H80.jpg"><img class="alignnone  wp-image-3288" alt="A girl dressed in costume plays a video game at the PAX East gaming conference in Boston" src="http://blogs.reuters.com/jackshafer/files/2014/10/RTR30H80.jpg" width="615" /></a>
+</p><p>For the purposes of this column, all you need to know about  8220 GamerGate 8221  is that it has earned writer Anita Sarkeesian, game entrepreneur Brianna Wu, and developer Zoe Quinn violent threats from anonymous Internet sources (here   s coverage in the <a href="http://www.nytimes.com/2014/10/16/technology/gamergate-women-video-game-threats-anita-sarkeesian.html?ref=todayspaper"><i>New York Times</i></a>, <a href="http://reason.com/archives/2014/10/12/gamergate-part-i-sex-lies-and-gender-gam/print"><i>Reason</i></a>,<i> </i>the <a href="http://www.washingtonpost.com/news/the-intersect/wp/2014/10/14/the-only-guide-to-gamergate-you-will-ever-need-to-read/"><i>Washington Post</i></a>, <a href="http://www.vox.com/2014/9/6/6111065/gamergate-explained-everybody-fighting">Vox</a>, <a href="http://www.huffingtonpost.com/maureen-ryan/anita-sarkeesian_b_5993082.html">Huffington Post</a>, the <a href="http://www.theguardian.com/technology/2014/oct/15/anita-sarkeesian-feminist-games-critic-cancels-talk"><i>Guardian</i></a>, and <a href="http://gawker.com/what-is-gamergate-and-why-an-explainer-for-non-geeks-1642909080">Gawker</a>, if you want to know more).</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/10/17/gamergate-we-now-know-what-evil-lurks-in-the-heart-of-man-or-trolls/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3273">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/10/01/how-scandals-play-out-in-the-press-white-house-security-edition/">How the White House intruder story came out and what we can expect next</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">October 1, 2014</div>
+			</div>
+
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/intruder">intruder</a> | <a href="http://blogs.reuters.com/jackshafer/tag/omar-gonzalez">Omar Gonzalez</a> | <a href="http://blogs.reuters.com/jackshafer/tag/president-barack-obama">President Barack Obama</a> | <a href="http://blogs.reuters.com/jackshafer/tag/secret-service">Secret service</a> | <a href="http://blogs.reuters.com/jackshafer/tag/white-house">White House</a>	</div>
+   
+<div class="postcontent"><p><a href="http://blogs.reuters.com/jackshafer/files/2014/10/RTR488UN.jpg"><img class="alignnone  wp-image-3274" alt="Members of the Uniformed Division of the Secret Service patrol Pennsylvania Avenue outside the North Lawn of the White House in Washington" src="http://blogs.reuters.com/jackshafer/files/2014/10/RTR488UN-1024x682.jpg" width="614" height="409" /></a>
+</p><p>No bungling bureaucracy will last very long once insiders start anonymously dishing dirt to the press, a lesson currently being taught to Secret Service Director Julia Pierson. Anonymous sources from the Secret Service, its alumni, and insiders who have been read-in on current investigations are taking the agency apart brick-by-brick this month with their leaks to the <i>Washington Post</i> about the White House <a href="http://www.washingtonpost.com/politics/new-details-in-fence-jumping-reveal-failures-in-security-rings-around-white-house/2014/09/23/043518ea-434a-11e4-b47c-f5889e061e5f_story.html">fence-jumper</a> and the White House <a href="http://www.washingtonpost.com/politics/secret-service-stumbled-after-gunman-hit-white-house-residence-in-2011/2014/09/27/d176b6ac-442a-11e4-b437-1a7368204804_story.html">shooter</a>.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/10/01/how-scandals-play-out-in-the-press-white-house-security-edition/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3261">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/09/26/all-in-all-eric-holder-was-just-another-brick-in-the-wall/">All in all, Eric Holder was just another brick in the wall</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">September 26, 2014</div>
+			</div>
+
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/attorney-general">Attorney General</a> | <a href="http://blogs.reuters.com/jackshafer/tag/democrat">Democrat</a> | <a href="http://blogs.reuters.com/jackshafer/tag/eric-holder">eric holder</a> | <a href="http://blogs.reuters.com/jackshafer/tag/politics">politics</a> | <a href="http://blogs.reuters.com/jackshafer/tag/republican">Republican</a>	</div>
+   
+<div class="postcontent"><p><a href="http://blogs.reuters.com/jackshafer/files/2014/09/RTR47QEV.jpg"><img class="alignnone  wp-image-3262" alt="U.S.  Attorney General Holder stands with President Obama after the president announced Holder's resignation at the White House in Washington" src="http://blogs.reuters.com/jackshafer/files/2014/09/RTR47QEV-1024x787.jpg" width="614" height="472" /></a>
+</p><p>Attorney General Eric H. Holder Jr. first signaled his exit from office so long ago that every reporter and pundit who covers the Department of Justice has stockpiled enough copy assessing his tenure to fill a mattress. Like <a href="http://espn.go.com/new-york/mlb/story/_/id/10444978/derek-jeter-says-2014-last-season-via-facebook-post">Derek Jeter</a>, Holder announced his farewell tour this past February, <a href="http://www.newyorker.com/magazine/2014/02/17/holder-v-roberts">telling</a> the <i>New Yorker</i>   s Jeffrey Toobin that he would depart in 2014. The admission prompted journalists to update and fine tune their critiques of the attorney general with emerging details, the way obituary writers tweak their pre-written obituaries of famous, old people to keep them fresh and newsy.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/09/26/all-in-all-eric-holder-was-just-another-brick-in-the-wall/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	      <div class="module" id="post-3248">
+	        <div class="moduleBody">
+		  <div class="blogArticle">
+		    <div class="">
+   <div class="topStory">
+	   		      <h2><a href="http://blogs.reuters.com/jackshafer/2014/09/24/war-without-end-the-u-s-may-still-be-fighting-in-syria-in-2024-2034-2044/">War without end: The U.S. may still be fighting in Syria in 2024, 2034, 2044 . . .</a></h2>
+
+<div id="thebyline">
+						<div class="author">By Jack Shafer</div>
+						<div class="timestamp">September 24, 2014</div>
+			</div>
+
+	<div class="posttags">
+		<h5 class="tags">Tags:</h5> <a href="http://blogs.reuters.com/jackshafer/tag/iraq">Iraq</a> | <a href="http://blogs.reuters.com/jackshafer/tag/isis">ISIS</a> | <a href="http://blogs.reuters.com/jackshafer/tag/islamic-state">Islamic State</a> | <a href="http://blogs.reuters.com/jackshafer/tag/khorasan-group">Khorasan Group</a> | <a href="http://blogs.reuters.com/jackshafer/tag/syria">syria</a>	</div>
+   
+<div class="postcontent"><p><a href="http://blogs.reuters.com/jackshafer/files/2014/09/RTR47HCZ.jpg"><img class="alignnone  wp-image-3250" alt="RTR47HCZ.jpg" src="http://blogs.reuters.com/jackshafer/files/2014/09/RTR47HCZ-1024x871.jpg" width="614" height="523" /></a>
+</p><p>This must be what perpetual war looks like.
+</p><p>In a Pentagon briefing yesterday, Army Lieutenant General Bill Mayville <a href="http://thehill.com/policy/defense/218656-pentagon-isis-campaign-could-last-years">called</a> the cruise missiles and bombs flung at targets in Syria  8220 the beginning of a credible and sustainable persistent campaign. 8221  How long will the campaign last?  8220 I would think of it in terms of years, 8221  Mayville responded.</p></div>
+<div class="continueReading"><a href="http://blogs.reuters.com/jackshafer/2014/09/24/war-without-end-the-u-s-may-still-be-fighting-in-syria-in-2024-2034-2044/">Continue Reading...</a></div>
+
+</div>
+		    </div>
+		  </div>
+	        </div>
+              </div>
+            	    <div class="navigationB">
+                <div class="nav-num"><span class='pagePrevious'><span class='nav-link-not-active'>Previous</span></span><span class='page-link-not-active'>1</span>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/2/'><span class='page-link-active'>2</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/3/'><span class='page-link-active'>3</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/4/'><span class='page-link-active'>4</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/5/'><span class='page-link-active'>5</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/6/'><span class='page-link-active'>6</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/7/'><span class='page-link-active'>7</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/8/'><span class='page-link-active'>8</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/9/'><span class='page-link-active'>9</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/10/'><span class='page-link-active'>10</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/11/'><span class='page-link-active'>11</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/12/'><span class='page-link-active'>12</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/13/'><span class='page-link-active'>13</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/14/'><span class='page-link-active'>14</span></a>&nbsp |&nbsp <a href='http://blogs.reuters.com/jackshafer/page/15/'><span class='page-link-active'>15</span></a><span class='pageNext'><a href="http://blogs.reuters.com/jackshafer/page/2/" >Next</a></span></div>
+            </div>
+	            <!--googleoff: index-->
+        </div>
+        <div class="column2 gridPanel grid4">
+  	  <div id="sidebar" class="rhsidebar">
+            <ul>
+              <li id="reutersmpu-3" class="widget widget_reutersmpu"><div class="module">	<div class="mpu" id="adDiv_mpuTop">
+          <script type="text/javascript">
+		TR.insertDFP("http://ad.doubleclick.net/adj/us.reuters/news/opinion/jackshafer type=mpu tile=3 sz=300x250 ") 
+          </script>
+          <noscript><a href="http://ad.doubleclick.net/jump/us.reuters/news/opinion/jackshafer type=mpu tile=3 sz=300x250 ord= 03?" target="_blank"><img src="http://ad.doubleclick.net/ad/us.reuters/news/opinion/jackshafer type=mpu tile=3 sz=300x250 ord= 03?" width="300" height="250" border="0" alt="" /></a></noscript>
+	</div>
+	<div class="clear"></div></div></li><li class="widggap"></li><li id="authorsidebar-4" class="widget widget_authorsidebar"><div class="module"><div class="moduleHeader"><h3>Author Profile</h3></div><ul>
+    <li class="authorprofile">
+                <a href=""><img src="/wp-content/profile-images/rtr_upe_cr_3281-profile-image.jpg" alt="Jack Shafer" style="border: 0px "/></a>
+                <div class="authorprofilebio">
+            Jack Shafer is a Reuters columnist covering the press and politics.          </div>
+        <div class="authordisclaimer">Any opinions expressed here are the author's own.</div>
+    </li>
+</ul>
+<div class="clear"></div></div></li><li class="widggap"></li><li id="reutersmpu-5" class="widget widget_reutersmpu"><div class="module">	<div class="mpu" id="adDiv_mpuMiddle">
+          <script type="text/javascript">
+		TR.insertDFP("http://ad.doubleclick.net/adj/us.reuters/news/opinion/jackshafer type=mpuCenter tile=4 sz=300x250 ") 
+          </script>
+          <noscript><a href="http://ad.doubleclick.net/jump/us.reuters/news/opinion/jackshafer type=mpuCenter tile=4 sz=300x250 ord= 03?" target="_blank"><img src="http://ad.doubleclick.net/ad/us.reuters/news/opinion/jackshafer type=mpuCenter tile=4 sz=300x250 ord= 03?" width="300" height="250" border="0" alt="" /></a></noscript>
+	</div>
+	<div class="clear"></div></div></li><li class="widggap"></li><!--Reuters Widget Cache 0.1 (http://www.coreware.co.uk) Begin -->
+<li id="rsspie-4" class="widget RSSpie_Widget"><div class="module"><div class="moduleHeader"><h3>More Reuters News</h3></div><ul class="module-topheadlines"><li>        <a href="http://www.reuters.com/article/2014/11/27/us-usa-missouri-shooting-idUSKCN0J80PR20141127?feedType=RSS&amp feedName=topNews"><img src="" alt=""></a>        <h4>Thursday, 27 November 2014, 9:59 pm</h4>        <h3><a href="http://www.reuters.com/article/2014/11/27/us-usa-missouri-shooting-idUSKCN0J80PR20141127?feedType=RSS&amp feedName=topNews">Calm comes to troubled Ferguson  protests dwindle in other U.S. cities</a></h3></li><li>        <a href="http://www.reuters.com/article/2014/11/27/us-afghanistan-blast-idUSKCN0JB0IF20141127?feedType=RSS&amp feedName=topNews"><img src="" alt=""></a>        <h4>Thursday, 27 November 2014, 9:02 pm</h4>        <h3><a href="http://www.reuters.com/article/2014/11/27/us-afghanistan-blast-idUSKCN0JB0IF20141127?feedType=RSS&amp feedName=topNews">Taliban kill five in Kabul in attacks on British embassy car, foreign compound</a></h3></li><li>        <a href="http://www.reuters.com/article/2014/11/27/us-opec-meeting-idUSKCN0JA0O320141127?feedType=RSS&amp feedName=topNews"><img src="" alt=""></a>        <h4>Thursday, 27 November 2014, 8:53 pm</h4>        <h3><a href="http://www.reuters.com/article/2014/11/27/us-opec-meeting-idUSKCN0JA0O320141127?feedType=RSS&amp feedName=topNews">Saudis block OPEC output cut, sending oil price plunging</a></h3></li><li>        <a href="http://www.reuters.com/article/2014/11/27/us-eu-google-idUSKCN0JB17S20141127?feedType=RSS&amp feedName=topNews"><img src="" alt=""></a>        <h4>Thursday, 27 November 2014, 8:06 pm</h4>        <h3><a href="http://www.reuters.com/article/2014/11/27/us-eu-google-idUSKCN0JB17S20141127?feedType=RSS&amp feedName=topNews">EU lawmakers urge regulators to break up Google</a></h3></li><li>        <a href="http://www.reuters.com/article/2014/11/27/us-myanmar-constitution-idUSKCN0JB0UK20141127?feedType=RSS&amp feedName=topNews"><img src="" alt=""></a>        <h4>Thursday, 27 November 2014, 5:59 pm</h4>        <h3><a href="http://www.reuters.com/article/2014/11/27/us-myanmar-constitution-idUSKCN0JB0UK20141127?feedType=RSS&amp feedName=topNews">Myanmar constitution summit 'impractical': presidential spokesman</a></h3></li>
+</ul>
+<div class="clear"></div></div></li><li class="widggap"></li><!-- Reuters Widget Cached rsspie-4 For 900 second(s)-->
+<!--Reuters Widget Cache End -->
+<li id="reutersmpu-6" class="widget widget_reutersmpu"><div class="module">	<div class="mpu" id="adDiv_mpulow">
+          <script type="text/javascript">
+		TR.insertDFP("http://ad.doubleclick.net/adj/us.reuters/news/opinion/jackshafer type=mpulow tile=5 sz=300x250 ") 
+          </script>
+          <noscript><a href="http://ad.doubleclick.net/jump/us.reuters/news/opinion/jackshafer type=mpulow tile=5 sz=300x250 ord= 03?" target="_blank"><img src="http://ad.doubleclick.net/ad/us.reuters/news/opinion/jackshafer type=mpulow tile=5 sz=300x250 ord= 03?" width="300" height="250" border="0" alt="" /></a></noscript>
+	</div>
+	<div class="clear"></div></div></li><li class="widggap"></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--/div One div too many I believe -->
+<script type="text/javascript" src="http://www.reuters.com/resources_v2/js/rcom-footer-widget.js"></script>
+<!-- ::: -->
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2009 WebTrends Inc. All rights reserved. -->
+<!-- Version: 8.6.0 -->
+<!-- Tag Builder Version: 2.1.0 -->
+<!-- Created: 2/9/2009 17:21:12 -->
+<script src="http://static.reuters.com/resources_v2/js/webtrends.js" type="text/javascript"></script>
 <script type="text/javascript">
-    window._taboola = window._taboola || [] 
-    _taboola.push({flush: true}) 
-</script>
-<!-- End taboola -->
-
-<!--bizio-->
-<script type="text/javascript">
-  _bizo_data_partner_id = "1301" 
+<!--
+  var _tag=new WebTrends() 
+_tag.dcsGetId() 
+// -->
 </script>
 <script type="text/javascript">
-(function() {
-  var s = document.getElementsByTagName("script")[0] 
-  var b = document.createElement("script") 
-  b.type = "text/javascript" 
-  b.async = true 
-  b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js" 
-  s.parentNode.insertBefore(b, s) 
-})() 
+<!--
+  _tag.dcsCollect() 
+// -->
 </script>
 <noscript>
-  <img height="1" width="1" alt="" style="display:none " src="//www.bizographics.com/collect/?pid=1301&fmt=gif" />
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsncwimc10000kzgoor3wv9x_3f2v/njs.gif?dcsuri=/nojavascript&amp WT.js=No&amp WT.tv=8.6.0"/></div>
 </noscript>
-<!--end-->
+<!-- END OF SmartSource Data Collector TAG -->
 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-291759-2" 
+urchinTracker() 
+</script>
 
-<script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"4b4136998e","applicationID":"2646431,2646478,2664978","transactionName":"ZVZVZRBVXEJVVkJRDVwcdEQRQF1cG11ZVQdCUlBU","queueTime":0,"applicationTime":636,"ttGuid":"","agentToken":"","atts":"SRFWE1hPT0w=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+<!-- Page generated by blogs.reuters.com: 70 queries. 0.482 seconds. -->
+
+<script type="text/javascript">doBlogsLoginMenu() </script>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="reuters.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com" 
+  if (e) return 
+  e = d.createElement(s)  e.id = i  e.async = true 
+  e.src = h+"//"+u+"/p.js"  r.appendChild(e) 
+})("script", "parsely", document) 
+</script>
+<!-- END Parse.ly Include: Standard -->
+<!-- Page generated by blogs.reuters.com: 70 queries. 0.483 seconds. -->
+<script type="text/javascript">
+var _baq = _baq || [] 
+_baq.push(['setClientId','DIZ5C3']) 
+_baq.push(['trackPageView']) 
+(function () {
+    var s = document.createElement('script') 
+    s.src = ('https:' == document.location.protocol ?
+    'https://commerce.us.reuters.com' :
+    'http://mediacdn.reuters.com')
+    + '/pulse/2/trb.js' 
+    (document.getElementsByTagName('HEAD')[0] ||
+    document.getElementsByTagName('BODY')[0]).appendChild(s) 
+}()) 
+</script>
+<script type="text/javascript">
+  window._taboola = window._taboola || [] 
+  _taboola.push({flush:true}) 
+</script>
+
+</body>
 </html>
+
+
+
+<!-- Dynamic page generated in 0.477 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-11-27 23:00:23 -->
+<!-- super cache -->
