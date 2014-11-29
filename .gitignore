@@ -1,5 +1,6 @@
+.idea/workspace.xml
 tmp/*
-res/*
+/res/*
 paragraph/*
 pig/*.log
 
