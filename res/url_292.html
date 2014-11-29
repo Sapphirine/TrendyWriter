@@ -1,1588 +1,1252 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#"><head><!-- MacLeod loves you! --><meta content="text/html  charset=utf-8" http-equiv="Content-Type"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVVdaGwAGU1VUAAE="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={}) for(var c=s(e),f=c.length,u=i(a,o,r),d=0 f>d d++)c[d].apply(u,n) return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={} return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos") e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0 t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2) t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0] e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0] n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos") if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document s&&!s.hasOwnProperty("addEventListener") )s=Object.getPrototypeOf(s) s&&n(s) for(var c=XMLHttpRequest.prototype c&&!c.hasOwnProperty("addEventListener") )c=Object.getPrototypeOf(c) c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n) e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n) e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0] "string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r) e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t) try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 c>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f) if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data") d&&(n.cat=d.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0 var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1) t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var f=e(o) f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}} for(var u=0 c>u u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e] var o=n() if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={} e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos") e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=c.createElement("script") e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}} c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s) try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="") var a,s,c,f="-"===o.charAt(0) for(c=0 c<r.length c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t) return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]) return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]) </script><meta content="en_US" http-equiv="Content-Language"><title>News - CNET</title><meta name="description" content="CNET news editors and reporters provide top technology news, with investigative reporting and in-depth coverage of tech issues and events."><link rel="canonical" href="http://www.cnet.com/news/"><link rel="alternate" hreflang="x-default" href="http://www.cnet.com/news/"><link rel="alternate" hreflang="en-au" href="http://www.cnet.com/au/news/"><link rel="alternate" hreflang="es-us" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-ar" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-bo" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-cl" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-co" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-cr" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-cu" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-do" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-ec" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-sv" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-gt" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-hn" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-mx" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-ni" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-pa" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-py" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-pe" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-pr" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-es" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-uy" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="es-ve" href="http://www.cnet.com/es/noticias/"><link rel="alternate" hreflang="en-us" href="http://www.cnet.com/news/"><link rel="alternate" hreflang="en-gb" href="http://www.cnet.com/uk/news/"><link rel="alternate" hreflang="en-ie" href="http://www.cnet.com/uk/news/"><link rel="search" type="application/opensearchdescription+xml" title="CNET Search" href="http://www.cnet.com/opensearch.xml"><meta property="og:site_name" content="CNET"><meta property="og:title" content="News - CNET"><meta property="og:description" content="CNET news editors and reporters provide top technology news, with investigative reporting and in-depth coverage of tech issues and events."><meta property="og:image" content="http://cnet1.cbsistatic.com/fly/923-fly/bundles/cnetcore/images/logos/cnet-redball-large.jpg"><meta property="og:type" content="website"><meta property="og:url" content="http://www.cnet.com/news/"><meta property="fb:app_id" content="16995676698"><meta property="fb:admins" content="100001036810388"><meta property="article:publisher" content="https://www.facebook.com/cnet"><meta content="30261067" property="twitter:account_id"><meta content="I1kHyfzmmG1fEVjq8GBUgkfCHc6PNtxce1_VyUuJhws" name="google-site-verification"><meta content="wNWLoFvk5wsdZQ-u75uCNiaHNa7FLFmNtH2t7dZbXmQ" name="google-site-verification"><meta content="475248 a64b83c951afca9ef6c838e0" name="p:domain_verify"><meta content="Product reviews and prices, software downloads, and tech news - CNET" name="msapplication-tooltip"><meta content="http://www.cnet.com/" name="msapplication-starturl"><meta content="width=1024 height=768" name="msapplication-window"><meta content="#424244" name="msapplication-navbutton-color"><meta content="name=Home  action-uri=http://www.cnet.com/  icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Downloads  action-uri=http://download.cnet.com/  icon-uri=http://download.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=News  action-uri=http://www.cnet.com/news/  icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Reviews  action-uri=http://www.cnet.com/reviews/  icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Videos  action-uri=http://www.cnet.com/videos/  icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Forums  action-uri=http://forums.cnet.com/  icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta name="tp:baseUrl" content="http://cnet2.cbsistatic.com/fly/923-fly/bundles/cnetmpxpdk/pdk"><meta name="viewport" content="width=device-width"><link rel="publisher" href="https://plus.google.com/+CNET/"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="http://cnet1.cbsistatic.com/fly/923-fly/bundles/cnetcss/css/core/main.desktop.css"><link rel="stylesheet" href="http://cnet1.cbsistatic.com/fly/923-fly/bundles/cnetcss/css/feature/default/default.desktop.css"><!--[if IE 8]> <link rel="stylesheet" href="http://cnet4.cbsistatic.com/fly/923-fly/bundles/cnetcss/css/core/ie/ie8.css" /> <![endif]--><!--[if IE 9]> <link rel="stylesheet" href="http://cnet3.cbsistatic.com/fly/923-fly/bundles/cnetcss/css/core/ie/ie9.css" /> <![endif]--><script src="http://cnet4.cbsistatic.com/fly/923-fly/bundles/cnetcore/js/newsdoor_edition_redirect.js"></script><script type="text/javascript">
-    window.CnetPageVars = {
-        ads: {
-            enabled: true,
-            data: {"gpt":{"targeting":{"section":"news","device":"desktop","ptype":"section_door","cid":"news","env":"prod"},"adConfig":{"network":{"dev":8264,"prod":8264},"method":"async-inline","regions":[{"region":"uk","countries":["gb","ie","za","bh","kw","om","qa","sa","ae","iq","eg","ye","fr"]},{"region":"au","countries":["au","nz"]},{"region":"asia","countries":["sg","my","th","id","ph","hk","vn","in","tw"]}],"adUnits":{"intromercial":{"outOfPage":true},"skin":{"sizes":[[1600,1000]],"position":"top","eventCallbacks":{"slotRenderEnded":"adSkinCallback"}},"resourceCenterTop":{"sizes":[[371,301]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,250],[300,600],[300,1050]],"position":"top"},"marqueeTop":{"sizes":[[300,60]],"position":"top"},"mpuTop":{"sizes":[[300,250]],"position":"top"},"mpuBottom":{"sizes":[[300,250],[300,600],[300,1050]],"position":"bottom"},"leaderPlusTop":{"sizes":[[970,66],[728,90],[970,250]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderboardTopPlusCallback"}},"leaderTop":{"sizes":[[970,66],[728,90]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderTopCallback"}},"buttonTop":{"sizes":[[88,31],[70,20],[155,40]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"omnibarTop":{"sizes":[[980,45]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"textLinkTop":{"sizes":[[401,11]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"dynamicTextLinkTop":{"sizes":[[1171,61]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"mpuMiddle":{"sizes":[[300,250]],"position":"middle"},"mpu3":{"sizes":[[300,250]],"position":3},"leaderPlusMantle":{"sizes":[[970,66],[728,90],[970,250]],"position":"mantle","eventCallbacks":{"slotRenderEnded":"leaderPlusMantleCallback"}},"leaderBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"leaderPlusBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"dynamicShowcaseTop":{"sizes":[[371,771]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"infoBoardTop":{"sizes":[[771,201],[620,90]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"infoButtonsTop":{"sizes":[[771,61]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"socialLogoBottom":{"sizes":[[88,31]],"position":"bottom","eventCallbacks":{"slotRenderEnded":"sharebarCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"socialLogoTop":{"sizes":[[88,31]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredFeedTop":{"sizes":[[571,121]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"inlineProductCarouselTop":{"sizes":[[621,221],[621,471]],"position":"top","eventCallbacks":{"slotRenderEnded":"inlineProductCarouselTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"inpageVideoTop":{"sizes":[[641,321]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"windowTop":{"sizes":[[120,90]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"windowBottom":{"sizes":[[120,90]],"position":"bottom","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredMatchTop":{"sizes":[[971,201]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replaySquareTop":{"sizes":[[271,271]],"position":"top","eventCallbacks":{"slotRenderEnded":"replaySquareCallBack"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayWideTop":{"sizes":[[771,131]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayShowcaseTop":{"sizes":[[371,291]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"overgifTop":{"sizes":[[251,11]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"showcaseTop":{"sizes":[[3,3]],"position":"top"},"videoThumbnailTop":{"sizes":[[171,231]],"position":"top","eventCallbacks":{"slotRenderEnded":"videoThumbnailTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true}},"mobile":{"adUnits":{"hpto":{"outOfPage":true},"mobileBannerTop":{"sizes":[[320,50],[6,1]],"position":"increment"},"mobileBannerMpuHptoOverlay":{"outOfPage":true},"mobileMpuBottom":{"sizes":[300,250]},"mobileBanner":{"sizes":[[320,50]],"position":"increment"},"mobileReplaySquare":{"sizes":[[271,271]],"position":"increment"},"mobileReplayWide":{"sizes":[[771,131]],"position":"increment"},"mobileBannerPlus":{"sizes":[[300,250],[320,50],[621,221]],"position":"increment"},"mobileMpu":{"sizes":[[300,250]],"position":"increment"},"mobileOvergif":{"sizes":[[251,11]],"position":"increment","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true}}},"tablet":{"adUnits":{"resourceCenterTop":{"sizes":[[300,300]],"position":"top"},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,600],[300,250]]},"marqueeTop":{"sizes":[[234,60]],"position":"top"},"mpuTop":{"sizes":[[300,250],[300,600]],"position":"top"},"mpuBottom":{"sizes":[[300,250]],"position":"bottom"},"leaderTop":{"sizes":[[728,90],[970,66]],"position":"bottom"},"leaderPlusTop":{"sizes":[[728,90],[970,66],[970,250]],"position":"top"}}},"siteName":"cnet","collapseEmptyDiv":false,"setRefreshUnfilledSlots":true,"setClearUnfilledSlots":false,"disableInitialLoad":false,"disableInitialLoadCompanions":false,"enableSingleRequest":true,"enableAsyncRendering":true,"defaultRegion":"aw","deviceRegions":{"mobile":[{"region":"aw","countries":["all"]}],"desktop":[],"tablet":[]}},"containerId":"5477ab96cc05d","slotVars":{"network":"8264","siteName":"cnet","collapseEmptyDiv":"","topics":"news\/home","platform":"desktop"},"adType":"gpt","adDivIds":["leader-plus-top-5477ab96cc05d","window-bottom-5477ab96cc05d","replay-wide-top-5477ab96cc05d","sponsored-feed-top-5477ab96cc05d","mpu-plus-top-5477ab96cc05d","mpu-bottom-5477ab96cc05d","leader-bottom-5477ab96cc05d","omnibar-top-5477ab96cc05d","text-link-top-5477ab96cc05d","skin-5477ab96cc05d","intromercial-5477ab96cc05d","dynamic-text-link-top-5477ab96cc05d"]},"cookieName":"cnet_ad","cookieServicePath":"http:\/\/www.cnet.com\/ad\/ad-cookie\/","session":4,"subSession":6}
-        },
-        assetsVersion: {
-            version: '923-fly'
-        },
-        cmsEdit: {
-            contentId: 'be66d948-4864-47aa-a4d7-43a7043d7e4f',
-            contentType: 'feature'
-        },
-        device: 'desktop',
-        edition: {
-            code: 'us'
-        },
-        environment: 'prod',
-        tracking: {
-            enabled: true
-        },
-        promotionals: {
-            flyoutPromo:{
-                url: '/flyout-promo/'
-            }
-        },
-        user: {
-            baseUrl: 'https://secure-fly-beta.cnet.com',
-            'urls': {
-                'login': "https://secure-fly-beta.cnet.com/user/login/",
-                'register': "https://secure-fly-beta.cnet.com/user/registration/",
-                'confirmRegistration': "http://www.cnet.com/user/instructions-confirm-registration/",
-                'forgotPassword': "https://secure-fly-beta.cnet.com/user/forgotten-password/",
-                'passwordSent': "http://www.cnet.com/user/password-sent/",
-                'createUsername': "http://www.cnet.com/user/create-username/",
-                'sendConfirmation': "http://www.cnet.com/user/send-confirmation/?registered=1",
-                'userData': "http://www.cnet.com/user/get-data/",
-                'flag': "http://www.cnet.com/user/flag/"
-            }
-        }
-    } 
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html  charset=utf-8" />
+<meta name="google-site-verification" content="6NsJdxTK_IuZTCIirTbW0toHC6a2NoViH53U8Rs5lnM" />
+<meta name="msvalidate.01" content="5C574E00F9F0ED6C9545029207ED5988" />
+    <title>Editor and Publisher &reg </title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="/images/enp/favicon.ico"/>
+    <link rel="apple-touch-icon" href="/images/enp/iPhone-Bookmark-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="/style/enp/nav-style.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style-test.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/enp/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/enp/dmc-style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
-    
-        
-    
-    var utag_data = {"isEnabled":true,"articleTitle":"news: index","articleType":"content_feature","deviceType":"desktop","isDev":"0","pageType":"section_door","siteEdition":"us","siteHier":["news","news","home"],"siteSection":"news","siteType":"responsive web","topicId":[],"topicName":[],"dwAccount":"cbsicnetglobalsite","dwHost":"dw.cbsi.com","siteId":1,"reportSuiteId":"cbsicnetglobalsite","bkSiteId":3321,"limit":4,"topicSlugs":[],"siteName":"cnet","tealium":{"profile":"cnetglobalsite","env":"prod"},"soastaBucket":"us_desktop"} 
-</script><!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]--></head><body class="not-logged-in us " data-cms-edit='{"url":"http:\/\/cms-beta.cnet.com\/content\/page\/create\/feature?pageId=be66d948-4864-47aa-a4d7-43a7043d7e4f"}'>
-                        <header id="rbHeader" class="page-header"><div id="omnibar_top">
-                                    <div id="omnibar-top-5477ab96cc05d" class="ad-omnibar-top" data-ad="omnibar-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing omnibar-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("omnibar-top-5477ab96cc05d") 
-    </script></div>
-            </div>                                <div id="secondary" class="headerPromoWrap">
-                <div id="headerTextAd">
-                                    <div id="text-link-top-5477ab96cc05d" class="ad-text-link-top" data-ad="text-link-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing text-link-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("text-link-top-5477ab96cc05d") 
-    </script></div>
-            </div>
-                                    <div class="headerPromo">    <a href="/holiday-gift-guide/" data-vanity-rewritten="true">Holiday Gift Guide</a>
-</div>
-                            </div>
-                
-                        <div class="fixation" data-component="fixate" data-fixate-options='{"offset":{"top":0,"bottom":0},"guideTop":"#secondary"}'>
-                    <div id="primary">
-                                    <a id="rbLogo" href="/">CNET</a>
-                
-                <form method="get" action="/search/" class="col-3 headerSearchForm">
-                    <div class="searchBar">
-                        <input type="text" placeholder="Search CNET" id="primarySearch" name="query" value=""><button type="submit" class="searchButton" value="Search"></button>
-                    </div>
-                </form>
-                                                    
+    <script type="text/javascript" src="/scripts/enp/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/enp/nav-main.js"></script>
+    <script type="text/javascript" src="/scripts/enp/jquery.nth-last.min.js"></script>
+    <script type="text/javascript" src="/scripts/enp/dmc-scripts.js"></script>
+    <script type="text/javascript" src="/scripts/enp/datapage.js"></script>
 
-<nav id="primaryNav" section="brandnav" data-endpoint="/component/load/xhr/"><div class="menu double" id="reviewsMenu" data-component="touchMenuHover">
-        <a class="menuHead" data-trigger="menu" href="/reviews/">Reviews</a>
-        <div class="menuWrapper">
-            <!--[if lt IE 9]>
-            <noscript><div class="navTag"></noscript>
-            <![endif]-->
-            <nav><div class="navWrapper" data-component="headerMenu" data-ajax="reviews">
-                    <ul class="topCategories"><li class="hed">Top Categories</li>
-                        <li data-ajax="reviews-appliances"><a href="/topics/appliances/">Appliances</a></li>
-                        <li data-ajax="reviews-audio"><a href="/topics/audio/">Audio</a></li>
-                        <li data-ajax="reviews-cameras"><a href="/topics/cameras/">Cameras</a></li>
-                        <li data-ajax="reviews-car"><a href="/topics/car-tech/">Car Tech</a></li>
-                        <li data-ajax="reviews-desktops"><a href="/topics/desktops/">Desktops</a></li>
-                        <li data-ajax="reviews-headphones"><a href="/topics/headphones/">Headphones</a></li>
-                        <li data-ajax="reviews-laptops"><a href="/topics/laptops/">Laptops</a></li>
-                        <li data-ajax="reviews-networking"><a href="/topics/networking/">Networking</a></li>
-                        <li data-ajax="reviews-phones"><a href="/topics/phones/">Phones</a></li>
-                        <li data-ajax="reviews-printers"><a href="/topics/printers/">Printers</a></li>
-                        <li data-ajax="reviews-software"><a href="/topics/software/">Software</a></li>
-                        <li data-ajax="reviews-tablets"><a href="/topics/tablets/">Tablets</a></li>
-                        <li data-ajax="reviews-tvs"><a href="/topics/tvs/">TVs</a></li>
-                        <li data-ajax="reviews-wearable"><a href="/topics/wearable-tech/">Wearable Tech</a></li>
-                                                    <li data-ajax="reviews-deals"><a href="/deals/">Deals</a></li>
-                            <li data-ajax="reviews-webhosting"><a href="/web-hosting/" data-vanity-rewritten="true">Web Hosting</a></li>
-                                            </ul></div>
-            </nav><!--[if lt IE 9]>
-            <noscript></div></noscript>
-            <![endif]--></div>
-    </div>
-    <div class="menu double active" id="newsMenu" data-component="touchMenuHover">
-        <a class="menuHead" data-trigger="menu" href="/news/">News</a>
-        <div class="menuWrapper">
-            <!--[if lt IE 9]>
-            <noscript><div class="navTag"></noscript>
-            <![endif]-->
-            <nav><div class="navWrapper" data-component="headerMenu" data-ajax="news">
-                    <ul class="topCategories"><li class="hed">Top Categories</li>
-                        <li data-ajax="news-apple"><a href="/apple/" data-vanity-rewritten="true">Apple</a></li>
-                        <li data-ajax="news-computers"><a href="/topics/computers/" data-vanity-rewritten="true">Computers</a></li>
-                        <li data-ajax="news-crave"><a href="/crave/" data-vanity-rewritten="true">Crave</a></li>
-                                                    <li data-ajax="reviews-deals"><a href="/deals/">Deals</a></li>
-                                                <li data-ajax="news-internet"><a href="/topics/internet/" data-vanity-rewritten="true">Internet</a></li>
-                        <li data-ajax="news-microsoft"><a href="/tags/microsoft/">Microsoft</a></li>
-                        <li data-ajax="news-mobile"><a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a></li>
-                        <li data-ajax="news-photography"><a href="/topics/photography/" data-vanity-rewritten="true">Photography</a></li>
-                        <li data-ajax="news-security"><a href="/topics/security/" data-vanity-rewritten="true">Security</a></li>
-                        <li data-ajax="news-scitech"><a href="/topics/sci-tech/" data-vanity-rewritten="true">Sci-Tech</a></li>
-                        <li data-ajax="news-culture"><a href="/topics/tech-culture/" data-vanity-rewritten="true">Tech Culture</a></li>
-                        <li data-ajax="news-tech"><a href="/topics/tech-industry/" data-vanity-rewritten="true">Tech Industry</a></li>
-                        <li data-ajax="news-photos"><a href="/pictures/">Photo Galleries</a></li>
-                        <li data-ajax="video-news"><a href="/videos/cnet-news/" data-vanity-rewritten="true">Video</a></li>
-                    </ul></div>
-            </nav><!--[if lt IE 9]>
-            <noscript></div></noscript>
-            <![endif]--></div>
-    </div>
-    <div class="menu double" id="videoMenu" data-component="touchMenuHover">
-        <a class="menuHead" data-trigger="menu" href="/videos/">Video</a>
-        <div class="menuWrapper">
-        <!--[if lt IE 9]>
-        <noscript><div class="navTag"></noscript>
-        <![endif]-->
-        <nav><div class="navWrapper" data-component="headerMenu" data-ajax="videos">
-                <ul class="topCategories"><li class="hed">Top Categories</li>
-                    <li data-ajax="video-adventuresintech"><a href="/adventures-in-tech/" data-vanity-rewritten="true">Adventures in Tech</a></li>
-                    <li data-ajax="video-apple"><a href="/apple-byte/" data-vanity-rewritten="true">Apple Byte</a></li>
-                    <li data-ajax="video-cartech"><a href="/topics/car-tech/videos/" data-vanity-rewritten="true">Car Tech</a></li>
-                    <li data-ajax="video-cnetoncars"><a href="/cnet-on-cars/" data-vanity-rewritten="true">CNET On Cars</a></li>
-                    <li data-ajax="video-cnettop5"><a href="/cnet-top-5/" data-vanity-rewritten="true">CNET Top 5</a></li>
-                    <li data-ajax="video-cnetupdate"><a href="/cnet-update/" data-vanity-rewritten="true">CNET Update</a></li>
-                    <li data-ajax="video-googlicious"><a href="/googlicious/" data-vanity-rewritten="true">Googlicious</a></li>
-                    <li data-ajax="video-howto"><a href="/how-to/videos/" data-vanity-rewritten="true">How To</a></li>
-                    <li data-ajax="video-nextbigthing"><a href="/next-big-thing/" data-vanity-rewritten="true">Next Big Thing</a></li>
-                    <li data-ajax="video-news"><a href="/videos/cnet-news/" data-vanity-rewritten="true">News</a></li>
-                    <li data-ajax="video-phones"><a href="/topics/phones/videos/" data-vanity-rewritten="true">Phones</a></li>
-                    <li data-ajax="video-prizefight"><a href="/prizefight/" data-vanity-rewritten="true">Prizefight</a></li>
-                    <li data-ajax="video-tablets"><a href="/topics/tablets/videos/" data-vanity-rewritten="true">Tablets</a></li>
-                    <li data-ajax="video-404"><a href="/the-404/" data-vanity-rewritten="true">The 404</a></li>
-                    <li data-ajax="video-fix"><a href="/the-fix/" data-vanity-rewritten="true">The Fix</a></li>
-                    <li data-ajax="video-tomorrowdaily"><a href="/tomorrow-daily/" data-vanity-rewritten="true">Tomorrow Daily</a></li>
-                    <li data-ajax="video-xcar"><a href="/xcar/" data-vanity-rewritten="true">XCAR</a></li>
-                </ul></div>
-        </nav><!--[if lt IE 9]>
-        <noscript></div></noscript>
-        <![endif]--></div>
-    </div>
-    <div class="menu single" id="howtoMenu" data-component="touchMenuHover">
-        <a class="menuHead" data-trigger="menu" href="/how-to/">How To</a>
-        <div class="menuWrapper">
-            <!--[if lt IE 9]>
-            <noscript><div class="navTag"></noscript>
-            <![endif]-->
-            <nav><ul class="topCategories"><li class="hed">Top Categories</li>
-                    <li><a href="/topics/appliances/how-to/">Appliances</a></li>
-                    <li><a href="/topics/computers/how-to/">Computers</a></li>
-                    <li><a href="/topics/gaming/how-to/">Gaming</a></li>
-                    <li><a href="/topics/home-entertainment/how-to/">Home Entertainment</a></li>
-                    <li><a href="/topics/internet/how-to/">Internet</a></li>
-                    <li><a href="/topics/mobile-apps/how-to/">Mobile Apps</a></li>
-                    <li><a href="/topics/phones/how-to/">Phones</a></li>
-                    <li><a href="/topics/photography/how-to/">Photography</a></li>
-                    <li><a href="/topics/security/how-to/">Security</a></li>
-                    <li><a href="/topics/tablets/how-to/">Tablets</a></li>
-                    <li><a href="http://forums.cnet.com/" data-user-action="legacy">Forums</a></li>
-                    <li><a href="/internet-speed-test/" data-vanity-rewritten="true">Speed Test</a></li>
-                    <li><a href="/topics/wearable-tech/how-to/">Wearable Tech</a></li>
-                </ul></nav><!--[if lt IE 9]>
-            <noscript></div></noscript>
-            <![endif]--></div>
-    </div>
-    <div class="menu" id="download">
-        <a class="menuHead" href="http://www.download.com" data-user-action="legacy" data-component="trackDownload">Download</a>
-    </div>
+<script type="text/javascript" src="/scripts/sitemessage.js"></script>
+<link type="text/css" rel="stylesheet" href="/style/sitemessage.css" />
 
-    
-
-<div id="headerLogin" class="menu single" data-component="touchMenuHover">
-    <div class="menuHead" data-trigger="menu">
-        <span data-user-var="userName">Log In / Join</span>
-        <div class="user-avatar" data-user-var="avatar"></div>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-106059362 14544") 
+GS_googleEnableAllServices() 
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_160_Article_01") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_160_Article_02") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_160_Article_03") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_160x160_HP") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_160x300_01") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_160x600_01") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_250x250_01") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_250x250_02") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_250x250_03") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_468_01") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_728x90") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_728x90_HP") 
+GA_googleAddSlot("ca-pub-106059362 14544", "ENP_Overlay") 
+GA_googleAddSlot("ca-pub-106059362 14544", "EP_160x160") 
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds() 
+</script>
+</head>
+    <!--END SITE HEAD-->
+    <!--START SITE HEADER-->
+        <body> 
+<!-- ENP_Overlay --> 
+  <script type='text/javascript'>
+GA_googleFillSlot("ENP_Overlay") 
+</script> 
+<div id="ep_header">
+  <div id="ep_header_top">
+    <div class="ep_header_contain">
+      <div class="fleft topLinks"> Friday, November 28, 2014 </div>
+      <div class="fright social"> <a href="/rss/"><img src="/images/enp/rss.png" /></a> <a href="http://twitter.com/editorpublisher"><img src="/images/enp/twitter.png" /></a> <a href="http://www.facebook.com/pages/Editor-Publisher-Magazine/118690484856151?v=wall"><img src="/images/enp/facebook.png" /></a> </div>
+      <div class="fright topLinks">
+        <ul>
+          <li><a href="http://jobs.editorandpublisher.com/jobs">Classifieds</a></li>
+          <li><a href="/Advertise/">Advertise</a></li>
+          <li><a href="/Contact/">Contact Us</a></li>
+          <li><a href="/About/">About Us</a></li>
+        </ul>
+      </div>
+      <div class="fclear"></div>
     </div>
-    <div class="menuWrapper">
-        <!--[if lt IE 9]>
-        <noscript><div class="navTag"></noscript>
-        <![endif]-->
-        <nav><ul class="topCategories logged-out"><li>
-                    <a data-user-show='{"action":"login","params":{"appId":376},"suppressReload":false}'>Log In to CNET</a>
-                </li>
-                <li class="social-login">
-                    <span class="sign-in-with">Sign In with</span>
-                                            <span class="social-site sa-facebook" data-user-social='{"socialSite":"facebook","action":"login","params":{"appId":376}}'>Facebook</span>
-                                            <span class="social-site sa-google" data-user-social='{"socialSite":"google","action":"login","params":{"appId":376}}'>Google</span>
-                                            <span class="social-site sa-yahoo" data-user-social='{"socialSite":"yahoo","action":"login","params":{"appId":376}}'>Yahoo</span>
-                                    </li>
+  </div>
+  <div class="ep_header_contain">
+    <div class="fleft logo"> <a href="/"><img src="/images/enp/logo.gif" alt="Editor &amp  Publisher Website" /></a></div>
+    <div class="fright">
+        <div id="sub_header_links">
+            <ul>
                 <li>
-                    <a data-user-show='{"action":"register","params":{"appId":376}}'>Join CNET</a>
+                    <a href="#" id="subscribe_link">Subscribe</a>&nbsp &nbsp <span class="red_seperate">//</span>&nbsp &nbsp 
                 </li>
-                <li><a href="/user/join-cnet/">Member Benefits</a></li>
-            </ul><ul class="topCategories logged-in"><li class="social-login">
-                    <span>
-                                            <span class="social-site sa-facebook" data-user-link="facebook">Facebook</span>
-                                            <span class="social-site sa-google" data-user-link="google">Google</span>
-                                            <span class="social-site sa-yahoo" data-user-link="yahoo">Yahoo</span>
-                                        </span>
-                </li>
-                <li><a data-user-var="profileLink" data-template="/profiles/__username__/">My Profile</a></li>
-                <li><a href="/user/logout/" data-user-action="logout" data-user-suppress-refresh="false">Log Out</a></li>
-            </ul></nav><!--[if lt IE 9]>
-        <noscript></div></noscript>
-        <![endif]--></div>
-</div>
-
-    
-<div class="menu single" id="editionMenu" data-component="touchMenuHover">
-    <span class="menuHead" data-trigger="menu"><span id="selectedEdition">US</span> Edition</span>
-    <div class="menuWrapper">
-        <!--[if lt IE 9]>
-        <noscript><div class="navTag"></noscript>
-        <![endif]-->
-        <nav><ul class="topCategories" data-component="editionToggler"><li class="hed">Other editions</li>
-                                                    <li><a data-edition="uk" href="/uk/news/">United Kingdom</a></li>
-                                                    <li><a data-edition="au" href="/au/news/">Australia</a></li>
-                                <li><a target="_blank" href="http://www.cnetnews.com.cn/">China</a></li>
-                <li><a target="_blank" href="http://www.cnetfrance.fr/">France</a></li>
-                <li><a target="_blank" href="http://www.cnet.de/">Germany</a></li>
-                <li><a target="_blank" href="http://japan.cnet.com/">Japan</a></li>
-                <li><a target="_blank" href="http://www.cnet.co.kr/">Korea</a></li>
-                                    <li><a data-edition="es" href="/es/noticias/">CNET en Español</a></li>
-                            </ul></nav><!--[if lt IE 9]>
-        <noscript></div></noscript>
-        <![endif]--></div>
-</div>
-</nav></div>
-        </div>
-    </header><div id="rbSkin">
-                                    <span id="adSkinLeft"></span>
-                <span id="adSkinRight"></span>
-                
-                                    <div id="skin-5477ab96cc05d" class="ad-skin" data-ad="skin">
-    <script>
-        window.console && console.log && console.log("ADS: queuing skin-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("skin-5477ab96cc05d") 
-    </script></div>
-                                                                
-                                    <div id="intromercial-5477ab96cc05d" class="ad-intromercial" data-ad="intromercial">
-    <script>
-        window.console && console.log && console.log("ADS: queuing intromercial-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("intromercial-5477ab96cc05d") 
-    </script></div>
-            
-                        <div id="rbContent" class="container ">
-                <div class="container">
-    <div class="row">
-                    <div class="row">
-        <div class="col-12">
-                                        </div>
-            </div>
-                <div class="row">
-        <div class="col-12">
-                                            <div class="row">
-                                        <div class="row">
-        <div class="col-12">
-                                                    
-                                                        
-                                                        
-    <div class="spacer topStories"></div>
-    <section id="topStories" data-vr-zone='"main"'><div section="topStories|item-1" class="asset half " data-vr-contentbox>
-                    <a class="mainStory" href="/news/european-parliament-vote-critical-of-googles-search-dominance/"></a>
-
-                                                        
-                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/11/27/8f265613-4835-406a-a188-a17a880d3d27/thumbnail/1170x878/16680a 9ee7519cdd5f53a784dc42d3/european-parliament-vote.jpg" class="" alt="" height="878" width="1170"></figure><div class="content">
-                                                <h3 class="h">European Parliament calls for a Google breakup</h3>
-                        <p>It urges regulators to consider "unbundling" Google's other commercial services from the search business. The vote sends a signal -- but it's only symbolic.</p>
-
-                                                    <div section="substories">
-                                                                    
-                                    <a class="related content_article" href="/news/eu-wants-right-to-be-forgotten-applied-globally/">EU wants 'right to be forgotten' applied globally</a>
-                                                            </div>
-                                                <div class="share" data-component="socialLinks" data-social-links-options='{"title":"European Parliament calls for a Google breakup","url":"http:\/\/www.cnet.com\/news\/european-parliament-vote-critical-of-googles-search-dominance\/","description":"It urges regulators to consider \u0022unbundling\u0022 Google\u0027s other commercial services from the search business. The vote sends a signal -- but it\u0027s only symbolic."}'>
-                            <ul><li data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</li>
-                                <li data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</li>
-                                <li data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</li>
-                                <li data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</li>
-                            </ul></div>
-                    </div>
-                </div>
-                                                            
-                <div section="topStories|item-2" class="asset quarter " data-vr-contentbox>
-                    <a class="mainStory" href="/news/the-biggest-tech-turkeys-of-2014/"></a>
-
-                                                        
-                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2012/11/19/c2d69ddf-f0e3-11e2-8c7c-d4ae52e62bcc/thumbnail/1170x878/291281abfb498e667285917ebb0efedd/tech-turkeys-header-v2_1.jpg" class="" alt="" height="878" width="1170"></figure><div class="content">
-                                                <h3 class="h">The biggest tech turkeys of 2014</h3>
-                        <p>Fourteen of the year's most embarrassing blunders in technology -- all for your holiday enjoyment.</p>
-
-                                                    <div section="substories">
-                                                                    
-                                    <a class="related content_gallery" href="/pictures/techs-biggest-flops-and-gaffes-in-2014-pictures/">Tech's biggest flops and gaffes in 2014 (pictures)</a>
-                                                            </div>
-                                                <div class="share" data-component="socialLinks" data-social-links-options='{"title":"The biggest tech turkeys of 2014","url":"http:\/\/www.cnet.com\/news\/the-biggest-tech-turkeys-of-2014\/","description":"Fourteen of the year\u0027s most embarrassing blunders in technology -- all for your holiday enjoyment."}'>
-                            <ul><li data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</li>
-                                <li data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</li>
-                                <li data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</li>
-                                <li data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</li>
-                            </ul></div>
-                    </div>
-                </div>
-                                                            
-                <div section="topStories|item-3" class="asset quarter " data-vr-contentbox>
-                    <a class="mainStory" href="/news/after-ubers-stumble-is-it-lyft-and-sidecars-time-to-shine/"></a>
-
-                                                        
-                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/08/20/1ab75441-9e3e-4513-bb3a-692ef1837eb3/thumbnail/1170x878/ed1757c05af00dfab206955c7077d376/mustache.jpg" class="" alt="" height="878" width="1170"></figure><div class="content">
-                                                <h3 class="h">After Uber stumble, time for Lyft and Sidecar to shine?</h3>
-                        <p>Both Lyft and Sidecar see significant bumps in business after Uber's publicity blunders, but it appears it'll take more than a boycott to oust the top dog.</p>
-
-                                                <div class="share" data-component="socialLinks" data-social-links-options='{"title":"After Uber stumble, time for Lyft and Sidecar to shine?","url":"http:\/\/www.cnet.com\/news\/after-ubers-stumble-is-it-lyft-and-sidecars-time-to-shine\/","description":"Both Lyft and Sidecar see significant bumps in business after Uber\u0027s publicity blunders, but it appears it\u0027ll take more than a boycott to oust the top dog."}'>
-                            <ul><li data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</li>
-                                <li data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</li>
-                                <li data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</li>
-                                <li data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</li>
-                            </ul></div>
-                    </div>
-                </div>
-                        </section><div id="leader-plus-top-5477ab96cc05d" class="ad-leader-plus-top" data-ad="leader-plus-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing leader-plus-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("leader-plus-top-5477ab96cc05d") 
-    </script></div>
-                                                                                            
-                                                        
-                                                        
-<!--[if lt IE 9]> <noscript> <div class="col-12 sectionTag fourFeatured"> </noscript> <![endif]-->
-<section class="col-12 fourFeatured" section="fourFeatured" data-vr-zone='"sub"'><a href="/news/twitter-is-now-tracking-the-apps-you-download/" class="col-3 asset" data-vr-contentbox>
-            <div class="image">
-                                            
-                                <figure class=" img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2014/09/24/4030f634- b6-4149-b537-85d78f303f76/thumbnail/270x152/11921e6504f4067f9e6c41552fb2dd8d/cnet-twitter.jpg" class="" alt="" height="152" width="270"></figure><div class="dek">Twitter is now tracking the apps you download </div>
-                                                </div>
-        </a>
-    
-    
-        <a href="/news/star-trek-began-filming-50-years-ago-today/" class="col-3 asset" data-vr-contentbox>
-            <div class="image">
-                                            
-                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/11/25/f7964360-245a-4f8f-a081-6d5aeddbbf2d/thumbnail/270x152/1de2567279f8e37f992 e44a2cd36eb/spocksmilesdesilunbc.jpg" class="" alt="" height="152" width="270"></figure><div class="dek">'Star Trek' began filming 50 years ago </div>
-                                                </div>
-        </a>
-    
-    
-        <a href="/news/mozilla-promotes-new-search-options-in-revamped-firefox/" class="col-3 asset" data-vr-contentbox>
-            <div class="image">
-                                            
-                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/11/26/0472326d-843d-4605-b132-a092807ba71a/thumbnail/270x152/538fe85a068aa307f91e914ee3ebee91/firefox-revamped-search.jpg" class="" alt="" height="152" width="270"></figure><div class="dek">Revamped Firefox to play up new search options </div>
-                                                </div>
-        </a>
-    
-    
-        <a href="/news/doctors-haircuts-even-kittens-courtesy-of-your-smartphone/" class="col-3 asset" data-vr-contentbox>
-            <div class="image">
-                                            
-                                <figure class=" img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2014/11/25/032ddc89-27d3-4122-920e-3ad71464807e/thumbnail/270x152/3d788fc79504ec131ee6bbe56916024a/83454811.jpg" class="" alt="" height="152" width="270"></figure><div class="dek">Doctors and kittens -- now on demand, via your smartphone </div>
-                                                </div>
-        </a>
-        </section><!--[if lt IE 9]> <noscript></div></noscript> <![endif]--></div>
-            </div>
-                <div class="row">
-        <div class="col-12">
-                                            <div class="row">
-                                    <div class="col-2">
-                                                    
-                                                        
-                                                            
-<!--[if lt IE 9]> <noscript> <div class="dekTime2col essentialReads"> </noscript> <![endif]-->
-<section class="dekTime2col" section="latestStories" data-vr-zone='"feed"'><h5><span>More Tech News</span></h5>
-
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/black-friday-tech-deals-2014/">
-                <h3>
-                                                                Every Black Friday tech deal we've found
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/uber-said-to-be-near-funding-round-that-doubles-its-valuation/">
-                <h3>
-                                                                Uber said to be near funding round that doubles its valuation
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/software/news/">Software</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/smartphone-thief/">
-                <h3>
-                                                                Confessions of a smartphone thief
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/advanced-regin-malware-poses-biggest-threat-outside-us/">
-                <h3>
-                                                                Tricky Regin malware poses biggest threat outside US
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/security/" data-vanity-rewritten="true">Security</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/samsungs-eyecan-lets-your-eyes-control-your-computer/">
-                <h3>
-                                                                Samsung's 'eye mouse' enables users to control their computer with a glance
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/sci-tech/" data-vanity-rewritten="true">Sci-Tech</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/abandoned-in-place-forgotten-space-launch-sites-left-to-the-sands-of-time/">
-                <h3>
-                                                                'Abandoned in Place': Forgotten space launch sites left to the sands of time
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/tech-culture/" data-vanity-rewritten="true">Tech Culture</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/sony-pictures-hacked-data-held-for-ransom/">
-                <h3>
-                                                                Sony Pictures hacked, data held for ransom
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/security/" data-vanity-rewritten="true">Security</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/on-twitter-its-always-open-mic-night-and-comics-cant-get-enough/">
-                <h3>
-                                                                'Retweets equal laughs': Why comics can't get enough of Twitter
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/tech-culture/" data-vanity-rewritten="true">Tech Culture</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/samsung-galaxy-note-stylus-could-have-been-a-toothpick/">
-                <h3>
-                                                                Samsung Galaxy Note stylus could have been a toothpick
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a>
-                                    </p>
-                    </div>
-            
-        <div data-vr-contentbox>
-            <a data-s-object-id="colnm" class="dek" href="/news/did-you-break-this-new-lenovo-yoga-ad-pranks-shopperslenovo-yoga/">
-                <h3>
-                                                                'Did you break this?' Lenovo Yoga ad pranks stunned shoppers
-                                    </h3>
-            </a>
-                            <p class="topic">
-                                                                <a href="/topics/computers/" data-vanity-rewritten="true">Computers</a>
-                                    </p>
-                    </div>
-    </section><!--[if lt IE 9]> <noscript></div></noscript> <![endif]--><!--[if lt IE 9]> <noscript> <div class="sectionTag mostSharedMini" data-component="livefyreCommentcount"> </noscript> <![endif]--><section class="mostSharedMini" data-component="livefyreCommentcount"><h5>Trending on CNET</h5>
-                                                                                                                                                                                                                                                                        
-        <div class="item first" section="trending">
-                <div class="social-button  facebook">
-        <div class="icon icon-facebook">facebook</div>
-    </div>
-
-                            <p class="social-count">1.5k</p>
-                            <p class="likes">Facebook Likes</p>
-                                <a data-omniture-track="moduleClick" data-omniture-track-data='{"moduleInfo": "mostSharedMini"}' href="/news/skateboard-legend-tony-hawk-rides-a-real-hoverboard/">Skateboard legend Tony Hawk rides a real hoverboard</a>
-        </div>
-                                                                                                                                                                                                                                    
-        <div class="item " section="trending">
-                <div class="social-button  twitter">
-        <div class="icon icon-twitter">twitter</div>
-    </div>
-
-                            <p class="social-count">747</p>
-                            <p class="likes">Tweets</p>
-                                <a data-omniture-track="moduleClick" data-omniture-track-data='{"moduleInfo": "mostSharedMini"}' href="/news/miracle-tech-turns-water-into-fuel/">'Miracle' tech turns water into fuel</a>
-        </div>
-                                                                                                                                                                                                                                    
-        <div class="item " section="trending">
-                <div class="social-button  googleplus">
-        <div class="icon icon-googleplus">googleplus</div>
-    </div>
-
-                            <p class="social-count">128</p>
-                            <p class="likes">Google Plus Shares</p>
-                                <a data-omniture-track="moduleClick" data-omniture-track-data='{"moduleInfo": "mostSharedMini"}' href="/pictures/hop-aboard-quantum-the-eye-popping-cruise-ship-of-tomorrow-pictures/">Hop aboard the eye-popping cruise ship of tomorrow (pictures)</a>
-        </div>
-                                                                                                                                                                                                                                
-        <div class="item " section="trending">
-                <div class="social-button  comments">
-        <div class="icon icon-comments">comments</div>
-    </div>
-
-                                            <p class="social-count">103</p>
-                            <p class="likes">Comments</p>
-                                <a data-omniture-track="moduleClick" data-omniture-track-data='{"moduleInfo": "mostSharedMini"}' href="/news/whats-the-best-music-streaming-service/">What's the best music streaming service?</a>
-        </div>
-                
-                                    <div id="window-bottom-5477ab96cc05d" class="ad-window-bottom" data-ad="window-bottom">
-    <script>
-        window.console && console.log && console.log("ADS: queuing window-bottom-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("window-bottom-5477ab96cc05d") 
-    </script></div>
-                </section><!--[if lt IE 9]> <noscript></div></noscript> <![endif]--></div>
-            <div class="col-10">
-                                                    <div class="col-6">
-                                                    
-                                                        
-                                                                                                                                                    
-                                                                                                                                                                                                
-    <div class="col-6" id="fourAndOneListing" data-vr-zone='"top"' data-component="loadMore" data-load-more-options='{"loader":{"classes":{"loading":"loading"}},"url":"\/component\/load-more\/xhr\/","data":{"endpoint":"\/api\/component\/listing\/4f7a32d4-91e6-4ec0-b1dc-4de1f6f43501\/content\/feef4338-0c94-4edc-97f6-68163d3 9bb","params":[],"view":"four_one_river","familyName":"mixed_listing","typeName":"mixed_listing","offset":11,"initialLimit":15,"colspan":6,"limit":15,"lastAssetId":"3ac89a34-273d-4c3e-bd94-5dab4c4f9ce9"},"numPinned":4,"pushState":{"route":"\/news\/{page}\/","enabled":true,"currentPage":1}}'>
-        <h1>Top News</h1>
-                
-                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"Syrian Electronic Army attack spreads pop-ups across news sites","url":"http:\/\/www.cnet.com\/news\/syrian-electronic-army-attack-spreads-pop-ups-across-news-sites\/","description":"\u0022You\u0027ve been hacked\u0022 messages appear at CNBC, the Boston Globe and UK newspapers. The attack comes through an Internet address hijacking involving startup Gigya."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/syrian-electronic-army-attack-spreads-pop-ups-across-news-sites/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/11/27/bcb74786-10bc-49f6-9896-d46b3b013243/thumbnail/170x128/8d6ccd6dd37538a90d0b163800f86fe7/syrian-electronic-army-gigya-attack-dns.jpg" class="" alt="" height="128" width="170"></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">5 hours ago</span><span>Security</span><span class="assetByline">by <a rel="author" href="/profiles/shankland/">Stephen Shankland</a></span>        <a href="/news/syrian-electronic-army-attack-spreads-pop-ups-across-news-sites/" class="assetHed"><h3>Syrian Electronic Army attack spreads pop-ups across news sites</h3>
-        <p>"You've been hacked" messages appear at CNBC, the Boston Globe and UK newspapers. The attack comes through an Internet address hijacking involving startup Gigya.</p></a>
-                                </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"AT&amp T\u0027s fiber Internet rollout will continue, kinda","url":"http:\/\/www.cnet.com\/news\/at-ts-fiber-internet-rollout-will-continue-kinda\/","description":"The company tells the FCC that it will go forward with its current GigaPower fiber network plans but that it\u0027s still waiting to hear what happens with Net neutrality in Washington."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/at-ts-fiber-internet-rollout-will-continue-kinda/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/11/07/a430e2b6-7992-4497-8dfe-9548ec3e0e99/thumbnail/170x128/2e9f1a029c8fc03314deca56ace4eaf9/attrandallstephensonmwc2011.jpg" class="" alt="" height="128" width="170"></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">21 hours ago</span><span>Tech Industry</span><span class="assetByline">by <a rel="author" href="/profiles/nickstatt/">Nick Statt</a></span>        <a href="/news/at-ts-fiber-internet-rollout-will-continue-kinda/" class="assetHed"><h3>AT&amp T's fiber Internet rollout will continue, kinda</h3>
-        <p>The company tells the FCC that it will go forward with its current GigaPower fiber network plans but that it's still waiting to hear what happens with Net neutrality in Washington.</p></a>
-                                </div>
-</div>
-                                    </div>
-            </div>
-
-                                                            
-                                    <div id="replay-wide-top-5477ab96cc05d" class="ad-replay-wide-top" data-ad="replay-wide-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing replay-wide-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("replay-wide-top-5477ab96cc05d") 
-    </script></div>
-                                                                        <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"Alien spotting: Eight space theories you won\u0027t believe other people believe","url":"http:\/\/www.cnet.com\/news\/alien-spotting-8-space-theories-you-wont-believe-other-people-believe\/","description":"In an age of social media and renewed interest in space exploration, 2014 has also been a good year for speculative alien and UFO spotting. Crave\u0027s Eric Mack rounds up some of the year\u0027s craziest bits of \u0022evidence.\u0022"}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/alien-spotting-8-space-theories-you-wont-believe-other-people-believe/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/11/26/cf4d3389-2a1c-44c6-87ce-87df9fed54d1/thumbnail/170x128/db9c7e22565b34f5206bd263d5844 f/iss-alien.jpg" class="" alt="" height="128" width="170"></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">10 hours ago</span><span>Crave</span><span class="assetByline">by <a rel="author" href="/profiles/ericcmack/">Eric Mack</a></span>        <a href="/news/alien-spotting-8-space-theories-you-wont-believe-other-people-believe/" class="assetHed"><h3>Alien spotting: Eight space theories you won't believe other people believe</h3>
-        <p>In an age of social media and renewed interest in space exploration, 2014 has also been a good year for speculative alien and UFO spotting. Crave's Eric Mack rounds up some of the year's craziest bits of "evidence."</p></a>
-                                </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost full">
-                                                                                    
-
-<div class="assetBody ">
-    <a href="/pictures/drones-of-2014-quadcopters-that-give-you-a-view-from-above/" class="assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="321" width="570" data-original="    http://cnet3.cbsistatic.com/hub/i/r/2014/11/18/6b761a3b-dda6-4fb8-8e5f-405cc290fb35/thumbnail/570x321/196ad914b249361de6031b454f5d328d/parrot-bebop-1114-01.jpg"><noscript><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/11/18/6b761a3b-dda6-4fb8-8e5f-405cc290fb35/thumbnail/570x321/196ad914b249361de6031b454f5d328d/parrot-bebop-1114-01.jpg" class="" alt="" height="321" width="570"></noscript></figure></a>
-    <div class="assetText over">
-                
-        <span class="type">Gallery</span>
-        <a href="/pictures/drones-of-2014-quadcopters-that-give-you-a-view-from-above/" class="assetHed"><h3>Drones of 2014: Quadcopters that give you a view from above</h3>
-        <p>This crop of quadcopters make it easier and more affordable than ever for you to shoot aerial photos and video with your hands on or off the controls.</p></a>
-        
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"Drones of 2014: Quadcopters that give you a view from above","url":"http:\/\/www.cnet.com\/pictures\/drones-of-2014-quadcopters-that-give-you-a-view-from-above\/","description":"This crop of quadcopters make it easier and more affordable than ever for you to shoot aerial photos and video with your hands on or off the controls."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-    </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost full">
-                                            <div class="playOverlay">Play</div>
-                                                                                    
-
-<div class="assetBody video">
-    <a href="/videos/the-renault-megane-275-trophy-is-a-lord-of-the-ring/" class="assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="321" width="570" data-original="    http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/de7978ef-51fd-4207-a9e1-f5bca6d0bff3/thumbnail/570x321/d10246c66b1b043f83769e620016f618/xcar-renault.jpg"><noscript><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/de7978ef-51fd-4207-a9e1-f5bca6d0bff3/thumbnail/570x321/d10246c66b1b043f83769e620016f618/xcar-renault.jpg" class="" alt="" height="321" width="570"></noscript></figure></a>
-    <div class="assetText over">
-                
-        <span class="type">Video</span>
-        <a href="/videos/the-renault-megane-275-trophy-is-a-lord-of-the-ring/" class="assetHed"><h3>The Renault Megane 275 Trophy is a Lord of the Ring</h3>
-        <p>When someone dared to take the FWD lap record at the Nürburgring away from Renault, the Frenchmen fought back The result is the Megane 275 Trophy and XCAR took it out for a spin to find out more.</p></a>
-        
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"The Renault Megane 275 Trophy is a Lord of the Ring","url":"http:\/\/www.cnet.com\/videos\/the-renault-megane-275-trophy-is-a-lord-of-the-ring\/","description":"When someone dared to take the FWD lap record at the N\u00fcrburgring away from Renault, the Frenchmen fought back The result is the Megane 275 Trophy and XCAR took it out for a spin to find out more."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-    </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"Arctic Monkeys and Pink Floyd spinning record sales of vinyl records","url":"http:\/\/www.cnet.com\/news\/arctic-monkeys-and-pink-floyd-spinning-records-sales-of-vinyl-records\/","description":"Two distinct types of music lovers are buying LPs in numbers not seen since the 1990s."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/arctic-monkeys-and-pink-floyd-spinning-records-sales-of-vinyl-records/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="128" width="170" data-original="    http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/0c60e86b-a479-47b8-acbf-a1e6829db68b/thumbnail/170x128/c0909627967865685ec430585209cd92/woman-dog-vinyl-record-player-promo.jpg"><noscript><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/0c60e86b-a479-47b8-acbf-a1e6829db68b/thumbnail/170x128/c0909627967865685ec430585209cd92/woman-dog-vinyl-record-player-promo.jpg" class="" alt="" height="128" width="170"></noscript></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">8 hours ago</span><span>Digital Media</span><span class="assetByline">by <a rel="author" href="/profiles/rich_trenholm/">Rich Trenholm</a></span>        <a href="/news/arctic-monkeys-and-pink-floyd-spinning-records-sales-of-vinyl-records/" class="assetHed"><h3>Arctic Monkeys and Pink Floyd spinning record sales of vinyl records</h3>
-        <p>Two distinct types of music lovers are buying LPs in numbers not seen since the 1990s.</p></a>
-            </div>
-</div>
-                                    </div>
-            </div>
-
-                                                            
-                                    <div id="sponsored-feed-top-5477ab96cc05d" class="ad-sponsored-feed-top" data-ad="sponsored-feed-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing sponsored-feed-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("sponsored-feed-top-5477ab96cc05d") 
-    </script></div>
-                                                                        <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"European Parliament vote promotes idea of a Google breakup","url":"http:\/\/www.cnet.com\/news\/european-parliament-vote-critical-of-googles-search-dominance\/","description":"A resolution calls on Europe\u0027s competition regulators to consider \u0022unbundling\u0022 Google\u0027s other commercial services from its search business. The vote sends a signal -- but it\u0027s only symbolic."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/european-parliament-vote-critical-of-googles-search-dominance/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="128" width="170" data-original="    http://cnet2.cbsistatic.com/hub/i/r/2014/11/27/8f265613-4835-406a-a188-a17a880d3d27/thumbnail/170x128/08c3fc7a8b6fda8af6b622f57965ee07/european-parliament-vote.jpg"><noscript><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/11/27/8f265613-4835-406a-a188-a17a880d3d27/thumbnail/170x128/08c3fc7a8b6fda8af6b622f57965ee07/european-parliament-vote.jpg" class="" alt="" height="128" width="170"></noscript></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">10 hours ago</span><span>Tech Industry</span><span class="assetByline">by <a rel="author" href="/profiles/shankland/">Stephen Shankland</a></span>        <a href="/news/european-parliament-vote-critical-of-googles-search-dominance/" class="assetHed"><h3>European Parliament vote promotes idea of a Google breakup</h3>
-        <p>A resolution calls on Europe's competition regulators to consider "unbundling" Google's other commercial services from its search business. The vote sends a signal -- but it's only symbolic.</p></a>
-            </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost full">
-                                                                                    
-
-<div class="assetBody ">
-    <a href="/pictures/the-years-wackiest-evidence-aliens-and-ufos-are-real-pictures/" class="assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="321" width="570" data-original="    http://cnet1.cbsistatic.com/hub/i/r/2014/11/25/9 8f802-01dc-4fd9-b6de-f2963436af40/thumbnail/570x321/5bb9b36e543c4085534fe358f080d5d1/aaa.png"><noscript><img src="http://cnet1.cbsistatic.com/hub/i/r/2014/11/25/9 8f802-01dc-4fd9-b6de-f2963436af40/thumbnail/570x321/5bb9b36e543c4085534fe358f080d5d1/aaa.png" class="" alt="" height="321" width="570"></noscript></figure></a>
-    <div class="assetText over">
-                
-        <span class="type">Gallery</span>
-        <a href="/pictures/the-years-wackiest-evidence-aliens-and-ufos-are-real-pictures/" class="assetHed"><h3>The year's wackiest 'evidence' aliens and UFOs are real (pictures)</h3>
-        <p>The public now has access to near-constant images from the International Space Station, Mars rovers and an orbiter circling a distant comet, providing plenty of new "evidence" we are not alone.</p></a>
-        
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"The year\u0027s wackiest \u0027evidence\u0027 aliens and UFOs are real (pictures)","url":"http:\/\/www.cnet.com\/pictures\/the-years-wackiest-evidence-aliens-and-ufos-are-real-pictures\/","description":"The public now has access to near-constant images from the International Space Station, Mars rovers and an orbiter circling a distant comet, providing plenty of new \u0022evidence\u0022 we are not alone."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-    </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"\u0027Star Trek\u0027 began filming 50 years ago","url":"http:\/\/www.cnet.com\/news\/star-trek-began-filming-50-years-ago-today\/","description":"The crew of the Enterprise walked in front of cameras for the first time on 27 November 1964 -- but the legendary TV show nearly didn\u0027t make it to the screen."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/star-trek-began-filming-50-years-ago-today/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="128" width="170" data-original="    http://cnet3.cbsistatic.com/hub/i/r/2014/11/25/f7964360-245a-4f8f-a081-6d5aeddbbf2d/thumbnail/170x128/6218fd88e71a01ff20a9f5769e6aab79/spocksmilesdesilunbc.jpg"><noscript><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/11/25/f7964360-245a-4f8f-a081-6d5aeddbbf2d/thumbnail/170x128/6218fd88e71a01ff20a9f5769e6aab79/spocksmilesdesilunbc.jpg" class="" alt="" height="128" width="170"></noscript></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">11 hours ago</span><span>Crave</span><span class="assetByline">by <a rel="author" href="/profiles/rich_trenholm/">Rich Trenholm</a></span>        <a href="/news/star-trek-began-filming-50-years-ago-today/" class="assetHed"><h3>'Star Trek' began filming 50 years ago</h3>
-        <p>The crew of the Enterprise walked in front of cameras for the first time on 27 November 1964 -- but the legendary TV show nearly didn't make it to the screen.</p></a>
-            </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost full">
-                                                                                    
-
-<div class="assetBody ">
-    <a href="/pictures/50-years-of-star-trek-in-pictures/" class="assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="321" width="570" data-original="    http://cnet3.cbsistatic.com/hub/i/r/2014/11/26/756e6c6e-1ea2-425a-a75c-6b94b4e5e974/thumbnail/570x321/559dcb549cfc476ed332cac959de3af4/mccoy-kirk-spock-smile.jpg"><noscript><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/11/26/756e6c6e-1ea2-425a-a75c-6b94b4e5e974/thumbnail/570x321/559dcb549cfc476ed332cac959de3af4/mccoy-kirk-spock-smile.jpg" class="" alt="" height="321" width="570"></noscript></figure></a>
-    <div class="assetText over">
-                
-        <span class="type">Gallery</span>
-        <a href="/pictures/50-years-of-star-trek-in-pictures/" class="assetHed"><h3>50 years of 'Star Trek' (pictures)</h3>
-        <p>"Star Trek" began filming in November 1964 and changed television history -- set course for our gallery to boldly go through 50 years of "Trek."</p></a>
-        
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"50 years of \u0027Star Trek\u0027 (pictures)","url":"http:\/\/www.cnet.com\/pictures\/50-years-of-star-trek-in-pictures\/","description":"\u0022Star Trek\u0022 began filming in November 1964 and changed television history -- set course for our gallery to boldly go through 50 years of \u0022Trek.\u0022"}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-    </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"\u0027Star Wars: The Force Awakens\u0027 trailer will be on iTunes on Friday","url":"http:\/\/www.cnet.com\/news\/star-wars-the-force-awakens-trailer-will-be-on-itunes-on-friday\/","description":"The first look at JJ Abrams\u0027 new entry to the \u0022Star Wars\u0022 saga will appear online as well as in theatres."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/star-wars-the-force-awakens-trailer-will-be-on-itunes-on-friday/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="128" width="170" data-original="    http://cnet3.cbsistatic.com/hub/i/r/2014/09/14/9c923dd7-96d6-4b23-92a2-63c16f0c6541/thumbnail/170x128/43856fe1a21494ad14015882feb407fe/starwarsthrone2.jpg"><noscript><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/09/14/9c923dd7-96d6-4b23-92a2-63c16f0c6541/thumbnail/170x128/43856fe1a21494ad14015882feb407fe/starwarsthrone2.jpg" class="" alt="" height="128" width="170"></noscript></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">13 hours ago</span><span>Crave</span><span class="assetByline">by <a rel="author" href="/profiles/rich_trenholm/">Rich Trenholm</a></span>        <a href="/news/star-wars-the-force-awakens-trailer-will-be-on-itunes-on-friday/" class="assetHed"><h3>'Star Wars: The Force Awakens' trailer will be on iTunes on Friday</h3>
-        <p>The first look at JJ Abrams' new entry to the "Star Wars" saga will appear online as well as in theatres.</p></a>
-            </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost full">
-                                            <div class="playOverlay">Play</div>
-                                                                                    
-
-<div class="assetBody video">
-    <a href="/videos/how-the-samsung-galaxy-note-got-its-pen-in-cnet-uk-podcast-412/" class="assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="321" width="570" data-original="    http://cnet2.cbsistatic.com/hub/i/r/2014/11/27/aa709828-4f72-466b-b466-b1ce9d8f5e46/thumbnail/570x321/a56b506fd5bb917243e7 0ccd 7b24/podcast-412.jpg"><noscript><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/11/27/aa709828-4f72-466b-b466-b1ce9d8f5e46/thumbnail/570x321/a56b506fd5bb917243e7 0ccd 7b24/podcast-412.jpg" class="" alt="" height="321" width="570"></noscript></figure></a>
-    <div class="assetText over">
-                
-        <span class="type">Video</span>
-        <a href="/videos/how-the-samsung-galaxy-note-got-its-pen-in-cnet-uk-podcast-412/" class="assetHed"><h3>How the Samsung Galaxy Note got its pen in CNET UK podcast 412</h3>
-        <p>The Samsung Galaxy Note almost came with a toothpick, we're going back to Jurassic World, and BT has its sights on O2 -- or maybe EE.</p></a>
-        
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"How the Samsung Galaxy Note got its pen in CNET UK podcast 412","url":"http:\/\/www.cnet.com\/videos\/how-the-samsung-galaxy-note-got-its-pen-in-cnet-uk-podcast-412\/","description":"The Samsung Galaxy Note almost came with a toothpick, we\u0027re going back to Jurassic World, and BT has its sights on O2 -- or maybe EE."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-    </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"Geeky holiday feasts: Cthurkey, \u0027Star Wars\u0027 sweets","url":"http:\/\/www.cnet.com\/news\/geeky-holiday-feasts-cthurkey-and-star-wars-sweets\/","description":"Whether you serve a nerdy turkey for Thanksgiving or a gingerbread AT-AT for Christmas, you\u0027ve got plenty of options for boasting your geek pride at the holiday table."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/geeky-holiday-feasts-cthurkey-and-star-wars-sweets/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="128" width="170" data-original="    http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/9ecab47e-57 -42fb-8c3d-16b75b2466da/thumbnail/170x128/d7dc1cc7a18499dd1b429ee03a927fc3/cthurkey1.jpg"><noscript><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/9ecab47e-57 -42fb-8c3d-16b75b2466da/thumbnail/170x128/d7dc1cc7a18499dd1b429ee03a927fc3/cthurkey1.jpg" class="" alt="" height="128" width="170"></noscript></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">16 hours ago</span><span>Crave</span><span class="assetByline">by <a rel="author" href="/profiles/bonniegrrl/">Bonnie Burton</a></span>        <a href="/news/geeky-holiday-feasts-cthurkey-and-star-wars-sweets/" class="assetHed"><h3>Geeky holiday feasts: Cthurkey, 'Star Wars' sweets</h3>
-        <p>Whether you serve a nerdy turkey for Thanksgiving or a gingerbread AT-AT for Christmas, you've got plenty of options for boasting your geek pride at the holiday table.</p></a>
-            </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost small">
-                                                                                    
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"LG to launch its own take on the Surface Pro","url":"http:\/\/www.cnet.com\/news\/lg-to-launch-its-own-take-on-the-surface-pro\/","description":"Unsatisfied with its previous attempts at a hybrid range, \u200bLG Electronics is planning to launch a new hybrid with a detachable keyboard that resembles Microsoft\u0027s Surface Pro 3."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-                        
-
-<div class="assetBody">
-    <a href="/news/lg-to-launch-its-own-take-on-the-surface-pro/" class="col-2 assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="128" width="170" data-original="    http://cnet1.cbsistatic.com/hub/i/r/2014/11/27/96630ff1-461b-4ff7-9286-0f7981901e25/thumbnail/170x128/ff0273f2ec7cf80872ff50f835f1bf62/lg-ultra-tab1.jpg"><noscript><img src="http://cnet1.cbsistatic.com/hub/i/r/2014/11/27/96630ff1-461b-4ff7-9286-0f7981901e25/thumbnail/170x128/ff0273f2ec7cf80872ff50f835f1bf62/lg-ultra-tab1.jpg" class="" alt="" height="128" width="170"></noscript></figure></a>
-    <div class="col-4 assetText right">
-        <span class="date">16 hours ago</span><span>Tablets</span><span class="assetByline">by <a rel="author" href="/profiles/jaehwan_cho/">Jaehwan Cho</a></span>        <a href="/news/lg-to-launch-its-own-take-on-the-surface-pro/" class="assetHed"><h3>LG to launch its own take on the Surface Pro</h3>
-        <p>Unsatisfied with its previous attempts at a hybrid range, ​LG Electronics is planning to launch a new hybrid with a detachable keyboard that resembles Microsoft's Surface Pro 3.</p></a>
-            </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                                    <div class="row" data-vr-contentbox>
-                <div class="col-6 riverPost full">
-                                                                                    
-
-<div class="assetBody ">
-    <a href="/pictures/sit-down-to-a-holiday-feast-fit-for-geeks-pictures/" class="assetThumb imageLinkWrapper">
-                    
-                                <figure class=" img"><img src="" class="lazy " alt="" height="321" width="570" data-original="    http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/d1ce98f4-ac76-4711-9483-5eca489551ba/thumbnail/570x321/0485bbfa9ddf746e182543b86a8c710a/cthulhupie.jpg"><noscript><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/11/27/d1ce98f4-ac76-4711-9483-5eca489551ba/thumbnail/570x321/0485bbfa9ddf746e182543b86a8c710a/cthulhupie.jpg" class="" alt="" height="321" width="570"></noscript></figure></a>
-    <div class="assetText over">
-                
-        <span class="type">Gallery</span>
-        <a href="/pictures/sit-down-to-a-holiday-feast-fit-for-geeks-pictures/" class="assetHed"><h3>Sit down to a holiday feast fit for geeks (pictures)</h3>
-        <p>Show off your love for "Star Trek,""Doctor Who," "Star Wars," "Transformers" and even the Elder God Cthulhu this holiday season with nerdy turkey, sides, desserts and even gingerbread houses.</p></a>
-        
-
-<div class="socialSharingSmall" data-component="socialLinks" data-social-links-options='{"title":"Sit down to a holiday feast fit for geeks (pictures)","url":"http:\/\/www.cnet.com\/pictures\/sit-down-to-a-holiday-feast-fit-for-geeks-pictures\/","description":"Show off your love for \u0022Star Trek,\u0022\u0022Doctor Who,\u0022 \u0022Star Wars,\u0022 \u0022Transformers\u0022 and even the Elder God Cthulhu this holiday season with nerdy turkey, sides, desserts and even gingerbread houses."}'>
-            <div class="singleButton" data-popup="facebook"><div class="social-button-small facebook">
-    <div class="icon icon-small-facebook">facebook</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="twitter"><div class="social-button-small twitter">
-    <div class="icon icon-small-twitter">twitter</div>
-</div>
-</div>
-        <div class="singleButton" data-popup="googleplus"><div class="social-button-small googleplus">
-    <div class="icon icon-small-googleplus">googleplus</div>
-</div>
-</div>
-        <div class="singleButton" data-link="email"><div class="social-button-small email">
-    <div class="icon icon-small-email">email</div>
-</div>
-</div>
-    </div>
-    </div>
-</div>
-                                    </div>
-            </div>
-
-                                                                    </div>
-        <div data-no-js data-load="fourAndOneListing">
-        <a class="load-more" href="/news/2/"><span class="text">Show More</span></a>
-    </div>
-                                                                    </div>
-            <div class="col-4">
-                                                    
-                                                        
-                                            
-                                    <div id="mpu-plus-top-5477ab96cc05d" class="ad-mpu-plus-top" data-ad="mpu-plus-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing mpu-plus-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("mpu-plus-top-5477ab96cc05d") 
-    </script></div>
-                                                                                            
-                                                        
-                                                        
-    
-
-<div class="productList reviewListing" section="hotProducts" data-vr-zone='"hot"'>
-    <h5>Hot Products</h5>
-    <ul><li data-vr-contentbox>
-                <a class="col-1 imageLinkWrapper" href="/products/apple-iphone-6-plus/">
-                                
-                                <figure class="col-1 img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/09/15/d85a92c5-fb50-4dcc-8b08-1d0cf458f10f/thumbnail/70x53/2d79a94a051a25cdffc09f96d6d5a9cc/plutus09.jpg" class="" alt="" height="53" width="70"></figure></a>
-                <div class="col-3 infoContainer">
-                    <div class="description">
-                                                <a class="storyTitle" href="/products/apple-iphone-6-plus/"><h4>Apple iPhone 6 Plus</h4></a>
-                                                        <span class="dek">
-                                                                            The most serious Apple smartphone yet
-                                                                                                                                                                                                                                                                                                                               <a href="/products/apple-iphone-6-plus/prices/" class="price ">$299.99</a>
-                                                                                                            </span>
-                                                    <a href="/products/apple-iphone-6-plus/">
-                                        <span class="edRate s4h small"><span><span class="rating">4.5</span> stars</span></span>
-
-                            </a>
-                                            </div>
-                </div>
-            </li>
-                                                                    
-                        <li data-vr-contentbox>
-                <a class="col-1 imageLinkWrapper" href="/products/2014-tesla-model-s/">
-                                
-                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/07/10/20cc5270-c8cb-4902-aeb3-1a18cbb3 f3/thumbnail/70x53/dbe67537236b5a9319e5e0e19f201000/2014teslamodelswc-001.jpg" class="" alt="" height="53" width="70"></figure></a>
-                <div class="col-3 infoContainer">
-                    <div class="description">
-                                                <a class="storyTitle" href="/products/2014-tesla-model-s/"><h4>2014 Tesla Model S</h4></a>
-                                                        <span class="dek">
-                                                                            Tesla Model S takes driving to the 21st century
-                                                                                                                                                                                                                                                                                                                               <a href="/products/2014-tesla-model-s/prices/" class="price ">$69,900.00</a>
-                                                                                                            </span>
-                                                    <a href="/products/2014-tesla-model-s/">
-                                        <span class="edRate s4h small"><span><span class="rating">4.5</span> stars</span></span>
-
-                            </a>
-                                            </div>
-                </div>
-            </li>
-                                                                    
-                        <li data-vr-contentbox>
-                <a class="col-1 imageLinkWrapper" href="/products/lg-55ec9300/">
-                                
-                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/09/02/5487c7b3-56f9-4fdc-b71d-6295d5b4a62f/thumbnail/70x53/859d00e4730345d47c879421d2e13c52/lg-55ec9300-product-photos16.jpg" class="" alt="" height="53" width="70"></figure></a>
-                <div class="col-3 infoContainer">
-                    <div class="description">
-                                                <a class="storyTitle" href="/products/lg-55ec9300/"><h4>LG 55EC9300</h4></a>
-                                                        <span class="dek">
-                                                                            OLED TV: Best. Picture. Ever.
-                                                                                                                                                                                                                                                                                                                               <a href="/products/lg-55ec9300/prices/" class="price ">$3,250.00</a>
-                                                                                                            </span>
-                                                    <a href="/products/lg-55ec9300/">
-                                        <span class="edRate s4 small"><span><span class="rating">4</span> stars</span></span>
-
-                            </a>
-                                            </div>
-                </div>
-            </li>
-                                                                    
-                        <li data-vr-contentbox>
-                <a class="col-1 imageLinkWrapper" href="/products/bowers-and-wilkins-685-s2/">
-                                
-                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/10/14/60ecf4c2-9bf3-47d4-8680-ab9018277ecf/thumbnail/70x53/1a422b06f574256abc19c12accdf3fe8/river-b-w-685-s2-product-photos01.jpg" class="" alt="" height="53" width="70"></figure></a>
-                <div class="col-3 infoContainer">
-                    <div class="description">
-                                                <a class="storyTitle" href="/products/bowers-and-wilkins-685-s2/"><h4>Bowers and Wilkins 685 S2</h4></a>
-                                                        <span class="dek">
-                                                                            Excellent sound worth the extra scratch
-                                                                                                                                                                                                                                                                                                                               <a href="/products/bowers-and-wilkins-685-s2/prices/" class="price ">$649.98</a>
-                                                                                                            </span>
-                                                    <a href="/products/bowers-and-wilkins-685-s2/">
-                                        <span class="edRate s4h small"><span><span class="rating">4.5</span> stars</span></span>
-
-                            </a>
-                                            </div>
-                </div>
-            </li>
-                                                                    
-                        <li data-vr-contentbox>
-                <a class="col-1 imageLinkWrapper" href="/products/asus-rt-ac68u-dual-band-wireless-ac1900-gigabit-router/">
-                                
-                                <figure class="col-1 img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/09/26/f6314ac2-6797-11e3-846b-14feb5ca9861/thumbnail/70x53/5262e6e06b55eacbc24ae967618018b4/AsusRT-AC68U_(6).jpg" class="" alt="" height="53" width="70"></figure></a>
-                <div class="col-3 infoContainer">
-                    <div class="description">
-                                                <a class="storyTitle" href="/products/asus-rt-ac68u-dual-band-wireless-ac1900-gigabit-router/"><h4>Asus RT-AC68U Dual-band Wireless-AC1900 Gigabit Router</h4></a>
-                                                        <span class="dek">
-                                                                            A cutting-edge Wi-Fi router that has it all
-                                                                                                                                                                                                                                                                                                                               <a href="/products/asus-rt-ac68u-dual-band-wireless-ac1900-gigabit-router/prices/" class="price ">$149.99</a>
-                                                                                                            </span>
-                                                    <a href="/products/asus-rt-ac68u-dual-band-wireless-ac1900-gigabit-router/">
-                                        <span class="edRate s4h small"><span><span class="rating">4.5</span> stars</span></span>
-
-                            </a>
-                                            </div>
-                </div>
-            </li>
-                                                                    
-                                                        
-                                                        
-                                                        
-                                                        
-                        </ul></div>
-
-    
-                                                                                
-                                                        
-                                            <section id="activeDiscussion" data-component="livefyreCommentcount"><h5><span>Active Discussions</span></h5>
-    <ul><li>
-            <span class="col-1 comments">
-               <span class="livefyre-commentcount count" data-lf-site-id="311569" data-lf-article-id="5bbbfba0-8b87-4a -90fa-8ecd4e19ed5d"><span></span></span>
-            </span>
-            <div class="col-3">
-                <a href="http://www.cnet.com/news/enter-for-your-chance-to-win-one-of-three-quad-copters/">
-                    <h4 class="articleTitle">Enter for your chance to win* one of three quad-copters!</h4>
-                </a>
-                <span class="meta"></span>
-            </div>
-        </li>
-                                        
-                            
-        <li>
-            <span class="col-1 comments">
-               <span class="livefyre-commentcount count" data-lf-site-id="311569" data-lf-article-id="b3eb59fa-fb83-48c3-9ee7-57e7b5cb80d2"><span></span></span>
-            </span>
-            <div class="col-3">
-                <a href="http://www.cnet.com/news/who-would-win-in-a-fight-batman-or-darth-vader/">
-                    <h4 class="articleTitle">Who would win in a fight, Batman or Darth Vader?</h4>
-                </a>
-                <span class="meta"></span>
-            </div>
-        </li>
-                                        
-                            
-        <li>
-            <span class="col-1 comments">
-               <span class="livefyre-commentcount count" data-lf-site-id="311569" data-lf-article-id="9f1d6836-dd3f-4cda-9e26-911aa15e46d8"><span></span></span>
-            </span>
-            <div class="col-3">
-                <a href="http://www.cnet.com/news/at-ts-fiber-internet-rollout-will-continue-kinda/">
-                    <h4 class="articleTitle">AT&amp T's fiber Internet rollout will continue, kinda</h4>
-                </a>
-                <span class="meta"></span>
-            </div>
-        </li>
-                                        
-                            
-        <li>
-            <span class="col-1 comments">
-               <span class="livefyre-commentcount count" data-lf-site-id="311569" data-lf-article-id="6dbe2840-f7f7-4efb-bad1-1ee567cd12b5"><span></span></span>
-            </span>
-            <div class="col-3">
-                <a href="http://www.cnet.com/news/abandoned-in-place-forgotten-space-launch-sites-left-to-the-sands-of-time/">
-                    <h4 class="articleTitle">'Abandoned in Place': Forgotten space launch sites left to the sands of time</h4>
-                </a>
-                <span class="meta"></span>
-            </div>
-        </li>
-                                        
-                            
-        <li>
-            <span class="col-1 comments">
-               <span class="livefyre-commentcount count" data-lf-site-id="311569" data-lf-article-id="24003882-75c5-4e35-8ad9-6bdee764b27f"><span></span></span>
-            </span>
-            <div class="col-3">
-                <a href="/holiday-gift-guide/tv/top-picks/" data-vanity-rewritten="true">
-                    <h4 class="articleTitle">Best TVs to give this season</h4>
-                </a>
-                <span class="meta"></span>
-            </div>
-        </li>
-        </ul></section><!--[if lt IE 9]> <noscript> <div class="sectionTag dontMissRight"> </noscript> <![endif]--><section class="dontMissRight" section="dontMissRight" data-vr-zone='"more"'><h5><span>Don't Miss</span></h5>
-            
-            
-            <div class="asset" data-vr-contentbox>
-                <div class="col-1 imageLinkWrapper">
-                    <a href="/news/the-biggest-tech-turkeys-of-2014/">
-                                    
-                                <figure class="col-1 img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2012/11/19/c2d69ddf-f0e3-11e2-8c7c-d4ae52e62bcc/thumbnail/70x53/fad836d313480619a8c3e08447824175/tech-turkeys-header-v2_1.jpg" class="" alt="" height="53" width="70"></figure></a>
-                </div>
-                <div class="col-3 desc">
-                    <a href="/news/the-biggest-tech-turkeys-of-2014/">
-                        <h4 class="articleTitle">The biggest tech turkeys of 2014</h4>
-                    </a>
-                                            <span class="blog"><a href="/topics/tech-industry/">Tech Industry</a></span>
-                                    </div>
-            </div>
-        
-            
-            <div class="asset" data-vr-contentbox>
-                <div class="col-1 imageLinkWrapper">
-                    <a href="/news/us-expresses-concern-over-eu-proposal-to-break-up-google/">
-                                    
-                                <figure class="col-1 img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/07/03/9784ff8e-53cd-48a2-8c40-efb7f2b3e56d/thumbnail/70x53/e23ecc00c1c185bcb1c144ae1669a9c7/465950115.jpg" class="" alt="" height="53" width="70"></figure></a>
-                </div>
-                <div class="col-3 desc">
-                    <a href="/news/us-expresses-concern-over-eu-proposal-to-break-up-google/">
-                        <h4 class="articleTitle">US expresses 'concern' over EU proposal to break up Google</h4>
-                    </a>
-                                            <span class="blog"><a href="/topics/internet/">Internet</a></span>
-                                    </div>
-            </div>
-        
-            
-            <div class="asset" data-vr-contentbox>
-                <div class="col-1 imageLinkWrapper">
-                    <a href="/news/star-trek-began-filming-50-years-ago-today/">
-                                    
-                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/11/25/f7964360-245a-4f8f-a081-6d5aeddbbf2d/thumbnail/70x53/e082038474aa12d68f26ccdbb6dea70a/spocksmilesdesilunbc.jpg" class="" alt="" height="53" width="70"></figure></a>
-                </div>
-                <div class="col-3 desc">
-                    <a href="/news/star-trek-began-filming-50-years-ago-today/">
-                        <h4 class="articleTitle">'Star Trek' began filming 50 years ago</h4>
-                    </a>
-                                            <span class="blog"><a href="/topics/tech-culture/">Tech Culture</a></span>
-                                    </div>
-            </div>
-        
-            
-            <div class="asset" data-vr-contentbox>
-                <div class="col-1 imageLinkWrapper">
-                    <a href="/news/samsungs-eyecan-lets-your-eyes-control-your-computer/">
-                                    
-                                <figure class="col-1 img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/11/25/4e9eabed-368f-47c2-b787-bf5af25aa948/thumbnail/70x53/723cdc9a0be947e15cef01a6bee06e56/eyecanplussamsung.jpg" class="" alt="" height="53" width="70"></figure></a>
-                </div>
-                <div class="col-3 desc">
-                    <a href="/news/samsungs-eyecan-lets-your-eyes-control-your-computer/">
-                        <h4 class="articleTitle">Samsung's 'eye mouse' enables users to control their computer with a glance</h4>
-                    </a>
-                                            <span class="blog"><a href="/topics/sci-tech/">Sci-Tech</a></span>
-                                    </div>
-            </div>
-        
-            
-            <div class="asset" data-vr-contentbox>
-                <div class="col-1 imageLinkWrapper">
-                    <a href="/news/black-friday-tech-deals-2014/">
-                                    
-                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/09/02/8a246987-5555-4113-aed0-f3e200afefbb/thumbnail/70x53/2ceb1a382dbe47440efe0290ddc2db9b/topproductsunder100dollars01.jpg" class="" alt="" height="53" width="70"></figure></a>
-                </div>
-                <div class="col-3 desc">
-                    <a href="/news/black-friday-tech-deals-2014/">
-                        <h4 class="articleTitle">Every Black Friday tech deal we've found</h4>
-                    </a>
-                                            <span class="blog"><a href="/topics/mobile/">Mobile</a></span>
-                                    </div>
-            </div>
-            </section><!--[if lt IE 9]> <noscript></div></noscript> <![endif]--><!-- Ad: Removed: ad_name "dynamic_showcase_top" was removed --><div id="mpu-bottom-5477ab96cc05d" class="ad-mpu-bottom" data-ad="mpu-bottom">
-    <script>
-        window.console && console.log && console.log("ADS: queuing mpu-bottom-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("mpu-bottom-5477ab96cc05d") 
-    </script></div>
-                                                                                            
-                                                        
-                                                        <div class="YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0" data-component="yahooAdSearch" data-yahoo-ad-search-options='{"yahooId":"a1e2086d-5df6-376b-bb51-ffda4eb29ec0"}'></div>
-                                                                        </div>
+                <li><a href="/Newsletter/">Free Newsletter</a>&nbsp &nbsp <span class="red_seperate">//</span>&nbsp &nbsp </li>
+            </ul>
+            <div id="sub_menu" style="display:none ">
+                <div class="title">SUBSCRIBE NOW</div>
+                <div class="arrow"></div>
+                <ul class="options">
+                    <li class="sub_link">
+                        <div class="opt1 opt_item" href="https://www.qfie.com/dmci/clsDMNewOrdStep1.asp?PubCode=EDIT&TrackCode=QWEBP1&strAspReason=102">
+                            <div class="name double">Total Access</div>
+                            <div class="details">Print &amp  Digital Edition</div>
+                        </div>
+                    </li>
+                    <li class="sub_link">
+                        <div class="opt2 opt_item" href="https://www.qfie.com/dmci/clsDMNewOrdStep1.asp?PubCode=EDIT&TrackCode=QWEBD1&strAspReason=102">
+                            <div class="details single">Digital Edition</div>
+                        </div>
+                    </li>
+                    <li class="sub_link">
+                        <div class="opt3 opt_item"  href="/subscribe/ipad/">
+                            <div class="details single">iPad</div>
+                        </div>
+                    </li>
+                    <li class="sub_link no_link">
+                        <div class="opt4 opt_item" style="padding-bottom:0px !important " href="#">
+                            <div class="name double">E&amp P Data Book</div>
+                            <div class="small">Directory of Newspaper Markets</div>
+                        </div>
+                        <div class="radios">
+                            <div>
+                                <input type="radio" name="data_book" id="data_print" />
+                                <label for="print">Print version (3 volumes)</label>
                             </div>
-                                </div>
+                            <div>
+                                <input type="radio" name="data_book" id="data_digital" />
+                                <label for="digital">Interactive Database</label>
+                            </div>
                         </div>
-            </div>
-                                </div>
-                        </div>
-            </div>
-                <div class="row">
-        <div class="col-12">
-                                                    
-                                                        
-                                            <div id="hotProducts">
-	<span>Hot Products:</span>
-    <ul><li><a href="http://www.cnet.com/products/samsung-galaxy-s5/">Galaxy S5</a></li>
-                    <li><a href="http://www.cnet.com/products/apple-iphone-6/">iPhone 6</a></li>
-                    <li><a href="http://www.cnet.com/products/apple-ipad-air-2/">iPad Air 2</a></li>
-                    <li><a href="http://www.cnet.com/products/apple-iphone-6-plus/">iPhone 6 Plus</a></li>
-                    <li><a href="http://www.cnet.com/products/google-nexus-9/">Nexus 9</a></li>
-                    <li><a href="http://www.cnet.com/products/apple-ipad-mini-3/">iPad Mini 3</a></li>
-                    <li><a href="http://www.cnet.com/products/microsoft-windows-10/">Windows 10</a></li>
-                    <li><a href="http://www.cnet.com/products/google-nexus-6/">Nexus 6</a></li>
-                    <li><a href="http://www.cnet.com/products/apple-watch/">Apple Watch</a></li>
-                    <li><a href="http://www.cnet.com/products/samsung-galaxy-note-4/">Galaxy Note 4</a></li>
-            </ul></div>
-                                                                                
-                                                        
-                                            
-                                    <div id="leader-bottom-5477ab96cc05d" class="ad-leader-bottom" data-ad="leader-bottom">
-    <script>
-        window.console && console.log && console.log("ADS: queuing leader-bottom-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("leader-bottom-5477ab96cc05d") 
-    </script></div>
-                                                                                </div>
-            </div>
+                    </li>
+                </ul>
+            </div>            
         </div>
+      <div class="fclear"></div>
+    	<div class="searchBox" style="margin-bottom:10px  margin-top:5px !important  float:right ">
+        <form action="http://www.editorandpublisher.com/SearchResults/Test/">
+          <input type="hidden" name="cx" value="014421353684719095491:y99dtqc2fgo">
+          <input type="hidden" name="cof" value="FORID:10 NB:1">
+          <input type="hidden" name="ie" value="UTF-8">
+          <input  type="text" name="q" size="31" placeholder="Search/Keyword..." id="testInput">
+          <input type="submit" name="sa" value="Search" class="testBtn">
+        </form>
+      </div>
+    </div>
+    <div class="fclear"></div>
+  </div>
+  
+  <!-- BEGIN NAVIGATIION -->
+  
+  <div id="enpNav">
+    <div id="navcontainer">
+      <div id="top_wrapper">
+        <div id="topnav">
+          <div id="left">
+            <ul class="navlist">
+              <li><a id="first" class="topnavlink" title="NEWS" href="#"><span>NEWS</span></a></li>
+              <li><a id="second" class="topnavlink" title="PEOPLE" href="#"><span>PEOPLE</span></a></li>
+              <li><a class="topnavlink" title="EXCLUSIVES" href="#"><span>EXCLUSIVES</span></a></li>
+              <li><a class="topnavlink" title="JOBS" href="#"><span>JOBS</span></a></li>
+              <li><a class="topnavlink" title="RESOURCES" href="#"><span>RESOURCES</span></a></li>
+              <li><a class="topnavlink" title="DATABOOK" href="#"><span>DATA BOOK</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="bottom_wrapper">
+        <div class="bottomnav">
+          <div id="NEWSsublinks">
+            <div class="sublinks">
+              <ul class="navlist">
+                <li><a href="/Headlines/"  title="HEADLINES">Headlines</a></li>
+                <li><a href="/Business/"  title="BUSINESS">Business</a></li>
+                <li><a href="/Technology/">Technology</a></li>
+                <li><a href="/AdCirc/">Ad/Circ</a></li>
+                <li><a href="/Online/">Online</a></li>
+                <li><a href="/Syndicate/">Syndicates</a></li>
+                <li><a href="/Production/">Production</a></li>
+                <li><a href="/Awards/">Awards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="PEOPLEsublinks">
+            <div class="sublinks">
+              <ul class="navlist">
+                <li><a href="/PeopleInTheNews/">People in the News</a></li>
+                <li><a href="/Obituaries/">Obituaries</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="EXCLUSIVESsublinks">
+            <div class="sublinks">
+              <ul class="navlist">
+                <li><a href="/Features/"  title="FEATURES">Features</a></li>
+                <li><a href="/ASection/">A Section</a></li>
+                <li><a href="/Columns/">Columns</a></li>
+                <li><a href="/DataPage/">Data Page</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="JOBSsublinks">
+            <div class="sublinks">
+              <ul class="navlist">
+                <li><a href="http://jobs.editorandpublisher.com/jobs/">Browse Jobs</a></li>
+                <li><a href="http://jobs.editorandpublisher.com/resumes/add-new">Post a Resume</a></li>
+                <li><a href="http://jobs.editorandpublisher.com/jobs/add-new/">Post a Job</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="RESOURCESsublinks">
+            <div class="sublinks">
+              <ul class="navlist">
+                <li><a href="/Archive/">Archive Search</a></li>
+                <!--<li><a href="/JournalismAwards/">Journalism Awards</a></li>-->
+                
+                <!--<li><a href="/SyndicateDirectory/">Syndicate Directory</a></li>-->
+                
+                <li><a href="http://www.editorandpublisher.com/databook/">E&amp P Data Book</a></li>
+                <li><a href="/Calendar/">Event Calendar</a></li>
+                <li><a href="http://whitepapers.editorandpublisher.com">White Papers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="DATABOOKsublinks">
+            <div class="sublinks">
+              <ul class="navlist">
+                <li><a href="/epdatabook/">E&P 2014 Data Book</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="social"> </div>
+        </div>
+      </div>
+      <div id="shadow"></div>
+    </div>
+  </div>
+</div>
+<div id="bottom_container">
+<div class="adLeaderboard"> 
+  
+  <!-- ENP_728x90 --> 
+  <script type='text/javascript'>
+GA_googleFillSlot("ENP_728x90") 
+</script> 
+</div>
+<div id="ep_container">
+    <!--END SITE HEADER-->
+        <!--START EP-Home-->
+            	<!-- START TOP LEFT SECTION -->
+            <div id="topLeft" class="fleft">
+
+            <div id="topStories" class="sectionContainer">
+    <div class="banner sectionHeader"><a class="headLinks" href="/TopStories/">Top Stories</a></div>
+    
+            <!-- START HOME PAGE FEATURED -->
+
+<!-- Before Javascript -->
+<script type="text/javascript">
+    var HPF = [] 
+    var i = 0 
+</script>
+<div class="topstoryLeft fleft">
+            
+            <script type="text/javascript">
+                HPF[i] = ['What-Ferguson-Says-About-the-Fear-of-Social-Media'] 
+                i++ 
+            </script>
+<!-- After Javascript -->
+              <div class="article tsCompare" id="topstory-What-Ferguson-Says-About-the-Fear-of-Social-Media">
+              			<!-- CHECK FOR THUMBNAIL IMAGE -->
+              			
+                    
+                    <!-- IF NO THUMBNAIL THEN CHECK FOR THE ARTICLE IMAGE -->
+                    
+                          
+                    
+                        <div class="toptitle">
+                            
+                                
+                                
+                                    <a href="/TopStories/Article/What-Ferguson-Says-About-the-Fear-of-Social-Media" target="_top"> What Ferguson Says About the Fear of Social Media</a>
+                                                                       
+                            
+			</div>
+                    
+                		
+                    
+                
+                        <div class="byline">Anna North | New York Times | 11/26/2014</div>
+                      <div class="story">
+                            St. Louis County prosecutor Robert McCulloch's argument that social media had somehow hampered efforts to find out the truth about Michael Brown&rsquo s death rang false to many.
+                        </div>
+                    <div class="fclear"></div>
+              </div>
+              <div class="fclear"></div>
+            
+            <script type="text/javascript">
+                HPF[i] = ['First-Look-Pulls-Plug-on-the-Matt-Taibbi-Project--Racket-'] 
+                i++ 
+            </script>
+<!-- After Javascript -->
+              <div class="article tsCompare" id="topstory-First-Look-Pulls-Plug-on-the-Matt-Taibbi-Project--Racket-">
+              			<!-- CHECK FOR THUMBNAIL IMAGE -->
+              			
+                    
+                    <!-- IF NO THUMBNAIL THEN CHECK FOR THE ARTICLE IMAGE -->
+                    
+                          
+                    
+                        <div class="toptitle">
+                            
+                                
+                                
+                                    <a href="/TopStories/Article/First-Look-Pulls-Plug-on-the-Matt-Taibbi-Project--Racket-" target="_top">First Look Pulls Plug on the Matt Taibbi Project  8220 Racket 8221 </a>
+                                                                       
+                            
+			</div>
+                    
+                		
+                    
+                
+                        <div class="byline">Lukas I. Alpert | Wall Street Journal | 11/26/2014</div>
+                      <div class="story">
+                            Racket was going to offer a humorous take on politics and corporate corruption.
+                        </div>
+                    <div class="fclear"></div>
+              </div>
+              <div class="fclear"></div>
+            
+            <script type="text/javascript">
+                HPF[i] = ['Ken-Doctor--Why-The-New-York-Times-Hired-Kinsey-Wilson'] 
+                i++ 
+            </script>
+<!-- After Javascript -->
+              <div class="article tsCompare" id="topstory-Ken-Doctor--Why-The-New-York-Times-Hired-Kinsey-Wilson">
+              			<!-- CHECK FOR THUMBNAIL IMAGE -->
+              			
+                    
+                    <!-- IF NO THUMBNAIL THEN CHECK FOR THE ARTICLE IMAGE -->
+                    
+                          
+                    
+                        <div class="toptitle">
+                            
+                                
+                                
+                                    <a href="/TopStories/Article/Ken-Doctor--Why-The-New-York-Times-Hired-Kinsey-Wilson" target="_top">Ken Doctor: Why The New York Times Hired Kinsey Wilson</a>
+                                                                       
+                            
+			</div>
+                    
+                		
+                    
+                
+                        <div class="byline">Ken Doctor | Nieman Lab | 11/26/2014</div>
+                      <div class="story">
+                            The former chief content officer at NPR will be moving up I-95 to one of the most important digital positions at the <em>Times</em>.
+                        </div>
+                    <div class="fclear"></div>
+              </div>
+              <div class="fclear"></div>
+            
+            </div>
+
+<!-- END HOME PAGE FEATURED -->
+    
+            <!-- START HEADLINES -->
+
+<div class="topstoryRight fright">
+            
+                <div class="article topStories" id="Buzzfeed-Passes--100-Million-in-Revenue-for-2014">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                          <a href="/Business/Article/Buzzfeed-Passes--100-Million-in-Revenue-for-2014" target="_top">
+                        
+                        
+                        
+                        
+                        
+                        
+                            Buzzfeed Passes $100 Million in Revenue for 2014</a></div>
+                      <div class="byline">Alex Weprin | Capital New York | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+                <div class="article topStories" id="Six-Deep-Link-Tactics-to-Drive-Traffic-to-Mobile-Apps">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                          <a href="/Technology/Article/Six-Deep-Link-Tactics-to-Drive-Traffic-to-Mobile-Apps" target="_top">
+                        
+                            Six Deep Link Tactics to Drive Traffic to Mobile Apps</a></div>
+                      <div class="byline">Padraic Woods | INMA | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+                <div class="article topStories" id="Lessons-Learned--TV-Newspaper-Partner-on-Investigative-Project">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                          <a href="/Business/Article/Lessons-Learned--TV-Newspaper-Partner-on-Investigative-Project" target="_top">
+                        
+                        
+                        
+                        
+                        
+                        
+                            Lessons Learned: TV-Newspaper Partner on Investigative Project</a></div>
+                      <div class="byline">Al Tompkins | Poynter | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+                <div class="article topStories" id="BuzzFeed-Media-Trends--Homepage-Out--Social-and-Video-In">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                          <a href="/Business/Article/BuzzFeed-Media-Trends--Homepage-Out--Social-and-Video-In" target="_top">
+                        
+                        
+                        
+                        
+                        
+                        
+                            BuzzFeed Media Trends: Homepage Out, Social and Video In</a></div>
+                      <div class="byline">Catalina Albeanu | journalism.co.uk | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+                <div class="article topStories" id="Mail-Online-Revenues-Grow-41-Percent">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                          <a href="/Business/Article/Mail-Online-Revenues-Grow-41-Percent" target="_top">
+                        
+                        
+                        
+                        
+                        
+                        
+                            Mail Online Revenues Grow 41 Percent</a></div>
+                      <div class="byline">Mark Sweney | The Guardian | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+                <div class="article topStories" id="Why-Serial-is-Important-for-Journalism">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                          <a href="/Business/Article/Why-Serial-is-Important-for-Journalism" target="_top">
+                        
+                        
+                        
+                        
+                        
+                        
+                            Why Serial is Important for Journalism</a></div>
+                      <div class="byline">Joyce Barnathan | CJR | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+                <div class="article topStories" id="Statehouse-Staffing-is-Down--But-It-s-Not-All-Doom-and-Gloom-in-Springfield">
+                          
+                
+                
+                          
+                  
+                    <div class="title">
+                        
+                        
+                          <a href="/Business/Article/Statehouse-Staffing-is-Down--But-It-s-Not-All-Doom-and-Gloom-in-Springfield" target="_top">
+                        
+                        
+                        
+                        
+                        
+                        
+                            Statehouse Staffing is Down, But It   s Not All Doom and Gloom in Springfield</a></div>
+                      <div class="byline">Rui Kaneya | CJR | 11/26/2014</div>
+                <div class="fclear"></div>
+              </div>
+                <div class="fclear"></div>
+            
+<div class="fright"><a href="/TopStories/" class="viewMore">View More</a></div> 
+            </div>
+
+<!-- END HEADLINES -->
 </div>
 
+	    <div class="fclear"></div>
 
+	    <!-- Row Two -->
+
+	    <div class="adTower fleft">
+
+<!-- ENP_160x300_01 -->
+<script type='text/javascript'>
+GA_googleFillSlot("ENP_160x300_01") 
+</script>
+
+	    </div>
+
+	    <!-- FEATURES START -->
+	
+<div class="features fright sectionContainer">
+	    	<div class="banner sectionHeader"><a href="/Features/" class="headLinks">Features</a></div>
+               
+
+
+	    	<div class="article" id="The-Truth-About-Trademark-Bullies">
+                      
+                          
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Features/Article/The-Truth-About-Trademark-Bullies" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11188 /shutterstock_131080907-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+            <div class="fleft cropContext">
+                        
+                    
+            <div class="title"><a href="/Features/Article/The-Truth-About-Trademark-Bullies">The Truth About Trademark Bullies</a></div>
+                                <div class="byline">Eileen McDermott | 11/24/2014</div>
+                            <div class="story">Owners have the right to police their trademark</div>
+
+        
+        
+            
             </div>
+            
+        
+	      <div class="fclear"></div>
+	      </div>
+	      <div class="fclear"></div>
+              
 
+	    	<div class="article" id="When-Should-Newspapers-Turn-to-a-Consultant-for-Guidance-on-Production-Operations-">
+                      
+                          
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Features/Article/When-Should-Newspapers-Turn-to-a-Consultant-for-Guidance-on-Production-Operations-" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11188005/shutterstock_119755000-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+            <div class="fleft cropContext">
+                        
+                    
+            <div class="title"><a href="/Features/Article/When-Should-Newspapers-Turn-to-a-Consultant-for-Guidance-on-Production-Operations-">When Should Newspapers Turn to a Consultant for Guidance on Production Operations?</a></div>
+                                <div class="byline">W. Eric Schult | 11/17/2014</div>
+                            <div class="story">By partnering with consultants, production departments can save dollars and optimize their business</div>
+
+        
+        
             
-                            <div id="breaking-news" data-component="breakingNews"></div>
+            </div>
             
-                    </div>
-                                
-<footer id="rbFooter"><div id="footerCopyright" class="col-12">
-        <span class="copyright">© CBS Interactive Inc.  /  All Rights Reserved.</span>
-        <div id="legal">
-            <a href="http://legalterms.cbsinteractive.com/privacy" rel="nofollow">Privacy Policy</a>
-            <a href="http://legalterms.cbsinteractive.com/adchoice" rel="nofollow">Ad Choice</a>
-            <a href="http://legalterms.cbsinteractive.com/terms-of-use" rel="nofollow">Terms of Use</a>
-            <a href="http://legalterms.cbsinteractive.com/eula" rel="nofollow">Mobile User Agreement</a>
+        
+	      <div class="fclear"></div>
+	      </div>
+	      <div class="fclear"></div>
+              
+
+	    	<div class="article" id="Graph-Expo-2014--Integrate">
+                      
+                          
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Features/Article/Graph-Expo-2014--Integrate" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11187973/GE10-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+            <div class="fleft cropContext">
+                        
+                    
+            <div class="title"><a href="/Features/Article/Graph-Expo-2014--Integrate">Graph Expo 2014: Integrate</a></div>
+                                <div class="byline">Nu Yang | 11/14/2014</div>
+                            <div class="story"><p><span>Print production professionals and vendors gather in Chicago Sept. 28-Oct. 1 </span></p></div>
+
+        
+        
+            
+            </div>
+            
+        
+	      <div class="fclear"></div>
+	      </div>
+	      <div class="fclear"></div>
+              
+<div class="fright"><a href="/Features/" class="viewMore">View More</a></div> 
+	    </div>
+
+<!-- FEATURES END -->
+
+             <div class="fclear"></div>
+            
+
+	    <div class="fclear"></div>
+
+	    <!-- A-SECTION START -->
+	
+<div class="fleft section a-section sectionContainer">
+
+            <div class="banner sectionHeader"><a href="/ASection/" class="headLinks">A-Section</a></div>
+        
+            <div class="article">
+                        
+                            
+                        
+                        <div class="fleft cropImg">
+                            <a href="/ASection/Article/Let-s-Put-On-A-Show-" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11188015/Hawaii-Career-Expo-1-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+                    <div class="title"><a href="/ASection/Article/Let-s-Put-On-A-Show-" target="_top">Let   s Put On A Show!</a></div>
+                    <div class="byline">Rich Kane | 11/18/2014</div>
+                        
+            
+                  
+                      </div>
+                  
+            
+                <div class="fclear"></div>
+                      </div>
+
+          <div class="fclear"></div>
+        
+            <div class="article">
+                        
+                            
+                        
+                        <div class="fleft cropImg">
+                            <a href="/ASection/Article/Graphic-Novel" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11187934/infoactive-logo-copy_w200.jpg" alt="Center" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+                    <div class="title"><a href="/ASection/Article/Graphic-Novel" target="_top">Graphic Novel</a></div>
+                    <div class="byline">Rich Kane | 11/13/2014</div>
+                        
+            
+                  
+                      </div>
+                  
+            
+                <div class="fclear"></div>
+                      </div>
+
+          <div class="fclear"></div>
+        
+            <div class="article">
+                        
+                            
+                        
+                        <div class="fleft cropImg">
+                            <a href="/ASection/Article/Play-Dates" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11187663/Logo-with-URL-Print---Color-copy_w200.jpg" alt="Center" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+                    <div class="title"><a href="/ASection/Article/Play-Dates" target="_top">Play Dates</a></div>
+                    <div class="byline">Rich Kane | 11/6/2014</div>
+                        
+            
+                  
+                      </div>
+                  
+            
+                <div class="fclear"></div>
+                      </div>
+
+          <div class="fclear"></div>
+        
+            <div class="article">
+                        
+                            
+                        
+                        <div class="fleft cropImg">
+                            <a href="/ASection/Article/Must-See-Stories" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11187666/Colin-Crawford-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+                    <div class="title"><a href="/ASection/Article/Must-See-Stories" target="_top">Must-See Stories</a></div>
+                    <div class="byline">Rich Kane | 11/5/2014</div>
+                        
+            
+                  
+                      </div>
+                  
+            
+                <div class="fclear"></div>
+                      </div>
+
+          <div class="fclear"></div>
+        
+            <div class="article">
+                        
+                            
+                        
+                        <div class="fleft cropImg">
+                            <a href="/ASection/Article/Ears-to-the-Ground" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11187660/Will-Mayo-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+                    <div class="title"><a href="/ASection/Article/Ears-to-the-Ground" target="_top">Ears to the Ground</a></div>
+                    <div class="byline">Rich Kane | 11/4/2014</div>
+                        
+            
+                  
+                      </div>
+                  
+            
+                <div class="fclear"></div>
+                      </div>
+
+          <div class="fclear"></div>
+        
+<div class="fright"><a href="/ASection/" class="viewMore">View More</a></div> 
         </div>
+
+<!-- A-SECTION END -->
+
+	    <!-- START COLUMNS -->
+	
+<div class="fleft section columns sectionContainer">
+	    	<div class="banner sectionHeader"><a href="/Columns/" class="headLinks">Columns</a></div>
+                
+	    	<div class="article">
+                            						
+                    
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Columns/Article/Critical-Thinking--Is-the-Price-of-an-Advanced-Journalism-Degree-Worth-the-Investment-" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11188036/Chelsea-Chenelle-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+			      	<div class="title"><a href="/Columns/Article/Critical-Thinking--Is-the-Price-of-an-Advanced-Journalism-Degree-Worth-the-Investment-" target="_top">Critical Thinking: Is the Price of an Advanced Journalism Degree Worth the Investment?</a></div>
+			        <div class="byline">Rich Kane | 11/21/2014</div>
+                
+                
+                    
+                    </div>
+                    
+                
+	      <div class="fclear"></div>
+	      </div>
+                
+	    	<div class="article">
+                            						
+                    
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Columns/Article/Digital-Publishing--There-s-No-Place-Like-Home" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11188026/shutterstock_74422210-copy_w200.jpg" alt="Center" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+			      	<div class="title"><a href="/Columns/Article/Digital-Publishing--There-s-No-Place-Like-Home" target="_top">Digital Publishing: There   s No Place Like Home</a></div>
+			        <div class="byline">Rob Tornoe | 11/20/2014</div>
+                
+                
+                    
+                    </div>
+                    
+                
+	      <div class="fclear"></div>
+	      </div>
+                
+	    	<div class="article">
+                            						
+                    
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Columns/Article/Business-of-News--Wanted--Motivated--Talented-Storytellers" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11188021/shutterstock_213616528-copy_w200.jpg" alt="Top" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+			      	<div class="title"><a href="/Columns/Article/Business-of-News--Wanted--Motivated--Talented-Storytellers" target="_top">Business of News: Wanted: Motivated, Talented Storytellers</a></div>
+			        <div class="byline">Tim Gallagher | 11/19/2014</div>
+                
+                
+                    
+                    </div>
+                    
+                
+	      <div class="fclear"></div>
+	      </div>
+                
+	    	<div class="article">
+                            						
+                    
+                        
+                        <div class="fleft cropImg">
+                            <a href="/Columns/Article/Newsosaur--New-Rules-for-Mobile-Journalism" target="_top"><img class="crop" src="http://enp.live.mediaspanonline.com/assets/11187926/shutterstock_165531854--Converted--copy_w200.jpg" alt="Center" align="left" /></a>
+                        </div>
+                    <div class="fleft cropContext">
+                        
+                    
+			      	<div class="title"><a href="/Columns/Article/Newsosaur--New-Rules-for-Mobile-Journalism" target="_top">Newsosaur: New Rules for Mobile Journalism</a></div>
+			        <div class="byline">Alan D. Mutter | 11/12/2014</div>
+                
+                
+                    
+                    </div>
+                    
+                
+	      <div class="fclear"></div>
+	      </div>
+                
+	    	<div class="article">
+                            						
+                    
+                        
+                    
+			      	<div class="title"><a href="/Columns/Article/Shoptalk--What-Role-Do-Social-Media-Companies-Have-in-Stopping-Speech-" target="_top">Shoptalk: What Role Do Social Media Companies Have in Stopping Speech?</a></div>
+			        <div class="byline">Robert Quigley | 11/7/2014</div>
+                
+                
+                    
+                
+	      <div class="fclear"></div>
+	      </div>
+                
+	    	<div class="article">
+                            						
+                    
+                        
+                    
+			      	<div class="title"><a href="/Columns/Article/Editorial--A-Round-of-Applause" target="_top">Editorial: A Round of Applause </a></div>
+			        <div class="byline">Nu Yang | 10/31/2014</div>
+                
+                
+                    
+                
+	      <div class="fclear"></div>
+	      </div>
+                
+	      <div class="fclear"></div>
+<div class="fright"><a href="/Columns/" class="viewMore">View More</a></div> 
+	    </div>
+                
+<!-- END COLUMNS -->
+<div class="adSmallBanner">
+                <!-- ENP_468_01 -->
+                <script type='text/javascript'>
+                GA_googleFillSlot("ENP_468_01") 
+                </script>   
+            </div>
+	  </div>
+	<!-- END TOP LEFT SECTION -->
+	<!-- START TOP RIGHT SECTION -->
+            <div id="topRight" class="fright">
+
+ <!-- START CAREER OPPORTUNITIES -->
+ 
+<div class="classifieds sectionContainer">
+	      <div class="banner sectionHeader"><a href="http://jobs.editorandpublisher.com/jobs/" class="headLinks">Career Opportunities</a></div>
+                
+		    <div class="article">
+
+		      <div class="title"><a href="http://jobs.editorandpublisher.com/jobs/ads/advertising-director-4/">Advertising Director</a></div>
+
+		      <div class="story">ADVERTISING DIRECTOR South Bend Tribune South Bend, IN  160  The South Bend Tribune has an immediate opening for an Advertis ...</div>
+
+		    </div>
+                
+		    <div class="article">
+
+		      <div class="title"><a href="http://jobs.editorandpublisher.com/jobs/ads/senior-manager-inside-sales-revenue/">Senior Manager, Inside Sales Revenue</a></div>
+
+		      <div class="story">This position, titled Senior Manager, Inside Sales Revenue, manages the Cox Media Group Newspaper Shared Services Classified  ...</div>
+
+		    </div>
+                
+		    <div class="article">
+
+		      <div class="title"><a href="http://jobs.editorandpublisher.com/jobs/ads/advertising-director-3/">ADVERTISING DIRECTOR</a></div>
+
+		      <div class="story">Advertising Director   SouthCoast Media Group seeks an experienced, strategic, innovative, and results-oriented Advertising D ...</div>
+
+		    </div>
+                
+<div class="videoLink"><a href="http://jobs.editorandpublisher.com/jobs/" class="viewMore">View More</a></div> 
+	    </div>
+
+<!-- END CAREER OPPORTUNITIES -->		
+
+	    <div class="adRectangle">
+
+<!-- ENP_250x250_01 -->
+<script type='text/javascript'>
+GA_googleFillSlot("ENP_250x250_01") 
+</script>
+
+	    </div>
+
+	    <script type="text/javascript">
+  var currentvideo = '' 
+  var slugline = '' 
+  var reg = /^\s*\d+\s*$/ 
+  var embed = '' 
+  var vyout = '' 
+  var i = -1 
+    
+    var video = [] 
+  
+  
+  
+  vyout = 'http://youtu.be/DLmxVosFdDM' 
+  if (vyout.search('&feature=') != -1){
+  featpos = vyout.search('&feature=') 
+  featstr = vyout.substr(featpos) 
+  vyout = vyout.replace(featstr, '') 
+  }
+  if (vyout.search('www.youtu.be') != -1){
+    vyout = vyout.replace('www.youtu.be/', 'www.youtube.com/embed/') 
+  }
+  else if (vyout.search('youtu.be') != -1) {
+    vyout = vyout.replace('youtu.be/', 'www.youtube.com/embed/') 
+  }
+  vyout = vyout.replace('/watch?v=', '/embed/') 
+  vyout = vyout.replace('/v/', '/embed/') 
+  vyout = vyout.replace('?rel=0', '') 
+  vyout = vyout.replace('&rel=0', '') 
+  
+	video[++i] = [''+vyout+'', 'Journalists    legal battle with UK police for    terror tracking    them ', '', 'Journalists--legal-battle-with-UK-police-for--terror-tracking--them'] 
+	
+	
+         
+        i = 0 
+         
+  function Build_Video(){
+        var vidiv = document.getElementById('Video') 
+        var find = video[i][0] 
+        var extension = find.search("\\.") 
+        var type = find.substr(extension, 4) 
+        if (type == ".you"){
+            var mvid = video[i][0] 
+            var yid = mvid.search('embed') 
+            var uid = mvid.substr((yid + 6), 11) 
+          vidiv.innerHTML += '<a href="/videos/"><img src="http://img.youtube.com/vi/' + uid + '/0.jpg" width="250" height="156" alt="" /></a>' 
+        }
+        else if ((reg.test(''+find+''))) {
+          vidiv.innerHTML += '<a href="/videos/"><img src="http://cdn.mdsone.com/c/BWD/artwork/'+video[i][0]+'.jpg" width="250" height="156" alt="" /></a>' 
+        }
+	else if (video[i][2] != ''){
+	    vidiv.innerHTML += '<a href="/videos/"><img src="'+video[i][2]+'" width="250" height="156" alt="" /></a>' 
+	}
+  }
+</script>
+<div class="videoContainer sectionContainer">
+
+	    	<div class="banner sectionHeader"><a href="/Videos/" class="headLinks">Editors Pick</a></div>
+                <div id="Video">
+                    
+                </div>
+<div class="videoLink"><a href="/Videos/" class="viewMore">View Video Gallery</a></div> 
+	    </div>
+<script type="text/javascript">
+    Build_Video() 
+</script>
+
+	    <!--<div class="pollBox">
+
+	    	<div class="banner sectionHeader">Daily Reader Poll</div>
+
+	      <div class="story center">Which of these sections on your website gets the most traffic?</div>
+
+	      <div class="pollForm">
+
+		      <div class="pollChoice"><input type="radio" name="choice" value="Daily Deals" /> Daily deals</div>
+
+		      <div class="pollChoice"><input type="radio" name="choice" value="Breaking News" /> Breaking News</div>
+
+		      <div class="pollChoice"><input type="radio" name="choice" value="Photo/video gallery" /> Photo/video gallery</div>
+
+		      <div class="pollChoice"><input type="radio" name="choice" value="Sports" /> Sports</div>
+
+		      <div class="pollChoice"><input type="radio" name="choice" value="Local News" /> Local News</div>
+
+		      <input type="button" value="Vote Now" class="btn" style="margin-top:10px " />
+
+	      </div>
+
+	    </div>-->
+
+	    <div class="adRectangle">
+
+<!-- ENP_250x250_02 -->
+<script type='text/javascript'>
+GA_googleFillSlot("ENP_250x250_02") 
+</script>
+
+	    </div>
+
+	    <div class="fleft section whitepapers sectionContainer">
+	    	<div class="banner sectionHeader">Free Whitepapers</div>
+	      <div class="article">
+	      	<div class="title">        <script type="text/javascript" src="http://jsc.madisonlogic.com/jsc?pub=93&pgr=80&tgt=1494&src=4730&layrf=5931"></script></div>
+	      </div>
+	    </div>
+
+<div style="width:250px  height:335px"></div>
+<!-- ENP_250x250_03 -->
+<script type='text/javascript'>
+GA_googleFillSlot("ENP_250x250_03") 
+</script>
+
+	  </div>
+
+
+
+		<div class="fclear"></div>
+	<!-- END TOP SECTION -->  
+	<!-- START BOTTOM SECTION -->
+            <div id="bottomSection">
+
+	  	<div class="fright">
+
+		  	<div class="adSkyscrapper">
+<!-- ENP_160x160_HP -->
+<script type='text/javascript'>
+GA_googleFillSlot("ENP_160x160_HP") 
+</script>
+<!-- ENP_160x600_01 -->
+<script type='text/javascript'>
+GA_googleFillSlot("ENP_160x600_01") 
+</script>
+<br />
+
+
+	  		</div>
+
+	    </div>
+
+	    <div class="fleft">
+
+		    <!-- People In The News -->
+
+		    <!-- PEOPLE IN THE NEWS STARTS -->
+ 
+<div class="fleft section peopleinthenews sectionContainer">
+
+		    	<div class="banner sectionHeader"><a href="/PeopleInTheNews/" class="headLinks">People In The News</a></div>
+                    
+		    	<div class="article">
+
+                    
+				      	<div class="title"><a href="/PeopleInTheNews/Article/Folsom-Telegraph-Welcomes-New-Editor-Lydia-McNabb" target="_top">Folsom Telegraph Welcomes New Editor Lydia McNabb</a></div>
+				        <div class="byline">Staff Report | 11/26/2014</div>
+                    
+
+                        <div class="fclear"></div>
+		      </div>
+                        
+		    	<div class="article">
+
+                    
+				      	<div class="title"><a href="/PeopleInTheNews/Article/New-York-Times-Names-Kinsey-Wilson-Editor-for-Innovation-and-Strategy" target="_top">New York Times Names Kinsey Wilson Editor for Innovation and Strategy</a></div>
+				        <div class="byline">New York Times Press Release | 11/25/2014</div>
+                    
+
+                        <div class="fclear"></div>
+		      </div>
+                        
+		    	<div class="article">
+
+                    
+				      	<div class="title"><a href="/PeopleInTheNews/Article/Financial-Times-Names-Jon-Slade-B2C-Managing-Director" target="_top">Financial Times Names Jon Slade B2C Managing Director</a></div>
+				        <div class="byline">Press Release | 11/25/2014</div>
+                    
+
+                        <div class="fclear"></div>
+		      </div>
+                        
+		    	<div class="article">
+
+                    
+				      	<div class="title"><a href="/PeopleInTheNews/Article/Sara-Glines-Named-PA-NewsMedia-Association-Vice-Chair" target="_top">Sara Glines Named PA NewsMedia Association Vice-Chair</a></div>
+				        <div class="byline">Staff Report | The Evening Sun | 11/24/2014</div>
+                    
+
+                        <div class="fclear"></div>
+		      </div>
+                        
+		    	<div class="article">
+
+                    
+				      	<div class="title"><a href="/PeopleInTheNews/Article/Heather-Persson-Named-Editor-of-Saskatoon-StarPhoenix" target="_top">Heather Persson Named Editor of Saskatoon StarPhoenix</a></div>
+				        <div class="byline">StarPhoenix Staff | 11/24/2014</div>
+                    
+
+                        <div class="fclear"></div>
+		      </div>
+                        
+		    	<div class="article">
+
+                    
+				      	<div class="title"><a href="/PeopleInTheNews/Article/Postmedia-Announces-New-Team-to-Drive-Auto-Sales" target="_top">Postmedia Announces New Team to Drive Auto Sales</a></div>
+				        <div class="byline">Press Release | 11/24/2014</div>
+                    
+
+                        <div class="fclear"></div>
+		      </div>
+                        
+		      <div class="fclear"></div>
+<div class="fright"><a href="/PeopleInTheNews/" class="viewMore">View More</a></div> 
     </div>
 
-    <div class="container">
+<!-- PEOPLE IN THE NEWS ENDS --> 
+
+		    <!-- PHOTO OF THE MONTH STARTS -->
+
+<div class="fleft sectionContainer potm">
+
+            <div class="banner sectionHeader"><a href="/PhotoOfTheMonth/" class="headLinks">Photo of the Month</a></div>
         
-                                    <div id="dynamic-text-link-top-5477ab96cc05d" class="ad-dynamic-text-link-top" data-ad="dynamic-text-link-top">
-    <script>
-        window.console && console.log && console.log("ADS: queuing dynamic-text-link-top-5477ab96cc05d for display") 
-        var cbsiGptDivIds = cbsiGptDivIds || [] 
-        cbsiGptDivIds.push("dynamic-text-link-top-5477ab96cc05d") 
-    </script></div>
-                </div>
+        <div class="center" style="overflow:hidden position:relative width:385px height:300px "><a href="/PhotoOfTheMonth/"><img class="photo" src="http://enp.live.mediaspanonline.com/assets/11187673/NEW-Photo-by-Ricardo-B--Brazziell---Austin-American-Statesman_w450.jpg" /></a></div>
+    
+      <div class="title"><a href="/PhotoOfTheMonth/">Big Air</a></div>
+    
+    <div class="byline">Ricardo B. Brazziell/Austin American-Statesman</div>
+    <span class="ie_fix"></span>
+    
+</div>
 
-    <nav id="footerMap" class="container"><ul class="col-2 first"><li><a href="/">cnet</a></li>
-        </ul><ul class="col-2"><li class="section">Reviews</li>
-            <li><a href="/reviews/">All Reviews</a></li>
-            <li><a href="/topics/audio/">Audio</a></li>
-            <li><a href="/topics/cameras/">Cameras</a></li>
-            <li><a href="/topics/car-tech/">Car Tech</a></li>
-            <li><a href="/topics/desktops/">Desktops</a></li>
-            <li><a href="/topics/laptops/">Laptops</a></li>
-            <li><a href="/topics/phones/">Phones</a></li>
-            <li><a href="/topics/tablets/">Tablets</a></li>
-            <li><a href="/topics/tvs/">TVs</a></li>
-        </ul><ul class="col-2"><li class="section">News</li>
-            <li><a href="/news/">All News</a></li>
-            <li><a href="/apple/" data-vanity-rewritten="true">Apple</a></li>
-            <li><a href="/crave/" data-vanity-rewritten="true">Crave</a></li>
-            <li><a href="/topics/internet/" data-vanity-rewritten="true">Internet</a></li>
-            <li><a href="/tags/microsoft/">Microsoft</a></li>
-            <li><a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a></li>
-            <li><a href="/topics/sci-tech/" data-vanity-rewritten="true">Sci-Tech</a></li>
-            <li><a href="/topics/security/" data-vanity-rewritten="true">Security</a></li>
-            <li><a href="/topics/tech-industry/" data-vanity-rewritten="true">Tech Industry</a></li>
-        </ul><ul class="col-2"><li class="section">Video</li>
-            <li><a href="/videos/">All Video</a></li>
-            <li><a href="/apple-byte/" data-vanity-rewritten="true">Apple Byte</a></li>
-            <li><a href="/cnet-on-cars/" data-vanity-rewritten="true">CNET On Cars</a></li>
-            <li><a href="/cnet-top-5/" data-vanity-rewritten="true">CNET Top 5</a></li>
-            <li><a href="/cnet-update/" data-vanity-rewritten="true">CNET Update</a></li>
-            <li><a href="/next-big-thing/" data-vanity-rewritten="true">Next Big Thing</a></li>
-            <li><a href="/the-404/" data-vanity-rewritten="true">The 404</a></li>
-            <li><a href="/the-fix/" data-vanity-rewritten="true">The Fix</a></li>
-            <li><a href="/xcar/" data-vanity-rewritten="true">XCAR</a></li>
-        </ul><ul class="col-2" data-component="mobileFooterLink"><li class="section">More</li>
-            <li><a href="http://www.cbsinteractive.com/">About CBS Interactive</a></li>
-            <li><a href="/about/" data-vanity-rewritten="true">About CNET</a></li>
-            <li><a href="/cnet100/">CNET 100</a></li>
-                            <li><a href="/deals/">CNET Deals</a></li>
-                        <li><a href="http://forums.cnet.com/">CNET Forums</a></li>
-            <li><a href="http://subscribe.cnet.com/magazine/subscribe/">CNET Magazine</a></li>
-            <li><a href="/news/mobile/" data-vanity-rewritten="true">CNET Mobile</a></li>
-            <li><a href="https://cbsi.secure.force.com/CBSi/knowledgehome">Help Center</a></li>
-            <li><a href="http://reprints.ygsgroup.com/m/cnet/">Permissions</a></li>
-        </ul><ul class="col-2 last"><li class="section">Follow CNET via...</li>
-            <li><a href="http://www.facebook.com/cnet" class="social-core-facebook">Facebook</a></li>
-            <li><a href="http://twitter.com/cnet" class="social-core-twitter">Twitter</a></li>
-            <li><a href="https://plus.google.com/u/0/105198124856956810263/posts" class="social-core-google">Google+</a></li>
-            <li><a href="http://www.youtube.com/user/CNETTV" class="social-core-youtube">YouTube</a></li>
-            <li><a href="http://www.linkedin.com/today/news.cnet.com" class="social-core-linkedin">LinkedIn</a></li>
-            <li><a href="http://cnet.tumblr.com/" class="social-core-tumblr">Tumblr</a></li>
-            <li><a href="http://pinterest.com/cnet" class="social-core-pinterest">Pinterest</a></li>
-            <li><a href="/user/join-cnet/" class="social-core-newsletters">Newsletters</a></li>
-            <li><a href="/rss/" class="social-core-rss" data-vanity-rewritten="true">RSS</a></li>
-        </ul></nav></footer><!--Visual Revenue Reader Response Tracking Script (v6) --><script type="text/javascript">
-    function vr_init() {
-        $('.load-more').trigger('click') 
-    }
+<!-- PHOTO OF THE MONTH ENDS -->
 
-    var _vrq = _vrq || [] 
-    _vrq.push(['id', 514]) 
-    _vrq.push(['automate', true]) 
-    _vrq.push(['track', function(){}]) 
-    (function(d, a){
-    var s = d.createElement(a),
-    x = d.getElementsByTagName(a)[0] 
-    s.async = true 
-    s.src = 'http://a.visualrevenue.com/vrs.js' 
-    x.parentNode.insertBefore(s, x) 
-    })(document, 'script') 
-</script><!-- End of VR RR Tracking Script - All rights reserved --><div data-component="yahooBeacon" data-yahoo-beacon-options='{"yahooId":"3dea089e-a865-35a2-aee5-6271e85057cf","yahooClass":"YAD-3dea089e-a865-35a2-aee5-6271e85057cf"}'></div>
+	      <div class="fclear"></div>
 
+		    <div class="datapage sectionContainer">
+		    	<div class="banner sectionHeader"><a href="/DataPage/" class="headLinks">E&amp P Datapage</a></div>
+					  <div id="activeDate" class="viewMore">
+					  	<span id="activeM"></span>
+					      <span id="activeY"></span>
+					  </div>
+					  <div class="dataWrapper">
+					      <div class="dataContainer">
+					          <div class="dataHeader" id="dataHeader1"></div>
+					      	<a id="data1" class="dataCharts" href="#"></a>
+					      </div>
+					      <div class="dataContainer">
+					          <div class="dataHeader" id="dataHeader2"></div>
+					      	<a id="data2" class="dataCharts" href="#"></a>
+					      </div>
+					      <div class="dataContainer">
+					          <div class="dataHeader" id="dataHeader3"></div>
+					      	<a id="data3" class="dataCharts" href="#"></a>
+					      </div>
+					      <div class="dataContainer">
+					          <div class="dataHeader" id="dataHeader4"></div>
+					      	<a id="data4" class="dataCharts" href="#"></a>
+					      </div>
+	              <div class="fclear"></div>
+					  </div>        
+		    </div>      
 
-<script type="text/javascript" src="http://cnet1.cbsistatic.com/fly/923-fly/bundles/cnetjs/js/libs/require-2.1.2.js"></script><script type="text/javascript">
-    require.config({"baseUrl":"\/923-fly\/bundles\/cnetjs\/js-build","config":{"version":{"fly\/components\/accordion":"1.0","fly\/components\/alert":"1.0","fly\/components\/base":"1.0","fly\/components\/carousel":"1.0","fly\/components\/dropdown":"1.0","fly\/components\/fixate":"1.0","fly\/components\/form-validate":"1.0","fly\/components\/image-gallery":"1.0","fly\/components\/iframe-messenger":"1.0","fly\/components\/livefyre-commentcount":"1.0","fly\/components\/livefyre-conversation":"1.0","fly\/components\/load-more":"1.0","fly\/components\/load-more-scroll":"1.0","fly\/components\/loading":"1.0","fly\/components\/modal":"1.0","fly\/components\/modal-iframe":"1.0","fly\/components\/poll":"1.0","fly\/components\/social-button":"1.0","fly\/components\/social-counts":"1.0","fly\/components\/social-links":"1.0","fly\/components\/tabs":"1.0","fly\/components\/tooltip":"1.0","fly\/components\/video":"1.0","fly\/libs\/easy-xdm":"2.4.19.3","fly\/libs\/jquery.cookie":"1.2","fly\/libs\/jquery.mobile":"1.3.0","fly\/libs\/jquery.throttle-debounce":"1.1","fly\/libs\/jquery.widget":"1.9.2","fly\/libs\/urs":"1.0","fly\/managers\/ad":"1.0","fly\/managers\/components":"1.0","fly\/managers\/cookie":"1.0","fly\/managers\/debug":"1.0","fly\/managers\/geo":"1.0","fly\/managers\/gpt":"4.0","fly\/managers\/history":"1.0","fly\/managers\/madison":"1.0","fly\/managers\/social-authentication":"1.0","fly\/managers\/user":"1.0","fly\/utils\/data-prefix":"1.0","fly\/utils\/data-selector":"1.0","fly\/utils\/function-natives":"1.0","fly\/utils\/guid":"1.0","fly\/utils\/jquery-mobile-init":"1.0","fly\/utils\/log":"1.0","fly\/utils\/object-helper":"1.0","fly\/utils\/string-helper":"1.0","fly\/utils\/string-vars":"1.0","fly\/utils\/url-helper":"1.0","libs\/jshashtable":"2.1","libs\/jsonp":"2.4.0","libs\/modernizr.custom":"2.6.2","libs\/jquery\/appear":"0.3.3","libs\/jquery\/dotdotdot":"1.6.1","libs\/jquery\/flexslider":"2.1","libs\/jquery\/lazyload":"1.9.3","libs\/jquery\/mobile":"1.4.0a1","libs\/jquery\/numberformatter":"1.2.3","libs\/jquery\/placeholder":"0.2.4","libs\/jquery\/scrollbar":"0.2.4.custom","libs\/jquery\/tablesorter":"2.0.5","libs\/jquery\/ui\/jquery.ui.core":"1.9.2","libs\/jquery\/ui\/jquery.ui.draggable":"1.9.2","libs\/jquery\/ui\/jquery.ui.mouse":"1.9.2","libs\/jquery\/ui\/jquery.ui.position":"1.9.2","libs\/jquery\/ui\/jquery.ui.slider":"1.9.2","libs\/jquery\/ui\/jquery.ui.touch-punch":"0.2.2"}},"shim":{"version!fly\/libs\/jquery.mobile":["version!fly\/utils\/jquery-mobile-init"],"version!libs\/jquery\/appear":["jquery"],"version!libs\/jquery\/dotdotdot":["jquery"],"version!libs\/jquery\/flexslider":["jquery"],"version!libs\/jquery\/lazyload":["jquery"],"version!libs\/jquery\/numberformatter":["jquery","version!libs\/jshashtable"],"version!libs\/jquery\/placeholder":["jquery"],"version!libs\/jquery\/scrollbar":["jquery"],"version!libs\/jquery\/tablesorter":["jquery"],"version!libs\/jquery\/ui\/jquery.ui.core":["jquery"],"version!libs\/jquery\/ui\/jquery.ui.draggable":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget","version!libs\/jquery\/ui\/jquery.ui.mouse"],"version!libs\/jquery\/ui\/jquery.ui.mouse":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget"],"version!libs\/jquery\/ui\/jquery.ui.position":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget"],"version!libs\/jquery\/ui\/jquery.ui.slider":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget","version!libs\/jquery\/ui\/jquery.ui.mouse","version!libs\/jquery\/ui\/jquery.ui.touch-punch"],"version!libs\/jquery\/ui\/jquery.ui.touch-punch":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget","version!libs\/jquery\/ui\/jquery.ui.mouse"],"version!libs\/jsonp":["jquery"],"tealium":["jquery"]},"map":{"*":{"anonc":"\/\/dw.cbsi.com\/anonc.js","google-csa":"\/\/www.google.com\/adsense\/search\/async-ads.js","gpt":"\/\/www.googletagservices.com\/tag\/js\/gpt.js","gpt-mobile":"\/\/www.googletagservices.com\/tag\/js\/gpt_mobile.js","linked-in":"\/\/platform.linkedin.com\/in.js","livefyre":"\/\/zor.livefyre.com\/wjs\/v3.0\/javascripts\/livefyre.js","livefyre-commentcount":"\/\/zor.livefyre.com\/wjs\/v1.0\/javascripts\/CommentCount.js","mpx":"http:\/\/cnet3.cbsistatic.com\/fly\/bundles\/cnetmpxpdk\/pdk\/tpPdk_5_5_7.js","nrelate":"http:\/\/static2.nrcdn.com\/common_js\/0.52.0\/nr_loader.min.js","optimizely":"\/\/cdn.optimizely.com\/js\/1818100102.js","pinterest":"\/\/assets.pinterest.com\/js\/pinit.js","recaptcha":"http:\/\/www.google.com\/recaptcha\/api\/js\/recaptcha_ajax.js","tealium":"\/\/tags.tiqcdn.com\/utag\/cbsi\/cnetglobalsite\/prod\/utag.js","twitter":"\/\/platform.twitter.com\/widgets.js","urs":"http:\/\/cn.cbsimg.net\/cnwk.1d\/Aud\/javascript\/urs.js","yahooAds":"https:\/\/s.yimg.com\/uq\/syndication\/yad.js","yahooMultiAds":"https:\/\/s.yimg.com\/uv\/dm\/scripts\/syndication.js"}}}) 
-                        require(['http://cnet4.cbsistatic.com/fly/923-fly/bundles/cnetjs/js-build/main.common.js'], function() {
-                require(['managers/page-vars', 'pages/desktop/section_door']) 
-            }) 
-            </script><script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-4.newrelic.com","licenseKey":"252d33b7c9","applicationID":"3674670","transactionName":"Y1xRYUdUX0ICUUxaDloWclZBXF5fTFxdRBJrX1cbQEY=","queueTime":0,"applicationTime":530,"ttGuid":"","agentToken":"","atts":"TxtGFw9OTB1BUxoJGklE","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body></html>
+	    </div>
+
+	    <div class="fclear"></div>
+
+	  </div>
+        <!--END BOTTOM SECTION-->
+        <!--END EP-Home-->
+        <!--START FOOTER-->
+            	  <div class="fclear"></div>
+
+                   <div><br /><br /><br /><a href="https://www.qfie.com/dmci/clsDMNewOrdStep1.asp?PubCode=EDIT&TrackCode=QWEB&strAspReason=102"><img src="http://www.editorandpublisher.com/images/enp/BottomSubBanner2013.png" border="0" /></a></div>
+                  <div class="fclear"></div>
+
+	  <div id="footer">
+
+	  	<div class="center topLinks">
+
+	    	<ul>
+
+	      	<li><a href="/SiteMap/">Site Map</a></li>
+
+	      	<li><a href="http://jobs.editorandpublisher.com/jobs">Classifieds</a></li>
+
+	        <li><a href="/Subscribe/">Subscription Services</a></li>
+
+	        <li><a href="/Newsletter/">Newsletter</a></li>
+
+	        <li><a href="/Advertise/">Advertise</a></li>
+
+	        <li><a href="/Contact/">Contact Us</a></li>
+
+	        <li><a href="/About/">About Us</a></li>
+
+	      </ul>
+
+	    </div>
+
+	    <div class="center copyright">
+
+	    	<p>Copyright &copy  2014 <a href="http://duncanmcintoshco.com" target="_blank">Duncan McIntosh Company Inc.</a></p>
+
+	      <p><a href="/TermsOfUse/">Terms of Use</a>&nbsp &nbsp &nbsp <a href="/PrivacyPolicy/">Privacy Policy</a></p>
+
+	      <p>Powered By <a href="http://mediaspanonline.com">MediaSpan</a></p>
+
+	    </div>
+
+	  </div>
+
+	</div>
+
+</div>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.") 
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")) 
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-542961-10") 
+            pageTracker._trackPageview() 
+        } catch (err) { }</script>
+</body>
+
+</html>
+        <!--END FOOTER-->

@@ -1,3 +1,6 @@
+#!/bin/sh
+
+
 MAHOUT="/home/jethro/mahout/bin/mahout"
 HADOOP_HOME="/home/jethro/.linuxbrew/Cellar/hadoop/2.5.1"
 HDFS="$HADOOP_HOME/bin/hdfs"

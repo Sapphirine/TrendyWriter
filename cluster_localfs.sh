@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 
 export PROJECT_HOME="/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api"
 
@@ -29,7 +30,7 @@ export MAHOUT_LOCAL=1
 
 
 # run on local
-$MAHOUT seqdirectory -c UTF-8 -i ${PROJECT_HOME}/topic -o ${PROJECT_HOME}/result/topics-seqfiles
+$MAHOUT seqdirectory -c UTF-8 -i ${PROJECT_HOME}/paragraph -o ${PROJECT_HOME}/result/topics-seqfiles
 $MAHOUT seq2sparse -i ${PROJECT_HOME}/result/topics-seqfiles -o ${PROJECT_HOME}/result/topics-vectors-bigram -ow -chunk 200 -wt tfidf -s 5 -md 3 -x 90 -ng 2 -ml 50 -seq
 $MAHOUT kmeans -i ${PROJECT_HOME}/result/topics-vectors-bigram/tfidf-vectors -c ${PROJECT_HOME}/result/topics-kmeans-clusters -o ${PROJECT_HOME}/result/topics-kmeans -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -cd 1.0 -k 20 -x 20 -ow --clustering
 $MAHOUT clusterdump -i ${PROJECT_HOME}/result/topics-kmeans/clusters-*-final -o ${PROJECT_HOME}/result/topics_clusters_dump -d ${PROJECT_HOME}/result/topics-vectors-bigram/dictionary.file-* -dt sequencefile -b 100 -n 10 --evaluate -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -sp 0 --pointsDir ${PROJECT_HOME}/result/topics-kmeans/clusteredPoints

@@ -1,1524 +1,1835 @@
-<!doctype html>
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" id="ng-app" ng-app="adage"><!--<![endif]-->
-<head profile="http://a9.com/-/spec/opensearch/1.1/">
-<script>
-	window['optimizely'] = window['optimizely'] || [] 
-	window['optimizely'].push(["customTag", 'membership_tier', 'Anonymous']) 
-</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
 
-	<script src="//cdn.optimizely.com/js/925388773.js"></script>
-
-<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwcHVldXGwYAVFZaAgM="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={}) for(var c=s(e),u=c.length,f=i(a,o,r),d=0 u>d d++)c[d].apply(f,n) return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={} return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos") e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0 t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos") if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document s&&!s.hasOwnProperty("addEventListener") )s=Object.getPrototypeOf(s) s&&n(s) for(var c=XMLHttpRequest.prototype c&&!c.hasOwnProperty("addEventListener") )c=Object.getPrototypeOf(c) c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n) e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0] "string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r) e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t) try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 c>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u) if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data") d&&(n.cat=d.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0 var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1) t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var u=e(o) u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}} for(var f=0 c>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e] var o=n() if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={} e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos") e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=c.createElement("script") e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}} c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s) try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="") var a,s,c,u="-"===o.charAt(0) for(c=0 c<r.length c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t) return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]) return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]) </script>
-
-<title>Latest Media and Marketing News - Advertising Age</title>
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, user-scalable=no" />
-
-<!-- For Windows 8 -->
-<meta name="application-name" content="Advertising Age"/> 
-<meta name="msapplication-TileColor" content="#000"/>
-<meta name="msapplication-TileImage" content="assets/ico/win8-120.png"/>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 
 
-<!-- For iPad 3 -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144.png" />
-<!-- For iPhone 4 -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114.png" />
-<!-- For iPad 1-->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72.png" />
-<!-- For iPhone 3G, iPod Touch and Android -->
-<link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57.png" />
-<!-- For everything else -->
-<link rel="shortcut icon" href="/assets/ico/favicon.png" />
-<!--iOS -->
-<meta name="apple-mobile-web-app-capable" content="no" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<!-- Legacy header -->
-<meta name="apple-itunes-app" content="app-id=590091347, app-argument=https://itunes.apple.com/us/app/advertising-age/id590091347?ls=1&mt=8">
-
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
-<meta name="distribution" content="global" />
-<meta http-equiv="refresh" content="300" />
-<meta http-equiv="content-type" content="text/html  charset=utf-8" />
-<meta name="adage_template" content="Channel.php" />
-<meta name="description" content="All the Latest Media and Marketing News - Keep up with the world of media with Advertising Age Mediaworks." />
-<link rel="canonical" href="http://adage.com/channel/media/1" />
-<link rel="alternate" type="application/rdf+xml" href="http://adage.com/rss-channel?section_id=1&xml=RSS1" title="Advertising Age - Media RSS Feed" />
-<link rel="alternate" type="application/atom+xml" href="http://adage.com/rss-channel?section_id=1&xml=ATOM" title="Advertising Age - Media RSS Feed" />
-<link rel="alternate" type="application/rss+xml" href="http://adage.com/rss-channel?section_id=1&xml=RSS2" title="Advertising Age - Media RSS Feed" />
-
-<link rel="search" type="application/opensearchdescription+xml" href="/xml/AdAge_OpenSearch.php" title="Advertising Age" />
-<link href="https://plus.google.com/101792368055128831913/" rel="publisher" />
-
-<!-- css --><link href="http://gaia.adage.com/assets/css/core.css?1407991153" media="all" rel="stylesheet" type="text/css" /><link href="http://gaia.adage.com/assets/css/tweak.css?1407991153" media="all" rel="stylesheet" type="text/css" />
-
-<!-- jQuery from Google CDN -->
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script> 
-
-<!-- js --><script type="text/javascript" src="http://gaia.adage.com/assets/js/libs/modernizr.js?1407991151" ></script>
-
-
-<!-- needed? -->
-<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script> <!-- Begin comScore Tag -->
-<script>
-var _comscore = _comscore || [] 
-_comscore.push({ c1: "2", c2: "16193073" }) 
-(function() {
-	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]  s.async = true 
-	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js" 
-	el.parentNode.insertBefore(s, el) 
-})() 
-</script>
-<noscript>
-	<img src="http://b.scorecardresearch.com/p?c1=2&c2=16193073&cv=2.0&cj=1" />
-</noscript>
-<!-- End comScore Tag --><script type="text/javascript">
-  var _gaq = _gaq || [] 
-  _gaq.push(['_setAccount', 'UA-19574238-1']) 
-  _gaq.push(['_setDomainName', '.adage.com']) 
-  _gaq.push(['_setAllowHash', false]) 
-  _gaq.push(['_setAllowLinker', true]) 
-  _gaq.push(['_trackPageview']) 
-  
-_gaq.push(['_setCustomVar',
-    1,
-    'BusinessType',
- '00 - Not Set',
-    1
- ]) 
-  
-  (function() {
-    var ga = document.createElement('script')  ga.type = 'text/javascript'  ga.async = true 
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' 
-    var s = document.getElementsByTagName('script')[0]  s.parentNode.insertBefore(ga, s) 
-  })() 
-
-</script>
-<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-
-
-</head>
-
-<body>
-
+  <meta http-equiv="Content-Type" content="text/html  charset=utf-8" />
+<link rel="shortcut icon" href="http://www.broadcastingcable.com/sites/default/files/public/favicon_1.png" type="image/png" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta property="og:image" content="" />
+  <title>Cable Television News, Broadcast, Syndication, Programming & Local TV | Broadcasting &amp  Cable</title>
+  <style type="text/css" media="all">@import url("http://www.broadcastingcable.com/modules/system/system.base.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/system/system.menus.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/system/system.messages.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/system/system.theme.css?nfelml") </style>
+<style type="text/css" media="all">@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/simplenews/simplenews.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/aggregator/aggregator.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/calendar/css/calendar_multiday.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/date/date_api/date.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/field/theme/field.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/node/node.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/search/search.css?nfelml") 
+@import url("http://www.broadcastingcable.com/modules/user/user.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/views/css/views.css?nfelml") </style>
+<style type="text/css" media="all">@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/ckeditor/ckeditor.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/ctools/css/ctools.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/panels/css/panels.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/themes/bnc_custom/panels/layouts/bnctwocol_stacked/bnctwocol_stacked.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/css/nice_menus.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/css/nice_menus_default.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/1077858/css/muchomenu.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/1077858/css/muchomenu-default-style.css?nfelml") 
+@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/panels/plugins/layouts/onecol/onecol.css?nfelml") </style>
+<style type="text/css" media="all">@import url("http://www.broadcastingcable.com/sites/all/themes/bnc_custom/css/style.css?nfelml") </style>
+<style type="text/css" media="screen">@import url("http://www.broadcastingcable.com/sites/all/themes/bnc_custom/css/responsive.css?nfelml") </style>
+  <script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.js?v=1.7.1"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/misc/drupal.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/jquery.bgiframe.js?v=2.1"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/superfish.js?v=1.4.8"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/nice_menus.js?v=1.0"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/site.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/css3-mediaqueries.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.carouFredSel-6.2.0-packed.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.jtweetsanywhere-1.3.1.min.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.touchSwipe.min.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/modernizr.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/yetii-min.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.fitvids.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/panels/js/panels.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/category_page/plugins/js/featured_article_slider.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_event/plugins/js/event_block.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_webinar/plugins/js/webcasts_block.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_the_wire/plugins/js/thewire_scroller.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_comment/plugins/js/yetii-min.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/1077858/js/muchomenu.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_slideshow/plugins/js/authors_block.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/google_analytics/googleanalytics.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/js/social-icons.js?nfelml"></script>
+<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/js/searchbox.js?nfelml"></script>
 <script type="text/javascript">
-//configuration
-OAS_url = 'http://oascentral.adage.com/RealMedia/ads/' 
-OAS_sitepage = 'www.adage.com/media/' 
-OAS_listpos = 'Top,Top1,Middle1,Bottom,Left,x90' 
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bnc_custom","theme_token":"ZMZyMQuB2iIL-6T_x2chQjL1OnhOA6J-l4dOe77w72U","js":{"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/site.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/css3-mediaqueries.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.carouFredSel-6.2.0-packed.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.jtweetsanywhere-1.3.1.min.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.touchSwipe.min.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/modernizr.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/yetii-min.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.fitvids.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/custom\/bnc_features\/category_page\/plugins\/js\/featured_article_slider.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_event\/plugins\/js\/event_block.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_webinar\/plugins\/js\/webcasts_block.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_the_wire\/plugins\/js\/thewire_scroller.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_comment\/plugins\/js\/yetii-min.js":1,"sites\/all\/modules\/contrib\/1077858\/js\/muchomenu.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_slideshow\/plugins\/js\/authors_block.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"sites\/all\/themes\/bnc_custom\/js\/social-icons.js":1,"sites\/all\/themes\/bnc_custom\/js\/searchbox.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/bnc_custom\/panels\/layouts\/bnctwocol_stacked\/bnctwocol_stacked.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/modules\/contrib\/1077858\/css\/muchomenu.css":1,"sites\/all\/modules\/contrib\/1077858\/css\/muchomenu-default-style.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/bnc_custom\/css\/style.css":1,"sites\/all\/themes\/bnc_custom\/css\/responsive.css":1}},"nice_menus_options":{"delay":"100","speed":"fast"},"muchomenu":{"animationEffect":"fade","animationSpeed":"fast"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}}) 
+//--><!]]>
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" type="text/css" media="screen" /><![endif]-->
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://fast.fonts.com/jsapi/0050d852-ae0b-4cd6-a3ca-6ae5f4e4e7a4.js"></script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "ur-5ce34838-65e7-ab87-d608-55cc3bd7c2c", doNotHash: false, doNotCopy: true, hashAddressBar: false}) </script>
+	
+	<script>
+    jQuery(document).ready(function(){		 		
+		var elw = jQuery('#findRbAd').children('img').width() 
+		var elh = jQuery('#findRbAd').children('img').height() 		
+		if(elh==null && elw==null) {
+			//jQuery('#roadblock').css('display:none ') 
+			jQuery('#findRbAd').parents().eq(10).addClass('roadblock-1').css("display","none") 
+		}
+		}) 
+</script>
 
-OAS_query = 'q=fito' 
+<script>
+    jQuery(document).ready(function(){		 		
+		var elw = jQuery('#findRbAd').children('img').width() 
+		var elh = jQuery('#findRbAd').children('img').height() 		
+		if(elh==null && elw==null) {
+			//jQuery('#roadblock').css('display:none ') 
+			jQuery('#findRbAd-1').addClass('roadblock-1').css("display","none") 
+		}
+		}) 
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https' if(!d.getElementById(id)){js=d.createElement(s) js.id=id js.src=p+'://platform.twitter.com/widgets.js' fjs.parentNode.insertBefore(js,fjs) }}(document, 'script', 'twitter-wjs') </script>
+
+ 
+</head>
+<body class="html front not-logged-in no-sidebars page-home" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+	<!--========================== TOP BAR =============================-->
+	<section class="top-bar">
+		<div class="wrapper">
+      <div class="pad">
+        <div class="leaderboard bot">
+            <div class="region region-top-bar">
+    <div id="block-nice-menus-1" class="block-nice-menus clearfix">
+
+    
+  <div class="content">
+    <ul class="nice-menu nice-menu-down nice-menu-menu-newbay-media-websites" id="nice-menu-1"><li class="menu-702 menu-path-newbaymediacom- first odd "><a href="http://www.newbaymedia.com/" title=""><img alt = "" src = "/sites/default/files/menu_icon_684.png" /></a></li>
+<li class="menu-572 menu-path-multichannelcom-  even "><a href="http://www.multichannel.com/" title="Multichannel News">Multichannel News</a></li>
+<li class="menu-573 menu-path-c2meworldcom-  odd "><a href="http://www.c2meworld.com/" title="C2MEWORLD">C2MEWORLD</a></li>
+<li class="menu-575 menu-path-tvtechnologycom-index  even "><a href="http://www.tvtechnology.com/index" title="TV Technology">TV Technology</a></li>
+<li class="menu-576 menu-path-tvbeuropecom-  odd "><a href="http://www.tvbeurope.com/" title="TVB Europe">TVB Europe</a></li>
+<li class="menu-1811 menu-path-ratingsintelcom-  even "><a href="http://www.ratingsintel.com/" title="">RATINGS INTELLIGENCE</a></li>
+<li class="menu-578 menu-path-nyctelevisionweekcom-  odd "><a href="http://nyctelevisionweek.com/" title="">NYC Television Week</a></li>
+<li class="menu-579 menuparent  menu-path-nolink  even last"><a href="#" title="More" class="nolink">More</a><ul><li class="menu-1102 menu-path-prosoundnetworkcom-index first odd "><a href="http://www.prosoundnetwork.com/index" title="AV/PRO AUDIO">AV/PRO AUDIO</a></li>
+<li class="menu-1103 menu-path-audiomediacom  even "><a href="http://www.AudioMedia.com" title="AudioMedia.com">AudioMedia.com</a></li>
+<li class="menu-1104 menu-path-audioprointernationalcom  odd "><a href="http://www.AudioProInternational.com" title="AudioProInternational.com">AudioProInternational.com</a></li>
+<li class="menu-1105 menu-path-avnetworkcom  even "><a href="http://www.AVNetwork.com" title="AVNetwork.com">AVNetwork.com</a></li>
+<li class="menu-1106 menu-path-installation-internationalcom  odd "><a href="http://www.Installation-International.com" title="Installation-International.com">Installation-International.com</a></li>
+<li class="menu-1107 menu-path-mixonlinecom  even "><a href="http://www.MixOnline.com" title="MixOnline.com">MixOnline.com</a></li>
+<li class="menu-1108 menu-path-prosoundnetworkcom  odd "><a href="http://www.ProSoundNetwork.com" title="ProSoundNetwork.com">ProSoundNetwork.com</a></li>
+<li class="menu-1109 menu-path-psneuropecom  even "><a href="http://www.PSNEurope.com" title="PSNEurope.com">PSNEurope.com</a></li>
+<li class="menu-1110 menu-path-residentialsystemscom  odd "><a href="http://www.ResidentialSystems.com" title="ResidentialSystems.com">ResidentialSystems.com</a></li>
+<li class="menu-1111 menu-path-nolink  even "><a href="#" title="BROADCAST/RADIO/TV/VIDEO" class="nolink">BROADCAST/RADIO/TV/VIDEO</a></li>
+<li class="menu-582 menu-path-broadcastit-  odd "><a href="http://www.broadcast.it/" title="Broadcast.it">Broadcast.it</a></li>
+<li class="menu-1112 menu-path-creativeplanetnetworkcom  even "><a href="http://www.CreativePlanetNetwork.com" title="CreativePlanetNetwork.com">CreativePlanetNetwork.com</a></li>
+<li class="menu-1113 menu-path-governmentvideocom  odd "><a href="http://www.GovernmentVideo.com" title="GovernmentVideo.com">GovernmentVideo.com</a></li>
+<li class="menu-1114 menu-path-licensingbiz  even "><a href="http://www.Licensing.biz" title="Licensing.biz">Licensing.biz</a></li>
+<li class="menu-1115 menu-path-radiomagonlinecom  odd "><a href="http://www.RadioMagOnline.com" title="RadioMagOnline.com">RadioMagOnline.com</a></li>
+<li class="menu-1116 menu-path-radioworldcom  even "><a href="http://www.RadioWorld.com" title="RadioWorld.com">RadioWorld.com</a></li>
+<li class="menu-1117 menu-path-nolink  odd "><a href="#" title="CONSUMER ELECTRONICS/GAMING" class="nolink">CONSUMER ELECTRONICS/GAMING</a></li>
+<li class="menu-1118 menu-path-bikebizcom  even "><a href="http://www.BikeBiz.com" title="BikeBiz.com">BikeBiz.com</a></li>
+<li class="menu-1119 menu-path-develop-onlinenet  odd "><a href="http://www.Develop-Online.net" title="Develop-Online.net">Develop-Online.net</a></li>
+<li class="menu-1120 menu-path-mvcukcom  even "><a href="http://www.MVCuk.com" title="MVCuk.com">MVCuk.com</a></li>
+<li class="menu-1121 menu-path-mobile-entbiz  odd "><a href="http://www.Mobile-ent.biz" title="Mobile-ent.biz">Mobile-ent.biz</a></li>
+<li class="menu-1122 menu-path-pcr-onlinebiz  even "><a href="http://www.PCR-Online.biz" title="PCR-Online.biz">PCR-Online.biz</a></li>
+<li class="menu-1813 menu-path-twicecom  odd "><a href="http://www.twice.com" title="twice.com">twice.com</a></li>
+<li class="menu-1123 menu-path-toynews-onlinebiz  even "><a href="http://www.ToyNews-Online.biz" title="ToyNews-Online.biz">ToyNews-Online.biz</a></li>
+<li class="menu-1124 menu-path-nolink  odd "><a href="#" title="EDUCATION" class="nolink">EDUCATION</a></li>
+<li class="menu-1203 menu-path-eduwirecom  even "><a href="http://www.eduwire.com" title="Eduwire">Eduwire.com</a></li>
+<li class="menu-1125 menu-path-schoolciocom  odd "><a href="http://www.SchoolCIO.com" title="SchoolCIO.com">SchoolCIO.com</a></li>
+<li class="menu-1126 menu-path-techlearningcom  even "><a href="http://www.TechLearning.com" title="TechLearning.com">TechLearning.com</a></li>
+<li class="menu-1127 menu-path-nolink  odd "><a href="#" title="Music" class="nolink">MUSIC</a></li>
+<li class="menu-1128 menu-path-bassplayercom  even "><a href="http://www.BassPlayer.com" title="BassPlayer.com">BassPlayer.com</a></li>
+<li class="menu-1129 menu-path-emusiciancom  odd "><a href="http://www.Emusician.com" title="Emusician.com">Emusician.com</a></li>
+<li class="menu-1130 menu-path-guitaraficionadocom  even "><a href="http://www.GuitarAficionado.com" title="GuitarAficionado.com">GuitarAficionado.com</a></li>
+<li class="menu-1131 menu-path-guitarplayercom  odd "><a href="http://www.GuitarPlayer.com" title="GuitarPlayer.com">GuitarPlayer.com</a></li>
+<li class="menu-1132 menu-path-guitarworldcom  even "><a href="http://www.GuitarWorld.com" title="GuitarWorld.com">GuitarWorld.com</a></li>
+<li class="menu-1133 menu-path-keyboardmagcom  odd "><a href="http://www.KeyboardMag.com" title="KeyboardMag.com">KeyboardMag.com</a></li>
+<li class="menu-1134 menu-path-mi-procouk  even "><a href="http://www.MI-Pro.co.uk" title="MI-Pro.co.uk">MI-Pro.co.uk</a></li>
+<li class="menu-1135 menu-path-musicweekcom  odd "><a href="http://www.MusicWeek.com" title="MusicWeek.com">MusicWeek.com</a></li>
+<li class="menu-1136 menu-path-revolvermagcom  even last"><a href="http://www.RevolverMag.com" title="RevolverMag.com">RevolverMag.com</a></li>
+</ul></li>
+</ul>
+  </div>
+</div>
+  </div>
+        </div>
+      </div> <!-- /PAD -->
+    </div> <!-- /WRAPPER -->
+	</section>
+	<!--========================== /TOP BAR ============================-->
+	
+	
+	<!--========================= ROADBLOCK ============================-->
+	<div id="roadblock" class="roadblock">
+		<div class="wrapper">
+			<div class="pad">
+				  <div class="region region-top-add">
+    <div id="block-panels-mini-top-add" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-top_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-6" >
+  
+      
+  
+  <div class="pane-content">
+    <style type="text/css">
+img[src*="empty.gif"] {
+    height:0px !important 
+}
+</style>
+<SCRIPT LANGUAGE=JavaScript>
+<!-- 
+//configuration 
+OAS_url = 'http://oasc08011.247realmedia.com/RealMedia/ads/' 
+<!------ OAS SETUP begin ------>
+OAS_sitepage = 'www.broadcastingcable.com' 
+OAS_listpos = 'Bottom,Middle,Position1,Position2,Position3,Top,Top1,x01' 
+var synd = "http://www.broadcastingcable.com/news/syndication-and-distribution" 
+var url = window.location.href 
+var n = url.search("syndication") 
+//alert (n) 
+
+if (url =="http://www.broadcastingcable.com/" || url =="http://broadcastingcable.com/")
+{
+  OAS_query = "homepage" 
+} 
+else if (url=="http://www.broadcastingcable.com/news/syndication-and-distribution")
+{
+
+  OAS_query = "syndication" 
+}
+else if (n=="40")
+{
+  OAS_query = "syndication" 
+}
+else {
+OAS_query = '' 
+}
+
 OAS_target = '_top' 
 //end of configuration
 OAS_version = 10 
 OAS_rn = '001234567890'  OAS_rns = '1234567890' 
 OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
-
 function OAS_NORMAL(pos) {
-    document.write('<a href="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" target=' + OAS_target + '>') 
-    document.write('<img src="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" /></a>') 
+document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>')  
+document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>')  
 }
-
-OAS_version = 11 
-if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
-OAS_version = 10 
-if (OAS_version >= 11)
-document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/script>') 
-
-
-function OAS_AD(pos) {
-    if (OAS_version >= 11 && typeof OAS_RICH == 'function') {
-        OAS_RICH(pos) 
-    }
-    else {
-        OAS_NORMAL(pos) 
-    }
-}
-
-</script>
-
-
-
-
-
-<header id="page-header" role="banner">
-	<!-- corporate nav bar -->
-	<nav id="nav-primary" class="hidden-phone">
-		<ul>
-			<li class="nav-item-adage"><a href="/" onclick="trackOutboundLink(this, 'Header-Home-Link', 'Homepage', '/')  return false " class="active">Ad Age</a></li>
-			<li class="nav-item-creativity"><a href="http://creativity-online.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">Creativity</a></li>
-			<li class="nav-item-lookbook"><a href="/lookbook" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Lookbook</a></li>
-			<li class="nav-item-datacenter"><a href="/datacenter" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Datacenter</a></li>
-			<li class="nav-item-resources"><a href="/resources" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Resources</a></li>
-			<li class="nav-item-events"><a href="/events" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Events</a></li>
-			<li class="nav-item-jobs"><a href="http://jobs.adagetalentworks.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Jobs</a></li>
-
-			<li class="nav-item-on-campus"><a href="/adage-on-campus" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">On Campus</a></li>
-
-		</ul>
-	</nav><!-- / #nav-primary -->
-
-	<div class="container">
-
-
-				<strong class="logo">
-			<a href="/" onclick="trackOutboundLink(this, 'Logo-Home-Link', 'Homepage', '/')  return false ">Advertising Age</a>
-		</strong>
-
-		
-
-		<nav id="nav-secondary" class="breakout hidden-phone border-bottom">
-			<ul>
-			
-<li>
-	<a href="/channel/marketing/28" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Marketing', this.getAttribute('href'))  return false "><span>Marketing</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/advertising/47" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Advertising', this.getAttribute('href'))  return false "><span>Advertising</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/digital/20" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Digital', this.getAttribute('href'))  return false "><span>Digital</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/media/1" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Media', this.getAttribute('href'))  return false "><span>Media</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/agency-news/19" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Agency', this.getAttribute('href'))  return false "><span>Agency</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/dataworks/42" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Data', this.getAttribute('href'))  return false "><span>Data</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/section/btob/976" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'BtoB', this.getAttribute('href'))  return false "><span>BtoB</span></a>
-</li>
-
-				<!-- dynamic search box -->
-				<li class="search">
-
-					<a href="#" class="toggle search-label" onclick="_gaq.push(['_trackEvent', 'search', 'toggle']) ">Search <i class="icon-search">Search</i></a>
-
-					<div class="search-form">
-							
-	<form action="/results" id="search" name="search">
-		<input type="hidden" name="endeca" value="1" />
-		<input type="hidden" name="searchprop" value="AdAgeAll" />
-		<input type="hidden" name="return" value="endeca" />
-		<input type="hidden" name="search_offset" value="0" />
-		<input type="hidden" name="search_order_by" value="score" />
-
-
-		<input type="text" name="search_phrase" id="search_phrase" autosave="Advertising Age" results="10" placeholder="Search website" />
-		<input type="submit" value="Search" />
-	</form>	
-
-
-					</div>
-				</li>
-			</ul>
-		</nav><!-- / #nav-secondary -->
-
-		<nav id="nav-tertiary" class="hidden-phone">
-
-			<ul class="pull-left">
-				<li class="dropdown">
-					<a href="#">Follow us <i class="icon-dropdown"></i></a>
-						<ul class="dropdown-menu">
-						<li><a href="http://www.facebook.com/AdAge"><i class="dd-facebook"></i> Follow on Facebook</a></li>
-						<li><a href="http://twitter.com/adage"><i class="dd-twitter"></i> Follow on Twitter</a></li>
-						<li><a href="https://plus.google.com/101792368055128831913/?prsrc=3"><i class="dd-gplus"></i> Follow on Google+</a></li>
-						<li><a href="http://www.linkedin.com/groups?mostPopular=&gid=2754444"><i class="dd-linkedin"></i> Follow on LinkedIn</a></li>
-						<li><a href="/aboutus/#social-rss"><i class="dd-rss"></i> Follow via RSS</a></li>
-					</ul>
-					<!-- End updated code -->
-				</li>
-			</ul>
-
-			<ul class="pull-right">	
-
-<li><a id="adage-login" onclick="trackOutboundLink(this, 'Header-Login', this.innerHTML, this.getAttribute('href'))  return false " href="http://adage.com/login" title="Login using your existing Advertising Age account">Login</a></li>
-	<li><a href="http://adage.com/membership" onclick="trackOutboundLink(this, 'Header-Subscribe', this.innerHTML, this.getAttribute('href'))  return false " class="btn btn-primary">Become a Member <i class="icon-cta-white"></i></a></li>
-
-</ul>
-
-		</nav><!-- / #nav-tertiary -->
-
-		<a href="#nav-mobile" class="nav-trigger visible-phone"><i class="burger">Menu</i></a>
-
-		<nav id="nav-mobile" class="visible-phone">
-			<ul class="menu">
-
-				<li>
-	<a href="/channel/marketing/28" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Marketing', this.getAttribute('href'))  return false "><span>Marketing</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/advertising/47" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Advertising', this.getAttribute('href'))  return false "><span>Advertising</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/digital/20" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Digital', this.getAttribute('href'))  return false "><span>Digital</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/media/1" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Media', this.getAttribute('href'))  return false "><span>Media</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/agency-news/19" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Agency', this.getAttribute('href'))  return false "><span>Agency</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/dataworks/42" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Data', this.getAttribute('href'))  return false "><span>Data</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/section/btob/976" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'BtoB', this.getAttribute('href'))  return false "><span>BtoB</span></a>
-</li>
-
-			</ul>
-			
-			<div class="search">
-				<a href="#mob-search" class="mob-search"><i class="icon-search">Search</i></a>
-				<div id="mob-search">
-						
-	<form action="/results" id="search" name="search">
-		<input type="hidden" name="endeca" value="1" />
-		<input type="hidden" name="searchprop" value="AdAgeAll" />
-		<input type="hidden" name="return" value="endeca" />
-		<input type="hidden" name="search_offset" value="0" />
-		<input type="hidden" name="search_order_by" value="score" />
-
-
-		<input type="text" name="search_phrase" id="search_phrase" autosave="Advertising Age" results="10" placeholder="Search website" />
-		<input type="submit" value="Search" />
-	</form>	
-
-
-				</div><!-- / #mob-search -->
-			</div>
-			
-			<ul class="member">
-							<li><a href="/membership" onclick="trackOutboundLink(this, 'Header-Subscribe', this.innerHTML, this.getAttribute('href'))  return false " class="btn btn-primary">Become a Member <i class="icon-cta-white"></i></a></li>
-				<li><a id="adage-login" class="btn btn-border" onclick="trackOutboundLink(this, 'Header-Login', this.innerHTML, this.getAttribute('href'))  return false " href="/login" title="Login using your existing Advertising Age account">Login</a></li>
-						</ul>
-			
-			<ul class="products">
-				<li class="nav-item-adage">
-					<a href="/" onclick="trackOutboundLink(this, 'Header-Home-Link', 'Homepage', '/')  return false " class="active">Adage</a>
-				</li>
-				<li class="nav-item-creativity">
-					<a href="http://creativity-online.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">Creativity</a>
-				</li>
-				<li class="nav-item-lookbook">
-					<a href="http://lookbook.adage.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Lookbook</a>
-				</li>
-				<li class="nav-item-datacenter">
-					<a href="/datacenter" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Datacenter</a>
-				</li>
-				<li class="nav-item-resources">
-					<a href="/resources" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Resources</a>
-				</li>
-				<li class="nav-item-events">
-					<a href="/events" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Events</a>
-				</li>
-				<li class="nav-item-jobs">
-					<a href="http://jobs.adagetalentworks.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Jobs</a>
-				</li>
-				<li class="nav-item-on-campus">
-					<a href="/adage-on-campus" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">On Campus</a>
-				</li>
-			</ul>
-
-			<ul class="social">
-				<li><a href="http://www.facebook.com/AdAge" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'Facebook', this.getAttribute('href'))  return false " target="_new"><span class="icon-facebook">Facebook</span></a></li>
-				<li><a href="http://twitter.com/adage" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'Twitter', this.getAttribute('href'))  return false " target="_new"><span class="icon-twitter">Twitter</span></a></li>
-				<li><a href="http://www.linkedin.com/groups?mostPopular=&gid=2754444" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'LinkedIn', this.getAttribute('href'))  return false " target="_new"><span class="icon-linkedin">LinkedIn</span></a></li>
-				<li><a href="https://plus.google.com/101792368055128831913/?prsrc=3" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'Google Plus', this.getAttribute('href'))  return false " target="_new"><span class="icon-gplus">Google+</span></a></li>
-			</ul><!-- / .social -->
-			
-			<a href="#" class="close icon-close">Close</a>
-			
-		</nav><!-- / #nav-mobile -->
-	</div><!-- / .container -->
-</header><!-- / #page-header -->
-
-
-
-
-
-
- 
+ //--> 
+ </SCRIPT>
+<!--- Here is the Open AdStream JX Code  for the x96 position --->
+<div class="findMmAd">
+ <!-- 1st Section Begins : Delivery via OAS JX Tag -->
 <script type="text/javascript">
-		OAS_AD('Left') 
+<!--
+OAS_rn = '001234567890'  OAS_rns = '1234567890' 
+OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
+document.write("<scr"+"ipt type='text/javascript' src='http://oasc08011.247realmedia.com/RealMedia/ads/adstream_jx.ads/www.broadcastingcable.com/1" + OAS_rns +"@x01'></sc"+"ript>") 
+//  --> 
 </script>
-
-
-
-
-
-<div class="overlay"></div>
-
-
-
-
-
-<!-- cached id: c3cdaa2c475f26fa5cf9643f26f2e23c3eb35ae1 --><!-- cached id: c3cdaa2c475f26fa5cf9643f26f2e23c3eb35ae1 --><div class="page-listing landing-">
-
-
-<div class="oaswrapper grey">
-<div id="oas">
-
-	<div class="advert banner dark">
-		<div class="container">
-			<div class="ad">
-				<script type="text/javascript" language="JavaScript">
-					OAS_AD('Top') 
-				</script>
-				<span>Advertisement</span>
-			</div>
-		</div>
-	</div><!-- / .advert.banner -->
-
 </div>
-</div>
-
-
-
-
-
-<div class="whitewrap">
-<div class="oaswrapper  dark">
-<div id="oas">
-
-	<section class="featured module news-columns tablet-no-border">
-		<div class="container ">
-							<header>
-					<h1>Media</h1>
-														</header>
-			
-			<div>
-				<div class="cols-four padded">	
-
-					<article class="news-item sub-hero ">
-						<a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving-newest-ads-tv/296010/" class="block">
-							<figure>
-								<img src="http://gaia.adage.com/images/bin/image/medium/one_hour.JPG?1417030467" width="322" height="214" alt="Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)" title="Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)" />
-								
-							</figure>
-							<h2>Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)</h2>
-						</a>
-						<p> on 11.26.2014</p>
-						
-												<ul class="actions">
-																	<li><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving-newest-ads-tv/296010/" class="share-count">15<i class="icon icon-forward"></i></a></li>
-																					</ul>
-												
-					</article><!-- / .news-item -->
-				</div><!-- / .cols-four -->
-
-				<div class="cols-four padded">	
-
-					<article class="news-item sub-hero ">
-						<a href="http://adage.com/article/media/celebrity-scandal-mailonline-s-u-s-revenue-double/296018/" class="block">
-							<figure>
-								<img src="http://gaia.adage.com/images/bin/image/medium/MailOnline_3x2.jpg?1417025920" width="322" height="215" alt="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" title="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" />
-								
-							</figure>
-							<h2>With Celebrity and Scandal, MailOnline's U.S. Revenue Double</h2>
-						</a>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.26.2014</p>
-						
-												<ul class="actions">
-																	<li><a href="http://adage.com/article/media/celebrity-scandal-mailonline-s-u-s-revenue-double/296018/" class="share-count">121<i class="icon icon-forward"></i></a></li>
-																					</ul>
-												
-					</article><!-- / .news-item -->
-				</div><!-- / .cols-four -->
-
-
-				<div class="cols-four  padded ipad-clear tablet-ad-wrap">
-					<div class="ad">
-						<figure>
-							<script type="text/javascript" language="JavaScript">
-								OAS_AD('Top1') 
-							</script>
-							<figcaption>Advertisement</figcaption>
-						</figure>
-					</div>
-				</div><!-- / .cols-four -->
-			</div>
-		</div><!-- / .container -->
-
-
-		<!-- end block to use when we're using a 300x600 ad up top-->
-	</section><!-- / .container.module.tight -->
-
-</div></div></div>
-	
-	
-<div class="whitewrap">
-	<div class="container listing">
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/ad-tech-fuels-awkward-ad-juxtaposition-oil-company-york-times/296003/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Statoil_ad_NYTmobile_3x2.jpg?14169 721" width="322" height="229" alt="Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times" title="Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/ad-tech-fuels-awkward-ad-juxtaposition-oil-company-york-times/296003/">Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times</a></h3>
-					<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.26.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/media/ad-tech-fuels-awkward-ad-juxtaposition-oil-company-york-times/296003/" class="share-count">38<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/dish-extends-cbs-deal-week-standoff-looms/296014/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/ncis_new_orleans_3x2.jpg?1417020069" width="322" height="215" alt="Dish Extends CBS Deal Another Week as Yet Another Standoff Looms" title="Dish Extends CBS Deal Another Week as Yet Another Standoff Looms" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/dish-extends-cbs-deal-week-standoff-looms/296014/">Dish Extends CBS Deal Another Week as Yet Another Standoff Looms</a></h3>
-					<p> on 11.26.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/media/dish-extends-cbs-deal-week-standoff-looms/296014/" class="share-count">31<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Richard_Sherman_Oberto_iSpot.png?1 9647645" width="322" height="215" alt="Richard Sherman Mocks NFL for Sponsorship Hypocrisy" title="Richard Sherman Mocks NFL for Sponsorship Hypocrisy" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/">Richard Sherman Mocks NFL for Sponsorship Hypocrisy</a></h3>
-					<p>By <a href="http://adage.com/author/ken-wheaton/442">Ken Wheaton</a> on 11.25.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" class="share-count">232<i class="icon icon-forward"></i></a></li>
-													<li><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/#comments"><i class="icon icon-comment"></i>1</a></li>					</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/food52-thanksgiving-super-bowl-season/295999/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Hesser_Stubbs.jpg?1416938254" width="322" height="215" alt="At Food52, Thanksgiving Is Super Bowl Season" title="At Food52, Thanksgiving Is Super Bowl Season" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/food52-thanksgiving-super-bowl-season/295999/">At Food52, Thanksgiving Is Super Bowl Season</a></h3>
-					<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.25.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/media/food52-thanksgiving-super-bowl-season/295999/" class="share-count">49<i class="icon icon-forward"></i></a></li>
-													<li><a href="http://adage.com/article/media/food52-thanksgiving-super-bowl-season/295999/#comments"><i class="icon icon-comment"></i>1</a></li>					</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/watch-newest-ads-tv-intel-apple/295993/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/intel_flightattendant_ispot_3x2.jpg?1416944835" width="322" height="213" alt="Watch the Newest Ads on TV From Intel, Apple and More" title="Watch the Newest Ads on TV From Intel, Apple and More" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/watch-newest-ads-tv-intel-apple/295993/">Watch the Newest Ads on TV From Intel, Apple and More</a></h3>
-					<p> on 11.25.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/media/watch-newest-ads-tv-intel-apple/295993/" class="share-count">98<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/star-wars-trailer-swell-movie-lines-weekend/295991/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/starwars.JPG?1416865482" width="322" height="215" alt="'Star Wars' Trailer to Swell Movie Lines This Weekend" title="'Star Wars' Trailer to Swell Movie Lines This Weekend" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/star-wars-trailer-swell-movie-lines-weekend/295991/">'Star Wars' Trailer to Swell Movie Lines This Weekend</a></h3>
-					<p> on 11.24.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/media/star-wars-trailer-swell-movie-lines-weekend/295991/" class="share-count">66<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/digital/aol-advertising-cmo-erika-nardini-steps/295990/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/ErikaNardini3x2.jpg?1416860079" width="322" height="215" alt="AOL Advertising CMO Erika Nardini Steps Down" title="AOL Advertising CMO Erika Nardini Steps Down" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/digital/aol-advertising-cmo-erika-nardini-steps/295990/">AOL Advertising CMO Erika Nardini Steps Down</a></h3>
-					<p>By <a href="http://adage.com/author/tim-peterson/5101">Tim Peterson</a> and <a href="http://adage.com/author/alexandra-bruell/4252">Alexandra Bruell</a> on 11.24.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/digital/aol-advertising-cmo-erika-nardini-steps/295990/" class="share-count">165<i class="icon icon-forward"></i></a></li>
-													<li><a href="http://adage.com/article/digital/aol-advertising-cmo-erika-nardini-steps/295990/#comments"><i class="icon icon-comment"></i>1</a></li>					</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-
-	</div><!-- / .container.listing -->
-
-	<section class="container module news-columns listing-insert">
-		<div class="cols-four">
-			<article class="news-item ">
-				<a href="http://adage.com/article/media/watch-weekend-s-tv-ads-geico-pizza-hut/295978/" class="block">
-					<figure>
-						<img src="http://gaia.adage.com/images/bin/image/medium/geico.jpg?1416854953" width="322" height="181" alt="Watch the Weekend's New TV Ads From Geico, Pizza Hut and More" title="Watch the Weekend's New TV Ads From Geico, Pizza Hut and More" />						
-												
-					</figure>
-					<h3>Watch the Weekend's New TV Ads From Geico, Pizza Hut and More</h3>
-				</a>
-				<p> on 11.24.2014</p>
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/watch-weekend-s-tv-ads-geico-pizza-hut/295978/" class="share-count">35<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</article><!-- / .news-item -->
-		</div><!-- / .cols-four -->
-
-		<div class="cols-four">
-			<article class="news-item ">
-				<a href="http://adage.com/article/special-report-super-bowl/godaddy-s-lone-super-bowl-commercial-feature-danica-patrick-a-puppy-a-twist/295963/" class="block">
-					<figure>
-						<img src="http://gaia.adage.com/images/bin/image/medium/godaddy-theepicquit14.jpg?1 1015930" width="322" height="215" alt="GoDaddy's Lone Super Bowl Commercial Will Feature Danica Patrick, a Puppy and a Twist" title="GoDaddy's Lone Super Bowl Commercial Will Feature Danica Patrick, a Puppy and a Twist" />						
-												
-					</figure>
-					<h3>GoDaddy's Lone Super Bowl Commercial Will Feature Danica Patrick, a Puppy and a Twist</h3>
-				</a>
-				<p>By <a href="http://adage.com/author/jeanine-poggi/4700">Jeanine Poggi</a> on 11.24.2014</p>
-								<ul class="actions">
-													<li><a href="http://adage.com/article/special-report-super-bowl/godaddy-s-lone-super-bowl-commercial-feature-danica-patrick-a-puppy-a-twist/295963/" class="share-count">74<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/special-report-super-bowl/godaddy-s-lone-super-bowl-commercial-feature-danica-patrick-a-puppy-a-twist/295963/#comments"><i class="icon icon-comment"></i>2</a></li>				</ul>
-							</article><!-- / .news-item -->
-		</div><!-- / .cols-four -->
-
-
-		<div class="cols-four ipad-clear tablet-ad-wrap">
-			<div class="ad">
-				<figure>
-				<script type="text/javascript" language="JavaScript">
-					OAS_AD('Middle1') 
-				</script>
-				<figcaption>Advertisement</figcaption>
-			</figure>
-			</div>
-		</div><!-- / .cols-four -->
-	</section><!-- / .container.module -->
-
-	<div class="container listing">
-		
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/digital/snapchat-debuts-ad-format-american-music-awards-stream/295979/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Snapchat_AMAs3x2.png?1416797331" width="322" height="215" alt="Snapchat Debuts New Ad Format With American Music Awards Stream" title="Snapchat Debuts New Ad Format With American Music Awards Stream" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/digital/snapchat-debuts-ad-format-american-music-awards-stream/295979/">Snapchat Debuts New Ad Format With American Music Awards Stream</a></h3>
-				<p>By <a href="http://adage.com/author/tim-peterson/5101">Tim Peterson</a> on 11.23.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/digital/snapchat-debuts-ad-format-american-music-awards-stream/295979/" class="share-count">625<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/digital/snapchat-debuts-ad-format-american-music-awards-stream/295979/#comments"><i class="icon icon-comment"></i>3</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/watch-mike-nichols-vintage-beer-ads/295976/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Jax.jpg?1416609838" width="322" height="215" alt="Watch Mike Nichols' Vintage Beer Ads" title="Watch Mike Nichols' Vintage Beer Ads" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/watch-mike-nichols-vintage-beer-ads/295976/">Watch Mike Nichols' Vintage Beer Ads</a></h3>
-				<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.22.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/watch-mike-nichols-vintage-beer-ads/295976/" class="share-count">134<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/media/watch-mike-nichols-vintage-beer-ads/295976/#comments"><i class="icon icon-comment"></i>1</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/williamsburg-vice-helped-build-sudden-barbs-bands-fans/295971/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/SuckItVice.jpg?1416599593" width="322" height="215" alt="In the Williamsburg That Vice Helped Build, Sudden Barbs From Bands and Fans" title="In the Williamsburg That Vice Helped Build, Sudden Barbs From Bands and Fans" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/williamsburg-vice-helped-build-sudden-barbs-bands-fans/295971/">In the Williamsburg That Vice Helped Build, Sudden Barbs From Bands and Fans</a></h3>
-				<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/williamsburg-vice-helped-build-sudden-barbs-bands-fans/295971/" class="share-count">107<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/media/williamsburg-vice-helped-build-sudden-barbs-bands-fans/295971/#comments"><i class="icon icon-comment"></i>1</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/dish-temporarily-restores-cnn-cartoon-network-multi-front-negotiations/295973/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/teen_titans_go_3x2.jpg?1416605220" width="322" height="214" alt="Dish Temporarily Restores CNN, Cartoon Network in Multi-Front Negotiations" title="Dish Temporarily Restores CNN, Cartoon Network in Multi-Front Negotiations" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/dish-temporarily-restores-cnn-cartoon-network-multi-front-negotiations/295973/">Dish Temporarily Restores CNN, Cartoon Network in Multi-Front Negotiations</a></h3>
-				<p> on 11.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/dish-temporarily-restores-cnn-cartoon-network-multi-front-negotiations/295973/" class="share-count">17<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/attempt-harmed-fired-tv-s-latest-ads/295957/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/sprint_bestplanever_ispot_3x2.jpg?1416601215" width="322" height="214" alt="'Do Not Attempt. You Might Get Harmed or Fired.' (See TV's Latest Ads)" title="'Do Not Attempt. You Might Get Harmed or Fired.' (See TV's Latest Ads)" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/attempt-harmed-fired-tv-s-latest-ads/295957/">'Do Not Attempt. You Might Get Harmed or Fired.' (See TV's Latest Ads)</a></h3>
-				<p> on 11.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/attempt-harmed-fired-tv-s-latest-ads/295957/" class="share-count">21<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/amazon-softens-denials-ad-supported-video/295964/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/amazon_3x2.png?1369074760" width="281" height="185" alt="Amazon Softens Denials About Ad-Supported Video" title="Amazon Softens Denials About Ad-Supported Video" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/amazon-softens-denials-ad-supported-video/295964/">Amazon Softens Denials About Ad-Supported Video</a></h3>
-				<p>By <a href="http://adage.com/author/tim-peterson/5101">Tim Peterson</a> on 11.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/amazon-softens-denials-ad-supported-video/295964/" class="share-count">76<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/digital/native-ad-spending-jump-marketer-reservations/295956/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/thinker_3x2.jpg?1416584749" width="322" height="215" alt="Native Ad Spending To Jump Despite Marketer Reservations" title="Native Ad Spending To Jump Despite Marketer Reservations" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/digital/native-ad-spending-jump-marketer-reservations/295956/">Native Ad Spending To Jump Despite Marketer Reservations</a></h3>
-				<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/digital/native-ad-spending-jump-marketer-reservations/295956/" class="share-count">680<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/aereo-ends-fight-change-tv-ecosystem/295958/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/aereo_at_supreme_court_Andrew_Harrer_Bloomberg_2.jpg?1 8201376" width="322" height="215" alt="Aereo Ends Its Fight to Change TV Ecosystem" title="Aereo Ends Its Fight to Change TV Ecosystem" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/aereo-ends-fight-change-tv-ecosystem/295958/">Aereo Ends Its Fight to Change TV Ecosystem</a></h3>
-				<p>By <a href="http://adage.com/author/jeanine-poggi/4700">Jeanine Poggi</a> on 11.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/aereo-ends-fight-change-tv-ecosystem/295958/" class="share-count">83<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/walmart-s-checkout-promise-open-lanes-holiday/295944/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/walmart_checkoutpromise_ispot_3x2.jpg?1416513015" width="322" height="214" alt="Walmart's 'Checkout Promise': More Open Lanes This Holiday" title="Walmart's 'Checkout Promise': More Open Lanes This Holiday" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/walmart-s-checkout-promise-open-lanes-holiday/295944/">Walmart's 'Checkout Promise': More Open Lanes This Holiday</a></h3>
-				<p> on 11.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/walmart-s-checkout-promise-open-lanes-holiday/295944/" class="share-count">77<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/google-publishers-make-money-blocking-ads/295950/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/google_contributor_cropped.jpg?1416514818" width="322" height="215" alt="Google to Help Publishers Make Money by Blocking Ads" title="Google to Help Publishers Make Money by Blocking Ads" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/google-publishers-make-money-blocking-ads/295950/">Google to Help Publishers Make Money by Blocking Ads</a></h3>
-				<p>By <a href="http://adage.com/author/tim-peterson/5101">Tim Peterson</a> on 11.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/google-publishers-make-money-blocking-ads/295950/" class="share-count">736<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/media/google-publishers-make-money-blocking-ads/295950/#comments"><i class="icon icon-comment"></i>1</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/washington-post-built-ad-server-amazon-tablet-app/295946/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Sprint_WaPo_ad_3x2.jpg?1416502668" width="322" height="215" alt="Why Washington Post Built Its Own Ad Server for Amazon Tablet App" title="Why Washington Post Built Its Own Ad Server for Amazon Tablet App" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/washington-post-built-ad-server-amazon-tablet-app/295946/">Why Washington Post Built Its Own Ad Server for Amazon Tablet App</a></h3>
-				<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> on 11.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/washington-post-built-ad-server-amazon-tablet-app/295946/" class="share-count">166<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/media/youtube-music-awards-return-ditch-awards-show-format/295943/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/YTMA_TumblrAd.png?138359 15" width="322" height="214" alt="YouTube Music Awards to Return, but Ditch the Awards-Show Format" title="YouTube Music Awards to Return, but Ditch the Awards-Show Format" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/media/youtube-music-awards-return-ditch-awards-show-format/295943/">YouTube Music Awards to Return, but Ditch the Awards-Show Format</a></h3>
-				<p>By <a href="http://adage.com/author/tim-peterson/5101">Tim Peterson</a> on 11.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/media/youtube-music-awards-return-ditch-awards-show-format/295943/" class="share-count">76<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/special-report-tv-upfront/facebook-year-s-newfronts/295933/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/zuckerberg_bloomberg_3x2.jpg?1 4728459" width="322" height="215" alt="Facebook Won't Be at Next Year's NewFronts, But Here's Who Will Be" title="Facebook Won't Be at Next Year's NewFronts, But Here's Who Will Be" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/special-report-tv-upfront/facebook-year-s-newfronts/295933/">Facebook Won't Be at Next Year's NewFronts, But Here's Who Will Be</a></h3>
-				<p>By <a href="http://adage.com/author/tim-peterson/5101">Tim Peterson</a> on 11.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/special-report-tv-upfront/facebook-year-s-newfronts/295933/" class="share-count">167<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/special-report-super-bowl/volkswagen-sits-super-bowl-time-years-auto-bowl-fades/295932/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/1212-p12-volkswagen-the-force.jpg?1323377181" width="322" height="181" alt="Volkswagen Sits Out Super Bowl for First Time in Five Years as Auto Bowl Fades" title="Volkswagen Sits Out Super Bowl for First Time in Five Years as Auto Bowl Fades" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/special-report-super-bowl/volkswagen-sits-super-bowl-time-years-auto-bowl-fades/295932/">Volkswagen Sits Out Super Bowl for First Time in Five Years as Auto Bowl Fades</a></h3>
-				<p>By <a href="http://adage.com/author/jeanine-poggi/4700">Jeanine Poggi</a> on 11.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/special-report-super-bowl/volkswagen-sits-super-bowl-time-years-auto-bowl-fades/295932/" class="share-count">144<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-			
-	</div><!-- / .container.listing -->
-
-		        <div class="container">
-		                <div class="pages"><ul><li class="page"></li><li record_start="0" page_start="0" class="currentpage"><a href="/channel/media/1" title="Page 1">1</a></li><li record_start="0" page_start="25"><a href="/channel/media/1?start=25" title="Page 2">2</a></li><li record_start="0" page_start="50"><a href="/channel/media/1?start=50" title="Page 3">3</a></li><li record_start="0" page_start="75"><a href="/channel/media/1?start=75" title="Page 4">4</a></li><li record_start="0" page_start="100"><a href="/channel/media/1?start=100" title="Page 5">5</a></li><li record_start="0" page_start="125"><a href="/channel/media/1?start=125" title="Page 6">6</a></li><li class="next-right"><a href="/channel/media/1?start=150"> 8250 </a></li></ul></div>		        </div>
-</div><!-- / .page-listing -->
-
-</div>
-
-<div class="oaswrapper para">
-<div id="oas">
-
-<div class="advert banner banner-bottom">
-        <div class="container">
-			<div class="ad">
-	            <script type="text/javascript" language="JavaScript">
-	                    OAS_AD('Bottom') 
-	            </script>
-	            <span>Advertisement</span>
-			</div>
-        </div>
-</div>
-
-</div></div>
-
-
-
-<!-- sction specific newsletter signup -->
-
-
-
-<script type="text/javascript" language="Javascript">
-
-function nice_newsletter(f) {
-
-	// FUNCTION VARIABLES
-	var error = 0 
-
-	// CLEAR PREVIOUS SUBMISSION ERRORS
-	clearErrors() 
-	// FORM HARVESTING
-	var email = f.nl_email.value 
-
-	// VALIDATION
-	if(!isEmail(email.trim())) {
-		document.getElementById('signup_error').innerHTML = '* Please enter a valid email address.' 
-		error = 1 
-	}	
-	if(error == 1) {
-		return false 
-	}
-	try {
-		_gaq.push(['_trackEvent', 'Modules', 'Ad Age Media Buzz Newsletter Widget', '/channel/media/1'])  
-	} catch(err){}
-
-	// ALL GOOD SHOW THANK YOU 
-	//showThankYou() 
-
-	setTimeout(function() {
-		console.log('tracking foobar') 
-        f.submit() 
-	}, 1000) 
-
-	// SUBMIT POST FORM
-	return false 
-}
-
-function clearErrors() {
-	document.getElementById('signup_error').innerHTML = '' 
-}
-
-function showThankYou() {
-	document.getElementById('nl_email').style.visibility = 'hidden' 
-	document.getElementById('nl_email').style.display = 'none' 
-	document.getElementById('msg').innerHTML = 'Thank you for signing up.' 
-}
-
-</script>
-
-<div class="oaswrapper mod">
-<div id="oas">
-
-<!-- Specific page version -->
-<section class="feature-colored newsletter">
-	<div class="container">
-		<header>
-			<strong>Ad Age Media Buzz newsletter</strong>
-		</header>
-
-		<p>Get highlights of the most important daily news delivered to your e-mail inbox. <a href="/help/emailprefs">View all Newsletters</a></p>	
-
-<form name="newsletter_signup_form" action="/actions/newsletter_registration.php" method="POST" onsubmit="return nice_newsletter(this) ">
-<input type="hidden" value="/channel/media/1" name="return_url" />
-<input type="hidden" value="4" name="newsletter" />
-		<div class="form-row">
-
-				<input id="nl_email" name="email" type="text" value="Enter your email" onfocus="if(this.value == 'Enter your email') { this.value = ''  }" />
-		
-
-		<button type="submit" class="btn">Subscribe <i class="icon-cta-grey"></i></button>
-
-		</div>
-</form>
-
-<p id="signup_error"></p>
-
-	</div><!-- / .container -->
-</section><!-- /Specific page version -->
-
-</div>
-</div>
-
-
-
-<div class="oaswrapper grey">
-<div id="oas">
-
-
-<section class="module-caps subscribe">
-	<div class="container border-top">
-		<header>
-			<strong>Become a Member</strong>
-		</header>
-		<ul class="inline">
-			<li><a href="/register">Register Now</a></li>
-			<li><a href="https://sec.crain.com/AA/Login.aspx?ReturnUrl=%2fAA%2fCustomers%2fSiteSubscriptions.aspx" onclick="trackCrossDomainClick(this, 'Become a member footer', 'Desktop', 'renew')  return false ">Renew</a></li>
-			<li><a href="/help/subscribe">Membership Benefits</a></li>
-			<li><a href="/datacenter">DataCenter</a></li>
-			<li><a href="/trend-reports">Research Reports Library</a></li>
-		</ul>
-		
-		<img src="http://adage.com/assets/images/footer-subscribe-devices-white.png" alt="" class="align-center">
-
-	</div><!-- / .container -->
-</section><!-- / .module-caps.subscribe -->
-
-</div></div>
-<!-- START SiteCatalyst -->
-<script type="text/javascript">
-var s_account="crainadage" 
-var s_loggedInCookie = "id" 
-</script>
-<script language="JavaScript" type="text/javascript" src="http://crain-global.s3.amazonaws.com/s_crainsc.js"></script>
-<script language="JavaScript" type="text/javascript"><!--
-/* You may give each page an identifying name, server, and channel on
-the next lines. */
-s_crainsc.pageName = "/channel/media/1" 
-s_crainsc.channel = "adage_news" 
-s_crainsc.prop1 = s_crainsc.eVar1 = "media" 
-s_crainsc.prop2 = s_crainsc.eVar2 = "media" 
-s_crainsc.prop5 = s_crainsc.prop6 = "adage_news:media" 
-s_crainsc.prop25 = s_crainsc.eVar27 = "media" 
-
-/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-var s_code=s_crainsc.t() if(s_code)document.write(s_code)//--></script>
-<script language="JavaScript" type="text/javascript"><!--
-if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="//crain.d1.sc.omtrdc.net/b/ss/crainadage/1/H.24.1--NS/0"
-height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-<!-- END SiteCatalyst -->
-
-
-
-<footer id="page-footer" role="contentinfo">
-	<div class="container">
-		<p class="logo">
-			<a href="/">Advertising Age</a>
-		</p>
-		
-		<p class="strap">What's news <br /> to what's next</p>
-
-		<ul class="social">
-			<li>
-				<a href="http://www.facebook.com/AdAge" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'Facebook', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-facebook">Facebook</span>
-				</a>
-			</li>
-			<li>
-				<a href="http://twitter.com/adage" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'Twitter', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-twitter">Twitter</span>
-				</a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/groups?mostPopular=&gid=2754444" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'LinkedIn', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-linkedin">LinkedIn</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://plus.google.com/101792368055128831913/?prsrc=3" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'Google Plus', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-gplus">Google+</span>
-				</a>
-			</li>
-		</ul><!-- / .social -->
-
-		<hr />
-
-		<nav id="nav-footer">
-
-			<ul>
-				<li><small>Copyright &copy  1994-2014</small></li>
-				<li><a href="http://www.crain.com/">Crain Communications</a></li><li><a href="/privacy">Privacy Statement</a></li><li><a href="/terms/">Terms of Use</a></li><li><a href="/help/about-us">About Us</a></li><li><a href="/help/advertise">Advertise</a></li><li><a href="/help/reprints">Reprints</a></li><li><a href="/help/contact-us">Contact Us</a></li>
-			</ul>
-
-		</nav><!-- / #nav-footer -->
-	</div><!-- / .container -->
-</footer><!-- / #page-footer -->
-
-
-<aside id="sub-footer">
-	<div class="container">
-		<nav id="nav-subfooter">
-			<ul>
-					
-
-	<li class="nav-item-AD AGE"><a href="http://adage.com"><span>AD AGE</span></a></li>
-	
-
-	<li class="nav-item-Creativity"><a href="http://creativity-online.com"><span>Creativity</span></a></li>
-	
-
-	<li class="nav-item-LookBook"><a href="http://lookbook.adage.com"><span>LookBook</span></a></li>
-	
-
-	<li class="nav-item-Datacenter"><a href="http://adage.com/datacenter/"><span>Datacenter</span></a></li>
-	
-
-	<li class="nav-item-Resources"><a href="http://adage.com/resources"><span>Resources</span></a></li>
-	
-
-	<li class="nav-item-Events"><a href="http://adage.com/events"><span>Events</span></a></li>
-	
-
-	<li class="nav-item-Jobs"><a href="http://jobs.adagetalentworks.com/"><span>Jobs</span></a></li>
-	
-
-	<li class="nav-item-On Campus"><a href="http://adage.com/adage-on-campus/"><span>On Campus</span></a></li>
-	
-			</ul>
-		</nav>
-		<p class="credits">Site by <a href="http://area17.com">AREA 17</a></p>
-	
-	</div>
-</aside><!-- / #sub-footer -->
-
-<!-- Total time: 0.0762300491333 -->
-
-	<script type='text/javascript'>
-		OAS_AD('x90') 
-	</script>
-
-<!-- floating nav -->
-
-
-	<div class="shortcut-bar" data-100="top: -80px " data-150="top:0 " data-behavior="shortcut_bar">
-	<div class="container" data-section-id="889">
-		<p class="logo">
-			<a href="/" onclick="trackOutboundLink(this, 'Logo-shortcutbar-Link', 'Homepage', '/')  return false ">Advertising Age</a>
-		</p>
-
-		<nav id="nav-shortcut">
-			<ul class="bar-dropdown">
-				<li id="sections" class="dropdown">
-					<a href="#"><span>Sections</span> <i class="caret"></i></a>
-					<ul>
-
-						<li>
-	<a href="/channel/marketing/28" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Marketing', this.getAttribute('href'))  return false "><span>Marketing</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/advertising/47" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Advertising', this.getAttribute('href'))  return false "><span>Advertising</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/digital/20" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Digital', this.getAttribute('href'))  return false "><span>Digital</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/media/1" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Media', this.getAttribute('href'))  return false "><span>Media</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/agency-news/19" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Agency', this.getAttribute('href'))  return false "><span>Agency</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/dataworks/42" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Data', this.getAttribute('href'))  return false "><span>Data</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/section/btob/976" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'BtoB', this.getAttribute('href'))  return false "><span>BtoB</span></a>
-</li>
-
-					</ul>
-				</li>
-			</ul>
-
-			<ul class="mega" data-behavior="mega_menu">
-				<li><a href="#latest"><span>Latest</span> <i class="caret"></i></a></li>
-				<li><a href="#editorpicks"><span>Editor's Picks</span> <i class="caret"></i></a></li>
-				<li><a href="#mostpopular"><span>Most Popular</span> <i class="caret"></i></a></li>
-			</ul>
-		</nav><!-- / #nav-shortcut -->
-
-		
-<span id="floating-nav-login"></span>
-
-
-<script>//ajax login info so not cached
-$(function() {
-var login = $.ajax({ type: 'GET', cache: false, url: '/includes/floating-nav-login.php', data: {id: 'login-nav'}, 
-    success: function(data) {
-       $('#floating-nav-login').html(data) 
-       //alert(data) 
-		var $nav = $('#nav-shortcut'),
-			navLeft = $nav.offset().left 
-			
-			if ($('.tools').length > 0) {
-				navRight = $('.tools').offset().left 
-			
-			}
-			else {
-				$floaty_nav_container_width = $(".shortcut-bar .container").innerWidth() 
-				$logo_width = $(".shortcut-bar" .logo).outerWidth() 
-				navRight = $floaty_nav_container_width - $logo_width 
-			}
-			$nav.width((navRight - navLeft) - 15) 
-    }
-})
-.error(function() {
-    console.log('There was an error making the AJAX request') 
-}) 
-}) 
-</script>
-
-
-
-	</div><!-- / .container -->
-
-	<div id="latest" class="mega-menu">
-		<div class="container">
-			<ul class="viewport fade">
-
-			                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'John Hegarty Starts The Garage, Incubator in Search of Future Stars', 'http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/Garage128.jpg?1417012232" width="100" height="67" alt="John Hegarty Starts The Garage, Incubator in Search of Future Stars" title="John Hegarty Starts The Garage, Incubator in Search of Future Stars" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'John Hegarty Starts The Garage, Incubator in Search of Future Stars', 'http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/']) ">John Hegarty Starts The Garage, Incubator in Search of Future Stars</a></h4>
-						<p>By <a href="http://adage.com/author/emma-hall/5018">Emma Hall</a> - 23 hours ago</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'John Hegarty Starts The Garage, Incubator in Search of Future Stars', 'http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Kenzo Digital Joins Allday, Wax Opens in New York and More', 'http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/KenzoDigital_Alldayeveryday.jpg?1417001644" width="100" height="70" alt="Kenzo Digital Joins Allday, Wax Opens in New York and More" title="Kenzo Digital Joins Allday, Wax Opens in New York and More" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Kenzo Digital Joins Allday, Wax Opens in New York and More', 'http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/']) ">Kenzo Digital Joins Allday, Wax Opens in New York and More</a></h4>
-						<p>By <a href="http://adage.com/author/alexandra-jardine/518">Alexandra Jardine</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Kenzo Digital Joins Allday, Wax Opens in New York and More', 'http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)', 'http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/one_hour.JPG?1417030467" width="100" height="67" alt="Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)" title="Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)', 'http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/']) ">Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)</a></h4>
-						<p>Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)', 'http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/MailOnline_3x2.jpg?1417025920" width="100" height="67" alt="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" title="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">With Celebrity and Scandal, MailOnline's U.S. Revenue Double</a></h4>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times', 'http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/Statoil_ad_NYTmobile_3x2.jpg?14169 721" width="100" height="71" alt="Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times" title="Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times', 'http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/']) ">Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times</a></h4>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times', 'http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-
-			</ul><!-- / .viewport -->
-		</div><!-- / .container -->
-		<a href="#" class="close"><i class="icon-close-light"></i></a>
-	</div><!-- / #latest.mega-menu -->
-
-	<div id="editorpicks" class="mega-menu">
-		<div class="container">
-			<ul class="viewport fade">
-				
-			                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Century 21: Thanksblasting: Cranberry Sauce', 'http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/']) ">
-                            
-                            <div class="trim">
-                            <img src='http://assets.creativity-online.com/images/work/x-small/c/e/n/Century21_ThanksblastingCranberrySauce14.jpg' class=''>
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Century 21: Thanksblasting: Cranberry Sauce', 'http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/']) ">Century 21: Thanksblasting: Cranberry Sauce</a></h4>
-						<p>By <a href="http://adage.com/author/hoag-levins/222">Hoag Levins</a> - July 2003</p>
-
-                        <ul class="actions">
-                            
-                            <li><a href="http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Century 21: Thanksblasting: Cranberry Sauce', 'http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/MailOnline_3x2.jpg?1417025920" width="100" height="67" alt="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" title="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">With Celebrity and Scandal, MailOnline's U.S. Revenue Double</a></h4>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" class="share-count">121<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Richard Sherman Mocks NFL for Sponsorship Hypocrisy', 'http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/Richard_Sherman_Oberto_iSpot.png?1 9647645" width="100" height="67" alt="Richard Sherman Mocks NFL for Sponsorship Hypocrisy" title="Richard Sherman Mocks NFL for Sponsorship Hypocrisy" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Richard Sherman Mocks NFL for Sponsorship Hypocrisy', 'http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/']) ">Richard Sherman Mocks NFL for Sponsorship Hypocrisy</a></h4>
-						<p>By <a href="http://adage.com/author/ken-wheaton/442">Ken Wheaton</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" class="share-count">232<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Richard Sherman Mocks NFL for Sponsorship Hypocrisy', 'http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/']) "><i class="icon icon-comment"></i> 1</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/psvita3x2.png?1416951309" width="100" height="67" alt="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" title="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/']) ">FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising</a></h4>
-						<p>By <a href="http://adage.com/author/maureen-morrison/2441">Maureen Morrison</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" class="share-count">81<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Line Hopes Messaging Stickers Help It Take Off in U.S.', 'http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/LineThumb.jpg?1401697156" width="100" height="67" alt="Line Hopes Messaging Stickers Help It Take Off in U.S." title="Line Hopes Messaging Stickers Help It Take Off in U.S." />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Line Hopes Messaging Stickers Help It Take Off in U.S.', 'http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/']) ">Line Hopes Messaging Stickers Help It Take Off in U.S.</a></h4>
-						<p>By <a href="http://adage.com/author/angela-doland/4769">Angela Doland</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" class="share-count">53<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Line Hopes Messaging Stickers Help It Take Off in U.S.', 'http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-
-			</ul><!-- / .viewport -->
-		</div><!-- / .container -->
-		<a href="#" class="close"><i class="icon-close-light"></i></a>
-	</div><!-- / #editorpicks.mega-menu -->
-
-	<div id="mostpopular" class="mega-menu">
-		<div class="container">
-
-				<ul class="viewport fade">
-					
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Twitter CFO Mistakenly Tweets About Deal: \'I Have a Plan\'', 'http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/twitter_logos.jpg?1416926297" width="100" height="67" alt="Twitter CFO Mistakenly Tweets About Deal: 'I Have a Plan'" title="Twitter CFO Mistakenly Tweets About Deal: 'I Have a Plan'" /></a>
-                        <h4><a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Twitter CFO Mistakenly Tweets About Deal: \'I Have a Plan\'', 'http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/']) ">Twitter CFO Mistakenly Tweets About Deal: 'I Have a Plan'</a></h4>
-                        <p> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" class="share-count">254<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Twitter CFO Mistakenly Tweets About Deal: \'I Have a Plan\'', 'http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/']) "><i class="icon icon-comment"></i> 1</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'It\'s Time for Media CMOs to Step Up and Lead', 'http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/James_McQuivey_3x2.jpg?1416940104" width="100" height="67" alt="It's Time for Media CMOs to Step Up and Lead" title="It's Time for Media CMOs to Step Up and Lead" /></a>
-                        <h4><a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'It\'s Time for Media CMOs to Step Up and Lead', 'http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/']) ">It's Time for Media CMOs to Step Up and Lead</a></h4>
-                        <p>By <a href="http://adage.com/author/james-mcquivey/3815">James McQuivey</a> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" class="share-count">275<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'It\'s Time for Media CMOs to Step Up and Lead', 'http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', '\'All About That Baste\': A Million Ways to Go Viral With Holiday Themes This Week', 'http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/baste.JPG?1416943746" width="100" height="67" alt="'All About That Baste': A Million Ways to Go Viral With Holiday Themes This Week" title="'All About That Baste': A Million Ways to Go Viral With Holiday Themes This Week" /></a>
-                        <h4><a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', '\'All About That Baste\': A Million Ways to Go Viral With Holiday Themes This Week', 'http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/']) ">'All About That Baste': A Million Ways to Go Viral With Holiday Themes This Week</a></h4>
-                        <p> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" class="share-count">67<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', '\'All About That Baste\': A Million Ways to Go Viral With Holiday Themes This Week', 'http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/psvita3x2.png?1416951309" width="100" height="67" alt="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" title="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" /></a>
-                        <h4><a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/']) ">FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising</a></h4>
-                        <p>By <a href="http://adage.com/author/maureen-morrison/2441">Maureen Morrison</a> - Yesterday</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" class="share-count">81<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Santa Subs for Polar Bears in Coke\'s Holiday TV Ad', 'http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/cokesanta_makesomeonehappy_3x2.jpg?1416855401" width="100" height="67" alt="Santa Subs for Polar Bears in Coke's Holiday TV Ad" title="Santa Subs for Polar Bears in Coke's Holiday TV Ad" /></a>
-                        <h4><a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Santa Subs for Polar Bears in Coke\'s Holiday TV Ad', 'http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/']) ">Santa Subs for Polar Bears in Coke's Holiday TV Ad</a></h4>
-                        <p>By <a href="http://adage.com/author/ej-schultz/3799">E.J. Schultz</a> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" class="share-count">215<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Santa Subs for Polar Bears in Coke\'s Holiday TV Ad', 'http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-
-
-				</ul><!-- / .viewport -->
-			
-		</div><!-- / .container -->
-		<a href="#" class="close"><i class="icon-close-light"></i></a>
-	</div><!-- / #mostpopular.mega-menu -->
-</div><!-- / .shortcut-bar -->
-
-
-
-
-
-<!-- EOL -->
-
-<!-- Start Quantcast tag -->
-<script type="text/javascript">
-_qoptions={
-qacct:"p-fbFZFDIZ_p3uo"
-} 
-</script>
-<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<!-- 1st Section Ends : Delivery via OAS JX Tag -->
+<!-- 2nd Section Begins : Delivery via OAS NX Tag for non-Javascript Browser -->
 <noscript>
-<img src="http://pixel.quantserve.com/pixel/p-fbFZFDIZ_p3uo.gif" style="display: none " border="0" height="1" width="1" alt="Quantcast"/>
+<a href='http://oasc08011.247realmedia.com/RealMedia/ads/click_nx.ads/www.broadcastingcable.com/@x01'><img src='http://oasc08011.247realmedia.com/RealMedia/ads/adstream_nx.ads/www.broadcastingcable.com/@x01'></a>
 </noscript>
-<!-- End Quantcast tag -->
+<!-- 2nd Section Ends : Delivery via OAS NX Tag -->
+<SCRIPT LANGUAGE=JavaScript1.1> 
+<!--  
+OAS_version = 11    
+if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))  
+OAS_version = 10  
+if (OAS_version >= 11) 
+document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>') //-->
+</SCRIPT>
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript> 
+<!--  
+ document.write('')   
+function OAS_AD(pos) {  
+if (OAS_version >= 11 && typeof(OAS_RICH)!='undefined')
+ OAS_RICH(pos)   
+else 
+ OAS_NORMAL(pos)   
+}  //--> 
+ </SCRIPT>  
+<!------ OAS SETUP end ------> 
+
+<!------ OAS AD 'Top' begin ------>  
+<div id="findRbAd">
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Top1')   
+//-->  
+</SCRIPT>  
+
+</div>
+<!------ OAS AD 'Top' end ------>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+			</div> <!-- /PAD -->
+		</div> <!-- /WRAPPER -->
+	</div>
+	<!--========================= /ROADBLOCK ===========================-->
+
+	<!--=========================== HEADER =============================-->
+	<section id="holder">
+		<header>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+			<div class="wrapper">
+				<div class="pad">
+					<div class="row clearfix">
+						<div class="main-logo">
+							<a href="/">
+								<img src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/logo.png" />
+								<span>The Business of Television | Broadcasting &amp  Cable</span>
+							</a>
+						</div>
+						<div class="leaderboard top">
+							  <div class="region region-header-add">
+    <div id="block-panels-mini-header-add" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-header_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-7" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Top' begin ------>  
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Top')   
+//-->  
+</SCRIPT>  
+<!------ OAS AD 'Top' end ------>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+						</div>
+						<div class="all-access">
+							<div class="inner">
+								<div class="img-holder">
+									<!--<img src="images/placeholders/all-acc-mag.jpg" />-->
+								</div>
+								<div class="overlay-holder">
+								<!--<a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&cds_mag_code=BCB&id=138 31359061&lsid=33121122 0019779&vid=1" class="all-access" target="_blank">-->
+									<!--<img src="/images/logo_allaccess.png">-->
+									<img src="/sites/all/themes/bnc_custom/images/key-overlay-new.png">
+								<!--</a>-->
+								</div>
+								<div class="drop-menu">
+								<ul>
+									<li><a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&cds_mag_code=BCB&id=138 31359061&lsid=33121122 0019779&vid=1" target="_blank">All Access Log In</a></li>
+									<li><a href="https://w1.buysub.com/loc/BCB/13LDI3TRM" target="_blank">Digital Subscription</a></li>
+									<li><a href="https://www.b2bmediaportal.com/nbmedia/subscribe.aspx?b=brc" target="_blank">Newsletters</a></li>
+									<li><a href="mailto:customerservice@nbmedia.com">Customer Service</a></li>
+									<li><a href="/current-issue" target="_blank">Current Issue</a></li>
+									<li><a href="/archive" target="_blank">Archive</a></li>
+								</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aa-tablet mobile-only clearfix">
+						<a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&cds_mag_code=BCB&id=138 31359061&lsid=33121122 0019779&vid=1">
+							<span class="key"></span>
+							<em>All Access & subscription Info</em>
+							<p>Sign up to get online access to the latest magazine content and more &raquo </p>
+						</a>
+					</div>
+				</div> <!--/ PAD -->
+				<nav>  <div class="region region-header-menu">
+    <div id="block-muchomenu-1" class="block-muchomenu clearfix">
+
+    
+  <div class="content">
+    <ul id="muchomenu-1" class="muchomenu-menu muchomenu-menu-horizontal"><li class="muchomenu-parent odd half-1 first"><span class="muchomenu-parent-title"><a href="/news" class="muchomenu-item muchomenu-item-1 first odd" target="" id="menu-news">News</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-1 "><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-nice-menus-2" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="nice-menu nice-menu-right nice-menu-menu-primary-link" id="nice-menu-2"><li class="menu-511 menuparent  menu-path-taxonomy-term-1 first odd "><a href="/news/local-tv" title="Local TV">Local TV</a><ul><li class="menu-1910 menu-path-taxonomy-term-3724 first odd last"><a href="/news/market-eye" title="">Market Eye</a></li>
+</ul></li>
+<li class="menu-1092 menu-path-taxonomy-term-58  even "><a href="/news/currency" title="">Currency</a></li>
+<li class="menu-512 menu-path-taxonomy-term-2  odd "><a href="/news/washington" title="Washington">Washington</a></li>
+<li class="menu-513 menu-path-taxonomy-term-3  even "><a href="/news/technology" title="Technology">Technology</a></li>
+<li class="menu-514 menu-path-taxonomy-term-4  odd "><a href="/news/programming" title="Programming">Programming</a></li>
+<li class="menu-515 menu-path-taxonomy-term-5  even "><a href="/news/syndication-and-distribution" title="Syndication and Distribution">Syndication and Distribution</a></li>
+<li class="menu-1655 menu-path-upfronts  odd "><a href="/Upfronts" title="">Upfront Central</a></li>
+<li class="menu-908 menu-path-news-fates-and-fortunes  even "><a href="/news/fates-and-fortunes" title="Fates and Fortunes">Fates and Fortunes</a></li>
+<li class="menu-960 menu-path-taxonomy-term-1667  odd "><a href="/news/ffrwd" title="FF / RWD">FF/RWD</a></li>
+<li class="menu-1014 menu-path-bc-beyond  even "><a href="/bc-beyond" title="BC Beyond">B&amp C Beyond</a></li>
+<li class="menu-1654 menu-path-taxonomy-term-1666  odd "><a href="/news/community-pages" title="">Community Pages</a></li>
+<li class="menu-1812 menu-path-ratingsintelcom-  even "><a href="http://www.ratingsintel.com/" title="">Ratings Intelligence</a></li>
+<li class="menu-1909 menu-path-events  odd last"><a href="/events" title="">B&amp C Events</a></li>
+</ul>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="right">
+	<div class="inner-pad">
+	  		<div class="right-top row clearfix">
+			
+<article>
+  <a href="/news/currency/dish-cbs-agree-new-extension/135946" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/105551_D0313b.jpg?itok=-jH0CNfU" width="190" height="146" alt="" /></a>      <span class="gold">Currency</span>
+    <a href="/news/currency/dish-cbs-agree-new-extension/135946">Dish, CBS Agree to New Extension</a>    <span class="meta">By <a href="/users/mfarrell">Michael Farrell</a></span> <span class="meta">Nov 25, 2014</span>
+</article>
+<article>
+  <a href="/news/programming/abc-news-lands-first-interview-darren-wilson/135934" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/george-stephanopoulos-abc-darren-wilson_0.jpg?itok=WFAM5GmT" width="190" height="146" alt="" /></a>      <span class="gold">Programming</span>
+    <a href="/news/programming/abc-news-lands-first-interview-darren-wilson/135934">ABC News Lands First Interview With Darren Wilson</a>    <span class="meta">By <a href="/users/tbaysinger">Tim Baysinger</a></span> <span class="meta">Nov 25, 2014</span>
+</article>
+<article>
+  <a href="/news/programming/nbc-tops-18-49-demo-november-sweep/135933" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Blacklist_0.JPG?itok=UUwG7gfZ" width="190" height="146" alt="" /></a>      <span class="gold">Programming</span>
+    <a href="/news/programming/nbc-tops-18-49-demo-november-sweep/135933">NBC Tops 18-49 Demo in November Sweep</a>    <span class="meta">By <a href="/users/dholloway">Daniel  Holloway</a></span> <span class="meta">Nov 25, 2014</span>
+</article>
+<article>
+  <a href="/news/programming/telepictures-developing-suze-orman-strip/135923" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Suze%20Orman%20%28Photo%20Credit-R.%20Trachtenberg%29.jpg?itok=d7IW4jES" width="190" height="146" alt="" /></a>      <span class="gold">Syndication and Distribution</span>
+    <a href="/news/programming/telepictures-developing-suze-orman-strip/135923">Telepictures Developing Suze Orman Strip</a>    <span class="meta">By <a href="/users/albiniakp">Paige Albiniak</a></span> <span class="meta">Nov 25, 2014</span>
+</article>		</div>
+	  	  		<div class="right-bot row clearfix">
+			<article>
+<br/>
+	<a href="/news/fates-and-fortunes/matthew-weiner-awarded-international-emmy/135918">Matthew Weiner Awarded International Emmy</a> 
+	<span class="meta">By Ariana Romero<br> Nov 25, 2014</span>
+</article><article>
+<br/>
+	<a href="/news/technology/epix-launches-tv-app-google-chromecast/135915">Epix Launches TV App on Google Chromecast</a> 
+	<span class="meta">By Michael Farrell<br> Nov 25, 2014</span>
+</article>		</div>
+	  	</div>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></li><li class="muchomenu-parent even half-1"><span class="muchomenu-parent-title"><a href="/blog" class="muchomenu-item muchomenu-item-2 even" target="" id="menu-blogs">Blogs</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-2 "><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-menu-menu-blog-menus" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/blog/bc-beat" title="BC Beat">BC Beat</a></li>
+<li class="leaf"><a href="/blog/bc-dc" title="BC DC">BC DC</a></li>
+<li class="leaf"><a href="/blog/station-station" title="Station to Station">Station to Station</a></li>
+<li class="leaf"><a href="/blog/bc-review" title="BC Review">BC Review</a></li>
+<li class="leaf"><a href="/blog/fates-and-fortunes" title="Fates and Fortunes">Fates and Fortunes</a></li>
+<li class="last leaf"><a href="/blog/currency" title="Currency">Currency</a></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="right">
+	<div class="inner-pad">
+	  		<div class="right-top row clearfix">
+			
+<article>
+        <span class="gold">BC Beat</span>
+    <a href="/blog/bc-beat/media-part-ferguson-story/135913">Media Part of Ferguson Story</a>    <span class="meta">By <a href="/users/staffc">B&amp C Staff</a></span> <span class="meta">Nov 25, 2014</span>
+</article>
+<article>
+  <a href="/blog/bc-dc/spectrum-possibilities/135808" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/JEggerton_BC_web.jpg?itok=OAyKAUou" width="190" height="146" alt="" /></a>      <span class="gold">BC DC</span>
+    <a href="/blog/bc-dc/spectrum-possibilities/135808">Spectrum of Possibilities</a>    <span class="meta">By <a href="/users/jeggerton">John Eggerton</a></span> <span class="meta">Nov 20, 2014</span>
+</article>
+<article>
+  <a href="/blog/station-station/pointergate-digital-revolution-erupts-after-kstp-report/135770" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/MMalone_BC_web.jpg?itok=xYQV-pvq" width="190" height="146" alt="" /></a>      <span class="gold">Station to Station</span>
+    <a href="/blog/station-station/pointergate-digital-revolution-erupts-after-kstp-report/135770">Pointergate:    Digital    Revolution Erupts After KSTP Report </a>    <span class="meta">By <a href="/users/malonem">Michael Malone</a></span> <span class="meta">Nov 19, 2014</span>
+</article>
+<article>
+  <a href="/blog/currency/big-media-companies-tv-ad-revenue-down-05/135475" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/Jon-Lafayette-3x4.jpg?itok=DremcNOw" width="190" height="146" alt="" /></a>      <span class="gold">Currency</span>
+    <a href="/blog/currency/big-media-companies-tv-ad-revenue-down-05/135475">Big Media Companies    TV Ad Revenue Down 0.5%</a>    <span class="meta">By <a href="/users/lafayettej">Jon Lafayette</a></span> <span class="meta">Nov 10, 2014</span>
+</article>		</div>
+	  	  		<div class="right-bot row clearfix">
+			<article>
+<br/>
+	<a href="/blog/bc-review/tv-review-nbc-s-state-affairs/135695">TV Review: NBC’s ‘State of Affairs   </a> 
+	<span class="meta">By B&C Review<br> Nov 17, 2014</span>
+</article><article>
+<br/>
+	<a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944">Fates Roundup, Nov. 25, 2014</a> 
+	<span class="meta">By Jonathan Kuperberg<br> Nov 25, 2014</span>
+</article>		</div>
+	  	</div>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></li><li class="muchomenu-parent odd half-1"><span class="muchomenu-parent-title"><a href="/events" class="muchomenu-item muchomenu-item-3 odd" target="" id="menu-events">Events</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-3 "><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-menu-menu-event-menu" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/events" title="B&amp C Events">B&amp C Events</a></li>
+<li class="leaf"><a href="http://bchalloffame.com/" title="B&amp C Hall of Fame">B&amp C Hall of Fame</a></li>
+<li class="leaf"><a href="http://nyctelevisionweek.com/" title="NYC Television Week">NYC Television Week</a></li>
+<li class="leaf"><a href="/webinars" title="Webinar">Webinars</a></li>
+<li class="last leaf"><a href="http://bcwomenofny.com/" title="">B&amp C Women of New York</a></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="right">
+	<div class="inner-pad">
+	  		<div class="right-top row clearfix">
+			
+<article>
+  <a href="http://nyctelevisionweek.com/advanced-advertising/" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/AA_190x146_1.jpg?itok=v3lgyhQK" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/advanced-advertising/" target="_blank">Advance Advertising</a>  </span> <span class="meta">Nov 13, 2014</span>
+</article>
+<article>
+  <a href="http://nyctelevisionweek.com/business-of-multiplatform-tV/" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Multiplatform_TV_190x146.jpg?itok=xbekToN1" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/business-of-multiplatform-tV/" target="_blank">Multiplatform</a>  </span> <span class="meta">Nov 12, 2014</span>
+</article>
+<article>
+  <a href="http://nyctelevisionweek.com/TheContentShow" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/TCS_190x146.jpg?itok=wMhJoR7Z" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/TheContentShow" target="_blank">The Content Show</a>  </span> <span class="meta">Nov 12, 2014</span>
+</article>
+<article>
+  <a href="http://nyctelevisionweek.com/next-tV-summit/" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Next_TV_190x146.jpg?itok=zHYVJz77" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/next-tV-summit/" target="_blank">Next TV</a>  </span> <span class="meta">Nov 12, 2014</span>
+</article>		</div>
+	  	  		<div class="right-bot row clearfix">
+					</div>
+	  	</div>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></li><li class="muchomenu-parent even half-1"><span class="muchomenu-parent-title"><a href="/slideshow" class="muchomenu-item muchomenu-item-4 even" target="" id="menu-people">People</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-4 "><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-menu-menu-people" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/slideshow" title="">Schmooze</a></li>
+<li class="leaf"><a href="/blog/fates-and-fortunes" title="Fates &amp  Fortunes ">Fates &amp  Fortunes </a></li>
+<li class="leaf"><a href="/news/fifth-estater" title="Fifth Estater">Fifth Estater</a></li>
+<li class="last leaf"><a href="/news/mels-diner" title="Mel   s Diner">Mel   s Diner</a></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="right">
+	<div class="inner-pad">
+	  		<div class="right-top row clearfix">
+			
+<article>
+  <a href="/content/schmooze-december-1-2014/135961" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/1104_05_Sherlock.jpg?itok=avR6vtdC" width="190" height="146" alt="" /></a>    <a href="/content/schmooze-december-1-2014/135961">Schmooze: December 1, 2014</a>  </span> <span class="meta">Nov 26, 2014</span>
+</article>
+<article>
+  <a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/263436_10200161900953481_80925097_n.jpg?itok=u7NkUYRY" width="190" height="146" alt="" /></a>      <span class="gold">Fates and Fortunes</span>
+    <a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944">Fates Roundup, Nov. 25, 2014</a>    <span class="meta">By <a href="/users/jkuperberg">Jonathan Kuperberg</a></span> <span class="meta">Nov 25, 2014</span>
+</article>
+<article>
+<span class="key"><img src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/images/icn-key.png" /></span>
+  <a href="/news/fifth-estater/shooting-and-scoring-big-turner-sports/135687" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/1103_FifthEstater_Daniels.jpg?itok=MXpL7A7q" width="190" height="146" alt="" /></a>      <span class="gold">Fifth Estater</span>
+    <a href="/news/fifth-estater/shooting-and-scoring-big-turner-sports/135687">Shooting and Scoring Big for Turner Sports</a>    <span class="meta">By <a href="/users/tbaysinger">Tim Baysinger</a></span> <span class="meta">Nov 17, 2014</span>
+</article>
+<article>
+<span class="key"><img src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/images/icn-key.png" /></span>
+  <a href="/news/mels-diner/mels-diner-you-ll-laugh-you-ll-cry/135295" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/1101_MelsDiner_Madden.jpg?itok=BUKjofvC" width="190" height="146" alt="" /></a>      <span class="gold">Mels Diner</span>
+    <a href="/news/mels-diner/mels-diner-you-ll-laugh-you-ll-cry/135295">Mel   s Diner: You’ll Laugh, You’ll Cry…</a>    <span class="meta">By <a href="/users/mgrego">Melissa Grego</a></span> <span class="meta">Nov 03, 2014</span>
+</article>		</div>
+	  	  		<div class="right-bot row clearfix">
+					</div>
+	  	</div>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></li><li class="muchomenu-parent odd half-2"><span class="muchomenu-parent-title"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" class="muchomenu-item muchomenu-item-5 odd" target="_blank" id="menu-tv-careers">TV Careers</a></span></li><li class="muchomenu-parent even half-2"><span class="muchomenu-parent-title"><a href="https://www.facebook.com/BroadcastingandCable" class="muchomenu-item muchomenu-item-6 even" target="_blank" id="menu-facebook">Facebook</a></span></li><li class="muchomenu-parent odd half-2"><span class="muchomenu-parent-title"><a href="https://twitter.com/bcbeat" class="muchomenu-item muchomenu-item-7 odd" target="_blank" id="menu-twitter">Twitter</a></span></li><li class="muchomenu-parent even half-2 last"><span class="muchomenu-parent-title"><a href="/" class="muchomenu-item muchomenu-item-9 even last" target="" id="menu-search">Search</a></span></li></ul>
+  </div>
+</div>
+  </div>
+</nav>	
+			</div> <!-- /WRAPPER -->
+		</header> <!-- HEADER -->
+		
+		<!-- /////// MOBILE HEADER /////// -->
+		<div class="mobile-header mobile-only">
+			<div class="wrapper">
+			<div class="pad clearfix">
+				<div class="main-logo">
+					<a href="/">
+						<span>The Business of Television | Broadcasting &amp  Cable</span>
+					</a>
+				</div>
+				<div class="mobile-toggle"></div>
+				<div class="mobile-menu">
+					  <div class="region region-mobile-header-menu">
+    <div id="block-panels-mini-mobile-header-menu" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-mobile_header_menu">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-menu-menu-footer-first-menu" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/news" title="News">News</a></li>
+<li class="leaf"><a href="/blog" title="Blogs">Blogs</a></li>
+<li class="leaf"><a href="/events" title="">B&amp C Events</a></li>
+<li class="leaf"><a href="/slideshow" title="">Schmooze</a></li>
+<li class="last leaf"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" title="">TV Careers</a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="mobile-leader">
+			<!--<a href="" class="mobile-only"><img src="/images/placeholders/ad_mobileleader.gif"></a>-->
+			<!--<a href="" class="full-size"><img src="/images/placeholders/ad_leaderboard.png"></a>-->
+			  <div class="region region-header-add">
+      <div class="region region-header-add">
+    <div id="block-panels-mini-header-add" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-header_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-7" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Top' begin ------>  
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Top')   
+//-->  
+</SCRIPT>  
+<!------ OAS AD 'Top' end ------>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+  </div>
+		</div>
+	<!--========================== /HEADER =============================-->
+	
+	<!--=========================== CONTAINER ==========================-->
+	<div id="hidden-search">
+	  <div class="region region-header-search">
+    <div id="block-apachesolr-panels-search-form" class="block-apachesolr-panels clearfix">
+
+    <h2 class="title">Search</h2>
+  
+  <div class="content">
+    <form action="/" method="post" id="apachesolr-panels-search-block" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-apachesolr-panels-search-form">
+  <label class="element-invisible" for="edit-apachesolr-panels-search-form">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-apachesolr-panels-search-form" name="apachesolr_panels_search_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<input type="hidden" name="form_build_id" value="form-0P23A-0NoJaPqY0zDGq4ZUSypeSAyb9kwhKVzNDgqkI" />
+<input type="hidden" name="form_id" value="apachesolr_panels_search_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div></div></form>  </div>
+</div>
+  </div>
+ 
+	</div>
+	
+	<div class="wrapper">
+          <div id="tabs-wrapper" class="clearfix">
+                                    </div>
+                    
+    <div class="clearfix">
+          </div>
+    <div class="clearfix">
+        <div class="region region-content">
+    <div id="block-system-main" class="block-system clearfix">
+
+    
+  <div class="content">
+    <div class="panel-2col-stacked panel-display pad" >
+  
+  <section class="left-rail clearfix">
+    <div class="inside"><div class="panel-pane pane-bnc-articles-home-lists" >
+  
+      
+  
+  <div class="pane-content">
+    
+<!--//// FEATURED ARTICLES /////-->
+<div class="fivecol">
+  <div class="featured-articles home-top">
+    <!--**** MAKE SURE TO CHANGE ADDTHIS:URL ****-->
+    <!--<div class="addthis_toolbox addthis_counter_style clearfix home">
+            <a href="#" class="comment-count"><span></span> Comments</a>
+    </div>-->
+
+    <div class="featured-slider">	
+      <div id="bc-featured">
+        <div class="slide">
+  <span class="gold"><a href="/news/programming">Programming</a></span>
+     <h1><a href="/news/programming/fox-s-red-band-society-halt-production-after-13-episodes/135975">Fox’s ’Red Band Society’ to Halt Production After 13 Episodes</a></h1>
+	<a href="/news/programming/fox-s-red-band-society-halt-production-after-13-episodes/135975"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/redband-fox.jpg?itok=rHJifUC1" width="450" height="345" alt="" /></a>  <div class="slide-data">
+    <p><time>Nov 27, 2014</time> - Fall finale for freshman series to air Dec. 3... <a href="/news/programming/fox-s-red-band-society-halt-production-after-13-episodes/135975">More</a>    </p>
+  </div>
+</div> <!-- /SLIDE --><div class="slide">
+  <span class="gold"><a href="/news/programming">Programming</a></span>
+     <h1><a href="/news/programming/judd-apatow-wayne-brady-drew-carey-john-mayer-among-late-late-show-guest-hosts/135966">Judd Apatow, Wayne Brady, Drew Carey, John Mayer Among ‘Late Late Show’ Guest Hosts</a></h1>
+	<a href="/news/programming/judd-apatow-wayne-brady-drew-carey-john-mayer-among-late-late-show-guest-hosts/135966"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/Drew%20Carey%20Craig%20Ferguson.jpg?itok=lcyGcXB8" width="450" height="345" alt="" /></a>  <div class="slide-data">
+    <p><time>Nov 26, 2014</time> - Others filling in on CBS program include Will Arnett, Sean Hayes, Jim Gaffigan... <a href="/news/programming/judd-apatow-wayne-brady-drew-carey-john-mayer-among-late-late-show-guest-hosts/135966">More</a>    </p>
+  </div>
+</div> <!-- /SLIDE --><div class="slide">
+  <span class="gold"><a href="/news/washington">Washington</a></span>
+     <h1><a href="/news/washington/att-fcc-we-arent-limiting-ftth-2-million-deal-pledge/135958">AT&amp T to FCC: We Aren   t Limiting FTTH to 2 Million Deal Pledge</a></h1>
+	<a href="/news/washington/att-fcc-we-arent-limiting-ftth-2-million-deal-pledge/135958"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/0502_Washington_FCCHeadQuarters_49.jpg?itok=WSeAUMK0" width="450" height="345" alt="" /></a>  <div class="slide-data">
+    <p><time>Nov 26, 2014</time> - Says it was always planning to complete announced GigaPower buildout to 25 metros... <a href="/news/washington/att-fcc-we-arent-limiting-ftth-2-million-deal-pledge/135958">More</a>    </p>
+  </div>
+</div> <!-- /SLIDE --><div class="slide">
+  <span class="gold"><a href="/news/technology">Technology</a></span>
+     <h1><a href="/news/currency/amazon-prime-subs-get-some-free-4k-fare/135952">Amazon Prime Subs To Get Some Free 4K Fare</a></h1>
+	<a href="/news/currency/amazon-prime-subs-get-some-free-4k-fare/135952"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/cash_6_0.jpg?itok=U-O6cGl4" width="450" height="345" alt="" /></a>  <div class="slide-data">
+    <p><time>Nov 26, 2014</time> - No charge for ultra HD titles in Prime Instant Video Library ... <a href="/news/currency/amazon-prime-subs-get-some-free-4k-fare/135952">More</a>    </p>
+  </div>
+</div> <!-- /SLIDE -->      </div>
+      <div class="anchor">
+        <nav class="clearfix">
+          <a class="feat-prev"></a>
+          <div class="feat-pager"></div>
+          <a class="feat-next"></a>
+        </nav>
+        <div class="caption"></div>
+      </div> <!-- / ANCHOR -->
+    </div> <!-- /FEATURED SLIDER -->
+  </div>
+</div> <!-- / FIVE COL -->
+
+
+<!--//// NEWS ANALYSIS ////-->
+<div class="threecol last">
+  <div class="news-analysis home-top">
+    <div class="inner-pad">
+      <!--<h2><span></span>News &amp  Analysis</h2>-->
+      <article>
+  <span class="gold"><a href="/news/washington">Washington</a></span>
+    <h3><a href="/news/washington/directv-exec-susan-eid-dies/135979">DirecTV Exec Susan Eid Dies</a></h3>
+  <p>Was Ex Top Legal Aide to Then-FCC Chairman Michael Powell </p>
+</article><article>
+  <span class="gold"><a href="/news/washington">Washington</a></span>
+    <h3><a href="/news/washington/fcc-dials-35000-fine-newport/135978">FCC Dials Up $35,000 Fine for Newport</a></h3>
+  <p>Former licensee of Salt Lake City TV admits to airing phone calls without permission, hampering investigation</p>
+</article><article>
+  <span class="gold"><a href="/news/washington">Washington</a></span>
+    <h3><a href="/news/washington/fccs-aws-3-auction-tops-38-billion/135977">FCC   s AWS-3 Auction Tops $38 Billion</a></h3>
+  <p>Takes a holiday after likely record-breaking run</p>
+</article><article>
+  <span class="gold"><a href="/news/washington">Washington</a></span>
+    <h3><a href="/news/washington/parties-push-expedited-briefing-contract-challenge/135964">Parties Push for Expedited Briefing on Contract Challenge</a></h3>
+  <p>Programmers, broadcasters support speeding briefing schedule, silent on oral argument</p>
+</article>	  <div class="see-all">
+		<a href="/more-news">More News &rarr </a>
+	  </div>
+    </div><!-- /INNER PAD -->
+  </div><!-- /BORDER -->
+</div> <!-- /THREE COL -->
+
+<div class="clearfix"></div>
+<hr class="double-line">  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-bcn-blog-home-list" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="row clearfix home-blogs gap">
+  <div class="red-tab">
+    <span>Blogs</span>
+    
+  </div>
+  <div class="clearfix"></div>
+  <div class="fourcol lhs">
+    <div style="width: 65px ">  
+      <a href="/users/jeggerton" class="thumb"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/author_thumbnail/public/author_image/JEggerton_BC_web.jpg?itok=knq2tswz"/></a>  </div>
+<span class="gold"><a href="/blog/bc-dc">BC DC</a></span>
+<h2><a href="/blog/bc-dc/spectrum-possibilities/135808">Spectrum of Possibilities</a></h2>
+	<a href="#" class="feat-thumb"><a class = "feat-thumb" href="/node/135808"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/blog_home/public/blog-images/0502_Washington_FCCHeadQuarters.jpg?itok=qHXIy1V6"/></a>
+<p>
+  <strong style="font-weight:bold ">Nov 20, 2014</strong> - AWS-3 success could raise estimates on value of broadcast real estate... <a href="" class="more"><a href="/blog/bc-dc/spectrum-possibilities/135808">More</a></a>
+</p>	  </div>
+  <div class="fourcol last rhs">
+		<div class="inner-pad">
+      <article>
+      <a href="/users/jkuperberg" class="thumb"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/author_thumbnail/public/author_image/263436_10200161900953481_80925097_n.jpg?itok=gqDQ0PvW"/></a>    
+  <div class="text-wrap">
+    <span class="gold"><a href="/blog/fates-and-fortunes">Fates and Fortunes</a></span>
+	    <h3><a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944">Fates Roundup, Nov. 25, 2014</a></h3>
+    <p>Cablevision ups Anselmo, KUSA Denver names Moreno news director and more</p>
+  </div>
+</article><article>
+      <a href="/users/staffc" class="thumb"><img src="/sites/all/modules/custom/bnc_features/bnc_blog/images/avatar.png" /></a>    
+  <div class="text-wrap">
+    <span class="gold"><a href="/blog/bc-beat">BC Beat</a></span>
+	    <h3><a href="/blog/bc-beat/media-part-ferguson-story/135913">Media Part of Ferguson Story</a></h3>
+    <p>President says there will be some ‘negative reaction,’ which will make for ‘good TV’</p>
+  </div>
+</article><article>
+      <a href="/users/aromero" class="thumb"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/author_thumbnail/public/author_image/ariana-romero-BC-web.jpg?itok=plLbL3lk"/></a>    
+  <div class="text-wrap">
+    <span class="gold"><a href="/blog/bc-beat">BC Beat</a></span>
+	    <h3><a href="/blog/bc-beat/where-be-what-watch-week-november-24-2014/135876">Where to Be, What to Watch: Week of November 24, 2014</a></h3>
+    <p>'The Mentalist' returns for its final season, 'The Making of Peter Pan Live' airs and more</p>
+  </div>
+</article>    </div>
+  </div>
+  <div class="see-all"><a href="/blog">More Blogs &rarr </a></div>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-content-add" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-content_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-1" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Middle' begin ------>  
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Middle')   
+//-->  
+</SCRIPT>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-featured-video" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="row featured-video">
+  <h2>Featured Video</h2>
+  <a href="/video" class="see-all">See All Videos &rarr </a>  <div class="video-wrap row clearfix">
+    <div class="left">
+      <div class="video-player">
+      <iframe src='http://abcnews.go.com/video/embed?id=27190183' width='340' height='191' scrolling='no' style='border:none '></iframe><br/><a href="http://abcnews.go.com/us">More ABC US news</a> | <a href="http://abcnews.go.com/international">ABC World News</a>      </div>
+    </div>
+    <div class="right">
+      <time class="gold">November 26, 2014</time>
+      <h4>ABC News' Interview With Darren Wilson</h4>
+      <p>Ferguson, Missouri&nbsp police officer Darren Wilson gives ABC News his first interview following a&nbsp grad&nbsp jury's decision not to indict him on any charges&nbsp for the fatal shooting of Michael Brown. Wilson tells&nbsp George Stephanopoulos&nbsp that Brown began the physical altercation and that Brown did not put his hands up at any point.</p>
+    </div>
+  </div>
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-bnc-webinar-block" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="row clearfix gap" style="position: relative ">
+  <div class="red-tab">
+    <span>TVBIZ Webinars</span>
+	<a href="/webinars">More Webinars &rarr </a>
+  </div>
+  <a class="webcast-next"></a>
+  <a class="webcast-prev"></a>
+  <div class="webcast-wrap">
+    <div id="webcasts">
+      <div class="slide">
+  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="https://event.webcasts.com/starthere.jsp?ei=1044993"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/NetCracker_Header.jpg?itok=LP4lQmCh" width="183" height="141" alt="" /></a></div>  <h4><a href="https://event.webcasts.com/starthere.jsp?ei=1044993">Everything You’ve Always Wanted to Know About Virtualization</a></h4>
+  <!--<p>Free Webinar <br>
+     at 
+  </p>
+  <p></p>-->
+</div>
+<div class="slide">
+  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.broadcastingcable.com/political-webinar-series-midterm-elections"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/Mid_Term_Elections_Header_1.jpg?itok=MFJ89OdK" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.broadcastingcable.com/political-webinar-series-midterm-elections">Political Webinar Series: Midterm Elections</a></h4>
+  <!--<p>Free Webinar <br>
+     at 
+  </p>
+  <p></p>-->
+</div>
+<div class="slide">
+  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/next-tv-finding-mcn-model/374370"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/NextTV_Header.jpg?itok=dmJQ1EJ_" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/next-tv-finding-mcn-model/374370">Next TV: Finding the MCN Model</a></h4>
+  <!--<p>Free Webinar <br>
+     at 
+  </p>
+  <p></p>-->
+</div>
+<div class="slide">
+  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/comcasttime-warner-what-does-it-mean-programmers/374593"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/Comcast_TWC_Header_0.jpg?itok=pJhMwyjW" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/comcasttime-warner-what-does-it-mean-programmers/374593">Comcast/Time Warner Cable:  What Does It Mean  for Programmers?</a></h4>
+  <!--<p>Free Webinar <br>
+     at 
+  </p>
+  <p></p>-->
+</div>
+<div class="slide">
+  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/autohopper-case/373533"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/Autohop%20Thumbnail.jpg?itok=UZ7s6U6P" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/autohopper-case/373533">The Autohop Case</a></h4>
+  <!--<p>Free Webinar <br>
+     at 
+  </p>
+  <p></p>-->
+</div>
+<div class="slide">
+  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/profiting-video-advertising-2014-digital-newfronts-and-beyond/321212"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/VideoAd_183x141.jpg?itok=tsNCnani" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/profiting-video-advertising-2014-digital-newfronts-and-beyond/321212">Profiting from Video Advertising: The 2014 Digital NewFronts and Beyond</a></h4>
+  <!--<p>Free Webinar <br>
+     at 
+  </p>
+  <p></p>-->
+</div>
+ 
+    </div>
+  </div>
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-thewire-scroller" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="wire clearfix row">
+	<a href="/the-wire"><span>PR Wire:</span></a>	<div class="marquee">
+		<div class="wire-prev"></div>
+		<div class="wire-next"></div>
+		<div class="wire-wrap">
+			<dl id="bc-wire">
+									<dd><a href="/thewire/421-crystal-vision-interface-boards-used-bbc-millbank-studio-upgrades/135976">421 Crystal Vision interface boards used in BBC Millbank Studio upgrades</a></dd>
+									<dd><a href="/thewire/first-uk-infocomm-cts-i-prep-3-day-course/135967">First UK InfoComm CTS-I Prep 3-Day Course</a></dd>
+									<dd><a href="/thewire/thomson-video-networks-coordinating-convince-consortium-address-carbon-footprint-ict-industry/135965">Thomson Video Networks Coordinating CONVINcE Consortium to Address Carbon Footprint of ICT Industry</a></dd>
+									<dd><a href="/thewire/meet-latest-greatest-vivien2015/135955">Meet The Latest &amp  Greatest - Vivien2015</a></dd>
+									<dd><a href="/thewire/infocomm-announces-education-line-ise-2015/135954">InfoComm Announces Education Line Up At ISE 2015</a></dd>
+									<dd><a href="/thewire/cbs-display-live-social-media-posts-during-broadcast-macy-s-day-parade/135953">CBS to Display Live Social Media Posts during Broadcast of Macy’s Day Parade</a></dd>
+									<dd><a href="/thewire/fusefx-expands-new-york-and-vancouver/135949">FuseFX Expands to New York and Vancouver</a></dd>
+									<dd><a href="/thewire/bbc-america-s-critically-acclaimed-original-series-orphan-black-adds-cast/135948">BBC America’s Critically Acclaimed Original Series ‘Orphan Black’ Adds to Cast</a></dd>
+									<dd><a href="/thewire/mun2-bring-tradition-thanksgiving-nfl-football-spanish-language-homes-across-america/135947">mun2 to Bring the Tradition of Thanksgiving NFL Football to Spanish-Language Homes Across America</a></dd>
+									<dd><a href="/thewire/video-news-app-watchup-launches-ott-apps-xbox-360-and-amazon-fire/135943">Video News App Watchup Launches OTT apps  Xbox 360 and Amazon Fire</a></dd>
+							</dl>
+		</div>
+	</div>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </section>
+  <section class="right-rail">
+    <div class="inside"><div class="panel-pane pane-panels-mini pane-righr-side-first-add" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-righr_side_first_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-2" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Position1' begin ------>  
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Position1')   
+//-->  
+</SCRIPT>  
+<!------ OAS AD 'Position1' end ------>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-bnc-newsletter-bnc-custom-newsletter" >
+  
+      
+  
+  <div class="pane-content">
+    <form action="/" method="post" id="newsletter-form" accept-charset="UTF-8"><div><div id="edit-start" class="form-item form-type-item">
+ <div class="red-tab clearfix"><span>Newsletters Signup</span></div>
+</div>
+<div class="widget-bd"><div id="edit-start-1" class="form-item form-type-item">
+ 
+</div>
+<div class="form-item form-type-textfield form-item-email-field">
+  <label for="edit-email-field"><h4>Sign Up For Our Newsletters</h4><span class="sub"> For More In Depth Information</span> </label>
+ <input type="text" id="edit-email-field" name="email_field" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Subscribe" class="form-submit" /></div><div id="edit-end-1" class="form-item form-type-item">
+ 
+</div>
+<input type="hidden" name="form_build_id" value="form-gMnbKJO_LH-Fet95fSlfG2xFVMVSDew6TJ60vl1Z-9w" />
+<input type="hidden" name="form_id" value="newsletter_form" />
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-current-issue-block" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="widget inside-current-issue">
+	<div class="red-tab">
+		<span><a href="/current-issue">Inside The Current Issue</a><div class="icn-key"></div></span>
+		<a href="/archive">Archive &rarr </a>
+	</div>
+        
+    <div class="widget-bd">
+        <div class="col-holder clearfix">
+            <div class="col-mag">
+                <a href="/current-issue"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/cover_story/public/bnc141103-MAG_0001_nolabel_0.jpg?itok=VvsnJF9y"></a>
+            </div>
+            <div class="col-list">
+                <div class="group">
+                    <article>
+<h4>
+<a href="/news/news-articles/view-top-partly-mostly-sunny-tv-forecasters/135657">View From the Top Partly to Mostly Sunny For TV Forecasters</a></h4>
+</article><article>
+<h4>
+<a href="/news/currency/tv-s-troubles-aired-out-during-earnings-calls/135677">TV’s Troubles Aired Out During Earnings Calls</a></h4>
+</article><article>
+<h4>
+<a href="/news/washington/president-s-new-deal/135676">The President’s New ‘Deal’</a></h4>
+</article>                </div>
+            </div>
+        </div>
+        <div class="see-all"><a href="/current-issue">More &rarr </a></div>
+    </div>
+</div>
+ <!-- /INSIDE-CURRENT-NEWS -->  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-bnc-disqus-comment" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="widget tabbed">
+  <div id="tab-container-1">
+		<ul id="tab-container-1-nav" class="clearfix tabbed-nav">
+		  <li class=""><a href="#tab1" class="">Talkback</a></li>
+		  <li class="last activeli"><a href="#tab2" class="active">Trending</a></li>
+		</ul>
+		<div class="tab" id="tab1">
+			  <div id="dsq-popthreads" class="dsq-widget">
+			  	<script type="text/javascript" src="http://disqus.com/forums/broadcastingandcable/recent_comments_widget.js?num_items=3&excerpt_length=100&avatar_size=32"></script>
+			  </div>
+			   <a href="/comments" class="view-all-link">View All &rarr </a>
+		</div>
+		<div class="tab" id="tab2" style="display: block ">
+	   <article>
+  <h4><a href="/news/tv-ratings/rizzoli-isles-ends-summer-season-high/63895">   Rizzoli &amp amp  Isles    Ends Summer on Season High</a></h4>
+</article><article>
+  <h4><a href="/news/programming/nbcu-networks-air-hurricane-sandy-telethon/64786">NBCU Networks to Air Hurricane Sandy Telethon</a></h4>
+</article><article>
+  <h4><a href="/news/news-articles/capus-gets-nod-nbc-news/108926">Capus Gets Nod at NBC News
+</a></h4>
+</article><article>
+  <h4><a href="/news/news-articles/time-warner-report-loss-2008/109693">Time Warner to Report Loss for 2008
+</a></h4>
+</article><article>
+  <h4><a href="/news/technology/cnni-tops-ems-european-audience-ranks-news/49268">CNNI Tops EMS European Audience Ranks for News</a></h4>
+</article>		</div>
+  </div>
+</div>
+<script type="text/javascript">
+var tabber1 = new Yetii({
+id: 'tab-container-1'
+}) 
+</script>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-right-side-second-add" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-right_side_second_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-3" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Position1' begin ------>  
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Position2')   
+//-->  
+</SCRIPT>  
+<!------ OAS AD 'Position1' end ------>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-4 pane-subscribe" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="widget subscribe">
+	<div class="red-tab"><span>Subscribe Now</span></div>
+	<div class="widget-bd">
+		<a href="https://w1.buysub.com/loc/BCB/13LDI3TRM" target="_blank"><img src="/sites/all/themes/bnc_custom/images/subscribe_now.jpg"></a>
+	</div>
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-right-side-third-add" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-right_side_third_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-5" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Position1' begin ------>  
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Position3')   
+//-->  
+</SCRIPT>  
+<!------ OAS AD 'Position1' end ------>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </section>
+  
+    
+  <section class="left-rail clearfix">
+    <div class="inside"></div>
+  </section>
+  <section class="right-rail no-pad">
+    <div class="inside"></div>
+  </section>
+  
+</div>
+<div class="clearfix"></div>
+  </div>
+</div>
+  </div>
+    </div>
+    <div class="clearfix">
+          </div>
+	</div>
+	<!--========================== /CONTAINER ==========================-->
+	
+	
+	<!--=========================== PEOPLE =============================-->
+	<div class="people row">
+		<div class="wrapper">
+		<div class="pad">
+			  <div class="region region-people">
+    <div id="block-panels-mini-schmooze" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-schmooze">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-bnc-slideshow-homepage" >
+  
+      
+  
+  <div class="pane-content">
+    <em>Schmooze</em>
+<a class="people-prev"></a>
+<a class="people-next"></a>
+<div id="bc-people">
+  <div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-december-1-2014/135961"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1104_05_Sherlock.jpg?itok=ZdzFxSVd" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-december-1-2014/135961">Schmooze: December 1, 2014</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-november-17-2014/135640"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1003_01_Hamm.jpg?itok=Z16UwaRI" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-november-17-2014/135640">Schmooze: November 17, 2014</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-november-10-2014/1354 "><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1101_01_Bafta.jpg?itok=3ff8xAsY" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-november-10-2014/1354 ">Schmooze: November 10, 2014</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-november-3-2014/135264"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1004_01_Supernatural.jpg?itok=VRprJCQ9" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-november-3-2014/135264">Schmooze: November 3, 2014</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/24th-annual-bc-hall-fame/135087"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/EK4_2735.jpg?itok=yk8jHh_3" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/24th-annual-bc-hall-fame/135087">24th Annual B&amp C Hall of Fame</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-october-20-2014/134921"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1003_01_Affair.jpg?itok=FfgMGEqB" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-october-20-2014/134921">Schmooze: October 20, 2014</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-october-13-2014/134745"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1002_02_Gracepoint.jpg?itok=JGltTdOy" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-october-13-2014/134745">Schmooze: October 13, 2014</a></h5>
+	<p></p>
+  </div>
+</div><div class="slide">
+  <a href="http://www.broadcastingcable.com/content/schmooze-hispanic-tv-summit-2014/134679"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1_5.jpg?itok=KbO_Xrg5" /></a>
+  <div class="p-caption">
+    <h5><a href="/content/schmooze-hispanic-tv-summit-2014/134679">Schmooze: Hispanic TV Summit 2014</a></h5>
+	<p></p>
+  </div>
+</div></div>
+<div class="see-all">
+	<a href="/slideshow">See All &rarr </a>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+	
+		</div> <!-- /PAD -->
+		</div> <!-- /WRAPPER -->
+	</div>
+	<!--========================== /PEOPLE =============================-->
+	
+	<!--========================== LEADEBOARD ==========================-->
+	<div class="leader-bottom row">
+		<div class="wrapper">
+			<div class="pad">
+				<div class="leaderboard bot">
+					  <div class="region region-bottom-add">
+    <div id="block-panels-mini-bottom-add" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-bottom_add">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-8" >
+  
+      
+  
+  <div class="pane-content">
+    <!------ OAS AD 'Bottom' begin ------>  
+<div class="lead_bottom">
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('Bottom')   
+//-->  
+</SCRIPT>
+</div>
+<!------ OAS AD 'Bottom' end ------>
+
+
+
+
+
+
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+				</div>
+			</div> <!-- /PAD -->
+		</div> <!-- /WRAPPER -->
+	</div>
+	<!--========================== /LEADEBOARD =========================-->
+	
+	<!--=========================== NETWORK ============================-->
+	<div class="network row">
+		<div class="wrapper">
+        <div class="region region-network">
+    <div id="block-panels-mini-footer-network" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_network">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-bnc-footer-feed" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="network row">
+  <div class="wrapper">
+    <div class="pad clearfix">
+			<div class="block">
+  <div class="inner-pad">
+    <a href="http://www.multichannel.com" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_multichannel.png"></a>
+    <article><a href="http://www.multichannel.com/news/technology/fs-south-benefiting-upgraded-studio-facility/385913" target="_blank">FS South Benefiting from Upgraded Studio Facility</a></article><article><a href="http://www.multichannel.com/news/fcc/directv-exec-susan-eid-dies/385912" target="_blank">DirecTV Exec Susan Eid Dies</a></article><article><a href="http://www.multichannel.com/blog/reynolds-rap/phyllis-tammy-and-finebaum-iron-bowl-igniters/385911" target="_blank">Phyllis, Tammy and Finebaum: Iron Bowl Igniters?</a></article>  </div>
+</div><div class="block">
+  <div class="inner-pad">
+    <a href="http://www.ratingsintel.com/" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_ratings.png"></a>
+    <article><a href="http://www.ratingsintel.com/pass-the-nfl-viewers-with-the-turkey-on-thanksgiving/" target="_blank">Pass The NFL Viewers, With The Turkey, On Thanksgiving</a></article><article><a href="http://www.ratingsintel.com/weeks-top-100-cable-networks-6/" target="_blank">The Week’s Top 100 Cable Networks: ESPN Sports Another #1 Ranking</a></article><article><a href="http://www.ratingsintel.com/the-top-100-cable-primetime-programs-2/" target="_blank">The Week’s Top 100 Primetime Programs: Football Reigns Supreme</a></article>  </div>
+</div><div class="block">
+  <div class="inner-pad">
+    <a href="http://www.tvtechnology.com" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_tvtech.png"></a>
+    <article><a href="http://www.tvtechnology.com/article/mcadams-on-our-clunky-tech/273495" target="_blank">McAdams On: Our Clunky Tech</a></article><article><a href="http://www.tvtechnology.com/article/advanced-systems-group-adds-ed-chen-to-sales-staff/273490" target="_blank">Advanced Systems Group Adds Ed Chen To Sales Staff</a></article><article><a href="http://www.tvtechnology.com/article/hpa-demo-room-early-deadline-extended/273489" target="_blank">HPA Demo Room Early Deadline Extended</a></article>  </div>
+</div><div class="block">
+  <div class="inner-pad">
+    <a href="http://www.c2meworld.com" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_c2meworld.png"></a>
+    <article><a href="http://www.c2meworld.com/creation/levitated-mass-director-doug-pray-talks-art-celebrity-economics-and-a-big-rock/" target="_blank">‘Levitated Mass’ Director Doug Pray Talks Art, Celebrity, Economics, and a Big Rock</a></article><article><a href="http://www.c2meworld.com/distributiondelivery/telepresence-helps-displaced-workers-learn-new-skills-in-upper-midwest/" target="_blank">Telepresence Helps Displaced Workers Learn New Skills In Upper Midwest</a></article><article><a href="http://www.c2meworld.com/commerce/sales-the-magic-of-new-media/" target="_blank">(Sales) The Magic Of New Media</a></article>  </div>
+</div>		</div>
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+		</div> <!-- /WRAPPER -->
+	</div>
+
+	<!--=========================== /NETWORK ===========================-->
+	<div class="push"></div>
+	</section> <!-- HOLDER -->
+	
+	<!--============================ FOOTER ============================-->
+	<footer class="full-size">
+		<div class="wrapper">
+      <div class="pad clearfix">
+        <div class="col col-1"><nav>  <div class="region region-footer-menu-1">
+    <div id="block-menu-menu-footer-first-menu" class="block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/news" title="News">News</a></li>
+<li class="leaf"><a href="/blog" title="Blogs">Blogs</a></li>
+<li class="leaf"><a href="/events" title="">B&amp C Events</a></li>
+<li class="leaf"><a href="/slideshow" title="">Schmooze</a></li>
+<li class="last leaf"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" title="">TV Careers</a></li>
+</ul>  </div>
+</div>
+  </div>
+</nav></div>
+        <div class="col col-2">  <div class="region region-footer-menu-2">
+    <div id="block-menu-menu-footer-second-menu" class="block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="https://w1.buysub.com/loc/BCB/13LDI3TRM" title="Subscribe">Subscribe</a></li>
+<li class="leaf"><a href="https://www.b2bmediaportal.com/nbmedia/subscribe.aspx?b=brc" title="Newsletter">Newsletter Signup</a></li>
+<li class="last leaf"><a href="/rss.xml" title="RSS">RSS Feed</a></li>
+</ul>  </div>
+</div>
+<div id="block-menu-menu-footer-fifth-menu" class="block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&amp cds_mag_code=BCB&amp id=1385404833004&amp lsid=33291228017049236&amp vid=5" title="">All Access Login</a></li>
+<li class="leaf"><a href="/archive" title="">Archive</a></li>
+<li class="last leaf"><a href="/current-issue" title="">Current Issue</a></li>
+</ul>  </div>
+</div>
+  </div>
+</div>
+        <div class="col col-3">  <div class="region region-footer-menu-3">
+    <div id="block-menu-menu-footer-third-menu" class="block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.newbaymedia.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li>
+<li class="leaf"><a href="http://www.newbaymedia.com/terms-and-conditions/" title="Terms of Use">Terms of Use</a></li>
+<li class="last leaf"><a href="/sitemap" title="Site Map">Site Map</a></li>
+</ul>  </div>
+</div>
+  </div>
+</div>
+        <div class="col col-4">  <div class="region region-footer-menu-4">
+    <div id="block-menu-menu-footer-fourth-menu" class="block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.newbaymedia.com/who-we-are/" title="About Us">About Us</a></li>
+<li class="leaf"><a href="/contact-us" title="">Contact Us</a></li>
+<li class="leaf"><a href="/advertising-info" title="">Advertise</a></li>
+<li class="last leaf"><a href="http://www.broadcastingcable.com/sites/default/files/public/pdf/BC_EditCal_2014_Oct30.pdf" title="Editorial Calendar">Editorial Calendar</a></li>
+</ul>  </div>
+</div>
+  </div>
+</div>
+        <div class="col col-5">  <div class="region region-footer-menu-5">
+    <div id="block-panels-mini-social-links-bottom" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-social_links_bottom">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-9" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="socials">
+	<li class="fb-link"><a href="https://www.facebook.com/BroadcastingandCable" target="_blank"><span>Facebook</span></a></li>
+	<li class="twtr-link"><a href="https://twitter.com/bcbeat" target="_blank"><span>Twitter</span></a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+        <div class="bottom row clearfix">  <div class="region region-footer">
+    <div id="block-panels-mini-footer-text" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_text">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-10" >
+  
+      
+  
+  <div class="pane-content">
+    <a class="bc" href="#"><img src="http://www.broadcastingcable.com//sites/default/files/public/logo_bc_fff.png"></a>
+<p class="credits">Copyright &copy  2014 by <a href="http://www.newbaymedia.com/" style="color:#fff ">NewBay Media</a>, LLC. All Rights Reserved.	<span class="break">28 East 28th Street, 12th floor, New York, NY 10016 T (212) 378-0400 F (212) 378-0470</span></p>
+<a class="newbay" href="http://newbaymedia.com"><img src="http://www.broadcastingcable.com//sites/default/files/public/logo_newbay.png"></a>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+      </div> <!-- /PAD -->
+		</div> <!-- /WRAPPER -->
+	</footer> <!-- FOOTER -->
+	
+	<!--///// MOBILE FOOTER /////-->
+	<footer class="mobile-only">
+		<div class="wrapper">
+		<div class="pad clearfix">
+			<img src="/sites/all/themes/bnc_custom/images/logo_bc_fff.png" class="bclogo2">
+			<div class="footer-nav">
+				  <div class="region region-mobile-footer-menu">
+    <div id="block-panels-mini-mobile-footer-menu" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-mobile_footer_menu">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-menu-menu-footer-first-menu" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/news" title="News">News</a></li>
+<li class="leaf"><a href="/blog" title="Blogs">Blogs</a></li>
+<li class="leaf"><a href="/events" title="">B&amp C Events</a></li>
+<li class="leaf"><a href="/slideshow" title="">Schmooze</a></li>
+<li class="last leaf"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" title="">TV Careers</a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+			</div>
+		
+			<!--<ul class="network-bot">
+				<li><a href="http://www.multichannel.com/"><img src="/sites/all/themes/bnc_custom/images/logo_ft_multichannel.png"></a></li>
+				<li><a href="http://www.tvtechnology.com/index"><img src="/sites/all/themes/bnc_custom/images/logo_ft_tvtech.png"></a></li>
+				<li><a href="http://www.twice.com/"><img src="/sites/all/themes/bnc_custom/images/logo_ft_twice.png"></a></li>
+				<li><a href="http://c2meworld.com/"><img src="/sites/all/themes/bnc_custom/images/logo_ft_c2meWorld.png"></a></li>
+			</ul>-->
+			  <div class="region region-mobile-footer-network">
+    <div id="block-panels-mini-footer-network-mobile" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_network_mobile">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-bnc-mobile-footer-feed" >
+  
+      
+  
+  <div class="pane-content">
+    <p class="credits" style="color:#fff">Other NewBay Media Brands</strong></p>
+<ul class="network-bot">
+  <!--    <li></li>
+   -->
+ <li><a target="_blank" href="http://www.multichannel.com">Multichannel.com</a></li>
+      <li><a target="_blank" href="http://www.twice.com">Twice.com</a></li>
+      <li><a target="_blank" href="http://www.tvtechnology.com">TV Technology</a></li>
+      <li><a target="_blank" href="http://www.c2meworld.com">C2meword.com</a></li>
+  </ul>
+ <p><a href="http://www.newbaymedia.com/brands/"><strong>MORE</strong></a></p>   </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+			  <div class="region region-mobile-footer-text">
+    <div id="block-panels-mini-footer-text-mobile" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_text_mobile">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-11" >
+  
+      
+  
+  <div class="pane-content">
+    <p class="credits">Copyright  2014 by NewBay Media, LLC. All Rights Reserved.	<span class="break">28 East 28th Street, 12th floor, New York, NY 10016 T (212) 378-0400 F (212) 378-0470</span></p>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+			<div class="bot clearfix">
+				<a href="http://www.newbaymedia.com/" class="newbay"><img src="/sites/all/themes/bnc_custom/images/logo_newbay.png"></a>
+				  <div class="region region-mobile-footer-social">
+    <div id="block-panels-mini-social-links-mobile-bottom" class="block-panels-mini clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" id="mini-panel-social_links_mobile_bottom">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-custom pane-12" >
+  
+      
+  
+  <div class="pane-content">
+    <!--smart_paging_autop_filter--><!--smart_paging_filter--><ul class="socials"><li class="fb-link"><a href="https://www.facebook.com/BroadcastingandCable" target="_blank"></a></li>
+	<li class="twtr-link"><a href="https://twitter.com/bcbeat" target="_blank"></a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+			</div>
+		</div> <!-- /PAD -->
+		</div> <!-- /WRAPPER -->
+	</footer> <!-- FOOTER -->
+	<!--========================== /FOOTER =============================-->
+
+
 
 <script type="text/javascript">
-var _sf_async_config={uid:25465,domain:"adage.com"} 
-_sf_async_config.useCanonical = true 
-(function(){
-  function loadChartbeat() {
-    window._sf_endpt=(new Date()).getTime() 
-    var e = document.createElement('script') 
-    e.setAttribute('language', 'javascript') 
-    e.setAttribute('type', 'text/javascript') 
-    e.setAttribute('src',
-       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-       "js/chartbeat.js") 
-    document.body.appendChild(e) 
-  }
-  var oldonload = window.onload 
-  window.onload = (typeof window.onload != 'function') ?
-     loadChartbeat : function() { oldonload()  loadChartbeat()  } 
-})() 
+
+  var _sf_async_config = { uid: 21 0, domain: 'broadcastingcable.com', useCanonical: true } 
+
+  (function() {
+
+    function loadChartbeat() {
+
+      window._sf_endpt = (new Date()).getTime() 
+
+      var e = document.createElement('script') 
+
+      e.setAttribute('language', 'javascript') 
+
+      e.setAttribute('type', 'text/javascript') 
+
+      e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js') 
+
+      document.body.appendChild(e) 
+
+    } 
+
+    var oldonload = window.onload 
+
+    window.onload = (typeof window.onload != 'function') ?
+
+      loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+
+  })() 
 
 </script>
 
 
-<!-- jquery  -->
-<script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.9.0.min.js'>\x3C/script>")</script>
+</body>
 
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script>
-<script type="text/javascript" src="http://gaia.adage.com/assets/js/init.js?1407991150" ></script><script type="text/javascript" src="http://gaia.adage.com/assets/js/plugins.js?1407991150" ></script><script type="text/javascript" src="http://gaia.adage.com/assets/js/script.js?1416842854" ></script>
 
-<!-- sharecount beta --><script type="text/javascript" src="http://gaia.adage.com/assets/js/sharecount.js?1407991151" ></script>
 
-<!--[if (gte IE 6)&(lte IE 8)]>
-<script type="text/javascript" src="http://gaia.adage.com/assets/js/libs/selectivizr-min.js?1407991151" ></script>
-<script type="text/javascript" src="http://gaia.adage.com/assets/js/ie.js?1407991151" ></script>
-<![endif]-->
 
-<!-- interstitial scroll --><script type="text/javascript" src="http://gaia.adage.com/assets/js/interstitial.js?1412032837" ></script>
-<script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"9ca448880a","applicationID":"5007852","transactionName":"YVRaYUEFWUVWAE0KDFgebUdaS1ReVg1XBg8YQVBF","queueTime":0,"applicationTime":277,"ttGuid":"","agentToken":"","atts":"TRNZFwkfSks=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+
+
+<SCRIPT LANGUAGE=JavaScript>
+<!-- 
+//configuration 
+OAS_url = 'http://oasc08011.247realmedia.com/RealMedia/ads/' 
+<!------ OAS SETUP begin ------>
+OAS_sitepage = 'www.broadcastingcable.com' 
+OAS_listpos = 'Bottom,Middle,Position1,Position2,Position3,Top,Top1,x01' 
+var synd = "http://www.broadcastingcable.com/news/syndication-and-distribution" 
+var url = window.location.href 
+var n = url.search("syndication") 
+//alert (n) 
+
+if (url =="http://www.broadcastingcable.com/")
+{
+  OAS_query = "homepage" 
+} 
+else if (url=="http://www.broadcastingcable.com/news/syndication-and-distribution")
+{
+
+  OAS_query = "syndication" 
+}
+else if (n=="40")
+{
+  OAS_query = "syndication" 
+}
+else {
+OAS_query = '' 
+}
+
+OAS_target = '_top' 
+//end of configuration
+OAS_version = 10 
+OAS_rn = '001234567890'  OAS_rns = '1234567890' 
+OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
+function OAS_NORMAL(pos) {
+document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>')  
+document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>')  
+}
+ //--> 
+ </SCRIPT>
+<SCRIPT LANGUAGE=JavaScript1.1> 
+<!--  
+// OAS_version = 11    
+//if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))  
+// OAS_version = 10  
+//if (OAS_version >= 11) 
+//document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>') //-->
+</SCRIPT>
+<SCRIPT LANGUAGE=JavaScript> 
+<!--  
+ document.write('')   
+function OAS_AD(pos) {  
+if (OAS_version >= 11 && typeof(OAS_RICH)!='undefined')
+ OAS_RICH(pos)   
+else 
+ OAS_NORMAL(pos)   
+}  //--> 
+ </SCRIPT>  
+<!------ OAS SETUP end ------> 
+
+<div id="findRbAd-1">
+<SCRIPT LANGUAGE=JavaScript>  
+<!--  
+OAS_AD('x01')   
+//-->  
+</SCRIPT>
+
+
+</div>
+</div>
+<!------ OAS AD 'Top' end ------>
+
+<!-- Google Analytics Tag Start -->
+<script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.") 
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")) 
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-2342357-30") 
+            pageTracker._trackPageview() 
+        }
+        catch(err) {}
+    </script>
+<!-- Google Analytics Tag End -->
+
+
+<!-- START Nielsen//NetRatings SiteCensus V5.3 -->
+<!-- Bizographics Script Start -->
+<script type="text/javascript">
+  _bizo_data_partner_id = "308" 
+</script>
+<script type="text/javascript">
+(function(){(function(){var b,a a=document.createElement("script") a.type="text/javascript" a.async=true a.src=""+(window.location.protocol==="https:"?"https://sjs.":"http://js.")+"bizographics.com/insight.min.js" b=document.getElementsByTagName("script")[0] return b.parentNode.insertBefore(a,b)})() })() 
+</script>
+<!-- Bizographics Script End -->
+</html>  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [] _gaq.push(["_setAccount", "UA-2342357-30"]) _gaq.push(["_trackPageview"]) (function() {var ga = document.createElement("script") ga.type = "text/javascript" ga.async = true ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js" var s = document.getElementsByTagName("script")[0] s.parentNode.insertBefore(ga, s) })() 
+//--><!]]>
+</script>
+</body>
 </html>

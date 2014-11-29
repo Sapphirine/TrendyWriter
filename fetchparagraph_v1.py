@@ -26,7 +26,7 @@ from HTMLParser import HTMLParser
 # store path variables:
 store_html = 'res/url_'
 store_homepage = 'res/home_.html'
-store_topic = 'topic/paragraph_'
+store_paragraph = 'paragraph/data/paragraph_'
 store_url = 'url/all_urls.txt'
 
 # debug variables:
@@ -36,15 +36,15 @@ debug_storepath = 'debug/debug_page.html'
 
 
 def welcome_text():
-    print ""
-    print "================================="
-    print "Fetch URL and title from Web tool"
-    print "================================="
-    print "--------------------------------------------------------------"
-    print "[DEVELOPER MODE]"
-    print "Step 1: python fetchtitle_v2.py | tee debug.txt"
-    print "Step 2: (IF NECESSARY) grep 'ERROR' debug.txt > error.txt"
-    print "--------------------------------------------------------------"
+    print ''
+    print '================================='
+    print 'Fetch URL and title from Web tool'
+    print '================================='
+    print '---------------------------------------------------------'
+    print '[DEVELOPER MODE]'
+    print 'Step 1: python fetchtitle_v2.py | tee debug.txt'
+    print 'Step 2: (IF NECESSARY) grep "ERROR" debug.txt > error.txt'
+    print '---------------------------------------------------------'
 
 class CrawlParagraph(HTMLParser):
     """
@@ -80,8 +80,10 @@ class CrawlParagraph(HTMLParser):
         if not self.get_url:
             if tag == 'p':
                 self.found_p = True
+            elif tag == 'html':
+                self.found_html = True
             # if tag == 'a':
-            #     self.found_a = True
+            # self.found_a = True
             # if tag == 'h1':
             #     self.found_h1 = True
             # if tag == 'h2':
@@ -153,8 +155,10 @@ class CrawlParagraph(HTMLParser):
         if not self.get_url:
             if tag == 'p':
                 self.found_p = False
+            elif tag == 'html':
+                self.found_html = False
             # if tag == 'a':
-            #     self.found_a = False
+            # self.found_a = False
             # if tag == 'h1':
             #     self.found_h1 = False
             # if tag == 'h2':
@@ -185,10 +189,10 @@ class CrawlParagraph(HTMLParser):
                     # Eliminate duplicated topics.
                     # @formatter:on
                     if not data.encode('utf-8').strip() in CrawlParagraph.topic_list:
-                        # The "print" can only output Ascii encoded normal String
+                        # Function "print()" can only output Ascii encoded normal String
                         # ,so use "encode()" method to return Ascii normal String.
                         print '[INFO] Data = ', data.encode('utf-8').strip()
-                        with open(store_topic + str(self.file_index) + '.txt', 'a') as writing_file:
+                        with open(store_paragraph + str(self.file_index) + '.txt', 'a') as writing_file:
                             # Use "encode()" method to return Ascii normal String
                             writing_file.write(data.encode('utf-8').strip())
                             # writing_file.write('\n')
@@ -248,7 +252,7 @@ def main():
     else:
         # Clean the to-process files.
         open(store_url, 'w').close()
-        open(store_topic, 'w').close()
+        open(store_paragraph, 'w').close()
 
         url = raw_input('Enter an url : ')
         url = url.strip()
@@ -289,7 +293,7 @@ def main():
                                    .replace('039', ' ').replace('8217', ' ').replace('8216', ' ').replace('39', ' ')
                 # @formatter:on
                 # (NOTE) Parameter 'w' will overwrite the original file with a new one.
-                # Store reading html text to a file.
+                # Store original html text to a file.
                 with open(store_html_path, 'w') as retPage:
                     retPage.write(htmltxt2)
 
@@ -300,7 +304,7 @@ def main():
                     parser.feed(htmltxt2.decode('utf-8'))
                 except Exception:
                     print '[ERROR] Parsing Error: ', pageUrl, ' in ', store_html_path
-                    parser.feed(unicode(htmltxt2, errors='ignore'))
+                    parser.feed(unicode(htmltxt2, encoding='utf-8', errors='ignore'))
                 parser.close()
                 fetch_handler.close()
                 i += 1

@@ -1,10 +1,11 @@
 #!/usr/bin/env python2.7
 
-"""@package default
+
+""" @package default
 [USAGE]
 python wordcount.py | tee debug.txt
 
-More details.
+More details..
 """
 
 import operator

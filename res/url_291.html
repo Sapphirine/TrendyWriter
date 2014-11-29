@@ -1,1836 +1,2187 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
-<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
-<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
-<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:sioc="http://rdfs.org/sioc/ns#"
-  xmlns:sioct="http://rdfs.org/sioc/types#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+
+<script type="text/javascript">
+/* MoFuse CUSTOM Mobile Detect & Redirect */
+var mfp_url='http://m.cjr.org/' 
+var mfp_days=1 
+var mfp_host_name=document.location.hostname 
+var mfp_request_uri=document.location.pathname 
+var mfp_no_mobile=location.search 
+var mfp_cookie=document.cookie 
+var mfp_ua=navigator.userAgent.toLowerCase() 
+var mfp_devices=['vnd.wap.xhtml+xml','sony','symbian','nokia','samsung','mobile','windows ce','epoc','opera mini','nitro','j2me','midp-','cldc-','netfront','mot','up.browser','up.link','audiovox','blackberry','ericsson','panasonic','philips','sanyo','sharp','sie-','portalmmm','blazer','avantgo','danger','palm','series60','palmsource','pocketpc','smartphone','rover','ipaq','au-mic','alcatel','ericy','vodafone','wap1','wap2','teleca','playstation','lge','lg-','iphone','android','htc','dream','webos','bolt','nintendo'] 
+if(mfp_no_mobile=='?nomobile=1'){
+	if(mfp_cookie.indexOf('mfp_no_mobile')==-1){mfp_cookie_expires=new Date() mfp_cookie_expires.setTime(mfp_cookie_expires.getTime()+mfp_days*1000*60*60*24) document.cookie="mfp_no_mobile=1  expires="+mfp_cookie_expires.toGMTString()+"  path=/ "}
+}
+function mf_detect(mfp_ua, mfp_devices) {
+	for(var i in mfp_devices) {
+		if(mfp_ua.indexOf(mfp_devices[i])!=-1 && !((mfp_ua.indexOf('android')!=-1 && mfp_ua.indexOf('mobile')==-1) || mfp_ua.indexOf('ipad')!=-1 )) return true 
+	}
+}
+if(mfp_no_mobile!='?nomobile=1'&&mfp_cookie.indexOf('mfp_no_mobile')==-1){
+	mfp_is_mobile=mf_detect(mfp_ua, mfp_devices) 
+	if(mfp_is_mobile){
+		window.location=mfp_url+"?h="+mfp_host_name+"&r="+mfp_request_uri
+	}
+}
+else{if(mfp_cookie.indexOf('mfp_no_mobile')==-1){mfp_cookie_expires=new Date() mfp_cookie_expires.setTime(mfp_cookie_expires.getTime()+1000*60*60*24) document.cookie="mfp_no_mobile=1  expires="+mfp_cookie_expires.toGMTString()+"  path=/ "}}
+</script>
+
+<script type="text/javascript">
+
+	$(document).ready(function () {
+
+		$('ul#the_industry_menu').hide() 
+		$('ul#politics_and_policy_menu').hide() 
+		$('ul#business_menu').hide() 
+		$('ul#science_menu').hide() 
+		$('ul#culture_menu').hide() 
+		$('ul#magazine_menu').hide() 
+		$('ul#resources_menu').hide() 
+		
+	}) 
+
+</script>
+
+    <title>Columbia Journalism Review</title>
+
+<!--[if !IE]><!-->
+    <meta http-equiv="Content-Type" content="text/html  charset=utf-8" />
 <!--<![endif]-->
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="pocket-site-verification" content="265c6 97b15e9fe813299328d66c9" />
+    <meta name="google-site-verification" content="Fu4CypYBPmzQ9gLIFYah2sCib3rLWiqCkG5PLwZwdEY" />
 
+<!-- Javascripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-  <meta http-equiv="Content-Type" content="text/html  charset=utf-8" />
-<link rel="shortcut icon" href="http://www.broadcastingcable.com/sites/default/files/public/favicon_1.png" type="image/png" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<meta property="og:image" content="" />
-  <title>Cable Television News, Broadcast, Syndication, Programming & Local TV | Broadcasting &amp  Cable</title>
-  <style type="text/css" media="all">@import url("http://www.broadcastingcable.com/modules/system/system.base.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/system/system.menus.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/system/system.messages.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/system/system.theme.css?nfelml") </style>
-<style type="text/css" media="all">@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/simplenews/simplenews.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/aggregator/aggregator.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/calendar/css/calendar_multiday.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/date/date_api/date.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/field/theme/field.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/node/node.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/search/search.css?nfelml") 
-@import url("http://www.broadcastingcable.com/modules/user/user.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/views/css/views.css?nfelml") </style>
-<style type="text/css" media="all">@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/ckeditor/ckeditor.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/ctools/css/ctools.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/panels/css/panels.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/themes/bnc_custom/panels/layouts/bnctwocol_stacked/bnctwocol_stacked.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/css/nice_menus.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/css/nice_menus_default.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/1077858/css/muchomenu.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/1077858/css/muchomenu-default-style.css?nfelml") 
-@import url("http://www.broadcastingcable.com/sites/all/modules/contrib/panels/plugins/layouts/onecol/onecol.css?nfelml") </style>
-<style type="text/css" media="all">@import url("http://www.broadcastingcable.com/sites/all/themes/bnc_custom/css/style.css?nfelml") </style>
-<style type="text/css" media="screen">@import url("http://www.broadcastingcable.com/sites/all/themes/bnc_custom/css/responsive.css?nfelml") </style>
-  <script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.js?v=1.7.1"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/misc/drupal.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/jquery.bgiframe.js?v=2.1"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/superfish.js?v=1.4.8"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/nice_menus/js/nice_menus.js?v=1.0"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/site.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/css3-mediaqueries.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.carouFredSel-6.2.0-packed.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.jtweetsanywhere-1.3.1.min.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.touchSwipe.min.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/modernizr.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/yetii-min.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_core/js/jquery.fitvids.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/panels/js/panels.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/category_page/plugins/js/featured_article_slider.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_event/plugins/js/event_block.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_webinar/plugins/js/webcasts_block.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_the_wire/plugins/js/thewire_scroller.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_comment/plugins/js/yetii-min.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/1077858/js/muchomenu.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/custom/bnc_features/bnc_slideshow/plugins/js/authors_block.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/modules/contrib/google_analytics/googleanalytics.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/js/social-icons.js?nfelml"></script>
-<script type="text/javascript" src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/js/searchbox.js?nfelml"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bnc_custom","theme_token":"hr6BsCR1TgoKxUroBLQfPfXLBXCNMb00jnrb1H2f4rs","js":{"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/site.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/css3-mediaqueries.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.carouFredSel-6.2.0-packed.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.jtweetsanywhere-1.3.1.min.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.touchSwipe.min.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/modernizr.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/yetii-min.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_core\/js\/jquery.fitvids.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/custom\/bnc_features\/category_page\/plugins\/js\/featured_article_slider.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_event\/plugins\/js\/event_block.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_webinar\/plugins\/js\/webcasts_block.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_the_wire\/plugins\/js\/thewire_scroller.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_comment\/plugins\/js\/yetii-min.js":1,"sites\/all\/modules\/contrib\/1077858\/js\/muchomenu.js":1,"sites\/all\/modules\/custom\/bnc_features\/bnc_slideshow\/plugins\/js\/authors_block.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"sites\/all\/themes\/bnc_custom\/js\/social-icons.js":1,"sites\/all\/themes\/bnc_custom\/js\/searchbox.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/bnc_custom\/panels\/layouts\/bnctwocol_stacked\/bnctwocol_stacked.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/modules\/contrib\/1077858\/css\/muchomenu.css":1,"sites\/all\/modules\/contrib\/1077858\/css\/muchomenu-default-style.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/bnc_custom\/css\/style.css":1,"sites\/all\/themes\/bnc_custom\/css\/responsive.css":1}},"nice_menus_options":{"delay":"100","speed":"fast"},"muchomenu":{"animationEffect":"fade","animationSpeed":"fast"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}}) 
-//--><!]]>
-</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" type="text/css" media="screen" /><![endif]-->
-	
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="http://fast.fonts.com/jsapi/0050d852-ae0b-4cd6-a3ca-6ae5f4e4e7a4.js"></script>
-	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-	<script type="text/javascript">stLight.options({publisher: "ur-5ce34838-65e7-ab87-d608-55cc3bd7c2c", doNotHash: false, doNotCopy: true, hashAddressBar: false}) </script>
-	
-	<script>
-    jQuery(document).ready(function(){		 		
-		var elw = jQuery('#findRbAd').children('img').width() 
-		var elh = jQuery('#findRbAd').children('img').height() 		
-		if(elh==null && elw==null) {
-			//jQuery('#roadblock').css('display:none ') 
-			jQuery('#findRbAd').parents().eq(10).addClass('roadblock-1').css("display","none") 
-		}
-		}) 
-</script>
-
-<script>
-    jQuery(document).ready(function(){		 		
-		var elw = jQuery('#findRbAd').children('img').width() 
-		var elh = jQuery('#findRbAd').children('img').height() 		
-		if(elh==null && elw==null) {
-			//jQuery('#roadblock').css('display:none ') 
-			jQuery('#findRbAd-1').addClass('roadblock-1').css("display","none") 
-		}
-		}) 
-</script>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https' if(!d.getElementById(id)){js=d.createElement(s) js.id=id js.src=p+'://platform.twitter.com/widgets.js' fjs.parentNode.insertBefore(js,fjs) }}(document, 'script', 'twitter-wjs') </script>
-
- 
-</head>
-<body class="html front not-logged-in no-sidebars page-home" >
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-  </div>
+    <script src="_resourcesbeta/js/global_2013a.js" type="text/javascript"></script>
     
-	<!--========================== TOP BAR =============================-->
-	<section class="top-bar">
-		<div class="wrapper">
-      <div class="pad">
-        <div class="leaderboard bot">
-            <div class="region region-top-bar">
-    <div id="block-nice-menus-1" class="block-nice-menus clearfix">
-
+    <script src="_resourcesbeta/js/click_menus.js" type="text/javascript"></script>
     
-  <div class="content">
-    <ul class="nice-menu nice-menu-down nice-menu-menu-newbay-media-websites" id="nice-menu-1"><li class="menu-702 menu-path-newbaymediacom- first odd "><a href="http://www.newbaymedia.com/" title=""><img alt = "" src = "/sites/default/files/menu_icon_684.png" /></a></li>
-<li class="menu-572 menu-path-multichannelcom-  even "><a href="http://www.multichannel.com/" title="Multichannel News">Multichannel News</a></li>
-<li class="menu-573 menu-path-c2meworldcom-  odd "><a href="http://www.c2meworld.com/" title="C2MEWORLD">C2MEWORLD</a></li>
-<li class="menu-575 menu-path-tvtechnologycom-index  even "><a href="http://www.tvtechnology.com/index" title="TV Technology">TV Technology</a></li>
-<li class="menu-576 menu-path-tvbeuropecom-  odd "><a href="http://www.tvbeurope.com/" title="TVB Europe">TVB Europe</a></li>
-<li class="menu-1811 menu-path-ratingsintelcom-  even "><a href="http://www.ratingsintel.com/" title="">RATINGS INTELLIGENCE</a></li>
-<li class="menu-578 menu-path-nyctelevisionweekcom-  odd "><a href="http://nyctelevisionweek.com/" title="">NYC Television Week</a></li>
-<li class="menu-579 menuparent  menu-path-nolink  even last"><a href="#" title="More" class="nolink">More</a><ul><li class="menu-1102 menu-path-prosoundnetworkcom-index first odd "><a href="http://www.prosoundnetwork.com/index" title="AV/PRO AUDIO">AV/PRO AUDIO</a></li>
-<li class="menu-1103 menu-path-audiomediacom  even "><a href="http://www.AudioMedia.com" title="AudioMedia.com">AudioMedia.com</a></li>
-<li class="menu-1104 menu-path-audioprointernationalcom  odd "><a href="http://www.AudioProInternational.com" title="AudioProInternational.com">AudioProInternational.com</a></li>
-<li class="menu-1105 menu-path-avnetworkcom  even "><a href="http://www.AVNetwork.com" title="AVNetwork.com">AVNetwork.com</a></li>
-<li class="menu-1106 menu-path-installation-internationalcom  odd "><a href="http://www.Installation-International.com" title="Installation-International.com">Installation-International.com</a></li>
-<li class="menu-1107 menu-path-mixonlinecom  even "><a href="http://www.MixOnline.com" title="MixOnline.com">MixOnline.com</a></li>
-<li class="menu-1108 menu-path-prosoundnetworkcom  odd "><a href="http://www.ProSoundNetwork.com" title="ProSoundNetwork.com">ProSoundNetwork.com</a></li>
-<li class="menu-1109 menu-path-psneuropecom  even "><a href="http://www.PSNEurope.com" title="PSNEurope.com">PSNEurope.com</a></li>
-<li class="menu-1110 menu-path-residentialsystemscom  odd "><a href="http://www.ResidentialSystems.com" title="ResidentialSystems.com">ResidentialSystems.com</a></li>
-<li class="menu-1111 menu-path-nolink  even "><a href="#" title="BROADCAST/RADIO/TV/VIDEO" class="nolink">BROADCAST/RADIO/TV/VIDEO</a></li>
-<li class="menu-582 menu-path-broadcastit-  odd "><a href="http://www.broadcast.it/" title="Broadcast.it">Broadcast.it</a></li>
-<li class="menu-1112 menu-path-creativeplanetnetworkcom  even "><a href="http://www.CreativePlanetNetwork.com" title="CreativePlanetNetwork.com">CreativePlanetNetwork.com</a></li>
-<li class="menu-1113 menu-path-governmentvideocom  odd "><a href="http://www.GovernmentVideo.com" title="GovernmentVideo.com">GovernmentVideo.com</a></li>
-<li class="menu-1114 menu-path-licensingbiz  even "><a href="http://www.Licensing.biz" title="Licensing.biz">Licensing.biz</a></li>
-<li class="menu-1115 menu-path-radiomagonlinecom  odd "><a href="http://www.RadioMagOnline.com" title="RadioMagOnline.com">RadioMagOnline.com</a></li>
-<li class="menu-1116 menu-path-radioworldcom  even "><a href="http://www.RadioWorld.com" title="RadioWorld.com">RadioWorld.com</a></li>
-<li class="menu-1117 menu-path-nolink  odd "><a href="#" title="CONSUMER ELECTRONICS/GAMING" class="nolink">CONSUMER ELECTRONICS/GAMING</a></li>
-<li class="menu-1118 menu-path-bikebizcom  even "><a href="http://www.BikeBiz.com" title="BikeBiz.com">BikeBiz.com</a></li>
-<li class="menu-1119 menu-path-develop-onlinenet  odd "><a href="http://www.Develop-Online.net" title="Develop-Online.net">Develop-Online.net</a></li>
-<li class="menu-1120 menu-path-mvcukcom  even "><a href="http://www.MVCuk.com" title="MVCuk.com">MVCuk.com</a></li>
-<li class="menu-1121 menu-path-mobile-entbiz  odd "><a href="http://www.Mobile-ent.biz" title="Mobile-ent.biz">Mobile-ent.biz</a></li>
-<li class="menu-1122 menu-path-pcr-onlinebiz  even "><a href="http://www.PCR-Online.biz" title="PCR-Online.biz">PCR-Online.biz</a></li>
-<li class="menu-1813 menu-path-twicecom  odd "><a href="http://www.twice.com" title="twice.com">twice.com</a></li>
-<li class="menu-1123 menu-path-toynews-onlinebiz  even "><a href="http://www.ToyNews-Online.biz" title="ToyNews-Online.biz">ToyNews-Online.biz</a></li>
-<li class="menu-1124 menu-path-nolink  odd "><a href="#" title="EDUCATION" class="nolink">EDUCATION</a></li>
-<li class="menu-1203 menu-path-eduwirecom  even "><a href="http://www.eduwire.com" title="Eduwire">Eduwire.com</a></li>
-<li class="menu-1125 menu-path-schoolciocom  odd "><a href="http://www.SchoolCIO.com" title="SchoolCIO.com">SchoolCIO.com</a></li>
-<li class="menu-1126 menu-path-techlearningcom  even "><a href="http://www.TechLearning.com" title="TechLearning.com">TechLearning.com</a></li>
-<li class="menu-1127 menu-path-nolink  odd "><a href="#" title="Music" class="nolink">MUSIC</a></li>
-<li class="menu-1128 menu-path-bassplayercom  even "><a href="http://www.BassPlayer.com" title="BassPlayer.com">BassPlayer.com</a></li>
-<li class="menu-1129 menu-path-emusiciancom  odd "><a href="http://www.Emusician.com" title="Emusician.com">Emusician.com</a></li>
-<li class="menu-1130 menu-path-guitaraficionadocom  even "><a href="http://www.GuitarAficionado.com" title="GuitarAficionado.com">GuitarAficionado.com</a></li>
-<li class="menu-1131 menu-path-guitarplayercom  odd "><a href="http://www.GuitarPlayer.com" title="GuitarPlayer.com">GuitarPlayer.com</a></li>
-<li class="menu-1132 menu-path-guitarworldcom  even "><a href="http://www.GuitarWorld.com" title="GuitarWorld.com">GuitarWorld.com</a></li>
-<li class="menu-1133 menu-path-keyboardmagcom  odd "><a href="http://www.KeyboardMag.com" title="KeyboardMag.com">KeyboardMag.com</a></li>
-<li class="menu-1134 menu-path-mi-procouk  even "><a href="http://www.MI-Pro.co.uk" title="MI-Pro.co.uk">MI-Pro.co.uk</a></li>
-<li class="menu-1135 menu-path-musicweekcom  odd "><a href="http://www.MusicWeek.com" title="MusicWeek.com">MusicWeek.com</a></li>
-<li class="menu-1136 menu-path-revolvermagcom  even last"><a href="http://www.RevolverMag.com" title="RevolverMag.com">RevolverMag.com</a></li>
-</ul></li>
-</ul>
-  </div>
-</div>
-  </div>
-        </div>
-      </div> <!-- /PAD -->
-    </div> <!-- /WRAPPER -->
-	</section>
-	<!--========================== /TOP BAR ============================-->
-	
-	
-	<!--========================= ROADBLOCK ============================-->
-	<div id="roadblock" class="roadblock">
-		<div class="wrapper">
-			<div class="pad">
-				  <div class="region region-top-add">
-    <div id="block-panels-mini-top-add" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-top_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-6" >
-  
-      
-  
-  <div class="pane-content">
-    <style type="text/css">
-img[src*="empty.gif"] {
-    height:0px !important 
-}
-</style>
-<SCRIPT LANGUAGE=JavaScript>
-<!-- 
-//configuration 
-OAS_url = 'http://oasc08011.247realmedia.com/RealMedia/ads/' 
-<!------ OAS SETUP begin ------>
-OAS_sitepage = 'www.broadcastingcable.com' 
-OAS_listpos = 'Bottom,Middle,Position1,Position2,Position3,Top,Top1,x01' 
-var synd = "http://www.broadcastingcable.com/news/syndication-and-distribution" 
-var url = window.location.href 
-var n = url.search("syndication") 
-//alert (n) 
-
-if (url =="http://www.broadcastingcable.com/" || url =="http://broadcastingcable.com/")
-{
-  OAS_query = "homepage" 
-} 
-else if (url=="http://www.broadcastingcable.com/news/syndication-and-distribution")
-{
-
-  OAS_query = "syndication" 
-}
-else if (n=="40")
-{
-  OAS_query = "syndication" 
-}
-else {
-OAS_query = '' 
-}
-
-OAS_target = '_top' 
-//end of configuration
-OAS_version = 10 
-OAS_rn = '001234567890'  OAS_rns = '1234567890' 
-OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
-function OAS_NORMAL(pos) {
-document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>')  
-document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>')  
-}
- //--> 
- </SCRIPT>
-<!--- Here is the Open AdStream JX Code  for the x96 position --->
-<div class="findMmAd">
- <!-- 1st Section Begins : Delivery via OAS JX Tag -->
-<script type="text/javascript">
-<!--
-OAS_rn = '001234567890'  OAS_rns = '1234567890' 
-OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
-document.write("<scr"+"ipt type='text/javascript' src='http://oasc08011.247realmedia.com/RealMedia/ads/adstream_jx.ads/www.broadcastingcable.com/1" + OAS_rns +"@x01'></sc"+"ript>") 
-//  --> 
-</script>
-</div>
-<!-- 1st Section Ends : Delivery via OAS JX Tag -->
-<!-- 2nd Section Begins : Delivery via OAS NX Tag for non-Javascript Browser -->
-<noscript>
-<a href='http://oasc08011.247realmedia.com/RealMedia/ads/click_nx.ads/www.broadcastingcable.com/@x01'><img src='http://oasc08011.247realmedia.com/RealMedia/ads/adstream_nx.ads/www.broadcastingcable.com/@x01'></a>
-</noscript>
-<!-- 2nd Section Ends : Delivery via OAS NX Tag -->
-<SCRIPT LANGUAGE=JavaScript1.1> 
-<!--  
-OAS_version = 11    
-if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))  
-OAS_version = 10  
-if (OAS_version >= 11) 
-document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>') //-->
-</SCRIPT>
-</SCRIPT>
-<SCRIPT LANGUAGE=JavaScript> 
-<!--  
- document.write('')   
-function OAS_AD(pos) {  
-if (OAS_version >= 11 && typeof(OAS_RICH)!='undefined')
- OAS_RICH(pos)   
-else 
- OAS_NORMAL(pos)   
-}  //--> 
- </SCRIPT>  
-<!------ OAS SETUP end ------> 
-
-<!------ OAS AD 'Top' begin ------>  
-<div id="findRbAd">
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Top1')   
-//-->  
-</SCRIPT>  
-
-</div>
-<!------ OAS AD 'Top' end ------>
-  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-			</div> <!-- /PAD -->
-		</div> <!-- /WRAPPER -->
-	</div>
-	<!--========================= /ROADBLOCK ===========================-->
-
-	<!--=========================== HEADER =============================-->
-	<section id="holder">
-		<header>
-<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-			<div class="wrapper">
-				<div class="pad">
-					<div class="row clearfix">
-						<div class="main-logo">
-							<a href="/">
-								<img src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/logo.png" />
-								<span>The Business of Television | Broadcasting &amp  Cable</span>
-							</a>
-						</div>
-						<div class="leaderboard top">
-							  <div class="region region-header-add">
-    <div id="block-panels-mini-header-add" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-header_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-7" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Top' begin ------>  
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Top')   
-//-->  
-</SCRIPT>  
-<!------ OAS AD 'Top' end ------>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-						</div>
-						<div class="all-access">
-							<div class="inner">
-								<div class="img-holder">
-									<!--<img src="images/placeholders/all-acc-mag.jpg" />-->
-								</div>
-								<div class="overlay-holder">
-								<!--<a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&cds_mag_code=BCB&id=138 31359061&lsid=33121122 0019779&vid=1" class="all-access" target="_blank">-->
-									<!--<img src="/images/logo_allaccess.png">-->
-									<img src="/sites/all/themes/bnc_custom/images/key-overlay-new.png">
-								<!--</a>-->
-								</div>
-								<div class="drop-menu">
-								<ul>
-									<li><a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&cds_mag_code=BCB&id=138 31359061&lsid=33121122 0019779&vid=1" target="_blank">All Access Log In</a></li>
-									<li><a href="https://w1.buysub.com/loc/BCB/13LDI3TRM" target="_blank">Digital Subscription</a></li>
-									<li><a href="https://www.b2bmediaportal.com/nbmedia/subscribe.aspx?b=brc" target="_blank">Newsletters</a></li>
-									<li><a href="mailto:customerservice@nbmedia.com">Customer Service</a></li>
-									<li><a href="/current-issue" target="_blank">Current Issue</a></li>
-									<li><a href="/archive" target="_blank">Archive</a></li>
-								</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="aa-tablet mobile-only clearfix">
-						<a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&cds_mag_code=BCB&id=138 31359061&lsid=33121122 0019779&vid=1">
-							<span class="key"></span>
-							<em>All Access & subscription Info</em>
-							<p>Sign up to get online access to the latest magazine content and more &raquo </p>
-						</a>
-					</div>
-				</div> <!--/ PAD -->
-				<nav>  <div class="region region-header-menu">
-    <div id="block-muchomenu-1" class="block-muchomenu clearfix">
-
-    
-  <div class="content">
-    <ul id="muchomenu-1" class="muchomenu-menu muchomenu-menu-horizontal"><li class="muchomenu-parent odd half-1 first"><span class="muchomenu-parent-title"><a href="/news" class="muchomenu-item muchomenu-item-1 first odd" target="" id="menu-news">News</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-1 "><div class="panel-display panel-1col clearfix" >
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-block pane-nice-menus-2" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="nice-menu nice-menu-right nice-menu-menu-primary-link" id="nice-menu-2"><li class="menu-511 menuparent  menu-path-taxonomy-term-1 first odd "><a href="/news/local-tv" title="Local TV">Local TV</a><ul><li class="menu-1910 menu-path-taxonomy-term-3724 first odd last"><a href="/news/market-eye" title="">Market Eye</a></li>
-</ul></li>
-<li class="menu-1092 menu-path-taxonomy-term-58  even "><a href="/news/currency" title="">Currency</a></li>
-<li class="menu-512 menu-path-taxonomy-term-2  odd "><a href="/news/washington" title="Washington">Washington</a></li>
-<li class="menu-513 menu-path-taxonomy-term-3  even "><a href="/news/technology" title="Technology">Technology</a></li>
-<li class="menu-514 menu-path-taxonomy-term-4  odd "><a href="/news/programming" title="Programming">Programming</a></li>
-<li class="menu-515 menu-path-taxonomy-term-5  even "><a href="/news/syndication-and-distribution" title="Syndication and Distribution">Syndication and Distribution</a></li>
-<li class="menu-1655 menu-path-upfronts  odd "><a href="/Upfronts" title="">Upfront Central</a></li>
-<li class="menu-908 menu-path-news-fates-and-fortunes  even "><a href="/news/fates-and-fortunes" title="Fates and Fortunes">Fates and Fortunes</a></li>
-<li class="menu-960 menu-path-taxonomy-term-1667  odd "><a href="/news/ffrwd" title="FF / RWD">FF/RWD</a></li>
-<li class="menu-1014 menu-path-bc-beyond  even "><a href="/bc-beyond" title="BC Beyond">B&amp C Beyond</a></li>
-<li class="menu-1654 menu-path-taxonomy-term-1666  odd "><a href="/news/community-pages" title="">Community Pages</a></li>
-<li class="menu-1812 menu-path-ratingsintelcom-  even "><a href="http://www.ratingsintel.com/" title="">Ratings Intelligence</a></li>
-<li class="menu-1909 menu-path-events  odd last"><a href="/events" title="">B&amp C Events</a></li>
-</ul>
-  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="right">
-	<div class="inner-pad">
-	  		<div class="right-top row clearfix">
-			
-<article>
-  <a href="/news/currency/dish-cbs-agree-new-extension/135946" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/105551_D0313b.jpg?itok=-jH0CNfU" width="190" height="146" alt="" /></a>      <span class="gold">Currency</span>
-    <a href="/news/currency/dish-cbs-agree-new-extension/135946">Dish, CBS Agree to New Extension</a>    <span class="meta">By <a href="/users/mfarrell">Michael Farrell</a></span> <span class="meta">Nov 25, 2014</span>
-</article>
-<article>
-  <a href="/news/programming/abc-news-lands-first-interview-darren-wilson/135934" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/george-stephanopoulos-abc-darren-wilson_0.jpg?itok=WFAM5GmT" width="190" height="146" alt="" /></a>      <span class="gold">Programming</span>
-    <a href="/news/programming/abc-news-lands-first-interview-darren-wilson/135934">ABC News Lands First Interview With Darren Wilson</a>    <span class="meta">By <a href="/users/tbaysinger">Tim Baysinger</a></span> <span class="meta">Nov 25, 2014</span>
-</article>
-<article>
-  <a href="/news/programming/nbc-tops-18-49-demo-november-sweep/135933" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Blacklist_0.JPG?itok=UUwG7gfZ" width="190" height="146" alt="" /></a>      <span class="gold">Programming</span>
-    <a href="/news/programming/nbc-tops-18-49-demo-november-sweep/135933">NBC Tops 18-49 Demo in November Sweep</a>    <span class="meta">By <a href="/users/dholloway">Daniel  Holloway</a></span> <span class="meta">Nov 25, 2014</span>
-</article>
-<article>
-  <a href="/news/programming/telepictures-developing-suze-orman-strip/135923" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Suze%20Orman%20%28Photo%20Credit-R.%20Trachtenberg%29.jpg?itok=d7IW4jES" width="190" height="146" alt="" /></a>      <span class="gold">Syndication and Distribution</span>
-    <a href="/news/programming/telepictures-developing-suze-orman-strip/135923">Telepictures Developing Suze Orman Strip</a>    <span class="meta">By <a href="/users/albiniakp">Paige Albiniak</a></span> <span class="meta">Nov 25, 2014</span>
-</article>		</div>
-	  	  		<div class="right-bot row clearfix">
-			<article>
-<br/>
-	<a href="/news/fates-and-fortunes/matthew-weiner-awarded-international-emmy/135918">Matthew Weiner Awarded International Emmy</a> 
-	<span class="meta">By Ariana Romero<br> Nov 25, 2014</span>
-</article><article>
-<br/>
-	<a href="/news/technology/epix-launches-tv-app-google-chromecast/135915">Epix Launches TV App on Google Chromecast</a> 
-	<span class="meta">By Michael Farrell<br> Nov 25, 2014</span>
-</article>		</div>
-	  	</div>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-</div></li><li class="muchomenu-parent even half-1"><span class="muchomenu-parent-title"><a href="/blog" class="muchomenu-item muchomenu-item-2 even" target="" id="menu-blogs">Blogs</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-2 "><div class="panel-display panel-1col clearfix" >
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-block pane-menu-menu-blog-menus" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="menu"><li class="first leaf"><a href="/blog/bc-beat" title="BC Beat">BC Beat</a></li>
-<li class="leaf"><a href="/blog/bc-dc" title="BC DC">BC DC</a></li>
-<li class="leaf"><a href="/blog/station-station" title="Station to Station">Station to Station</a></li>
-<li class="leaf"><a href="/blog/bc-review" title="BC Review">BC Review</a></li>
-<li class="leaf"><a href="/blog/fates-and-fortunes" title="Fates and Fortunes">Fates and Fortunes</a></li>
-<li class="last leaf"><a href="/blog/currency" title="Currency">Currency</a></li>
-</ul>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="right">
-	<div class="inner-pad">
-	  		<div class="right-top row clearfix">
-			
-<article>
-        <span class="gold">BC Beat</span>
-    <a href="/blog/bc-beat/media-part-ferguson-story/135913">Media Part of Ferguson Story</a>    <span class="meta">By <a href="/users/staffc">B&amp C Staff</a></span> <span class="meta">Nov 25, 2014</span>
-</article>
-<article>
-  <a href="/blog/bc-dc/spectrum-possibilities/135808" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/JEggerton_BC_web.jpg?itok=OAyKAUou" width="190" height="146" alt="" /></a>      <span class="gold">BC DC</span>
-    <a href="/blog/bc-dc/spectrum-possibilities/135808">Spectrum of Possibilities</a>    <span class="meta">By <a href="/users/jeggerton">John Eggerton</a></span> <span class="meta">Nov 20, 2014</span>
-</article>
-<article>
-  <a href="/blog/station-station/pointergate-digital-revolution-erupts-after-kstp-report/135770" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/MMalone_BC_web.jpg?itok=xYQV-pvq" width="190" height="146" alt="" /></a>      <span class="gold">Station to Station</span>
-    <a href="/blog/station-station/pointergate-digital-revolution-erupts-after-kstp-report/135770">Pointergate:    Digital    Revolution Erupts After KSTP Report </a>    <span class="meta">By <a href="/users/malonem">Michael Malone</a></span> <span class="meta">Nov 19, 2014</span>
-</article>
-<article>
-  <a href="/blog/currency/big-media-companies-tv-ad-revenue-down-05/135475" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/Jon-Lafayette-3x4.jpg?itok=DremcNOw" width="190" height="146" alt="" /></a>      <span class="gold">Currency</span>
-    <a href="/blog/currency/big-media-companies-tv-ad-revenue-down-05/135475">Big Media Companies    TV Ad Revenue Down 0.5%</a>    <span class="meta">By <a href="/users/lafayettej">Jon Lafayette</a></span> <span class="meta">Nov 10, 2014</span>
-</article>		</div>
-	  	  		<div class="right-bot row clearfix">
-			<article>
-<br/>
-	<a href="/blog/bc-review/tv-review-nbc-s-state-affairs/135695">TV Review: NBC’s ‘State of Affairs   </a> 
-	<span class="meta">By B&C Review<br> Nov 17, 2014</span>
-</article><article>
-<br/>
-	<a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944">Fates Roundup, Nov. 25, 2014</a> 
-	<span class="meta">By Jonathan Kuperberg<br> Nov 25, 2014</span>
-</article>		</div>
-	  	</div>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-</div></li><li class="muchomenu-parent odd half-1"><span class="muchomenu-parent-title"><a href="/events" class="muchomenu-item muchomenu-item-3 odd" target="" id="menu-events">Events</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-3 "><div class="panel-display panel-1col clearfix" >
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-block pane-menu-menu-event-menu" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="menu"><li class="first leaf"><a href="/events" title="B&amp C Events">B&amp C Events</a></li>
-<li class="leaf"><a href="http://bchalloffame.com/" title="B&amp C Hall of Fame">B&amp C Hall of Fame</a></li>
-<li class="leaf"><a href="http://nyctelevisionweek.com/" title="NYC Television Week">NYC Television Week</a></li>
-<li class="leaf"><a href="/webinars" title="Webinar">Webinars</a></li>
-<li class="last leaf"><a href="http://bcwomenofny.com/" title="">B&amp C Women of New York</a></li>
-</ul>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="right">
-	<div class="inner-pad">
-	  		<div class="right-top row clearfix">
-			
-<article>
-  <a href="http://nyctelevisionweek.com/advanced-advertising/" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/AA_190x146_1.jpg?itok=v3lgyhQK" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/advanced-advertising/" target="_blank">Advance Advertising</a>  </span> <span class="meta">Nov 13, 2014</span>
-</article>
-<article>
-  <a href="http://nyctelevisionweek.com/business-of-multiplatform-tV/" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Multiplatform_TV_190x146.jpg?itok=xbekToN1" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/business-of-multiplatform-tV/" target="_blank">Multiplatform</a>  </span> <span class="meta">Nov 12, 2014</span>
-</article>
-<article>
-  <a href="http://nyctelevisionweek.com/TheContentShow" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/TCS_190x146.jpg?itok=wMhJoR7Z" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/TheContentShow" target="_blank">The Content Show</a>  </span> <span class="meta">Nov 12, 2014</span>
-</article>
-<article>
-  <a href="http://nyctelevisionweek.com/next-tV-summit/" target="_blank" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/Next_TV_190x146.jpg?itok=zHYVJz77" width="190" height="146" alt="" /></a>    <a href="http://nyctelevisionweek.com/next-tV-summit/" target="_blank">Next TV</a>  </span> <span class="meta">Nov 12, 2014</span>
-</article>		</div>
-	  	  		<div class="right-bot row clearfix">
-					</div>
-	  	</div>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-</div></li><li class="muchomenu-parent even half-1"><span class="muchomenu-parent-title"><a href="/slideshow" class="muchomenu-item muchomenu-item-4 even" target="" id="menu-people">People</a></span><div class="muchomenu-bin muchomenu-slots muchomenu-bin-4 "><div class="panel-display panel-1col clearfix" >
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-block pane-menu-menu-people" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="menu"><li class="first leaf"><a href="/slideshow" title="">Schmooze</a></li>
-<li class="leaf"><a href="/blog/fates-and-fortunes" title="Fates &amp  Fortunes ">Fates &amp  Fortunes </a></li>
-<li class="leaf"><a href="/news/fifth-estater" title="Fifth Estater">Fifth Estater</a></li>
-<li class="last leaf"><a href="/news/mels-diner" title="Mel   s Diner">Mel   s Diner</a></li>
-</ul>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-navigation-data-upper" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="right">
-	<div class="inner-pad">
-	  		<div class="right-top row clearfix">
-			
-<article>
-  <a href="/content/schmooze-november-17-2014/135640" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/1003_01_Hamm.jpg?itok=1yIimw-5" width="190" height="146" alt="" /></a>    <a href="/content/schmooze-november-17-2014/135640">Schmooze: November 17, 2014</a>  </span> <span class="meta">Nov 14, 2014</span>
-</article>
-<article>
-  <a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944" class="thumb square"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/author_image/263436_10200161900953481_80925097_n.jpg?itok=u7NkUYRY" width="190" height="146" alt="" /></a>      <span class="gold">Fates and Fortunes</span>
-    <a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944">Fates Roundup, Nov. 25, 2014</a>    <span class="meta">By <a href="/users/jkuperberg">Jonathan Kuperberg</a></span> <span class="meta">Nov 25, 2014</span>
-</article>
-<article>
-<span class="key"><img src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/images/icn-key.png" /></span>
-  <a href="/news/fifth-estater/shooting-and-scoring-big-turner-sports/135687" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/1103_FifthEstater_Daniels.jpg?itok=MXpL7A7q" width="190" height="146" alt="" /></a>      <span class="gold">Fifth Estater</span>
-    <a href="/news/fifth-estater/shooting-and-scoring-big-turner-sports/135687">Shooting and Scoring Big for Turner Sports</a>    <span class="meta">By <a href="/users/tbaysinger">Tim Baysinger</a></span> <span class="meta">Nov 17, 2014</span>
-</article>
-<article>
-<span class="key"><img src="http://www.broadcastingcable.com/sites/all/themes/bnc_custom/images/icn-key.png" /></span>
-  <a href="/news/mels-diner/mels-diner-you-ll-laugh-you-ll-cry/135295" class="thumb landscape"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/navigation_data/public/1101_MelsDiner_Madden.jpg?itok=BUKjofvC" width="190" height="146" alt="" /></a>      <span class="gold">Mels Diner</span>
-    <a href="/news/mels-diner/mels-diner-you-ll-laugh-you-ll-cry/135295">Mel   s Diner: You’ll Laugh, You’ll Cry…</a>    <span class="meta">By <a href="/users/mgrego">Melissa Grego</a></span> <span class="meta">Nov 03, 2014</span>
-</article>		</div>
-	  	  		<div class="right-bot row clearfix">
-					</div>
-	  	</div>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-</div></li><li class="muchomenu-parent odd half-2"><span class="muchomenu-parent-title"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" class="muchomenu-item muchomenu-item-5 odd" target="_blank" id="menu-tv-careers">TV Careers</a></span></li><li class="muchomenu-parent even half-2"><span class="muchomenu-parent-title"><a href="https://www.facebook.com/BroadcastingandCable" class="muchomenu-item muchomenu-item-6 even" target="_blank" id="menu-facebook">Facebook</a></span></li><li class="muchomenu-parent odd half-2"><span class="muchomenu-parent-title"><a href="https://twitter.com/bcbeat" class="muchomenu-item muchomenu-item-7 odd" target="_blank" id="menu-twitter">Twitter</a></span></li><li class="muchomenu-parent even half-2 last"><span class="muchomenu-parent-title"><a href="/" class="muchomenu-item muchomenu-item-9 even last" target="" id="menu-search">Search</a></span></li></ul>
-  </div>
-</div>
-  </div>
-</nav>	
-			</div> <!-- /WRAPPER -->
-		</header> <!-- HEADER -->
-		
-		<!-- /////// MOBILE HEADER /////// -->
-		<div class="mobile-header mobile-only">
-			<div class="wrapper">
-			<div class="pad clearfix">
-				<div class="main-logo">
-					<a href="/">
-						<span>The Business of Television | Broadcasting &amp  Cable</span>
-					</a>
-				</div>
-				<div class="mobile-toggle"></div>
-				<div class="mobile-menu">
-					  <div class="region region-mobile-header-menu">
-    <div id="block-panels-mini-mobile-header-menu" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-mobile_header_menu">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-block pane-menu-menu-footer-first-menu" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="menu"><li class="first leaf"><a href="/news" title="News">News</a></li>
-<li class="leaf"><a href="/blog" title="Blogs">Blogs</a></li>
-<li class="leaf"><a href="/events" title="">B&amp C Events</a></li>
-<li class="leaf"><a href="/slideshow" title="">Schmooze</a></li>
-<li class="last leaf"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" title="">TV Careers</a></li>
-</ul>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="mobile-leader">
-			<!--<a href="" class="mobile-only"><img src="/images/placeholders/ad_mobileleader.gif"></a>-->
-			<!--<a href="" class="full-size"><img src="/images/placeholders/ad_leaderboard.png"></a>-->
-			  <div class="region region-header-add">
-      <div class="region region-header-add">
-    <div id="block-panels-mini-header-add" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-header_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-7" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Top' begin ------>  
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Top')   
-//-->  
-</SCRIPT>  
-<!------ OAS AD 'Top' end ------>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-  </div>
-		</div>
-	<!--========================== /HEADER =============================-->
-	
-	<!--=========================== CONTAINER ==========================-->
-	<div id="hidden-search">
-	  <div class="region region-header-search">
-    <div id="block-apachesolr-panels-search-form" class="block-apachesolr-panels clearfix">
-
-    <h2 class="title">Search</h2>
-  
-  <div class="content">
-    <form action="/" method="post" id="apachesolr-panels-search-block" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-apachesolr-panels-search-form">
-  <label class="element-invisible" for="edit-apachesolr-panels-search-form">Search </label>
- <input title="Enter the terms you wish to search for." type="text" id="edit-apachesolr-panels-search-form" name="apachesolr_panels_search_form" value="" size="15" maxlength="128" class="form-text" />
-</div>
-<input type="hidden" name="form_build_id" value="form-V-GtN9VYweKtsmu5yetAEV8Wvq2xgZXRlKhUhsXN5d0" />
-<input type="hidden" name="form_id" value="apachesolr_panels_search_block" />
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div></div></form>  </div>
-</div>
-  </div>
- 
-	</div>
-	
-	<div class="wrapper">
-          <div id="tabs-wrapper" class="clearfix">
-                                    </div>
-                    
-    <div class="clearfix">
-          </div>
-    <div class="clearfix">
-        <div class="region region-content">
-    <div id="block-system-main" class="block-system clearfix">
-
-    
-  <div class="content">
-    <div class="panel-2col-stacked panel-display pad" >
-  
-  <section class="left-rail clearfix">
-    <div class="inside"><div class="panel-pane pane-bnc-articles-home-lists" >
-  
-      
-  
-  <div class="pane-content">
-    
-<!--//// FEATURED ARTICLES /////-->
-<div class="fivecol">
-  <div class="featured-articles home-top">
-    <!--**** MAKE SURE TO CHANGE ADDTHIS:URL ****-->
-    <!--<div class="addthis_toolbox addthis_counter_style clearfix home">
-            <a href="#" class="comment-count"><span></span> Comments</a>
-    </div>-->
-
-    <div class="featured-slider">	
-      <div id="bc-featured">
-        <div class="slide">
-  <span class="gold"><a href="/news/programming">Programming</a></span>
-     <h1><a href="/news/programming/fox-s-red-band-society-halt-production-after-13-episodes/135975">Fox’s ’Red Band Society’ to Halt Production After 13 Episodes</a></h1>
-	<a href="/news/programming/fox-s-red-band-society-halt-production-after-13-episodes/135975"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/redband-fox.jpg?itok=rHJifUC1" width="450" height="345" alt="" /></a>  <div class="slide-data">
-    <p><time>Nov 27, 2014</time> - Fall finale for freshman series to air Dec. 3... <a href="/news/programming/fox-s-red-band-society-halt-production-after-13-episodes/135975">More</a>    </p>
-  </div>
-</div> <!-- /SLIDE --><div class="slide">
-  <span class="gold"><a href="/news/programming">Programming</a></span>
-     <h1><a href="/news/programming/judd-apatow-wayne-brady-drew-carey-john-mayer-among-late-late-show-guest-hosts/135966">Judd Apatow, Wayne Brady, Drew Carey, John Mayer Among ‘Late Late Show’ Guest Hosts</a></h1>
-	<a href="/news/programming/judd-apatow-wayne-brady-drew-carey-john-mayer-among-late-late-show-guest-hosts/135966"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/Drew%20Carey%20Craig%20Ferguson.jpg?itok=lcyGcXB8" width="450" height="345" alt="" /></a>  <div class="slide-data">
-    <p><time>Nov 26, 2014</time> - Others filling in on CBS program include Will Arnett, Sean Hayes, Jim Gaffigan... <a href="/news/programming/judd-apatow-wayne-brady-drew-carey-john-mayer-among-late-late-show-guest-hosts/135966">More</a>    </p>
-  </div>
-</div> <!-- /SLIDE --><div class="slide">
-  <span class="gold"><a href="/news/washington">Washington</a></span>
-     <h1><a href="/news/washington/att-fcc-we-arent-limiting-ftth-2-million-deal-pledge/135958">AT&amp T to FCC: We Aren   t Limiting FTTH to 2 Million Deal Pledge</a></h1>
-	<a href="/news/washington/att-fcc-we-arent-limiting-ftth-2-million-deal-pledge/135958"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/0502_Washington_FCCHeadQuarters_49.jpg?itok=WSeAUMK0" width="450" height="345" alt="" /></a>  <div class="slide-data">
-    <p><time>Nov 26, 2014</time> - Says it was always planning to complete announced GigaPower buildout to 25 metros... <a href="/news/washington/att-fcc-we-arent-limiting-ftth-2-million-deal-pledge/135958">More</a>    </p>
-  </div>
-</div> <!-- /SLIDE --><div class="slide">
-  <span class="gold"><a href="/news/technology">Technology</a></span>
-     <h1><a href="/news/currency/amazon-prime-subs-get-some-free-4k-fare/135952">Amazon Prime Subs To Get Some Free 4K Fare</a></h1>
-	<a href="/news/currency/amazon-prime-subs-get-some-free-4k-fare/135952"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/featured_article_home/public/cash_6_0.jpg?itok=U-O6cGl4" width="450" height="345" alt="" /></a>  <div class="slide-data">
-    <p><time>Nov 26, 2014</time> - No charge for ultra HD titles in Prime Instant Video Library ... <a href="/news/currency/amazon-prime-subs-get-some-free-4k-fare/135952">More</a>    </p>
-  </div>
-</div> <!-- /SLIDE -->      </div>
-      <div class="anchor">
-        <nav class="clearfix">
-          <a class="feat-prev"></a>
-          <div class="feat-pager"></div>
-          <a class="feat-next"></a>
-        </nav>
-        <div class="caption"></div>
-      </div> <!-- / ANCHOR -->
-    </div> <!-- /FEATURED SLIDER -->
-  </div>
-</div> <!-- / FIVE COL -->
-
-
-<!--//// NEWS ANALYSIS ////-->
-<div class="threecol last">
-  <div class="news-analysis home-top">
-    <div class="inner-pad">
-      <!--<h2><span></span>News &amp  Analysis</h2>-->
-      <article>
-  <span class="gold"><a href="/news/washington">Washington</a></span>
-    <h3><a href="/news/washington/parties-push-expedited-briefing-contract-challenge/135964">Parties Push for Expedited Briefing on Contract Challenge</a></h3>
-  <p>Programmers, broadcasters support speeding briefing schedule, silent on oral argument</p>
-</article><article>
-  <span class="gold"><a href="/news/washington">Washington</a></span>
-    <h3><a href="/news/washington/doj-ok-nexstar-cca-purchase/135963">DOJ Ok With Nexstar CCA Purchase</a></h3>
-  <p>Contingent on spin-off of WEVV</p>
-</article><article>
-  <span class="gold"><a href="/news/programming">Programming</a></span>
-    <h3><a href="/news/programming/reelz-encore-kennedys-nov-29-30/135956">Reelz To Encore    The Kennedys    on Nov. 29-30</a></h3>
-  <p>Emmy-winning miniseries available on DirecTV Everywhere</p>
-</article><article>
-  <span class="gold"><a href="/news/programming">Programming</a></span>
-    <h3><a href="/news/currency/nuvotv-inks-carriage-renewal-time-warner-cable/135957">NUVOtv Inks Carriage Renewal with Time Warner Cable</a></h3>
-  <p>Deal includes HD launch</p>
-</article>	  <div class="see-all">
-		<a href="/more-news">More News &rarr </a>
-	  </div>
-    </div><!-- /INNER PAD -->
-  </div><!-- /BORDER -->
-</div> <!-- /THREE COL -->
-
-<div class="clearfix"></div>
-<hr class="double-line">  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-bcn-blog-home-list" >
-  
-      
-  
-  <div class="pane-content">
-    
-<div class="row clearfix home-blogs gap">
-  <div class="red-tab">
-    <span>Blogs</span>
-    
-  </div>
-  <div class="clearfix"></div>
-  <div class="fourcol lhs">
-    <div style="width: 65px ">  
-      <a href="/users/jeggerton" class="thumb"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/author_thumbnail/public/author_image/JEggerton_BC_web.jpg?itok=knq2tswz"/></a>  </div>
-<span class="gold"><a href="/blog/bc-dc">BC DC</a></span>
-<h2><a href="/blog/bc-dc/spectrum-possibilities/135808">Spectrum of Possibilities</a></h2>
-	<a href="#" class="feat-thumb"><a class = "feat-thumb" href="/node/135808"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/blog_home/public/blog-images/0502_Washington_FCCHeadQuarters.jpg?itok=qHXIy1V6"/></a>
-<p>
-  <strong style="font-weight:bold ">Nov 20, 2014</strong> - AWS-3 success could raise estimates on value of broadcast real estate... <a href="" class="more"><a href="/blog/bc-dc/spectrum-possibilities/135808">More</a></a>
-</p>	  </div>
-  <div class="fourcol last rhs">
-		<div class="inner-pad">
-      <article>
-      <a href="/users/jkuperberg" class="thumb"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/author_thumbnail/public/author_image/263436_10200161900953481_80925097_n.jpg?itok=gqDQ0PvW"/></a>    
-  <div class="text-wrap">
-    <span class="gold"><a href="/blog/fates-and-fortunes">Fates and Fortunes</a></span>
-	    <h3><a href="/blog/fates-and-fortunes/fates-roundup-nov-25-2014/135944">Fates Roundup, Nov. 25, 2014</a></h3>
-    <p>Cablevision ups Anselmo, KUSA Denver names Moreno news director and more</p>
-  </div>
-</article><article>
-      <a href="/users/staffc" class="thumb"><img src="/sites/all/modules/custom/bnc_features/bnc_blog/images/avatar.png" /></a>    
-  <div class="text-wrap">
-    <span class="gold"><a href="/blog/bc-beat">BC Beat</a></span>
-	    <h3><a href="/blog/bc-beat/media-part-ferguson-story/135913">Media Part of Ferguson Story</a></h3>
-    <p>President says there will be some ‘negative reaction,’ which will make for ‘good TV’</p>
-  </div>
-</article><article>
-      <a href="/users/aromero" class="thumb"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/author_thumbnail/public/author_image/ariana-romero-BC-web.jpg?itok=plLbL3lk"/></a>    
-  <div class="text-wrap">
-    <span class="gold"><a href="/blog/bc-beat">BC Beat</a></span>
-	    <h3><a href="/blog/bc-beat/where-be-what-watch-week-november-24-2014/135876">Where to Be, What to Watch: Week of November 24, 2014</a></h3>
-    <p>'The Mentalist' returns for its final season, 'The Making of Peter Pan Live' airs and more</p>
-  </div>
-</article>    </div>
-  </div>
-  <div class="see-all"><a href="/blog">More Blogs &rarr </a></div>
-</div>
-  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-content-add" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-content_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-1" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Middle' begin ------>  
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Middle')   
-//-->  
-</SCRIPT>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-featured-video" >
-  
-      
-  
-  <div class="pane-content">
-    
-<div class="row featured-video">
-  <h2>Featured Video</h2>
-  <a href="/video" class="see-all">See All Videos &rarr </a>  <div class="video-wrap row clearfix">
-    <div class="left">
-      <div class="video-player">
-      <iframe src='http://abcnews.go.com/video/embed?id=27190183' width='340' height='191' scrolling='no' style='border:none '></iframe><br/><a href="http://abcnews.go.com/us">More ABC US news</a> | <a href="http://abcnews.go.com/international">ABC World News</a>      </div>
-    </div>
-    <div class="right">
-      <time class="gold">November 26, 2014</time>
-      <h4>ABC News' Interview With Darren Wilson</h4>
-      <p>Ferguson, Missouri&nbsp police officer Darren Wilson gives ABC News his first interview following a&nbsp grad&nbsp jury's decision not to indict him on any charges&nbsp for the fatal shooting of Michael Brown. Wilson tells&nbsp George Stephanopoulos&nbsp that Brown began the physical altercation and that Brown did not put his hands up at any point.</p>
-    </div>
-  </div>
-</div>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-bnc-webinar-block" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="row clearfix gap" style="position: relative ">
-  <div class="red-tab">
-    <span>TVBIZ Webinars</span>
-	<a href="/webinars">More Webinars &rarr </a>
-  </div>
-  <a class="webcast-next"></a>
-  <a class="webcast-prev"></a>
-  <div class="webcast-wrap">
-    <div id="webcasts">
-      <div class="slide">
-  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="https://event.webcasts.com/starthere.jsp?ei=1044993"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/NetCracker_Header.jpg?itok=LP4lQmCh" width="183" height="141" alt="" /></a></div>  <h4><a href="https://event.webcasts.com/starthere.jsp?ei=1044993">Everything You’ve Always Wanted to Know About Virtualization</a></h4>
-  <!--<p>Free Webinar <br>
-     at 
-  </p>
-  <p></p>-->
-</div>
-<div class="slide">
-  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.broadcastingcable.com/political-webinar-series-midterm-elections"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/Mid_Term_Elections_Header_1.jpg?itok=MFJ89OdK" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.broadcastingcable.com/political-webinar-series-midterm-elections">Political Webinar Series: Midterm Elections</a></h4>
-  <!--<p>Free Webinar <br>
-     at 
-  </p>
-  <p></p>-->
-</div>
-<div class="slide">
-  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/next-tv-finding-mcn-model/374370"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/NextTV_Header.jpg?itok=dmJQ1EJ_" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/next-tv-finding-mcn-model/374370">Next TV: Finding the MCN Model</a></h4>
-  <!--<p>Free Webinar <br>
-     at 
-  </p>
-  <p></p>-->
-</div>
-<div class="slide">
-  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/comcasttime-warner-what-does-it-mean-programmers/374593"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/Comcast_TWC_Header_0.jpg?itok=pJhMwyjW" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/comcasttime-warner-what-does-it-mean-programmers/374593">Comcast/Time Warner Cable:  What Does It Mean  for Programmers?</a></h4>
-  <!--<p>Free Webinar <br>
-     at 
-  </p>
-  <p></p>-->
-</div>
-<div class="slide">
-  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/autohopper-case/373533"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/Autohop%20Thumbnail.jpg?itok=UZ7s6U6P" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/autohopper-case/373533">The Autohop Case</a></h4>
-  <!--<p>Free Webinar <br>
-     at 
-  </p>
-  <p></p>-->
-</div>
-<div class="slide">
-  <div class="passed"><span style="color: #b9922e ">Archived</span><a href="http://www.multichannel.com/webcast/profiting-video-advertising-2014-digital-newfronts-and-beyond/321212"><img typeof="foaf:Image" src="http://www.broadcastingcable.com/sites/default/files/public/styles/webinar_block/public/VideoAd_183x141.jpg?itok=tsNCnani" width="183" height="141" alt="" /></a></div>  <h4><a href="http://www.multichannel.com/webcast/profiting-video-advertising-2014-digital-newfronts-and-beyond/321212">Profiting from Video Advertising: The 2014 Digital NewFronts and Beyond</a></h4>
-  <!--<p>Free Webinar <br>
-     at 
-  </p>
-  <p></p>-->
-</div>
- 
-    </div>
-  </div>
-</div>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-thewire-scroller" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="wire clearfix row">
-	<a href="/the-wire"><span>PR Wire:</span></a>	<div class="marquee">
-		<div class="wire-prev"></div>
-		<div class="wire-next"></div>
-		<div class="wire-wrap">
-			<dl id="bc-wire">
-									<dd><a href="/thewire/first-uk-infocomm-cts-i-prep-3-day-course/135967">First UK InfoComm CTS-I Prep 3-Day Course</a></dd>
-									<dd><a href="/thewire/thomson-video-networks-coordinating-convince-consortium-address-carbon-footprint-ict-industry/135965">Thomson Video Networks Coordinating CONVINcE Consortium to Address Carbon Footprint of ICT Industry</a></dd>
-									<dd><a href="/thewire/meet-latest-greatest-vivien2015/135955">Meet The Latest &amp  Greatest - Vivien2015</a></dd>
-									<dd><a href="/thewire/infocomm-announces-education-line-ise-2015/135954">InfoComm Announces Education Line Up At ISE 2015</a></dd>
-									<dd><a href="/thewire/cbs-display-live-social-media-posts-during-broadcast-macy-s-day-parade/135953">CBS to Display Live Social Media Posts during Broadcast of Macy’s Day Parade</a></dd>
-									<dd><a href="/thewire/fusefx-expands-new-york-and-vancouver/135949">FuseFX Expands to New York and Vancouver</a></dd>
-									<dd><a href="/thewire/bbc-america-s-critically-acclaimed-original-series-orphan-black-adds-cast/135948">BBC America’s Critically Acclaimed Original Series ‘Orphan Black’ Adds to Cast</a></dd>
-									<dd><a href="/thewire/mun2-bring-tradition-thanksgiving-nfl-football-spanish-language-homes-across-america/135947">mun2 to Bring the Tradition of Thanksgiving NFL Football to Spanish-Language Homes Across America</a></dd>
-									<dd><a href="/thewire/video-news-app-watchup-launches-ott-apps-xbox-360-and-amazon-fire/135943">Video News App Watchup Launches OTT apps  Xbox 360 and Amazon Fire</a></dd>
-									<dd><a href="/thewire/sinclair-broadcast-groups-amy-and-univision-local-medias-manahan-co-chair-industry-cfo-summit/135924">Sinclair Broadcast Group   s Amy and Univision Local Media   s Manahan to Co-Chair Industry CFO Summit </a></dd>
-							</dl>
-		</div>
-	</div>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </section>
-  <section class="right-rail">
-    <div class="inside"><div class="panel-pane pane-panels-mini pane-righr-side-first-add" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-righr_side_first_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-2" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Position1' begin ------>  
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Position1')   
-//-->  
-</SCRIPT>  
-<!------ OAS AD 'Position1' end ------>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-block pane-bnc-newsletter-bnc-custom-newsletter" >
-  
-      
-  
-  <div class="pane-content">
-    <form action="/" method="post" id="newsletter-form" accept-charset="UTF-8"><div><div id="edit-start" class="form-item form-type-item">
- <div class="red-tab clearfix"><span>Newsletters Signup</span></div>
-</div>
-<div class="widget-bd"><div id="edit-start-1" class="form-item form-type-item">
- 
-</div>
-<div class="form-item form-type-textfield form-item-email-field">
-  <label for="edit-email-field"><h4>Sign Up For Our Newsletters</h4><span class="sub"> For More In Depth Information</span> </label>
- <input type="text" id="edit-email-field" name="email_field" value="" size="60" maxlength="128" class="form-text" />
-</div>
-<input type="submit" id="edit-submit" name="op" value="Subscribe" class="form-submit" /></div><div id="edit-end-1" class="form-item form-type-item">
- 
-</div>
-<input type="hidden" name="form_build_id" value="form-AK4cQY7VYWtcQbtaR3of3koGNoZLtCLdhKR2vhPVtlc" />
-<input type="hidden" name="form_id" value="newsletter_form" />
-</div></form>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-current-issue-block" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="widget inside-current-issue">
-	<div class="red-tab">
-		<span><a href="/current-issue">Inside The Current Issue</a><div class="icn-key"></div></span>
-		<a href="/archive">Archive &rarr </a>
-	</div>
+<!-- Stylesheet -->   
+    <link rel="stylesheet" href="_resourcesbeta/css/home_2013b.css" type="text/css" media="all" />
         
-    <div class="widget-bd">
-        <div class="col-holder clearfix">
-            <div class="col-mag">
-                <a href="/current-issue"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/cover_story/public/bnc141103-MAG_0001_nolabel_0.jpg?itok=VvsnJF9y"></a>
-            </div>
-            <div class="col-list">
-                <div class="group">
-                    <article>
-<h4>
-<a href="/news/news-articles/view-top-partly-mostly-sunny-tv-forecasters/135657">View From the Top Partly to Mostly Sunny For TV Forecasters</a></h4>
-</article><article>
-<h4>
-<a href="/news/currency/tv-s-troubles-aired-out-during-earnings-calls/135677">TV’s Troubles Aired Out During Earnings Calls</a></h4>
-</article><article>
-<h4>
-<a href="/news/washington/president-s-new-deal/135676">The President’s New ‘Deal’</a></h4>
-</article>                </div>
-            </div>
-        </div>
-        <div class="see-all"><a href="/current-issue">More &rarr </a></div>
-    </div>
-</div>
- <!-- /INSIDE-CURRENT-NEWS -->  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-bnc-disqus-comment" >
-  
-      
-  
-  <div class="pane-content">
+<!-- XML -->    
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="atom.xml" />
     
-<div class="widget tabbed">
-  <div id="tab-container-1">
-		<ul id="tab-container-1-nav" class="clearfix tabbed-nav">
-		  <li class=""><a href="#tab1" class="">Talkback</a></li>
-		  <li class="last activeli"><a href="#tab2" class="active">Trending</a></li>
-		</ul>
-		<div class="tab" id="tab1">
-			  <div id="dsq-popthreads" class="dsq-widget">
-			  	<script type="text/javascript" src="http://disqus.com/forums/broadcastingandcable/recent_comments_widget.js?num_items=3&excerpt_length=100&avatar_size=32"></script>
-			  </div>
-			   <a href="/comments" class="view-all-link">View All &rarr </a>
-		</div>
-		<div class="tab" id="tab2" style="display: block ">
-	   <article>
-  <h4><a href="/news/news-articles/exclusive-fox-movie-channel-rebrand-fxm-block/112442">Exclusive: Fox Movie Channel to Rebrand With    FXM    Block</a></h4>
-</article><article>
-  <h4><a href="/news/technology/grass-valley-demo-new-ip-tech-ibc2014/133859">Grass Valley to Demo New IP Tech #IBC2014</a></h4>
-</article><article>
-  <h4><a href="/news/news-articles/breaking%E2%80%A6/70108">Breaking…
-</a></h4>
-</article><article>
-  <h4><a href="/news/news-articles/cable-dot-coms-add-more-content/70861">Cable Dot-Coms Add More Content
-</a></h4>
-</article><article>
-  <h4><a href="/news/news-articles/big-apple-fix/102261">Big Apple Fix
-</a></h4>
-</article>		</div>
-  </div>
-</div>
-<script type="text/javascript">
-var tabber1 = new Yetii({
-id: 'tab-container-1'
-}) 
-</script>  </div>
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="index.xml" />
 
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-right-side-second-add" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-right_side_second_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-3" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Position1' begin ------>  
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Position2')   
-//-->  
-</SCRIPT>  
-<!------ OAS AD 'Position1' end ------>  </div>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="rsd.xml" />
 
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-custom pane-4 pane-subscribe" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="widget subscribe">
-	<div class="red-tab"><span>Subscribe Now</span></div>
-	<div class="widget-bd">
-		<a href="https://w1.buysub.com/loc/BCB/13LDI3TRM" target="_blank"><img src="/sites/all/themes/bnc_custom/images/subscribe_now.jpg"></a>
-	</div>
-</div>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-right-side-third-add" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-right_side_third_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-5" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Position1' begin ------>  
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Position3')   
-//-->  
-</SCRIPT>  
-<!------ OAS AD 'Position1' end ------>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-
-  
-  </div>
-</div>
-  </section>
-  
+    <link rel="shortcut icon" href="/favicon.ico">
     
-  <section class="left-rail clearfix">
-    <div class="inside"></div>
-  </section>
-  <section class="right-rail no-pad">
-    <div class="inside"></div>
-  </section>
-  
-</div>
-<div class="clearfix"></div>
-  </div>
-</div>
-  </div>
-    </div>
-    <div class="clearfix">
-          </div>
-	</div>
-	<!--========================== /CONTAINER ==========================-->
-	
-	
-	<!--=========================== PEOPLE =============================-->
-	<div class="people row">
-		<div class="wrapper">
-		<div class="pad">
-			  <div class="region region-people">
-    <div id="block-panels-mini-schmooze" class="block-panels-mini clearfix">
-
+	<script type='text/javascript'>
+    var googletag = googletag || {} 
+    googletag.cmd = googletag.cmd || [] 
+    (function() {
+    var gads = document.createElement('script') 
+    gads.async = true 
+    gads.type = 'text/javascript' 
+    var useSSL = 'https:' == document.location.protocol 
+    gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js' 
+    var node = document.getElementsByTagName('script')[0] 
+    node.parentNode.insertBefore(gads, node) 
+    })() 
+    </script>
     
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-schmooze">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-bnc-slideshow-homepage" >
-  
-      
-  
-  <div class="pane-content">
-    <em>Schmooze</em>
-<a class="people-prev"></a>
-<a class="people-next"></a>
-<div id="bc-people">
-  <div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-november-17-2014/135640"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1003_01_Hamm.jpg?itok=Z16UwaRI" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-november-17-2014/135640">Schmooze: November 17, 2014</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-november-10-2014/1354 "><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1101_01_Bafta.jpg?itok=3ff8xAsY" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-november-10-2014/1354 ">Schmooze: November 10, 2014</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-november-3-2014/135264"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1004_01_Supernatural.jpg?itok=VRprJCQ9" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-november-3-2014/135264">Schmooze: November 3, 2014</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/24th-annual-bc-hall-fame/135087"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/EK4_2735.jpg?itok=yk8jHh_3" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/24th-annual-bc-hall-fame/135087">24th Annual B&amp C Hall of Fame</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-october-20-2014/134921"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1003_01_Affair.jpg?itok=FfgMGEqB" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-october-20-2014/134921">Schmooze: October 20, 2014</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-october-13-2014/134745"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1002_02_Gracepoint.jpg?itok=JGltTdOy" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-october-13-2014/134745">Schmooze: October 13, 2014</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-hispanic-tv-summit-2014/134679"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1_5.jpg?itok=KbO_Xrg5" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-hispanic-tv-summit-2014/134679">Schmooze: Hispanic TV Summit 2014</a></h5>
-	<p></p>
-  </div>
-</div><div class="slide">
-  <a href="http://www.broadcastingcable.com/content/schmooze-october-6-2014/134550"><img src="http://www.broadcastingcable.com/sites/default/files/public/styles/home-page-slider-block/public/1001_01_Sleepy%20Hollow.jpg?itok=gRTwJp_t" /></a>
-  <div class="p-caption">
-    <h5><a href="/content/schmooze-october-6-2014/134550">Schmooze: October 6, 2014</a></h5>
-	<p></p>
-  </div>
-</div></div>
-<div class="see-all">
-	<a href="/slideshow">See All &rarr </a>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-	
-		</div> <!-- /PAD -->
-		</div> <!-- /WRAPPER -->
-	</div>
-	<!--========================== /PEOPLE =============================-->
-	
-	<!--========================== LEADEBOARD ==========================-->
-	<div class="leader-bottom row">
-		<div class="wrapper">
-			<div class="pad">
-				<div class="leaderboard bot">
-					  <div class="region region-bottom-add">
-    <div id="block-panels-mini-bottom-add" class="block-panels-mini clearfix">
-
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/3562084/CJR_300x250_Home', [300, 250], 'div-gpt-ad-1351887289718-1').addService(googletag.pubads()) 
+    googletag.defineSlot('/3562084/CJR_Leaderboard_Home_728x90', [728, 90], 'div-gpt-ad-1351887289718-9').addService(googletag.pubads()) 
+    googletag.defineSlot('/3562084/CJR_700x500_TEST', [700, 500], 'div-gpt-ad-1374535322548-0').addService(googletag.pubads()) 
+    googletag.pubads().enableSingleRequest() 
+    googletag.enableServices() 
+    }) 
+    </script>
     
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-bottom_add">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-8" >
-  
-      
-  
-  <div class="pane-content">
-    <!------ OAS AD 'Bottom' begin ------>  
-<div class="lead_bottom">
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('Bottom')   
-//-->  
-</SCRIPT>
-</div>
-<!------ OAS AD 'Bottom' end ------>
+<!--[if IE 8]>
+    <style type="text/css">
 
-
-
-
-
-
-  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-				</div>
-			</div> <!-- /PAD -->
-		</div> <!-- /WRAPPER -->
-	</div>
-	<!--========================== /LEADEBOARD =========================-->
-	
-	<!--=========================== NETWORK ============================-->
-	<div class="network row">
-		<div class="wrapper">
-        <div class="region region-network">
-    <div id="block-panels-mini-footer-network" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_network">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-bnc-footer-feed" >
-  
-      
-  
-  <div class="pane-content">
-    <div class="network row">
-  <div class="wrapper">
-    <div class="pad clearfix">
-			<div class="block">
-  <div class="inner-pad">
-    <a href="http://www.multichannel.com" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_multichannel.png"></a>
-    <article><a href="http://www.multichannel.com/news/networks/logo-tv-reveal-rupauls-drag-race-cast/385895" target="_blank">Logo TV to Reveal    RuPaul   s Drag Race    Cast</a></article><article><a href="http://www.multichannel.com/news/content/tnt-unveils-new-series-wake-call/385894" target="_blank">TNT Provides    Wake Up Call    Via VOD</a></article><article><a href="http://www.multichannel.com/news/fcc/parties-push-expedited-briefing-contract-challenge/385893" target="_blank">Parties Push For Expedited Briefing on Contract Challenge</a></article>  </div>
-</div><div class="block">
-  <div class="inner-pad">
-    <a href="http://www.ratingsintel.com/" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_ratings.png"></a>
-    <article><a href="http://www.ratingsintel.com/pass-the-nfl-viewers-with-the-turkey-on-thanksgiving/" target="_blank">Pass The NFL Viewers, With The Turkey, On Thanksgiving</a></article><article><a href="http://www.ratingsintel.com/weeks-top-100-cable-networks-6/" target="_blank">The Week’s Top 100 Cable Networks: ESPN Sports Another #1 Ranking</a></article><article><a href="http://www.ratingsintel.com/the-top-100-cable-primetime-programs-2/" target="_blank">The Week’s Top 100 Primetime Programs: Football Reigns Supreme</a></article>  </div>
-</div><div class="block">
-  <div class="inner-pad">
-    <a href="http://www.tvtechnology.com" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_tvtech.png"></a>
-    <article><a href="http://www.tvtechnology.com/article/mcadams-on-our-clunky-tech/273495" target="_blank">McAdams On: Our Clunky Tech</a></article><article><a href="http://www.tvtechnology.com/article/advanced-systems-group-adds-ed-chen-to-sales-staff/273490" target="_blank">Advanced Systems Group Adds Ed Chen To Sales Staff</a></article><article><a href="http://www.tvtechnology.com/article/hpa-demo-room-early-deadline-extended/273489" target="_blank">HPA Demo Room Early Deadline Extended</a></article>  </div>
-</div><div class="block">
-  <div class="inner-pad">
-    <a href="http://www.c2meworld.com" target="_blank" class="thumb"><img src="/sites/all/themes/bnc_custom/images/logo_c2meworld.png"></a>
-    <article><a href="http://www.c2meworld.com/creation/music-for-the-mind-composer-alexandre-desplat-on-the-imitation-game/" target="_blank">Music for the Mind: Composer Alexandre Desplat on ‘The Imitation Game’</a></article><article><a href="http://www.c2meworld.com/creation/virunga-uncovers-unrest-in-the-congo-using-15-different-cameras/" target="_blank">Virunga’ Uncovers Unrest in the Congo (Using 15 Different Cameras)</a></article><article><a href="http://www.c2meworld.com/creation/armenia-public-radio-follows-light/" target="_blank">Armenia Public Radio Follows Light</a></article>  </div>
-</div>		</div>
-  </div>
-</div>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-		</div> <!-- /WRAPPER -->
-	</div>
-
-	<!--=========================== /NETWORK ===========================-->
-	<div class="push"></div>
-	</section> <!-- HOLDER -->
-	
-	<!--============================ FOOTER ============================-->
-	<footer class="full-size">
-		<div class="wrapper">
-      <div class="pad clearfix">
-        <div class="col col-1"><nav>  <div class="region region-footer-menu-1">
-    <div id="block-menu-menu-footer-first-menu" class="block-menu clearfix">
-
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="/news" title="News">News</a></li>
-<li class="leaf"><a href="/blog" title="Blogs">Blogs</a></li>
-<li class="leaf"><a href="/events" title="">B&amp C Events</a></li>
-<li class="leaf"><a href="/slideshow" title="">Schmooze</a></li>
-<li class="last leaf"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" title="">TV Careers</a></li>
-</ul>  </div>
-</div>
-  </div>
-</nav></div>
-        <div class="col col-2">  <div class="region region-footer-menu-2">
-    <div id="block-menu-menu-footer-second-menu" class="block-menu clearfix">
-
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="https://w1.buysub.com/loc/BCB/13LDI3TRM" title="Subscribe">Subscribe</a></li>
-<li class="leaf"><a href="https://www.b2bmediaportal.com/nbmedia/subscribe.aspx?b=brc" title="Newsletter">Newsletter Signup</a></li>
-<li class="last leaf"><a href="/rss.xml" title="RSS">RSS Feed</a></li>
-</ul>  </div>
-</div>
-<div id="block-menu-menu-footer-fifth-menu" class="block-menu clearfix">
-
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="https://w1.buysub.com/pubs/K2/BCB/nav_sign_in_combo.jsp?cds_page_id=83582&amp cds_mag_code=BCB&amp id=1385404833004&amp lsid=33291228017049236&amp vid=5" title="">All Access Login</a></li>
-<li class="leaf"><a href="/archive" title="">Archive</a></li>
-<li class="last leaf"><a href="/current-issue" title="">Current Issue</a></li>
-</ul>  </div>
-</div>
-  </div>
-</div>
-        <div class="col col-3">  <div class="region region-footer-menu-3">
-    <div id="block-menu-menu-footer-third-menu" class="block-menu clearfix">
-
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="http://www.newbaymedia.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li>
-<li class="leaf"><a href="http://www.newbaymedia.com/terms-and-conditions/" title="Terms of Use">Terms of Use</a></li>
-<li class="last leaf"><a href="/sitemap" title="Site Map">Site Map</a></li>
-</ul>  </div>
-</div>
-  </div>
-</div>
-        <div class="col col-4">  <div class="region region-footer-menu-4">
-    <div id="block-menu-menu-footer-fourth-menu" class="block-menu clearfix">
-
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="http://www.newbaymedia.com/who-we-are/" title="About Us">About Us</a></li>
-<li class="leaf"><a href="/contact-us" title="">Contact Us</a></li>
-<li class="leaf"><a href="/advertising-info" title="">Advertise</a></li>
-<li class="last leaf"><a href="http://www.broadcastingcable.com/sites/default/files/public/pdf/BC_EditCal_2014_Oct30.pdf" title="Editorial Calendar">Editorial Calendar</a></li>
-</ul>  </div>
-</div>
-  </div>
-</div>
-        <div class="col col-5">  <div class="region region-footer-menu-5">
-    <div id="block-panels-mini-social-links-bottom" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-social_links_bottom">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-9" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="socials">
-	<li class="fb-link"><a href="https://www.facebook.com/BroadcastingandCable" target="_blank"><span>Facebook</span></a></li>
-	<li class="twtr-link"><a href="https://twitter.com/bcbeat" target="_blank"><span>Twitter</span></a></li>
-</ul>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-        <div class="bottom row clearfix">  <div class="region region-footer">
-    <div id="block-panels-mini-footer-text" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_text">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-10" >
-  
-      
-  
-  <div class="pane-content">
-    <a class="bc" href="#"><img src="http://www.broadcastingcable.com//sites/default/files/public/logo_bc_fff.png"></a>
-<p class="credits">Copyright &copy  2014 by <a href="http://www.newbaymedia.com/" style="color:#fff ">NewBay Media</a>, LLC. All Rights Reserved.	<span class="break">28 East 28th Street, 12th floor, New York, NY 10016 T (212) 378-0400 F (212) 378-0470</span></p>
-<a class="newbay" href="http://newbaymedia.com"><img src="http://www.broadcastingcable.com//sites/default/files/public/logo_newbay.png"></a>
-  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-      </div> <!-- /PAD -->
-		</div> <!-- /WRAPPER -->
-	</footer> <!-- FOOTER -->
-	
-	<!--///// MOBILE FOOTER /////-->
-	<footer class="mobile-only">
-		<div class="wrapper">
-		<div class="pad clearfix">
-			<img src="/sites/all/themes/bnc_custom/images/logo_bc_fff.png" class="bclogo2">
-			<div class="footer-nav">
-				  <div class="region region-mobile-footer-menu">
-    <div id="block-panels-mini-mobile-footer-menu" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-mobile_footer_menu">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-block pane-menu-menu-footer-first-menu" >
-  
-      
-  
-  <div class="pane-content">
-    <ul class="menu"><li class="first leaf"><a href="/news" title="News">News</a></li>
-<li class="leaf"><a href="/blog" title="Blogs">Blogs</a></li>
-<li class="leaf"><a href="/events" title="">B&amp C Events</a></li>
-<li class="leaf"><a href="/slideshow" title="">Schmooze</a></li>
-<li class="last leaf"><a href="http://www.jobtarget.com/home/home.cfm?site_id=13051" title="">TV Careers</a></li>
-</ul>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-			</div>
-		
-			<!--<ul class="network-bot">
-				<li><a href="http://www.multichannel.com/"><img src="/sites/all/themes/bnc_custom/images/logo_ft_multichannel.png"></a></li>
-				<li><a href="http://www.tvtechnology.com/index"><img src="/sites/all/themes/bnc_custom/images/logo_ft_tvtech.png"></a></li>
-				<li><a href="http://www.twice.com/"><img src="/sites/all/themes/bnc_custom/images/logo_ft_twice.png"></a></li>
-				<li><a href="http://c2meworld.com/"><img src="/sites/all/themes/bnc_custom/images/logo_ft_c2meWorld.png"></a></li>
-			</ul>-->
-			  <div class="region region-mobile-footer-network">
-    <div id="block-panels-mini-footer-network-mobile" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_network_mobile">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-bnc-mobile-footer-feed" >
-  
-      
-  
-  <div class="pane-content">
-    <p class="credits" style="color:#fff">Other NewBay Media Brands</strong></p>
-<ul class="network-bot">
-  <!--    <li></li>
-   -->
- <li><a target="_blank" href="http://www.multichannel.com">Multichannel.com</a></li>
-      <li><a target="_blank" href="http://www.twice.com">Twice.com</a></li>
-      <li><a target="_blank" href="http://www.tvtechnology.com">TV Technology</a></li>
-      <li><a target="_blank" href="http://www.c2meworld.com">C2meword.com</a></li>
-  </ul>
- <p><a href="http://www.newbaymedia.com/brands/"><strong>MORE</strong></a></p>   </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-			  <div class="region region-mobile-footer-text">
-    <div id="block-panels-mini-footer-text-mobile" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-footer_text_mobile">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-11" >
-  
-      
-  
-  <div class="pane-content">
-    <p class="credits">Copyright  2014 by NewBay Media, LLC. All Rights Reserved.	<span class="break">28 East 28th Street, 12th floor, New York, NY 10016 T (212) 378-0400 F (212) 378-0470</span></p>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-			<div class="bot clearfix">
-				<a href="http://www.newbaymedia.com/" class="newbay"><img src="/sites/all/themes/bnc_custom/images/logo_newbay.png"></a>
-				  <div class="region region-mobile-footer-social">
-    <div id="block-panels-mini-social-links-mobile-bottom" class="block-panels-mini clearfix">
-
-    
-  <div class="content">
-    <div class="panel-display panel-1col clearfix" id="mini-panel-social_links_mobile_bottom">
-  <div class="panel-panel panel-col">
-    <div><div class="panel-pane pane-custom pane-12" >
-  
-      
-  
-  <div class="pane-content">
-    <!--smart_paging_autop_filter--><!--smart_paging_filter--><ul class="socials"><li class="fb-link"><a href="https://www.facebook.com/BroadcastingandCable" target="_blank"></a></li>
-	<li class="twtr-link"><a href="https://twitter.com/bcbeat" target="_blank"></a></li>
-</ul>  </div>
-
-  
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-			</div>
-		</div> <!-- /PAD -->
-		</div> <!-- /WRAPPER -->
-	</footer> <!-- FOOTER -->
-	<!--========================== /FOOTER =============================-->
-
-
-
-<script type="text/javascript">
-
-  var _sf_async_config = { uid: 21 0, domain: 'broadcastingcable.com', useCanonical: true } 
-
-  (function() {
-
-    function loadChartbeat() {
-
-      window._sf_endpt = (new Date()).getTime() 
-
-      var e = document.createElement('script') 
-
-      e.setAttribute('language', 'javascript') 
-
-      e.setAttribute('type', 'text/javascript') 
-
-      e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js') 
-
-      document.body.appendChild(e) 
-
+   .hero-text {
+       -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)" 
     } 
 
-    var oldonload = window.onload 
+    </style>
+<![endif]-->
 
-    window.onload = (typeof window.onload != 'function') ?
+<!--[if IE 7]>
+    <style type="text/css">
 
-      loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+   .hero-text {
+       background:transparent        
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75ffffff,endColorstr=#75ffffff) 
+       zoom: 1 
+    } 
 
+    </style>
+<![endif]-->
+
+<style type="text/css" media="only screen and (device-width: 768px)">
+div.hero-credit {right: 1px }
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="_resourcesbeta/css/interstitial_full_sail.css" />
+        
+<script type="text/javascript" src="interstitial_full_sail_2.js">
+/***********************************************
+* Interstitial Content Box- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+          
+</head>
+
+<body onload="MM_preloadImages('_resourcesbeta/img/global/icon-facebook-on.gif','_resourcesbeta/img/global/icon-podcast-on.gif','_resourcesbeta/img/global/icon-rss-on.gif','_resourcesbeta/img/global/icon-search-on.gif')">
+
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime() 
+</script>
+<!-- ClickTale end of Top part -->
+
+<!-- NEW ADDED by JB see END way below -->
+	
+	<div id="ad-above">
+		
+		<div id="ad-1">
+
+	<!-- CJR_Leaderboard_Home_728x90 -->
+<div id='div-gpt-ad-1351887289718-9' style='width:728px  height:90px '>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1351887289718-9')  }) 
+</script>
+</div>
+
+	</div>		
+	</div>
+
+<!-- BEGIN white type in gray about white background area -->
+	
+	<div id="type-above">
+		
+		<div class="date-above"><strong>Saturday, November 29, 2014.</strong> Last Update: Wed 10:50 AM EST		</div>
+        
+		<div class="nav-above">
+		
+			<a href="http://www.cjr.org/contact/contact.php">Contact</a>  |  
+			
+			<a href="http://www.cjr.org/contact/donate.php">Donate</a>  |  
+			
+			<a href="http://www.cjr.org/advertise/about_our_readers.php">Advertise</a>
+			
+		</div>
+		
+	</div>
+	
+<!-- END white type in gray about white background area -->
+
+<!-- BEGIN white area -->
+	
+	<div id="main">
+	
+<!-- BEGIN new header JB SEP 12 -->
+	
+		<div id="header">
+		
+<!-- BEGIN logo -->
+		
+			<div>
+			
+<a href="http://www.cjr.org/index.php" id="logo">Columbia Journalism Review</a>
+				
+			</div>
+			
+<!-- END logo -->
+
+<!-- BEGIN social icons -->
+			
+			<div id="social">
+				
+				<ul id="list-social">
+		
+						<li>
+						
+							<a href="https://www.facebook.com/columbiajournalismreview" class="facebook" target="_blank">facebook</a>
+							
+						</li>
+
+						<li>
+						
+							<a href="http://twitter.com/CJR" class="twitter" target="_blank">twitter</a>
+							
+						</li>
+		
+				</ul>
+				
+			</div>
+				
+<!-- END social icons -->	
+
+<!-- BEGIN sbuscribe area -->
+			
+			<div id="subscribe">
+				
+				<div class="subscribe-text">
+				
+					<div class="subscribe-title"><a href="https://ssl.palmcoastd.com/pcd/apps/index.cfm?imagid=18801&iKey=ICM1" target="_blank">Subscribe</a></div>					
+					
+					<ul id="subscribe-list">
+		
+							<li><a href="https://ssl.palmcoastd.com/pcd/apps/index.cfm?imagid=18801&iKey=ICM1" target="_blank">new</a> | </li>
+
+							<li><a href="https://ssl.palmcoastd.com/18801/apps/GFTOPTION1LANDING?ikey=I**MGD" target="_blank">gift</a> | </li>
+
+							<li><a href="https://ssl.palmcoastd.com/18801/apps/-154888?iCp=0FE37A4C83B636B9EC2C7AFADE4B80FC49B1BF02057D6416BDF 8BD4EDBFC76" target="_blank">renew</a></li>
+		
+					</ul>
+					
+				<ul id="subscribe-list-feeds">
+					
+					<li>
+					
+						<a href="http://itunes.apple.com/us/podcast/columbia-journalism-review/id410175695" class="podcast" target="_blank">podcast</a>
+					
+						<a href="http://www.cjr.org/feeds.php" class="rss">rss</a>
+					
+					</li>
+		
+				</ul>
+				
+				</div>
+
+					
+				<div class="subscribe-cover">
+				
+					<a href="http://www.cjr.org/magazine/"><img src="http://www.cjrarchive.org/_resources/img/global/cover_78x104.png" width="78" height="104" border="0" /></a>
+				
+				</div>
+				
+			</div>
+			
+<!-- BEGIN sbuscribe area -->
+
+			<ul id="nav-main">
+			
+            <li class="the_industry main">
+            
+            	<a href="http://www.cjr.org/the_industry/" class="main" id="the_industry_category">The Industry</a>
+            	
+            	<div id="the_industry_menu">
+            
+					<ul>
+				
+						<li class="li_rule"><a href="http://www.cjr.org/behind_the_news/">Behind the News</a></li>
+
+						<li class="li_rule"><a href="http://www.cjr.org/the_kicker/">The Kicker</a></li>
+
+						<li class="li_rule"><a href="http://www.cjr.org/minority_reports/">Minority Reports</a></li>
+					
+						<li class="li_rule"><a href="http://www.cjr.org/data_points/">Data Points</a></li>
+					
+						<li class="li_rule"><a href="http://www.cjr.org/darts_and_laurels/">Darts  38  Laurels</a></li>
+					
+						<li><a href="http://www.cjr.org/realtalk/">#Realtalk</a></li>
+					
+					</ul>
+				
+				</div>
+				
+			</li>					
+
+			<li class="politics_and_policy main">
+            
+            	<a href="http://www.cjr.org/politics_and_policy/" class="main" id="politics_and_policy_category">Politics  38  Policy</a>
+            	
+            	<div id="politics_and_policy_menu">
+            
+					<ul id="menu">
+				
+						<li class="li_rule"><a href="http://www.cjr.org/united_states_project/">United States Project</a></li>
+                        
+                        <!-- <li><a href="http://www.cjr.org/campaign_desk/">Campaign Desk</a></li> -->
+
+						<li class="li_rule"><a href="http://www.cjr.org/the_second_opinion/">The Second Opinion</a></li>
+                        
+                        <li><a href="http://www.cjr.org/cloud_control/">Cloud Control</a></li>
+					
+					</ul>
+					
+				</div>
+				
+			</li>					
+
+			<li class="business main">
+            
+            	<a href="http://www.cjr.org/the_audit/" class="main" id="business_category">Business</a>
+            	
+            	<div id="business_menu">
+            
+					<ul id="menu">
+				
+						<li><a href="http://www.cjr.org/the_audit/">The Audit</a></li>
+					
+					</ul>
+				
+				</div>
+				
+			</li>					
+
+			<li class="science main">
+            
+            	<a href="http://www.cjr.org/the_observatory/" class="main" id="science_category">Science</a>
+            	
+            	<div id="science_menu">
+            
+					<ul id="menu">
+				
+						<li><a href="http://www.cjr.org/the_observatory/">The Observatory</a></li>
+					
+					</ul>
+				
+				</div>
+				
+			</li>					
+
+			<li class="culture main">
+            
+            	<a href="http://www.cjr.org/culture/" class="main" id="culture_category">Culture</a>
+            	
+            	<div id="culture_menu">
+            
+					<ul id="menu">
+				
+						<li class="li_rule"><a href="http://www.cjr.org/reality_check/">Reality Check</a></li>
+
+						<li class="li_rule"><a href="http://www.cjr.org/full_court_press/">Full-Court Press</a></li>
+
+						<li class="li_rule"><a href="http://www.cjr.org/language_corner/">Language Corner</a></li>
+
+						<li><a href="http://www.cjr.org/critical_eye/">Critical Eye</a></li>
+					
+					</ul>
+					
+				</div>
+				
+			</li>					
+
+			<li class="magazine main">
+			
+				<a href="http://www.cjr.org/magazine/" class="main" id="magazine_category">Magazine</a>
+            
+				<div id="magazine_menu">
+				
+					<ul id="menu">
+				
+						<li class="li_rule"><a href="http://www.cjr.org/magazine/">Table of Contents</a></li>
+
+						<li><a href="http://www.cjr.org/issues/">Back Issues</a></li>
+					
+					</ul>
+					
+				</div>
+				
+			</li>					
+
+			<li class="resources main">
+			
+				<a href="http://www.cjr.org/resources/" class="main" id="resources_category">Resources</a>
+				
+				<div id="resources_menu">
+            
+					<ul id="menu">
+		
+						<li class="li_rule"><a href="http://www.cjr.org/resources/">Who Owns What</a></li> 
+
+						<li class="li_rule" style="line-height:16px !important padding:4px 0px 6px 0px !important "><a href="http://www.cjr.org/the_delacorte_lectures/all.php">Delacorte Lectures on Magazine Journalism</a></li>
+
+						<li class="li_rule"><a href="http://www.cjr.org/news_startups_guide/">Guide to Online News Startups</a></li>
+                        <li class="li_rule"><a href="http://cjr.org/supportreporting/">Support Reporting</a></li>
+
+						<li class="li_rule"><a href="http://www.cjr.org/resources/studyguides/index.php">Study guides</a></li>
+
+						<li><a href="http://www.cjr.org/about_us/follow_us.php">Follow Us</a></li>
+
+
+					
+					</ul>
+					
+				</div>
+				
+			</li>
+			
+			</ul>
+			
+			<div id="search-form">
+			
+				<p>Search:</p>
+			
+                <form id="search" action="http://www.cjr.org/search.php">
+
+				<input type="hidden" name="cx" value="002110349687880336610:9r4jniuv6ko" />
+				<input type="hidden" name="cof" value="FORID:11" />
+				<input type="hidden" name="ie" value="UTF-8" />
+			
+					<fieldset>
+			
+						<input type="text" class="text" defaultvalue=" " name="q" />
+				
+						<a href="#" class="submit" onclick="document.getElementById('search').submit()  return false ">Submit</a>
+			
+					</fieldset>
+		
+				</form>
+			
+			</div>
+		
+		</div>
+	
+<!-- END new header JB SEP 12 -->
+<!-- END OF NEW ADDED by JB SEP 12 -->			
+		<div id="content">
+		
+			<div id="column-left">
+
+<!-- begin MODULE - TOP LEFT COLUMN HERO AND LEAD -->
+			
+				<div id="module-hero-lead">
+                
+                	<div id="module-hero">
+                    
+						<div class="hero-image">
+							<a href="http://www.cjr.org/the_kicker/serial_sarah_koenig_journalism.php"><img alt="hero.jpg" src="http://www.cjr.org/dynamic/images-tb/hero.jpg" width="406" height="268" class="mt-image-none" style="" /></a>
+						</div>
+                    	
+					
+                        <div class="hero-text alt">
+                    
+							<h1 class="overline-hero behind_the_news">
+
+<a href="http://www.cjr.org/behind_the_news/">
+
+
+                             
+                                Behind the News
+                            </a></h1>
+					
+							<h2 class="headline-hero"><a href="http://www.cjr.org/the_kicker/serial_sarah_koenig_journalism.php">The importance of <i>Serial</i>   s transparency</a></h2> 
+                    
+						</div>
+                        
+                        <div class="hero-credit">
+													
+							<h2 class="credit">This American Life</h2> 
+						
+						</div>
+                            
+                     
+					
+					</div>						
+					<div id="module-lead">
+				
+						<!-- LEAD SPOT 1 -->
+                        
+                        <div class="lead-container">
+						
+							<div class="lead-image">
+								<a href="http://www.cjr.org/the_audit/how_media_gets_price_thanksgiving_dinner_wrong.php"><img alt="lead2.jpeg" src="http://www.cjr.org/dynamic/images-tb/lead2.jpeg" width="90" height="70" class="mt-image-none" style="" /></a>
+							</div>
+						
+							<div class="lead-text">
+						
+								<h1 class="overline-lead the_audit">
+
+<a href="http://www.cjr.org/the_audit/">
+
+
+                                
+                                The Audit
+                            </a></h1>
+					
+								<h2 class="headline-lead"><a href="http://www.cjr.org/the_audit/how_media_gets_price_thanksgiving_dinner_wrong.php">The real price of Thanksgiving</a></h2> 
+						
+							</div>
+						
+						</div>
+                        						
+						<!-- LEAD SPOT 2 -->
+						
+						<div class="lead-container">
+						
+							<div class="lead-image">
+								<a href="http://www.cjr.org/united_states_project/illinois_statehouse_coverage.php"><img alt="lead3.jpg" src="http://www.cjr.org/dynamic/images-tb/lead3.jpg" width="90" height="70" class="mt-image-none" style="" /></a>
+							</div>
+						
+							<div class="lead-text">
+						
+								<h1 class="overline-lead united_states_project">
+
+<a href="http://www.cjr.org/united_states_project/">
+
+
+                                
+                                United States Project
+                            </a></h1>
+					
+								<h2 class="headline-lead"><a href="http://www.cjr.org/united_states_project/illinois_statehouse_coverage.php">Reporting success in Springfield</a></h2> 
+						
+							</div>
+						
+						</div>
+                        						
+						<!-- LEAD SPOT 3 -->
+						
+						<div class="lead-container">
+						
+							<div class="lead-image">
+								<a href="http://www.cjr.org/news_literacy/ferguson_grand_jury_social_med.php"><img alt="lead4.jpeg" src="http://www.cjr.org/dynamic/images-tb/lead4.jpeg" width="90" height="70" class="mt-image-none" style="" /></a>
+							</div>
+						
+							<div class="lead-text">
+						
+								<h1 class="overline-lead news_literacy">
+
+<a href="http://www.cjr.org/news_literacy/">
+
+                                
+                                News Literacy
+                            </a></h1>
+					
+								<h2 class="headline-lead"><a href="http://www.cjr.org/news_literacy/ferguson_grand_jury_social_med.php">Ferguson   s verdict</a></h2> 
+						
+							</div>
+						
+						</div>
+                        					
+					
+					</div>	
+					
+				</div>
+				
+<!-- end MODULE - TOP LEFT COLUMN HERO AND LEAD -->
+<!-- begin MODULE - BOTTOM LEFT STACK -->
+				
+				<div id="module-stack">
+                        			
+			
+                    
+                    
+                    
+                	
+                	<div class="stack-container top">
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_85.php"><img src="http://www.cjr.org/images-tb/Screen%20Shot%202014-11-25%20at%203.14.11%20PM.png" alt="Screen Shot 2014-11-25 at 3.14.11 PM.png" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack the_kicker">
+                                <a href="http://www.cjr.org/the_kicker/">
+                                
+                                The Kicker</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_85.php">Must-reads of the week</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_85.php">The reignited Ferguson media frenzy, the shift from    internships    to    fellowships,    and a golden age of podcasts</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/the-editors-1/">The Editors</a> &nbsp &nbsp <span class="date">Nov 26, 2014 at 10:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                Culled from CJR&rsquo s own stories, plus the frequently updated &ldquo Must-reads from around the Web,&rdquo  our staff recommendations for the best... 
+                                <a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_85.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/the_audit/how_media_gets_price_thanksgiving_dinner_wrong.php"><img src="http://www.cjr.org/images/turkeys.jpg" alt="turkeys.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack the_audit">
+                                <a href="http://www.cjr.org/the_audit/">
+                                
+                                The Audit</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/the_audit/how_media_gets_price_thanksgiving_dinner_wrong.php">How the media gets the price of Thanksgiving dinner wrong </a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/the_audit/how_media_gets_price_thanksgiving_dinner_wrong.php">ABC, NBC, Tech Times, and <i>The Atlantic</i> run with a press release</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/ryan-chittum-1/">Ryan Chittum</a> &nbsp &nbsp <span class="date">Nov 26, 2014 at 10:20 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                It's Thanksgiving, which means it's time for the American Farm Bureau Federation's report on the cost of the average Thanksgiving... 
+                                <a href="http://www.cjr.org/the_audit/how_media_gets_price_thanksgiving_dinner_wrong.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/united_states_project/illinois_statehouse_coverage.php"><img src="http://www.cjr.org/images-tb/RaunerSpringfield.jpg" alt="RaunerSpringfield.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack united_states_project">
+                                <a href="http://www.cjr.org/united_states_project/">
+                                
+                                United States Project</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/united_states_project/illinois_statehouse_coverage.php">Statehouse staffing is down, but it   s not all doom and gloom in Springfield</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/united_states_project/illinois_statehouse_coverage.php">Veteran reporters say the press corps can still sniff out big stories in the Illinois capitol building</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/rkaneya/">Rui Kaneya</a> &nbsp &nbsp <span class="date">Nov 26, 2014 at 06:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                SPRINGFIELD, IL &mdash  Fresh off of his successful run for the Illinois governor&rsquo s office, Bruce Rauner took a victory lap... 
+                                <a href="http://www.cjr.org/united_states_project/illinois_statehouse_coverage.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/news_literacy/ferguson_grand_jury_social_med.php"><img src="http://www.cjr.org/images-tb/mcculloch.jpg" alt="mcculloch.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack news_literacy">
+                                <a href="http://www.cjr.org/news_literacy/">
+                                
+                                News Literacy</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/news_literacy/ferguson_grand_jury_social_med.php">What we can learn from Robert McCulloch   s media condemnation </a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/news_literacy/ferguson_grand_jury_social_med.php">The St. Louis County prosecutor criticized both journalists and the public for failing to practice basic news literacy skills
+</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/jihii-jolly/">Jihii Jolly</a> &nbsp &nbsp <span class="date">Nov 25, 2014 at 04:35 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                When Steve Fox's undergraduate news literacy students attended class Tuesday morning at the University of Massachusetts at Amherst, they wanted... 
+                                <a href="http://www.cjr.org/news_literacy/ferguson_grand_jury_social_med.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/the_kicker/serial_sarah_koenig_journalism.php"><img src="http://www.cjr.org/images-tb/serialpodcast.jpeg" alt="serialpodcast.jpeg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack the_kicker">
+                                <a href="http://www.cjr.org/the_kicker/">
+                                
+                                The Kicker</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/the_kicker/serial_sarah_koenig_journalism.php">Why <i>Serial</i> is important for journalism</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/the_kicker/serial_sarah_koenig_journalism.php">Transparency is key</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/joyce-barnathan/">Joyce Barnathan</a> &nbsp &nbsp <span class="date">Nov 25, 2014 at 02:50 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                The hit podcast <i>Serial</i>, a journalist's exploration of whether a young man was wrongly convicted of murder, breaks new ground... 
+                                <a href="http://www.cjr.org/the_kicker/serial_sarah_koenig_journalism.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/in_rehtaeh_parsons_case_its_pr.php"><img src="http://www.cjr.org/images-tb/rateah.jpeg" alt="rateah.jpeg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/in_rehtaeh_parsons_case_its_pr.php">In Rehtaeh Parsons    case, it   s press vs. Canadian law</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/in_rehtaeh_parsons_case_its_pr.php"><i>The Chronicle Herald</i> became the first major paper in the country to publish her name</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/allison-griner/">Allison Griner</a> &nbsp &nbsp <span class="date">Nov 25, 2014 at 12:20 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                Leah Parsons was only 13 years old when she invented the name that would echo across Canada years later. Her... 
+                                <a href="http://www.cjr.org/behind_the_news/in_rehtaeh_parsons_case_its_pr.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/the_second_opinion/how_to_report_the_narrow_network_story.php"><img src="http://www.cjr.org/images/healthcaregov.jpeg" alt="healthcaregov.jpeg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack the_second_opinion">
+                                <a href="http://www.cjr.org/the_second_opinion/">
+                                
+                                The Second Opinion</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/the_second_opinion/how_to_report_the_narrow_network_story.php">How to report the narrow-network story</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/the_second_opinion/how_to_report_the_narrow_network_story.php">Unpacking a key issue of the new health insurance landscape</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/trudy-lieberman-1/">Trudy Lieberman</a> &nbsp &nbsp <span class="date">Nov 25, 2014 at 11:00 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                Before the second season of open enrollment on the health insurance exchanges began, I suggested six angles for reporters covering... 
+                                <a href="http://www.cjr.org/the_second_opinion/how_to_report_the_narrow_network_story.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/eric_holder_press_freedom.php"><img src="http://www.cjr.org/images-tb/Holder%20small.jpg" alt="Holder small.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/eric_holder_press_freedom.php">Eric Holder   s lasting damage to press freedom</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/eric_holder_press_freedom.php">The attorney general   s rocky relationship with the media </a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/kelly-j-obrien/">Kelly J O'Brien</a> &nbsp &nbsp <span class="date">Nov 25, 2014 at 06:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                The fact that outgoing Attorney General Eric Holder has prosecuted more people under the Espionage Act than all previous attorneys... 
+                                <a href="http://www.cjr.org/behind_the_news/eric_holder_press_freedom.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/language_corner/how_to_use_the_colon.php"><img src="http://www.cjr.org/images-tb/colon.png" alt="colon.png" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack language_corner">
+                                <a href="http://www.cjr.org/language_corner/">
+                                
+                                Language Corner</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/language_corner/how_to_use_the_colon.php">How to use the colon</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/language_corner/how_to_use_the_colon.php">Understand its usage once and for all</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/merrill-perlman-1/">Merrill Perlman</a> &nbsp &nbsp <span class="date">Nov 24, 2014 at 02:50 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                The colon is one of the most versatile punctuation marks (and organs). We use it to mark time (he arrived... 
+                                <a href="http://www.cjr.org/language_corner/how_to_use_the_colon.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/press_subpoena_source_obama.php"><img src="http://www.cjr.org/images-tb/BruceBrown-thumb.jpg" alt="BruceBrown-thumb.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/press_subpoena_source_obama.php">Press subpoenas are a bigger problem than you   d think</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/press_subpoena_source_obama.php">The Obama administration continues to strong-arm journalists into revealing sources</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/bruce-brown/">Bruce Brown</a> &nbsp &nbsp <span class="date">Nov 24, 2014 at 10:55 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                 By now, everyone knows the feds have been handing out record numbers of subpoenas to journalists hoping to scare... 
+                                <a href="http://www.cjr.org/behind_the_news/press_subpoena_source_obama.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/is_this_the_golden_age_of_podc_1.php"><img src="http://www.cjr.org/images-tb/mic1.jpg" alt="mic1.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/is_this_the_golden_age_of_podc_1.php">Is this the golden age of podcasts?</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/is_this_the_golden_age_of_podc_1.php"><i>Serial</i>, Radiotopia, and Gimlet Media are leading the way in creative audience engagement</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/lene-sillesen/">Lene Bech Sillesen</a> &nbsp &nbsp <span class="date">Nov 24, 2014 at 06:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                The meteoric rise of podcast phenomenon <em>Serial </em>has placed podcasting firmly in the center of internet chatter and media attention,... 
+                                <a href="http://www.cjr.org/behind_the_news/is_this_the_golden_age_of_podc_1.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_84.php"><img src="http://www.cjr.org/images-tb/harvestofchange.jpg" alt="harvestofchange.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack the_kicker">
+                                <a href="http://www.cjr.org/the_kicker/">
+                                
+                                The Kicker</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_84.php">Must-reads of the week</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_84.php">Virtual reality at The Des Moines Register, journalism   s plagiarism problem, and Jack Shafer on leaving Reuters</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/the-editors-1/">The Editors</a> &nbsp &nbsp <span class="date">Nov 21, 2014 at 02:45 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                Culled from CJR&rsquo s own stories, plus the frequently updated &ldquo Must-reads from around the Web,&rdquo  our staff recommendations for the best... 
+                                <a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_84.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/the_second_opinion/boston_globe_partners_healthcare_martha_coakley.php"><img src="http://www.cjr.org/images-tb/BostonGlobeBuilding.jpg" alt="BostonGlobeBuilding.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack the_second_opinion">
+                                <a href="http://www.cjr.org/the_second_opinion/">
+                                
+                                The Second Opinion</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/the_second_opinion/boston_globe_partners_healthcare_martha_coakley.php"><i>The Boston Globe</i> finally digs in to a big story</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/the_second_opinion/boston_globe_partners_healthcare_martha_coakley.php">Recent standout coverage of a hospital expansion fight makes up for a patch of weaker reporting</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/trudy-lieberman-1/">Trudy Lieberman</a> &nbsp &nbsp <span class="date">Nov 21, 2014 at 12:16 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                <em>The</em> <em>Boston Globe</em> has, at last, dug into the big business-of-healthcare story in its state. In an important article earlier... 
+                                <a href="http://www.cjr.org/the_second_opinion/boston_globe_partners_healthcare_martha_coakley.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/united_states_project/tampa_bay_times_tampa_tribune_troubles.php"><img src="http://www.cjr.org/images-tb/tampatrib.jpeg" alt="tampatrib.jpeg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack united_states_project">
+                                <a href="http://www.cjr.org/united_states_project/">
+                                
+                                United States Project</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/united_states_project/tampa_bay_times_tampa_tribune_troubles.php">My take: The end of an era in Tampa</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/united_states_project/tampa_bay_times_tampa_tribune_troubles.php">The <i>Tampa Bay Times</i> and <i>Tampa Tribune</i> say goodbye to talented journalists</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/susannah-nesmith/">Susannah Nesmith</a> &nbsp &nbsp <span class="date">Nov 21, 2014 at 10:55 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                MIAMI &mdash  The sad news out of Tampa just keeps trickling across my Facebook page. This week it was the... 
+                                <a href="http://www.cjr.org/united_states_project/tampa_bay_times_tampa_tribune_troubles.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/news_literacy/engaging_news_project.php"><img src="http://www.cjr.org/images/ereader.jpg" alt="ereader.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack news_literacy">
+                                <a href="http://www.cjr.org/news_literacy/">
+                                
+                                News Literacy</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/news_literacy/engaging_news_project.php">Engaging News Project works to identify audience behavior</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/news_literacy/engaging_news_project.php">How metrics can help the news literacy movement </a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/jihii-jolly/">Jihii Jolly</a> &nbsp &nbsp <span class="date">Nov 21, 2014 at 06:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                Industry conversation over the best ways to quantify reader engagement on news sites may be reaching fever pitch, with a... 
+                                <a href="http://www.cjr.org/news_literacy/engaging_news_project.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/united_states_project/timeline_kstp_pointergate_defense.php"><img src="http://www.cjr.org/images-tb/pointergate.jpg" alt="pointergate.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack united_states_project">
+                                <a href="http://www.cjr.org/united_states_project/">
+                                
+                                United States Project</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/united_states_project/timeline_kstp_pointergate_defense.php">A timeline of the #pointergate TV station   s defense (Updated)</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/united_states_project/timeline_kstp_pointergate_defense.php">There   s doubling down, there   s tripling down, and then there   s what KSTP is doing</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/corey-hutchins/">Corey Hutchins</a> &nbsp &nbsp <span class="date">Nov 21, 2014 at 06:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                You&rsquo ve heard all about #pointergate. And you&rsquo ve probably read or watched a few of the many, many, many pieces exploring... 
+                                <a href="http://www.cjr.org/united_states_project/timeline_kstp_pointergate_defense.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/united_states_project/texas_fracking_railroad_commission_tceq.php"><img src="http://www.cjr.org/images-tb/frack.jpg" alt="frack.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack united_states_project">
+                                <a href="http://www.cjr.org/united_states_project/">
+                                
+                                United States Project</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/united_states_project/texas_fracking_railroad_commission_tceq.php">Texas reporters fight for access to fracking facts</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/united_states_project/texas_fracking_railroad_commission_tceq.php">State regulators put barriers between journalists and scientists, reporters say</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/priscila-mosqueda/">Priscila Mosqueda</a> &nbsp &nbsp <span class="date">Nov 20, 2014 at 02:50 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                AUSTIN -- Earlier this month, the residents of Denton, Texas--located on one of the country's largest natural gas reserves and... 
+                                <a href="http://www.cjr.org/united_states_project/texas_fracking_railroad_commission_tceq.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/approach_isis_tweets_with_caut.php"><img src="http://www.cjr.org/images-tb/tweet22.jpeg" alt="tweet22.jpeg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/approach_isis_tweets_with_caut.php">Approach ISIS tweets with caution</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/approach_isis_tweets_with_caut.php"> 8220 It   s clear that that they   ve gotten some pretty sophisticated media strategists and social media tacticians on their team 8221 </a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/jared-malsin/">Jared Malsin</a> &nbsp &nbsp <span class="date">Nov 20, 2014 at 11:45 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                CAIRO--When it seized huge parts of Syria and Iraq this year, the self-proclaimed Islamic State--and the geopolitical chaos surrounding it--became... 
+                                <a href="http://www.cjr.org/behind_the_news/approach_isis_tweets_with_caut.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/mathias_dopfner_digital_counte.php"><img src="http://www.cjr.org/images-tb/dopfnercorrect.jpg" alt="dopfnercorrect.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/mathias_dopfner_digital_counte.php">Mathias Döpfner, digital counterrevolutionary</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/mathias_dopfner_digital_counte.php">Axel Springer chief predicts US will eventually join Europe in the fight against the dominance of Google, Facebook, and other tech titans </a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/corey-pein-1/">Corey Pein</a> &nbsp &nbsp <span class="date">Nov 20, 2014 at 06:50 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                <i>The digital counterrevolution is underway in Europe, where national governments and bureaucrats in Brussels are enacting measures to curtail the...</i> 
+                                <a href="http://www.cjr.org/behind_the_news/mathias_dopfner_digital_counte.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/serial_sarah_koenig_adnan_syed.php"><img src="http://www.cjr.org/images-tb/serialpodcast.jpeg" alt="serialpodcast.jpeg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/serial_sarah_koenig_adnan_syed.php"><i>Serial</i> creators don   t know what will happen to Adnan Syed</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/serial_sarah_koenig_adnan_syed.php">New developments in his legal case suggest that the outcome is wide open</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/lindsay-beyerstein/">Lindsay Beyerstein</a> &nbsp &nbsp <span class="date">Nov 19, 2014 at 03:00 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                <i>This American Life</i>'s popular <i>Serial</i> podcast bills itself as "one story, told week-by-week." For the uninitiated, it's the story of... 
+                                <a href="http://www.cjr.org/behind_the_news/serial_sarah_koenig_adnan_syed.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/behind_the_news/virtual_reality_journalism.php"><img src="http://www.cjr.org/images-tb/harvestofchange.jpg" alt="harvestofchange.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack behind_the_news">
+                                <a href="http://www.cjr.org/behind_the_news/">
+                                
+                                Behind the News</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/behind_the_news/virtual_reality_journalism.php">Virtual reality is journalism   s next frontier</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/behind_the_news/virtual_reality_journalism.php">Why newsrooms need to consider telling stories in a different way</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/erin-polgreen/">Erin Polgreen</a> &nbsp &nbsp <span class="date">Nov 19, 2014 at 12:00 PM</span></h4> 
+								
+								<p class="content-stack">
+                                                                Gannett Digital/<i>Des Moines Register</i> Virtual reality is ascendant, and it's time for media outlets to take notice. Why? Consumer access... 
+                                <a href="http://www.cjr.org/behind_the_news/virtual_reality_journalism.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+              
+                    
+                    
+                    
+                	
+                    <div class="stack-container">    
+                    
+                          
+                        
+                             
+                            	
+                                
+                        
+                        		<div class="stack-image">        
+   <a href="http://www.cjr.org/united_states_project/how_two_florida_reporters_watc.php"><img src="http://www.cjr.org/images/FloridaMiamiPelican.jpg" alt="FloridaMiamiPelican.jpg" width="174" border="0" height="121" class="mt-image-left" /></a>
+   							  </div>
+                        
+
+                            	
+                            
+                        
+						
+                         
+                         <div class="stack-text">
+                         
+                         
+
+							
+                                <h1 class="overline-stack united_states_project">
+                                <a href="http://www.cjr.org/united_states_project/">
+                                
+                                United States Project</a></h1>
+                            
+							
+                            
+                            
+								<h2 class="headline-stack"><a href="http://www.cjr.org/united_states_project/how_two_florida_reporters_watc.php">How two Florida reporters    watchdogged    misuse of the state   s open-records law</a></h2> 
+								
+								<h3 class="subhead-stack"><a href="http://www.cjr.org/united_states_project/how_two_florida_reporters_watc.php">Case highlights the media   s interest in monitoring how FOI laws are used</a></h3> 
+								
+								<h4 class="byline-stack">By <a href="http://www.cjr.org/author/jonathan-w-peters/">Jonathan Peters</a> &nbsp &nbsp <span class="date">Nov 19, 2014 at 10:53 AM</span></h4> 
+								
+								<p class="content-stack">
+                                                                I teach journalism and media law courses at the University of Kansas, and part of my job is to help... 
+                                <a href="http://www.cjr.org/united_states_project/how_two_florida_reporters_watc.php"><span class="more">More</span></a></p>                             
+                            
+						
+                        </div>
+                    
+                    </div>	
+                    
+                    
+                    
+               
+                        
+                    					
+                        <!-- MORE STORIES -->
+                    
+                        <div class="more-stories">
+                                                    
+                                <div class="more-stories">
+                            
+                                    <p><a href="more_stories.php" class="main">more stories</a></p>
+                            
+                                </div>
+                            
+                        </div>
+					
+				</div>
+				
+<!-- end MODULE - BOTTOM LEFT STACK -->
+		
+			</div>
+		
+			<div id="column-right">
+
+<!-- begin TWITTER MODULE - TOP RIGHT -->
+
+				<div id="module-twitter">
+                
+                	<style>
+					.timeline-header .byline {
+					display: none !important 
+					}
+					</style>  
+              
+                    <a class="twitter-timeline" href="https://twitter.com/CJR/journo-tweets" data-widget-id="344859348448706560" height="270">Journo Tweets</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https' if(!d.getElementById(id)){js=d.createElement(s) js.id=id js.src=p+"://platform.twitter.com/widgets.js" fjs.parentNode.insertBefore(js,fjs) }}(document,"script","twitter-wjs") </script>
+                  
+				</div>
+
+<!-- end TWITTER MODULE - TOP RIGHT -->
+<!-- begin AD RIGHT -->
+
+				<div id="module-ad-right">
+				
+                    <!-- CJR_300x250_Home -->
+                    <div id='div-gpt-ad-1351887289718-1' style='width:300px  height:250px '>
+                    <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1351887289718-1')  }) 
+                    </script>
+                    </div>
+				
+				</div>
+
+<!-- end ED MODULE - TOP RIGHT -->
+<!-- begin tab box right -->
+
+                <div class="tabBox">
+                
+                  <ul class="tabs">
+                    <li><a href="#tab1">Most Popular</a></li>
+                    <li><a href="#tab2">Most Commented</a></li>
+                    <li><a href="#tab3">Twitter</a></li>
+                  </ul>
+                 
+                  <div class="tabContainer">
+                  
+                    <div id="tab1" class="tabContent">
+                
+                        <p><a href="http://www.cjr.org/behind_the_news/serial_sarah_koenig_adnan_syed.php"><i>Serial</i> creators don   t know what will happen to Adnan Syed</a> - New developments in his legal case suggest that the outcome is wide open</p>
+
+<p><a href="http://www.cjr.org/behind_the_news/bill_cosby_downfall.php">The press is responsible for ignoring Bill Cosby rape allegations</a> - Where were journalists 10 years ago when claims originally surfaced against him?</p>
+
+<p><a href="http://www.cjr.org/behind_the_news/journalism_has_a_plagiarism_pr.php#sthash.8GWBliiK.dpuf<br />
+">Journalism has a plagiarism problem. But it   s not the one you   d expect</a> - Fareed Zakaria   s case highlights news organizations    ethical grey areas</p>
+
+<p><a href="http://www.cjr.org/the_kicker/4_issues_john_oliver_explained.php">4 topics John Oliver explained more clearly than television news</a> - The political satirist brings explainer comedy to HBO viewers</p>
+
+<p><a href="http://www.cjr.org/the_observatory/wnyc_health_unit_radiolab.php">Will radio save science journalism?</a> - WNYC will soon have a new health unit</p>
+                
+                    </div>
+                     
+                    <div id="tab2" class="tabContent">
+                
+                        
+                            <p><a href="http://www.cjr.org/united_states_project/tampa_bay_times_tampa_tribune_troubles.php#comments">My take: The end of an era in Tampa <span class="comments">(14)</span></a></p>
+                        
+                            <p><a href="http://www.cjr.org/behind_the_news/serial_sarah_koenig_adnan_syed.php#comments"><i>Serial</i> creators don't know what will happen to Adnan Syed <span class="comments">(14)</span></a></p>
+                        
+                            <p><a href="http://www.cjr.org/behind_the_news/bill_cosby_downfall.php#comments">The press is responsible for ignoring Bill Cosby rape allegations <span class="comments">(6)</span></a></p>
+                        
+                            <p><a href="http://www.cjr.org/the_second_opinion/boston_globe_partners_healthcare_martha_coakley.php#comments"><i>The Boston Globe</i> finally digs in to a big story <span class="comments">(4)</span></a></p>
+                        
+                            <p><a href="http://www.cjr.org/behind_the_news/journalism_has_a_plagiarism_pr.php#comments">Journalism has a plagiarism problem. But it's not the one you'd expect <span class="comments">(4)</span></a></p>
+                        
+                
+                    </div>
+                 
+                    <div id="tab3" class="tabContent">
+                
+                        <a class="twitter-timeline" href="https://twitter.com/CJR" data-widget-id="344875887059156992" width="270" height="300">Tweets by @CJR</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https' if(!d.getElementById(id)){js=d.createElement(s) js.id=id js.src=p+"://platform.twitter.com/widgets.js" fjs.parentNode.insertBefore(js,fjs) }}(document,"script","twitter-wjs") </script>
+                    
+                    </div>    
+                     
+                  </div>
+                  
+                </div> 
+                 
+                <script type="text/javascript">
+                  $(".tabContent").hide()  
+                  $("ul.tabs li:first").addClass("active").show()  
+                  $(".tabContent:first").show()  
+                 
+                  $("ul.tabs li").click(function () {
+                    $("ul.tabs li").removeClass("active")  
+                    $(this).addClass("active")  
+                    $(".tabContent").hide()  
+                    var activeTab = $(this).find("a").attr("href")  
+                    $(activeTab).fadeIn()  
+                    return false 
+                  }) 
+                </script>
+                
+                <br style="clear:both " />
+<!-- end tab box right -->
+<!-- begin EMAIL SIGN UP -->
+                	
+                <div id="email-sign-up">
+                
+                <img src="_resourcesbeta/img/home/title_email_sign_up.gif" width="167" height="11" border="0" />
+                
+                <div class="email-form-top">
+                	<p class="email-form-top-text">Email blasts from CJR writers and editors</p>
+                </div>
+                
+                <form id="email-new" action="http://cjr.us3.list-manage1.com/subscribe/post?u=a23440a018c7ba0619c6f01e6&amp id=c6de9a59ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+            
+                    <fieldset>
+    
+                    <input type="text" class="text" name="EMAIL" onfocus="if (this.value=='Enter email address here') this.value='' " value="Enter email address here" id="mce-EMAIL" />
+                    
+                    <div style="position: absolute  left: -5000px "><input type="text" name="b_a23440a018c7ba0619c6f01e6_c6de9a59ea" value=""></div>
+                    
+                    <input type="image" src="_resourcesbeta/img/global/icon_search_submit.gif" class="submit" onclick="var _this=this _gaq.push(['_set','hitCallback',function(){$(_this).parents('form').first().submit() }]) _gaq.push(['_trackEvent','Email Form','Submit','CJR Home Page']) return !window._gat " />
+        
+                    </fieldset>
+                                                    
+                </form>
+                
+                </div>
+                    
+<!-- end EMAIL SIGN UP -->
+<!-- begin MUST READS -->
+
+				<div id="module-must-reads">	
+				
+					<img src="_resourcesbeta/img/home/title_must_read.gif" width="230" height="11" border="0" />
+                    
+                    <div class="right-headline">
+    <p><a href="http://www.slate.com/blogs/the_slatest/2014/11/25/cnn_ferguson_cnn_reporters_in_ferguson_provide_wall_to_wall_coverage_of.html" target="_blank">CNN reporters in Ferguson provide coverage of CNN reporters in Ferguson (Slate)</a></p>
+    <p class="right-text"> 8220 [T]here was little that justified CNN   s egocentric coverage 8221 </p>
+</div>
+
+<div class="right-headline">
+    <p><a href="http://fusion.net/story/28845/the-illegal-index/" target="_blank">Which media outlets use    illegal immigrant   ? (Fusion)</a></p>
+    <p class="right-text"> 8220 [I]n spite of all the good reasons not to use the phrase, it is still very easy to find in the US press, even in headlines 8221 </p>
+</div>
+
+<div class="right-headline">
+    <p><a href="http://www.capitalnewyork.com/article/media/2014/11/8557070/jack-shafer-losing-his-job-and-state-things" target="_blank">Jack Shafer on losing his job (Capital New York)</a></p>
+    <p class="right-text"> 8220 Right now, my immediate plan is to go to work as a lay therapist at The Intercept to bring the healing there so John Cook and Matt Taibbi can return. I have great interpersonal skills. 8221 </p>
+</div>
+
+<div class="right-headline">
+    <p><a href="https://firstlook.org/theintercept/2014/11/18/media-outlets-continue-describe-unknown-drone-victims-militants/?curator=MediaREDEF" target="_blank">On outlets that continue to call unknown drone victims    militants    (The Intercept)</a></p>
+    <p class="right-text"> 8220 Like the US drone program itself, this deceitful media practice continues unabated 8221 </p>
+</div>
+
+				</div>
+				
+<!-- end MUST READS -->
+<!-- begin VIDEO -->
+
+				<div id="module-video">	
+                
+                	<img src="_resourcesbeta/img/home/title_video_feature.gif" width="96" height="11" border="0" />
+                    
+                    <div class="right-video">
+					<embed type="application/x-shockwave-flash" src="http://static.bloggingheads.tv/ramon/_live/players/player_v5.2-licensed.swf" flashvars="diavlogid=30058&file=http://bloggingheads.tv/playlist.php/30058/00:00/36:17&config=http://static.bloggingheads.tv/ramon/_live/files/2012/offsite_config.xml&topics=false" height="180" width="272" allowscriptaccess="always" id="bhtv30058" name="bhtv30058"></embed>
+                    </div>
+                    
+                    <div class="right-headline-video">
+						<p><a href="http://bloggingheads.tv/videos/30058" target="_blank">Bloggingheads</a></p>
+						<p class="right-text">Greg Marx discusses democracy and news with Tom Rosenstiel of the American Press Institute</p>
+					</div>
+                    
+				</div>
+
+<!-- end VIDEO -->
+<!-- begin RESOURCES -->				
+				
+				<div id="module-resources">	
+				
+					<img src="_resourcesbeta/img/home/title_resources.gif" width="184" height="11" border="0" />
+					
+					<div class="right-headline">
+						<p><a href="http://www.cjr.org/news_startups_guide/">CJR's Guide to Online News Startups</a></p>
+                        
+						<p class="right-text"><a href="http://www.cjr.org/news_startups_guide/2013/05/acestoohighcom.php">ACEsTooHigh.com &ndash  Reporting on the science, education, and policy surrounding childhood trauma</a></p>
+                        
+					</div>
+					
+					<div class="right-headline-drop-down">
+						<p>Who Owns What</p>
+		
+						<select id="who-owns-what-menu-2" name=tags onChange="MM_jumpMenu('parent',this,1)" class="dropdown">
+						
+							<option>Select a media company...</option>
+
+							<option>&nbsp </option>
+
+															<option value="http://www.cjr.org/resources/?c=21st_century_fox">21st Century Fox</option>
+																<option value="http://www.cjr.org/resources/?c=advance">Advance Publications</option>
+																<option value="http://www.cjr.org/resources/?c=ah_belo_corporation">A.H. Belo Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=amc_networks">AMC Networks</option>
+																<option value="http://www.cjr.org/resources/?c=american">American Media, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=astral">Astral Media</option>
+																<option value="http://www.cjr.org/resources/?c=belo">Belo Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=bertelsmann">Bertelsmann AG</option>
+																<option value="http://www.cjr.org/resources/?c=cablevision">Cablevision </option>
+																<option value="http://www.cjr.org/resources/?c=canwest">CanWest Global Communications</option>
+																<option value="http://www.cjr.org/resources/?c=cbs">CBS</option>
+																<option value="http://www.cjr.org/resources/?c=cisneros">Cisneros</option>
+																<option value="http://www.cjr.org/resources/?c=citadel">Citadel Broadcasting Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=clearchannel">Clear Channel Communications</option>
+																<option value="http://www.cjr.org/resources/?c=comcast">Comcast</option>
+																<option value="http://www.cjr.org/resources/?c=cnhi">Community Newspaper Holdings, Inc. </option>
+																<option value="http://www.cjr.org/resources/?c=copley">Copley Press Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=corus">Corus Entertainment</option>
+																<option value="http://www.cjr.org/resources/?c=cox">Cox Enterprises</option>
+																<option value="http://www.cjr.org/resources/?c=cumulus">Cumulus Media Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=dowjones">Dow Jones Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=emmis">Emmis Communications</option>
+																<option value="http://www.cjr.org/resources/?c=entercom">Entercom Communications</option>
+																<option value="http://www.cjr.org/resources/?c=fisher">Fisher Communications</option>
+																<option value="http://www.cjr.org/resources/?c=freedom">Freedom Communications</option>
+																<option value="http://www.cjr.org/resources/?c=gannett">Gannett Co., Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=gatehouse_media">GateHouse Media., Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=ge">General Electric</option>
+																<option value="http://www.cjr.org/resources/?c=hachette">Hachette Filipacchi Media U.S.</option>
+																<option value="http://www.cjr.org/resources/?c=halifax">Halifax Media Group</option>
+																<option value="http://www.cjr.org/resources/?c=hearst">Hearst Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=hollinger">Hollinger International, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=journalregister">Journal Register Company</option>
+																<option value="http://www.cjr.org/resources/?c=knight_ridder">Knight Ridder</option>
+																<option value="http://www.cjr.org/resources/?c=landmark">Landmark Community Newspapers, LLC</option>
+																<option value="http://www.cjr.org/resources/?c=lee">Lee Enterprises</option>
+																<option value="http://www.cjr.org/resources/?c=liberty">Liberty Group Publishing</option>
+																<option value="http://www.cjr.org/resources/?c=libertyinteractive">Liberty Interactive Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=libertymedia">Liberty Media Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=lin_media">LIN Media</option>
+																<option value="http://www.cjr.org/resources/?c=lintv">LIN TV Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=mcclatchy">The McClatchy Company </option>
+																<option value="http://www.cjr.org/resources/?c=mcgraw">The McGraw-Hill Companies </option>
+																<option value="http://www.cjr.org/resources/?c=mediageneral">Media General, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=medianews">MediaNews Group</option>
+																<option value="http://www.cjr.org/resources/?c=meredith">Meredith Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=morris">Morris Communications Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=newscorp">News Corp</option>
+																<option value="http://www.cjr.org/resources/?c=nyt">The New York Times Company</option>
+																<option value="http://www.cjr.org/resources/?c=newsworld">News World Communications</option>
+																<option value="http://www.cjr.org/resources/?c=news_world_media_development">News World Media Development</option>
+																<option value="http://www.cjr.org/resources/?c=pearson">Pearson</option>
+																<option value="http://www.cjr.org/resources/?c=postmedia_network">Postmedia Network</option>
+																<option value="http://www.cjr.org/resources/?c=pulitzer">Pulitzer, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=raycom_media">Raycom Media</option>
+																<option value="http://www.cjr.org/resources/?c=reed">Reed Elsevier</option>
+																<option value="http://www.cjr.org/resources/?c=rentpath">RentPath, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=rogers">Rogers Communications</option>
+																<option value="http://www.cjr.org/resources/?c=scripps">The E.W. Scripps Company</option>
+																<option value="http://www.cjr.org/resources/?c=scripps_networks_interactive">Scripps Networks Interactive</option>
+																<option value="http://www.cjr.org/resources/?c=shaw_media">Shaw Media</option>
+																<option value="http://www.cjr.org/resources/?c=sinclair">Sinclair Broadcast Group</option>
+																<option value="http://www.cjr.org/resources/?c=sony">Sony Corporation</option>
+																<option value="http://www.cjr.org/resources/?c=standard">Standard Radio</option>
+																<option value="http://www.cjr.org/resources/?c=stephens">Stephens Media Group</option>
+																<option value="http://www.cjr.org/resources/?c=sun-times_media">Sun Times Media</option>
+																<option value="http://www.cjr.org/resources/?c=timewarner">Time Warner</option>
+																<option value="http://www.cjr.org/resources/?c=tribune">Tribune Company</option>
+																<option value="http://www.cjr.org/resources/?c=viacom">Viacom, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=vivendi">Vivendi</option>
+																<option value="http://www.cjr.org/resources/?c=vulcan">Vulcan, Inc.</option>
+																<option value="http://www.cjr.org/resources/?c=disney">The Walt Disney Company</option>
+																<option value="http://www.cjr.org/resources/?c=washpost">The Washington Post Company</option>
+																<option value="http://www.cjr.org/resources/?c=youngbroadcasting">Young Broadcasting</option>
+								
+						</select>
+							
+					</div>
+					
+					<div class="right-headline">
+						<p><a href="http://www.cjr.org/the_business_of_digital_journalism/">The Business of Digital Journalism</a></p>
+						<p class="right-text">A report from the Columbia University Graduate School of Journalism</p>
+					</div>
+					
+					<div class="right-headline">
+						<p><a href="http://www.cjr.org/resources/studyguides/">Study Guides</a></p>
+						<p class="right-text">Questions and exercises for journalism students.</p>
+					</div>
+
+				</div>
+
+<!-- end RESOURCES -->
+<!-- begin BLOGS and COLUMNS -->	
+				
+				<div id="module-blogs-columns">	
+				
+					<img src="_resourcesbeta/img/home/title_blogs_columns.gif" width="150" height="11" border="0" />
+					
+					<div class="right-headline">
+						<p><a href="http://www.cjr.org/realtalk/">#RealTalk</a></p>
+						
+						<p class="right-text"><a href="http://www.cjr.org/realtalk/journalists_using_twitter.php">Should all journalists be on Twitter? &ndash  Reasons to take up or forgo the 140-character platform</a></p>
+                        
+					</div>
+					
+					<div class="right-headline">
+						<p><a href="http://www.cjr.org/minority_reports/">Minority Reports</a></p>
+						
+						<p class="right-text"><a href="http://www.cjr.org/minority_reports/domestic_violence_reporting.php">Is it ever okay to name victims? &ndash  Editors question the policy of omitting information in sexual assault and domestic violence cases
+</a></p>
+                        
+					</div>
+                    
+                    <div class="right-headline">
+						<p><a href="http://www.cjr.org/language_corner/">Language Corner</a></p>
+						
+						<p class="right-text"><a href="http://www.cjr.org/language_corner/how_to_use_the_colon.php">How to use the colon &ndash  Understand its usage once and for all</a></p>
+                        
+					</div>
+                    
+                    <div class="right-headline">
+						<p><a href="http://www.cjr.org/the_kicker/">The Kicker</a></p>
+                        
+						<p class="right-text"><a href="http://www.cjr.org/the_kicker/must-reads_of_the_week_85.php">Must-reads of the week &ndash  The reignited Ferguson media frenzy, the shift from    internships    to    fellowships,    and a golden age of podcasts</a></p>
+                        
+					</div>
+					
+
+				</div>
+			
+			</div>
+		
+		</div>
+        
+
+		<div id="footer">
+			
+			<ul>
+				
+				<li><a href="http://www.cjr.org/magazine/">Magazine</a></li>
+				<li><a href="http://www.cjr.org/resources/">Resources</a></li>
+				<li><a href="http://www.cjr.org/2014/11/">Archive</a></li>
+				<!-- <li><a href="http://www.cjr.org/events/">Events</a></li> -->
+				<!-- <li><a href="https://ssl.palmcoastd.com/pcd/apps/index.cfm?imagid=18801&iKey=ICM1">Subscribe</a></li> -->
+				<li><a href="http://www.cjr.org/advertise/about_our_readers.php">Advertise</a></li>
+				<li><a href="http://www.cjr.org/contact/donate.php">Donate</a></li>
+				<li><a href="http://www.cjr.org/about_us/mission_statement.php">About Us</a></li>
+				<li><a href="http://www.cjr.org/contact/contact.php">Contact</a></li>
+				<li><a href="http://www.cjr.org/feeds.php">RSS</a></li>
+				<li class="last"><a href="http://www.cjr.org/about_us/follow_us.php">Follow Us</a></li>
+				
+			</ul>
+			
+			<p><a href="https://ssl.palmcoastd.com/18801/apps/-168617?iKey=ICM1&" onClick="_gaq.push(['_trackEvent', 'Subscribe Link Footer', 'footer', 'footer']) " target="_blank" style="color: #cc1b00 !important  background-color:#fff !important  margin:3px !important  padding:2px !important ">Subscribe to CJR</a> &nbsp  &copy  Copyright 2014
+ Columbia Journalism Review. <!-- Design: <a href="http://www.point5.com/">Point Five, NY</a> --></p>
+		
+		</div>
+
+</div>
+
+</div>
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [] 
+
+(function() {
+var elem = document.createElement('script') 
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js" 
+elem.async = true 
+elem.type = "text/javascript" 
+var scpt = document.getElementsByTagName('script')[0] 
+scpt.parentNode.insertBefore(elem, scpt) 
+})() 
+
+_qevents.push({
+qacct:"p-MW_DRG0-qtQJc"
+}) 
+</script>
+
+<noscript>
+<div style="display:none ">
+<img src="//pixel.quantserve.com/pixel/p-MW_DRG0-qtQJc.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Google Analytics tag -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [] 
+  _gaq.push(['_setAccount', 'UA-2442246-6']) 
+  _gaq.push(['_trackPageview']) 
+
+  (function() {
+    var ga = document.createElement('script')  ga.type = 'text/javascript'  ga.async = true 
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' 
+    var s = document.getElementsByTagName('script')[0]  s.parentNode.insertBefore(ga, s) 
   })() 
 
+</script>			
+	</div>
+<!-- ClickTale Bottom part -->
+
+<script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki page http://wiki.clicktale.com/Article/Customizing_code_version_2
+
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www07/ptc/9795bacb-f754-422f-b49b-cd5c73bbc540.js":
+"http://cdn.clicktale.net/www07/ptc/9795bacb-f754-422f-b49b-cd5c73bbc540.js")+"'%20type='text/javascript'%3E%3C/script%3E")) 
 </script>
 
-
+<!-- ClickTale end of Bottom part -->	
 </body>
 
-
-
-
-
-
-<SCRIPT LANGUAGE=JavaScript>
-<!-- 
-//configuration 
-OAS_url = 'http://oasc08011.247realmedia.com/RealMedia/ads/' 
-<!------ OAS SETUP begin ------>
-OAS_sitepage = 'www.broadcastingcable.com' 
-OAS_listpos = 'Bottom,Middle,Position1,Position2,Position3,Top,Top1,x01' 
-var synd = "http://www.broadcastingcable.com/news/syndication-and-distribution" 
-var url = window.location.href 
-var n = url.search("syndication") 
-//alert (n) 
-
-if (url =="http://www.broadcastingcable.com/")
-{
-  OAS_query = "homepage" 
-} 
-else if (url=="http://www.broadcastingcable.com/news/syndication-and-distribution")
-{
-
-  OAS_query = "syndication" 
-}
-else if (n=="40")
-{
-  OAS_query = "syndication" 
-}
-else {
-OAS_query = '' 
-}
-
-OAS_target = '_top' 
-//end of configuration
-OAS_version = 10 
-OAS_rn = '001234567890'  OAS_rns = '1234567890' 
-OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
-function OAS_NORMAL(pos) {
-document.write('<A HREF="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>')  
-document.write('<IMG SRC="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>')  
-}
- //--> 
- </SCRIPT>
-<SCRIPT LANGUAGE=JavaScript1.1> 
-<!--  
-// OAS_version = 11    
-//if ((navigator.userAgent.indexOf('Mozilla/3') != -1) || (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1))  
-// OAS_version = 10  
-//if (OAS_version >= 11) 
-//document.write('<SCR' + 'IPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>') //-->
-</SCRIPT>
-<SCRIPT LANGUAGE=JavaScript> 
-<!--  
- document.write('')   
-function OAS_AD(pos) {  
-if (OAS_version >= 11 && typeof(OAS_RICH)!='undefined')
- OAS_RICH(pos)   
-else 
- OAS_NORMAL(pos)   
-}  //--> 
- </SCRIPT>  
-<!------ OAS SETUP end ------> 
-
-<div id="findRbAd-1">
-<SCRIPT LANGUAGE=JavaScript>  
-<!--  
-OAS_AD('x01')   
-//-->  
-</SCRIPT>
-
-
-</div>
-</div>
-<!------ OAS AD 'Top' end ------>
-
-<!-- Google Analytics Tag Start -->
-<script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.") 
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")) 
-    </script>
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-2342357-30") 
-            pageTracker._trackPageview() 
-        }
-        catch(err) {}
-    </script>
-<!-- Google Analytics Tag End -->
-
-
-<!-- START Nielsen//NetRatings SiteCensus V5.3 -->
-<!-- Bizographics Script Start -->
-<script type="text/javascript">
-  _bizo_data_partner_id = "308" 
-</script>
-<script type="text/javascript">
-(function(){(function(){var b,a a=document.createElement("script") a.type="text/javascript" a.async=true a.src=""+(window.location.protocol==="https:"?"https://sjs.":"http://js.")+"bizographics.com/insight.min.js" b=document.getElementsByTagName("script")[0] return b.parentNode.insertBefore(a,b)})() })() 
-</script>
-<!-- Bizographics Script End -->
-</html>  <script type="text/javascript">
-<!--//--><![CDATA[//><!--
-var _gaq = _gaq || [] _gaq.push(["_setAccount", "UA-2342357-30"]) _gaq.push(["_trackPageview"]) (function() {var ga = document.createElement("script") ga.type = "text/javascript" ga.async = true ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js" var s = document.getElementsByTagName("script")[0] s.parentNode.insertBefore(ga, s) })() 
-//--><!]]>
-</script>
-</body>
 </html>

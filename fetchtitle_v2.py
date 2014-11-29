@@ -78,22 +78,22 @@ class CrawlTitlesAndUrls(HTMLParser):
         if not self.get_url:
             if tag == 'a':
                 self.found_a = True
-            if tag == 'h1':
+            elif tag == 'h1':
                 self.found_h1 = True
-            if tag == 'h2':
+            elif tag == 'h2':
                 self.found_h2 = True
-            if tag == 'h3':
+            elif tag == 'h3':
                 self.found_h3 = True
-            if tag == 'h4':
+            elif tag == 'h4':
                 self.found_h4 = True
-            if tag == 'h5':
+            elif tag == 'h5':
                 self.found_h5 = True
-            if tag == 'h6':
+            elif tag == 'h6':
                 self.found_h6 = True
         elif self.get_url:
             if tag == 'li':
                 self.found_li = True
-            if tag == 'a' and self.found_li:
+            elif tag == 'a' and self.found_li:
                 self.found_a = True
                 for attr in attrs:
                     if attr[0] == 'href':
@@ -149,22 +149,22 @@ class CrawlTitlesAndUrls(HTMLParser):
         if not self.get_url:
             if tag == 'a':
                 self.found_a = False
-            if tag == 'h1':
+            elif tag == 'h1':
                 self.found_h1 = False
-            if tag == 'h2':
+            elif tag == 'h2':
                 self.found_h2 = False
-            if tag == 'h3':
+            elif tag == 'h3':
                 self.found_h3 = False
-            if tag == 'h4':
+            elif tag == 'h4':
                 self.found_h4 = False
-            if tag == 'h5':
+            elif tag == 'h5':
                 self.found_h5 = False
-            if tag == 'h6':
+            elif tag == 'h6':
                 self.found_h6 = False
         elif self.get_url:
             if tag == 'li':
                 self.found_li = False
-            if tag == 'a':
+            elif tag == 'a':
                 self.found_a = False
 
     def handle_data(self, data):
@@ -292,7 +292,7 @@ def main():
                     parser.feed(htmltxt2.decode('utf-8'))
                 except Exception:
                     print '[ERROR] Parsing Error: ', pageUrl, ' in ', store_html_path
-                    parser.feed(unicode(htmltxt2, errors='ignore'))
+                    parser.feed(unicode(htmltxt2, encoding='utf-8', errors='ignore'))
                 parser.close()
                 fetch_handler.close()
                 i += 1

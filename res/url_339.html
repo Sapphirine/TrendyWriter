@@ -1,1449 +1,1141 @@
-<!doctype html>
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" id="ng-app" ng-app="adage"><!--<![endif]-->
-<head profile="http://a9.com/-/spec/opensearch/1.1/">
-<script>
-	window['optimizely'] = window['optimizely'] || [] 
-	window['optimizely'].push(["customTag", 'membership_tier', 'Anonymous']) 
-</script>
 
-	<script src="//cdn.optimizely.com/js/925388773.js"></script>
-
-<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwcHVldXGwYAVFZaAgM="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={}) for(var c=s(e),u=c.length,f=i(a,o,r),d=0 u>d d++)c[d].apply(f,n) return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={} return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos") e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0 t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos") if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document s&&!s.hasOwnProperty("addEventListener") )s=Object.getPrototypeOf(s) s&&n(s) for(var c=XMLHttpRequest.prototype c&&!c.hasOwnProperty("addEventListener") )c=Object.getPrototypeOf(c) c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n) e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0] "string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r) e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t) try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 c>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u) if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data") d&&(n.cat=d.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0 var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1) t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var u=e(o) u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}} for(var f=0 c>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e] var o=n() if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={} e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos") e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=c.createElement("script") e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}} c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s) try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="") var a,s,c,u="-"===o.charAt(0) for(c=0 c<r.length c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t) return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]) return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]) </script>
-
-<title>The Media Guy - Media - Advertising Age</title>
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, user-scalable=no" />
-
-<!-- For Windows 8 -->
-<meta name="application-name" content="Advertising Age"/> 
-<meta name="msapplication-TileColor" content="#000"/>
-<meta name="msapplication-TileImage" content="assets/ico/win8-120.png"/>
-
-
-<!-- For iPad 3 -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144.png" />
-<!-- For iPhone 4 -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114.png" />
-<!-- For iPad 1-->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72.png" />
-<!-- For iPhone 3G, iPod Touch and Android -->
-<link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57.png" />
-<!-- For everything else -->
-<link rel="shortcut icon" href="/assets/ico/favicon.png" />
-<!--iOS -->
-<meta name="apple-mobile-web-app-capable" content="no" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<!-- Legacy header -->
-<meta name="apple-itunes-app" content="app-id=590091347, app-argument=https://itunes.apple.com/us/app/advertising-age/id590091347?ls=1&mt=8">
-
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
-<meta name="distribution" content="global" />
-<meta http-equiv="refresh" content="300" />
-<meta http-equiv="content-type" content="text/html  charset=utf-8" />
-<meta name="adage_template" content="Section.php" />
-<link rel="canonical" href="http://adage.com/section/the-media-guy/269" />
-<link rel="alternate" type="application/rdf+xml" href="http://adage.com/rss-feed?section_id=269&xml=RSS1" title="Advertising Age - The Media Guy RSS Feed" />
-<link rel="alternate" type="application/atom+xml" href="http://adage.com/rss-feed?section_id=269&xml=ATOM" title="Advertising Age - The Media Guy RSS Feed" />
-<link rel="alternate" type="application/rss+xml" href="http://adage.com/rss-feed?section_id=269&xml=RSS2" title="Advertising Age - The Media Guy RSS Feed" />
-
-<link rel="search" type="application/opensearchdescription+xml" href="/xml/AdAge_OpenSearch.php" title="Advertising Age" />
-<link href="https://plus.google.com/101792368055128831913/" rel="publisher" />
-
-<!-- css --><link href="http://gaia.adage.com/assets/css/core.css?1407991153" media="all" rel="stylesheet" type="text/css" /><link href="http://gaia.adage.com/assets/css/tweak.css?1407991153" media="all" rel="stylesheet" type="text/css" />
-
-<!-- js --><script type="text/javascript" src="http://gaia.adage.com/assets/js/libs/modernizr.js?1407991151" ></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-
-<!-- needed? -->
-<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script> <!-- Begin comScore Tag -->
-<script>
-var _comscore = _comscore || [] 
-_comscore.push({ c1: "2", c2: "16193073" }) 
-(function() {
-	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]  s.async = true 
-	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js" 
-	el.parentNode.insertBefore(s, el) 
-})() 
-</script>
-<noscript>
-	<img src="http://b.scorecardresearch.com/p?c1=2&c2=16193073&cv=2.0&cj=1" />
-</noscript>
-<!-- End comScore Tag --><script type="text/javascript">
-  var _gaq = _gaq || [] 
-  _gaq.push(['_setAccount', 'UA-19574238-1']) 
-  _gaq.push(['_setDomainName', '.adage.com']) 
-  _gaq.push(['_setAllowHash', false]) 
-  _gaq.push(['_setAllowLinker', true]) 
-  _gaq.push(['_trackPageview']) 
-  
-_gaq.push(['_setCustomVar',
-    1,
-    'BusinessType',
- '00 - Not Set',
-    1
- ]) 
-  
-  (function() {
-    var ga = document.createElement('script')  ga.type = 'text/javascript'  ga.async = true 
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' 
-    var s = document.getElementsByTagName('script')[0]  s.parentNode.insertBefore(ga, s) 
-  })() 
-
-</script>
-<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" /><script type="text/javascript">var NREUMQ=[] NREUMQ.push(["mark","firstbyte",new Date().getTime()])</script>
+<title>Media News - BusinessWeek</title>
+<meta name="description" content="Get up-to-date media news. Read articles on media in the news to get the latest digital, print, and TV updates from reputable news media sources." />
+<meta name="keywords" content="news &amp  media, news and media, media industry, news media, news media sources, media in the news" />
+<link rel="stylesheet" href="http://res.businessweek.com/css/screen/subchannel.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://res.businessweek.com/css/screen/parametric-search.css" type="text/css" media="screen" />
+<script src="http://res.businessweek.com/scripts/common.js" type="text/javascript"></script>
+<script src="http://res.businessweek.com/scripts/swfobject.js" type="text/javascript"></script>
+<script src="http://www.businessweek.com/common_scripts/Tacoda_AMS_DDC_Header.js" type="text/javascript"></script>
+<base href="http://www.businessweek.com/" />
+<script src="http://static.btrd.net/js/bw_comscore.js" type="text/javascript"></script>
 </head>
-
-<body>
-
+<body class="magazine">
 <script type="text/javascript">
-//configuration
-OAS_url = 'http://oascentral.adage.com/RealMedia/ads/' 
-OAS_sitepage = 'www.adage.com/media/the_media_guy/' 
-OAS_listpos = 'Left,Top,Top1,Middle1,Bottom,x90' 
-
-OAS_query = 'q=fito' 
-OAS_target = '_top' 
-//end of configuration
-OAS_version = 10 
-OAS_rn = '001234567890'  OAS_rns = '1234567890' 
-OAS_rn = new String (Math.random())  OAS_rns = OAS_rn.substring (2, 11) 
-
-function OAS_NORMAL(pos) {
-    document.write('<a href="' + OAS_url + 'click_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" target=' + OAS_target + '>') 
-    document.write('<img src="' + OAS_url + 'adstream_nx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" /></a>') 
-}
-
-OAS_version = 11 
-if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
-OAS_version = 10 
-if (OAS_version >= 11)
-document.write('<scr' + 'ipt type="text/javascript" src="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/script>') 
-
-
-function OAS_AD(pos) {
-    if (OAS_version >= 11 && typeof OAS_RICH == 'function') {
-        OAS_RICH(pos) 
-    }
-    else {
-        OAS_NORMAL(pos) 
-    }
-}
-
-</script>
-
-
-
-
-
-<header id="page-header" role="banner">
-	<!-- corporate nav bar -->
-	<nav id="nav-primary" class="hidden-phone">
-		<ul>
-			<li class="nav-item-adage"><a href="/" onclick="trackOutboundLink(this, 'Header-Home-Link', 'Homepage', '/')  return false " class="active">Ad Age</a></li>
-			<li class="nav-item-creativity"><a href="http://creativity-online.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">Creativity</a></li>
-			<li class="nav-item-lookbook"><a href="/lookbook" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Lookbook</a></li>
-			<li class="nav-item-datacenter"><a href="/datacenter" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Datacenter</a></li>
-			<li class="nav-item-resources"><a href="/resources" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Resources</a></li>
-			<li class="nav-item-events"><a href="/events" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Events</a></li>
-			<li class="nav-item-jobs"><a href="http://jobs.adagetalentworks.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Jobs</a></li>
-
-			<li class="nav-item-on-campus"><a href="/adage-on-campus" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">On Campus</a></li>
-
-		</ul>
-	</nav><!-- / #nav-primary -->
-
-	<div class="container">
-
-
-				<strong class="logo">
-			<a href="/" onclick="trackOutboundLink(this, 'Logo-Home-Link', 'Homepage', '/')  return false ">Advertising Age</a>
-		</strong>
-
-		
-
-		<nav id="nav-secondary" class="breakout hidden-phone border-bottom">
-			<ul>
-			
-<li>
-	<a href="/channel/marketing/28" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Marketing', this.getAttribute('href'))  return false "><span>Marketing</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/advertising/47" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Advertising', this.getAttribute('href'))  return false "><span>Advertising</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/digital/20" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Digital', this.getAttribute('href'))  return false "><span>Digital</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/media/1" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Media', this.getAttribute('href'))  return false "><span>Media</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/agency-news/19" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Agency', this.getAttribute('href'))  return false "><span>Agency</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/dataworks/42" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Data', this.getAttribute('href'))  return false "><span>Data</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/section/btob/976" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'BtoB', this.getAttribute('href'))  return false "><span>BtoB</span></a>
-</li>
-
-				<!-- dynamic search box -->
-				<li class="search">
-
-					<a href="#" class="toggle search-label" onclick="_gaq.push(['_trackEvent', 'search', 'toggle']) ">Search <i class="icon-search">Search</i></a>
-
-					<div class="search-form">
-							
-	<form action="/results" id="search" name="search">
-		<input type="hidden" name="endeca" value="1" />
-		<input type="hidden" name="searchprop" value="AdAgeAll" />
-		<input type="hidden" name="return" value="endeca" />
-		<input type="hidden" name="search_offset" value="0" />
-		<input type="hidden" name="search_order_by" value="score" />
-
-
-		<input type="text" name="search_phrase" id="search_phrase" autosave="Advertising Age" results="10" placeholder="Search website" />
-		<input type="submit" value="Search" />
-	</form>	
-
-
-					</div>
-				</li>
-			</ul>
-		</nav><!-- / #nav-secondary -->
-
-		<nav id="nav-tertiary" class="hidden-phone">
-
-			<ul class="pull-left">
-				<li class="dropdown">
-					<a href="#">Follow us <i class="icon-dropdown"></i></a>
-						<ul class="dropdown-menu">
-						<li><a href="http://www.facebook.com/AdAge"><i class="dd-facebook"></i> Follow on Facebook</a></li>
-						<li><a href="http://twitter.com/adage"><i class="dd-twitter"></i> Follow on Twitter</a></li>
-						<li><a href="https://plus.google.com/101792368055128831913/?prsrc=3"><i class="dd-gplus"></i> Follow on Google+</a></li>
-						<li><a href="http://www.linkedin.com/groups?mostPopular=&gid=2754444"><i class="dd-linkedin"></i> Follow on LinkedIn</a></li>
-						<li><a href="/aboutus/#social-rss"><i class="dd-rss"></i> Follow via RSS</a></li>
-					</ul>
-					<!-- End updated code -->
-				</li>
-			</ul>
-
-			<ul class="pull-right">	
-
-<li><a id="adage-login" onclick="trackOutboundLink(this, 'Header-Login', this.innerHTML, this.getAttribute('href'))  return false " href="http://adage.com/login" title="Login using your existing Advertising Age account">Login</a></li>
-	<li><a href="http://adage.com/membership" onclick="trackOutboundLink(this, 'Header-Subscribe', this.innerHTML, this.getAttribute('href'))  return false " class="btn btn-primary">Become a Member <i class="icon-cta-white"></i></a></li>
-
-</ul>
-
-		</nav><!-- / #nav-tertiary -->
-
-		<a href="#nav-mobile" class="nav-trigger visible-phone"><i class="burger">Menu</i></a>
-
-		<nav id="nav-mobile" class="visible-phone">
-			<ul class="menu">
-
-				<li>
-	<a href="/channel/marketing/28" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Marketing', this.getAttribute('href'))  return false "><span>Marketing</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/advertising/47" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Advertising', this.getAttribute('href'))  return false "><span>Advertising</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/digital/20" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Digital', this.getAttribute('href'))  return false "><span>Digital</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/media/1" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Media', this.getAttribute('href'))  return false "><span>Media</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/agency-news/19" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Agency', this.getAttribute('href'))  return false "><span>Agency</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/dataworks/42" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Data', this.getAttribute('href'))  return false "><span>Data</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/section/btob/976" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'BtoB', this.getAttribute('href'))  return false "><span>BtoB</span></a>
-</li>
-
-			</ul>
-			
-			<div class="search">
-				<a href="#mob-search" class="mob-search"><i class="icon-search">Search</i></a>
-				<div id="mob-search">
-						
-	<form action="/results" id="search" name="search">
-		<input type="hidden" name="endeca" value="1" />
-		<input type="hidden" name="searchprop" value="AdAgeAll" />
-		<input type="hidden" name="return" value="endeca" />
-		<input type="hidden" name="search_offset" value="0" />
-		<input type="hidden" name="search_order_by" value="score" />
-
-
-		<input type="text" name="search_phrase" id="search_phrase" autosave="Advertising Age" results="10" placeholder="Search website" />
-		<input type="submit" value="Search" />
-	</form>	
-
-
-				</div><!-- / #mob-search -->
-			</div>
-			
-			<ul class="member">
-							<li><a href="/membership" onclick="trackOutboundLink(this, 'Header-Subscribe', this.innerHTML, this.getAttribute('href'))  return false " class="btn btn-primary">Become a Member <i class="icon-cta-white"></i></a></li>
-				<li><a id="adage-login" class="btn btn-border" onclick="trackOutboundLink(this, 'Header-Login', this.innerHTML, this.getAttribute('href'))  return false " href="/login" title="Login using your existing Advertising Age account">Login</a></li>
-						</ul>
-			
-			<ul class="products">
-				<li class="nav-item-adage">
-					<a href="/" onclick="trackOutboundLink(this, 'Header-Home-Link', 'Homepage', '/')  return false " class="active">Adage</a>
-				</li>
-				<li class="nav-item-creativity">
-					<a href="http://creativity-online.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">Creativity</a>
-				</li>
-				<li class="nav-item-lookbook">
-					<a href="http://lookbook.adage.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Lookbook</a>
-				</li>
-				<li class="nav-item-datacenter">
-					<a href="/datacenter" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Datacenter</a>
-				</li>
-				<li class="nav-item-resources">
-					<a href="/resources" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Resources</a>
-				</li>
-				<li class="nav-item-events">
-					<a href="/events" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Events</a>
-				</li>
-				<li class="nav-item-jobs">
-					<a href="http://jobs.adagetalentworks.com/" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false">Jobs</a>
-				</li>
-				<li class="nav-item-on-campus">
-					<a href="/adage-on-campus" onclick="trackOutboundLink(this, 'Header-CorpNav', this.innerHTML, this.getAttribute('href'))  return false ">On Campus</a>
-				</li>
-			</ul>
-
-			<ul class="social">
-				<li><a href="http://www.facebook.com/AdAge" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'Facebook', this.getAttribute('href'))  return false " target="_new"><span class="icon-facebook">Facebook</span></a></li>
-				<li><a href="http://twitter.com/adage" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'Twitter', this.getAttribute('href'))  return false " target="_new"><span class="icon-twitter">Twitter</span></a></li>
-				<li><a href="http://www.linkedin.com/groups?mostPopular=&gid=2754444" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'LinkedIn', this.getAttribute('href'))  return false " target="_new"><span class="icon-linkedin">LinkedIn</span></a></li>
-				<li><a href="https://plus.google.com/101792368055128831913/?prsrc=3" onclick="trackOutboundLink(this, 'Header-Social-Icons', 'Google Plus', this.getAttribute('href'))  return false " target="_new"><span class="icon-gplus">Google+</span></a></li>
-			</ul><!-- / .social -->
-			
-			<a href="#" class="close icon-close">Close</a>
-			
-		</nav><!-- / #nav-mobile -->
-	</div><!-- / .container -->
-</header><!-- / #page-header -->
-
-
-
-
-
-
- 
-<script type="text/javascript">
-		OAS_AD('Left') 
-</script>
-
-
-
-
-
-<div class="overlay"></div>
-
-
-
-
-		
-<!-- not cached --><div class="page-listing landing-column">
-
-
-<div class="oaswrapper ">
-<div id="oas">
-
-	<div class="advert banner">
-		<div class="container">
-			<div class="ad">
-				<script type="text/javascript" language="JavaScript">
-					OAS_AD('Top') 
-				</script>
-				<span>Advertisement</span>
-			</div>
-		</div>
-	</div><!-- / .advert.banner -->
-
-</div>
-</div>
-
-
-
-
-
-<div class="whitewrap">
-<div class="oaswrapper ">
-<div id="oas">
-
-	<section class="container module news-columns tablet-no-border">
-		<div class="container header_image">
-			
-
-					
-			<div class="breakout listing-actions">
-				<div class="pull-left">
-					<h3><a href="#">The Media Guy</a></h3>
-				</div><!-- / .pull-left -->
-				
-					<img src="http://gaia.adage.com/images/bin/image/large/Simon_Dumenco_Icond_2.jpg" width="115" alt="The Media Guy"/>
-			</div>
-
-			
-			<div>
-				<div class="cols-four padded">	
-
-					<article class="news-item sub-hero ">
-						<a href="http://adage.com/article/the-media-guy/sufficiently-talented-managing-talent/295880/" class="block">
-							<figure>
-								<img src="http://gaia.adage.com/images/bin/image/medium/talentdoorIG_3x2.jpg?1416010856" width="322" height="215" alt="Are You Sufficiently Talented at Managing Talent?" title="Are You Sufficiently Talented at Managing Talent?" />
-								
-							</figure>
-							<h2>Are You Sufficiently Talented at Managing Talent?</h2>
-						</a>
-						<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 11.17.2014</p>
-						
-												<ul class="actions">
-																	<li><a href="http://adage.com/article/the-media-guy/sufficiently-talented-managing-talent/295880/" class="share-count">226<i class="icon icon-forward"></i></a></li>
-																					</ul>
-												
-					</article><!-- / .news-item -->
-				</div><!-- / .cols-four -->
-
-				<div class="cols-four padded">	
-
-					<article class="news-item sub-hero ">
-						<a href="http://adage.com/article/the-media-guy/watch-jon-stewart-eviscerate-a-daily-show-advertiser/295673/" class="block">
-							<figure>
-								<img src="http://gaia.adage.com/images/bin/image/medium/Jon_Stewart_Koch_Industries.png?1414774238" width="322" height="214" alt="Watch Jon Stewart Eviscerate a 'Daily Show' Advertiser by Remaking Its Ad" title="Watch Jon Stewart Eviscerate a 'Daily Show' Advertiser by Remaking Its Ad" />
-								
-							</figure>
-							<h2>Watch Jon Stewart Eviscerate a 'Daily Show' Advertiser by Remaking Its Ad</h2>
-						</a>
-						<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 10.31.2014</p>
-						
-												<ul class="actions">
-																	<li><a href="http://adage.com/article/the-media-guy/watch-jon-stewart-eviscerate-a-daily-show-advertiser/295673/" class="share-count">151<i class="icon icon-forward"></i></a></li>
-															<li><a href="http://adage.com/article/the-media-guy/watch-jon-stewart-eviscerate-a-daily-show-advertiser/295673/#comments"><i class="icon icon-comment"></i>1</a></li>						</ul>
-												
-					</article><!-- / .news-item -->
-				</div><!-- / .cols-four -->
-
-
-				<div class="cols-four  padded ipad-clear tablet-ad-wrap">
-					<div class="ad">
-						<figure>
-							<script type="text/javascript" language="JavaScript">
-								OAS_AD('Top1') 
-							</script>
-							<figcaption>Advertisement</figcaption>
-						</figure>
-					</div>
-				</div><!-- / .cols-four -->
-			</div>
-		</div><!-- / .container -->
-
-
-		<!-- end block to use when we're using a 300x600 ad up top-->
-	</section><!-- / .container.module.tight -->
-
-</div></div></div>
-	
-	
-<div class="whitewrap">
-	<div class="container listing">
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/forget-big-data-beware-data-horrors-tmi/295575/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/DataMineIG_3x2.jpg?1414184049" width="322" height="215" alt="Forget 'Big Data.' Beware 'Little Data' -- and the Horrors of TMI" title="Forget 'Big Data.' Beware 'Little Data' -- and the Horrors of TMI" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/forget-big-data-beware-data-horrors-tmi/295575/">Forget 'Big Data.' Beware 'Little Data' -- and the Horrors of TMI</a></h3>
-					<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 10.27.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/forget-big-data-beware-data-horrors-tmi/295575/" class="share-count">422<i class="icon icon-forward"></i></a></li>
-													<li><a href="http://adage.com/article/the-media-guy/forget-big-data-beware-data-horrors-tmi/295575/#comments"><i class="icon icon-comment"></i>3</a></li>					</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/talk-talk-content/295383/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/contentIG_3x2.jpg?1412974112" width="322" height="215" alt="What We Talk About When We Talk About 'Content'" title="What We Talk About When We Talk About 'Content'" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/talk-talk-content/295383/">What We Talk About When We Talk About 'Content'</a></h3>
-					<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 10.13.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/talk-talk-content/295383/" class="share-count">701<i class="icon icon-forward"></i></a></li>
-													<li><a href="http://adage.com/article/the-media-guy/talk-talk-content/295383/#comments"><i class="icon icon-comment"></i>4</a></li>					</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/watch-colbert-s-takedown-bill-o-reilly-s-isis-fight-plan/295272/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Stephen_Colbert_vs_Bill_OReilly_vs_ISIS.png?1412335087" width="322" height="215" alt="Watch Colbert's Scathing Takedown of Bill O'Reilly's ISIS Fight Plan" title="Watch Colbert's Scathing Takedown of Bill O'Reilly's ISIS Fight Plan" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/watch-colbert-s-takedown-bill-o-reilly-s-isis-fight-plan/295272/">Watch Colbert's Scathing Takedown of Bill O'Reilly's ISIS Fight Plan</a></h3>
-					<p> on 10.03.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/watch-colbert-s-takedown-bill-o-reilly-s-isis-fight-plan/295272/" class="share-count">22<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/youtube-stars-phenomenon/295184/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/YoutubeStarIG3x2.jpg?1412010322" width="322" height="215" alt="What's Going On With This Whole 'YouTube Stars' Phenomenon, Anyway?" title="What's Going On With This Whole 'YouTube Stars' Phenomenon, Anyway?" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/youtube-stars-phenomenon/295184/">What's Going On With This Whole 'YouTube Stars' Phenomenon, Anyway?</a></h3>
-					<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.30.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/youtube-stars-phenomenon/295184/" class="share-count">303<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/u2-style-removal-tools-apple-introduce/295009/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Justin_Bieber_Wikimedia.jpg?1410896322" width="322" height="215" alt="Six More U2-Style Removal Tools Apple Should Introduce" title="Six More U2-Style Removal Tools Apple Should Introduce" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/u2-style-removal-tools-apple-introduce/295009/">Six More U2-Style Removal Tools Apple Should Introduce</a></h3>
-					<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.16.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/u2-style-removal-tools-apple-introduce/295009/" class="share-count">70<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/content-strategists-apple-working-pro-bono/294966/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/0915p74ApplePolish_cr_Kelsey_Dake_web_3x2.jpg?1410554214" width="322" height="215" alt="We're All Content Strategists for Apple, Working Pro Bono" title="We're All Content Strategists for Apple, Working Pro Bono" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/content-strategists-apple-working-pro-bono/294966/">We're All Content Strategists for Apple, Working Pro Bono</a></h3>
-					<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.15.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/content-strategists-apple-working-pro-bono/294966/" class="share-count">293<i class="icon icon-forward"></i></a></li>
-													<li><a href="http://adage.com/article/the-media-guy/content-strategists-apple-working-pro-bono/294966/#comments"><i class="icon icon-comment"></i>1</a></li>					</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/apparently-pumpkin-spice-iphone-6-sold/294980/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Guillermo_Jimmy_Kimmel_Pumpkin_Spice_iPhone_6.png?1410800766" width="322" height="215" alt="Apparently the Pumpkin-Spice iPhone 6 Is Already Sold Out" title="Apparently the Pumpkin-Spice iPhone 6 Is Already Sold Out" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/apparently-pumpkin-spice-iphone-6-sold/294980/">Apparently the Pumpkin-Spice iPhone 6 Is Already Sold Out</a></h3>
-					<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.15.2014</p>
-
-										<ul class="actions">
-															<li><a href="http://adage.com/article/the-media-guy/apparently-pumpkin-spice-iphone-6-sold/294980/" class="share-count">122<i class="icon icon-forward"></i></a></li>
-																		</ul>
-								</div>
-		</article><!-- / .news-img-left -->
-
-
-	</div><!-- / .container.listing -->
-
-	<section class="container module news-columns listing-insert">
-		<div class="cols-four">
-			<article class="news-item ">
-				<a href="http://adage.com/article/the-media-guy/stephen-colbert-made-apple-watch-instantly-obsolete/294951/" class="block">
-					<figure>
-						<img src="http://gaia.adage.com/images/bin/image/medium/Stephen_Colbert_Apple_Watch.jpg?1410536877" width="322" height="214" alt="Stephen Colbert Just Made the Apple Watch Instantly Obsolete" title="Stephen Colbert Just Made the Apple Watch Instantly Obsolete" />						
-												
-					</figure>
-					<h3>Stephen Colbert Just Made the Apple Watch Instantly Obsolete</h3>
-				</a>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.12.2014</p>
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/stephen-colbert-made-apple-watch-instantly-obsolete/294951/" class="share-count">173<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</article><!-- / .news-item -->
-		</div><!-- / .cols-four -->
-
-		<div class="cols-four">
-			<article class="news-item ">
-				<a href="http://adage.com/article/the-media-guy/apple-responsible-celeb-nude-photo-scandal/294851/" class="block">
-					<figure>
-						<img src="http://gaia.adage.com/images/bin/image/medium/tim_cook_3x2.jpg?1409941421" width="322" height="215" alt="So, Wait, Is Apple Responsible or Not for the Celebrity Nude Photo Scandal?" title="So, Wait, Is Apple Responsible or Not for the Celebrity Nude Photo Scandal?" />						
-												
-					</figure>
-					<h3>So, Wait, Is Apple Responsible or Not for the Celebrity Nude Photo Scandal?</h3>
-				</a>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.05.2014</p>
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/apple-responsible-celeb-nude-photo-scandal/294851/" class="share-count">27<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</article><!-- / .news-item -->
-		</div><!-- / .cols-four -->
-
-
-		<div class="cols-four ipad-clear tablet-ad-wrap">
-			<div class="ad">
-				<figure>
-				<script type="text/javascript" language="JavaScript">
-					OAS_AD('Middle1') 
-				</script>
-				<figcaption>Advertisement</figcaption>
-			</figure>
-			</div>
-		</div><!-- / .cols-four -->
-	</section><!-- / .container.module -->
-
-	<div class="container listing">
-		
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/wrong-native-advertising/294771/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/JohnOliver3x2.jpg?1409328349" width="322" height="215" alt="Here's What Else Is Wrong With Native Advertising" title="Here's What Else Is Wrong With Native Advertising" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/wrong-native-advertising/294771/">Here's What Else Is Wrong With Native Advertising</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 09.02.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/wrong-native-advertising/294771/" class="share-count"> 9<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/wrong-native-advertising/294771/#comments"><i class="icon icon-comment"></i>2</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/watch-jon-stewart-fox-news-ferguson-coverage/294773/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Jon_Stewart_Ferguson_Fox_News.png?1409332885" width="322" height="215" alt="Watch Jon Stewart Take on Fox News' Ferguson Coverage" title="Watch Jon Stewart Take on Fox News' Ferguson Coverage" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/watch-jon-stewart-fox-news-ferguson-coverage/294773/">Watch Jon Stewart Take on Fox News' Ferguson Coverage</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.29.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/watch-jon-stewart-fox-news-ferguson-coverage/294773/" class="share-count">218<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/hollywood-mystery-declared-war-nikki-finke/294728/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/NikkiStink3x2.JPG?1409157673" width="322" height="215" alt="Hollywood Mystery: Who Just Declared War on Nikki Finke?" title="Hollywood Mystery: Who Just Declared War on Nikki Finke?" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/hollywood-mystery-declared-war-nikki-finke/294728/">Hollywood Mystery: Who Just Declared War on Nikki Finke?</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.27.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/hollywood-mystery-declared-war-nikki-finke/294728/" class="share-count">81<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/steve-ballmer-life-coach/294678/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Steve_Ballmer_Excited_Clippers.png?1408720618" width="322" height="215" alt="Steve Ballmer Is Your New Life Coach: Your Summer Friday ICYMI Pick-Me-Up" title="Steve Ballmer Is Your New Life Coach: Your Summer Friday ICYMI Pick-Me-Up" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/steve-ballmer-life-coach/294678/">Steve Ballmer Is Your New Life Coach: Your Summer Friday ICYMI Pick-Me-Up</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.22.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/steve-ballmer-life-coach/294678/" class="share-count">16<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/steve-ballmer-life-coach/294678/#comments"><i class="icon icon-comment"></i>1</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/huffpo-crowdfund-nip-slip-coverage/294666/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/bikini_malfunction_1.jpg?1408640706" width="322" height="214" alt="Should HuffPo Also Crowdfund Its 'Nip Slip' Coverage?" title="Should HuffPo Also Crowdfund Its 'Nip Slip' Coverage?" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/huffpo-crowdfund-nip-slip-coverage/294666/">Should HuffPo Also Crowdfund Its 'Nip Slip' Coverage?</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.21.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/huffpo-crowdfund-nip-slip-coverage/294666/" class="share-count">115<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/huffpo-crowdfund-nip-slip-coverage/294666/#comments"><i class="icon icon-comment"></i>2</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/watch-bryan-cranston-aaron-paul-breaking-bad-reunion/294650/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Barely_Legal_Pawn.png?1408548078" width="322" height="215" alt="Watch the Bryan Cranston, Aaron Paul 'Breaking Bad' (Sort of) Reunion" title="Watch the Bryan Cranston, Aaron Paul 'Breaking Bad' (Sort of) Reunion" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/watch-bryan-cranston-aaron-paul-breaking-bad-reunion/294650/">Watch the Bryan Cranston, Aaron Paul 'Breaking Bad' (Sort of) Reunion</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.20.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/watch-bryan-cranston-aaron-paul-breaking-bad-reunion/294650/" class="share-count">26<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/watch-bryan-cranston-aaron-paul-breaking-bad-reunion/294650/#comments"><i class="icon icon-comment"></i>1</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/10-promising-fall-tv-shows/294620/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Gotham_Fox.png?1408381408" width="322" height="215" alt="The 10 Most Promising New Fall TV Shows" title="The 10 Most Promising New Fall TV Shows" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/10-promising-fall-tv-shows/294620/">The 10 Most Promising New Fall TV Shows</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.18.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/10-promising-fall-tv-shows/294620/" class="share-count">417<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/obsolete-yeah-video-explains/294601/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Humans_Need_Not_Apply_CGP_Grey.png?1408120680" width="322" height="215" alt="Are You Obsolete? Yeah, Probably (This Fascinating Video Explains Why)" title="Are You Obsolete? Yeah, Probably (This Fascinating Video Explains Why)" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/obsolete-yeah-video-explains/294601/">Are You Obsolete? Yeah, Probably (This Fascinating Video Explains Why)</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.15.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/obsolete-yeah-video-explains/294601/" class="share-count">285<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/debunking-discovery-s-shark-week-a-rising-cottage-industry/294572/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Shark_Week_Vox.png?1407948045" width="322" height="215" alt="Debunking Discovery's Shark Week Is a Rising Cottage Industry" title="Debunking Discovery's Shark Week Is a Rising Cottage Industry" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/debunking-discovery-s-shark-week-a-rising-cottage-industry/294572/">Debunking Discovery's Shark Week Is a Rising Cottage Industry</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.13.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/debunking-discovery-s-shark-week-a-rising-cottage-industry/294572/" class="share-count">202<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/debunking-discovery-s-shark-week-a-rising-cottage-industry/294572/#comments"><i class="icon icon-comment"></i>3</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/watch-heartbreaking-robin-williams-zelda-commercial/294561/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Robin_Williams_Zelda_commercial.png?1407802064" width="322" height="215" alt="Watch This (Now Heartbreaking) Robin Williams Commercial for Nintendo's Zelda From 2011" title="Watch This (Now Heartbreaking) Robin Williams Commercial for Nintendo's Zelda From 2011" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/watch-heartbreaking-robin-williams-zelda-commercial/294561/">Watch This (Now Heartbreaking) Robin Williams Commercial for Nintendo's Zelda From 2011</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.11.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/watch-heartbreaking-robin-williams-zelda-commercial/294561/" class="share-count">1421<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/media-marketing-buzzwords-die/294521/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/impactful3x2.jpg?1407531302" width="322" height="214" alt="Six More Media and Marketing Buzzwords That Must Die" title="Six More Media and Marketing Buzzwords That Must Die" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/media-marketing-buzzwords-die/294521/">Six More Media and Marketing Buzzwords That Must Die</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.11.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/media-marketing-buzzwords-die/294521/" class="share-count">1202<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/media-marketing-buzzwords-die/294521/#comments"><i class="icon icon-comment"></i>4</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/media-guy-mailbag-facebook-s-t-o-s-yahoo-s-community/294528/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/community_new_3x2.jpg?1407525638" width="322" height="215" alt="Media Guy Mailbag: On Facebook's T.O.S. and Yahoo's 'Community' Spirit" title="Media Guy Mailbag: On Facebook's T.O.S. and Yahoo's 'Community' Spirit" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/media-guy-mailbag-facebook-s-t-o-s-yahoo-s-community/294528/">Media Guy Mailbag: On Facebook's T.O.S. and Yahoo's 'Community' Spirit</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.08.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/media-guy-mailbag-facebook-s-t-o-s-yahoo-s-community/294528/" class="share-count">12<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/watch-john-oliver-s-hilarious-attack-native-advertising/294448/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/John_Oliver_native_advertising_rant.png?1407164877" width="322" height="215" alt="Watch John Oliver's Hilarious Attack on Native Advertising" title="Watch John Oliver's Hilarious Attack on Native Advertising" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/watch-john-oliver-s-hilarious-attack-native-advertising/294448/">Watch John Oliver's Hilarious Attack on Native Advertising</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.04.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/watch-john-oliver-s-hilarious-attack-native-advertising/294448/" class="share-count">4457<i class="icon icon-forward"></i></a></li>
-											<li><a href="http://adage.com/article/the-media-guy/watch-john-oliver-s-hilarious-attack-native-advertising/294448/#comments"><i class="icon icon-comment"></i>3</a></li>				</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-				
-		<article class="news-img-left ">
-			<div>
-				<a href="http://adage.com/article/the-media-guy/create-viral-content-a-crash/294434/">
-										<div class="img-container">
-						<img src="http://gaia.adage.com/images/bin/image/medium/Jordan_Klepper_Daily_Show_journalism.png?1406906360" width="322" height="214" alt="How to Create Viral Content: A Crash Course" title="How to Create Viral Content: A Crash Course" />					</div>
-									</a>
-													<h3><a href="http://adage.com/article/the-media-guy/create-viral-content-a-crash/294434/">How to Create Viral Content: A Crash Course</a></h3>
-				<p>By <a href="http://adage.com/author/simon-dumenco/711">Simon Dumenco</a> on 08.01.2014</p>
-				
-								<ul class="actions">
-													<li><a href="http://adage.com/article/the-media-guy/create-viral-content-a-crash/294434/" class="share-count">295<i class="icon icon-forward"></i></a></li>
-															</ul>
-							</div>
-		</article><!-- / .news-img-left -->
-			
-	</div><!-- / .container.listing -->
-
-		        <div class="container">
-		                <div class="pages"><ul><li class="page"></li><li record_start="0" page_start="0" class="currentpage"><a href="/section/the-media-guy/269" title="Page 1">1</a></li><li record_start="0" page_start="25"><a href="/section/the-media-guy/269?start=25" title="Page 2">2</a></li><li record_start="0" page_start="50"><a href="/section/the-media-guy/269?start=50" title="Page 3">3</a></li><li record_start="0" page_start="75"><a href="/section/the-media-guy/269?start=75" title="Page 4">4</a></li><li record_start="0" page_start="100"><a href="/section/the-media-guy/269?start=100" title="Page 5">5</a></li><li record_start="0" page_start="125"><a href="/section/the-media-guy/269?start=125" title="Page 6">6</a></li><li class="next-right"><a href="/section/the-media-guy/269?start=150"> 8250 </a></li></ul></div>		        </div>
-</div><!-- / .page-listing -->
-
-</div>
-
-<div class="oaswrapper para">
-<div id="oas">
-
-<div class="advert banner banner-bottom">
-        <div class="container">
-			<div class="ad">
-	            <script type="text/javascript" language="JavaScript">
-	                    OAS_AD('Bottom') 
-	            </script>
-	            <span>Advertisement</span>
-			</div>
-        </div>
-</div>
-
-</div></div>
-
-
-<div class="oaswrapper grey">
-<div id="oas">
-
-
-<section class="module-caps subscribe">
-	<div class="container border-top">
-		<header>
-			<strong>Become a Member</strong>
-		</header>
-		<ul class="inline">
-			<li><a href="/register">Register Now</a></li>
-			<li><a href="https://sec.crain.com/AA/Login.aspx?ReturnUrl=%2fAA%2fCustomers%2fSiteSubscriptions.aspx" onclick="trackCrossDomainClick(this, 'Become a member footer', 'Desktop', 'renew')  return false ">Renew</a></li>
-			<li><a href="/help/subscribe">Membership Benefits</a></li>
-			<li><a href="/datacenter">DataCenter</a></li>
-			<li><a href="/trend-reports">Research Reports Library</a></li>
-		</ul>
-		
-		<img src="http://adage.com/assets/images/footer-subscribe-devices-white.png" alt="" class="align-center">
-
-	</div><!-- / .container -->
-</section><!-- / .module-caps.subscribe -->
-
-</div></div>
-<!-- START SiteCatalyst -->
-<script type="text/javascript">
-var s_account="crainadage" 
-var s_loggedInCookie = "id" 
-</script>
-<script language="JavaScript" type="text/javascript" src="http://crain-global.s3.amazonaws.com/s_crainsc.js"></script>
-<script language="JavaScript" type="text/javascript"><!--
-/* You may give each page an identifying name, server, and channel on
-the next lines. */
-s_crainsc.pageName = "/section/the-media-guy/269" 
-s_crainsc.channel = "adage_news" 
-s_crainsc.prop1 = s_crainsc.eVar1 = "the_media_guy" 
-s_crainsc.prop2 = s_crainsc.eVar2 = "the_media_guy" 
-s_crainsc.prop5 = s_crainsc.prop6 = "adage_news:the_media_guy" 
-s_crainsc.prop25 = s_crainsc.eVar27 = "the_media_guy" 
-
-s_crainsc.prop28 = s_crainsc.eVar30 = "section:269" 
-s_crainsc.prop29 = s_crainsc.eVar31 = "section" 
-/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-var s_code=s_crainsc.t() if(s_code)document.write(s_code)//--></script>
-<script language="JavaScript" type="text/javascript"><!--
-if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="//crain.d1.sc.omtrdc.net/b/ss/crainadage/1/H.24.1--NS/0"
-height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-<!-- END SiteCatalyst -->
-
-
-
-<footer id="page-footer" role="contentinfo">
-	<div class="container">
-		<p class="logo">
-			<a href="/">Advertising Age</a>
-		</p>
-		
-		<p class="strap">What's news <br /> to what's next</p>
-
-		<ul class="social">
-			<li>
-				<a href="http://www.facebook.com/AdAge" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'Facebook', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-facebook">Facebook</span>
-				</a>
-			</li>
-			<li>
-				<a href="http://twitter.com/adage" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'Twitter', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-twitter">Twitter</span>
-				</a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/groups?mostPopular=&gid=2754444" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'LinkedIn', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-linkedin">LinkedIn</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://plus.google.com/101792368055128831913/?prsrc=3" onclick="trackOutboundLink(this, 'Footer-Social-Icons', 'Google Plus', this.getAttribute('href'))  return false " target="_new">
-					<span class="icon-gplus">Google+</span>
-				</a>
-			</li>
-		</ul><!-- / .social -->
-
-		<hr />
-
-		<nav id="nav-footer">
-
-			<ul>
-				<li><small>Copyright &copy  1994-2014</small></li>
-				<li><a href="http://www.crain.com/">Crain Communications</a></li><li><a href="/privacy">Privacy Statement</a></li><li><a href="/terms/">Terms of Use</a></li><li><a href="/help/about-us">About Us</a></li><li><a href="/help/advertise">Advertise</a></li><li><a href="/help/reprints">Reprints</a></li><li><a href="/help/contact-us">Contact Us</a></li>
-			</ul>
-
-		</nav><!-- / #nav-footer -->
-	</div><!-- / .container -->
-</footer><!-- / #page-footer -->
-
-
-<aside id="sub-footer">
-	<div class="container">
-		<nav id="nav-subfooter">
-			<ul>
-					
-
-	<li class="nav-item-AD AGE"><a href="http://adage.com"><span>AD AGE</span></a></li>
-	
-
-	<li class="nav-item-Creativity"><a href="http://creativity-online.com"><span>Creativity</span></a></li>
-	
-
-	<li class="nav-item-LookBook"><a href="http://lookbook.adage.com"><span>LookBook</span></a></li>
-	
-
-	<li class="nav-item-Datacenter"><a href="http://adage.com/datacenter/"><span>Datacenter</span></a></li>
-	
-
-	<li class="nav-item-Resources"><a href="http://adage.com/resources"><span>Resources</span></a></li>
-	
-
-	<li class="nav-item-Events"><a href="http://adage.com/events"><span>Events</span></a></li>
-	
-
-	<li class="nav-item-Jobs"><a href="http://jobs.adagetalentworks.com/"><span>Jobs</span></a></li>
-	
-
-	<li class="nav-item-On Campus"><a href="http://adage.com/adage-on-campus/"><span>On Campus</span></a></li>
-	
-			</ul>
-		</nav>
-		<p class="credits">Site by <a href="http://area17.com">AREA 17</a></p>
-	
-	</div>
-</aside><!-- / #sub-footer -->
-
-<!-- Total time: 0.0762300491333 -->
-
-	<script type='text/javascript'>
-		OAS_AD('x90') 
-	</script>
-
-<!-- floating nav -->
-
-
-	<div class="shortcut-bar" data-100="top: -80px " data-150="top:0 " data-behavior="shortcut_bar">
-	<div class="container" data-section-id="889">
-		<p class="logo">
-			<a href="/" onclick="trackOutboundLink(this, 'Logo-shortcutbar-Link', 'Homepage', '/')  return false ">Advertising Age</a>
-		</p>
-
-		<nav id="nav-shortcut">
-			<ul class="bar-dropdown">
-				<li id="sections" class="dropdown">
-					<a href="#"><span>Sections</span> <i class="caret"></i></a>
-					<ul>
-
-						<li>
-	<a href="/channel/marketing/28" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Marketing', this.getAttribute('href'))  return false "><span>Marketing</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/advertising/47" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Advertising', this.getAttribute('href'))  return false "><span>Advertising</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/digital/20" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Digital', this.getAttribute('href'))  return false "><span>Digital</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/media/1" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Media', this.getAttribute('href'))  return false "><span>Media</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/agency-news/19" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Agency', this.getAttribute('href'))  return false "><span>Agency</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/channel/dataworks/42" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'Data', this.getAttribute('href'))  return false "><span>Data</span></a>
-</li>
-<!--
-menu item
---><li>
-	<a href="/section/btob/976" class="bottom_menu" onclick="trackOutboundLink(this, 'Main-Menu', 'BtoB', this.getAttribute('href'))  return false "><span>BtoB</span></a>
-</li>
-
-					</ul>
-				</li>
-			</ul>
-
-			<ul class="mega" data-behavior="mega_menu">
-				<li><a href="#latest"><span>Latest</span> <i class="caret"></i></a></li>
-				<li><a href="#editorpicks"><span>Editor's Picks</span> <i class="caret"></i></a></li>
-				<li><a href="#mostpopular"><span>Most Popular</span> <i class="caret"></i></a></li>
-			</ul>
-		</nav><!-- / #nav-shortcut -->
-
-		
-<span id="floating-nav-login"></span>
-
-
-<script>//ajax login info so not cached
-$(function() {
-var login = $.ajax({ type: 'GET', cache: false, url: '/includes/floating-nav-login.php', data: {id: 'login-nav'}, 
-    success: function(data) {
-       $('#floating-nav-login').html(data) 
-       //alert(data) 
-		var $nav = $('#nav-shortcut'),
-			navLeft = $nav.offset().left 
-			
-			if ($('.tools').length > 0) {
-				navRight = $('.tools').offset().left 
-			
-			}
-			else {
-				$floaty_nav_container_width = $(".shortcut-bar .container").innerWidth() 
-				$logo_width = $(".shortcut-bar" .logo).outerWidth() 
-				navRight = $floaty_nav_container_width - $logo_width 
-			}
-			$nav.width((navRight - navLeft) - 15) 
-    }
-})
-.error(function() {
-    console.log('There was an error making the AJAX request') 
-}) 
-}) 
-</script>
-
-
-
-	</div><!-- / .container -->
-
-	<div id="latest" class="mega-menu">
-		<div class="container">
-			<ul class="viewport fade">
-
-			                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'John Hegarty Starts The Garage, Incubator in Search of Future Stars', 'http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/Garage128.jpg?1417012232" width="100" height="67" alt="John Hegarty Starts The Garage, Incubator in Search of Future Stars" title="John Hegarty Starts The Garage, Incubator in Search of Future Stars" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'John Hegarty Starts The Garage, Incubator in Search of Future Stars', 'http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/']) ">John Hegarty Starts The Garage, Incubator in Search of Future Stars</a></h4>
-						<p>By <a href="http://adage.com/author/emma-hall/5018">Emma Hall</a> - 23 hours ago</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'John Hegarty Starts The Garage, Incubator in Search of Future Stars', 'http://adage.com/article/agency-news/john-hegarty-launches-garage-incubator-london/296011/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Kenzo Digital Joins Allday, Wax Opens in New York and More', 'http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/KenzoDigital_Alldayeveryday.jpg?1417001644" width="100" height="70" alt="Kenzo Digital Joins Allday, Wax Opens in New York and More" title="Kenzo Digital Joins Allday, Wax Opens in New York and More" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Kenzo Digital Joins Allday, Wax Opens in New York and More', 'http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/']) ">Kenzo Digital Joins Allday, Wax Opens in New York and More</a></h4>
-						<p>By <a href="http://adage.com/author/alexandra-jardine/518">Alexandra Jardine</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Kenzo Digital Joins Allday, Wax Opens in New York and More', 'http://adage.com/article/production-moves/kenzo-digital-joins-allday-wax-launches-york/296007/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)', 'http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/one_hour.JPG?1417030467" width="100" height="67" alt="Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)" title="Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)', 'http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/']) ">Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)</a></h4>
-						<p>Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Walmart Hypes One Hour of Discounts on Thanksgiving (See the Newest Ads on TV)', 'http://adage.com/article/media/walmart-hypes-hour-discounts-thanksgiving/296010/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/MailOnline_3x2.jpg?1417025920" width="100" height="67" alt="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" title="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">With Celebrity and Scandal, MailOnline's U.S. Revenue Double</a></h4>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times', 'http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/Statoil_ad_NYTmobile_3x2.jpg?14169 721" width="100" height="71" alt="Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times" title="Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times', 'http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/']) ">Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times</a></h4>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" class="share-count">Array<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Ad Tech Fuels an Awkward Ad Juxtaposition for an Oil Company and The New York Times', 'http://adage.com/article/media/statoil-ad-lands-york-times-story-praising-statoil/296003/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-
-			</ul><!-- / .viewport -->
-		</div><!-- / .container -->
-		<a href="#" class="close"><i class="icon-close-light"></i></a>
-	</div><!-- / #latest.mega-menu -->
-
-	<div id="editorpicks" class="mega-menu">
-		<div class="container">
-			<ul class="viewport fade">
-				
-			                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Century 21: Thanksblasting: Cranberry Sauce', 'http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/']) ">
-                            
-                            <div class="trim">
-                            <img src='http://assets.creativity-online.com/images/work/x-small/c/e/n/Century21_ThanksblastingCranberrySauce14.jpg' class=''>
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Century 21: Thanksblasting: Cranberry Sauce', 'http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/']) ">Century 21: Thanksblasting: Cranberry Sauce</a></h4>
-						<p>By <a href="http://adage.com/author/hoag-levins/222">Hoag Levins</a> - July 2003</p>
-
-                        <ul class="actions">
-                            
-                            <li><a href="http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Century 21: Thanksblasting: Cranberry Sauce', 'http://adage.com/article/news/hugh-hefner-s-extreme-games-ad/37988/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/MailOnline_3x2.jpg?1417025920" width="100" height="67" alt="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" title="With Celebrity and Scandal, MailOnline's U.S. Revenue Double" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) ">With Celebrity and Scandal, MailOnline's U.S. Revenue Double</a></h4>
-						<p>By <a href="http://adage.com/author/michael-sebastian/5066">Michael Sebastian</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" class="share-count">121<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'With Celebrity and Scandal, MailOnline\'s U.S. Revenue Double', 'http://adage.com/article/media/mailonline-s-u-s-revenue-double/296018/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Richard Sherman Mocks NFL for Sponsorship Hypocrisy', 'http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/Richard_Sherman_Oberto_iSpot.png?1 9647645" width="100" height="67" alt="Richard Sherman Mocks NFL for Sponsorship Hypocrisy" title="Richard Sherman Mocks NFL for Sponsorship Hypocrisy" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Richard Sherman Mocks NFL for Sponsorship Hypocrisy', 'http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/']) ">Richard Sherman Mocks NFL for Sponsorship Hypocrisy</a></h4>
-						<p>By <a href="http://adage.com/author/ken-wheaton/442">Ken Wheaton</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" class="share-count">232<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Richard Sherman Mocks NFL for Sponsorship Hypocrisy', 'http://adage.com/article/media/richard-sherman-mocks-nfl-sponsorship-hypocrisy/296006/']) "><i class="icon icon-comment"></i> 1</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/psvita3x2.png?1416951309" width="100" height="67" alt="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" title="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/']) ">FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising</a></h4>
-						<p>By <a href="http://adage.com/author/maureen-morrison/2441">Maureen Morrison</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" class="share-count">81<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-sony-deutsch-la-deceived-consumers/296004/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-						<a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Line Hopes Messaging Stickers Help It Take Off in U.S.', 'http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/']) ">
-                            
-                            <div class="trim">
-                            <img src="http://gaia.adage.com/images/bin/image/x-small/LineThumb.jpg?1401697156" width="100" height="67" alt="Line Hopes Messaging Stickers Help It Take Off in U.S." title="Line Hopes Messaging Stickers Help It Take Off in U.S." />
-                            </div>
-
-                        </a>
-						<h4><a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Line Hopes Messaging Stickers Help It Take Off in U.S.', 'http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/']) ">Line Hopes Messaging Stickers Help It Take Off in U.S.</a></h4>
-						<p>By <a href="http://adage.com/author/angela-doland/4769">Angela Doland</a> - Yesterday</p>
-
-                        <ul class="actions">
-                            <li><a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" class="share-count">53<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/" onClick="_gaq.push(['_trackEvent', 'Floater-Latest', 'Line Hopes Messaging Stickers Help It Take Off in U.S.', 'http://adage.com/article/digital/line-messaging-stickers-taking-u-s/296000/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-
-			</ul><!-- / .viewport -->
-		</div><!-- / .container -->
-		<a href="#" class="close"><i class="icon-close-light"></i></a>
-	</div><!-- / #editorpicks.mega-menu -->
-
-	<div id="mostpopular" class="mega-menu">
-		<div class="container">
-
-				<ul class="viewport fade">
-					
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Twitter CFO Mistakenly Tweets About Deal: \'I Have a Plan\'', 'http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/twitter_logos.jpg?1416926297" width="100" height="67" alt="Twitter CFO Mistakenly Tweets About Deal: 'I Have a Plan'" title="Twitter CFO Mistakenly Tweets About Deal: 'I Have a Plan'" /></a>
-                        <h4><a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Twitter CFO Mistakenly Tweets About Deal: \'I Have a Plan\'', 'http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/']) ">Twitter CFO Mistakenly Tweets About Deal: 'I Have a Plan'</a></h4>
-                        <p> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" class="share-count">254<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Twitter CFO Mistakenly Tweets About Deal: \'I Have a Plan\'', 'http://adage.com/article/digital/twitter-cfo-mistakenly-tweets-deal-i-a-plan/295994/']) "><i class="icon icon-comment"></i> 1</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'It\'s Time for Media CMOs to Step Up and Lead', 'http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/James_McQuivey_3x2.jpg?1416940104" width="100" height="67" alt="It's Time for Media CMOs to Step Up and Lead" title="It's Time for Media CMOs to Step Up and Lead" /></a>
-                        <h4><a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'It\'s Time for Media CMOs to Step Up and Lead', 'http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/']) ">It's Time for Media CMOs to Step Up and Lead</a></h4>
-                        <p>By <a href="http://adage.com/author/james-mcquivey/3815">James McQuivey</a> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" class="share-count">275<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'It\'s Time for Media CMOs to Step Up and Lead', 'http://adage.com/article/digitalnext/time-media-cmos-step-lead/295960/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', '\'All About That Baste\': A Million Ways to Go Viral With Holiday Themes This Week', 'http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/baste.JPG?1416943746" width="100" height="67" alt="'All About That Baste': A Million Ways to Go Viral With Holiday Themes This Week" title="'All About That Baste': A Million Ways to Go Viral With Holiday Themes This Week" /></a>
-                        <h4><a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', '\'All About That Baste\': A Million Ways to Go Viral With Holiday Themes This Week', 'http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/']) ">'All About That Baste': A Million Ways to Go Viral With Holiday Themes This Week</a></h4>
-                        <p> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" class="share-count">67<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', '\'All About That Baste\': A Million Ways to Go Viral With Holiday Themes This Week', 'http://adage.com/article/the-viral-video-chart/baste-a-million-ways-viral-holiday-themes-week/295992/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/psvita3x2.png?1416951309" width="100" height="67" alt="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" title="FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising" /></a>
-                        <h4><a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/']) ">FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising</a></h4>
-                        <p>By <a href="http://adage.com/author/maureen-morrison/2441">Maureen Morrison</a> - Yesterday</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" class="share-count">81<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'FTC Calls Out Sony -- and Deutsch LA -- for Deceptive Advertising', 'http://adage.com/article/news/ftc-calls-sony-deutsch-la-deceptive-advertising/296004/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-                <li class="news-img-left">
-                    <div>
-                        <a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Santa Subs for Polar Bears in Coke\'s Holiday TV Ad', 'http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/']) "><img src="http://gaia.adage.com/images/bin/image/x-small/cokesanta_makesomeonehappy_3x2.jpg?1416855401" width="100" height="67" alt="Santa Subs for Polar Bears in Coke's Holiday TV Ad" title="Santa Subs for Polar Bears in Coke's Holiday TV Ad" /></a>
-                        <h4><a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Santa Subs for Polar Bears in Coke\'s Holiday TV Ad', 'http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/']) ">Santa Subs for Polar Bears in Coke's Holiday TV Ad</a></h4>
-                        <p>By <a href="http://adage.com/author/ej-schultz/3799">E.J. Schultz</a> - 2 days ago</p>
-
-                        <ul class="actions">
-							<li><a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" class="share-count">215<i class="icon icon-forward"></i></a></li>
-                            <li><a href="http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/" onClick="_gaq.push(['_trackEvent', 'Modules-MostPopular', 'Santa Subs for Polar Bears in Coke\'s Holiday TV Ad', 'http://adage.com/article/see-the-spot/santa-subs-polar-bears-coke-s-holiday-tv-ad/295988/']) "><i class="icon icon-comment"></i> 0</a></li>
-                        </ul>
-                    </div>
-                </li><!-- / .news-img-left -->
-
-
-				</ul><!-- / .viewport -->
-			
-		</div><!-- / .container -->
-		<a href="#" class="close"><i class="icon-close-light"></i></a>
-	</div><!-- / #mostpopular.mega-menu -->
-</div><!-- / .shortcut-bar -->
-
-
-
-
-
-<div class="oas left">
-<script type="text/javascript" language="JavaScript">
-	OAS_AD('Left') 
-</script>
-</div>
-
-<!-- EOL -->
-
-<!-- Start Quantcast tag -->
-<script type="text/javascript">
-_qoptions={
-qacct:"p-fbFZFDIZ_p3uo"
-} 
-</script>
-<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
-<noscript>
-<img src="http://pixel.quantserve.com/pixel/p-fbFZFDIZ_p3uo.gif" style="display: none " border="0" height="1" width="1" alt="Quantcast"/>
-</noscript>
-<!-- End Quantcast tag -->
-
-<script type="text/javascript">
-var _sf_async_config={uid:25465,domain:"adage.com"} 
-_sf_async_config.useCanonical = true 
-(function(){
-  function loadChartbeat() {
-    window._sf_endpt=(new Date()).getTime() 
-    var e = document.createElement('script') 
-    e.setAttribute('language', 'javascript') 
-    e.setAttribute('type', 'text/javascript') 
-    e.setAttribute('src',
-       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-       "js/chartbeat.js") 
-    document.body.appendChild(e) 
-  }
-  var oldonload = window.onload 
-  window.onload = (typeof window.onload != 'function') ?
-     loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+// <![CDATA[
+var ga_account="UA-11413116-6" 
+var _gaq = _gaq || [] 
+_gaq.push(['_setAccount', ga_account]) 
+_gaq.push(['_setDomainName', ".businessweek.com"]) 
+_gaq.push(['_setAllowHash', false]) 
+_gaq.push(['_trackPageview']) 
+(function() {
+var ga = document.createElement('script')  ga.type = 'text/javascript'  ga.async = true 
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' 
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga) 
 })() 
-
+// ]]>
 </script>
-
-
-<!-- jquery  -->
-<script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.9.0.min.js'>\x3C/script>")</script>
-
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script>
-<script type="text/javascript" src="http://gaia.adage.com/assets/js/init.js?1407991150" ></script><script type="text/javascript" src="http://gaia.adage.com/assets/js/plugins.js?1407991150" ></script><script type="text/javascript" src="http://gaia.adage.com/assets/js/script.js?1416842854" ></script>
-
-<!-- sharecount beta --><script type="text/javascript" src="http://gaia.adage.com/assets/js/sharecount.js?1407991151" ></script>
-
-<!--[if (gte IE 6)&(lte IE 8)]>
-<script type="text/javascript" src="http://gaia.adage.com/assets/js/libs/selectivizr-min.js?1407991151" ></script>
-<script type="text/javascript" src="http://gaia.adage.com/assets/js/ie.js?1407991151" ></script>
-<![endif]-->
-
-<!-- interstitial scroll --><script type="text/javascript" src="http://gaia.adage.com/assets/js/interstitial.js?1412032837" ></script>
-
-<script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-5.newrelic.com","licenseKey":"9ca448880a","applicationID":"5007852","transactionName":"YVRaYUEFWUVWAE0KDFgebUdaS0RTVBdQDA0YQVBF","queueTime":0,"applicationTime":278,"ttGuid":"","agentToken":"","atts":"TRNZFwkfSks=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+<script type="text/javascript">
+// <![CDATA[
+var OAS_listpos = 'Top,Right2,Right3' 
+if (!window.BW_adsys) {
+document.write('<scr' + 'ipt language="JavaScript" type="text/javascript" src="http://www.businessweek.com/common_scripts/BW_adsys.js"><\/scr' + 'ipt>') 
+}
+if (!window.BW_sitezone) {
+BW_sitezone = 'magazine' 
+}
+// ]]>
+</script>
+<link href="http://static.btrd.net/css/interstitial.css" rel="stylesheet" type="text/css" media="screen"  />
+<script src="http://static.btrd.net/js/master.js" type="text/javascript" ></script>
+<script src="http://static.btrd.net/js/interstitial.js" type="text/javascript" ></script>
+<script type="text/javascript" charset="utf-8">
+var noad=0 
+</script>
+<div id="showInterstitial">
+<div id="intro_ad_header">
+<div id="small_logo"><span>Bloomberg Businessweek</span></div>
+<div id="skip_ad"><span class="skip-ad">Go To Businessweek.com</span></div>
+</div>
+<div id="intro_ad">
+<div class="ad">
+<script type="text/javascript">
+// <![CDATA[
+BW_adsys_genCode = BW_adsys('Interstitial') 
+document.write(BW_adsys_genCode) 
+// ]]>
+</script>
+<noscript>
+<p><a rel="external" href="http://ad.doubleclick.net/jump/mgh.bw.magazine page=t0 t0="Interstitial" sz="640x480" ord=9302873315">
+<img src="http://ad.doubleclick.net/ad/mgh.bw.magazine page=t0 t0="Interstitial" sz="640x480" ord=9302873315" border="0" alt="Click Here" />
+</a></p>
+</noscript>
+</div>
+</div>
+</div>
+<div id="backgroundInterstitial"></div>
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+$('.skip-ad').click(function() {
+disableInterstitial() 
+}) 
+HideIntroAd() 
+if ( (noad !=1) && ( show_interstitial_ad() ) ) {
+displayInterstitialAd() 
+}
+//]]>
+</script>
+<div id="headerContainer">
+<div id="headerInner">
+<div id="gatewaySWFWrapper"></div>
+<script type="text/javascript">//<![CDATA[ 
+var cacheKiller = new Date() 
+if ('SWFObject' in window) { //Initialize SWFObject
+var so = new SWFObject("http://" + window.location.host + "/gateway.swf?cacheKiller=" + cacheKiller.getTime(), "gatewaySWF", "1", "1", "8") 
+so.addParam("allowScriptAccess", "always") 
+so.write("gatewaySWFWrapper") 
+window.gatewaySWF = document.getElementById("gatewaySWF") 
+}
+if (!('bw' in window && bw.cfg && bw.cfg.loadJquery === false) && !('jQuery' in window)) { //Check for loadJquery flag and Check if jQuery exists
+document.write('<scr'+'ipt src="http://res.businessweek.com/scripts/jquery.js" type="text/javascript"></scr'+'ipt>') 
+}
+//]]></script>
+<script type="text/javascript" src="http://static.btrd.net/js/bw_comscore.js"></script>
+<script src="//www.businessweek.com/assets/navigation-b6edf7c714213 8dba8c4dea610acc4.js" type="text/javascript"></script>
+<link href="http://www.businessweek.com/assets/header_footer-6455570e206b7a8016c12f92082340f1.css" media="screen" rel="stylesheet" type="text/css" />
+<div class='header_footer_814'>
+<div class='clearfix' id='container'>
+<div class='clearfix' id='header'>
+<div class='inner_wrapper'>
+<div id='logo'>
+<a href="http://www.businessweek.com/" class="ir" id="home_link">Bloomberg Businessweek</a>
+<h1 id='channel_name'>
+<a href="http://www.businessweek.com/businessweek">Businessweek</a>
+</h1>
+</div>
+<div id='promo'>
+<span class='house_ad'>
+<iframe allowTransparency='true' class='ad_frame' data-position='circ_header' data-pt='t6' data-size='200x92,1x1' data-tile='2' data-tz='circ_header' data-uri='/dynamic_frames/ads.html' frameBorder='0' scrolling='no'></iframe>
+</span>
+</div>
+<div id='search'>
+<form action='http://search.businessweek.com/Search' method='get'>
+<input id='search_input' name='searchTerm' type='text' value='Search'>
+<input name='resultsPerPage' type='hidden' value='20'>
+</form>
+</div>
+</div>
+</div>
+<div id='global_nav'>
+<div class='inner_wrapper'>
+<ul class='navigation clearfix'>
+<li class='global_economics has_sub_menu'>
+<a href="http://www.businessweek.com/global-economics">Global Economics</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-21/the-gold-rorschach-test"><img alt="0320_gold_360x240" height="240" src="http://images.businessweek.com/cms/2012-03-21/0320_gold_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/the-gold-rorschach-test">The Gold Rorschach Test</a></h5>
+<p>Depending on whether rising bond yields are signaling inflation or recovery, gold is the bestâor worstâinvestment right now</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/global-economics">Global Economics</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/london-taxis-next-stop-azerbaijan">London Taxis' Next Stop: Azerbaijan</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/the-secret-world-of-hong-kongs-private-kitchens">The Secret World of Hong Kong's Private Kitchens</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/apartment-nation-trend-to-multi-family-housing-continues">Apartment Nation: Trend to Multi-Family Housing Continues</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/why-3-dot-5-million-job-openings-isnt-great-news">Why 3.5 Million Job Openings Isn't Great News</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/global-economics">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/europes-debt-woes-getting-a-spanish-accent">Europe's Debt Woes Getting a Spanish Accent</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/why-china-is-holding-up-the-google-motorola-deal">Why China Is Holding up the Google-Motorola Deal</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/indias-misguided-china-anxiety">India's Misguided China Anxiety</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/the-check-is-in-the-mail">The Check is in the Mail</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/mostly-made-in-america">(Mostly) Made in America</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/global-economics/africa">Africa</a></li>
+<li><a href="http://www.businessweek.com/global-economics/china">China</a></li>
+<li><a href="http://www.businessweek.com/global-economics/emerging-markets">Emerging Markets</a></li>
+<li><a href="http://www.businessweek.com/global-economics/energy">Energy</a></li>
+<li><a href="http://www.businessweek.com/global-economics/europe">Europe</a></li>
+<li><a href="http://www.businessweek.com/global-economics/india">India</a></li>
+<li><a href="http://www.businessweek.com/global-economics/latin-america">Latin America</a></li>
+<li><a href="http://www.businessweek.com/blogs/econochat">Blog: Econochat</a></li>
+<li class='sponsor_placeholder'></li>
+</ul>
+</li>
+<div class='nav_sponsored'>
+<div class='sponsored_by'>Sponsored by</div>
+<div class='ad_container'>
+<a href="http://ad.doubleclick.net/clk 253341122 77212976 d" class="nav_ad" target="_blank"><img alt="Global_economics" height="31" src="http://images.businessweek.com/ads/header/flyout/redesign/global_economics.png" width="88" /></a>
+</div>
+</div>
+</ul>
+</li>
+<li class='companies_and_industries has_sub_menu'>
+<a href="http://www.businessweek.com/companies-and-industries">Companies &amp  Industries</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-20/layoffs-are-latest-blow-for-oprahs-cable-empire"><img alt="0320_oprah_360x240" height="240" src="http://images.businessweek.com/cms/2012-03-20/0320_oprah_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/layoffs-are-latest-blow-for-oprahs-cable-empire">Layoffs Are Latest Blow to Oprah's Cable Empire</a></h5>
+<p>The Oprah Winfrey Network's struggles show how difficult is for big media personalities to prosper in a new medium</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/companies-and-industries">Companies &amp  Industries</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/what-slowdown-the-mormons-are-building-a-mega-mall">What Slowdown? The Mormons Are Building a Mega-Mall</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/is-nikes-flyknit-the-swoosh-of-the-future">Is Nike's Flyknit the Swoosh of the Future?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-14/fixing-the-goldman-sachs-problem">Fixing the 'Goldman Sachs' Problem</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/management-lessons-from-the-godfather">Management Lessons From 'The Godfather'</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/companies-and-industries">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/indias-misguided-china-anxiety">India's Misguided China Anxiety</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/fixing-rim">Fixing RIM</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/mostly-made-in-america">(Mostly) Made in America</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/ziplists-everywhere-recipe-box-lures-1m-cooks">ZipList's Everywhere Recipe Box Lures 1M Cooks</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/memo-to-ceos-stop-blathering-about-innovation-and-do-something">Memo to CEOs: Stop Blathering About Innovation and Do Something</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/companies-and-industries/autos">Autos</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/energy">Energy</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/health-care">Health Care</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/management">Management</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/manufacturing">Manufacturing</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/media-and-marketing">Media & Marketing</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/telecommunications">Telecommunications</a></li>
+<li><a href="http://www.businessweek.com/companies-and-industries/transportation">Transportation</a></li>
+<li><a href="http://www.businessweek.com/blogs/the-management-blog">Blog: The Management Blog</a></li>
+<li><a href="http://investing.businessweek.com/research/company/overview/overview.asp">Public & Private Companies</a></li>
+<li><a href="http://investing.businessweek.com/research/people/overview/overview.asp">Executives</a></li>
+<li><a href="http://jobs.businessweek.com/a/all-jobs/list">Jobs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='politics_and_policy has_sub_menu'>
+<a href="http://www.businessweek.com/politics-and-policy">Politics &amp  Policy</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-19/why-3-dot-5-million-job-openings-isnt-great-news"><img alt="0316_jobs_360x240" height="240" src="http://images.businessweek.com/cms/2012-03-19/0316_jobs_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/why-3-dot-5-million-job-openings-isnt-great-news">Why 3.5 Million Job Openings Isn't Great News</a></h5>
+<p>There are lots of jobs openâhere's why that's a bad sign for the economy</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/politics-and-policy">Politics &amp  Policy</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/no-taxes-no-way">No Small Business Taxes? No Way</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/harry-reid-and-mitch-mcconnell-strike-a-deal-on-judicial-nominations">Harry Reid and Mitch McConnell Strike a Deal on Judicial Nominations</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/regulators-are-slow-to-act-on-speed-traders">Regulators Are Slow to Act on Speed Traders</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/why-3-dot-5-million-job-openings-isnt-great-news">Why 3.5 Million Job Openings Isn't Great News</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/politics-and-policy">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/why-china-is-holding-up-the-google-motorola-deal">Why China Is Holding up the Google-Motorola Deal</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/mostly-made-in-america">(Mostly) Made in America</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/jobs-advice-care-of-the-man-from-delaware">Jobs Advice, Care of the Man From Delaware</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/when-irish-eyes-are-hopeful">When Irish Eyes Are Hopeful </a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/wanted-more-ceos-in-washington">Wanted: More CEOs in Washington</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/politics-and-policy/2012-campaign">2012 Campaign</a></li>
+<li><a href="http://www.businessweek.com/politics-and-policy/congress">Congress</a></li>
+<li><a href="http://www.businessweek.com/politics-and-policy/courts">Courts</a></li>
+<li><a href="http://www.businessweek.com/politics-and-policy/legislation">Legislation</a></li>
+<li><a href="http://www.businessweek.com/politics-and-policy/white-house">White House</a></li>
+<li><a href="http://www.businessweek.com/blogs/joshua-green-on-politics">Blog: Joshua Green on Politics</a></li>
+<li class='sponsor_placeholder'></li>
+</ul>
+</li>
+<div class='nav_sponsored'>
+<div class='sponsored_by'>Sponsored by</div>
+<div class='ad_container'>
+<a href="http://ad.doubleclick.net/clk 253341265 77213004 u" class="nav_ad" target="_blank"><img alt="Politics_and_policy" height="31" src="http://images.businessweek.com/ads/header/flyout/redesign/politics_and_policy.png" width="88" /></a>
+</div>
+</div>
+</ul>
+</li>
+<li class='technology has_sub_menu'>
+<a href="http://www.businessweek.com/technology">Technology</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-19/apple-finds-best-place-to-put-its-cash-apple-shares"><img alt="0319_appledividend_360x240" height="240" src="http://images.businessweek.com/cms/2012-03-19/0319_AppleDividend_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/apple-finds-best-place-to-put-its-cash-apple-shares">Apple Finds Best Place to Put Its Cash: Apple Shares</a></h5>
+<p>Appleâs rapidly growing $98 billion cash pile will continue to remain an embarrassment of richesâprobably even more so</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/technology">Technology</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/microsofts-wireless-bet">Microsoft's Wireless Bet</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/why-china-is-holding-up-the-google-motorola-deal">Why China Is Holding up the Google-Motorola Deal</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/data-85-percent-of-mobile-traffic-but- -percent-of-revenue-what-gives">Data: 85% of Mobile Traffic But  % of RevenueâWhat Gives?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/fixing-rim">Fixing RIM</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/technology">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/why-china-is-holding-up-the-google-motorola-deal">Why China Is Holding up the Google-Motorola Deal</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/ziplists-everywhere-recipe-box-lures-1m-cooks">ZipList's Everywhere Recipe Box Lures 1M Cooks</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/layoffs-are-latest-blow-for-oprahs-cable-empire">Layoffs Are Latest Blow to Oprah's Cable Empire </a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/if-you-have-news-it-will-be-aggregated-and-or-curated">If You Have News, It Will Be Aggregated and/or Curated</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/can-speech-recognition-software-work-in-mandarin">Can Speech-Recognition Software Work in Mandarin?</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/technology/apple">Apple</a></li>
+<li><a href="http://www.businessweek.com/technology/apps-and-software">Apps & Software</a></li>
+<li><a href="http://www.businessweek.com/technology/consumer-electronics">Consumer Electronics</a></li>
+<li><a href="http://www.businessweek.com/technology/facebook">Facebook</a></li>
+<li><a href="http://www.businessweek.com/technology/google">Google</a></li>
+<li><a href="http://www.businessweek.com/technology/mobile-and-telecom">Mobile & Telecom</a></li>
+<li><a href="http://www.businessweek.com/technology/personal-technology">Personal Technology</a></li>
+<li><a href="http://www.businessweek.com/technology/science-and-research">Science & Research</a></li>
+<li><a href="http://www.businessweek.com/technology/social-media">Social Media</a></li>
+<li class='sponsor_placeholder'></li>
+</ul>
+</li>
+<div class='nav_sponsored'>
+<div class='sponsored_by'>Sponsored by</div>
+<div class='ad_container'>
+<a href="http://ad.doubleclick.net/clk 217525388 40698 5 y " class="nav_ad" target="_blank"><img alt="Technology" height="31" src="http://images.businessweek.com/ads/header/flyout/redesign/technology.png" width="88" /></a>
+</div>
+</div>
+</ul>
+</li>
+<li class='markets_and_finance has_sub_menu'>
+<a href="http://www.businessweek.com/markets-and-finance">Markets &amp  Finance</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-15/acapulco-another-mexican-drug-war-casualty"><img alt="Mf_acapulco12__01__360x240" height="240" src="http://images.businessweek.com/cms/2012-03-19/mf_acapulco12__01__360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/acapulco-another-mexican-drug-war-casualty">Acapulco, Another Mexican Drug War Casualty</a></h5>
+<p>A spike in homicides hits the beach resort's real estate marketâand developer Sare Holding</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/markets-and-finance">Markets &amp  Finance</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/funds-hope-to-cash-in-on-japanese-cuisine">Funds Hope to Cash In on Japanese Cuisine</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/shedding-light-on-prepaid-debit-card-fees">Shedding Light on Prepaid Debit-Card Fees</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/apple-goes-from-500-to-600-in-a-month">Apple Goes From $500 to $600 in a Month</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/jpmorgan-cracks-the-mutual-fund-top-10">JPMorgan Cracks the Mutual Fund Top 10</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/markets-and-finance">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/the-gold-rorschach-test">The Gold Rorschach Test</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/apartment-nation-trend-to-multi-family-housing-continues">Apartment Nation: Trend to Multi-Family Housing Continues</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/regulators-are-slow-to-act-on-speed-traders">Regulators Are Slow to Act on Speed Traders</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/apple-finds-best-place-to-put-its-cash-apple-shares">Apple Finds Best Place to Put Its Cash: Apple Shares</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/when-irish-eyes-are-hopeful">When Irish Eyes Are Hopeful </a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/markets-and-finance/banks">Banks</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/commodities">Commodities</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/currencies">Currencies</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/hedge-funds">Hedge Funds</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/investing">Investing</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/mutual-funds-and-etfs">Mutual Funds & ETFs</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/private-equity">Private Equity</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/real-estate">Real Estate</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/regulation">Regulation</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/stocks-and-bonds">Stocks & Bonds</a></li>
+<li><a href="http://www.businessweek.com/markets-and-finance/wall-street">Wall Street</a></li>
+<li class='sponsor_placeholder'></li>
+</ul>
+</li>
+<div class='nav_sponsored'>
+<div class='sponsored_by'>Sponsored by</div>
+<div class='ad_container'>
+<a href="http://ad.doubleclick.net/clk 253341371 77213081 x" class="nav_ad" target="_blank"><img alt="Markets" height="31" src="http://images.businessweek.com/ads/header/flyout/redesign/markets.png" width="88" /></a>
+</div>
+</div>
+</ul>
+</li>
+<li class='innovation has_sub_menu'>
+<a href="http://www.businessweek.com/innovation">Innovation</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-15/is-nikes-flyknit-the-swoosh-of-the-future"><img alt="Comp_nike12__01__360x240" height="240" src="http://images.businessweek.com/cms/2012-03-16/comp_nike12__01__360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/is-nikes-flyknit-the-swoosh-of-the-future">Is Nike's Flyknit the Swoosh of the Future?</a></h5>
+<p>Its new running shoe is spun, not sewn, reducing materials, time, and labor</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/innovation">Innovation</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/can-speech-recognition-software-work-in-mandarin">Can Speech-Recognition Software Work in Mandarin?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-14/the-great-brain-robbery">The Great Brain Robbery</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2011-08-25/online-media-the-great-pay-wall-of-slovakia">Online Media: The Great Pay Wall of Slovakia</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-12/do-we-need-a-copyright-symbol-for-sharing">Do We Need a Copyright Symbol for Sharing?</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/innovation">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/is-nikes-flyknit-the-swoosh-of-the-future">Is Nike's Flyknit the Swoosh of the Future?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/frances-arnolds-directed-evolution">Frances Arnold's Directed Evolution</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/sxsw-a-davos-for-the-web-set">SXSW, a Davos for the Web Set</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/bloomberg-view-credit-default-swaps-work-see-greece-eyes-in-the-sky-vs-dot-privacy">Bloomberg View: Credit-Default Swaps Work (See Greece)  Eyes in the Sky vs. Privacy</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-14/inside-the-chinese-boom-in-corporate-espionage">Inside the Chinese Boom in Corporate Espionage</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/innovation/copyright">Copyright</a></li>
+<li><a href="http://www.businessweek.com/innovation/innovators">Innovators</a></li>
+<li><a href="http://www.businessweek.com/innovation/patents">Patents</a></li>
+<li><a href="http://www.businessweek.com/innovation/privacy">Privacy</a></li>
+<li><a href="http://www.businessweek.com/innovation/reinventing-business">Reinventing Business</a></li>
+<li><a href="http://www.businessweek.com/innovation/trademarks">Trademarks</a></li>
+<li class='sponsor_placeholder'></li>
+</ul>
+</li>
+<div class='nav_sponsored'>
+<div class='sponsored_by'>Sponsored by</div>
+<div class='ad_container'>
+<a href="http://ad.doubleclick.net/clk 217525936 40699049 u " class="nav_ad" target="_blank"><img alt="Innovation" height="31" src="http://images.businessweek.com/ads/header/flyout/redesign/innovation.png" width="88" /></a>
+</div>
+</div>
+</ul>
+</li>
+<li class='lifestyle has_sub_menu'>
+<a href="http://www.businessweek.com/lifestyle">Lifestyle</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-19/kid-ceos-young-sisters-sell-spa-themed-products-for-girls"><img alt="0314_kidceo_360x240" height="240" src="http://images.businessweek.com/cms/2012-03-20/0314_kidceo_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/kid-ceos-young-sisters-sell-spa-themed-products-for-girls">Kid CEOs: Sisters Sell Spa-Themed Products for Girls</a></h5>
+<p>Brea and Halle Holmes get their break thanks to Nickelodeon</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/lifestyle">Lifestyle</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/luxury-chinese-liquors-become-multibillion-dollar-brands">Luxury Chinese Liquors Become Multibillion-Dollar Brands</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/with-any-luck-you-wont-win-the-lottery">With Any Luck, You Won't Win the Lottery</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/billy-corgan-from-smashing-pumpkins-to-smashing-heads">Billy Corgan, From Smashing Pumpkins to Smashing Heads</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/neil-degrasse-tyson-s-essential-business-reads">Neil deGrasse Tyson's Essential Business Reads</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/lifestyle">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/garbage-fashion-t-shirts-made-from-recycled-bottles">Garbage Fashion: T-Shirts Made From Recycled Bottles</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/layoffs-are-latest-blow-for-oprahs-cable-empire">Layoffs Are Latest Blow to Oprah's Cable Empire </a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/the-secret-world-of-hong-kongs-private-kitchens">The Secret World of Hong Kong's Private Kitchens</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/can-speech-recognition-software-work-in-mandarin">Can Speech-Recognition Software Work in Mandarin?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/why-3-dot-5-million-job-openings-isnt-great-news">Why 3.5 Million Job Openings Isn't Great News</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/lifestyle/books">Books</a></li>
+<li><a href="http://www.businessweek.com/lifestyle/fashion">Fashion</a></li>
+<li><a href="http://www.businessweek.com/lifestyle/food-and-drink">Food & Drink</a></li>
+<li><a href="http://www.businessweek.com/lifestyle/gadgets-and-accessories">Gadgets & Accessories</a></li>
+<li><a href="http://www.businessweek.com/lifestyle/hard-choices">Hard Choices</a></li>
+<li><a href="http://www.businessweek.com/lifestyle/travel">Travel</a></li>
+<li><a href="http://www.businessweek.com/lifestyle/workplace">Workplace</a></li>
+<li class='sponsor_placeholder'></li>
+</ul>
+</li>
+<div class='nav_sponsored'>
+<div class='sponsored_by'>Sponsored by</div>
+<div class='ad_container'>
+<a href="http://ad.doubleclick.net/clk 253341499 77213147 l" class="nav_ad" target="_blank"><img alt="Lifestyle" height="31" src="http://images.businessweek.com/ads/header/flyout/redesign/lifestyle.png" width="88" /></a>
+</div>
+</div>
+</ul>
+</li>
+<li class='business_schools has_sub_menu'>
+<a href="http://www.businessweek.com/business-schools">Business Schools</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-19/why-size-matters-for-b-schools"><img alt="0319_size_360x240" height="240" src="http://images.businessweek.com/cms/2012-03-19/0319_size_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/why-size-matters-for-b-schools">Why Size Matters for B-Schools</a></h5>
+<p>A spurt of mergers among French business schools highlights the advantages inherent in large institutions</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/business-schools">Business Schools</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-14/whats-in-a-name-for-b-schools-millions">What's in a Name? For B-Schools, Millions</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-14/would-be-i-banker-try-plan-b">Would-be I-Banker? Try Plan B</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-13/mba-falling-out-of-favor">MBA Falling Out of Favor?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-12/how-i-got-here-steven-reinemund">How I Got Here: Steven Reinemund</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/business-schools">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/finding-the-right-fit">Finding the Right Fit</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/2013-best-undergraduate-b-school-nomination">2013 Best Undergraduate B-School Nomination</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/how-we-ranked-the-schools">How We Ranked the Schools</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/notre-dame-tops-list-of-best-college-business-programs">Notre Dame Tops List of Best College Business Programs</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/cal-state-plans-to-freeze-enrollment">Cal State Plans to Freeze Enrollment</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://tools.businessweek.com/business_school_events_calendar/">B-School Calendar</a></li>
+<li><a href="http://tools.businessweek.com/BSchool_Comparator/">Compare B-Schools</a></li>
+<li><a href="http://www.businessweek.com/business-schools/financial-aid">Financial Aid</a></li>
+<li><a href="http://www.businessweek.com/business-schools/finding-a-job">Finding A Job</a></li>
+<li><a href="http://forums.businessweek.com/bw-bschools/start/">Forums</a></li>
+<li><a href="http://www.businessweek.com/business-schools">MBA Journals</a></li>
+<li><a href="http://www.businessweek.com/bschools/rankings">Rankings & Profiles</a></li>
+<li><a href="http://www.businessweek.com/business-schools/undergrad-programs">Undergrad Programs</a></li>
+<li><a href="http://www.businessweek.com/blogs/getting-in">Blog: Getting In</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='small_business has_sub_menu'>
+<a href="http://www.businessweek.com/small-business">Small Business</a>
+<ul class='sub_menu new'>
+<li class='col featured_story'>
+<a href="http://www.businessweek.com/articles/2012-03-19/family-businesses-should-plan-now-for-rising-gift-tax"><img alt="African father and adult son in front of business" height="240" src="http://images.businessweek.com/cms/2012-03-19/0319_gifttax_360x240.jpg" width="360" /></a>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/family-businesses-should-plan-now-for-rising-gift-tax">Family Businesses Should Plan Now for Rising Gift Tax</a></h5>
+<p>With a tax break expiring next year, should family business owners speed up transferring ownership to the kids?</p>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/small-business">Small Business</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-16/washington-state-tailors-social-purpose-corporation-to-sustainable-business">Washington State Tailors 'Social Purpose Corporation' to Sustainable Business</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/great-product-dot-now-how-to-sell-it">Great Product. Now, How to Sell It?</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-14/an-online-antidote-to-the-housing-bust">An Online Antidote to the Housing Bust</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-12/a-marketers-homage-to-the-soda-can">A Marketer's Homage to the Soda Can</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list'>
+<h4>
+<a href="http://www.businessweek.com/small-business">Recent</a>
+</h4>
+<ul>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-21/why-entrepreneurship-is-declining">Why Entrepreneurship Is Declining</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/ziplists-everywhere-recipe-box-lures-1m-cooks">ZipList's Everywhere Recipe Box Lures 1M Cooks</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-20/no-taxes-no-way">No Taxes? No Way</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-19/kid-ceos-young-sisters-sell-spa-themed-products-for-girls">Kid CEOs: Sisters Sell Spa-Themed Products for Girls</a></h5>
+</li>
+<li>
+<h5><a href="http://www.businessweek.com/articles/2012-03-15/book-review-the-power-of-habit-by-charles-duhigg">Book Review: 'The Power of Habit,' by Charles Duhigg</a></h5>
+</li>
+</ul>
+</li>
+<li class='col list departments last'>
+<h4>
+<a>Sections</a>
+</h4>
+<ul>
+<li><a href="http://www.businessweek.com/small-business/advice">Advice</a></li>
+<li><a href="http://www.businessweek.com/small-business/commentary">Commentary</a></li>
+<li><a href="http://www.businessweek.com/small-business/finance">Finance</a></li>
+<li><a href="http://www.businessweek.com/small-business/policy">Policy</a></li>
+<li><a href="http://www.businessweek.com/blogs/the-new-entrepreneur">Blog: The New Entrepreneur</a></li>
+<li><a href="http://www.businessweek.com/small-business/legal-forms.html">Legal Documents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class='media has_sub_menu'>
+<a href="http://www.businessweek.com/media">Media</a>
+<ul class='sub_menu new'>
+<li class='media_type slideshows'>
+<h4>
+<a href="http://www.businessweek.com/slideshows">Slideshows</a>
+</h4>
+<ul>
+<li class='clearfix'>
+<a href="http://images.businessweek.com/slideshows/2012-03-20/best-undergraduate-business-schools-2012"><img alt="&lt p&gt A cursory glance at this year's ranking might leave the impression that little has changed. After all, eight of the top 10 schools this year were top 10 schools last year, too, including No. 1 Notre Dame. But as the following slideshow reveals, there was a lot of movement&amp #8212 up and down&amp #8212 throughout the list.&lt br&gt &lt br&gt &lt em&gt Note: In-state tuition shown for state schools. Average class size is for required courses. Except where noted, job placement is the percentage of 2011 graduates who received or accepted job offers within three months of graduation.&lt /em&gt &lt br&gt &lt br&gt &lt em&gt Data: Schools, Bloomberg Businessweek&lt /em&gt &lt /p&gt " height="96" src="http://dlimages.businessweek.com/imageserve/00sJah1fMd8Xc/145x96.jpg" width="145" />
+<h6>Best Undergraduate Business Schools 2012</h6>
+</a></li>
+<li class='clearfix'>
+<a href="http://images.businessweek.com/slideshows/2012-03-16/heres-where-you-can-stick-your-ipad"><img alt="&lt div&gt &lt p&gt The iPad 3 isn't so much revolution as an upgrade. So if you're going to shell out $499-$829 for a new iPad, here are some of the stands that will help you make the most of your new, well, at least improved, iPad.&lt /p&gt 
+&lt p&gt Give your iPad a bit of retro-chic with this natural wood retro television carving: The &lt a href=&quot http://www.etsy.com/listing/87824502/handmade-natural-wood-retro-tv-ipad-dock&quot &gt TV iPad Dock&lt /a&gt  hand-crafted by Scott Weddle and available for $60 (plus shipping) on Etsy showcases the iPad 3's new Retina display. Perfect for streaming full episodes of Leave it to Beaver on Hulu.&lt /p&gt &lt p&gt &lt /p&gt &lt /div&gt " height="96" src="http://dlimages.businessweek.com/imageserve/0cMx6OD7Ax69X/145x96.jpg" width="145" />
+<h6>Here's Where You Can Stick Your iPad</h6>
+</a></li>
+<li class='clearfix'>
+<a href="http://images.businessweek.com/slideshows/2012-03-16/urban-outfitters-offensive-merchandise"><img alt=" Urban Outfitters, the wannabe hipster fashion purveyor based in Philadelphia, has a penchant for offending minority groups. The most recent stir is over merchandise introduced in advance of this yearâs St. Patrickâs Day, which plays off the stereotype of the Irish Drunk. Other groups antagonized by UO in the past include Native Americans, African Americans, Jews, and Mexicans. Of course, UO isnât the only retailer to get in trouble for controversial wares." height="96" src="http://dlimages.businessweek.com/imageserve/09s33S28hggOr/145x96.jpg" width="145" />
+<h6>Urban Outfitters' Offensive Merchandise</h6>
+</a></li>
+<li class='clearfix'>
+<a href="http://images.businessweek.com/slideshows/2012-03-14/big-exit-burning-bridges-through-history"><img alt="&lt p&gt For some who are on the way out the door, there's no holding back. Ex-Goldman
+Sachs executive Greg Smith's &lt a href=&quot http://www.nytimes.com/2012/03/14/opinion/why-i-am-leaving-goldman-sachs.html&quot &gt eye-opening column&lt /a&gt  in the &lt i&gt New York Times&lt /i&gt  on March 14 is just the latest example. Smith claimed the bank no longer puts customer interests first: &quot Today, if you make enough money for the firm (and are not currently an ax murderer) you will be promoted into a position of influence,&quot  Smith wrote. (&lt a href=&quot http://www.businessweek.com/articles/2012-03-14/goldman-sachs-response-to-greg-smiths-op-ed&quot &gt The bank later responded&lt /a&gt .) What follows are some other famous examples of people who went out with a bang.&lt /p&gt " height="96" src="http://dlimages.businessweek.com/imageserve/063E1XX9K93SE/145x96.jpg" width="145" />
+<h6>Big Exit: Burning Bridges Through History</h6>
+</a></li>
+</ul>
+</li>
+<li class='media_type photo_essay'>
+<h4>
+<a href="http://www.businessweek.com/photos">Photo Essays</a>
+</h4>
+<ul>
+<li class='clearfix'>
+<a href="http://images.businessweek.com/photos/2012-02-28/ninja-mining"><img alt="&lt p&gt Mongolia&amp #  s illegal miners, many of them out-of-work herdsmen, are called &amp #8220 ninja miners.&amp #8221  Their nickname comes from the green bowls they carry on their backs, which resemble the shells of Teenage Mutant Ninja Turtles. For years, the lawless miners have worked in abandoned commercial mines and on the edges of active mines, using their green bowls to pan for gold. Here, a reindeer train makes the three-day journey to an illegal gold mining camp in the northern reaches of Mongolia. The reindeer belong to the Tsaatan, a nomatic people who ferry supplies into the camps for a profit.&lt /p&gt " height="96" src="http://dlimages.businessweek.com/imageserve/04LDctw3zT2bS/145x96.jpg" width="145" />
+<h6>Ninja Mining in Mongolia's Far North</h6>
+</a></li>
+<li class='clearfix'>
+<a href="http://images.businessweek.com/photos/2012-02-28/japan-tsunami-one-year-later"><img alt="&lt p&gt Photographer James Whitlow Delano visited the area near the Fukushima Power Plant that was damaged by the earthquake and tsunami on March 11, 2011, to document how the landscape has changed. This area was once a great pine forest of 70,000 trees that covered the oceanfront at Takata Matsubara in Japan until the tsunami swept through, decimating them all. Now, in Rikuzen-Takata, Iwate Prefecture, the sea undercuts the roots beneath their stumps, giving them an otherworldly appearance.&lt /p&gt " height="97" src="http://dlimages.businessweek.com/imageserve/09uC6Mtgxm0qr/145x97.jpg" width="145" />
+<h6>One Year After the Tsunami</h6>
+</a></li>
+</ul>
+</li>
+<li class='media_type charts'>
+<h4>
+<span class='a_mock'>Charts</span>
+</h4>
+<ul>
+<li class='clearfix'>
+<a href="http://www.businessweek.com/articles/2012-03-15/jpmorgan-cracks-the-mutual-fund-top-10"><img alt="Mf_morganfunds12__01__145x82" height="82" src="http://images.businessweek.com/cms/2012-03-19/mf_morganfunds12__01__145x82.jpg" width="145" />
+<h6>JPMorgan Cracks the Mutual Fund Top 10</h6>
+</a></li>
+<li class='clearfix'>
+<a href="http://www.businessweek.com/articles/2012-03-15/irans-sanctions-payoff-real-estate-is-hot"><img alt="Econ_iran12__01inline__145" height="82" src="http://images.businessweek.com/cms/2012-03-16/econ_iran12__01inline__145.jpg" width="145" />
+<h6>Iran's Sanctions Payoff: Real Estate Is Hot</h6>
+</a></li>
+</ul>
+</li>
+<li class='media_type videos'>
+<h4>
+<a href="http://www.businessweek.com/videos">Videos</a>
+</h4>
+<ul>
+<li class='video clearfix'>
+<a href="http://www.businessweek.com/videos/2012-03-20/mexico-hit-by-strongest-earthquake-since-2003" class="clearfix"><img alt="34rn2mwl0oltzho35imdoxomg0o9j0gt" height="82" src="http://cdn.videos.bloomberg.com/pxcXQ3NDoDMUC17tTbxBJQdhrEDzDnBm/34Rn2mwL0OLTzHo35iMDoxOmg0O9j0gt" width="145" />
+<h6>Mexico Hit by Strongest Earthquake Since 2003</h6>
+</a></li>
+<li class='video clearfix'>
+<a href="http://www.businessweek.com/videos/2012-03-20/iran-feeling-squeeze-from-sanctions-kaplan-says" class="clearfix"><img alt="Zeqhqixjr5qcvkfn5imdoxomg0o9j0gt" height="82" src="http://cdn.videos.bloomberg.com/d1dnc3NDpS_D1keTLm6Qsnz0RLnPfDDf/ZEQhQIxjr5QCvkFn5iMDoxOmg0O9j0gt" width="145" />
+<h6>Iran 'Feeling Squeeze' From Sanctions, Kaplan Says</h6>
+</a></li>
+<li class='video clearfix'>
+<a href="http://www.businessweek.com/videos/2012-03-19/what-would-you-give-up-to-stay-online" class="clearfix"><img alt="Tqiokv41p-lifgen5imdoxomg0o9j0gt" height="82" src="http://cdn.videos.bloomberg.com/NnaGI2NDrODp3-zTTowXddq-P7NPTQYm/TQIokv41P-liFGen5iMDoxOmg0O9j0gt" width="145" />
+<h6>What Would You Give Up To Stay Online?</h6>
+</a></li>
+<li class='video clearfix'>
+<a href="http://www.businessweek.com/videos/2012-03-19/gps-jammers-threaten-air-traffic-navigation" class="clearfix"><img alt="Izd5cxqeh_lpht-35imdoxomg0o9j0gt" height="82" src="http://cdn.videos.bloomberg.com/oydmI2NDozM9FsTK9AXMpPLt36snpPwL/IZD5CXQeh_LPHT-35iMDoxOmg0O9j0gt" width="145" />
+<h6>GPS Jammers Threaten Air Traffic Navigation</h6>
+</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Chart beat header code starts here-->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<!-- Chart beat header code ends here-->
+<!-- Chart beat footer part starts here -->
+<script type="text/javascript">
+var _sf_async_config={uid:15087,domain:"businessweek.com"} 
+(function(){
+function loadChartbeat() {
+window._sf_endpt=(new Date()).getTime() 
+var e = document.createElement('script') 
+e.setAttribute('language', 'javascript') 
+e.setAttribute('type', 'text/javascript') 
+e.setAttribute('src',
+(("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+"static.chartbeat.com/js/chartbeat.js") 
+document.body.appendChild(e) 
+}
+var oldonload = window.onload 
+window.onload = (typeof window.onload != 'function') ?
+loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+})() 
+</script>
+<!-- Chart beat footer part ends here -->
+<div class="ad">
+<script type="text/javascript">
+// <![CDATA[
+BW_adsys_genCode = BW_adsys('Top') 
+document.write(BW_adsys_genCode) 
+// ]]>
+</script>
+<noscript>
+<p><a rel="external" href="http://ad.doubleclick.net/jump/mgh.bw.magazine page=t0 t0=Top sz=728x90,468x60 ord=9302873315">
+<img src="http://ad.doubleclick.net/ad/mgh.bw.magazine page=t0 t0=Top sz=728x90,468x60 ord=9302873315" border="0" alt="Click Here" />
+</a></p>
+</noscript>
+</div>
+</div>
+</div>
+<div id="wrapper">
+<div id="columnLayout">
+<div id="column1">
+<div id="subchannelTitle">
+<h1>Media Centric Column Archive</h1>
+</div>
+<div class="listing module">
+<p class="date">September 10, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_38/b4147074169708.htm">The Media Landscape: What to Watch While I   m Away</a></h3>						
+<p>This will be my last column before I take several months off to travel and check out life and media in other corners of the globe. During my absence from these pages, ...</p>
+<p class="date">September 3, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_37/b4146074090660.htm">Meredith   s Moment</a></h3>						
+<p>A certain kind of article is written every so often about Meredith (MDP), the Des Moines company that owns 25 magazines and 12 television stations. It goes something ...</p>
+<p class="date">August 27, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_36/b4145071737784.htm">Harry and Louise on Steroids</a></h3>						
+<p>You don   t hear much about individual advertisers that are spending more in these straitened times, much less entire categories of advertisers doing so. But this is ...</p>
+<p class="date">August 6, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_33/b4143064876775.htm">Marketing   s Drift Away from Media</a></h3>						
+<p>This is going to be a column that focuses on a terrible, tooth-hurting phrase, for which I apologize in advance. But there   s no way around it. The phrase is &amp quot below the...</p>
+<p class="date">July 30, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_32/b4142065732002.htm">Taming the Web for Local Advertisers</a></h3>						
+<p>When executives talk about media fragmentation, they often mean national media: myriad cable channels splitting off audiences from declining broadcast networks and ...</p>
+<p class="date">July 23, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_31/b4141064595443.htm">The Big Bounceback? Local TV</a></h3>						
+<p>This may not be the time to start thinking about what an economic recovery will mean for the TV industry, even though, hard as it may be to believe, some kind of ...</p>
+<p class="date">July 16, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_30/b4140067532922.htm">How General Mills    Marketing Pays Off</a></h3>						
+<p>Yes, Virginia, there are companies pumping up ad spending even as the economy remains stuck, stubbornly, in low gear. Judging from the results of one of them, more ...</p>
+<p class="date">July 2, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_28/b41 084408781.htm">The Threat of an Online Privacy Bill</a></h3>						
+<p>Some big and far-reaching issues clutter America   s legislative docket today—a cap-and-trade approach to carbon emissions, a wholesale revamp of health care. But a key ...</p>
+<p class="date">June 25, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_27/b4138063231553.htm">Charging for Online Content Gets Closer</a></h3>						
+<p>Expect the ecosystem of the Web to start feeling a little different once the summer slips away. Publishers, stung by an economic downturn and ongoing disappointment ...</p>
+<p class="date">June 18, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_26/b4137064327152.htm">Is This a Web-Series Model That Works?</a></h3>						
+<p>The thing about Web video, of course, is that anyone can do it. Shoot it, edit it, distribute it on YouTube (GOOG) and other outlets—done. Assuming, of course, that ...</p>
+<p class="date">June 11, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_25/b4136071188223.htm">Time Warner: Is it Time to Dump Time Inc.?</a></h3>						
+<p>By announcing plans—finally—to spin off AOL, Time Warner (TWX) CEO Jeffrey Bewkes has dealt with one longtime problem child. But another remains in the fold, one that ...</p>
+<p class="date">June 4, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_24/b4135072008154.htm">ESPN Bets Sports Fanatics Will Pay for Online</a></h3>						
+<p>ESPN The Magazine, the decade-old print offshoot of Walt Disney (DIS)   s wildly successful cable sports network, is about to begin charging for access to its Web site. ...</p>
+<p class="date">May 21, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_22/b4133076651151.htm">Why Broadcast Networks Can   t Just Turn Cable</a></h3>						
+<p>The business of being a broadcast network is glamorous and all that. But it is expensive. Profit margins are notably, and historically, thin. Success all but hinges on...</p>
+<p class="date">May 14, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_21/b4132065858636.htm">Where Are Advertisers? At the Movies</a></h3>						
+<p>This year has been characterized by advertisers slamming the brakes on spending across virtually all online and offline media. Yet even within this scarred landscape, ...</p>
+<p class="date">May 7, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_20/b4131068613049.htm">How CNN Can Beat Back Fox and MSNBC</a></h3>						
+<p>TO: CNN ManagementFROM: Loudmouth Media ConsultancyRE: Pugilism Bravo for    08, eh? The U.S. elections brought a rare twofer. Intense viewer interest in news--better ...</p>
+<p class="date">April 30, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_19/b41300721753 .htm">Why TV Advertising Isn   t Dead Yet</a></h3>						
+<p>The economy remains in tatters. The big broadcast networks    aggregate TV ratings are dropping, again. (Or, still.) Total U.S. ad spending is expected to be down this ...</p>
+<p class="date">April 23, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_18/b4129075678829.htm">AOL   s New Plan: Content, Content, Content</a></h3>						
+<p>You may be forgiven for rolling your eyes at another story about AOL (TWX) yanking back the curtains to present a shiny new notion. Ex-Google (GOOG) ad head Tim ...</p>
+<p class="date">April 16, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_17/b4128072069266.htm">Local Media: Starving for Ad Dollars</a></h3>						
+<p>This is a different kind of recession—one that started quietly in late 2007, before the very big bangs hit the very big banks. It   s driving a different kind of U.S. ad...</p>
+<p class="date">April 9, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_16/b4127089344552.htm">Twitter Makes a Racket. But Revenues?</a></h3>						
+<p>In Twitter, the masses on the Web have their newest darling child, something that   s all delight and precociousness and pure potential. Or at least the masses of media ...</p>
+<p class="date">April 2, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_15/b4126066336774.htm">Now Comes the Journalist-Consultant</a></h3>						
+<p>Thanks to the Web, companies have direct online access to consumers. Take that fact, stir in the surfeit of unemployed journalists (or fearful employed ones searching ...</p>
+<p class="date">March 26, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_14/b4125096287482.htm">The New Ad Frontier for Filmmakers</a></h3>						
+<p>When the big ad agencies and media companies contract, gaps in the landscape form wherein new blossoms can sprout. One such newcomer is Maximum Entertainment, a ...</p>
+<p class="date">March 12, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_12/b4124099518074.htm">Blog Company Sugar Looks Beyond Ads for Profit</a></h3>						
+<p>You might spend some time with Sugar, the family company that owns and runs 16 blogs aimed at young women, and leave thinking its properties have the collective ...</p>
+<p class="date">February 26, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_10/b4122075164556.htm">Prime-Time TV Isn   t Prime Anymore</a></h3>						
+<p>Add this to the list of media dislocations in general, and television in particular: Maybe prime time isn   t prime anymore. I don   t mean the Internet runs the world, ...</p>
+<p class="date">February 19, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_09/b4121069909748.htm">For Subscribers Only: Locking Up the News Sites</a></h3>						
+<p>The news sentimentalists among us savor the best newspapers—their lovely turns of phrase, their bold reportage—as if they were rare and fragile wines. Which, these ...</p>
+<p class="date">February 10, 2009</p>
+<h3><a href="http://www.businessweek.com/magazine/content/09_08/b4120000485930.htm">TicketMaster-Live Nation: An Obama Layup</a></h3>						
+<p>When you   re in the midst of a successful run for President, every day brings ample gifts: adoring crowds, rock-star receptions, and, above all, the pure buzz of ...</p>
+<div id="pageNav">
+<span class="pagelinks">
+Page: <a class="current">1</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=26">2</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=51">3</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=76">4</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=101">5</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=126">6</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=151">7</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=176">8</a>
+<a href="http://app.businessweek.com/ParametricSearch/Search?searchTerm=&resultsperpage=25&skin=magazine_mediacentric&sortby=pub_date+desc&strap=Media+Centric&channel=Magazine&firstdoc=201">9</a>
+</span>
+</div>
+</div>
+</div>
+<div id="column2">
+<div class="ad">
+<script type="text/javascript">
+// <![CDATA[
+BW_adsys_genCode = BW_adsys('Right2') 
+document.write(BW_adsys_genCode) 
+// ]]>
+</script>
+<noscript>
+<p><a rel="external" href="http://ad.doubleclick.net/jump/mgh.bw.magazine page=t0 t0=Right2 sz=300x250,300x600 ord=9302873315">
+<img src="http://ad.doubleclick.net/ad/mgh.bw.magazine page=t0 t0=Right2 sz=300x250,300x600 ord=9302873315" border="0" alt="Click Here" />
+</a></p>
+</noscript>
+</div>
+<!---google test -->
+<script type="text/javascript">
+<!--
+function google_ad_request_done(google_ads) {
+var s = '' 
+var i 
+if (google_ads.length == 0) {return }
+if (google_ads.length == 1) {
+s += '<div class="module textAd"><h2><a href=\"' + google_info.feedback_url + '\">Ads by Google<\/a><\/h2><ul>' +
+'<li style="font-size:14px line-height:1.4 text-align:center margin:20px 0 20px 0 "><a href=\"' + google_ads[0].url + '\"> ' + google_ads[0].line1 + '<\/a><br \/>' +
+'<span style="text-decoration:none font-weight:normal color:#333 "> ' +
+google_ads[0].line2 + '  ' + google_ads[0].line3 + '<\/span><br \/><a style="text-decoration:none font-weight:normal color:#007cd5 " href=\"' + google_ads[0].url + '\"">' +
+google_ads[0].visible_url + '<\/a><\/li><\/ul><\/div>' 
+}
+if (google_ads.length > 1) {
+s += '<div class="module textAd"><h2><a href=\"' + google_info.feedback_url + '\">Ads by Google<\/a><\/h2><ul style="background-color:#F0F0F0 border:1px solid #E5E5E5 padding:5px ">' 
+for(i = 0  i < google_ads.length  ++i) {
+s += '<li><a href=\"' + google_ads[i].url + '\" style="color:#0000FF "> ' + google_ads[i].line1 + '<\/a><br \/>' +
+'<span style="text-decoration:none font-weight:normal color:#000000 "> ' +
+google_ads[i].line2 + '  ' + google_ads[i].line3 + '<br \/><\/span><a style="color:#008000 text-decoration:none font-weight:normal "  href=\"' + google_ads[i].url + '\">' +
+google_ads[i].visible_url + '<\/a><\/li>' 
+}
+s += '<\/ul><\/div>' 
+}
+document.write(s) 
+return 
+}
+google_ad_client = "pub-6185772592614621" 
+google_ad_channel = "4714727900+0182 1196" 
+google_ad_output = 'js' 
+google_max_num_ads = '4' 
+google_ad_type = "text" 
+google_feedback = 'on' 
+// -->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>	
+<div class="ad">
+<script type="text/javascript">
+// <![CDATA[
+BW_adsys_genCode = BW_adsys('Right3') 
+document.write(BW_adsys_genCode) 
+// ]]>
+</script>
+<noscript>
+<p><a rel="external" href="http://ad.doubleclick.net/jump/mgh.bw.magazine page=t0 t0=Right3 sz=300x250,1x1 ord=9302873315">
+<img src="http://ad.doubleclick.net/ad/mgh.bw.magazine page=t0 t0=Right3 sz=300x250,1x1 ord=9302873315" border="0" alt="Click Here" />
+</a></p>
+</noscript>
+</div>
+<div class="module" id="bwMall">
+<h2>BW Mall - Sponsored Links</h2>
+<script type="text/javascript" src="http://jlinks.industrybrains.com/jsct?sid=046&amp ct=BUSINESSWEEK_HOMEPAGE_AND_ROS&amp tr=ROS&amp num=5&amp layt=1&amp fmt=simp"></script>
+<p><a href="http://www.industrybrains.com/businessweek/" rel="nofollow" class="buy-link">Buy a link now!</a></p>
+</div>
+</div>
+<hr class="clearFloat" />
+</div>
+</div>
+<div id="footerContainer">
+<div class='header_footer_814'>
+<div class='clearfix' id='footer'>
+<div class='social module'>
+<h3>Social</h3>
+<ul>
+<li class='twitter'>
+<a href="http://twitter.com/BW">Follow us on Twitter</a>
+</li>
+<li class='fb'>
+<a href="http://facebook.com/Bloombergbusinessweek/">Join us on Facebook</a>
+</li>
+<li class='linked_in'>
+<a href="http://www.linkedin.com/company/businessweek">Connect with us on LinkedIn</a>
+</li>
+<li class='subscribe last'>
+<a href="http://www.businessweek.com/subscribe/">Subscribe to Bloomberg BusinessWeek</a>
+</li>
+<li class='bloomberg_logo last ir'>
+<a href="http://www.bloomberg.com" target="_blank">Bloomberg</a>
+</li>
+</ul>
+</div>
+<div class='links module clearfix'>
+<h3>Links</h3>
+<ul>
+<li><a href="http://bloomberg.com/company">About</a></li>
+<li><a href="http://bloombergmedia.com">Advertising</a></li>
+<li><a href="http://bloomberg.com/careers">Careers</a></li>
+<li><a href="http://www.businessweek.com/contact">Contact Us</a></li>
+<li><a href="http://www.businessweek.com/adsections/">Custom Publishing</a></li>
+<li><a href="http://www.businessweek.com/custserv/letters.ed.htm">Letters to the Editor</a></li>
+<li><a href="http://www.businessweek.com/manage-subscription">Manage Subscription</a></li>
+</ul>
+<ul class='last'>
+<li><a href="http://www.businessweek.com/search/mobile.htm">Mobile</a></li>
+<li><a href="http://newsletters.businessweek.com/bwn/ns.asp">Newsletters</a></li>
+<li><a href="http://www.businessweek.com/privacy">Privacy Policy</a></li>
+<li><a href="http://reprints.ygsgroup.com/m/bloombergbusinessweek">Reprints</a></li>
+<li><a href="http://www.businessweek.com/sitemap.htm">Sitemap</a></li>
+<li><a href="http://www.businessweek.com/terms">Terms of Use</a></li>
+<li><a href="javascript:void(0)" class="opinion-lab">[+] Rate This Page</a></li>
+</ul>
+</div>
+<div class='current_issue module clearfix'>
+<h3>Current Issue</h3>
+<a class='cover_image_thumbnail' href="https://subscribe.businessweek.com/pubs/BW/BWK/BWK_July_free_iPad.jsp?cds_page_id=102543&amp cds_mag_code=BWK&amp cds_response_key=I1202HI06">
+<img alt="1212cov_110x155" height="155" src="http://images.businessweek.com/cms/2012-03-15/1212cov_110x155.jpg" width="110" />
+</a>
+<h6>
+<a href="https://subscribe.businessweek.com/pubs/BW/BWK/BWK_July_free_iPad.jsp?cds_page_id=102543&amp cds_mag_code=BWK&amp cds_response_key=I1202HI06">China's Corporate Espionage</a>
+</h6>
+<a class='subscribe_button' href="https://subscribe.businessweek.com/pubs/BW/BWK/BWK_July_free_iPad.jsp?cds_page_id=102543&amp cds_mag_code=BWK&amp cds_response_key=I1202HI06">Subscribe</a>
+</div>
+<div class='copyright'>
+<span>Copyright 2012 Bloomberg L.P. All Rights Reserved. Made in NYC</span>
+</div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function(){
+BBBW_comScore.params = {
+name: "bw.magazine.Media Centric",
+bb_c_type: "tc Media Centric Column Archive subindex",
+bb_cg_1: "magazine",
+bb_cg_2: "Media Centric",
+bb_cg_3: "subindex",
+bb_author:"",
+bb_attributor:"",
+bb_pub_d:"",
+bb_groupid:""
+} 
+BBBW_comScore.track() 
+}) 
+//]]>
+</script>
+<script type="text/javascript" src="http://www.businessweek.com/common_scripts/Tacoda_footer.js"></script>
+<script src="http://content.dl-rms.com/rms/1583/nodetag.js"></script>
+<script type="text/javascript">(function(){var d=document var e=d.createElement("script") e.type="text/javascript" e.async=true e.src="https://d1ros97qkrwjf5.cloudfront.net/30/eum/rum.js" var s=d.getElementsByTagName("script")[0] s.parentNode.insertBefore(e,s) })() NREUMQ.push(["nrf2","beacon-1.newrelic.com","b220098848",222269,"Z1JXNURSXkQCVE0LW14YfzJmHGdyIRpwLHIfREADX11UUhtoCVIBVkNQDEZfUUMGRBYPVVdWTwhYVh5dEEc=",0,796,new Date().getTime()])</script></body>
 </html>
