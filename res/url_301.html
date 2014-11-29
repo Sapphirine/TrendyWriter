@@ -1,959 +1,877 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head><script>
-   try {var _sf_startpt=(new Date()).getTime() } catch(e){}
-</script>
-<title>When Scientists Give Up : Shots - Health News : NPR</title><meta charset="utf-8" /><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwcOV1NACwcHVlFbAw=="} window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}} t[n][0].call(o.exports,function(e){var o=t[n][1][e] return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require for(var o=0 o<n.length o++)r(n[o]) return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={}) for(var c=s(e),u=c.length,f=i(a,o,r),d=0 u>d d++)c[d].apply(f,n) return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={} return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos") e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0 t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos") if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document s&&!s.hasOwnProperty("addEventListener") )s=Object.getPrototypeOf(s) s&&n(s) for(var c=XMLHttpRequest.prototype c&&!c.hasOwnProperty("addEventListener") )c=Object.getPrototypeOf(c) c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype) o.on("addEventListener-start",function(t){if(t[1]){var e=t[1] "function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n) e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0] "string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r) e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"] e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t) try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length if("object"!=typeof t)return void 0 if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size if("undefined"!=typeof FormData&&t instanceof FormData)return void 0 try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics if(!this.ended){this.ended=!0 for(var i=0 c>i i++)t.removeEventListener(s[i],this.listener,!1) if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u) if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data") d&&(n.cat=d.split(", ").pop())}}else n.status=0 r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0 var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1) t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this if(r&&o){var u=e(o) u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}} for(var f=0 c>f f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={} e.href=t,r.port=e.port var o=e.href.split("://") return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e] var o=n() if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={} e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos") e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]) var e=c.createElement("script") e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}} c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0) for(var r=-1,o=n-e||0,i=Array(0>o?0:o) ++r<o )i[r]=t[e+r] return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s) try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="") var a,s,c,u="-"===o.charAt(0) for(c=0 c<r.length c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t) return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]) return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]) </script><![endif]--><meta name="robots" content="noarchive,index,follow" /><meta name="Rating" content="General" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" /><!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /><![endif]--><meta name="date" content="2014-09-09" /><link rel="canonical" href="http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up" /><meta name="description" content="They were talented, idealistic risk-takers on the road to what they thought would be important medical discoveries. But when the funding for risk-takers dried up, these two academics called it quits." /><meta http-equiv="refresh" content="300  url=http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up?refresh=true" /><link rel="alternate" type="application/rss+xml" title="Science" href="/rss/rss.php?id=1007" /><link rel="alternate" type="application/rss+xml" title="Shots - Health News" href="/rss/rss.php?id=103537970" /><meta property="og:title" content="When Scientists Give Up" /><meta property="og:url" content="http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up" /><meta property="og:type" content="article" /><meta property="og:description" content="They were talented, idealistic risk-takers on the road to what they thought would be important medical discoveries. But when the funding for risk-takers dried up, these two academics called it quits." /><meta property="og:image" content="http://media.npr.org/assets/img/2014/09/03/randen-patterson-1_slide-ad57b5b88f7ff9de1f1681a3ca1443a715fa61ff.jpg" /><meta property="og:image" content="http://media.npr.org/assets/img/2014/09/04/img_149-edit_slide-ff56b61c47a6cf10bd67edd3b145ff334bdb59ba.jpg" /><meta property="og:image" content="http://media.npr.org/assets/img/2014/09/04/randen-patterson-2_slide-e0eeb38900ff06d6efec9f0772bfb84c047d51a7.jpg" /><meta property="og:site_name" content="NPR.org" /><meta property="fb:app_id" content="138837436154588" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@nprnews" /><meta name="twitter:domain" content="npr.org" /><meta name="twitter:image:src" content="http://media.npr.org/assets/img/2014/09/03/randen-patterson-1_wide-96742910205e4826cc81d8f510bc2246e81e6427-s700-c85.jpg" /><link type="text/css" rel="stylesheet" media="screen, print" href="http://s.npr.org/templates/css/generated/fingerprint/newsStory-8b0c2cfc0f9797c127bf6727803aa8929775b120.css" /><link type="text/css" rel="stylesheet" media="screen" href="http://www.npr.org/branding/blogs/health/branding.css" /><script>
-   window.NPR={} window.NPR.serverVars={"storyId":"345289127","serverType":"prod","refresh":300,"facebookAppId":"138837436154588","closeurl":"http:\/\/www.npr.org\/templates\/socialmedia\/close.html","sessionScope":2,"pageScope":3,"breadcrumbs":["News","Health","Shots - Health News"],"primaryTopic":1007,"orgId":"1","topics":[1007,2,1135,1129,1128,1091,1090,1024,1003,1002,1001],"programId":2,"pageTypeId":1,"internalCampaign":null,"campaignSource":null,"campaignName":null,"aggregations":[1007,2,1135,1129,1128,1091,1090,1024,1003,1002,1001,347129694,347096940,165644871,143754923,133188447,129709859,126950053,125099838,103537970],"aggregationsText":["Science","All Things Considered","Medical Treatments","Humans","Health","Around the Nation","Story of the Day","Research News","U.S.","Home Page Top Stories","News","Science Squeeze   ","All Things Considered for September 9, 2014","Shots Top Post","biomedical research","Health Inc.","NIH","Work","research","Shots - Health News"],"aggExtras":["09Sep2014","Richard+Harris"],"byline":["Richard Harris"],"chartbeatAccount":"18888"} 
-</script>
-<script type="text/javascript" src="http://s.npr.org/templates/javascript/generated/fingerprint/fonts-f4f90a1810211e6448888d0596d0fcc3419bc5e6.js">
-   </script>
-<script type="text/javascript" src="http://s.npr.org/templates/javascript/generated/fingerprint/headerAllPages-089e 8662b949872c4f65a8285554a329ee6c75.js">
-   </script>
+<!DOCTYPE html>
+
+
+	<html lang="en">
+
+<!--
+	generated in 0.820 seconds
+	52368 bytes batcached for 300 seconds
+-->
+<head>
+<link rel="icon" href="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/favicon.ico?m=1 5092954g" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="fb:app_id" content="132947 0197809" />
+<title>Politics | Channels |  From City Hall to Albany, every politico   s must read.
+ | New York Observer</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://observer.com/xmlrpc.php">
+<link href="https://plus.google.com/112242738293247903578/" rel="publisher" />
+
+
+
+<meta name="description" content="From City Hall to Albany, every politico   s must read." /><meta name="keywords" content="politics" /><meta name="msvalidate.01" content="F8C89E25D5233224541B1BB9B10BF573" />
+
+<meta name="p:domain_verify" content="146b7f62998343012fae89709f3a8167" />
+
+<meta property="twitter:account_id" content="15738599" />
+		<script src='//r-login.wordpress.com/remote-login.php?action=js&amp host=observer.com&amp id=35584880&amp t=1417277346&amp back=http%3A%2F%2Fobserver.com%2Fpolitics%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test  path=/" 
+				if ( document.cookie.match( /( |^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin() 
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="alternate" type="application/rss+xml" title="New York Observer &raquo  Feed" href="http://observer.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="New York Observer &raquo  Comments Feed" href="http://observer.com/comments/feed/" />
 <script type="text/javascript">
-   document.domain="npr.org" 
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload if(typeof window.onload!='function'){window.onload=func }else{window.onload=function(){oldonload() func() }}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s0.wp.com/_static/??-eJx9jlsOgkAMRTfkWFHgz7gWHKsU5tFMC2R272CiidGQ/tw25zQXFjY2BsWg4CfDbnpQEBBPDjOnOKDV721vRXbwX3M0osCAyp0dzWvbwincKZDmT9iCbUxY7p47XQmPN+rQoS/Ylua5fVtr7Eux307alz8CMzEEXHJMY7wKphmTOR6qGkSzw9W6+HNVV01bpjkNT1DAdkc=' type='text/css' media='all' />
+<link rel='stylesheet' id='screen-css-0' href='http://s0.wp.com/wp-content/themes/vip/plugins/taxonomy-images/style.css?m=1340680964g' type='text/css' media='screen' />
+<link rel='stylesheet' id='observer-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A300%2C400%2C700%7CRoboto%3A100%2C400italic%2C400%2C700 038 ver=4.1-beta1-30359' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css?ver=4.1-beta1-30359' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-4' href='http://s1.wp.com/wp-content/themes/vip/newyorkobserver-2014/css/flexslider.css?m=1 5092954g' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-dialog-style-css'  href='http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css?ver=4.1-beta1-30359' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-6' href='http://s2.wp.com/_static/??-eJx9j90KwjAMhV/ILkymuAvxWdoa24y2GU3rXt/p/EXYTTgnnC+cwDQqy6lgKlA8RhS40ghjqI6SgGgKxecKVgQmOjssjVQjNpPBZl5u4OtArOoFYuSBlrnECBIXmpPyFmu8Q1aBrS7E6ceoS9CU19CMJrCbpXu0/tg/6Pmw78AFNjrcA6d4bLt2t+/b7aEfblLbar8=' type='text/css' media='all' />
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyNkd1ugzAMhV9oIYBaaTfTniWAC04TJ7MTUPv0TVWmrSoTu7Jkfz7HP3qJqg+UgJK2on3o0IHKAmzGklNIp1BZedOFQ+pdHkDuoP3KwJc17ALK48gmQeWRvuFfrjFI8iBSLDeqz1ZIM8Kyi1lI0fRnxSB4fVFNExQ/PWPUBMsl8Dl0ZeUZWLV1c3hcYgAmvPLWzP/oX+eYjPcle8rO7QhFl0ck0WLQpYnzXWTBYYRUSe6kZ+xg69ASf2T//tBKffqP5lDXx/emrVt7A0LZve0='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://nyoobserver.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Politics" />
+<meta property="og:site_name" content="New York Observer" />
+<meta property="og:url" content="http://observer.com/politics/" />
+<meta property="og:description" content="From City Hall to Albany, every politico   s must read.
+" />
+<meta property="og:image" content="http://1.gravatar.com/blavatar/dac0f3722a48a53be75eb06c0c4f5119?s=200" />
+<meta name="twitter:site" content="@newyorkobserver" />
+<link rel='openid.server' href='http://nyoobserver.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://nyoobserver.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://observer.com/osd.xml" title="New York Observer" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important 
+				padding: 0 !important 
+				margin: 0 !important 
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px 
+				margin: 0 
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important 
+				background-color: transparent !important 
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px 
+				margin: 0px 
+			}
+
+			td.recentcommentstextend {
+				border: none !important 
+				padding: 0px 0px 2px 10px 
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px 
+			}
+
+			td.recentcommentstexttop {
+				border: none 
+				padding: 0px 0px 0px 10px 
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px 
+			}
+		</style>
+		<script type="text/javascript">var ajaxurl = "http://observer.com/wp-admin/admin-ajax.php"</script><meta name="application-name" content="New York Observer" /><meta name="msapplication-window" content="width=device-width height=device-height" /><meta name="msapplication-tooltip" content="News, Politics, Culture, Art, Style, Real Estate, Movie Reviews, TV recaps" /><meta name="msapplication-task" content="name=Subscribe action-uri=http://observer.com/feed/ icon-uri=http://0.gravatar.com/blavatar/adec0a3eecd25dd790fe63abaac724b4?s=16" /><style type="text/css" id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s0.wp.com/?custom-css=1 038 csblog=2pjfG 038 cscache=6 038 csrev=75" />
+		
+<!-- Begin Chartbeat tag -->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<!-- End Chartbeat tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [] 
+  _comscore.push({ c1: "2", c2: "13507040" }) 
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]  s.async = true 
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js" 
+    el.parentNode.insertBefore(s, el) 
+  })() 
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=13507040&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!--  Begin taboola tag -->
+<script>
+	window._taboola = window._taboola || [] 
+	_taboola.push({article: 'auto'}) 
+	!function (e, f, u) {
+		e.async = 1 
+		e.src = u 
+		f.parentNode.insertBefore(e, f) 
+	}(document.createElement('script'), document.getElementsByTagName('script')[0], '//cdn.taboola.com/libtrc/observermedia-nyobserver/loader.js') 
+</script>
+<!--  End taboola tag -->
+
+<script type='text/javascript'>
+	var gptadslots=[] 
+	var googletag = googletag || {} 
+	googletag.cmd = googletag.cmd || [] 
+	(function(){ var gads = document.createElement('script') 
+		gads.async = true  gads.type = 'text/javascript' 
+		var useSSL = 'https:' == document.location.protocol 
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js' 
+		var node = document.getElementsByTagName('script')[0] 
+		node.parentNode.insertBefore(gads, node) 
+	})() 
 </script>
 
-<!-- START UNDERWRITING -->
 <script type="text/javascript">
-   
-googletag.cmd.push(function(){try{if(DFP.shouldRenderForDevice('desktop')){googletag.defineSlot("/6735/n6735.NPR/News_Science",[[300,250],[300,600]],'ad-desktop').addService(googletag.pubads()) }
-if(DFP.shouldRenderForDevice('88')){googletag.defineSlot("/6735/n6735.NPR/News_Science",[88,31],'ad-88').addService(googletag.pubads()).setCollapseEmptyDiv(true,true) }
-googletag.pubads().setTargeting('program','All_Things_Considered') googletag.pubads().setTargeting('agg','103537970') googletag.pubads().setTargeting('theme','103537970') googletag.pubads().setTargeting('storyId','345289127') googletag.pubads().setTargeting('blog','103537970') var deviceString='' var ua=navigator.userAgent.toLowerCase() if(ua.indexOf("android")>-1){googletag.pubads().setTargeting('device','android') }
-else if(ua.match(/(iPad|iPhone|iPod)/i)){googletag.pubads().setTargeting('device','ios') }
-if(typeof DFP.queryParameters.sc==='string'&&DFP.queryParameters.sc.length>0){scValue=DFP.queryParameters.sc }
-else if(typeof document.referrer==='string'&&document.referrer.search('facebook.com')>-1){scValue='fb' }
-else if(typeof DFP.queryParameters.ft==='string'){scValue=DFP.queryParameters.ft }
-googletag.pubads().setTargeting('sc',scValue) var utm_source=typeof DFP.queryParameters.utm_source==='string'&&DFP.queryParameters.utm_source.length>0?DFP.queryParameters.utm_source:'' var utm_medium=typeof DFP.queryParameters.utm_medium==='string'&&DFP.queryParameters.utm_medium.length>0?DFP.queryParameters.utm_medium:'' googletag.pubads().setTargeting('utm_source',utm_source) googletag.pubads().setTargeting('utm_medium',utm_medium) var orient='' if(NPR.Devices.isOnPhone()||NPR.Devices.isOnTablet()){if(window.orientation==0||window.orientation==180){orient='portrait' }else if(window.orientation==90||window.orientation==-90){orient='landscape' }}
-googletag.pubads().setTargeting('orient',orient) googletag.pubads().enableSingleRequest() googletag.pubads().collapseEmptyDivs() googletag.enableServices() }catch(e){NPR.messaging.exception(e,'Define Google Publisher Tags',NPR.messaging.constants.SPONSORSHIP_ERROR) }}) 
+	googletag.cmd.push(function() {
+
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/1008049/observer_leaderboard_top', [[728,90],[970,90],[970,66]],'div-gpt-ad-771860824845458250-1').addService(googletag.pubads()) 
+
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/1008049/observer_rightrail_pos1', [[300,250],[300,600],[300,1050]],'div-gpt-ad-771860824845458250-3').addService(googletag.pubads()) 
+
+		//Adslot 4 declaration: first ad in the river. displays only on the homepage and channel pages.
+        		    gptadslots[4]= googletag.defineSlot('/1008049/observer_river_pos1', [[300,250]],'div-gpt-ad-771860824845458250-4').addService(googletag.pubads()) 
+        
+	    //Adslot 5 declaration  -- second ad in the river. displays only on the homepage
+        
+		//Adslot 6 declaration
+		gptadslots[6]= googletag.defineSlot('/1008049/observer_leaderboard_mobile', [[320,50]],'div-gpt-ad-771860824845458250-6').addService(googletag.pubads()) 
+
+		//Adslot 7 declaration
+		gptadslots[7]= googletag.defineSlot('/1008049/observer_inpage_pushdown', [[970,66]],'div-gpt-ad-771860824845458250-7').addService(googletag.pubads()) 
+
+        gptadslots[8]= googletag.defineSlot('/1008049/observer_interstitial', [[1,1]],'div-gpt-ad-9066102 927837093-1')
+                                                .setTargeting('subchannel',['Politics'])
+                                        .addService(googletag.pubads()) 
+
+		//Adslot oop declaration
+		gptadslots[0] = googletag.defineOutOfPageSlot('/1008049/observer_interstitial', 'div-gpt-ad-9066102 927837093-oop').addService(googletag.pubads()) 
+
+        //Webskin slot declaration
+        googletag.defineSlot('/1008049/observer_skin_1600x1050', [1600, 1050], 'div-gpt-ad-1401993356336-0').addService(googletag.pubads()) 
+
+
+        googletag.pubads().enableSingleRequest() 
+                                        googletag.pubads().setTargeting('subchannel',['Politics']) 
+                            
+        
+
+		
+		googletag.pubads().enableAsyncRendering() 
+		googletag.enableServices() 
+		googletag.pubads().setTargeting( "page_type", ["channel_archive"]) 
+googletag.pubads().setTargeting( "channels", ["politics"]) 
+    }) 
 </script>
 
-<!-- END UNDERWRITING -->
-</head><body id="news" class="news tmplBlogNewsStory blog catId133188447 id345289127" data-metrics-scroll ><a href="#wrapper" id="skiplink">Skip to Main Content</a><script type="text/javascript">var pageTrackingCPTV=function(){try{AddNamespace("NPR.metrics") NPR.metrics.pageImpression() }catch(e){NPR.messaging.exception(e,'commonPageTrackView','document.ready',NPR.messaging.constants.METRICS_ERROR) }} if($('docreadybind').length){$('docreadybind').bind('click',pageTrackingCPTV) }else{$(document).ready(pageTrackingCPTV) }</script><header id="globalheader" class="clearfix"><a class="sidebarButton" href="#sidebar" data-action="Toggle OffCanvas" data-metrics='{"action":"Toggle OffCanvas","category":"Global Navigation"}'>
-    <img src="http://media.npr.org/chrome/subnav_toggle.png" alt="subnav toggle" />
-</a>
+<!-- End: GPT -->
 
-<a href="/" class="nprhome" data-action="Click Logo" data-metrics='{"action":"Click Header Logo", "category":"Global Navigation"}'>
-    <img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR" />
-</a>
+<script type="text/javascript">
+    var _gaq = _gaq || [] 
+    _gaq.push( ['_setAccount', 'UA-1212249-1'] ) 
+                    _gaq.push( ['_setCustomVar', 5, 'Channel Page', 'Politics', 3] ) 
+        
+    _gaq.push(['_setDomainName', 'observer.com']) 
+    _gaq.push(['_setAllowLinker', true]) 
+    _gaq.push( ['_trackPageview'] ) 
 
-<div class="inner" data-metrics-category="Global Navigation">
-    <div id="searchWrapper">
-        <form action="/search/index.php" method="get" name="searchForm" id="searchForm" class="search">
-            <label for="searchinput">Search</label>
-            <input type="search" name="searchinput" id="searchinput" class="textbox searchbox" />
-        </form>
-        <a href="#" class="search-toggle">Toggle search</a>
+    ( function() {
+        var ga = document.createElement( 'script' )  ga.type = 'text/javascript'  ga.async = true 
+        //ga.src = ( 'https:' == document.location.protocol ? 'https://ssl' : 'http://www' ) + '.google-analytics.com/ga.js' 
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js' 
+        var s = document.getElementsByTagName( 'script' )[0]  s.parentNode.insertBefore( ga, s ) 
+    } )() 
+</script>
+
+
+<script type="text/javascript" src="//use.typekit.net/umz0ukb.js"></script>
+<script type="text/javascript">try{Typekit.load() }catch(e){}</script>
+
+</head>
+
+<body class="archive tax-channel term-politics term- 8 mp6 typekit-enabled term-news group-blog highlander-enabled highlander-light infinite-scroll">
+
+<!-- observer_skin_1600x1050 -->
+<div id="skin_ad" class="dfp_ad">
+    <div id='div-gpt-ad-1401993356336-0' style='width:1600px  height:1050px '>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1401993356336-0')  }) 
+        </script>
     </div>
-    <nav class="nav-two" id="loginPElm">
-        <ul>
-            <li class="stations"><a href="/templates/stations/stations/" data-metrics='{"action":"Click Business Link"}' data-reveal-id="myModal">Stations</a></li>
-            <li class="donate"><a href="/stations/donate/index.php" data-metrics='{"action":"Click Business Link"}'>Donate</a></li>
-            <li class="nprshop"><a href="http://shop.npr.org" data-metrics='{"action":"Click Business Link"}'>Shop</a></li>
-            <li class="login-reg loggedOut"><a href="/templates/reg/login.php" data-metrics='{"action":"Click Profile Link","label":"Login / Register"}'>Sign In/Register</a></li>
-            <li class="login-reg loggedIn userLogin has-subnav"><b class="caret"><b class="user"></b></b>
-                <div class="subnav">
-                    <ul data-metrics-action="Click Profile Link" data-metrics-all>
-                        <li><span id="userLogin"></span></li>
-                        <li><a href="/templates/reg/logout.php" class="logout" data-metrics='{"label":"Logout"}'>Logout</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </nav>
-    <nav class="nav-one">
-        <ul>
-            <li class="news"><a href="/sections/news/" data-metrics='{"action":"Click News"}'>News</a></li>
-            <li class="arts-and-life"><a href="/sections/arts/" data-metrics='{"action":"Click Arts &amp  Life"}'>Arts &amp  Life</a></li>
-            <li class="music"><a href="/music/" data-metrics='{"action":"Click Music"}'>Music</a></li>
-            <li class="topics">Topics
-                <div class="subnav" data-metrics-action="Click Topics" data-metrics-all>
-                    <ul class="news">
-                        <li class="hdr"><a href="/sections/news/">News</a></li>
-                        <li><a href="/sections/us/">U.S.</a></li>
-                        <li><a href="/sections/world/">World</a></li>
-                        <li><a href="/sections/politics/">Politics</a></li>
-                        <li><a href="/sections/business/">Business</a></li>
-                        <li><a href="/sections/technology/">Technology</a></li>
-                        <li><a href="/sections/science/">Science</a></li>
-                        <li><a href="/sections/health/">Health</a></li>
-                        <li><a href="/blogs/codeswitch/">Race &amp  Culture</a></li>
-                        <li><a href="/blogs/ed/">Education</a></li>
-                    </ul>
-                    <ul class="arts-life">
-                        <li class="hdr"><a href="/sections/arts/">Arts &amp  Life</a></li>
-                        <li><a href="/books/">Books</a></li>
-                        <li><a href="/sections/movies/">Movies</a></li>
-                        <li><a href="/sections/pop-culture/">Pop Culture</a></li>
-                        <li><a href="/sections/food/">Food</a></li>
-                        <li><a href="/sections/art-design/">Art &amp  Design</a></li>
-                        <li><a href="/sections/performing-arts/">Performing Arts</a></li>
-                        <li><a href="/blogs/pictureshow">Photography</a></li>
-                    </ul>
-                    <ul class="music">
-                        <li class="hdr"><a href="/music/">Music</a></li>
-                        <li><a href="/series/98679384/first-listen/">First Listen</a></li>
-                        <li><a href="/series/122356178/songs-we-love">Songs We Love</a></li>
-                        <li><a href="/series/100920965/music-articles/">Music Articles</a></li>
-                        <li><a href="/series/tiny-desk-concerts/">Tiny Desk Concerts</a></li>
-                        <li><a href="/sections/music-videos/">Videos</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="programs">Programs
-                <div class="subnav" data-metrics-action="Click Programs" data-metrics-all>
-                    <ul>
-                        <li class="hdr">News and Conversations</li>
-                        <li><a href="/programs/morning-edition/">Morning Edition</a></li>
-                        <li><a href="/programs/all-things-considered/">All Things Considered</a></li>
-                        <li><a href="/programs/fresh-air/">Fresh Air</a></li>
-                        <li><a href="http://hereandnow.wbur.org/" target="_blank">Here &amp  Now</a></li>
-                        <li><a href="http://thedianerehmshow.org" target="_blank">The Diane Rehm Show</a></li>
-                        <li><a href="/programs/latino-usa/">Latino USA</a></li>
-                        <li><a href="http://www.onthemedia.org" target="_blank">On The Media</a></li>
-                        <li><a href="http://www.onpointradio.org/" target="_blank">On Point</a></li>
-                        <li><a href="/programs/weekend-edition-saturday/">Weekend Edition Saturday</a></li>
-                        <li><a href="/programs/weekend-edition-sunday/">Weekend Edition Sunday</a></li>
-                    </ul>
-                    <ul>
-                        <li class="hdr">Storytelling &amp  Humor</li>
-                        <li><a href="/programs/ask-me-another/">Ask Me Another</a></li>
-                        <li><a href="http://www.cartalk.com" target="_blank">The Best Of Car Talk</a></li>
-                        <li><a href="http://www.maximumfun.org/shows/bullseye" target="_blank">Bullseye</a></li>
-                        <li><a href="http://www.radiolab.org" target="_blank">Radiolab</a></li>
-                        <li><a href="/programs/snap-judgment/" target="_blank">Snap Judgment</a></li>
-                        <li><a href="http://storycorps.org" class="storycorps" target="_blank">StoryCorps</a></li>
-                        <li><a href="/programs/ted-radio-hour/">TED Radio Hour</a></li>
-                        <li><a href="/programs/wait-wait-dont-tell-me/">Wait Wait...Don't Tell Me!</a></li>
-                    </ul>
-                    <ul>
-                        <li class="hdr">Music</li>
-                        <li><a href="/programs/all-songs-considered/">All Songs Considered</a></li>
-                        <li><a href="/series/alt-latino/">Alt.Latino</a></li>
-                        <li><a href="/series/98679384/first-listen/">First Listen</a></li>
-                        <li><a href="http://www.fromthetop.org" target="_blank">From The Top</a></li>
-                        <li><a href="/series/3471 849/jazz-night-in-america">Jazz Night In America</a></li>
-                        <li><a href="/blogs/metropolis/">Metropolis</a></li>
-                        <li><a href="/blogs/microphonecheck/">Microphone Check</a></li>
-                        <li><a href="/series/mountain-stage/">Mountain Stage</a></li>
-                        <li><a href="/programs/piano-jazz/">Piano Jazz</a></li>
-                        <li><a href="/series/150560513/song-travels/">Song Travels</a></li>
-                        <li><a href="/series/103063413/the-thistle-and-shamrock/">The Thistle &amp  Shamrock</a></li>
-                        <li><a href="/programs/world-cafe/">World Cafe</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="listen"><a href="/listen/" data-metrics='{"action":"Click Listen"}'>Listen</a></li>
-        </ul>
-    </nav>
-</div>
-</header><div id="wrapper">
-      <div id="sectionWrap" class="clearfix">
-            <section role="main"><header class="contentheader" data-metrics-category="Shots - Health News"><div class="mobileheader">
-    <a class="sidebarButton" href="#sidebar"  data-metrics='{"action":"Toggle OffCanvas","category":"Global Navigation"}'>
-        <img src="http://media.npr.org/chrome/subnav_toggle.png" alt="NPR logo" />
-    </a>
-    
-    <a href="/" class="nprHome" data-metrics='{"action":"Click Logo","category":"Global Navigation"}'>
-        <img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR">        
-    </a>
-</div><div class="branding">
-      <a href="http://www.npr.org/blogs/health/"  data-metrics='{"action":"Click Header Logo","category":"Shots - Health News"}' ><img src="http://media.npr.org/branding/blogs/health/branding_icon-d1bf0f307a4bae5366 f3790f308797103e8d05.png" class="icon" alt="Shots - Health News" /><img src="http://media.npr.org/branding/blogs/health/branding_main-c464b14085b5098ac853fd98e9e84c493d344e3e.png" class="main" alt="Shots - Health News" /><span class="tag">Health News From NPR</span>
-</a>
 </div>
 
-<!-- END CLASS="BRANDING" -->
-</header><div class="subnav-tools-wrap">
-      <div id="subNavigation" class="agglocation linkLocation">
-            <div id="res341873289" class="bucketwrap statichtml">
-                  <div class="subtopics">
-  <ul class="animated fadeInRight">
-    <li><a href="/blogs/health/126567525/your-health">Your Health</a></li>
-    <li><a href="/blogs/health/133188451/treatments-tests">Treatments &amp  Tests</a></li>
-    <li><a href="/blogs/health/133188447/health-inc">Health Inc.</a></li>
-    <li><a href="/blogs/health/133188445/policy-ish">Policy-ish</a></li>
-    <li><a href="/blogs/health/133188449/public-health">Public Health</a></li>
-  </ul>
-</div>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5BPNP6"
+height="0" width="0" style="display:none visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[] w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'}) var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'' j.async=true j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl f.parentNode.insertBefore(j,f) 
+})(window,document,'script','dataLayer','GTM-5BPNP6') </script>
+<!-- End Google Tag Manager -->
 
-<div class="roller-overlay"></div>
 
-<ul class="subscribe">
-  <li class="twitter"><a href="http://twitter.com/nprhealth" data-metrics='{"action":"Click Twitter"}'>Twitter</a></li>
+
+
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<div class="site-title">
+			<a href="http://observer.com/" rel="home"></a>
+			</div>
+							<span class="channel-logo">Politics</span>
+			
+			<nav id="trending-navigation" class="menu trending-navigation" role="navigation">
+				<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+				<div class="menu-trending-menu-container"><ul id="menu-trending-menu" class="menu"><li class="trending-menu-label">Featured: </li><li id="menu-item-424514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-424514"><a href="http://observer.com/tag/pr-power-list-2014/">The PR Power List 2014</a></li>
+</ul></div>			</nav><!-- #site-navigation -->
+		</div>
+				<h1 class="menu-toggle"><i class="fa fa-bars"></i><span class="screen-reader-text">Menu</span></h1>
+			<h1 class="social-toggle">Subscribe</h1>
+
+		<div class="top-menu">
+			<nav id="site-navigation" class="menu main-navigation" role="navigation">
+				<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+				<div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="menu"><li id="menu-item-342371" class="news menu-item menu-item-type-taxonomy menu-item-object-channel current-channel-ancestor current-channel-parent menu-item-has-children menu-item-342371"><a href="http://observer.com/news/">News</a>
+<ul class="sub-menu">
+	<li id="menu-item-367618" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367618"><a href="http://observer.com/media/">+ Media</a></li>
+	<li id="menu-item-367619" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367619"><a href="http://observer.com/new-york/">+ New York</a></li>
+	<li id="menu-item-367617" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367617"><a href="http://observer.com/eight-day-week/">+ Eight-Day Week</a></li>
 </ul>
-      </div>
-      
-<!-- END ID="RES341873289" CLASS="BUCKETWRAP STATICHTML" -->
-   </div>
-   
-<!-- END ID="SUBNAVIGATION" CLASS="AGGLOCATION LINKLOCATION" -->
-</div>
-<article class="story story-blogpost"><a name="mainContent"></a><p class="category"><a href="http://www.npr.org/blogs/health/133188447/health-inc">Health Inc.</a></p> <!--googleon: index--><div class="storytitle">
-      <h1>When Scientists Give Up</h1>
-   <input type="hidden" id="title345289127" value="When Scientists Give Up"></input>
-   <input type="hidden" id="modelShortUrl345289127" value="http://n.pr/1qxfx7o"></input>
-   <input type="hidden" id="modelFullUrl345289127" value="http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up"></input>
-</div>
-
-<!-- END CLASS="STORYTITLE" -->
-<div id="story-meta">
-      <div class="dateblock">
-            <time datetime="2014-09-09"><span class="date">September 09, 2014</span><span class="time"> 4:27 PM ET</span></time>
-   </div>
-   <div id="storybyline" class="  linkLocation">
-            <div class="bucketwrap byline" id="res345341299" previewTitle="bylines">
-                  <div class="blockBylines">
-                        <div class="blockByline linked hasImage">
-      <div class="bioImageWrap">
-            <a class="" rel="author" href="http://www.npr.org/people/2100631/richard-harris"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' ><img src="http://media.npr.org/assets/img/2012/01/03/richardharris_19_sq-547efacf558c8b1a1f14db525c7c501f990beeed-s100-c85.jpg" class="bylineBioPromo"  title="Richard Harris 2010" alt="Richard Harris 2010" /></a>
-   </div>
-   
-<!-- END CLASS="BIOIMAGEWRAP" -->
-   <div class="rightContainer">
-            <a class="nameWrap" rel="author" href="http://www.npr.org/people/2100631/richard-harris"  data-metrics='{"action":"Click Byline","category":"Story Metadata"}' ><div class="nameOuter">
-      <div class="nameInner">
-      Richard Harris
-   </div>
-</div>
-</a>      <div id="socialHandleLoc" class=" linkLocation">
-                  <a class="bylineSocialHandle bylineSocialHandle-5" href="http://www.twitter.com/rrichardh"  data-metrics='{"action":"Click Social Handle","category":"Story Metadata"}' >Twitter</a>         <span class="spacer"></span>
-      </div>
-      
-<!-- END ID="SOCIALHANDLELOC" CLASS=" LINKLOCATION" -->
-   </div>
-   
-<!-- END CLASS="RIGHTCONTAINER" -->
-</div>
-         </div>
-      </div>
-      
-<!-- END CLASS="BUCKETWRAP BYLINE" ID="RES345341299" PREVIEWTITLE="BYLINES" -->
-   </div>
-   
-<!-- END ID="STORYBYLINE" CLASS="  LINKLOCATION" -->
-</div>
-
-<!-- END ID="STORY-META" -->
-<div id="primaryaudio" class="storylocation linkLocation">
-      <div id="res347151197" class="bucketwrap primary resaudio  clearfix medium">
-            <div class="player-core">
-                  <div class="listenicon">
-                        <a class="listen" href="javascript:NPR.Player.openPlayer(345289127, 347151197, null, NPR.Player.Action.PLAY_NOW, NPR.Player.Type.STORY, '0')" data-metrics='{"category":"Secondary Audio","action":"Play Audio","label":"20140909_atc_when_scientists_give_up.mp3"}' ></a>
-         </div>
-         
-<!-- END CLASS="LISTENICON" -->
-         <div id="avcontent347151197" class="avcontent listen shorttitle">
-                        <span id="mediaTimeTotal347151197" class="media-time-total"><span id="mediaTimeCurrent347151197" class="media-time-current"></span></span>            <h3><a href="javascript:NPR.Player.openPlayer(345289127, 347151197, null, NPR.Player.Action.PLAY_NOW, NPR.Player.Type.STORY, '0')" data-metrics='{"category":"Secondary Audio","action":"Play Audio","label":"20140909_atc_when_scientists_give_up.mp3"}' >Listen to the Story</a></h3>
-            <div class="inner">
-                              <p class="byline"><a class="program" href="http://www.npr.org/programs/all-things-considered/">All Things Considered</a></p>               <div class="duration">
-                                    <span id="durationCurrent347151197" class="current"></span>                  <span class="total">7 min 41 sec</span>
-               </div>
-            </div>
-            
-<!-- END CLASS="INNER" -->
-         </div>
-         
-<!-- END ID="AVCONTENT347151197" CLASS="AVCONTENT LISTEN SHORTTITLE" -->
-      </div>
-      
-<!-- END CLASS="PLAYER-CORE" -->
-      <ul class="audiotools">
-                  <li><a class="add" href="javascript:NPR.Player.openPlayer(345289127, 347151197, null, NPR.Player.Action.ADD_TO_PLAYLIST, NPR.Player.Type.STORY, '0')" data-metrics='{"category":"Secondary Audio","action":"Playlist","label":"20140909_atc_when_scientists_give_up.mp3"}' ><span>Playlist</span></a></li>
-         <li><a class="download" href="http://pd.npr.org/anon.npr-mp3/npr/atc/2014/09/20140909_atc_when_scientists_give_up.mp3?dl=1" data-metrics='{"category":"Secondary Audio","action":"Download","label":"20140909_atc_when_scientists_give_up.mp3"}' ><span>Download</span></a></li>
-         <li><a class="trans" href="/templates/transcript/transcript.php?storyId=345289127" data-metrics='{"category":"Segment Audio","action":"Click transcript","label":"345289127"}' ><span>Transcript</span></a></li>
-      </ul>
-      <div class="spacer">
-         &nbsp 
-      </div>
-   </div>
-   
-<!-- END ID="RES347151197" CLASS="BUCKETWRAP PRIMARY RESAUDIO  CLEARFIX MEDIUM" -->
-</div>
-
-<!-- END ID="PRIMARYAUDIO" CLASS="STORYLOCATION LINKLOCATION" -->
-<div id="storytext" class="storytext storylocation linkLocation">
-      <div id="res345605349" class="bucketwrap image large" previewTitle="Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif.">
-            <div class="imagewrap" data-crop-type="">
-                <img src="http://media.npr.org/assets/img/2014/09/03/randen-patterson-1_slide-ad57b5b88f7ff9de1f1681a3ca1443a715fa61ff-s4-c85.jpg" data-original="http://media.npr.org/assets/img/2014/09/03/randen-patterson-1_slide-ad57b5b88f7ff9de1f1681a3ca1443a715fa61ff-s4.jpg" class="img lazyOnLoad"  title="Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif." alt="Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif." />
-        <a href="#" class="enlargebtn" title="Enlarge">i</a>
-        <a href="#" class="enlargebtn enlarge-smallscreen" title="Enlarge">i</a>
-</div>
-<div class="credit-caption">
-    <div class="caption">
-        <p>
-            Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif.
-            
-                <b class="credit">
-                    
-                    Max Whittaker/Prime for NPR
-                    
-                </b>
-                <b class="hide-caption"><b>hide caption</b></b>
-        </p>
-    </div>
-    <b class="toggle-caption">i<b>toggle caption</b></b>
-    <span class="credit">
-        
-        Max Whittaker/Prime for NPR
-        
-    </span>
-</div>
-    <div class="enlarge_measure">
-        <div class="img_wrap">
-            <img data-original="http://media.npr.org/assets/img/2014/09/03/randen-patterson-1_slide-ad57b5b88f7ff9de1f1681a3ca1443a715fa61ff-s1200.jpg" title="Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif." alt="Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif." />
-        </div>
-    </div>
-    <div class="enlarge_html">
-        <div class="image_data">
-            <p class="caption">Randen Patterson left a research career in physiology at U.C. Davis when funding got too tight. He now owns a grocery store in Guinda, Calif.</p>
-            <span class="credit">
-                
-                Max Whittaker/Prime for NPR
-                
-            </span>
-        </div>
-    </div>
-   </div>
-   <p>Ian Glomski thought he was going to make a difference in the fight to protect people from deadly anthrax germs. He had done everything right — attended one top university, landed an assistant professorship at another.</p>   <p>But Glomski ran head-on into an unpleasant reality: These days, the scramble for money to conduct research has become stultifying.</p>   <p>So, he's <a href="http://bims.virginia.edu/faculty/ian-j-glomski/">giving up</a> on science.</p>   <div id="res345823403" class="bucketwrap image medium" previewTitle="Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery.">
-            <div class="imagewrap" data-crop-type="">
-                <img src="http://media.npr.org/assets/img/2014/09/04/img_149-edit_slide-ff56b61c47a6cf10bd67edd3b145ff334bdb59ba-s2-c85.jpg" data-original="http://media.npr.org/assets/img/2014/09/04/img_149-edit_slide-ff56b61c47a6cf10bd67edd3b145ff334bdb59ba-s2.jpg" class="img lazyOnLoad"  title="Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery." alt="Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery." />
-        <a href="#" class="enlargebtn" title="Enlarge">i</a>
-        <a href="#" class="enlargebtn enlarge-smallscreen" title="Enlarge">i</a>
-</div>
-<div class="credit-caption">
-    <div class="caption">
-        <p>
-            Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery.
-            
-                <b class="credit">
-                    
-                    Richard Harris/NPR
-                    
-                </b>
-                <b class="hide-caption"><b>hide caption</b></b>
-        </p>
-    </div>
-    <b class="toggle-caption">i<b>toggle caption</b></b>
-    <span class="credit">
-        
-        Richard Harris/NPR
-        
-    </span>
-</div>
-    <div class="enlarge_measure">
-        <div class="img_wrap">
-            <img data-original="http://media.npr.org/assets/img/2014/09/04/img_149-edit_slide-ff56b61c47a6cf10bd67edd3b145ff334bdb59ba-s1200.jpg" title="Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery." alt="Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery." />
-        </div>
-    </div>
-    <div class="enlarge_html">
-        <div class="image_data">
-            <p class="caption">Ian Glomski outside his home in Charlottesville, Va. He quit an academic career in microbiology to start a liquor distillery.</p>
-            <span class="credit">
-                
-                Richard Harris/NPR
-                
-            </span>
-        </div>
-    </div>
-   </div>
-   <p>And he's not alone. Federal funding for biomedical research has declined by more than 20 percent in the past decade. There are far more scientists competing for grants than there is money to support them.</p>   <p>That crunch is forcing some people out of science altogether, either because they can't get research funding at all or, in Glomski's case, because the rat race has simply become too unpleasant.</p>   <p>"My lab was well-funded until, basically, the moment I decided I wasn't going to work there anymore," he says during an interview on the porch swing of his home in Charlottesville, Va. "And I probably could have scraped through there for the rest of my career, as I had been doing, but I would have had regrets."</p>   <p>Glomski's problem was that he could only get funding to do very predictable, unexciting research. When money gets tight, often only the most risk-averse ideas get funded, he and others say.</p>   <p>"You're focusing basically on one idea you already have and making it as presentable as possible," he says. "You're not spending time making new ideas. And it's making new ideas, for me personally, that I found rewarding. That's what my passion was about."</p>   <p>At his lab at the University of Virginia, Glomski had a new idea about how to study an anthrax infection as it spread through an animal — and doing this with scans, rather than having to cut the animal open.</p>   <div id="res347112023" class="bucketwrap internallink insettwocolumn inset2col ">
-            <div class="bucket img">
-                  <a id="featuredStackSquareImage340716091" href="http://www.npr.org/blogs/health/2014/09/09/340716091/u-s-science-suffering-from-booms-and-busts-in-funding"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/340716091\/u-s-science-suffering-from-booms-and-busts-in-funding"}' ><img src="http://media.npr.org/assets/img/2014/08/21/leif-funding_sq-c762e3766d267bcaf7f877228e2d23ab3a8646e2-s100.jpg" class="img100" title="Leif Parsons for NPR" alt="Leif Parsons for NPR" /></a>         <div class="bucketblock">
-                        <h3 class="slug"><a href="http://www.npr.org/blogs/health/">Shots - Health News </a></h3>
-            <h3><a href="http://www.npr.org/blogs/health/2014/09/09/340716091/u-s-science-suffering-from-booms-and-busts-in-funding"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/340716091\/u-s-science-suffering-from-booms-and-busts-in-funding"}' > U.S. Science Suffering From Booms And Busts In Funding</a></h3>
-         </div>
-         
-<!-- END CLASS="BUCKETBLOCK" -->
-      </div>
-      
-<!-- END CLASS="BUCKET IMG" -->
-   </div>
-   
-<!-- END ID="RES347112023" CLASS="BUCKETWRAP INTERNALLINK INSETTWOCOLUMN INSET2COL " -->
-   <p>"I think if it did what I hoped it would, it would have revolutionized a lot of the research that I was focusing on," Glomski says. It would have given him important new insights, he thinks, into how this bacterium does its deadly damage.</p>   <div id="res347112224" class="bucketwrap internallink insettwocolumn inset2col ">
-            <div class="bucket img">
-                  <a id="featuredStackSquareImage342196432" href="http://www.npr.org/blogs/health/2014/09/09/342196432/by-the-numbers-search-nih-grant-data-by-institution"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/342196432\/by-the-numbers-search-nih-grant-data-by-institution"}' ><img src="http://media.npr.org/assets/img/2014/09/05/nih-numbers_sq-dc024fa466019c69c1012b5de472ee1a11b3abf8-s100.jpg" class="img100" title="NIH biomed funding data" alt="NIH biomed funding data" /></a>         <div class="bucketblock">
-                        <h3 class="slug"><a href="http://www.npr.org/blogs/health/">Shots - Health News </a></h3>
-            <h3><a href="http://www.npr.org/blogs/health/2014/09/09/342196432/by-the-numbers-search-nih-grant-data-by-institution"  data-metrics='{"category":"Story to Story","action":"Click Internal Link","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/342196432\/by-the-numbers-search-nih-grant-data-by-institution"}' > By The Numbers: Search NIH Grant Data By Institution</a></h3>
-         </div>
-         
-<!-- END CLASS="BUCKETBLOCK" -->
-      </div>
-      
-<!-- END CLASS="BUCKET IMG" -->
-   </div>
-   
-<!-- END ID="RES347112224" CLASS="BUCKETWRAP INTERNALLINK INSETTWOCOLUMN INSET2COL " -->
-   <p>But it was not a surefire idea. Like a lot of science, it might not have worked at all. Glomski never found out. His repeated grant applications to the National Institutes of Health never made the cut. Funding is so competitive that reviewers shy away from ideas that might not pan out.</p>   <p>"You actually have to be much more conservative these days than you used to," Glomski says, "and being that conservative I think ultimately hurts the scientific enterprise." Society, he says, is "losing out on the cutting-edge research that really is what pushes science forward."</p>   <p>Historically, payoffs in science come from out of the blue — oddball ideas or unexpected byways. Glomski says that's what research was like for him as he was getting his Ph.D. at the University of California, Berkeley. His lab leader there got funding to probe the frontiers. But Glomski sees that farsighted approach disappearing today.</p>   <p>"That ultimately squashed my passion for what I was doing," he says. So two years ago, at the age of 41, he quit.</p>   <p>Instead of helping society improve its defenses against deadly anthrax, he's starting a liquor distillery, <a href="http://www.vitaespirits.com/about-us/">Vitae Spirits</a>. He's actually excited about that. It's a big challenge, and it allows him to pursue an idea with passion, rather than with resignation.</p>   <p>Meanwhile, Randen Patterson is not passionate about his post-science career as a grocery store proprietor. He recently bought the Corner Store in the tiny town of Guinda, Calif.</p>   <div id="res34582 62" class="bucketwrap image large" previewTitle="Randen Patterson (right) mans the register at the Corner Store in Guinda.">
-            <div class="imagewrap" data-crop-type="">
-                <img src="http://media.npr.org/assets/img/2014/09/04/randen-patterson-2_slide-e0eeb38900ff06d6efec9f0772bfb84c047d51a7-s4-c85.jpg" data-original="http://media.npr.org/assets/img/2014/09/04/randen-patterson-2_slide-e0eeb38900ff06d6efec9f0772bfb84c047d51a7-s4.jpg" class="img lazyOnLoad"  title="Randen Patterson (right) mans the register at the Corner Store in Guinda." alt="Randen Patterson (right) mans the register at the Corner Store in Guinda." />
-        <a href="#" class="enlargebtn" title="Enlarge">i</a>
-        <a href="#" class="enlargebtn enlarge-smallscreen" title="Enlarge">i</a>
-</div>
-<div class="credit-caption">
-    <div class="caption">
-        <p>
-            Randen Patterson (right) mans the register at the Corner Store in Guinda.
-            
-                <b class="credit">
-                    
-                    Max Whittaker/Prime for NPR
-                    
-                </b>
-                <b class="hide-caption"><b>hide caption</b></b>
-        </p>
-    </div>
-    <b class="toggle-caption">i<b>toggle caption</b></b>
-    <span class="credit">
-        
-        Max Whittaker/Prime for NPR
-        
-    </span>
-</div>
-    <div class="enlarge_measure">
-        <div class="img_wrap">
-            <img data-original="http://media.npr.org/assets/img/2014/09/04/randen-patterson-2_slide-e0eeb38900ff06d6efec9f0772bfb84c047d51a7-s1200.jpg" title="Randen Patterson (right) mans the register at the Corner Store in Guinda." alt="Randen Patterson (right) mans the register at the Corner Store in Guinda." />
-        </div>
-    </div>
-    <div class="enlarge_html">
-        <div class="image_data">
-            <p class="caption">Randen Patterson (right) mans the register at the Corner Store in Guinda.</p>
-            <span class="credit">
-                
-                Max Whittaker/Prime for NPR
-                
-            </span>
-        </div>
-    </div>
-   </div>
-   <p>Patterson, 43, once worked for Dr. Solomon Snyder at Johns Hopkins University in <a href="http://neuroscience.jhu.edu/resources/directory/faculty/Solomon-H-Sol-Snyder">one of the top neuroscience laboratories</a> in the world. His research is published in some of the most prestigious journals.</p>   <p>And Patterson got there against the odds. He was raised in a trailer park in Pennsylvania by a single parent, he says, and stumbled into science quite by accident. Mentors realized his potential and encouraged him to make a career of it.</p>   <div id="res345345826" class="bucketwrap pullquote">
-            <aside><div class="bucket">
-      <p><span>&ldquo </span> I shouldn't be a grocer right now. I should be training students. I should be doing deeper research. And I can't. I don't have an outlet for it.</p>
-</div>
-
-<!-- END CLASS="BUCKET" -->
-<p class="byline">- Randen Patterson, former neuroscientist at University of California, Davis</p></aside>
-   </div>
-   
-<!-- END ID="RES345345826" CLASS="BUCKETWRAP PULLQUOTE" -->
-   <p>He landed a tenure-track <a href="http://news.psu.edu/tag/randen-patterson">assistant professorship</a> at Penn State University, and then moved on to a <a href="http://biosci3.ucdavis.edu/FacultyAndResearch/FacultyProfile.aspx?FacultyID=14420">similar job</a> at University of California, Davis (a 45-minute drive from his new "hometown" of Guinda).</p>   <p>But Patterson struggled his entire career to get grants to fund his research, which uses computer simulations to <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2686366/">probe the complex chemistry</a> that goes on inside living cells. And he chose an arcane corner of this field to focus his intellectual energy.</p>   <p>"When I was a very young scientist, I told myself I would only work on the hardest questions because those were the ones that were worth working on," he says. "And it has been to my advantage and my detriment."</p>   <p>Over the years, he has written a blizzard of grant proposals, but he couldn't convince his peers that his edgy ideas were worth taking a risk on. So, as the last of his funding dried up, he quit his academic job.</p>   <p>"I shouldn't be a grocer right now," he says with a note of anger in his voice. "I should be training students. I should be doing deeper research. And I can't. I don't have an outlet for it."</p>   <p>When the writing was on the wall a few years ago, Patterson says he bought his own souped-up computer so he could continue dabbling in research on the side. But those ideas aren't adding to the world's body of knowledge about biology.</p>   <p>"The country has invested, in me alone, $5 million or $6 million, easily," Patterson says, thinking back on the funding he received for his education and his research. And he's just one of many feeling the brunt of the funding crunch.</p>   <p>There are no national statistics about how many people are giving up on academic science, but an NPR analysis of NIH data found that 3,400 scientists lost their sustaining grants between 2012 and 2013. Some will eventually get new funding, others will retire  but others, like Glomski and Patterson, will just give up.</p>   <p>"We're taking all this money as a country we've invested ... and we're saying we don't care about it," Patterson says.</p>   <p>He watches with some trepidation as his daughter, a fresh college graduate, hopes to launch her own career in science.</p>   <p>The funding squeeze could persist for his daughter's generation as well. So Patterson is hoping she will settle on a field other than biomedical research — one where money isn't quite so tight.</p>
-</div>
-<div class="tags">
-      <ul>
-            <li><a href="http://www.npr.org/tags/143754923/biomedical-research">biomedical research</a></li>
-      <li><a href="http://www.npr.org/tags/129709859/nih">NIH</a></li>
-      <li><a href="http://www.npr.org/tags/126950053/work">Work</a></li>
-      <li><a href="http://www.npr.org/tags/125099838/research">research</a></li>
-   </ul>
-</div>
-
-<!-- END CLASS="TAGS" -->
-<div class="social-wrap">
-      <div class="social">
-            <ul>
-                  <li class="share"><a class="sharemaintab" href="#" data-metrics='{"action":"Toggle Share Tools","category":"Share Tools"}' >Share</a><div class="sharepop">
-      <ul>
-            <li class="facebookLi"><a class="facebook fbStory345289127" href="javascript:void(0) " onclick="javascript:NPR.socialMedia.shareOnFacebook(345289127) " data-metrics='{"action":"Click Facebook","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/345289127\/when-scientists-give-up"}' ><span class="name">Facebook</span></a></li>
-      <li class="twitterLi"><a class="retweetStory story345289127 twitter" href="javascript:void(0) " onclick="javascript:NPR.socialMedia.shareOnTwitter(345289127) " data-metrics='{"action":"Click Twitter","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/345289127\/when-scientists-give-up"}' ><span class="name">Twitter</span></a></li>
-      <li class="googlePlusLi"><div class="g-interactivepost" data-contenturl="http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up?utm_campaign=storyshare&utm_source=plus.google.com&utm_medium=social" data-contentdeeplinkid="/story/345289127" data-clientid="54045534594.apps.googleusercontent.com" data-cookiepolicy="http://npr.org" data-prefilltext="" data-calltoactionlabel="LISTEN" data-calltoactionurl="http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up?utm_campaign=storyshare&utm_source=plus.google.com&utm_medium=social" data-calltoactiondeeplinkid="/story/listen/345289127">
-      <a href="#"  data-metrics='{"action":"Click Google Plus","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/345289127\/when-scientists-give-up"}' >Google+</a>
-</div>
-
-<!-- END CLASS="G-INTERACTIVEPOST" DATA-CONTENTURL="HTTP://WWW.NPR.ORG/BLOGS/HEALTH/2014/09/09/345289127/WHEN-SCIENTISTS-GIVE-UP?UTM_CAMPAIGN=STORYSHARE&UTM_SOURCE=PLUS.GOOGLE.COM&UTM_MEDIUM=SOCIAL" DATA-CONTENTDEEPLINKID="/STORY/345289127" DATA-CLIENTID="54045534594.APPS.GOOGLEUSERCONTENT.COM" DATA-COOKIEPOLICY="HTTP://NPR.ORG" DATA-PREFILLTEXT="" DATA-CALLTOACTIONLABEL="LISTEN" DATA-CALLTOACTIONURL="HTTP://WWW.NPR.ORG/BLOGS/HEALTH/2014/09/09/345289127/WHEN-SCIENTISTS-GIVE-UP?UTM_CAMPAIGN=STORYSHARE&UTM_SOURCE=PLUS.GOOGLE.COM&UTM_MEDIUM=SOCIAL" DATA-CALLTOACTIONDEEPLINKID="/STORY/LISTEN/345289127" -->
 </li>
-      <li class="email"><a href='javascript:void(0) ' class='email eaf_link' data-story-id='345289127'  data-metrics='{"action":"Click Email a Friend","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/345289127\/when-scientists-give-up"}' >Email</a></li>
-   </ul>
-</div>
-
-<!-- END CLASS="SHAREPOP" -->
+<li id="menu-item-358020" class="politics menu-item menu-item-type-taxonomy menu-item-object-channel current-menu-item menu-item-358020"><a href="http://observer.com/politics/">Politics</a></li>
+<li id="menu-item-342370" class="culture menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-has-children menu-item-342370"><a href="http://observer.com/culture/">Art &amp  Culture</a>
+<ul class="sub-menu">
+	<li id="menu-item-4155 " class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-4155 "><a href="http://observer.com/art/">+ Art &amp  Gallerist</a></li>
+	<li id="menu-item-367614" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367614"><a href="http://observer.com/movies/">+ Movies</a></li>
+	<li id="menu-item-367615" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367615"><a href="http://observer.com/music/">+ Music</a></li>
+	<li id="menu-item-367616" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367616"><a href="http://observer.com/tv/">+ TV</a></li>
+</ul>
 </li>
-         <li class="comment"><a class="comment-count" href="http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up#commentBlock" data-storyid="345289127" data-shortname="nprhealth"  data-metrics='{"category":"Share Tools","action":"Click comments"}' ><span class="count"></span><span class="name">Comment</span></a></li>
-      </ul>
-   </div>
-   
-<!-- END CLASS="SOCIAL" -->
-</div>
+<li id="menu-item-342374" class="style menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-342374"><a href="http://observer.com/style/">Style</a></li>
+<li id="menu-item-342373" class="real-estate menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-342373"><a href="http://observer.com/real-estate/">Real Estate</a></li>
+<li id="menu-item-342372" class="opinion menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-has-children menu-item-342372"><a href="http://observer.com/opinion/">Opinion</a>
+<ul class="sub-menu">
+	<li id="menu-item-367683" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367683"><a href="http://observer.com/columns/">+ Columns</a></li>
+	<li id="menu-item-367684" class="menu-item menu-item-type-taxonomy menu-item-object-channel menu-item-367684"><a href="http://observer.com/editorials/">+ Editorials</a></li>
+</ul>
+</li>
+</ul></div>			</nav><!-- #site-navigation -->
 
-<!-- END CLASS="SOCIAL-WRAP" -->
-<div class="pnnavwrap">
-      <a id="prev_nav" class="prev" href="http://www.npr.org/blogs/health/2014/09/09/347112361/get-the-measles-get-ready-to-be-out-for-two-weeks"  data-metrics='{"action":"Click Previous Story","category":"Story to Story","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/347112361\/get-the-measles-get-ready-to-be-out-for-two-weeks"}' >Get The Measles, Get Ready To Be Out For Two Weeks<span class="date">September 9, 2014</span><span class="icon"></span></a>   <a id="next_nav" class="next" href="http://www.npr.org/blogs/health/2014/09/09/347109319/love-and-sex-in-the-time-of-viagra-16-years-on"  data-metrics='{"action":"Click Next Story","category":"Story to Story","label":"http:\/\/www.npr.org\/blogs\/health\/2014\/09\/09\/347109319\/love-and-sex-in-the-time-of-viagra-16-years-on"}' >Love And Sex In The Time Of Viagra — 16 Years On<span class="date">September 9, 2014</span><span class="icon"></span></a>
-</div>
+			<div class="site-search">
+				<form role="search" method="get" class="search-form" action="http://observer.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search&hellip " value="" name="s">
+	</label>
+	<button type="submit" class="search-submit"><i class="fa fa-search"></i><span class="screen-reader-text">Submit</span>
+</button>
+</form>
+			</div>
 
-<!-- END CLASS="PNNAVWRAP" -->
-<div id="resMore">
-       <!--googleoff: all-->   <div id="relatedstorieswrap">
-            <section id="relatedstories"><h4>More From Shots - Health News</h4>
-<div id="resMoreAPI" class="bucketwrap apiquery responsive_more">
-      <article id="story366815074" class="story clearfix"><a href="http://www.npr.org/blogs/health/2014/11/28/366815074/eyeing-that-bb-gun-for-christmas-dont-go-there-doctors-say" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/health/2014/11/28/366815074/eyeing-that-bb-gun-for-christmas-dont-go-there-doctors-say"}'><div class="storyinfo">
-<h2 class="slug">Health</h2>
-<h3>Eyeing That BB Gun For Christmas? Don't Go There, Doctors Say</h3>
-</div>
-<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/11/26/ralphie_sq-903c3fed7d137f401f71de36652bfd74e444005e.jpg?s=100" alt="In the 1983 movie A Christmas Story, all Ralphie wanted was a BB gun."></div></a></article><article id="story367092004" class="story clearfix"><a href="http://www.npr.org/blogs/health/2014/11/28/367092004/how-dogs-understand-what-we-say" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/health/2014/11/28/367092004/how-dogs-understand-what-we-say"}'><div class="storyinfo">
-<h2 class="slug">Health</h2>
-<h3>How Dogs Understand What We Say</h3>
-</div>
-<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/11/28/mango8_sq-59b2919b8fa36e6199764c3a c6e53ec9fcadc9.jpg?s=100" alt="Do you want to go to the park? Mango Doucleff, of San Francisco, responds to her favorite command by perking up her ears and tilting her head."></div></a></article><article id="story366789136" class="story clearfix"><a href="http://www.npr.org/blogs/health/2014/11/27/366789136/your-adult-siblings-may-be-the-secret-to-a-long-happy-life" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/health/2014/11/27/366789136/your-adult-siblings-may-be-the-secret-to-a-long-happy-life"}'><div class="storyinfo">
-<h2 class="slug">Health</h2>
-<h3>Your Adult Siblings May Be The Secret To A Long, Happy Life</h3>
-</div>
-<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/11/26/1_sq-89ecae9bdced3e4a32ab2997c1c8008903f7acb8.jpg?s=100" alt="Katherine Streeter for NPR"></div></a></article><article id="story3667666 " class="story clearfix last"><a href="http://www.npr.org/blogs/health/2014/11/27/3667666 /millennial-doctors-may-be-more-tech-savvy-but-is-that-better" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/health/2014/11/27/3667666 /millennial-doctors-may-be-more-tech-savvy-but-is-that-better"}'><div class="storyinfo noimg">
-<h2 class="slug">Health</h2>
-<h3>Millennial Doctors May Be More Tech-Savvy, But Is That Better?</h3>
-</div></a></article>
-</div>
+			<div class="site-social menu">
+				<ul>
+					<li class="subscribe"><a href="http://observer.com/subscribe">Subscribe</a></li>
+					<li class="social facebook"><a href="http://www.facebook.com/newyorkobserver" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li class="social twitter"><a href="https://twitter.com/intent/user?screen_name=newyorkobserver" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li class="social gplus"><a href="https://plus.google.com/112242738293247903578/" target="_blank" rel="publisher"><i class="fa fa-google-plus"></i></a></li>
+					<li class="social linkedin"><a href="http://www.linkedin.com/company/416181" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li class="social instagram"><a href="http://instagram.com/newyorkobserver" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li class="rss"><a href="/rss-feeds"><i class="fa fa-rss"></i></a></li>
+				</ul>
+			</div>
 
-<!-- END ID="RESMOREAPI" CLASS="BUCKETWRAP APIQUERY RESPONSIVE_MORE" -->
-<p class="more"><a href="http://www.npr.org/blogs/health/">More From Shots - Health News</a></p></section>
-   </div>
-   
-<!-- END ID="RELATEDSTORIESWRAP" -->
-    <!--googleon: all-->
-</div>
+		</div>
 
-<!-- END ID="RESMORE" -->
-<div id="commentBlock">
-      <h3 class="comment-head"><a href="#">Comments <span class="toggle"></span></a></h3>
-   <div id='disqus-npr'
-                                       data-shortname='nprhealth'
-                                       data-identifier='345289127'
-                                       data-url='http://www.npr.org/blogs/health/2014/09/09/345289127/when-scientists-give-up'
-                                       data-title='When Scientists Give Up'>
-            <a name="commentBlock">&nbsp</a>      <h5 class="commentBoxNotLoggedIn" id="login-overlay-link">You must be signed in to leave a comment. <a href="/templates/reg/login.php?returnUrl=%2Fblogs%2Fhealth%2F2014%2F09%2F09%2F345289127%2Fwhen-scientists-give-up%23commentBlock">Sign In / Register</a></h5>
-      <p data-mod="pre">Please keep your community civil. All comments must follow the <a href="http://npr.org/discussionrules" target="new">NPR.org Community rules</a> and <a href="http://www.npr.org/about/termsofuse.html" target="new">terms of use</a>, and will be moderated prior to posting. NPR reserves the right to use the comments we receive, in whole or in part, and to use the commenter's name and location, in any medium. See also the <a href="http://www.npr.org/about/termsofuse.html" target="new">Terms of Use</a>, <a href="http://www.npr.org/about/privacypolicy.html" target="new">Privacy Policy</a> and <a href="http://npr.org/communityfaq" target="new">Community FAQ</a>.</p>      <div id='disqus_thread'>
-               </div>
-      
-<!-- END ID='DISQUS_THREAD' -->
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>      <div>
-                 <form style="display: hidden" action="#" method="POST" id="janrain-form">
-            <input type="hidden" id="janrain-token" name="token" value=""/>
-        </form>
-      </div>
-   </div>
-   
-<!-- END ID='DISQUS-NPR'
-                                       DATA-SHORTNAME='NPRHEALTH'
-                                       DATA-IDENTIFIER='345289127'
-                                       DATA-URL='HTTP://WWW.NPR.ORG/BLOGS/HEALTH/2014/09/09/345289127/WHEN-SCIENTISTS-GIVE-UP'
-                                       DATA-TITLE='WHEN SCIENTISTS GIVE UP' -->
-</div>
+	</header><!-- #masthead -->
+	<div id="content" class="site-content">
+					<div class="ad-banner">
+				<!-- Beginning Async AdSlot 1 for Ad unit observer_leaderboard_top ### size: [[728,90],[970,90],[970,66]] -->
+				<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+				<div id='div-gpt-ad-771860824845458250-1'>
+					<script type='text/javascript'> googletag.cmd.push(function() { googletag.display('div-gpt-ad-771860824845458250-1')  } )  </script>
+				</div>
+				<!-- End AdSlot 1 -->
+			</div>
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main col-2" role="main">
 
-<!-- END ID="COMMENTBLOCK" -->
- <!--googleoff: index--></article><header class="contentheader reprise" data-metrics-category="Shots - Health News"><div class="mobileheader">
-    <a class="sidebarButton" href="#sidebar"  data-metrics='{"action":"Toggle OffCanvas","category":"Global Navigation"}'>
-        <img src="http://media.npr.org/chrome/subnav_toggle.png" alt="NPR logo" />
-    </a>
-    
-    <a href="/" class="nprHome" data-metrics='{"action":"Click Logo","category":"Global Navigation"}'>
-        <img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR">        
-    </a>
-</div><div class="branding">
-      <a href="http://www.npr.org/blogs/health/"  data-metrics='{"action":"Click Header Logo","category":"Shots - Health News"}' ><img src="http://media.npr.org/branding/blogs/health/branding_icon-d1bf0f307a4bae5366 f3790f308797103e8d05.png" class="icon" alt="Shots - Health News" /><img src="http://media.npr.org/branding/blogs/health/branding_main-c464b14085b5098ac853fd98e9e84c493d344e3e.png" class="main" alt="Shots - Health News" /><span class="tag">Health News From NPR</span>
-</a>
-</div>
+		
+			<section id="loopwrapper">
 
-<!-- END CLASS="BRANDING" -->
-</header><footer id="contentfooter" data-metrics-category="Shots - Health News"><div class="branding">
-      <a href="http://www.npr.org/blogs/health/"  data-metrics='{"action":"Click Footer Logo"}' ><img src="http://media.npr.org/branding/blogs/health/branding_icon-d1bf0f307a4bae5366 f3790f308797103e8d05.png" class="icon" alt="Shots - Health News" /><img src="http://media.npr.org/branding/blogs/health/branding_main-c464b14085b5098ac853fd98e9e84c493d344e3e.png" class="main" alt="Shots - Health News" /><span class="tag">Health News From NPR</span>
-</a>
-</div>
-
-<!-- END CLASS="BRANDING" -->
-<div class="modules">
-      <div class="module first">
-            <h3><a href="#"  data-metrics='{"action":"Toggle Footer Dropdown","label":"About","category":"Shots - Health News"}' >About</a></h3>
-      <div id="footer_module" class="agglocation linkLocation">
-                  <div id="res16 40158" class="bucketwrap listtext">
-                        <div class="bucket">
-                              <p><em>Shots</em> is the online channel for health stories from the NPR Science Desk. We report on news that can make a difference for your health and show how policy shapes our choices about health. Look to <em>Shots</em> for the latest news on research and medical treatments, as well as dispatches about health from around the globe. <a href="http://www.npr.org/blogs/health/2011/06/08/133407592/scott-hensley-your-host-on-shots">Scott Hensley</a> is your host. You can reach Scott and the rest of the <em>Shots</em> team via <a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx?sid=71">our contact form</a>.</p>
-            </div>
             
-<!-- END CLASS="BUCKET" -->
-         </div>
-         
-<!-- END ID="RES16 40158" CLASS="BUCKETWRAP LISTTEXT" -->
-      </div>
-      
-<!-- END ID="FOOTER_MODULE" CLASS="AGGLOCATION LINKLOCATION" -->
-   </div>
-   
-<!-- END CLASS="MODULE FIRST" -->
-   <div class="module second">
-    <h3><a href="#" data-metrics='{"action":"Toggle Footer Dropdown","label":"Subscribe"}'>Subscribe</a></h3>
+						
+				
+<article id="post-437455" class="post-437455 post type-post status-publish format-standard has-post-thumbnail hentry tag-beau-heyen tag-bill-de-balsio tag-joel-berg tag-new-york-city-coalition-against-hunger tag-stephen-levin entry-first channel-politics display-channel-news">
+	<div class="entry">
+	<a href="http://observer.com/2014/11/thanksgiving-puts-a-brief-spotlight-on-hunger/" rel="bookmark">
+	<img width="635" height="365" src="http://nyoobserver.files.wordpress.com/2014/11/dscf0145.jpg?w=635&amp h=365&amp crop=1" class="attachment-header-block" alt="Bronx Borough President Ruben Diaz Jr., Mayor Bill de Blasio, and his wife Chirlane McCray hand out food at a Bronx food pantry this week. (Photo: Jillian Jorgensen)" />	</a>
+	<div class="entry-channel">
+		Politics	</div>
 
-    <div>
-        <ul class="subscribe">
-            <li class="podcast"><a href="http://www.npr.org/rss/podcast/podcast_detail.php?siteId=89697157" data-metrics='{"action":"Click Podcast"}'>Podcast</a></li>
-            <li class="rss"><a href="feed://www.npr.org/rss/rss.php?id=103537970" data-metrics='{"action":"Click RSS"}'>RSS</a></li>
-            <li class="twitter"><a href="http://twitter.com/NPRHealth" data-metrics='{"action":"Click Twitter"}'>@NPRHealth</a></li>
-            <li class="twitter"><a href="http://twitter.com/scotthensley" data-metrics='{"action":"Click Twitter"}'>@scotthensley</a></li>
-        </ul>
-    </div>
-</div>
-<!-- end class="module second" -->
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/thanksgiving-puts-a-brief-spotlight-on-hunger/" rel="bookmark">Thanksgiving Puts a Brief Spotlight on Hunger</a></h1>
+	</header><!-- .entry-header -->
+		</div>
 
-<div class="module third">
-    <h3><a href="#" data-metrics='{"action":"Toggle Footer Dropdown","label":"On Health Podcast"}'>On Health Podcast</a></h3>
-    <div class="promo-bucket" data-metrics-all data-metrics='{"action":"Click Footer Promo"}'>
-        <a href="http://www.npr.org/rss/podcast/podcast_detail.php?siteId=89697157"><img src="http://media.npr.org/images/podcasts/img90/npr_yourhealth_90.jpg" alt="Health Podcast" class="pod" height="60" width="60"></a>
-        <div class="bucketblock">
-            <p>In-depth reports on medicine, staying healthy and the major issues surrounding health care.</p>
-            <p class="more"><a href="http://www.npr.org/rss/podcast/podcast_detail.php?siteId=89697157">Subscribe</a></p>
-        </div>
-    </div>
-</div>
-<!-- end class="module third" -->
-</div>
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437541" class="post-437541 post type-post status-publish format-standard has-post-thumbnail hentry tag-bill-de-blasio tag-thanksgiving entry-grid channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/programming-note-thanksgiving/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/15260002843_f2f1848e48_z.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Mayor Bill de Blasio hands out turkeys. (Photo: NYC Mayor   s Office)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/programming-note-thanksgiving/" rel="bookmark">Programming Note: Thanksgiving</a></h1>
 
-<!-- END CLASS="MODULES" -->
-</footer></section>
-   </div>
-   
-<!-- END ID="SECTIONWRAP" CLASS="CLEARFIX" -->
-   <div id="main_sidebar">
-            
-<!-- START UNDERWRITING -->
-      <div id="ad-desktop-wrap">
-    <div id="ad-desktop">
-            <script type="text/javascript">
-            $(document).ready(function () {
-                var mainstage = false 
-                if (DFP.shouldRenderForDevice('desktop')) {
-                    DFP.displayAd('desktop', mainstage) 
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/ross/" title="View All Posts by Ross Barkan">Ross Barkan</a></span> 	</div><!-- .entry-meta -->
 
-                }
-            }) 
-            </script>
-    </div>
-    <p class="left">NPR thanks our sponsors</p><p class="right"><a href="/about-npr/186948703/corporate-sponsorship">Become an NPR sponsor</a></p>
-</div>
-      
-<!-- END UNDERWRITING -->
-   </div>
-   
-<!-- END ID="MAIN_SIDEBAR" -->
-</div>
+	</header><!-- .entry-header -->
 
-<!-- END ID="WRAPPER" -->
-<section id="navsidebar" role="complementary"><nav id="loginSidebar" data-metrics-category="Global Navigation">
-    <div class="nav-container">
-        <div class="nav-top-level">
-            <form action="/search/index.php" method="get" name="searchForm" id="searchForm_nav" class="search">
-                <label for="searchinput-aux-nav">Search</label>
-                <input type="search" name="searchinput" id="searchinput-aux-nav" class="textbox searchbox" />
-            </form>
 
-            <ul>
-                <li class="home"><a href="/" data-metrics='{"action":"Click NPR Home"}'>Home</a></li>
-                <li class="news"><a href="/sections/news/" data-metrics='{"action":"Click News"}'>News</a></li>
-                <li class="arts-and-life"><a href="/sections/arts/" data-metrics='{"action":"Click Arts &amp  Life"}'>Arts &amp  Life</a></li>
-                <li class="music"><a href="/music/" data-metrics='{"action":"Click Music"}'>Music</a></li>
-                <li class="topics"><a href="/" data-metrics='{"action":"Click Topics"}'>More Topics</a></li>
-                <li class="programs-sitewide"><a href="/" data-metrics='{"action":"Click Programs"}'>Programs</a></li>
-                <li class="donate"><a href="/stations/donate/index.php" data-metrics='{"action":"Click Business Link"}'>Donate</a></li>
-                <li class="stations" data-metrics='{"action":"Click Business Link"}'><a href="/templates/stations/stations/">Stations</a></li>
-                <li class="nprshop"><a href="http://shop.npr.org" data-metrics='{"action":"Click Business Link"}'>NPR Shop</a></li>
-                <li class="login-reg loggedOut">
-                    <a href="/templates/reg/login.php" data-metrics='{"action":"Click Profile Link"}'>Sign In / Register</a>
-                </li>
-            </ul>
-            <ul class="loggedIn">
-                <li class="userLogin">
-                    <span id="userLoginSidebar"></span>
-                </li>
-                <li class="login-reg">
-                    <a href="/templates/reg/logout.php" class="logout" data-metrics='{"action":"Click Profile Link"}'>Logout</a>
-                </li>
-            </ul>
-        </div> <!-- /.nav-top-level -->
 
-        <div class="subnavs subnavs-topics" data-metrics-all data-metrics-action="Click Topic">
-            <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437408" class="post-437408 post type-post status-publish format-standard has-post-thumbnail hentry tag-akai-gurley tag-al-sharpton tag-eric-garner tag-ferguson tag-michael-brown entry-grid channel-news channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/al-sharpton-asks-media-to-stop-focusing-on-reaction-to-ferguson/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/20141126_144847.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Rev. Al Sharpton prays with the Brown, Garner and Gurley families. (Photo: Ross Barkan)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/al-sharpton-asks-media-to-stop-focusing-on-reaction-to-ferguson/" rel="bookmark">Al Sharpton Asks Media to Focus Less on Reaction to Ferguson</a></h1>
 
-            <h1><a href="/sections/news/">News</a></h1>
-            <ul>
-                <li><a href="/sections/us/">U.S.</a></li>
-                <li><a href="/sections/world/">World</a></li>
-                <li><a href="/sections/politics/">Politics</a></li>
-                <li><a href="/sections/business/">Business</a></li>
-                <li><a href="/sections/technology/">Technology</a></li>
-                <li><a href="/sections/science/">Science</a></li>
-                <li><a href="/sections/health/">Health</a></li>
-                <li><a href="/blogs/codeswitch/">Race &amp  Culture</a></li>
-                <li><a href="/blogs/ed/">Education</a></li>
-            </ul>
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/ross/" title="View All Posts by Ross Barkan">Ross Barkan</a></span> 	</div><!-- .entry-meta -->
 
-            <h1><a href="/sections/arts/">Arts &amp  Life</a></h1>
-            <ul>
-                <li><a href="/sections/movies/">Movies</a></li>
-                <li><a href="/sections/pop-culture/">Pop Culture</a></li>
-                <li><a href="/sections/food/">Food</a></li>
-                <li><a href="/sections/art-design/">Art &amp  Design</a></li>
-                <li><a href="/sections/performing-arts/">Performing Arts</a></li>
-                <li><a href="/sections/photography/">Photography</a></li>
-            </ul>
+	</header><!-- .entry-header -->
 
-            <h1><a href="/books/">Books</a></h1>
-            <ul>
-                <li><a href="/sections/book-reviews/">Book Reviews</a></li>
-                <li><a href="/sections/author-interviews/">Author Interviews</a></li>
-            </ul>
 
-            <h1><a href="/music/">Music</a></h1>
-            <ul>
-                <li><a href="/series/98679384/first-listen/">First Listen</a></li>
-                <li><a href="/series/122356178/songs-we-love">Songs We Love</a></li>
-                <li><a href="/series/100920965/music-articles/">Music Articles</a></li>
-                <li><a href="/series/tiny-desk-concerts/">Tiny Desk Concerts</a></li>
-                <li><a href="/sections/music-videos/">Videos</a></li>
-            </ul>
 
-            <h1><a href="/about-npr/198341814/npr-blog-directory">Our Blogs</a></h1>
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437407" class="post-437407 post type-post status-publish format-standard has-post-thumbnail hentry tag-akai-gurley tag-bill-bratton tag-bill-de-blasio tag-east-new-york tag-eric-adams tag-new-york-city-housing-authority tag-nypd tag-peter-liang entry-grid channel-news channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/ex-cop-eric-adams-refuses-to-label-brooklyn-nypd-killing-an-accident/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/07/451907586.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Brooklyn Borough President Eric Adams. (Photo: Andrew Burton/Getty Images)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/ex-cop-eric-adams-refuses-to-label-brooklyn-nypd-killing-an-accident/" rel="bookmark">Ex-Cop Eric Adams Refuses to Label Brooklyn NYPD Killing    An Accident   </a></h1>
 
-            <h1><a href="/templates/corrections/corrections.php">Corrections</a></h1>
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/will-bredderman/" title="View All Posts by Will Bredderman">Will Bredderman</a></span> 	</div><!-- .entry-meta -->
 
-            <h1><a href="/about/aboutnpr/">All About NPR</a></h1>
-        </div> <!-- /.subnavs-topics -->
+	</header><!-- .entry-header -->
 
-        <div class="subnavs subnavs-programs-sitewide" data-metrics-all data-metrics-action="Click Program">
-            <div class="subnav subnav-programs-sitewide">
-                <a class="back back-to-top-level"><b class="icn-back"></b>Back</a>
-                <ul>
-                    <li><a class="news-talk">news &amp  conversations</a></li>
-                    <li><a class="entertainment-culture">storytelling &amp  humor</a></li>
-                    <li><a class="music">music</a></li>
-                    <li><a class="special-series">also heard on npr stations</a></li>
-                </ul>
-            </div>
 
-            <div class="subnav subnav-news-talk">
-                <a class="back back-to-programs"><b class="icn-back"></b>Back</a>
-                <ul>
-                    <li><a href="/programs/morning-edition/">Morning Edition</a></li>
-                    <li><a href="/programs/all-things-considered/">All Things Considered</a></li>
-                    <li><a href="/programs/fresh-air/">Fresh Air</a></li>
-                    <li><a href="http://hereandnow.wbur.org/">Here &amp  Now</a></li>
-                    <li><a href="http://thedianerehmshow.org">The Diane Rehm Show</a></li>
-                    <li><a href="/programs/latino-usa/">Latino USA</a></li>
-                    <li><a href="http://www.onthemedia.org">On The Media</a></li>
-                    <li><a href="http://www.onpointradio.org/">On Point</a></li>
-                    <li><a href="http://www.sciencefriday.com/">Science Friday</a></li>
-                    <li><a href="/programs/weekend-edition-saturday/">Weekend Edition Saturday</a></li>
-                    <li><a href="/programs/weekend-edition-sunday/">Weekend Edition Sunday</a></li>
-                </ul>
-            </div>
 
-            <div class="subnav subnav-entertainment-culture">
-                <a class="back back-to-programs"><b class="icn-back"></b>Back</a>
-                <ul>
-                    <li><a href="/programs/ask-me-another/">Ask Me Another</a></li>
-                    <li><a href="http://www.cartalk.com">The Best Of Car Talk</a></li>
-                    <li><a href="http://www.maximumfun.org/shows/bullseye">Bullseye</a></li>
-            		<li><a href="http://www.radiolab.org">Radiolab</a></li>
-            		<li><a href="/programs/snap-judgment/">Snap Judgment</a></li>
-                    <li><a href="http://storycorps.org" class="storycorps">StoryCorps</a></li>
-            		<li><a href="/programs/ted-radio-hour/">TED Radio Hour</a></li>
-                    <li><a href="/programs/wait-wait-dont-tell-me/">Wait Wait...Don't Tell Me!</a></li>
-                </ul>
-            </div>
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437382" class="post-437382 post type-post status-publish format-standard has-post-thumbnail hentry tag-darren-wilson tag-ferguson tag-grand-jury entry-grid channel-news channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/hillary-clintons-deafening-silence-on-ferguson/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/459597214.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Police in Ferguson, Missouri.  (Photo by Aaron P. Bernstein/Getty Images)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/hillary-clintons-deafening-silence-on-ferguson/" rel="bookmark">Hillary Clinton   s Deafening Silence On Ferguson</a></h1>
 
-            <div class="subnav subnav-music">
-                <a class="back back-to-programs"><b class="icn-back"></b>Back</a>
-                <ul>
-                    <li><a href="/programs/all-songs-considered/">All Songs Considered</a></li>
-                    <li><a href="/series/alt-latino/">Alt.Latino</a></li>
-                    <li><a href="/series/98679384/first-listen/">First Listen</a></li>
-                    <li><a href="http://www.fromthetop.org" target="_blank">From The Top</a></li>
-                    <li><a href="/series/3471 849/jazz-night-in-america">Jazz Night In America</a></li>
-                    <li><a href="/blogs/metropolis/">Metropolis</a></li>
-                    <li><a href="/blogs/microphonecheck/">Microphone Check</a></li>
-                    <li><a href="/series/mountain-stage/">Mountain Stage</a></li>
-                    <li><a href="/programs/piano-jazz/">Piano Jazz</a></li>
-                    <li><a href="/series/150560513/song-travels/">Song Travels</a></li>
-                    <li><a href="/series/103063413/the-thistle-and-shamrock/">The Thistle &amp  Shamrock</a></li>
-                    <li><a href="/programs/world-cafe/">World Cafe</a></li>
-                </ul>
-            </div>
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/lincoln-mitchell/" title="View All Posts by Lincoln Mitchell">Lincoln Mitchell</a></span> 	</div><!-- .entry-meta -->
 
-            <div class="subnav subnav-special-series">
-                <a class="back back-to-programs"><b class="icn-back"></b>Back</a>
-                <ul>
-                    <li><a href="http://prairiehome.publicradio.org">A Prairie Home Companion <b>(APM)</b></a></li>
-					<li><a href="http://marketplace.publicradio.org">Marketplace <b>(APM)</b></a></li>
-                    <li><a href="http://www.sciencefriday.com/">Science Friday</a></li>
-                    <li><a href="http://www.thisamericanlife.org">This American Life <b>(PRX)</b></a></li>
-            		<li><a href="/programs/">Public Radio Programs A to Z</a></li>
-                </ul>
-            </div>
-        </div> <!-- /.subnavs-programs -->
-    </div> <!-- /.nav-container -->
-</nav>
-</section>
-<!-- START UNDERWRITING -->
-<div id="ad-88-wrap">
-    <div id="ad-88">
-                <div class="ad-88-text">Support comes from:</div>
-            <script type="text/javascript">
-            $(document).ready(function () {
-                var mainstage = false 
-                if (DFP.shouldRenderForDevice('88')) {
-                    DFP.displayAd('88', mainstage) 
+	</header><!-- .entry-header -->
 
-                }
-            }) 
-            </script>
-    </div>
-</div>
 
-<!-- END UNDERWRITING -->
-<div class="adwrapper housead">
-      <div class="adwrap">
-	<h3><a href="#">Support NPR</a></h3>
-	<div>
-		<img src="http://media.npr.org/images/shop_300x150-04.jpg" alt="Support NPR">
-		<h4><a href="http://shop.npr.org/?utm_source=Banners&utm_medium=ResponsiveAd&utm_content=General&utm_campaign=300x150">NPR Shop</a></h4>
-		<p>Support The Programs You Love</p>
+
+</article><!-- #post-## -->
+				
+					                    
+													<article class="entry-grid">
+								<!-- Beginning Async AdSlot 4 for Ad unit observer_river_pos1  ### size: [[300,250]] -->
+								<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+								<div id='div-gpt-ad-771860824845458250-4'>
+								<script type='text/javascript'>
+								googletag.cmd.push(function() { googletag.display('div-gpt-ad-771860824845458250-4')  }) 
+								</script>
+								</div>
+								<!-- End AdSlot 4 -->
+							</article>
+											
+			
+				
+<article id="post-437361" class="post-437361 post type-post status-publish format-standard has-post-thumbnail hentry tag-department-of-transportation tag-gale-brewer tag-mark-levine entry-grid channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/city-council-passes-bill-tripling-traffic-signals-accessible-to-blind/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/15098552374_c557ffca52_z.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Councilman Mark Levine. (Photo: William Alatriste/NYC Council)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/city-council-passes-bill-tripling-traffic-signals-accessible-to-blind/" rel="bookmark">City Council Passes Bill Tripling Traffic Signals Accessible to Blind</a></h1>
+
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/ross/" title="View All Posts by Ross Barkan">Ross Barkan</a></span> 	</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+
+
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437357" class="post-437357 post type-post status-publish format-standard has-post-thumbnail hentry tag-akai-gurley tag-darren-wilson tag-eric-garner tag-fdr-drive tag-ferguson tag-harlem tag-lincoln-tunnel tag-michael-brown tag-nypd tag-police-brutality tag-riverside-drive tag-times-square tag-united-nations tag-west-side-highway entry-grid channel-news channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/protests-over-ferguson-and-nypd-deaths-strangle-streets-and-highways/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/img_4447.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Activists head up Seventh Avenue toward Times Square  (Photo: Will Bredderman)...." /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/protests-over-ferguson-and-nypd-deaths-strangle-streets-and-highways/" rel="bookmark">Protests Over Ferguson and NYPD Deaths Strangle Streets and Highways</a></h1>
+
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/will-bredderman/" title="View All Posts by Will Bredderman">Will Bredderman</a></span> 	</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+
+
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437206" class="post-437206 post type-post status-publish format-standard has-post-thumbnail hentry tag-andrew-cuomo tag-sandra-lee entry-grid style-feature channel-news channel-media channel-politics channel-new-york channel-style display-channel-news">
+	<a href="http://observer.com/2014/11/why-sandra-lee-is-more-valuable-to-cuomo-than-many-reckoned/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/nyo-cuomo-lee-32.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="NYO- CUOMO LEE-3" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/why-sandra-lee-is-more-valuable-to-cuomo-than-many-reckoned/" rel="bookmark">Why Sandra Lee Is More Valuable to Cuomo Than Many Reckoned</a></h1>
+
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/ben-widdicombe/" title="View All Posts by Ben Widdicombe">Ben Widdicombe</a></span> 	</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+
+
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437256" class="post-437256 post type-post status-publish format-standard has-post-thumbnail hentry tag-bill-bratton tag-bill-de-blasio tag-ferguson-missouri entry-grid channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/splashing-bratton-with-paint-a-cowardly-act-de-blasio-says/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/04/bill-bratton-getty.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="NYPD Commissioner Bill Bratton. (Photo: Andrew Burton/Getty)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/splashing-bratton-with-paint-a-cowardly-act-de-blasio-says/" rel="bookmark">Splashing Bratton With Paint a    Cowardly Act,    de Blasio Says</a></h1>
+
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/jill-jorgensen/" title="View All Posts by Jillian Jorgensen">Jillian Jorgensen</a></span> 	</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+
+
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+				
+<article id="post-437234" class="post-437234 post type-post status-publish format-standard has-post-thumbnail hentry entry-grid channel-politics display-channel-news">
+	<a href="http://observer.com/2014/11/city-investigators-say-mayors-union-meeting-should-have-been-open-to-press/"><img width="300" height="225" src="http://nyoobserver.files.wordpress.com/2014/11/de-blasio1.jpg?w=300&amp h=225&amp crop=1" class="attachment-grid-thumbnail" alt="Mayor Bill de Blasio in the Bronx today. (Photo: Jillian Jorgensen)" /></a>
+	<div class="entry-channel">
+		Politics	</div>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="http://observer.com/2014/11/city-investigators-say-mayors-union-meeting-should-have-been-open-to-press/" rel="bookmark">City Investigators Say Mayor   s Union Meeting Should Have Been Open to Press</a></h1>
+
+	<div class="entry-meta">
+		By <span class="author vcard" itemprop="author"><a rel="author" class="url fn n" href="/author/jill-jorgensen/" title="View All Posts by Jillian Jorgensen">Jillian Jorgensen</a></span> 	</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+
+
+</article><!-- #post-## -->
+				
+					                    
+											
+			
+			</section>
+
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		
+		
+		<aside>
+		<!-- Beginning Async AdSlot 3 for Ad unit observer_rightrail_pos1  ### size: [[300,250],[300,600],[300,1050]] -->
+		<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+		<div id='div-gpt-ad-771860824845458250-3'>
+			<script type='text/javascript'>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-771860824845458250-3')  }) 
+			</script>
+		</div>
+		<!-- End AdSlot 3 -->
+		</aside>
+
+		
+		
+		
+
+	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+
+	
+		<div class="network-footer">
+			<div class="network-footer-label">More from our network</div>
+			<div class="betabeat-footer network-block">
+				<a class="network-link" href="http://betabeat.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Betabeat Logo']) "><img src="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/images/betabeat-logo.png?m=1 7200852g"></a>
+				<div class="footer-links">
+					<ul>
+																												<li>
+									<a href="http://betabeat.com/2014/11/there-is-an-academic-journal-for-adventure-time-research/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Betabeat Story']) " >
+										There Is an Academic Journal for Adventure Time Research									</a>
+								</li>
+															<li>
+									<a href="http://betabeat.com/2014/11/netflix-ceo-broadcast-tv-will-be-dead-by-2030/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Betabeat Story']) " >
+										Netflix CEO: Broadcast TV Will Be Dead By 2030									</a>
+								</li>
+															<li>
+									<a href="http://betabeat.com/2014/11/todays-lesson-in-tech-pr-do-not-cc-every-tech-reporter-were-not-nice/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Betabeat Story']) " >
+										Today’s Lesson in Tech PR: Do Not CC Every Tech Reporter  We’re Not Nice									</a>
+								</li>
+																		</ul>
+				</div>
+			</div>
+			<div class="observer-footer network-block">
+				<a class="network-link" href="http://observer.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Observer Logo']) "><img src="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/images/observer.png?m=1 5127020g"></a>
+				<div class="footer-links">
+					<ul>
+																												<li>
+									<a href="http://observer.com/2014/11/weekend-read-thanksgiving/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Observer Story']) ">
+										Weekend Read: Jane Kramer’s August Thanksgiving in Italy									</a>
+								</li>
+															<li>
+									<a href="http://observer.com/2014/11/fans-brave-the-cold-as-hoodie-allen-spends-shabbos-at-the-garden/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Observer Story']) ">
+										Fans Brave the Cold as Hoodie Allen Spends Shabbos at the Garden									</a>
+								</li>
+															<li>
+									<a href="http://observer.com/2014/11/art-as-biosphere-a-walk-through-pierre-huyghes-lacma-survey/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Observer Story']) ">
+										Art as Biosphere: A Walk Through Pierre Huyghe’s LACMA Survey									</a>
+								</li>
+																		</ul>
+				</div>
+			</div>
+			<div class="co-footer network-block">
+				<a class="network-link" href="http://commercialobserver.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Commercial Observer Logo']) "><img src="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/images/co-logo.png?m=1 9101588g"></a>
+				<div class="footer-links">
+					<ul>
+																												<li>
+									<a href="http://commercialobserver.com/2014/11/with-3-wtc-financing-finally-a-done-deal-what-comes-next/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Commercial Observer Story']) ">
+										With 3 WTC Financing Finally a Done Deal, What Comes Next?									</a>
+								</li>
+															<li>
+									<a href="http://commercialobserver.com/2014/11/video-ofer-yardenis-bubble-throw-down/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Commercial Observer Story']) ">
+										VIDEO: Ofer Yardeni’s Bubble Throw Down									</a>
+								</li>
+															<li>
+									<a href="http://commercialobserver.com/2014/11/brack-capital-real-estate-gets-financing-for-627-greenwich-street-buy/" target="_blank" onClick="_gaq.push(['_trackEvent', 'Network Footer', 'Click', 'Commercial Observer Story']) ">
+										Brack Capital Gets Financing for 627 Greenwich Street Buy									</a>
+								</li>
+																		</ul>
+				</div>
+			</div>
+		</div>
+	
+		<div class="site-info">
+			<div class="nyo-footer">
+				<img width="184" height="240" src="http://s0.wp.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781g" data-lazy-src="http://nyoobserver.files.wordpress.com/2012/05/cover.jpg?w=184" class="nyo-cover wp-post-image" alt="cover" /><noscript><img width="184" height="240" src="http://nyoobserver.files.wordpress.com/2012/05/cover.jpg?w=184" class="nyo-cover wp-post-image" alt="cover" /></noscript>				<div><img class="nyo-reverse" src="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/images/nyo-reverse.png?m=1 5127020g" alt="New York Observer logo">
+				<div class="menu-nyo-footer-container"><ul id="menu-nyo-footer" class=""><li id="menu-item-342456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342456"><a href="http://observer.com/about/">About</a></li>
+<li id="menu-item-342404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342404"><a href="http://observer.com/rss-feeds/">RSS Feeds</a></li>
+<li id="menu-item-342 8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342 8"><a href="http://observer.com/subscribe/">Subscribe</a></li>
+<li id="menu-item-370343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-370343"><a href="/notices">Notices</a></li>
+</ul></div>
+				</div>
+			</div>
+
+			<div class="nyo-tips" id="tips-input">
+				<form id="tips-form">
+					<textarea id="tips-textarea" name="tip" placeholder="Send an anonymous tip"></textarea>
+					<input id="tips-currentPage" type="hidden" name="currentPage" value="http://observer.com/politics/"/>
+                    <button id="tips-submit" type="submit">Send</button>
+				</form>
+			</div>
+		</div><!-- .site-info -->
+
+		<div class="nyo-media-footer">
+			<span class="nyo-media"><img src="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/images/obsmedia.png?m=1 5127020g"></span>
+			<div class="menu-observer-media-footer-container"><ul id="menu-observer-media-footer" class="menu"><li id="menu-item-342408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-342408"><a target="_blank" href="http://observermedia.com">About</a></li>
+<li id="menu-item-343338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-343338"><a target="_blank" href="http://www.observermedia.com/digital/">Advertising</a></li>
+<li id="menu-item-  42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-  42"><a href="http://www.observermedia.com/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-3433 " class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3433 "><a target="_blank" href="http://www.observermedia.com/contact/">Contact</a></li>
+</ul></div>		</div>
+
+		<div class="vip-powered">
+		Powered by <a href="http://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a>		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<div id="nyomodal">
+	<img src="http://s0.wp.com/wp-content/themes/vip/newyorkobserver-2014/images/politicker.png?m=1 5904588g" />
+	<div class="dialog-content">
+		<p>Politicker.com is now part of Observer.com. We're bringing you more political news, as well as culture, style, real estate and opinion.</p>
+		<p>Don't miss the latest from City Hall, Albany and Washington. Subscribe to our newsletter and follow <em>New York Observer</em> on <a href="http://twitter.com/newyorkobserver" target="_blank">Twitter</a> and <a href="http://facebook.com/newyorkobserver" target="_blank">Facebook</a>.</p></div>
+	<div class="post-subscribe">
+	<form id="sailthru-subscribe" method="post">
+	    <label for="email">Subscribe to our Politics Newsletter</label>
+	    <input type="email" name="email" placeholder="Enter Email Address" />
+	    <input type="submit" value="Sign up" />
+	    <input type="hidden" name="lists[]" value="galleristny" />
+	</form>
 	</div>
 </div>
-</div>
 
-<!-- END CLASS="ADWRAPPER HOUSEAD" -->
-<div id="adhesion">
-      <div id="ad-mobile-wrap">
-    <div id="ad-mobile">
-            <script type="text/javascript">
-              if (DFP.shouldRenderForDevice('mobile')) {
-                var ord = window.ord || Math.floor(Math.random() * 1e16) 
-                
-                // use the smaller size for phone, the larger size for tablet
-                var sizes = '640x100' 
-                if (Modernizr.mq('only screen and (min-width: 768px)')) {
-                    sizes = '2048x180' 
-                }
-                
-                var targets = ' ' 
-                targets += 'program=All_Things_Considered ' 
-                targets += 'agg=103537970 ' 
-                targets += 'theme=103537970 ' 
-                targets += 'storyId=345289127 ' 
-                targets += 'blog=103537970 ' 
-                
-                document.write('<scr' + 'ipt type="text/javascript" src="http://ad.doubleclick.net/N6735/adj/n6735.nprmobile/News_Science' + targets + 'sz=' + sizes + ' ord=' + ord + '?"><\/script>') 
-              }
-            </script>
-    </div>
-</div> 
-</div>
 
-<!-- END ID="ADHESION" -->
-<footer id="nprfooter"><div class="footer-wrapper">
-      <div class="primary" data-metrics-category="Global Footer" data-metrics-visible="scroll-down end" data-metrics-label="Footer">
-    <ul>
-        <li><a href="/" data-action="Click Logo" data-metrics='{"action":"Click Footer Logo"}'></a></li>
-        <li class="news" data-metrics-action="Click News" data-metrics-all>
-            <a href="/sections/news/">News</a>
-            <ul>
-                <li><a href="/sections/us/">U.S.</a></li>
-                <li><a href="/sections/world/">World</a></li>
-                <li><a href="/sections/politics/">Politics</a></li>
-                <li><a href="/sections/business/">Business</a></li>
-                <li><a href="/sections/technology/">Technology</a></li>
-                <li><a href="/sections/science/">Science</a></li>
-                <li><a href="/sections/health/">Health</a></li>
-                <li><a href="/blogs/codeswitch/">Race &amp  Culture</a></li>
-                <li><a href="/blogs/ed/">Education</a></li>
-            </ul>
-        </li>
-        <li class="artslife" data-metrics-action="Click Arts &amp  Life" data-metrics-all>
-            <a href="/sections/arts/">Arts &amp  Life</a>
-            <ul>
-                <li><a href="/books/">Books</a></li>
-                <li><a href="/sections/movies/">Movies</a></li>
-                <li><a href="/sections/pop-culture/">Pop Culture</a></li>
-                <li><a href="/sections/food/">Food</a></li>
-                <li><a href="/sections/art-design/">Art &amp  Design</a></li>
-                <li><a href="/sections/performing-arts/">Performing Arts</a></li>
-                <li><a href="/blogs/pictureshow">Photography</a></li>
-            </ul>
-        </li>
-        <li class="music" data-metrics-action="Click Music" data-metrics-all>
-            <a href="/music/">Music</a>
-            <ul>
-                <li><a href="/series/98679384/first-listen/">First Listen</a></li>
-                <li><a href="/series/122356178/songs-we-love">Songs We Love</a></li>
-                <li><a href="/series/100920965/music-articles/">Music Articles</a></li>
-                <li><a href="/series/tiny-desk-concerts/">Tiny Desk Concerts</a></li>
-                <li><a href="/sections/music-videos/">Videos</a></li>
-            </ul>
-        </li>
-        <li class="programs" data-metrics-action="Click Programs" data-metrics-all>
-            <a href="/programs/">Programs</a>
-            <ul>
-                <li><a href="/programs/all-things-considered/">All Things Considered</a></li>
-                <li><a href="/programs/ask-me-another/">Ask Me Another</a></li>
-                <li><a href="http://www.cartalk.com" target="_blank">The Best Of Car Talk</a></li>
-                <li><a href="http://www.maximumfun.org/shows/bullseye" target="_blank">Bullseye</a></li>
-                <li><a href="http://thedianerehmshow.org" target="_blank">The Diane Rehm Show</a></li>
-                <li><a href="/programs/fresh-air/">Fresh Air</a></li>
-                <li><a href="http://hereandnow.wbur.org/" target="_blank">Here &amp  Now</a></li>
-                <li><a href="/programs/latino-usa/">Latino USA</a></li>
-                <li><a href="/programs/morning-edition/">Morning Edition</a></li>
-                <li><a href="http://www.onthemedia.org" target="_blank">On The Media</a></li>
-                <li><a href="http://www.onpointradio.org/" target="_blank">On Point</a></li>
-                <li><a href="http://www.radiolab.org" target="_blank">Radiolab</a></li>
-                <li><a href="/programs/snap-judgment/" target="_blank">Snap Judgment</a></li>
-                <li><a href="http://storycorps.org" class="storycorps" target="_blank">StoryCorps</a></li>
-                <li><a href="/programs/ted-radio-hour/">TED Radio Hour</a></li>
-                <li><a href="/programs/wait-wait-dont-tell-me/">Wait Wait...Don't Tell Me!</a></li>
-                <li><a href="/programs/weekend-edition-saturday/">Weekend Edition <span>Saturday</span></a></li>
-                <li><a href="/programs/weekend-edition-sunday/">Weekend Edition Sunday</a></li>
-            </ul>
-        </li>
-        <li class="listen" data-metrics-action="Click Listen" data-metrics-all>
-            <a href="/listen/">Listen</a>
-            <ul>
-                <li><a href="javascript:NPR.Player.openPlayer(0,0,null,NPR.Player.Action.PLAY_NOW, NPR.Player.Type.NEWSCAST, NPR.Player.Mode.FROM_FILE) " class="hourlyNews">Hourly News</a></li>
-                <li><a href="javascript:NPR.Player.openPlayer(0,0,null,NPR.Player.Action.LIVE_STREAM, NPR.Player.Type.PROGRAM_STREAM, NPR.Player.Mode.FROM_FILE) " class="programStream">NPR Program Stream</a></li>
-                <li><a href="/stations/">Find Station Streams</a></li>
-                <li><a href="/rss/podcast/podcast_directory.php">Podcasts</a></li>
-                <li><a href="/about-npr/187046089/ways-to-listen-to-npr">More Ways To Listen</a></li>
-            </ul>
-        </li>
-        <li class="about" data-metrics-action="Click About" data-metrics-all>
-            <a href="/about/">About</a>
-            <ul>
-                <li><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact Us</a></li>
-                <li><a href="http://shop.npr.org">NPR Shop</a></li>
-                <li><a href="http://tours.npr.org/npr/Home/">Visit NPR</a></li>
-                <li><a href="http://www.npr.org/about-npr/181953728/work-at-npr">Careers at NPR</a></li>
-                <li><a href="/about/press/">Press Room</a></li>
-                <li><a href="/blogs/thisisnpr/">'This Is NPR' Blog</a></li>
-                <li><a href="/about/support/">Support and Sponsor</a></li>
-                <li><a href="/templates/corrections/corrections.php">Corrections</a></li>
-                <li><a href="/blogs/ombudsman/">NPR Ombudsman</a></li>
-                <li><a href="/about-npr/179881519/rights-and-permissions-information">Permissions</a></li>
-                <li><a href="/email/">Email Newsletters</a></li>
-                <li><a href="/rss/">RSS Feeds</a></li>
-                <li><a href="/api/">The NPR API</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
 
-<div class="secondary">
-    <p class="copyright tablet">&copy  2014 NPR</p>
-    <ul>
-        <li><a href="http://help.npr.org">Help</a></li>
-        <li id="footerContact"><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact</a></li>
-        <li><a href="/about-npr/179876898/terms-of-use">Terms of Use</a></li>
-        <li><a href="/about-npr/179878450/privacy-policy">Privacy</a></li>
-        <li class="sponsorship-choices"><a href="/about-npr/179878450/privacy-policy#opting-out-of-cookies-and-web-beacons">Sponsorship Choices</a></li>
-        <li><a href="http://thin.npr.org/">Text-Only</a></li>
-    </ul>
-    <p class="copyright mobile desktop">&copy  2014 NPR</p>
+		<script type="text/javascript">
+		//<![CDATA[
+		var infiniteScroll = {"settings":{"id":"loopwrapper","ajaxurl":"http:\/\/observer.com\/?infinity=scrolling","type":"click","wrapper":true,"wrapper_class":"infinite-wrap","footer":true,"click_handle":"1","text":"More","totop":"Scroll back to top","currentday":"25.11.14","order":"DESC","scripts":[],"styles":[],"google_analytics":false,"offset":0,"history":{"host":"observer.com","path":"\/politics\/page\/%d\/","use_trailing_slashes":true,"parameters":""},"query_args":{"page":0,"channel":"politics","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","static":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"comments_popup":"","meta_key":"","meta_value":"","preview":"","s":"","sentence":"","fields":"","menu_order":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"posts_per_page":10,"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":false,"update_post_term_cache":true,"update_post_meta_cache":true,"post_type":"","nopaging":false,"comments_per_page":"50","no_found_rows":false,"taxonomy":"channel","term":"politics","order":"DESC"},"last_post_date":"2014-11-25 16:37:53","stats":"blog=35584880&v=wpcom&tz=-5&user_id=0&subd=nyoobserver&x_pagetype=infinite-click"}} 
+		//]]>
+		</script>
+			<div style="display:none">
+	</div>
+<!-- Sailthru Horizon  Async-->
+<script type="text/javascript">
+(function() {
+     function loadHorizon() {
+           var s = document.createElement('script') 
+           s.type = 'text/javascript' 
+          s.async = true 
+          s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js' 
+         var x = document.getElementsByTagName('script')[0] 
+         x.parentNode.insertBefore(s, x) 
+      }
+     loadHorizon() 
+      var oldOnLoad = window.onload 
+      window.onload = function() {
+          if (typeof oldOnLoad === 'function') {
+            oldOnLoad() 
+         }
+           Sailthru.setup({
+              domain: 'horizon.observer.com'
+         }) 
+     } 
+  })() 
+ </script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/tiled-gallery/tiled-gallery.css?m=1401143454g' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"0","is_front_page":"0","is_archive":"1","percentToTrack":"1"} 
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"http:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"} 
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJydk91ywiAQhV+ohMZRe9XpsyDZ0CXAUn4S49M3xtFJ20wVr0LY8y3scpYPnklyCVziOvIGepTgj5WOL3wRspl5kxW6yNG16DCNt8VvbfoEC5H36PmVCRA9uYg9MLRCTVG9svlPIgfDSKGjQ4TQQ2Cb13p7zqG/MoSxag0co8Fmilh0T+SZJU9wTvSoREJ65tDYoWcGXcdakjmyFm99RydNbi59utTIM16rzVhB24JM1aLYxwg2d6mEkxSK9AM2CopuZinHoiMm4+BJHEwR1AShVCl0yClNT1tAeIo426HkaigMqWrFuYux27CzlfTsKCacMGNC+WdkFgBY0sjT8ON7V68heSE79ph6VbUy/0acRmZINIuZjeREWCv6Hn/7mcAP+15v691+X+/fdvobiFPLGw=='></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var FB_WP=FB_WP||{} FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn fn=FB_WP.queue._methods.shift() ){fn()}FB_WP.queue.flushed=true}} window.fbAsyncInit=function(){FB.init({"channelUrl":"http:\/\/nyoobserver.wordpress.com\/wp-content\/themes\/vip\/plugins\/facebook\/channel.php","xfbml":true,"appId":"132947 0197809"}) if(FB_WP && FB_WP.queue && FB_WP.queue.flush){FB_WP.queue.flush()}}
+/* ]]> */
+</script>
+<div id="fb-root"></div><script type="text/javascript">(function(d){var id="facebook-jssdk" if(!d.getElementById(id)){var js=d.createElement("script"),ref=d.getElementsByTagName("script")[0] js.id=id,js.async=true,js.src="http:\/\/connect.facebook.net\/en_US\/all.js",ref.parentNode.insertBefore(js,ref)}})(document)</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-includes/js/swfobject.js,/wp-content/plugins/video/assets/js/videopress.js?m=1410991975j'></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??-eJyVy7EOQEAMANAfUnViYBDfgmsupepyivh7VpMY3/DwjDCuaqSGyw5R9sC6oZ1sRgkG6cd54OQhMqHSQYnUs4Z82jL8c+P3YyEPoRehdL31rG5pXVXUTVO70k03DU5D1g=='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script') 
+      jl.type='text/javascript' 
+      jl.async=true 
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php' 
+      var s = document.getElementsByTagName('script')[0] 
+      s.parentNode.insertBefore(jl, s) 
+    }
+  }
+}catch(e){}
+})() 
+// ]]>
+</script><script type="text/javascript">
+			jQuery.extend( infiniteScroll.settings.scripts, ["jquery","mobile-useragent-info","jquery-core","jquery-migrate","postmessage","jquery_inview","jetpack_resize","modernizr","jqhammer","sailthru-subscribe-script","spin","jquery.spin","devicepx","the-neverending-homepage","responsive-images","flexslider","observer-scripts","observer-navigation","observer-skip-link-focus-fix","jquery-effects-core","jquery-effects-slide","jquery-ui-core","jquery-ui-widget","jquery-ui-mouse","jquery-ui-resizable","jquery-ui-draggable","jquery-ui-button","jquery-ui-position","jquery-ui-dialog","wpcom-vip-analytics","twemoji","jetpack-emoji","jetpack-emoji-init","jquery-sonar","wpcom-lazy-load-images","facebook-jssdk","swfobject","videopress","twitter-widgets","twitter-widgets-infinity","twitter-widgets-pending","tiled-gallery"] ) 
+			jQuery.extend( infiniteScroll.settings.styles, ["smileyproject","jetpack_likes","the-neverending-homepage","wpcom-core-compat-playlist-styles","mp6hacks","taxonomy-image-plugin-public","observer-style","flexslider-styles","sailthru-subscribe-widget-styles","jetpack-emoji-css","noticons","geo-location-flair","reblogging","h4-global","observer-fonts","font-awesome","jquery-dialog-style","tiled-gallery"] ) 
+		</script><script src="//stats.wp.com/w.js?27" type="text/javascript"></script>
+<script type="text/javascript">
+_tkq = window._tkq || [] 
+_tkq.push(['storeContext', {'blog_id':'35584880','blog_tz':'-5','user_lang':'en','blog_lang':'en','user_id':'0'}]) 
+st_go({'blog':'35584880','v':'wpcom','tz':'-5','user_id':'0','subd':'nyoobserver'}) 
+function st_vt() {var x=document.createElement("img") x.src="http://pixel.wp.com/g.gif?blog=35584880&v=wpcomvt&tz=-5&user_id=0&subd=nyoobserver&rand="+Math.random() }
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXRThKbHcwXTdETWI1alhvb1oseHImN101ZFpEakVpYjlQYVFLYzBaVHRtPz0wXS9baDAtJkxlVExOb21aUjJIPzZdLU5YSFlfOUpMX11xcUF4OGYxaU8xNCYsLWJxazQ4ZVNaOEM9UVR1QTcmSDF5JUlPMSUwTl1ON2x6SH5yZDZFUFVHfHM0Nm9DTTZfTiZdVnxuOUQrdyVtcj81W3gmL0xCfCwrJXF5aVVFLEg/ZlBJckF+ZGcsMHRdT1VmXVtybn5id1dSSXVjcX5ubEk2VC5XQzc5YmhhUzVUbVglY2YyLTJ+YSwmQQ=='}) 
+addLoadEvent(function(){linktracker_init('35584880',0) }) 
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px width:0px overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init() 
+	var mobileStatsQueryString = "" 
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName 
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName 
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views' 
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random() 
+	}
+	
+}
+</script>
+<script>
+	window._taboola = window._taboola || [] 
+	_taboola.push({flush:true}) 
+</script>
+
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [] 
+
+(function() {
+var elem = document.createElement('script') 
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js" 
+elem.async = true 
+elem.type = "text/javascript" 
+var scpt = document.getElementsByTagName('script')[0] 
+scpt.parentNode.insertBefore(elem, scpt) 
+})() 
+
+_qevents.push({
+qacct:"p-8e-8kU1qcT19Y"
+}) 
+</script>
+
+<noscript>
+<div style="display:none ">
+<img src="//pixel.quantserve.com/pixel/p-8e-8kU1qcT19Y.gif" border="0" height="1" width="1" alt="Quantcast"/>
 </div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<div class="footer-ads">
+<!-- Beginning Async AdSlot 1 for Ad unit observer_interstitial  ### size: [[1,1]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-9066102 927837093-1'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-9066102 927837093-1')  }) 
+</script>
 </div>
-</footer><script type="text/javascript" src="http://s.npr.org/templates/javascript/generated/fingerprint/baseStory-b7a091c09cc3d013e056b66280996ecac7406823.js">
-   </script>
-<script type="text/javascript">window.NREUM||(NREUM={}) NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"ece810d90e","applicationID":"3472094","transactionName":"Y1NRZkQDV0JRAkAPWloZcEdFFlZcHyNYCVJ6U0RBZRZWQ0ktVR9aQUI=","queueTime":0,"applicationTime":202,"ttGuid":"","agentToken":"","atts":"TxRSEAwZREw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body></html><!--  Burned on demand at 2014-11-29 00:29:21--><!-- LIVE -->
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot oop for Ad unit observer_interstitial  ### size:  -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[0]]) -->
+<div id='div-gpt-ad-9066102 927837093-oop'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-9066102 927837093-oop')  }) 
+</script>
+</div>
+<!-- End AdSlot oop -->
+</div>
+<!-- Begin Chartbeat tag -->
+<script type="text/javascript">
+   var _sf_async_config = { uid: 13018, domain: 'observer.com', useCanonical: true } 
+   (function() {
+     function loadChartbeat() {
+       window._sf_endpt = (new Date()).getTime() 
+       var e = document.createElement('script') 
+       e.setAttribute('language', 'javascript') 
+       e.setAttribute('type', 'text/javascript') 
+       e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js') 
+       document.body.appendChild(e) 
+     } 
+     var oldonload = window.onload 
+     window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload()  loadChartbeat()  } 
+   })() 
+</script>
+<!-- End Chartbeat tag -->
+
+<!-- PubExchange begin -->
+<script>(function(d, s, id) {
+        var js, pjs = d.getElementsByTagName(s)[0] 
+        if (d.getElementById(id)) return 
+        js = d.createElement(s)  js.id = id  js.async = true 
+        js.src = "http://cdn.pubexchange.com/modules/partner/new_york_observer" 
+        pjs.parentNode.insertBefore(js, pjs) 
+    }(document, 'script', 'pubexchange-jssdk')) </script>
+
+<!-- PubExchange end -->
+
+</body>
+</html>

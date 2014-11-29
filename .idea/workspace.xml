@@ -5,255 +5,233 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be9eaf9a-19fc-4629-ae40-f21a0f0017fe" name="Default" comment="Added pig and rearrange codes">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/url_356.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/url_357.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/url_358.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/url_359.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/url_360.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_100.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_101.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_103.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_104.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_105.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_106.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_107.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_108.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_111.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_113.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_114.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_115.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_116.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_117.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_119.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_120.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_123.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_125.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_128.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_130.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_131.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_132.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_133.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_134.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_136.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_137.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_138.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_14.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_144.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_147.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_148.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_149.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_150.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_151.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_153.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_154.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_155.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_156.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_157.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_158.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_160.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_162.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_164.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_165.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_167.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_174.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_176.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_192.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_194.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_20.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_202.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_21.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_213.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_217.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_22.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_221.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_225.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_226.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_227.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_228.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_229.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_230.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_231.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_233.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_236.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_240.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_241.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_243.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_245.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_246.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_247.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_248.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_25.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_250.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_251.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_252.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_253.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_254.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_255.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_256.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_258.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_259.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_260.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_261.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_262.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_263.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_264.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_265.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_266.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_267.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_268.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_269.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_27.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_270.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_271.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_272.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_274.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_275.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_276.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_277.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_278.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_279.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_28.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_280.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_281.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_282.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_283.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_284.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_285.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_286.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_287.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_288.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_289.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_29.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_290.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_291.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_292.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_293.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_294.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_295.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_296.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_297.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_298.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_299.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_30.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_300.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_301.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_302.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_303.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_305.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_306.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_307.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_308.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_309.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_31.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_310.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_311.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_312.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_313.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_316.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_317.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_32.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_320.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_322.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_323.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_324.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_325.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_326.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_327.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_328.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_33.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_330.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_331.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_332.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_333.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_336.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_337.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_338.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_339.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_34.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_340.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_341.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_342.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_343.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_344.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_345.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_346.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_347.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_348.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_349.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_35.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_350.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_351.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_352.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_353.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_356.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_357.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_36.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_37.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_38.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_39.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_41.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_42.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_44.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_45.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_46.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_47.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_48.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_49.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_50.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_51.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_52.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_53.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_54.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_55.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_56.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_58.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_59.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_60.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_62.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_63.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_64.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_66.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_68.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_69.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_70.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_71.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_72.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_75.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_78.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_79.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_80.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_82.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_83.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_85.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_97.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_98.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/topic/topics/paragraph_99.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pig/new_topics/.part-r-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pig/new_topics/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pig/new_topics/part-r-00000" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic/all_topics.txt" afterPath="$PROJECT_DIR$/topic/all_topics.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/url/all_urls.txt" afterPath="$PROJECT_DIR$/url/all_urls.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster_hdfs.sh" afterPath="$PROJECT_DIR$/cluster_hdfs.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster_localfs.sh" afterPath="$PROJECT_DIR$/cluster_localfs.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster_origin.sh" afterPath="$PROJECT_DIR$/cluster_origin.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug/debug_page.html" afterPath="$PROJECT_DIR$/debug/debug_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetchparagraph_v1.py" afterPath="$PROJECT_DIR$/fetchparagraph_v1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetchtitle_v2.py" afterPath="$PROJECT_DIR$/fetchtitle_v2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/home_.html" afterPath="$PROJECT_DIR$/res/home_.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_0.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_0.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_1.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_10.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_10.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_100.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_100.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_101.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_101.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_103.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_103.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_104.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_104.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_105.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_105.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_106.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_106.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_107.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_107.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_108.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_108.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_11.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_111.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_111.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_113.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_113.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_114.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_114.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_116.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_116.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_118.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_118.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_119.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_119.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_12.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_12.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_122.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_122.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_127.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_127.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_129.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_129.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_13.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_13.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_130.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_130.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_131.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_131.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_133.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_133.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_135.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_135.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_136.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_136.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_137.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_137.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_14.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_14.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_143.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_143.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_149.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_149.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_151.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_151.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_152.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_152.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_153.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_153.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_154.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_154.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_155.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_155.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_156.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_156.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_158.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_158.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_160.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_160.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_17.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_17.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_18.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_18.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_19.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_19.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_2.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_20.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_20.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_200.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_200.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_21.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_21.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_211.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_211.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_215.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_215.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_219.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_219.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_223.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_223.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_224.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_224.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_225.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_225.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_226.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_226.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_227.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_227.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_229.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_229.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_234.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_234.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_238.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_238.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_239.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_239.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_241.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_241.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_243.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_243.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_244.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_244.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_245.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_245.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_246.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_246.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_248.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_248.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_249.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_249.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_25.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_25.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_250.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_250.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_251.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_251.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_252.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_252.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_253.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_253.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_254.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_254.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_256.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_256.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_257.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_257.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_258.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_258.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_259.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_259.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_260.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_260.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_261.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_261.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_262.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_262.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_263.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_263.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_264.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_264.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_265.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_265.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_266.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_266.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_268.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_268.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_269.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_269.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_27.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_27.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_270.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_270.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_272.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_272.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_273.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_273.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_274.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_274.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_275.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_275.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_276.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_276.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_277.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_277.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_278.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_278.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_279.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_279.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_28.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_28.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_280.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_280.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_281.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_281.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_282.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_282.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_283.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_283.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_284.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_284.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_285.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_285.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_286.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_286.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_287.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_287.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_288.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_288.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_289.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_289.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_29.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_29.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_290.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_290.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_291.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_291.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_292.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_292.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_293.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_293.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_294.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_294.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_295.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_295.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_296.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_296.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_297.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_297.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_298.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_298.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_299.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_299.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_3.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_30.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_30.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_300.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_300.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_301.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_301.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_303.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_303.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_304.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_304.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_305.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_305.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_306.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_306.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_307.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_307.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_308.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_308.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_309.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_309.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_31.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_31.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_310.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_310.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_311.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_311.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_312.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_312.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_314.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_314.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_315.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_315.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_318.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_318.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_319.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_319.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_32.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_32.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_320.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_320.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_321.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_321.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_322.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_322.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_323.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_323.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_324.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_324.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_325.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_325.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_326.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_326.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_328.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_328.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_329.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_329.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_33.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_33.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_330.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_330.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_331.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_331.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_332.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_332.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_334.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_334.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_335.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_335.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_336.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_336.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_337.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_337.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_338.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_338.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_339.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_339.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_34.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_34.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_340.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_340.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_341.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_341.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_342.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_342.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_343.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_343.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_344.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_344.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_345.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_345.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_346.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_346.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_347.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_347.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_348.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_348.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_349.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_349.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_35.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_35.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_350.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_350.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_351.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_351.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_354.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_354.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_355.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_355.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_38.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_38.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_39.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_39.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_4.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_41.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_41.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_42.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_42.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_44.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_44.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_45.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_45.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_46.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_46.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_47.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_47.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_48.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_48.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_49.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_49.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_5.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_50.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_50.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_51.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_51.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_52.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_52.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_53.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_53.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_54.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_54.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_55.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_55.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_56.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_56.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_58.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_58.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_59.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_59.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_6.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_60.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_60.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_62.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_62.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_63.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_63.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_64.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_64.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_66.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_66.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_68.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_68.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_69.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_69.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_7.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_7.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_70.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_70.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_71.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_71.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_72.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_72.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_75.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_75.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_78.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_78.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_79.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_79.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_8.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_8.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_80.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_80.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_82.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_82.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_83.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_83.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_85.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_85.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_9.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_9.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_97.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_97.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_98.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_98.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paragraph/data/paragraph_99.txt" afterPath="$PROJECT_DIR$/paragraph/data/paragraph_99.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pig/topics_analysis.pig" afterPath="$PROJECT_DIR$/pig/topics_analysis.pig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_0.html" afterPath="$PROJECT_DIR$/res/url_0.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_1.html" afterPath="$PROJECT_DIR$/res/url_1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_10.html" afterPath="$PROJECT_DIR$/res/url_10.html" />
@@ -341,7 +319,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_174.html" afterPath="$PROJECT_DIR$/res/url_174.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_175.html" afterPath="$PROJECT_DIR$/res/url_175.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_176.html" afterPath="$PROJECT_DIR$/res/url_176.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_177.html" afterPath="$PROJECT_DIR$/res/url_177.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_178.html" afterPath="$PROJECT_DIR$/res/url_178.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_179.html" afterPath="$PROJECT_DIR$/res/url_179.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_18.html" afterPath="$PROJECT_DIR$/res/url_18.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_180.html" afterPath="$PROJECT_DIR$/res/url_180.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_181.html" afterPath="$PROJECT_DIR$/res/url_181.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_182.html" afterPath="$PROJECT_DIR$/res/url_182.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_183.html" afterPath="$PROJECT_DIR$/res/url_183.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/url_184.html" afterPath="$PROJECT_DIR$/res/url_184.html" />
@@ -617,9 +600,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TrendyWrite_api$wordcount.coverage" NAME="wordcount Coverage Results" MODIFIED="1410805708276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchparagraph_v1.coverage" NAME="fetchparagraph_v1 Coverage Results" MODIFIED="1417238719087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchtitle_v2.coverage" NAME="fetchtitle_v2 Coverage Results" MODIFIED="1417240041784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$wordcount.coverage" NAME="wordcount Coverage Results" MODIFIED="1417278105874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchparagraph_v1.coverage" NAME="fetchparagraph_v1 Coverage Results" MODIFIED="1417272843102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchtitle_v2.coverage" NAME="fetchtitle_v2 Coverage Results" MODIFIED="1417277951128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -636,49 +619,43 @@
       <file leaf-file-name="fetchtitle_v2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="4590">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="839" max-vertical-offset="4560">
+              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+              <folding>
+                <element signature="e#573#586#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fetchparagraph_v1.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="fetchparagraph_v1.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fetchparagraph_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4094" max-vertical-offset="4770">
-              <caret line="307" column="19" selection-start-line="307" selection-start-column="19" selection-end-line="307" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.30405405" vertical-offset="915" max-vertical-offset="4770">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <file leaf-file-name="topics_analysis.pig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pig/topics_analysis.pig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6576576" vertical-offset="7529" max-vertical-offset="8640">
-              <caret line="554" column="19" selection-start-line="554" selection-start-column="19" selection-end-line="554" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cluster_localfs.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster_localfs.sh">
+      <file leaf-file-name="wordcount.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordcount.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="945">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cluster_hdfs.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster_hdfs.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="960">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="395" max-vertical-offset="1095">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <folding>
+                <element signature="e#113#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -698,13 +675,14 @@
       <list>
         <option value="$PROJECT_DIR$/ref/sample.py" />
         <option value="$PROJECT_DIR$/topic/all_topics.txt" />
-        <option value="$PROJECT_DIR$/wordcount.py" />
         <option value="$PROJECT_DIR$/filter/hottest_words.txt" />
         <option value="$PROJECT_DIR$/cluster_origin.sh" />
         <option value="$PROJECT_DIR$/cluster_localfs.sh" />
         <option value="$PROJECT_DIR$/cluster_hdfs.sh" />
         <option value="$PROJECT_DIR$/fetchparagraph_v1.py" />
+        <option value="$PROJECT_DIR$/pig/topics_analysis.pig" />
         <option value="$PROJECT_DIR$/fetchtitle_v2.py" />
+        <option value="$PROJECT_DIR$/wordcount.py" />
       </list>
     </option>
   </component>
@@ -769,7 +747,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -798,12 +775,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="debug" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -822,7 +814,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.fetchtitle_v2">
+  <component name="RunManager" selected="Python.wordcount">
     <configuration default="false" name="fetchtitle_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -904,6 +896,17 @@
       <option name="OPTIONS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -968,9 +971,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -992,6 +992,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1041,9 +1044,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.fetchtitle_v2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.fetchparagraph_v1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.wordcount" />
+        <item index="0" class="java.lang.String" itemvalue="Python.wordcount" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fetchtitle_v2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fetchparagraph_v1" />
       </list>
     </recent_temporary>
   </component>
@@ -1081,28 +1084,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34517047" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25928918" sideWeight="0.4957627" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21243942" sideWeight="0.4947146" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37073863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25928918" sideWeight="0.50211865" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21243942" sideWeight="0.50317127" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3224432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34517047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914772" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1135,9 +1138,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4560">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchparagraph_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="4785">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pig/topics_analysis.pig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="705">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
           <caret line="173" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="301" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="780">
           <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,7 +1191,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
           <caret line="173" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="301" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1177,7 +1209,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4560">
           <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,7 +1233,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="4500">
           <caret line="201" column="1" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,7 +1250,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4155">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1669" max-vertical-offset="77265">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,64 +1291,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20150375" vertical-offset="15241" max-vertical-offset="25110">
-          <caret line="1090" column="12" selection-start-line="1090" selection-start-column="12" selection-end-line="1090" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordcount.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80088496" vertical-offset="492" max-vertical-offset="1170">
-          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cluster_origin.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4524887" vertical-offset="0" max-vertical-offset="663">
           <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cluster_hdfs.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="960">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cluster_localfs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="795">
+        <state vertical-scroll-proportion="0.31213018" vertical-offset="269" max-vertical-offset="945">
           <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
+    <entry file="file://$PROJECT_DIR$/cluster_hdfs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="4590">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetchparagraph_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4094" max-vertical-offset="4770">
-          <caret line="307" column="19" selection-start-line="307" selection-start-column="19" selection-end-line="307" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.19822486" vertical-offset="211" max-vertical-offset="960">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6576576" vertical-offset="7529" max-vertical-offset="8640">
-          <caret line="554" column="19" selection-start-line="554" selection-start-column="19" selection-end-line="554" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.20118344" vertical-offset="7964" max-vertical-offset="8640">
+          <caret line="543" column="40" selection-start-line="543" selection-start-column="40" selection-end-line="543" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325301" vertical-offset="7077" max-vertical-offset="24210">
+          <caret line="489" column="0" selection-start-line="489" selection-start-column="0" selection-end-line="489" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325301" vertical-offset="87" max-vertical-offset="720">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5572139" vertical-offset="17266" max-vertical-offset="25110">
+          <caret line="1231" column="41" selection-start-line="1231" selection-start-column="41" selection-end-line="1231" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="395" max-vertical-offset="1095">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#113#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pig/topics_analysis.pig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchtitle_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="839" max-vertical-offset="4560">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="e#573#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetchparagraph_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30405405" vertical-offset="915" max-vertical-offset="4770">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding />
         </state>
       </provider>

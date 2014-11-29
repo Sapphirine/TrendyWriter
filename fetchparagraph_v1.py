@@ -31,15 +31,15 @@ store_url = 'url/all_urls.txt'
 
 # debug variables:
 DEBUG = False
-debug_url = 'http://www.c-span.org/'
+debug_url = 'http://www.huffingtonpost.com/syndication/'
 debug_storepath = 'debug/debug_page.html'
 
 
 def welcome_text():
     print ''
-    print '================================='
-    print 'Fetch URL and title from Web tool'
-    print '================================='
+    print '========================================================='
+    print '             Crawl URL and paragraph from Web tool       '
+    print '========================================================='
     print '---------------------------------------------------------'
     print '[DEVELOPER MODE]'
     print 'Step 1: python fetchtitle_v2.py | tee debug.txt'
@@ -246,7 +246,7 @@ def main():
         # debug_htmltxt2 = reading_file.read()
 
         url_parser = CrawlParagraph(False, debug_url)
-        url_parser.feed(debug_htmltxt.decode('utf-8'))
+        url_parser.feed(debug_htmltxt.decode('ISO-8859-1'))
         # url_parser.feed(debug_htmltxt2.decode('utf-8'))
         url_parser.close()
     else:
@@ -304,7 +304,7 @@ def main():
                     parser.feed(htmltxt2.decode('utf-8'))
                 except Exception:
                     print '[ERROR] Parsing Error: ', pageUrl, ' in ', store_html_path
-                    parser.feed(unicode(htmltxt2, encoding='utf-8', errors='ignore'))
+                    parser.feed(unicode(htmltxt2, encoding='ISO-8859-1', errors='ignore'))
                 parser.close()
                 fetch_handler.close()
                 i += 1

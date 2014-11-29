@@ -31,20 +31,20 @@ store_url = 'url/all_urls.txt'
 
 # debug variables:
 DEBUG = False
-debug_url = 'http://www.c-span.org/'
+debug_url = 'http://www.huffingtonpost.com/syndication/'
 debug_storepath = 'debug/debug_page.html'
 
 
 def welcome_text():
-    print ""
-    print "================================="
-    print "Fetch URL and title from Web tool"
-    print "================================="
-    print "--------------------------------------------------------------"
-    print "[DEVELOPER MODE]"
-    print "Step 1: python fetchtitle_v2.py | tee debug.txt"
-    print "Step 2: (IF NECESSARY) grep 'ERROR' debug.txt > error.txt"
-    print "--------------------------------------------------------------"
+    print ''
+    print '========================================================='
+    print '            Crawl URL and title from Web tool            '
+    print '========================================================='
+    print '---------------------------------------------------------'
+    print '[DEVELOPER MODE]'
+    print 'Step 1: python fetchtitle_v2.py | tee debug.txt'
+    print 'Step 2: (IF NECESSARY) grep "ERROR" debug.txt > error.txt'
+    print '---------------------------------------------------------'
 
 class CrawlTitlesAndUrls(HTMLParser):
     """
@@ -178,11 +178,11 @@ class CrawlTitlesAndUrls(HTMLParser):
                     # Eliminate duplicated topics.
                     # @formatter:on
                     if not data.encode('utf-8').strip() in CrawlTitlesAndUrls.topic_list:
-                        # The "print" can only output Ascii encoded normal String
-                        # ,so use "encode()" method to return Ascii normal String.
+                        # The "print" can only output Ascii encoded normal Str
+                        # ,so use "encode()" method to return Ascii normal Str.
                         print '[INFO] Data = ', data.encode('utf-8').strip()
                         with open(store_topic, 'a') as writing_file:
-                            # Use "encode()" method to return Ascii normal String
+                            # Use "encode()" method to return Ascii normal Str
                             writing_file.write(data.encode('utf-8').strip())
                             writing_file.write('\n')
                         CrawlTitlesAndUrls.topic_list.append(data.encode('utf-8').strip())
@@ -231,9 +231,6 @@ def main():
         debug_htmltxt = debug_htmltxt.replace('&#', ' ')
         debug_handler.close()
 
-        # with open(debug_storepath) as reading_file:
-        # debug_htmltxt2 = reading_file.read()
-
         url_parser = CrawlTitlesAndUrls(False, debug_url)
         url_parser.feed(debug_htmltxt.decode('utf-8'))
         # url_parser.feed(debug_htmltxt2.decode('utf-8'))
@@ -252,7 +249,7 @@ def main():
 
         # Make sure to use urlopen to open html file(Unicode).
         home_handler = urllib.urlopen(url)
-        # Method "read()" return Ascii encoded normal String(htmltxt).
+        # Method "read()" return Ascii encoded normal Str(htmltxt).
         htmltxt = home_handler.read()
         home_handler.close()
 
@@ -271,7 +268,7 @@ def main():
 
                 # Read html text from Web.
                 fetch_handler = urllib.urlopen(pageUrl)
-                # "read()" return Ascii encoded normal String(htmltxt2)
+                # "read()" return Ascii encoded normal Str(htmltxt2)
                 htmltxt2 = fetch_handler.read()
 
                 # (TMP) TEMPORARY SOLUTION..
@@ -292,7 +289,7 @@ def main():
                     parser.feed(htmltxt2.decode('utf-8'))
                 except Exception:
                     print '[ERROR] Parsing Error: ', pageUrl, ' in ', store_html_path
-                    parser.feed(unicode(htmltxt2, encoding='utf-8', errors='ignore'))
+                    parser.feed(unicode(htmltxt2, encoding='ISO-8859-1', errors='ignore'))
                 parser.close()
                 fetch_handler.close()
                 i += 1
