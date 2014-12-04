@@ -1,0 +1,10 @@
+Get PW Digital for justOur picture book, middle grade, and YA favorites.Talking with Frances Itani.But case is far from over.The biggest in books.From Hugh Howey, Marissa Meyer, and more.Getting healthy, by the numbers.M.C.A. Hogarth's history of innovation.Loading...PasswordLog InLost Password.  For more information, clickclick here. To subscribe,Emailwith questions.If you have questions:Email:Call: 1-800-278-2991 (US) or 1-818-487-2069 (Outside US/Canada) 5 a.m. - 5 p.m. Mon-Fri (Pacific)Not Registered?_qoptions={
+	qacct:"p-41pJuP7EJbuEo"
+	}_bizo_data_partner_id = "756"(function() {
+	  var s = document.getElementsByTagName("script")[0] 
+	  var b = document.createElement("script") 
+	  b.type = "text/javascript" 
+	  b.async = true 
+	  b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js" 
+	  s.parentNode.insertBefore(b, s) 
+	})()

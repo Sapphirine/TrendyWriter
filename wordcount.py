@@ -7,6 +7,9 @@ from stemming.porter2 import stem
 from nltk.corpus import stopwords
 from nltk.collocations import *
 from nltk.tokenize import *
+from pymongo import MongoClient
+import datetime
+
 
 filename = str(sys.argv.pop())
 #txtfile = open("ulysses.txt","r+")
@@ -33,14 +36,17 @@ for word in words:
 counts = wordcount.items()
 sorted_counts = sorted(counts, key=operator.itemgetter(1))
 
+mnls_word = ['make','get','set','say','said', 'new', 'it\'s',
+			'don\'t', 'may', 'here\'s', 'like', 'thing', 'one', 'take', 'best']
+
 for k,v in sorted_counts:
-	if v > 20:
+	if v > 5:
 		#tag = nltk.pos_tag(word_tokenize(k))
 		#if tag[0][1] != 'VB':
-		mnls_word = ['make','get','set','say','said', 'new', 'it\'s', 
-			'don\'t', 'may', 'here\'s', 'like', 'thing', 'one', 'take', 'best']
+
 		if k not in mnls_word:
 			print k, v
+
 
 '''
 bigram_measures = nltk.collocations.BigramAssocMeasures()
