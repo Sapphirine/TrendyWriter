@@ -33,11 +33,19 @@ class myHandler(BaseHTTPRequestHandler):
 				single = db[field+'_single_word']
 				top_words = single.find().limit(20)
 				message = []
+
 				for word in top_words:
 					a_word = {'word': word['word']}
 					if len(word['cluster'])>0:
 						a_word['cluster'] = word['cluster']
 					message.append(a_word)
+
+				double = db[field+'_phrase']
+				top_phrases = double.find().limit(10)
+				for phrase in top_phrases:
+					a_phrase = {'word' : phrase['word']}
+					message.append(a_phrase)
+
 				self.send_response(200, message)
 				self.send_header("Content_type", "text/html")
 				self.end_headers()

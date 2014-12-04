@@ -33,9 +33,10 @@ def insert(path):
 			word_instance = Word(w,int(c), clus_names)
 			word_id = single_word.insert(word_instance.d)
 			#print word_id
-	"""
-	with open("result/" + path+"hottest_words.txt", "r+") as collocation:
-		for line in collocation:
-			phrase_instance = Word(line)
-			phrase_id = single_word.insert(phrase_instance)
-			"""
+
+	with open("result/" + path+"/hottest_words.txt", "r+") as collo:
+		phrase = db[path+'_phrase']
+		for line in collo:
+			phrase_instance = Word(line.translate(None,',.?()_:\'\n\t'),0,[])
+			phrase_id = phrase.insert(phrase_instance.d)
+

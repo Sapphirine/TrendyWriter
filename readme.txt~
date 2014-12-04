@@ -2,7 +2,7 @@ new functions to insert clusters and single words into mongodb
 how to run:
 	create folders under the result folder using the name of fields (news, for example, is used in the test case)
 	run insert.py with the name of fields as argument, it will automatically search for the result/{field_name}/ folder for files
-	files required: part-r-00000(word count result)
+	files required: part-r-00000(pig word count result)
 			topics_clusters_dump
 
 then run server.py when insertion complete, default port: 9000
