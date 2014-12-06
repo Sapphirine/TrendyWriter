@@ -6,7 +6,7 @@
 
 -- Load data from local path into a table, which contains each line of the files(each topic).
 -- Column name: line; Column type: chararray;
-topics = LOAD '/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api/topic/all_topics.txt' AS (line:chararray);
+topics = LOAD '/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api/topic/all_topics_hp_politics.txt' AS (line:chararray);
 -- or [ $ topics = LOAD '/Users/Marcus/Desktop/all_topics.txt' ] , which provide the same result
 
 -- Flatten each line(bag) into a collection words, which results in a bigger collection of words. 

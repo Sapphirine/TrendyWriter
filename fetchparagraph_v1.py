@@ -41,8 +41,8 @@ def welcome_text():
     print '             Crawl URL and paragraph from Web tool       '
     print '========================================================='
     print '---------------------------------------------------------'
-    print '[DEVELOPER MODE]'
-    print 'Step 1: python fetchtitle_v2.py | tee debug.txt'
+    print '                     [DEVELOPER MODE]                    '
+    print 'Step 1: python fetchtitle_v2.py | tee debug.txt          '
     print 'Step 2: (IF NECESSARY) grep "ERROR" debug.txt > error.txt'
     print '---------------------------------------------------------'
 
@@ -252,7 +252,6 @@ def main():
     else:
         # Clean the to-process files.
         open(store_url, 'w').close()
-        open(store_paragraph, 'w').close()
 
         url = raw_input('Enter an url : ')
         url = url.strip()

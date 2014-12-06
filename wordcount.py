@@ -1,6 +1,5 @@
 #!/usr/bin/env python2.7
 
-
 """ @package default
 [USAGE]
 python wordcount.py | tee debug.txt
@@ -51,13 +50,12 @@ for k, v in sorted_counts:
     with open('filter/hottest_singleword.txt', 'a') as writing_file:
         writing_file.write(k.encode('utf-8') + ' [' + str(v) + ']' + '\n')
 
-# Find one relative word('BigramAssocMeasures()'') of a word, according to the interval between them (
-# 'window_size=7').
+# Find two relative words('BigramAssocMeasures()'), according to the interval between them ('window_size').
 bigram_measures = nltk.collocations.BigramAssocMeasures()
+# Find three relative words('TrigramAssocMeasures()'), according to the interval between them ('window_size').
 # trigram_measures = nltk.collocations.TrigramAssocMeasures()
 
-# (TODO) Still have some encoding error..
-finder = BigramCollocationFinder.from_words(stemmed_words, window_size=2)
+finder = BigramCollocationFinder.from_words(stemmed_words, window_size=3)
 finder.apply_freq_filter(3)
 # Here print Ascii String
 print finder.nbest(bigram_measures.pmi, 20)

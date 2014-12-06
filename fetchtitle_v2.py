@@ -41,8 +41,8 @@ def welcome_text():
     print '            Crawl URL and title from Web tool            '
     print '========================================================='
     print '---------------------------------------------------------'
-    print '[DEVELOPER MODE]'
-    print 'Step 1: python fetchtitle_v2.py | tee debug.txt'
+    print '                     [DEVELOPER MODE]                    '
+    print 'Step 1: python fetchtitle_v2.py | tee debug.txt          '
     print 'Step 2: (IF NECESSARY) grep "ERROR" debug.txt > error.txt'
     print '---------------------------------------------------------'
 
