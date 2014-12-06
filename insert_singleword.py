@@ -20,6 +20,7 @@ def insert(path):
 	client = MongoClient()
 	db = client['test']
 	single_word = db[path+'_single_word']
+	single_word.drop()
 
 	with open("result/" + path+"/part-r-00000","r+") as pig_output:
 		for line in pig_output:
@@ -36,6 +37,7 @@ def insert(path):
 
 	with open("result/" + path+"/hottest_words.txt", "r+") as collo:
 		phrase = db[path+'_phrase']
+		phrase.drop()
 		for line in collo:
 			phrase_instance = Word(line.translate(None,',.?()_:\'\n\t'),0,[])
 			phrase_id = phrase.insert(phrase_instance.d)

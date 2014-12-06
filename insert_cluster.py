@@ -37,6 +37,7 @@ def insert(path):
 	client = MongoClient()
 	db = client['test']
 	clusters = db[path+'_clusters']
+	clusters.drop()
 
 	with open("result/" + path+"/topics_clusters_dump", "r+") as cluster_dump:
 		for block in read_blocks(cluster_dump):
