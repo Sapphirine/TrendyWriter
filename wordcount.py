@@ -16,7 +16,7 @@ from nltk.corpus import stopwords
 from nltk.collocations import *
 
 
-txtfile = open('topic/all_topics_hp_politics.txt', 'r+')
+txtfile = open('topic/all_topics.txt', 'r+')
 filepath = os.path.abspath(txtfile.name)
 wordcount = {}
 wnl = WordNetLemmatizer()
@@ -55,11 +55,11 @@ bigram_measures = nltk.collocations.BigramAssocMeasures()
 # Find three relative words('TrigramAssocMeasures()'), according to the interval between them ('window_size').
 # trigram_measures = nltk.collocations.TrigramAssocMeasures()
 
-finder = BigramCollocationFinder.from_words(stemmed_words, window_size=3)
+finder = BigramCollocationFinder.from_words(stemmed_words, window_size=5)
 finder.apply_freq_filter(3)
 # Here print Ascii String
-print finder.nbest(bigram_measures.pmi, 20)
-finder_buffer = finder.nbest(bigram_measures.pmi, 20)
+print finder.nbest(bigram_measures.pmi, 50)
+finder_buffer = finder.nbest(bigram_measures.pmi, 50)
 with open('filter/hottest_words.txt', 'w') as writing_file:
     for relative_words in finder_buffer:
         writing_file.write(relative_words[0] + '  ' + relative_words[1] + '\n')

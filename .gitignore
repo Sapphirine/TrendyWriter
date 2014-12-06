@@ -4,4 +4,10 @@ tmp/*
 paragraph/*
 pig/*.log
 *.log
-
+res/*
+paragraph/data/*
+topic/*
+url/*
+filter/*
+mahout/cluster_result/*
+pig/trending_singleword/*

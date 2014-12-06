@@ -9,15 +9,12 @@ collision of data as much as possible.
 (3) Retrieve data from Ajax as well.
 (4) Retrieve data inside the tag <i> and <b>
 
-More details..
-"""
-
-"""
 [DEBUG]
 (step 1) python fetchtitle_v2.py | tee debug.txt
 (step 2) (only if necessary) grep 'ERROR' debug.txt > error.txt
 """
 
+import sys
 import urllib
 from HTMLParser import HTMLParser
 # from htmlentitydefs import name2codepoint
@@ -36,15 +33,15 @@ debug_storepath = 'debug/debug_page.html'
 
 
 def welcome_text():
-    print ''
-    print '========================================================='
-    print '             Crawl URL and paragraph from Web tool       '
-    print '========================================================='
-    print '---------------------------------------------------------'
-    print '                     [DEVELOPER MODE]                    '
-    print 'Step 1: python fetchtitle_v2.py | tee debug.txt          '
-    print 'Step 2: (IF NECESSARY) grep "ERROR" debug.txt > error.txt'
-    print '---------------------------------------------------------'
+    print '                                                               '
+    print '==============================================================='
+    print '             Crawl URL and paragraph from Web tool             '
+    print '==============================================================='
+    print '                     [DEVELOPER MODE]                          '
+    print 'Step 1: python fetchtitle_v2.py | tee debug/debug.txt          '
+    print 'Step 2: (IF NECESSARY) grep "ERROR" debug.txt > error/error.txt'
+    print '---------------------------------------------------------------'
+    print '                                                               '
 
 class CrawlParagraph(HTMLParser):
     """
@@ -85,7 +82,7 @@ class CrawlParagraph(HTMLParser):
             # if tag == 'a':
             # self.found_a = True
             # if tag == 'h1':
-            #     self.found_h1 = True
+            # self.found_h1 = True
             # if tag == 'h2':
             #     self.found_h2 = True
             # if tag == 'h3':
@@ -160,7 +157,7 @@ class CrawlParagraph(HTMLParser):
             # if tag == 'a':
             # self.found_a = False
             # if tag == 'h1':
-            #     self.found_h1 = False
+            # self.found_h1 = False
             # if tag == 'h2':
             #     self.found_h2 = False
             # if tag == 'h3':
@@ -253,7 +250,7 @@ def main():
         # Clean the to-process files.
         open(store_url, 'w').close()
 
-        url = raw_input('Enter an url : ')
+        url = sys.argv.pop()
         url = url.strip()
         if url[-1:] != '/':
             url += '/'
