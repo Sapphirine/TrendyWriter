@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import datetime
+import os
 
 class Word:
 	def __init__(self, word_text, count = 0, cluster_names = []):
@@ -22,7 +23,8 @@ def insert(path):
 	single_word = db[path+'_single_word']
 	single_word.drop()
 
-	with open("result/" + path+"/part-r-00000","r+") as pig_output:
+	pig_res_path = os.path.normcase(os.path.join(os.path.dirname(__file__), "result/" + path+"/part-r-00000"))
+	with open(pig_res_path,"r+") as pig_output:
 		for line in pig_output:
 			w,c = line.split()
 			#print w,c
@@ -35,7 +37,8 @@ def insert(path):
 			word_id = single_word.insert(word_instance.d)
 			#print word_id
 
-	with open("result/" + path+"/hottest_words.txt", "r+") as collo:
+	colo_res_path = os.path.normcase(os.path.join(os.path.dirname(__file__), "result/" + path+"/hottest_words.txt"))
+	with open(colo_res_path, "r+") as collo:
 		phrase = db[path+'_phrase']
 		phrase.drop()
 		for line in collo:

@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import datetime
+import os
 
 class Cluster:
 	def __init__(self, cluster_name, words):
@@ -38,8 +39,9 @@ def insert(path):
 	db = client['test']
 	clusters = db[path+'_clusters']
 	clusters.drop()
-
-	with open("result/" + path+"/topics_clusters_dump", "r+") as cluster_dump:
+	
+	abs_path = os.path.normcase(os.path.join(os.path.dirname(__file__), "result/" + path+"/topics_clusters_dump"))
+	with open(abs_path, "r+") as cluster_dump:
 		for block in read_blocks(cluster_dump):
 			cluster = block_to_cluster(block)
 			clusters.insert(cluster.d)

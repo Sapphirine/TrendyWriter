@@ -20,8 +20,10 @@ def insert(path):
 	client = MongoClient()
 	db = client['test']
 	single_word = db[path+'_single_word']
+	single_word.drop()
 
-	with open("result/" + path+"/part-r-00000","r+") as pig_output:
+	pig_res_path = os.path.normcase(os.path.join(os.path.dirname(__file__), "result/" + path+"/part-r-00000"))
+	with open(pig_res_path,"r+") as pig_output:
 		for line in pig_output:
 			w,c = line.split()
 			#print w,c
@@ -30,13 +32,15 @@ def insert(path):
 			if cluses:
 				for clus in cluses:
 					clus_names.append(clus['name'])
-					word_instance = Word(w,int(c), clus_names)
 			word_instance = Word(w,int(c), clus_names)
 			word_id = single_word.insert(word_instance.d)
 			#print word_id
-	"""
-	with open("result/" + path+"hottest_words.txt", "r+") as collocation:
-		for line in collocation:
-			phrase_instance = Word(line)
-			phrase_id = single_word.insert(phrase_instance)
-			"""
+
+	colo_res_path = os.path.normcase(os.path.join(os.path.dirname(__file__), "result/" + path+"/hottest_words.txt"))
+	with open(colo_res_path, "r+") as collo:
+		phrase = db[path+'_phrase']
+		phrase.drop()
+		for line in collo:
+			phrase_instance = Word(line.translate(None,',.?()_:\'\n\t'),0,[])
+			phrase_id = phrase.insert(phrase_instance.d)
+
