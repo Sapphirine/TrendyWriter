@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYSIS_IN_BACKGROUND" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be9eaf9a-19fc-4629-ae40-f21a0f0017fe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/TrendyWrite_api.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mahout/cluster_hdfs.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mahout/cluster_localfs.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ref/cluster_origin.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debug/debug.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debug/debug_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fetchparagraph_v1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fetchtitle_v1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fetchtitle_v2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ref/sample.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pig/topic_analysis.pig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/103132_140.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/138619_140.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/1406302147-20140725_polar_plugin_desktop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/157492_140.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/163187_140.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/2014adpage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/682094929-postmessagerelay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/a2134792db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/adsWrapper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/beacon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/cb=gapi.loaded_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/cb=gapi.loaded_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/core-rpc-shindig.random-shindig.sha1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/css(1).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/css(2).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/css(3).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/css(4).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/css.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/fastbutton(1).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/fastbutton.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/follow_button.1406859257(1).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/follow_button.1406859257(2).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/follow_button.1406859257.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/ga.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/hub(1).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/hub.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/js(1).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/js(2).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/js(3).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/js(4).php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/js.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/like(1).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/like(2).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/like.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/moatuac.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/moth-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-144175711-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-AGING-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-ALBERT-YEUNG-SAUSHING-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-ANDREA-CLEVENGER-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-APPLE-HEALTHKIT-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-APPLE-LOGO-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-BABY-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-BEYONCE-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-BOY-BACKPACK-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-DENNY-BIKE-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-DWAYNE-JOHNSON-MOTHER-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-HAPPY-PHONE-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-INTERNET-HACKING-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-INTERNET-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-IPHONE-SCREEN-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-ISIL-FIGHTER-IRAQ-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-JENNIFER-HICKS-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-JERRY-JONES-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-JESSICA-SIMPSON-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-KID-MOVIE-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-MCGRAW-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-PIZZA-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-PORN-STAR-2-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-ROBIN-WILLIAMS-INSTAGRAM-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-ROBIN-WILLIAMS-ZELDA-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-ROBIN-WILLIAMS-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-RUSSIA-FLAG-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-TIMEX-IRONMAN-ONE-GPS-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-TONY-STEWART-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-TWEETING-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-UBER-large300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/n-WILLIAMS-medium.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/nr-411.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/oDB-fAAStWy(1).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/oDB-fAAStWy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/p-6fTutip1SMLM2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/postmessageRelay.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/quant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/r-GRAND-THEFT-AUTO-huge.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/saved_resource" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/standard" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/target.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/technology.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/trans.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/unb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/view-mobile-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/viztarget" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/webslice12x12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/widgets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/Tech and Internet Industry News - HuffPost Tech_files/zerg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ulysses.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordcount.py" afterPath="$PROJECT_DIR$/wordcount.py" />
+    </list>
+    <ignored path="TrendyWrite_api.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$wordcount.coverage" NAME="wordcount Coverage Results" MODIFIED="1417327309108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchparagraph_v1.coverage" NAME="fetchparagraph_v1 Coverage Results" MODIFIED="1417890479877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TrendyWrite_api$fetchtitle_v2.coverage" NAME="fetchtitle_v2 Coverage Results" MODIFIED="1417327207692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TrendyWrite_api" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ref/sample.py" />
+        <option value="$PROJECT_DIR$/topic/all_topics.txt" />
+        <option value="$PROJECT_DIR$/filter/hottest_words.txt" />
+        <option value="$PROJECT_DIR$/cluster_origin.sh" />
+        <option value="$PROJECT_DIR$/cluster_hdfs.sh" />
+        <option value="$PROJECT_DIR$/topic/all_topics_hp_politics.txt" />
+        <option value="$PROJECT_DIR$/res/url_0.html" />
+        <option value="$PROJECT_DIR$/res/home_.html" />
+        <option value="$PROJECT_DIR$/paragraph/data/paragraph_0.txt" />
+        <option value="$PROJECT_DIR$/pig/topics_analysis.pig" />
+        <option value="$PROJECT_DIR$/cluster_localfs.sh" />
+        <option value="$PROJECT_DIR$/mahout/cluster_localfs.sh" />
+        <option value="$PROJECT_DIR$/fetchtitle_v2.py" />
+        <option value="$PROJECT_DIR$/pig/topic_analysis.pig" />
+        <option value="$PROJECT_DIR$/wordcount.py" />
+        <option value="$PROJECT_DIR$/index.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/fetchparagraph_v1.py" />
+        <option value="$PROJECT_DIR$/debug/debug.txt" />
+        <option value="$PROJECT_DIR$/server.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
+    <option name="y" value="-280" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendyWrite_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mahout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="true" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="LayoutCode.rearrangeEntriesPython" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/__Python-Backend-Project___TrendyWriter-api_v1.2-jethro894 2" />
+    <property name="TODO_SCOPE" value="Project Files" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pig" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ref" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.fetchparagraph_v1">
+    <configuration default="false" name="fetchtitle_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fetchtitle_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="wordcount" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wordcount.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="fetchparagraph_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fetchparagraph_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="TrendyWrite_api" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TrendyWrite_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.fetchtitle_v2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.wordcount" />
+      <item index="2" class="java.lang.String" itemvalue="Python.fetchparagraph_v1" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.fetchparagraph_v1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.wordcount" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fetchtitle_v2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be9eaf9a-19fc-4629-ae40-f21a0f0017fe" name="Default" comment="" />
+      <created>1410744342717</created>
+      <updated>1410744342717</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Pig wordcount and fetch paragraph works fine now">
+      <created>1417295888309</created>
+      <updated>1417295888309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-280" width="1920" height="1080" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2515213" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12193823" sideWeight="0.496614" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3721591" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21243942" sideWeight="0.503386" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2347561" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3224432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34517047" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914772" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Added pig and rearrange codes" />
+    <MESSAGE value="Pig wordcount and fetch paragraph works fine now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pig wordcount and fetch paragraph works fine now" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="592" max-vertical-offset="1065">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17266" max-vertical-offset="25110">
+          <caret line="1225" column="0" selection-start-line="1225" selection-start-column="0" selection-end-line="1225" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1170">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1050">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5534591" vertical-offset="786" max-vertical-offset="7155">
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/htmlentitydefs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.06656805" vertical-offset="150" max-vertical-offset="4185">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/348993582/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1669" max-vertical-offset="77265">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20118344" vertical-offset="7964" max-vertical-offset="8640">
+          <caret line="543" column="40" selection-start-line="543" selection-start-column="40" selection-end-line="543" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325301" vertical-offset="87" max-vertical-offset="720">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.915422" vertical-offset="13816" max-vertical-offset="25110">
+          <caret line="1225" column="0" selection-start-line="1225" selection-start-column="0" selection-end-line="1225" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36956522" vertical-offset="6882" max-vertical-offset="24210">
+          <caret line="477" column="28" selection-start-line="477" selection-start-column="28" selection-end-line="477" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66292137" vertical-offset="530" max-vertical-offset="975">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/hottest_singleword.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1" vertical-offset="175907" max-vertical-offset="219780">
+          <caret line="11730" column="12" selection-start-line="11730" selection-start-column="12" selection-end-line="11730" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
