@@ -1,5 +1,9 @@
 #!/usr/bin/env python2.6
 
+import sys
+import urllib
+from HTMLParser import HTMLParser
+
 """ @package default
 [TODO]
 (1) Filter the data that contains html original text(i.e. html tag), using formal way.
@@ -13,11 +17,6 @@ collision of data as much as possible.
 (step 1) python fetchtitle_v2.py | tee debug.txt
 (step 2) (only if necessary) grep 'ERROR' debug.txt > error.txt
 """
-
-import sys
-import urllib
-from HTMLParser import HTMLParser
-# from htmlentitydefs import name2codepoint
 
 
 # store path variables:
