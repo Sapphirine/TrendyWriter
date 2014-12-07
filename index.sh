@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# testing...
 
 # setup environment variables
 export crawl_url="http://www.huffingtonpost.com/politics/"
