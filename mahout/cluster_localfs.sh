@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export PROJECT_HOME="/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api"
 
 ### Setup Environment Variables ###
 # run on Hadoop
@@ -25,22 +24,22 @@ export MAHOUT_LOCAL=1
 # $HDFS dfs -rm -r topics-kmeans
 # $HDFS dfs -rm -r topics-kmeans-clusters
 # $HDFS dfs -mkdir topics
-# $HDFS dfs -copyFromLocal ${PROJECT_HOME}/topic/ topics/
+# $HDFS dfs -copyFromLocal ${project_home}/topic/ topics/
 
 ### Process Data on Mahout ###
 # run on local
-$MAHOUT seqdirectory -c UTF-8 -i ${PROJECT_HOME}/paragraph -o ${PROJECT_HOME}/mahout/cluster_result/topics-seqfiles
-$MAHOUT seq2sparse -i ${PROJECT_HOME}/mahout/cluster_result/topics-seqfiles -o ${PROJECT_HOME}/mahout/cluster_result/topics-vectors-bigram -ow -chunk 200 -wt tfidf -s 5 -md 3 -x 90 -ng 2 -ml 50 -seq
-$MAHOUT kmeans -i ${PROJECT_HOME}/mahout/cluster_result/topics-vectors-bigram/tfidf-vectors -c ${PROJECT_HOME}/mahout/cluster_result/topics-kmeans-clusters -o ${PROJECT_HOME}/mahout/cluster_result/topics-kmeans -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -cd 1.0 -k 30 -x 20 -ow --clustering
-$MAHOUT clusterdump -i ${PROJECT_HOME}/mahout/cluster_result/topics-kmeans/clusters-*-final -o ${PROJECT_HOME}/mahout/cluster_result/topics_clusters_dump -d ${PROJECT_HOME}/mahout/cluster_result/topics-vectors-bigram/dictionary.file-* -dt sequencefile -b 100 -n 10 --evaluate -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -sp 0 --pointsDir ${PROJECT_HOME}/mahout/cluster_result/topics-kmeans/clusteredPoints
-$MAHOUT seqdumper -i ${PROJECT_HOME}/mahout/cluster_result/topics-kmeans/clusteredPoints -o ${PROJECT_HOME}/mahout/cluster_result/topics_seq_dump
+$MAHOUT seqdirectory -c UTF-8 -i ${project_home}/paragraph -o ${project_home}/mahout/cluster_result/topics-seqfiles
+$MAHOUT seq2sparse -i ${project_home}/mahout/cluster_result/topics-seqfiles -o ${project_home}/mahout/cluster_result/topics-vectors-bigram -ow -chunk 200 -wt tfidf -s 5 -md 3 -x 90 -ng 2 -ml 50 -seq
+$MAHOUT kmeans -i ${project_home}/mahout/cluster_result/topics-vectors-bigram/tfidf-vectors -c ${project_home}/mahout/cluster_result/topics-kmeans-clusters -o ${project_home}/mahout/cluster_result/topics-kmeans -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -cd 1.0 -k 30 -x 20 -ow --clustering
+$MAHOUT clusterdump -i ${project_home}/mahout/cluster_result/topics-kmeans/clusters-*-final -o ${project_home}/mahout/cluster_result/topics_clusters_dump -d ${project_home}/mahout/cluster_result/topics-vectors-bigram/dictionary.file-* -dt sequencefile -b 100 -n 10 --evaluate -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -sp 0 --pointsDir ${project_home}/mahout/cluster_result/topics-kmeans/clusteredPoints
+$MAHOUT seqdumper -i ${project_home}/mahout/cluster_result/topics-kmeans/clusteredPoints -o ${project_home}/mahout/cluster_result/topics_seq_dump
 
 # run on Hadoop
 # $MAHOUT seqdirectory -c UTF-8 -i topics/topic -o topics-seqfiles
 # $MAHOUT seq2sparse -i topics-seqfiles -o topics-vectors-bigram -ow -chunk 200 -wt tfidf -s 5 -md 3 -x 90 -ng 2 -ml 50 -seq
 # $MAHOUT kmeans -i topics-vectors-bigram/tfidf-vectors -c topics-kmeans-clusters -o topics-kmeans -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -cd 1.0 -k 20 -x 20 -ow --clustering
-# $MAHOUT clusterdump -i topics-kmeans/clusters-*-final -o $PROJECT_HOME/result/topics_clusters_dump -d topics-vectors-bigram/dictionary.file-* -dt sequencefile -b 100 -n 10 --evaluate -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -sp 0 --pointsDir topics-kmeans/clusteredPoints
-# $MAHOUT seqdumper -i topics-kmeans/clusteredPoints -o $PROJECT_HOME/result/topics_seq_dump
+# $MAHOUT clusterdump -i topics-kmeans/clusters-*-final -o $project_home/result/topics_clusters_dump -d topics-vectors-bigram/dictionary.file-* -dt sequencefile -b 100 -n 10 --evaluate -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -sp 0 --pointsDir topics-kmeans/clusteredPoints
+# $MAHOUT seqdumper -i topics-kmeans/clusteredPoints -o $project_home/result/topics_seq_dump
 
 
 

@@ -3,7 +3,7 @@
 
 # setup environment variables
 export crawl_url="http://www.huffingtonpost.com/politics/"
-export project_home="/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api"
+export project_home="/Users/Marcus/Documents/PycharmProjects/__Python-Backend-Project___TrendyWriter-api_v1.2"
 export pig="/Users/Marcus/Documents/pig-0.12-without_Hadoop/bin/pig"
 
 # clean up all relative files
@@ -17,8 +17,8 @@ rm -rf ${project_home}/pig/trending_singleword
 rm -rf ${project_home}/result
 
 # fetch data (paragraphs and titles)
-python fetchtitle_v2.py $crawl_url
-python fetchparagraph_v1.py $crawl_url
+python fetchtitle_v2.py ${crawl_url}
+python fetchparagraph_v1.py ${crawl_url}
 
 # process data
 python wordcount.py

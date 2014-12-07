@@ -8,10 +8,10 @@
 
 -- Load data from local path into a table, which contains each line of the files(each topic).
 -- Column name: line; Column type: chararray;
-topics = LOAD '/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api/topic/all_topics.txt' AS (line:chararray);
+topics = LOAD '/Users/Marcus/Documents/PycharmProjects/__Python-Backend-Project___TrendyWriter-api_v1.2/topic/all_topics.txt' AS (line:chararray);
 -- or [ $ topics = LOAD '/Users/Marcus/Desktop/all_topics.txt' ] , which provide the same result
 
--- Flatten each line(bag) into a collection words, which results in a bigger collection of words. 
+-- Flatten each line(bag) into a collection words, which results in a bigger collection of words.
 words = FOREACH topics GENERATE FLATTEN(TOKENIZE(line)) AS word;
 -- or [ $ words = FOREACH topics GENERATE FLATTEN(TOKENIZE((chararray)$0)) AS word; ] , which provide the same result  
 
@@ -46,4 +46,4 @@ filter_lesscountwords = FILTER ordered_word_count2 BY (int)count > 8;
 DUMP filter_lesscountwords;
 
 -- Store current data
-STORE filter_lesscountwords INTO '/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api/pig/trending_singleword';
+STORE filter_lesscountwords INTO '/Users/Marcus/Documents/PycharmProjects/__Python-Backend-Project___TrendyWriter-api_v1.2/pig/trending_singleword';
