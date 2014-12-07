@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# testing...
+
 # setup environment variables
 export crawl_url="http://www.huffingtonpost.com/politics/"
 export project_home="/Users/Marcus/Documents/PycharmProjects/TrendyWrite_api"
