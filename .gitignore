@@ -1,12 +1,1 @@
 .idea/workspace.xml
-tmp/*
-pig/*.log
-*.log
-res/*
-url/*
-paragraph/data/*
-topic/*
-filter/*
-mahout/cluster_result/*
-pig/trending_singleword/*
-result/*
