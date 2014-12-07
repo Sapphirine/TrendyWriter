@@ -72,27 +72,30 @@ class CrawlParagraph(HTMLParser):
         # self.found_h5 = False
         # self.found_h6 = False
         self.found_li = False
+        self.found_html = False
 
     def handle_starttag(self, tag, attrs):
         if not self.get_url:
+            # @formatter:off
             if tag == 'p':
                 self.found_p = True
             elif tag == 'html':
                 self.found_html = True
             # if tag == 'a':
-            # self.found_a = True
+            #   self.found_a = True
             # if tag == 'h1':
-            # self.found_h1 = True
+            #   self.found_h1 = True
             # if tag == 'h2':
-            #     self.found_h2 = True
+            #   self.found_h2 = True
             # if tag == 'h3':
-            #     self.found_h3 = True
+            #   self.found_h3 = True
             # if tag == 'h4':
-            #     self.found_h4 = True
+            #   self.found_h4 = True
             # if tag == 'h5':
-            #     self.found_h5 = True
+            #   self.found_h5 = True
             # if tag == 'h6':
-            #     self.found_h6 = True
+            #   self.found_h6 = True
+            # @formatter:on
         elif self.get_url:
             if tag == 'li':
                 self.found_li = True
@@ -150,24 +153,26 @@ class CrawlParagraph(HTMLParser):
 
     def handle_endtag(self, tag):
         if not self.get_url:
+            # @formatter:off
             if tag == 'p':
                 self.found_p = False
             elif tag == 'html':
                 self.found_html = False
             # if tag == 'a':
-            # self.found_a = False
+            #   self.found_a = False
             # if tag == 'h1':
-            # self.found_h1 = False
+            #   self.found_h1 = False
             # if tag == 'h2':
-            #     self.found_h2 = False
+            #   self.found_h2 = False
             # if tag == 'h3':
-            #     self.found_h3 = False
+            #   self.found_h3 = False
             # if tag == 'h4':
-            #     self.found_h4 = False
+            #   self.found_h4 = False
             # if tag == 'h5':
-            #     self.found_h5 = False
+            #   self.found_h5 = False
             # if tag == 'h6':
-            #     self.found_h6 = False
+            #   self.found_h6 = False
+            # @formatter:on
         elif self.get_url:
             if tag == 'li':
                 self.found_li = False
@@ -184,7 +189,6 @@ class CrawlParagraph(HTMLParser):
                 #    self.found_h3 or self.found_h4 or
                 #    self.found_h5 or self.found_h6):
                     # Eliminate duplicated topics.
-                    # @formatter:on
                     if not data.encode('utf-8').strip() in CrawlParagraph.topic_list:
                         # Function "print()" can only output Ascii encoded normal String
                         # ,so use "encode()" method to return Ascii normal String.
@@ -196,6 +200,7 @@ class CrawlParagraph(HTMLParser):
                         CrawlParagraph.topic_list.append(data.encode('utf-8').strip())
                     else:
                         print '[DUPLICATE] Data = ', data.encode('utf-8').strip()
+                # @formatter:on
 
     def handle_decl(self, data):
         print '[INFO] DOCTYPE = ', data
