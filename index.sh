@@ -17,7 +17,7 @@ rm -rf ${project_home}/url/*
 rm -rf ${project_home}/filter/*
 rm -rf ${project_home}/mahout/cluster_result/*
 rm -rf ${project_home}/pig/trending_singleword
-rm -rf ${project_home}/result
+#rm -rf ${project_home}/result
 
 # fetch data (paragraphs and titles)
 python fetchtitle_v2.py ${crawl_url}
@@ -29,8 +29,8 @@ $pig -x local -f pig/topic_analysis.pig
 ./mahout/cluster_localfs.sh
 
 # move result files for MongoDB
-mkdir ${project_home}/result
-mkdir ${project_home}/result/${crawl_field}
-mv ${project_home}/pig/trending_singleword/part-r-00000 ${project_home}/result/${crawl_field}
-mv ${project_home}/mahout/cluster_result/topics_clusters_dump ${project_home}/result/${crawl_field}
-mv ${project_home}/filter/hottest_words.txt ${project_home}/result/${crawl_field}
+#mkdir ${project_home}/result
+#mkdir ${project_home}/result/${crawl_field}
+#mv ${project_home}/pig/trending_singleword/part-r-00000 ${project_home}/result/${crawl_field}
+#mv ${project_home}/mahout/cluster_result/topics_clusters_dump ${project_home}/result/${crawl_field}
+#mv ${project_home}/filter/hottest_words.txt ${project_home}/result/${crawl_field}
