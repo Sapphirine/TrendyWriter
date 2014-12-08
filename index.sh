@@ -1,9 +1,12 @@
 #!/bin/sh
 
 
-# setup environment variables
+# PLEASE CHANGE THE FOLLOWING TWO ENVIRONMENT PARAMETER BEFORE START THE PROGRAM
 export crawl_url="http://www.huffingtonpost.com/politics/"
-export project_home="/Users/Marcus/Documents/PycharmProjects/__Python-Backend-Project___TrendyWriter-api_v1.2"
+export crawl_field="politics"
+
+# setup environment variables
+export project_home="/Users/Marcus/Documents/PycharmProjects/TrendyWriterVirtualEnv/__Python-Backend-Project___TrendyWriter-api_v1.2"
 export pig="/Users/Marcus/Documents/pig-0.12-without_Hadoop/bin/pig"
 
 # clean up all relative files
@@ -27,6 +30,7 @@ $pig -x local -f pig/topic_analysis.pig
 
 # move result files for MongoDB
 mkdir ${project_home}/result
-mv ${project_home}/pig/trending_singleword/part-r-00000 ${project_home}/result
-mv ${project_home}/mahout/cluster_result/topics_clusters_dump ${project_home}/result
-mv ${project_home}/filter/hottest_words.txt ${project_home}/result
+mkdir ${project_home}/result/${crawl_field}
+mv ${project_home}/pig/trending_singleword/part-r-00000 ${project_home}/result/${crawl_field}
+mv ${project_home}/mahout/cluster_result/topics_clusters_dump ${project_home}/result/${crawl_field}
+mv ${project_home}/filter/hottest_words.txt ${project_home}/result/${crawl_field}

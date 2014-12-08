@@ -47,12 +47,30 @@ class myHandler(BaseHTTPRequestHandler):
                     a_phrase = {'word': phrase['word']}
                     message.append(a_phrase)
 
-                self.send_response(200, message)
+                self.send_response(200)
                 self.send_header("Content_type", "text/html")
                 self.end_headers()
-                self.wfile.write(message)
 
-        if parsed.path == "/cluster":
+                self.wfile.write('<!DOCTYPE html>')
+                self.wfile.write('<html">')
+                self.wfile.write('<head lang="en">')
+                self.wfile.write('<meta charset="UTF-8">')
+                self.wfile.write('<title>%s</title>' %field)
+                self.wfile.write('</head>')
+                self.wfile.write('<body>')
+                self.wfile.write('<div>')
+                self.wfile.write('<h1 style="color: brown;">TrendyWriter</h1>')
+                self.wfile.write('<h2 style="color: brown;">You will never miss a trend..</h2>')
+                self.wfile.write('<hr>')
+                self.wfile.write('<h1 style="color: blue;">- Selected Field:</h1>')
+                self.wfile.write('<h2>%s</h2>' % field)
+                self.wfile.write('<h1 style="color: blue;">- Here is the Trending Topics Right Now:</h1>')
+                for item in message:
+                    self.wfile.write('<li><h2>%s</h2></li>' % item['word'])
+                self.wfile.write('</div>')
+                self.wfile.write('</body>')
+                self.wfile.write('</html>')
+        elif parsed.path == "/cluster":
             field = urlparse.parse_qs(parsed.query)['field'][0]
             name = urlparse.parse_qs(parsed.query)['cname'][0]
             mongo_client = MongoClient()
@@ -62,19 +80,37 @@ class myHandler(BaseHTTPRequestHandler):
             else:
                 clus = db[field + '_clusters']
                 cluster_wanted = clus.find({"name": name}).limit(1)
-                message = []
-                for a_cluster in cluster_wanted:
-                    message.append(a_cluster['words'])
-                self.send_response(200, message)
+                message = cluster_wanted[0]['words']
+                self.send_response(200)
                 self.send_header("Content_type", "text/html")
                 self.end_headers()
-                self.wfile.write(message)
+                self.wfile.write('<!DOCTYPE html>')
+                self.wfile.write('<html">')
+                self.wfile.write('<head lang="en">')
+                self.wfile.write('<meta charset="UTF-8">')
+                self.wfile.write('<title>home</title>')
+                self.wfile.write('</head>')
+                self.wfile.write('<body>')
+                self.wfile.write('<div>')
+                self.wfile.write('<h1 style="color: brown;">TrendyWriter</h1>')
+                self.wfile.write('<h2 style="color: brown;">You will never miss a trend..</h2>')
+                self.wfile.write('<hr>')
+                self.wfile.write('<h1 style="color: blue;">- Selected Field:</h1>')
+                self.wfile.write('<h2>%s</h2>' % field.upper())
+                self.wfile.write('<h1 style="color: blue;">- Selected Cluster:</h1>')
+                self.wfile.write('<h2>%s</h2>' % name)
+                self.wfile.write('<h1 style="color: blue;">- Here is All Relative Topics in the Cluster:</h1>')
+                for item in message:
+                    self.wfile.write('<li><h2>%s</h2></li>' % item)
+                self.wfile.write('</div>')
+                self.wfile.write('</body>')
+                self.wfile.write('</html>')
 
 if __name__ == '__main__':
     httpd = HTTPServer(server_address, myHandler)
 
     sa = httpd.socket.getsockname()
-    print "Serving HTTP on", sa[0], "port", sa[1], "..."
+    print "HTTP Server running on", sa[0], "port", sa[1], "..."
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
